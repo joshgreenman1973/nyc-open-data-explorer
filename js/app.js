@@ -16,6 +16,8 @@
     agencyCount: document.getElementById("agency-count"),
     tagCloud: document.getElementById("tag-cloud"),
     picksOnly: document.getElementById("picks-only"),
+    favsOnly: document.getElementById("favs-only"),
+    favCount: document.getElementById("fav-count"),
     freshStrip: document.getElementById("fresh-strip"),
     freshNew: document.getElementById("fresh-new"),
     freshUpdated: document.getElementById("fresh-updated"),
@@ -31,6 +33,8 @@
     activeTags: new Set(),
     excludedTags: new Set(),
     picksOnly: false,
+    favs: new Set(),
+    favsOnly: false,
     query: "",
     parsed: { fuseQuery: "", filters: null, freshness: null },
     sort: "relevance",
@@ -46,6 +50,72 @@
   ];
   const AGENCY_INITIAL = 12;
   const RENDER_CAP = 200;
+  const FAVS_KEY = "nyc-ode-favorites-v1";
+
+  function loadFavs() {
+    try {
+      const raw = localStorage.getItem(FAVS_KEY);
+      if (!raw) return new Set();
+      const parsed = JSON.parse(raw);
+      return new Set(Array.isArray(parsed) ? parsed : []);
+    } catch (_) { return new Set(); }
+  }
+  function saveFavs(set) {
+    try { localStorage.setItem(FAVS_KEY, JSON.stringify([...set])); } catch (_) {}
+  }
+  function updateFavCount() {
+    if (els.favCount) els.favCount.textContent = state.favs.size;
+    renderMyFavorites();
+  }
+
+  function renderMyFavorites() {
+    const sec = document.getElementById("my-favorites");
+    const track = document.getElementById("favs-track");
+    const headCount = document.getElementById("favs-head-count");
+    const clearBtn = document.getElementById("favs-clear");
+    if (!sec || !track) return;
+    if (!state.favs.size || !state.catalog) {
+      sec.hidden = true;
+      return;
+    }
+    sec.hidden = false;
+    if (headCount) headCount.textContent = `(${state.favs.size})`;
+    if (clearBtn) clearBtn.hidden = false;
+    // Pull favorited datasets, sort by most-recently-updated
+    const favList = state.catalog.datasets
+      .filter((d) => state.favs.has(d.i))
+      .sort((a, b) => (b.u || "").localeCompare(a.u || ""));
+    track.innerHTML = favList.map((d) => {
+      const cat = d.c || "Uncategorized";
+      const url = `https://data.cityofnewyork.us/d/${encodeURIComponent(d.i)}`;
+      const updated = relativeDate(d.u) || "no date";
+      return `<div class="fav-tile" data-cat="${escapeAttr(cat)}">
+        <button type="button" class="fav-btn on" data-fav="${escapeAttr(d.i)}" title="Remove from favorites" aria-label="Remove from favorites">♥</button>
+        <a class="fav-name" href="${url}" target="_blank" rel="noopener">${escapeHTML(d.n)}</a>
+        <span class="fav-meta">${escapeHTML(d.a || "")}</span>
+        <span class="fav-meta">${escapeHTML(cat)} · updated ${escapeHTML(updated)}</span>
+      </div>`;
+    }).join("");
+    // Wire up the unfavorite buttons inside this section
+    track.querySelectorAll(".fav-btn").forEach((b) => {
+      b.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleFav(b.dataset.fav);
+        // Also update any hearts in the main results grid
+        const main = els.results.querySelector(`.fav-btn[data-fav="${CSS.escape(b.dataset.fav)}"]`);
+        if (main) {
+          main.classList.remove("on");
+          main.textContent = "♡";
+        }
+      });
+    });
+  }
+  function toggleFav(id) {
+    if (state.favs.has(id)) state.favs.delete(id); else state.favs.add(id);
+    saveFavs(state.favs);
+    updateFavCount();
+  }
 
   function tileSize(count) {
     for (const r of SIZE_RULES) if (count >= r.min) return r.klass;
@@ -233,24 +303,41 @@
     wrap.hidden = false;
     const computed = (stats.computed_at || "").slice(0, 10);
     const weeks = stats.trend_weeks || 12;
-    sub.innerHTML = `A few numbers pulled from City datasets refreshed in ${escapeHTML(stats.window_label || "the past week")}, with ${weeks}-week trend lines for context. Computed ${escapeHTML(computed)}. Each card links to its source dataset.`;
+    sub.innerHTML = `A few numbers from City datasets refreshed in ${escapeHTML(stats.window_label || "the past week")}, with ${weeks}-week trend lines for context. Computed ${escapeHTML(computed)}. <strong>Click a card</strong> to see every dataset in that category sorted by most-recently updated.`;
     grid.innerHTML = stats.stats.map((s) => {
-      const cat = s.category || "Government Operations";
+      const cat = s.category || "";
       const link = s.dataset_id ? `https://data.cityofnewyork.us/d/${encodeURIComponent(s.dataset_id)}` : null;
       const name = escapeHTML(s.dataset_name || "");
       const spark = sparklineSVG(s.trend);
       const delta = deltaHTML(s.delta_pct);
+      const sourceLine = link
+        ? `<a class="weekly-source-link" href="${link}" target="_blank" rel="noopener" title="Open ${name} on data.cityofnewyork.us">${name} ↗</a>`
+        : `<span class="weekly-source">${name}</span>`;
       const inner = `
         <span class="weekly-headline">${escapeHTML(s.headline)}</span>
         <span class="weekly-label">${escapeHTML(s.label)}</span>
         ${delta}
         ${spark}
         <span class="weekly-sub2">${escapeHTML(s.sub || "")}</span>
-        <span class="weekly-source">${name}</span>`;
-      return link
-        ? `<a class="weekly-card" data-cat="${escapeAttr(cat)}" href="${link}" target="_blank" rel="noopener">${inner}</a>`
-        : `<div class="weekly-card" data-cat="${escapeAttr(cat)}">${inner}</div>`;
+        ${sourceLine}`;
+      return `<button type="button" class="weekly-card" data-cat="${escapeAttr(cat)}" data-stat="${escapeAttr(s.key)}">${inner}</button>`;
     }).join("");
+    // Wire up clicks: filter to category, sort by updated, scroll to results
+    grid.querySelectorAll(".weekly-card").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        // Clicks on the inner source-link should still open the City page
+        if (e.target.closest(".weekly-source-link")) return;
+        const cat = btn.dataset.cat || null;
+        state.activeCat = cat || null;
+        state.sort = "updated";
+        els.sort.value = "updated";
+        renderCatMap();
+        render();
+        syncURL();
+        const results = document.getElementById("results");
+        if (results) results.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
   }
 
   // ---------- Fresh strip ----------
@@ -313,6 +400,7 @@
     if (state.activeAgencies.size) list = list.filter((d) => state.activeAgencies.has(d.a));
     if (state.activeTags.size) list = list.filter((d) => (d.g || []).some((t) => state.activeTags.has(t)));
     if (state.picksOnly) list = list.filter((d) => state.picksById.has(d.i));
+    if (state.favsOnly) list = list.filter((d) => state.favs.has(d.i));
     list = list.filter(passesFreshness);
 
     if (state.sort === "views") list.sort((a, b) => (b.v || 0) - (a.v || 0));
@@ -332,7 +420,10 @@
     const pick = state.picksById.get(d.i);
     const star = pick ? `<span class="pick-star" title="Journalist pick: ${escapeAttr(pick.why)}">★</span>` : "";
     const tagChips = (d.g || []).slice(0, 4).map((t) => `<button type="button" class="tag-mini" data-tag="${escapeAttr(t)}">${escapeHTML(t)}</button>`).join("");
+    const isFav = state.favs.has(d.i);
+    const favBtn = `<button type="button" class="fav-btn ${isFav ? 'on' : ''}" data-fav="${escapeAttr(d.i)}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}" title="${isFav ? 'Saved to your favorites' : 'Save to favorites'}">${isFav ? '♥' : '♡'}</button>`;
     return `<article class="card" data-cat="${escapeAttr(d.c)}">
+      ${favBtn}
       <h4>${star}<a href="${url}" target="_blank" rel="noopener">${escapeHTML(d.n)}</a></h4>
       <div class="summary">${summary}${pick ? `<div class="pick-note"><strong>Why journalists use it:</strong> ${escapeHTML(pick.why)} ${pick.gotcha ? `<em>Gotcha: ${escapeHTML(pick.gotcha)}</em>` : ""}</div>` : ""}</div>
       <div class="meta">
@@ -424,6 +515,21 @@
           syncURL();
         });
       });
+      // Wire up favorite buttons
+      els.results.querySelectorAll(".fav-btn").forEach((b) => {
+        b.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const id = b.dataset.fav;
+          toggleFav(id);
+          const nowFav = state.favs.has(id);
+          b.classList.toggle("on", nowFav);
+          b.textContent = nowFav ? "♥" : "♡";
+          b.setAttribute("aria-label", nowFav ? "Remove from favorites" : "Add to favorites");
+          b.setAttribute("title", nowFav ? "Saved to your favorites" : "Save to favorites");
+          if (state.favsOnly) render(); // re-filter if we're showing favorites only
+        });
+      });
     }
   }
 
@@ -442,6 +548,7 @@
     if (state.fresh !== "all") params.set("age", state.fresh);
     if (state.sort !== "relevance") params.set("sort", state.sort);
     if (state.picksOnly) params.set("picks", "1");
+    if (state.favsOnly) params.set("favs", "1");
     const hash = params.toString();
     const newUrl = hash ? `#${hash}` : window.location.pathname;
     if (("#" + hash) !== window.location.hash) {
@@ -465,6 +572,7 @@
     if (params.get("age")) { state.fresh = params.get("age"); els.fresh.value = state.fresh; }
     if (params.get("sort")) { state.sort = params.get("sort"); els.sort.value = state.sort; }
     if (params.get("picks") === "1") { state.picksOnly = true; els.picksOnly.checked = true; }
+    if (params.get("favs") === "1") { state.favsOnly = true; if (els.favsOnly) els.favsOnly.checked = true; }
   }
 
   // ---------- Init ----------
@@ -487,6 +595,8 @@
     state.catalog = data;
     state.fetchedAt = (data.fetched_at || "").slice(0, 10) || "recently";
     state.picksById = new Map((picks.picks || []).map((p) => [p.id, p]));
+    state.favs = loadFavs();
+    updateFavCount();
 
     state.fuse = new Fuse(data.datasets, {
       keys: [
@@ -532,6 +642,17 @@
     els.agencySearch.addEventListener("input", debounce(() => { state.agencyFilter = els.agencySearch.value; renderAgencyList(); }, 80));
     els.agencyToggle.addEventListener("click", () => { state.showAllAgencies = !state.showAllAgencies; renderAgencyList(); });
     els.picksOnly.addEventListener("change", () => { state.picksOnly = els.picksOnly.checked; render(); syncURL(); });
+    if (els.favsOnly) els.favsOnly.addEventListener("change", () => { state.favsOnly = els.favsOnly.checked; render(); syncURL(); });
+    const clearBtn = document.getElementById("favs-clear");
+    if (clearBtn) clearBtn.addEventListener("click", () => {
+      if (!confirm(`Clear all ${state.favs.size} favorites? This can't be undone.`)) return;
+      state.favs.clear();
+      saveFavs(state.favs);
+      updateFavCount();
+      // Reset hearts on visible cards
+      els.results.querySelectorAll(".fav-btn.on").forEach((b) => { b.classList.remove("on"); b.textContent = "♡"; });
+      if (state.favsOnly) render();
+    });
 
     window.addEventListener("hashchange", () => {
       // Only react to outside-driven hash changes, not our own

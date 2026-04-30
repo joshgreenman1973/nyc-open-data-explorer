@@ -71,6 +71,14 @@
     <div class="weekly-grid" id="weekly-grid"></div>
   </section>
 
+  <section class="my-favorites" id="my-favorites" aria-label="My favorite datasets" hidden>
+    <div class="favs-head">
+      <h2>My favorite datasets <small id="favs-head-count"></small></h2>
+      <button type="button" class="link-btn" id="favs-clear" hidden>Clear all favorites</button>
+    </div>
+    <div class="favs-track" id="favs-track"></div>
+  </section>
+
   <section class="fresh-strip" id="fresh-strip" aria-label="What's fresh">
     <div class="fresh-row">
       <h2 id="fresh-new-label">Brand new this month</h2>
@@ -87,6 +95,7 @@
       <div class="filter-group">
         <h3>Quick filters</h3>
         <label class="checkbox"><input type="checkbox" id="picks-only"> <span>Journalist picks <span class="star">★</span></span></label>
+        <label class="checkbox"><input type="checkbox" id="favs-only"> <span>My favorites <span class="heart" id="fav-count-heart">♥</span> <small id="fav-count">0</small></span></label>
       </div>
 
       <div class="filter-group">

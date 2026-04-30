@@ -32,6 +32,7 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+html, body { overflow-x: hidden; max-width: 100vw; }
 body {
   background: var(--bg);
   color: var(--ink);
@@ -172,6 +173,7 @@ header.site nav a {
 /* Weekly stats */
 .weekly-stats {
   margin: 8px 0 24px;
+  max-width: 100%;
 }
 .weekly-head { margin-bottom: 10px; }
 .weekly-head h2 {
@@ -187,8 +189,13 @@ header.site nav a {
 }
 .weekly-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-auto-flow: row;
   gap: 10px;
+  max-width: 100%;
+}
+@media (min-width: 720px) {
+  .weekly-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }
 .weekly-card {
   background: var(--surface);
@@ -202,12 +209,24 @@ header.site nav a {
   color: var(--ink);
   text-decoration: none;
   transition: box-shadow 0.08s ease, transform 0.08s ease;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  min-width: 0;
+  width: 100%;
 }
 .weekly-card:hover {
   text-decoration: none;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-1px);
 }
+.weekly-source-link {
+  font-size: 11px;
+  color: var(--focus);
+  margin-top: 8px;
+  text-decoration: none;
+}
+.weekly-source-link:hover { text-decoration: underline; }
 .weekly-headline {
   font-family: var(--font-display);
   font-size: 32px;
@@ -276,6 +295,111 @@ header.site nav a {
 .weekly-card[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
 .weekly-card[data-cat="Environment"] { border-left-color: var(--c-environment); }
 .weekly-card[data-cat="Education"] { border-left-color: var(--c-education); }
+
+/* My favorites */
+.my-favorites {
+  margin: 8px 0 24px;
+  max-width: 100%;
+  background: linear-gradient(180deg, rgba(193, 39, 45, 0.04), transparent);
+  border: 1px solid var(--rule);
+  border-left: 4px solid #c1272d;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+.favs-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.favs-head h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
+}
+.favs-head h2 small {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--ink-mute);
+  font-weight: 400;
+  margin-left: 6px;
+}
+.favs-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+  max-width: 100%;
+}
+.fav-tile {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--ink-mute);
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  min-width: 0;
+}
+.fav-tile .fav-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.3;
+  padding-right: 24px;
+}
+.fav-tile .fav-name:hover { color: var(--focus); }
+.fav-tile .fav-meta { font-size: 11px; color: var(--ink-mute); }
+.fav-tile[data-cat="Government Operations"] { border-left-color: var(--c-government); }
+.fav-tile[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
+.fav-tile[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }
+.fav-tile[data-cat="Procurement & Contracts"] { border-left-color: var(--c-procurement); }
+.fav-tile[data-cat="Elections & Ethics"] { border-left-color: var(--c-elections); }
+.fav-tile[data-cat="Education"] { border-left-color: var(--c-education); }
+.fav-tile[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
+.fav-tile[data-cat="Environment"] { border-left-color: var(--c-environment); }
+.fav-tile[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
+.fav-tile[data-cat="Social Services"] { border-left-color: var(--c-social); }
+.fav-tile[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
+.fav-tile[data-cat="Recreation"] { border-left-color: var(--c-recreation); }
+.fav-tile[data-cat="Health"] { border-left-color: var(--c-health); }
+.fav-tile[data-cat="Business"] { border-left-color: var(--c-business); }
+
+/* Heart button used both on cards and on favorites tiles */
+.fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,0.85);
+  color: var(--ink-mute);
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease, color 0.1s ease;
+  z-index: 2;
+}
+.fav-btn:hover {
+  color: #c1272d;
+  transform: scale(1.1);
+  border-color: var(--rule);
+}
+.fav-btn.on { color: #c1272d; }
+.heart { color: #c1272d; }
+
+.card { position: relative; }
+.card h4 { padding-right: 26px; }
 
 /* Fresh strip */
 .fresh-strip {
@@ -348,10 +472,13 @@ header.site nav a {
 /* Layout: sidebar + content */
 .layout {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 260px minmax(0, 1fr);
   gap: 24px;
   align-items: start;
+  max-width: 100%;
 }
+.layout > * { min-width: 0; }
+.content { min-width: 0; max-width: 100%; }
 .sidebar {
   background: var(--surface);
   border: 1px solid var(--rule);

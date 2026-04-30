@@ -74,6 +74,9 @@
     <li><code>-tag:historical</code> — leading minus negates a field filter</li>
   </ul>
 
+  <h2>Favorites</h2>
+  <p>Click the heart on any dataset card to save it to your favorites. Favorites are stored in your browser's <code>localStorage</code> — there's no account, no login, and no data sent to any server. The downside: favorites don't sync across devices or browsers. If you clear your browser data, they're gone. The "My favorite datasets" section appears at the top of the page whenever you have any.</p>
+
   <h2>"The week in city data" cards</h2>
   <p>The five small cards near the top of the page show numbers pulled directly from City datasets refreshed in the last 7 days, queried via Socrata's SoQL. The current set: 311 complaint volume + most-common type, motor-vehicle crashes + persons injured, DOB construction permits issued, restaurant inspections completed + grade-A share, and total datasets refreshed. Each card links to its source dataset on data.cityofnewyork.us. If a query times out or 500s on rebuild, the card is silently skipped (the page still works). The exact queries are in <code>build/weekly_stats.py</code>; output lands in <code>data/weekly_stats.json</code>.</p>
 
