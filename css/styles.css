@@ -169,11 +169,86 @@ header.site nav a {
 }
 .stats strong { color: var(--ink); font-weight: 600; }
 
+/* Weekly stats */
+.weekly-stats {
+  margin: 8px 0 24px;
+}
+.weekly-head { margin-bottom: 10px; }
+.weekly-head h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+.weekly-sub {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+.weekly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.weekly-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--ink-mute);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: box-shadow 0.08s ease, transform 0.08s ease;
+}
+.weekly-card:hover {
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+.weekly-headline {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.weekly-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 2px;
+}
+.weekly-sub2 {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.weekly-source {
+  font-size: 11px;
+  color: var(--ink-mute);
+  margin-top: 8px;
+  font-style: italic;
+}
+.weekly-card[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
+.weekly-card[data-cat="Health"] { border-left-color: var(--c-health); }
+.weekly-card[data-cat="Social Services"] { border-left-color: var(--c-social); }
+.weekly-card[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
+.weekly-card[data-cat="Government Operations"] { border-left-color: var(--c-government); }
+.weekly-card[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
+.weekly-card[data-cat="Environment"] { border-left-color: var(--c-environment); }
+.weekly-card[data-cat="Education"] { border-left-color: var(--c-education); }
+
 /* Fresh strip */
 .fresh-strip {
   margin: 8px 0 24px;
   display: grid;
   gap: 14px;
+}
+.fresh-row {
+  min-width: 0; /* let the grid item shrink so .fresh-track can clip-and-scroll */
 }
 .fresh-row h2 {
   font-family: var(--font-display);
@@ -187,6 +262,7 @@ header.site nav a {
   overflow-x: auto;
   padding-bottom: 6px;
   scroll-snap-type: x proximity;
+  min-width: 0;
 }
 .fresh-tile {
   flex: 0 0 240px;

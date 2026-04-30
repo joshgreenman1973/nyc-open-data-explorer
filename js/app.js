@@ -194,6 +194,30 @@
     });
   }
 
+  // ---------- Weekly stats ----------
+  function renderWeeklyStats(stats) {
+    if (!stats || !stats.stats || !stats.stats.length) return;
+    const wrap = document.getElementById("weekly-stats");
+    const grid = document.getElementById("weekly-grid");
+    const sub = document.getElementById("weekly-sub");
+    wrap.hidden = false;
+    const computed = (stats.computed_at || "").slice(0, 10);
+    sub.innerHTML = `A few numbers pulled from City datasets refreshed in ${escapeHTML(stats.window_label || "the past week")}. Computed ${escapeHTML(computed)}. Each card links to its source dataset.`;
+    grid.innerHTML = stats.stats.map((s) => {
+      const cat = s.category || "Government Operations";
+      const link = s.dataset_id ? `https://data.cityofnewyork.us/d/${encodeURIComponent(s.dataset_id)}` : null;
+      const name = escapeHTML(s.dataset_name || "");
+      const inner = `
+        <span class="weekly-headline">${escapeHTML(s.headline)}</span>
+        <span class="weekly-label">${escapeHTML(s.label)}</span>
+        <span class="weekly-sub2">${escapeHTML(s.sub || "")}</span>
+        <span class="weekly-source">${name}</span>`;
+      return link
+        ? `<a class="weekly-card" data-cat="${escapeAttr(cat)}" href="${link}" target="_blank" rel="noopener">${inner}</a>`
+        : `<div class="weekly-card" data-cat="${escapeAttr(cat)}">${inner}</div>`;
+    }).join("");
+  }
+
   // ---------- Fresh strip ----------
   function renderFreshStrip() {
     const fresh = state.catalog.fresh || { new_this_month: [], updated_this_week: [] };
@@ -410,14 +434,16 @@
 
   // ---------- Init ----------
   async function init() {
-    let data, picks;
+    let data, picks, weekly;
     try {
-      const [r1, r2] = await Promise.all([
+      const [r1, r2, r3] = await Promise.all([
         fetch("data/catalog.min.json", { cache: "no-cache" }),
         fetch("data/journalist_picks.json", { cache: "no-cache" }),
+        fetch("data/weekly_stats.json", { cache: "no-cache" }).catch(() => null),
       ]);
       data = await r1.json();
       picks = await r2.json();
+      try { weekly = r3 && r3.ok ? await r3.json() : null; } catch (_) { weekly = null; }
     } catch (e) {
       els.stats.textContent = "Failed to load the catalog. Try refreshing.";
       console.error(e);
@@ -447,6 +473,7 @@
     renderTypePills();
     renderAgencyList();
     renderTagCloud();
+    renderWeeklyStats(weekly);
     renderFreshStrip();
     render();
 

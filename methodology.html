@@ -74,6 +74,9 @@
     <li><code>-tag:historical</code> — leading minus negates a field filter</li>
   </ul>
 
+  <h2>"The week in city data" cards</h2>
+  <p>The five small cards near the top of the page show numbers pulled directly from City datasets refreshed in the last 7 days, queried via Socrata's SoQL. The current set: 311 complaint volume + most-common type, motor-vehicle crashes + persons injured, DOB construction permits issued, restaurant inspections completed + grade-A share, and total datasets refreshed. Each card links to its source dataset on data.cityofnewyork.us. If a query times out or 500s on rebuild, the card is silently skipped (the page still works). The exact queries are in <code>build/weekly_stats.py</code>; output lands in <code>data/weekly_stats.json</code>.</p>
+
   <h2>"What's fresh" strip</h2>
   <p>Two horizontal carousels at the top of the page surface what's actually moving in the catalog: <strong>brand new this month</strong> (datasets whose <code>createdAt</code> is in the last 30 days, sorted by creation date) and <strong>updated this week</strong> (datasets whose <code>data_updated_at</code> is in the last 7 days, sorted by view count). Both lists are precomputed during the weekly build, so no client-side scanning is needed.</p>
 

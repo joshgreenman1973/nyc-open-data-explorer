@@ -1,0 +1,53 @@
+{
+  "computed_at": "2026-04-30T19:18:08+00:00",
+  "window_start": "2026-04-23T19:18:08",
+  "window_label": "the past 7 days",
+  "stats": [
+    {
+      "key": "311",
+      "headline": "51,580",
+      "label": "311 complaints in the past 7 days",
+      "sub": "Most common: Illegal Parking (9,410)",
+      "dataset_id": "erm2-nwe9",
+      "dataset_name": "311 Service Requests from 2020 to Present",
+      "category": "Social Services"
+    },
+    {
+      "key": "mvc",
+      "headline": "610",
+      "label": "Motor-vehicle crashes reported",
+      "sub": "391 people injured",
+      "dataset_id": "h9gi-nx95",
+      "dataset_name": "Motor Vehicle Collisions - Crashes",
+      "category": "Public Safety"
+    },
+    {
+      "key": "dob",
+      "headline": "3,015",
+      "label": "DOB construction permits issued",
+      "sub": "Excludes electrical and elevator filings",
+      "dataset_id": "rbx6-tga4",
+      "dataset_name": "DOB NOW: Build – Approved Permits",
+      "category": "Housing & Development"
+    },
+    {
+      "key": "rest",
+      "headline": "842",
+      "label": "Restaurant inspections completed",
+      "sub": "29% earned an A grade (243 of 842)",
+      "dataset_id": "43nn-pn8j",
+      "dataset_name": "DOHMH NYC Restaurant Inspection Results",
+      "category": "Health"
+    },
+    {
+      "key": "catalog",
+      "headline": "237",
+      "label": "Datasets refreshed by City agencies",
+      "sub": "3,012 total datasets in the catalog",
+      "dataset_id": null,
+      "dataset_name": "NYC Open Data catalog metadata",
+      "category": null
+    }
+  ],
+  "errors": []
+}
