@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NYC Open Data Explorer</title>
+<meta name="description" content="A colorful, plain-language map of every dataset published on data.cityofnewyork.us. Browse by category, search across 3,000+ datasets, see what's fresh and what's stale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <h1>
+      New York City Open Data Explorer
+      <small>A clearer, colorful map of every dataset the City publishes</small>
+    </h1>
+    <nav>
+      <a href="methodology.html">Methodology</a>
+      <a href="https://data.cityofnewyork.us/" target="_blank" rel="noopener">Official portal</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="lede">The City publishes thousands of datasets, but the official portal makes them hard to find. Browse by category, search in plain language, and see what's been updated recently.</p>
+
+    <div class="search-row" role="search">
+      <input id="q" type="search" placeholder="Search datasets — try &ldquo;shooting&rdquo;, &ldquo;311 noise&rdquo;, &ldquo;school quality&rdquo;" aria-label="Search datasets">
+      <select id="sort" aria-label="Sort">
+        <option value="relevance">Sort: best match</option>
+        <option value="views">Most viewed</option>
+        <option value="updated">Recently updated</option>
+        <option value="alpha">A to Z</option>
+      </select>
+      <select id="freshness" aria-label="Freshness filter">
+        <option value="all">Any age</option>
+        <option value="30">Updated in last 30 days</option>
+        <option value="365">Updated in last year</option>
+        <option value="stale">Older than 1 year</option>
+      </select>
+      <button class="clear" id="clear" type="button">Reset</button>
+    </div>
+    <div class="stats" id="stats">Loading the catalog&hellip;</div>
+  </section>
+
+  <section id="cat-map" class="cat-map" aria-label="Category map"></section>
+
+  <section id="results" class="cards" aria-live="polite"></section>
+  <div id="empty" class="empty" hidden>No datasets match your search. Try a different keyword or reset filters.</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Refreshed weekly. <a href="methodology.html">See methodology &rarr;</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

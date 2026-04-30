@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology — NYC Open Data Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .doc { max-width: 760px; }
+  .doc h2 { font-family: var(--font-display); font-size: 24px; margin-top: 32px; }
+  .doc h3 { font-size: 17px; margin-top: 20px; }
+  .doc p, .doc li { font-size: 16px; color: var(--ink-soft); }
+  .doc code { background: #f1ede2; padding: 1px 6px; border-radius: 3px; font-size: 14px; }
+  .doc table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  .doc th, .doc td { border: 1px solid var(--rule); padding: 6px 10px; text-align: left; }
+  .doc th { background: #f1ede2; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <h1><a href="index.html" style="color:inherit;text-decoration:none">New York City Open Data Explorer</a><small>Methodology</small></h1>
+    <nav><a href="index.html">Back to explorer</a></nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h2>What this is</h2>
+  <p>A re-presentation of New York City's public Open Data catalog — the same datasets you'd find at <a href="https://data.cityofnewyork.us/" target="_blank" rel="noopener">data.cityofnewyork.us</a>, organized for browsing, with a search engine that's more forgiving than the official portal's. Every link points back to the City's authoritative version of the dataset.</p>
+
+  <h2>Source</h2>
+  <p>The catalog is fetched from the public Socrata Discovery API:</p>
+  <p><code>https://api.us.socrata.com/api/catalog/v1?domains=data.cityofnewyork.us</code></p>
+  <p>This is the same API the City uses to power its own portal search. Every record includes the dataset's name, agency-written description, the City's category assignment, tags, last-updated timestamp, and view counts. We pull the full catalog in pages of 100.</p>
+
+  <h2>Categories</h2>
+  <p>Categories on the home page are the City's own assignments (<code>domain_category</code> in the API). Datasets the City didn't categorize show up under "Uncategorized." We don't reassign or invent categories. The 12 buckets you see are exactly the ones New York City publishes.</p>
+
+  <h2>Plain-language summaries</h2>
+  <p>Each card shows a one-sentence summary. That summary is the first sentence of the agency-written description, with HTML markup, entity codes, and stray whitespace removed and the length capped at 240 characters. We do not paraphrase or rewrite agency language at this stage. Future iterations may add a model-generated plain-English layer, which would be clearly labeled as such on the methodology page when it ships.</p>
+
+  <h2>Freshness pills</h2>
+  <p>The colored pill on each card is computed from the dataset's <code>data_updated_at</code> timestamp:</p>
+  <table>
+    <tr><th>Pill</th><th>Meaning</th></tr>
+    <tr><td>Fresh (green)</td><td>Updated within the last 30 days</td></tr>
+    <tr><td>Recent (yellow)</td><td>Updated within the last year</td></tr>
+    <tr><td>Stale (red)</td><td>Older than a year, or no update timestamp</td></tr>
+  </table>
+  <p>Note: "updated" reflects the dataset's data refresh, not metadata edits. Some agencies update on schedules (daily, monthly, quarterly); a "stale" pill doesn't always mean the dataset is abandoned, only that it hasn't refreshed in a year.</p>
+
+  <h2>Search</h2>
+  <p>Search runs entirely in your browser using <a href="https://fusejs.io/" target="_blank" rel="noopener">Fuse.js</a> across dataset names, summaries, tags, and publishing agencies. It's a fuzzy match — typos and partial matches will still return results — and weights names highest. There's no logging, tracking, or server-side query handling.</p>
+
+  <h2>Refresh cadence</h2>
+  <p>The catalog is rebuilt weekly. The "Catalog refreshed" date in the search bar reflects the last successful fetch. Datasets new to the City portal appear in the explorer at the next rebuild.</p>
+
+  <h2>Limitations and what's not here</h2>
+  <ul>
+    <li>This explorer is read-only — it doesn't host the data itself. Every "open dataset" link goes to the City portal, where you can preview, query, and download.</li>
+    <li>The City's category assignments are imperfect. A dataset about street trees might land under "Environment" or "City Government" depending on which agency uploaded it.</li>
+    <li>Page-view and download counts come from the Socrata API and reflect activity on the City portal only.</li>
+    <li>We do not include datasets from other Socrata domains (e.g., Health Department's separate portal at <code>nychealth.cityofnewyork.us</code>). That would require a separate fetch and is on the backlog.</li>
+    <li>Agency attribution is taken from the API's <code>attribution</code> field. It's whatever the publishing agency wrote, and styling varies (e.g., "NYPD" vs. "Police Department").</li>
+  </ul>
+
+  <h2>Code and rebuild</h2>
+  <p>The fetch script is <code>build/fetch_catalog.py</code> in the repository. To rebuild locally: run <code>python3 build/fetch_catalog.py</code>, which writes <code>data/catalog.json</code> (full archive) and <code>data/catalog.min.json</code> (the file the front end actually loads).</p>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs, or category gripes: file a GitHub issue on the project repository.</p>
+</main>
+
+<footer class="site"><div class="wrap">Built independently. Not affiliated with the City of New York.</div></footer>
+</body>
+</html>

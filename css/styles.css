@@ -1,0 +1,291 @@
+:root {
+  --bg: #faf8f3;
+  --surface: #ffffff;
+  --ink: #161616;
+  --ink-soft: #4a4a4a;
+  --ink-mute: #767676;
+  --rule: #e5e1d6;
+  --accent: #c1272d;
+  --focus: #1a4d8f;
+
+  --font-display: "Playfair Display", "Source Serif Pro", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --c-government: #2a5b9c;
+  --c-education: #d97706;
+  --c-transportation: #0d9488;
+  --c-environment: #5a8a3a;
+  --c-housing: #8b3a62;
+  --c-social: #b8860b;
+  --c-safety: #c1272d;
+  --c-recreation: #7c4caa;
+  --c-uncategorized: #5c5c5c;
+  --c-health: #138a72;
+  --c-business: #4a4a8a;
+  --c-bigapps: #d65d8a;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+a { color: var(--focus); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 1280px; margin: 0 auto; padding: 24px; }
+
+header.site {
+  border-bottom: 1px solid var(--rule);
+  background: var(--surface);
+}
+header.site .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  flex-wrap: wrap;
+}
+header.site h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+header.site h1 small {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-mute);
+  margin-top: 2px;
+  letter-spacing: 0;
+}
+header.site nav a {
+  font-size: 14px;
+  margin-left: 16px;
+  color: var(--ink-soft);
+}
+
+.hero {
+  padding: 36px 0 12px;
+}
+.hero p.lede {
+  font-size: 18px;
+  max-width: 720px;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+}
+
+.search-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.search-row input[type="search"] {
+  flex: 1 1 320px;
+  min-width: 0;
+  font-size: 17px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  background: var(--surface);
+  font-family: inherit;
+}
+.search-row input[type="search"]:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 1px;
+}
+.search-row select {
+  font-size: 14px;
+  padding: 11px 12px;
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+  font-family: inherit;
+  color: var(--ink);
+}
+.search-row .clear {
+  font-size: 14px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface);
+  cursor: pointer;
+  font-family: inherit;
+}
+.search-row .clear:hover { border-color: var(--ink); }
+
+.stats {
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin: 8px 0 16px;
+}
+.stats strong { color: var(--ink); font-weight: 600; }
+
+/* Category map */
+.cat-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 16px 0 32px;
+}
+.cat-tile {
+  position: relative;
+  border-radius: 8px;
+  padding: 18px 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  font-family: inherit;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  min-height: 96px;
+}
+.cat-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.cat-tile.active {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+.cat-tile h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.cat-tile .count {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 600;
+}
+.cat-tile .count small {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-left: 4px;
+}
+
+.cat-tile.size-xl { grid-column: span 2; min-height: 140px; }
+.cat-tile.size-xl .count { font-size: 42px; }
+.cat-tile.size-l { min-height: 120px; }
+.cat-tile.size-l .count { font-size: 34px; }
+
+/* Category color application */
+.cat-tile[data-cat="City Government"] { background: var(--c-government); }
+.cat-tile[data-cat="Education"] { background: var(--c-education); }
+.cat-tile[data-cat="Transportation"] { background: var(--c-transportation); }
+.cat-tile[data-cat="Environment"] { background: var(--c-environment); }
+.cat-tile[data-cat="Housing & Development"] { background: var(--c-housing); }
+.cat-tile[data-cat="Social Services"] { background: var(--c-social); }
+.cat-tile[data-cat="Public Safety"] { background: var(--c-safety); }
+.cat-tile[data-cat="Recreation"] { background: var(--c-recreation); }
+.cat-tile[data-cat="Uncategorized"] { background: var(--c-uncategorized); }
+.cat-tile[data-cat="Health"] { background: var(--c-health); }
+.cat-tile[data-cat="Business"] { background: var(--c-business); }
+.cat-tile[data-cat="NYC BigApps"] { background: var(--c-bigapps); }
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--ink-mute);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card[data-cat="City Government"] { border-left-color: var(--c-government); }
+.card[data-cat="Education"] { border-left-color: var(--c-education); }
+.card[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
+.card[data-cat="Environment"] { border-left-color: var(--c-environment); }
+.card[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
+.card[data-cat="Social Services"] { border-left-color: var(--c-social); }
+.card[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
+.card[data-cat="Recreation"] { border-left-color: var(--c-recreation); }
+.card[data-cat="Uncategorized"] { border-left-color: var(--c-uncategorized); }
+.card[data-cat="Health"] { border-left-color: var(--c-health); }
+.card[data-cat="Business"] { border-left-color: var(--c-business); }
+.card[data-cat="NYC BigApps"] { border-left-color: var(--c-bigapps); }
+
+.card h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.card h4 a { color: var(--ink); }
+.card h4 a:hover { color: var(--focus); }
+.card .summary {
+  font-size: 14px;
+  color: var(--ink-soft);
+  flex: 1;
+}
+.card .meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--ink-mute);
+  align-items: center;
+}
+.card .agency {
+  font-weight: 600;
+  color: var(--ink);
+}
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.pill.fresh { background: #e0efe2; color: #2d6b3a; }
+.pill.recent { background: #fdf3d8; color: #8a6914; }
+.pill.stale { background: #f4dfdf; color: #8a2a2a; }
+.pill.type { background: #ece8df; color: #4a4a4a; }
+
+.empty {
+  padding: 48px 16px;
+  text-align: center;
+  color: var(--ink-mute);
+  border: 1px dashed var(--rule);
+  border-radius: 8px;
+}
+
+footer.site {
+  border-top: 1px solid var(--rule);
+  margin-top: 48px;
+  padding: 24px 0;
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+footer.site a { color: var(--ink-soft); }
+
+@media (max-width: 600px) {
+  header.site h1 { font-size: 22px; }
+  .hero p.lede { font-size: 16px; }
+  .cat-tile.size-xl { grid-column: span 1; }
+  .cat-map { grid-template-columns: repeat(2, 1fr); }
+  .cards { grid-template-columns: 1fr; }
+}
