@@ -226,6 +226,42 @@ header.site nav a {
   color: var(--ink-soft);
   margin-top: 2px;
 }
+.weekly-delta {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.weekly-delta.up { color: #2d6b3a; }
+.weekly-delta.down { color: #8a2a2a; }
+.weekly-delta.flat { color: var(--ink-mute); }
+.sparkline {
+  width: 100%;
+  height: 28px;
+  margin: 4px 0 2px;
+  display: block;
+  overflow: visible;
+}
+.spark-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+.spark-area {
+  fill: currentColor;
+  opacity: 0.12;
+  stroke: none;
+}
+.spark-dot {
+  fill: currentColor;
+}
+.weekly-card[data-cat="Public Safety"] .sparkline { color: var(--c-safety); }
+.weekly-card[data-cat="Health"] .sparkline { color: var(--c-health); }
+.weekly-card[data-cat="Social Services"] .sparkline { color: var(--c-social); }
+.weekly-card[data-cat="Housing & Development"] .sparkline { color: var(--c-housing); }
+.weekly-card[data-cat="Government Operations"] .sparkline { color: var(--c-government); }
 .weekly-source {
   font-size: 11px;
   color: var(--ink-mute);
@@ -246,9 +282,13 @@ header.site nav a {
   margin: 8px 0 24px;
   display: grid;
   gap: 14px;
+  min-width: 0;
 }
 .fresh-row {
-  min-width: 0; /* let the grid item shrink so .fresh-track can clip-and-scroll */
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden; /* contain the inner flex track */
+  position: relative;
 }
 .fresh-row h2 {
   font-family: var(--font-display);
@@ -256,14 +296,31 @@ header.site nav a {
   margin: 0 0 8px;
   font-weight: 600;
 }
+/* Right-edge fade hint that more tiles are scrollable */
+.fresh-row::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 36px; /* below the h2 */
+  bottom: 6px;
+  width: 40px;
+  background: linear-gradient(to right, rgba(250,248,243,0), var(--bg) 80%);
+  pointer-events: none;
+}
 .fresh-track {
   display: flex;
   gap: 10px;
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 6px;
   scroll-snap-type: x proximity;
   min-width: 0;
+  max-width: 100%;
+  scrollbar-width: thin;
 }
+.fresh-track::-webkit-scrollbar { height: 8px; }
+.fresh-track::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+.fresh-track::-webkit-scrollbar-thumb:hover { background: var(--ink-mute); }
 .fresh-tile {
   flex: 0 0 240px;
   scroll-snap-align: start;

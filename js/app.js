@@ -195,6 +195,36 @@
   }
 
   // ---------- Weekly stats ----------
+  function sparklineSVG(trend) {
+    if (!trend || trend.length < 2) return "";
+    const W = 120, H = 28, pad = 2;
+    const max = Math.max(...trend);
+    const min = Math.min(...trend);
+    const range = Math.max(1, max - min);
+    const step = (W - pad * 2) / (trend.length - 1);
+    const pts = trend.map((v, i) => {
+      const x = pad + i * step;
+      const y = H - pad - ((v - min) / range) * (H - pad * 2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    const last = pts[pts.length - 1].split(",");
+    const path = `M${pts.join(" L")}`;
+    const area = `M${pts[0]} L${pts.join(" L")} L${(pad + (trend.length - 1) * step).toFixed(1)},${H - pad} L${pad},${H - pad} Z`;
+    return `<svg class="sparkline" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+      <path d="${area}" class="spark-area"/>
+      <path d="${path}" class="spark-line"/>
+      <circle cx="${last[0]}" cy="${last[1]}" r="2.5" class="spark-dot"/>
+    </svg>`;
+  }
+
+  function deltaHTML(pct) {
+    if (pct == null) return "";
+    const dir = pct > 0 ? "up" : pct < 0 ? "down" : "flat";
+    const arrow = pct > 0 ? "↑" : pct < 0 ? "↓" : "→";
+    const sign = pct > 0 ? "+" : "";
+    return `<span class="weekly-delta ${dir}">${arrow} ${sign}${pct}% vs prior week</span>`;
+  }
+
   function renderWeeklyStats(stats) {
     if (!stats || !stats.stats || !stats.stats.length) return;
     const wrap = document.getElementById("weekly-stats");
@@ -202,14 +232,19 @@
     const sub = document.getElementById("weekly-sub");
     wrap.hidden = false;
     const computed = (stats.computed_at || "").slice(0, 10);
-    sub.innerHTML = `A few numbers pulled from City datasets refreshed in ${escapeHTML(stats.window_label || "the past week")}. Computed ${escapeHTML(computed)}. Each card links to its source dataset.`;
+    const weeks = stats.trend_weeks || 12;
+    sub.innerHTML = `A few numbers pulled from City datasets refreshed in ${escapeHTML(stats.window_label || "the past week")}, with ${weeks}-week trend lines for context. Computed ${escapeHTML(computed)}. Each card links to its source dataset.`;
     grid.innerHTML = stats.stats.map((s) => {
       const cat = s.category || "Government Operations";
       const link = s.dataset_id ? `https://data.cityofnewyork.us/d/${encodeURIComponent(s.dataset_id)}` : null;
       const name = escapeHTML(s.dataset_name || "");
+      const spark = sparklineSVG(s.trend);
+      const delta = deltaHTML(s.delta_pct);
       const inner = `
         <span class="weekly-headline">${escapeHTML(s.headline)}</span>
         <span class="weekly-label">${escapeHTML(s.label)}</span>
+        ${delta}
+        ${spark}
         <span class="weekly-sub2">${escapeHTML(s.sub || "")}</span>
         <span class="weekly-source">${name}</span>`;
       return link
