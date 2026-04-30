@@ -37,7 +37,16 @@
   <p>This is the same API the City uses to power its own portal search. Every record includes the dataset's name, agency-written description, the City's category assignment, tags, last-updated timestamp, and view counts. We pull the full catalog in pages of 100.</p>
 
   <h2>Categories</h2>
-  <p>Categories on the home page are the City's own assignments (<code>domain_category</code> in the API). Datasets the City didn't categorize show up under "Uncategorized." We don't reassign or invent categories. The 12 buckets you see are exactly the ones New York City publishes.</p>
+  <p>Categories on the home page are mostly the City's own assignments (<code>domain_category</code> in the Socrata API). Where the City didn't categorize a dataset, it appears under "Uncategorized."</p>
+  <p><strong>One deliberate departure from the City's labeling:</strong> the City's "City Government" bucket holds 904 datasets, which is unhelpful — every dataset on the portal is technically city government data. We split that one bucket into five more useful buckets using a deterministic, transparent rule:</p>
+  <ul>
+    <li><strong>Maps &amp; Geography</strong> — datasets tagged GIS, map, aerial, ortho, boundary, district, planimetric, or imagery; or whose name contains those terms.</li>
+    <li><strong>Finance &amp; Budget</strong> — published by the Department of Finance, Office of Management and Budget, Comptroller, Independent Budget Office, or otherwise about budget, spending, revenue, taxes, or audits.</li>
+    <li><strong>Procurement &amp; Contracts</strong> — published by Mayor's Office of Contract Services or Department of Citywide Administrative Services, or otherwise about contracts, procurement, vendors, RFPs, or purchasing.</li>
+    <li><strong>Elections &amp; Ethics</strong> — published by the Campaign Finance Board, Conflicts of Interest Board, or Board of Elections, or about elections, voters, campaigns, ethics, or lobbying.</li>
+    <li><strong>Government Operations</strong> — everything else from the original City Government bucket (Mayor's Office of Operations, Records and Information Services, etc.).</li>
+  </ul>
+  <p>A small number of Parks Department datasets that the City filed under City Government are moved to Recreation. The exact rule is in <code>refine_government()</code> in <code>build/fetch_catalog.py</code>. All other City categories are preserved as published.</p>
 
   <h2>Plain-language summaries</h2>
   <p>Each card shows a one-sentence summary. That summary is the first sentence of the agency-written description, with HTML markup, entity codes, and stray whitespace removed and the length capped at 240 characters. We do not paraphrase or rewrite agency language at this stage. Future iterations may add a model-generated plain-English layer, which would be clearly labeled as such on the methodology page when it ships.</p>

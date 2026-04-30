@@ -74,6 +74,66 @@ def first_sentence(s, max_chars=240):
     return sent
 
 
+_GIS_KEYWORDS = ("map", "gis", "aerial", "imagery", "ortho", "photogr", "tile", "boundary", "boundaries", "planimetric", "geograph", "shapefile", "district", "lion", "pluto", "lots")
+_FINANCE_AGENCIES = ("Department of Finance", "Office of Management and Budget", "OMB", "Comptroller", "Independent Budget", "IBO", "Tax")
+_FINANCE_KEYWORDS = ("budget", "spending", "expenditure", "revenue", "tax", "fiscal", "finance", "audit")
+_PROCUREMENT_AGENCIES = ("Contract Services", "MOCS", "Citywide Administrative", "DCAS")
+_PROCUREMENT_KEYWORDS = ("contract", "procurement", "vendor", "rfp", "bid", "purchas")
+_ELECTIONS_AGENCIES = ("Campaign Finance", "CFB", "Conflicts of Interest", "COIB", "Board of Elections", "Voter", "Elections")
+_ELECTIONS_KEYWORDS = ("election", "voter", "campaign", "ethics", "conflict of interest", "lobby")
+_OPERATIONS_AGENCIES = ("Mayor's Office of Operations", "Mayor’s Office of Operations", "OPS", "311", "Records and Information")
+
+
+def _hay(rec):
+    parts = [rec.get("name", ""), rec.get("description", ""), " ".join(rec.get("tags", []) or []), rec.get("agency", "")]
+    return " ".join(parts).lower()
+
+
+def refine_government(rec):
+    """Split the catch-all 'City Government' bucket into meaningful sub-buckets."""
+    if rec["category"] != "City Government":
+        return rec["category"]
+    agency = rec.get("agency", "") or ""
+    name = rec.get("name", "") or ""
+    tags = rec.get("tags", []) or []
+    hay = _hay(rec)
+    tag_set = {t.lower() for t in tags}
+
+    # Maps & GIS — strong tag signal
+    if any(k in tag_set for k in ("gis", "map", "aerial", "imagery", "ortho", "boundary", "boundaries", "planimetric", "tile", "district", "districts")):
+        return "Maps & Geography"
+    if any(k in name.lower() for k in ("map of", "boundary", "boundaries", "shapefile", "aerial", "ortho", "pluto")):
+        return "Maps & Geography"
+
+    # Finance & budget
+    if any(a in agency for a in _FINANCE_AGENCIES):
+        return "Finance & Budget"
+    if any(k in hay for k in _FINANCE_KEYWORDS) and "school" not in name.lower():
+        return "Finance & Budget"
+
+    # Procurement & contracts
+    if any(a in agency for a in _PROCUREMENT_AGENCIES):
+        return "Procurement & Contracts"
+    if any(k in hay for k in _PROCUREMENT_KEYWORDS):
+        return "Procurement & Contracts"
+
+    # Elections & ethics
+    if any(a in agency for a in _ELECTIONS_AGENCIES):
+        return "Elections & Ethics"
+    if any(k in hay for k in _ELECTIONS_KEYWORDS):
+        return "Elections & Ethics"
+
+    # Parks (mis-categorized in gov bucket)
+    if "Parks" in agency:
+        return "Recreation"
+
+    # Operations & administrative
+    if any(a in agency for a in _OPERATIONS_AGENCIES):
+        return "Government Operations"
+
+    return "Government Operations"
+
+
 def to_record(item):
     r = item.get("resource", {})
     c = item.get("classification", {})
@@ -108,6 +168,9 @@ def main():
     raw = fetch_all()
     records = [to_record(it) for it in raw]
     records = [r for r in records if r["id"] and r["name"]]
+    # Refine the catch-all "City Government" bucket
+    for r in records:
+        r["category"] = refine_government(r)
     # de-dupe by id, preserving first occurrence
     seen = set()
     unique = []

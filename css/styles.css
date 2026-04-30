@@ -11,9 +11,13 @@
   --font-display: "Playfair Display", "Source Serif Pro", Georgia, serif;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-  --c-government: #2a5b9c;
   --c-education: #d97706;
   --c-transportation: #0d9488;
+  --c-government: #2a5b9c;
+  --c-finance: #1e6091;
+  --c-maps: #4f7d3a;
+  --c-procurement: #6b6b3f;
+  --c-elections: #993d1e;
   --c-environment: #5a8a3a;
   --c-housing: #8b3a62;
   --c-social: #b8860b;
@@ -185,7 +189,11 @@ header.site nav a {
 .cat-tile.size-l .count { font-size: 34px; }
 
 /* Category color application */
-.cat-tile[data-cat="City Government"] { background: var(--c-government); }
+.cat-tile[data-cat="Government Operations"] { background: var(--c-government); }
+.cat-tile[data-cat="Finance & Budget"] { background: var(--c-finance); }
+.cat-tile[data-cat="Maps & Geography"] { background: var(--c-maps); }
+.cat-tile[data-cat="Procurement & Contracts"] { background: var(--c-procurement); }
+.cat-tile[data-cat="Elections & Ethics"] { background: var(--c-elections); }
 .cat-tile[data-cat="Education"] { background: var(--c-education); }
 .cat-tile[data-cat="Transportation"] { background: var(--c-transportation); }
 .cat-tile[data-cat="Environment"] { background: var(--c-environment); }
@@ -214,7 +222,11 @@ header.site nav a {
   flex-direction: column;
   gap: 8px;
 }
-.card[data-cat="City Government"] { border-left-color: var(--c-government); }
+.card[data-cat="Government Operations"] { border-left-color: var(--c-government); }
+.card[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
+.card[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }
+.card[data-cat="Procurement & Contracts"] { border-left-color: var(--c-procurement); }
+.card[data-cat="Elections & Ethics"] { border-left-color: var(--c-elections); }
 .card[data-cat="Education"] { border-left-color: var(--c-education); }
 .card[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
 .card[data-cat="Environment"] { border-left-color: var(--c-environment); }
