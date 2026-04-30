@@ -61,8 +61,27 @@
   </table>
   <p>Note: "updated" reflects the dataset's data refresh, not metadata edits. Some agencies update on schedules (daily, monthly, quarterly); a "stale" pill doesn't always mean the dataset is abandoned, only that it hasn't refreshed in a year.</p>
 
+  <h2>Agency normalization</h2>
+  <p>Agency names on the City portal are inconsistent — the Department of Finance appears as both "Department of Finance" and "Department of Finance (DOF)", and curly apostrophes vs. straight create more duplicates ("Mayor's" vs. "Mayor's"). For the agency filter, we group records whose agency name matches after stripping a trailing parenthesized acronym, normalizing apostrophes, and lowercasing. The display name is the most common original spelling for that group. The exact rule is in <code>normalize_agency()</code> in <code>build/fetch_catalog.py</code>.</p>
+
   <h2>Search</h2>
-  <p>Search runs entirely in your browser using <a href="https://fusejs.io/" target="_blank" rel="noopener">Fuse.js</a> across dataset names, summaries, tags, and publishing agencies. It's a fuzzy match — typos and partial matches will still return results — and weights names highest. There's no logging, tracking, or server-side query handling.</p>
+  <p>Free-text search runs entirely in your browser using <a href="https://fusejs.io/" target="_blank" rel="noopener">Fuse.js</a> across dataset names, summaries, tags, and publishing agencies. It's a fuzzy match — typos and partial matches will still return results — and weights names highest. There's no logging, tracking, or server-side query handling.</p>
+  <p>The search box also supports a small set of operators, parsed before the fuzzy match runs:</p>
+  <ul>
+    <li><code>"motor vehicle"</code> — quoted phrase</li>
+    <li><code>agency:nypd</code>, <code>cat:"public safety"</code>, <code>tag:permits</code>, <code>type:map</code> — field filters (substring match against the canonical value)</li>
+    <li><code>updated:30d</code> / <code>updated:1y</code> / <code>updated:old</code> — freshness shortcut</li>
+    <li><code>-tag:historical</code> — leading minus negates a field filter</li>
+  </ul>
+
+  <h2>"What's fresh" strip</h2>
+  <p>Two horizontal carousels at the top of the page surface what's actually moving in the catalog: <strong>brand new this month</strong> (datasets whose <code>createdAt</code> is in the last 30 days, sorted by creation date) and <strong>updated this week</strong> (datasets whose <code>data_updated_at</code> is in the last 7 days, sorted by view count). Both lists are precomputed during the weekly build, so no client-side scanning is needed.</p>
+
+  <h2>Journalist picks</h2>
+  <p>About thirty datasets carry a gold star — these are an explicitly editorial selection of the datasets New York City newsrooms most often rely on (NYPD complaint data, 311, motor-vehicle collisions, ACRIS deeds, restaurant inspections, evictions, school quality, payroll, campaign finance, lobbying, jail population, and a few others). Each pick has a hand-written "why journalists use it" note and a "gotcha" callout. The list is in <code>data/journalist_picks.json</code> and is curated, not algorithmic — pull requests welcome. This layer is editorial; everything else on the page is mechanical.</p>
+
+  <h2>Per-category feeds</h2>
+  <p>For every category we publish a JSON and an RSS 2.0 feed of the most recently updated datasets, plus a master "newest datasets" feed. Feeds live under <code>feeds/</code> and are regenerated on every weekly rebuild by <code>build/generate_feeds.py</code>.</p>
 
   <h2>Refresh cadence</h2>
   <p>The catalog is rebuilt weekly. The "Catalog refreshed" date in the search bar reflects the last successful fetch. Datasets new to the City portal appear in the explorer at the next rebuild.</p>

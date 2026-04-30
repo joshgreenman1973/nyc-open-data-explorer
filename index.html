@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="alternate" type="application/rss+xml" title="NYC Open Data — most recently updated" href="feeds/all.xml">
+<link rel="alternate" type="application/rss+xml" title="NYC Open Data — newest datasets" href="feeds/new.xml">
 </head>
 <body>
 <header class="site">
@@ -19,6 +21,7 @@
     </h1>
     <nav>
       <a href="methodology.html">Methodology</a>
+      <a href="feeds/all.xml">RSS</a>
       <a href="https://data.cityofnewyork.us/" target="_blank" rel="noopener">Official portal</a>
     </nav>
   </div>
@@ -26,10 +29,10 @@
 
 <main class="wrap">
   <section class="hero">
-    <p class="lede">The City publishes thousands of datasets, but the official portal makes them hard to find. Browse by category, search in plain language, and see what's been updated recently.</p>
+    <p class="lede">The City publishes thousands of datasets, but the official portal makes them hard to find. Browse by category, search in plain language, see what's been updated this week.</p>
 
     <div class="search-row" role="search">
-      <input id="q" type="search" placeholder="Search datasets — try &ldquo;shooting&rdquo;, &ldquo;311 noise&rdquo;, &ldquo;school quality&rdquo;" aria-label="Search datasets">
+      <input id="q" type="search" placeholder="Search datasets — try &ldquo;shooting&rdquo;, &ldquo;agency:nypd&rdquo;, &ldquo;tag:permits&rdquo;" aria-label="Search datasets">
       <select id="sort" aria-label="Sort">
         <option value="relevance">Sort: best match</option>
         <option value="views">Most viewed</option>
@@ -42,24 +45,80 @@
         <option value="365">Updated in last year</option>
         <option value="stale">Older than 1 year</option>
       </select>
-      <button class="clear" id="clear" type="button">Reset</button>
+      <button class="clear" id="clear" type="button">Reset all</button>
     </div>
+    <details class="search-tips">
+      <summary>Search tips</summary>
+      <ul>
+        <li><code>"motor vehicle"</code> — exact phrase</li>
+        <li><code>agency:nypd</code> — only NYPD datasets</li>
+        <li><code>tag:permits</code> — datasets tagged "permits"</li>
+        <li><code>type:map</code> — only maps (or <code>chart</code>, <code>file</code>, <code>dataset</code>)</li>
+        <li><code>cat:"public safety"</code> — limit to a category</li>
+        <li><code>updated:30d</code> — updated in last 30 days (or <code>1y</code>, <code>old</code>)</li>
+        <li><code>-tag:historical</code> — exclude a tag</li>
+      </ul>
+    </details>
+    <div class="active-chips" id="active-chips" aria-live="polite"></div>
     <div class="stats" id="stats">Loading the catalog&hellip;</div>
   </section>
 
-  <section id="cat-map" class="cat-map" aria-label="Category map"></section>
+  <section class="fresh-strip" id="fresh-strip" aria-label="What's fresh">
+    <div class="fresh-row">
+      <h2 id="fresh-new-label">Brand new this month</h2>
+      <div class="fresh-track" id="fresh-new"></div>
+    </div>
+    <div class="fresh-row">
+      <h2>Updated this week</h2>
+      <div class="fresh-track" id="fresh-updated"></div>
+    </div>
+  </section>
 
-  <section id="results" class="cards" aria-live="polite"></section>
-  <div id="empty" class="empty" hidden>No datasets match your search. Try a different keyword or reset filters.</div>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Filters">
+      <div class="filter-group">
+        <h3>Quick filters</h3>
+        <label class="checkbox"><input type="checkbox" id="picks-only"> <span>Journalist picks <span class="star">★</span></span></label>
+      </div>
+
+      <div class="filter-group">
+        <h3>View type</h3>
+        <div class="pill-row" id="type-pills"></div>
+      </div>
+
+      <div class="filter-group">
+        <h3>Agency <small id="agency-count"></small></h3>
+        <input type="search" id="agency-search" class="mini-search" placeholder="Filter agencies">
+        <div class="checklist" id="agency-list"></div>
+        <button type="button" class="link-btn" id="agency-toggle">Show all agencies</button>
+      </div>
+
+      <div class="filter-group">
+        <h3>Top tags</h3>
+        <div class="tag-cloud" id="tag-cloud"></div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <section id="cat-map" class="cat-map" aria-label="Category map"></section>
+      <section id="results" class="cards" aria-live="polite"></section>
+      <div id="empty" class="empty" hidden></div>
+    </div>
+  </div>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Refreshed weekly. <a href="methodology.html">See methodology &rarr;</a>
+    Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Refreshed weekly.
+    <a href="methodology.html">See methodology &rarr;</a> &nbsp;·&nbsp;
+    <a href="feeds/all.xml">RSS: most-recently updated</a> &nbsp;·&nbsp;
+    <a href="feeds/new.xml">RSS: newest datasets</a>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+<script src="js/categoryDescriptions.js"></script>
+<script src="js/searchParser.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

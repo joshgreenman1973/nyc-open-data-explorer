@@ -1,0 +1,506 @@
+{
+  "title": "NYC Open Data — Education (recently updated)",
+  "generated": "2026-04-30T18:16:45+00:00",
+  "items": [
+    {
+      "id": "dnpx-dfnc",
+      "name": "School Quality Reports Data",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2026-04-09T00:20:18.000Z",
+      "created": "2024-05-16T19:23:37.000Z",
+      "views": 7597,
+      "url": "https://data.cityofnewyork.us/d/dnpx-dfnc"
+    },
+    {
+      "id": "p8e4-uwuv",
+      "name": "Anticipated RFP",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-04-02T13:29:17.000Z",
+      "created": "2015-02-17T22:17:26.000Z",
+      "views": 2408,
+      "url": "https://data.cityofnewyork.us/d/p8e4-uwuv"
+    },
+    {
+      "id": "bzjf-rmtp",
+      "name": "Current RFP",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-04-02T13:29:14.000Z",
+      "created": "2015-01-28T21:05:11.000Z",
+      "views": 4716,
+      "url": "https://data.cityofnewyork.us/d/bzjf-rmtp"
+    },
+    {
+      "id": "n4tc-j6kh",
+      "name": "Inspections Requested",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-04-01T20:02:16.000Z",
+      "created": "2015-08-12T13:45:30.000Z",
+      "views": 1881,
+      "url": "https://data.cityofnewyork.us/d/n4tc-j6kh"
+    },
+    {
+      "id": "6246-94tp",
+      "name": "Observations And Statuses For Inspections",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-04-01T20:01:44.000Z",
+      "created": "2015-08-12T13:46:01.000Z",
+      "views": 1488,
+      "url": "https://data.cityofnewyork.us/d/6246-94tp"
+    },
+    {
+      "id": "9ddq-vbjj",
+      "name": "Five Year Summary By Citywide Category",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-03-30T15:03:41.000Z",
+      "created": "2017-01-31T14:54:32.000Z",
+      "views": 1164,
+      "url": "https://data.cityofnewyork.us/d/9ddq-vbjj"
+    },
+    {
+      "id": "24nr-gahi",
+      "name": "Five Year Plan Summary by Capital Category",
+      "category": "Education",
+      "agency": "NYC School Construction Authority (SCA)",
+      "updated": "2026-03-30T15:01:16.000Z",
+      "created": "2016-06-02T14:46:59.000Z",
+      "views": 1354,
+      "url": "https://data.cityofnewyork.us/d/24nr-gahi"
+    },
+    {
+      "id": "esmb-8zkm",
+      "name": "School Based Programs by Borough",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-03-26T17:33:49.000Z",
+      "created": "2016-06-02T14:47:12.000Z",
+      "views": 2456,
+      "url": "https://data.cityofnewyork.us/d/esmb-8zkm"
+    },
+    {
+      "id": "kydh-ijhc",
+      "name": "Replacement Projects by school",
+      "category": "Education",
+      "agency": "NYC School Construction Authority (SCA)",
+      "updated": "2026-03-26T17:32:08.000Z",
+      "created": "2016-05-31T21:48:40.000Z",
+      "views": 1223,
+      "url": "https://data.cityofnewyork.us/d/kydh-ijhc"
+    },
+    {
+      "id": "4zdr-zwdi",
+      "name": "Pre-K Project Site Location",
+      "category": "Education",
+      "agency": "Other / unspecified",
+      "updated": "2026-03-26T17:27:26.000Z",
+      "created": "2017-12-15T18:27:37.000Z",
+      "views": 967,
+      "url": "https://data.cityofnewyork.us/d/4zdr-zwdi"
+    },
+    {
+      "id": "nfz9-tzba",
+      "name": "Pre-K Projects By School",
+      "category": "Education",
+      "agency": "Other / unspecified",
+      "updated": "2026-03-26T17:26:25.000Z",
+      "created": "2017-12-15T18:21:40.000Z",
+      "views": 1297,
+      "url": "https://data.cityofnewyork.us/d/nfz9-tzba"
+    },
+    {
+      "id": "a94k-kjys",
+      "name": "Capacity Projects by School",
+      "category": "Education",
+      "agency": "NYC School Construction Authority (SCA)",
+      "updated": "2026-03-26T17:15:06.000Z",
+      "created": "2016-05-31T21:48:33.000Z",
+      "views": 2337,
+      "url": "https://data.cityofnewyork.us/d/a94k-kjys"
+    },
+    {
+      "id": "dtmw-avzj",
+      "name": "Capacity Projects in Process Site Locations",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-03-26T16:49:56.000Z",
+      "created": "2018-11-23T15:21:51.000Z",
+      "views": 721,
+      "url": "https://data.cityofnewyork.us/d/dtmw-avzj"
+    },
+    {
+      "id": "cwqt-nvfg",
+      "name": "Cancelled Projects",
+      "category": "Education",
+      "agency": "NYC School Construction Authority (SCA)",
+      "updated": "2026-03-26T16:43:26.000Z",
+      "created": "2016-05-31T21:48:27.000Z",
+      "views": 1438,
+      "url": "https://data.cityofnewyork.us/d/cwqt-nvfg"
+    },
+    {
+      "id": "yiqb-mq9h",
+      "name": "Advanced Projects",
+      "category": "Education",
+      "agency": "NYC School Construction Authority (SCA)",
+      "updated": "2026-03-26T16:37:00.000Z",
+      "created": "2016-05-31T21:48:23.000Z",
+      "views": 1259,
+      "url": "https://data.cityofnewyork.us/d/yiqb-mq9h"
+    },
+    {
+      "id": "7xjx-2mhj",
+      "name": "Added Projects",
+      "category": "Education",
+      "agency": "NYC School Construction Authority (SCA)",
+      "updated": "2026-03-26T16:31:48.000Z",
+      "created": "2016-05-31T21:47:43.000Z",
+      "views": 1170,
+      "url": "https://data.cityofnewyork.us/d/7xjx-2mhj"
+    },
+    {
+      "id": "wavz-fkw8",
+      "name": "DOE Building Space Usage",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2026-01-06T14:33:53.000Z",
+      "created": "2015-06-10T20:15:58.000Z",
+      "views": 4959,
+      "url": "https://data.cityofnewyork.us/d/wavz-fkw8"
+    },
+    {
+      "id": "unse-x4pq",
+      "name": "Specialized High Schools Admissions Overall Summary",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-12-04T21:48:57.000Z",
+      "created": "2022-06-08T22:24:33.000Z",
+      "views": 5023,
+      "url": "https://data.cityofnewyork.us/d/unse-x4pq"
+    },
+    {
+      "id": "k8ah-28f4",
+      "name": "Specialized High Schools Admissions Tests Results",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-12-04T21:48:52.000Z",
+      "created": "2021-05-19T16:19:07.000Z",
+      "views": 9936,
+      "url": "https://data.cityofnewyork.us/d/k8ah-28f4"
+    },
+    {
+      "id": "2t89-756w",
+      "name": "Suspension Report NYPD Contacts (2015-2018)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-11-12T20:24:32.000Z",
+      "created": "2025-11-12T16:46:43.000Z",
+      "views": 413,
+      "url": "https://data.cityofnewyork.us/d/2t89-756w"
+    },
+    {
+      "id": "cfuy-6eha",
+      "name": "Average Class Size 2017-2019 (Preliminary)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-11-06T22:13:26.000Z",
+      "created": "2025-10-22T20:22:02.000Z",
+      "views": 290,
+      "url": "https://data.cityofnewyork.us/d/cfuy-6eha"
+    },
+    {
+      "id": "npwk-bcm6",
+      "name": "Class Size Report (2006-2007)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-11-06T18:02:14.000Z",
+      "created": "2025-11-06T17:56:13.000Z",
+      "views": 374,
+      "url": "https://data.cityofnewyork.us/d/npwk-bcm6"
+    },
+    {
+      "id": "48wd-x25j",
+      "name": "Multiple Removals 2015-2018",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-10-30T18:10:20.000Z",
+      "created": "2025-10-30T16:41:13.000Z",
+      "views": 246,
+      "url": "https://data.cityofnewyork.us/d/48wd-x25j"
+    },
+    {
+      "id": "mg8s-7r2b",
+      "name": "Attendance Results 2013-2019",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-10-23T17:01:22.000Z",
+      "created": "2025-10-23T16:33:01.000Z",
+      "views": 843,
+      "url": "https://data.cityofnewyork.us/d/mg8s-7r2b"
+    },
+    {
+      "id": "5ghg-dyn6",
+      "name": "Midday Trips",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-10-08T14:51:15.000Z",
+      "created": "2019-07-03T13:48:57.000Z",
+      "views": 824,
+      "url": "https://data.cityofnewyork.us/d/5ghg-dyn6"
+    },
+    {
+      "id": "a2gn-nyzs",
+      "name": "School Discharge Reporting (Local Law 42)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-10-03T13:49:18.000Z",
+      "created": "2025-10-02T19:28:43.000Z",
+      "views": 455,
+      "url": "https://data.cityofnewyork.us/d/a2gn-nyzs"
+    },
+    {
+      "id": "rcd4-qkns",
+      "name": "Urban Park Ranger Engagement Tracker",
+      "category": "Education",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2025-09-11T18:51:24.000Z",
+      "created": "2018-10-30T20:46:54.000Z",
+      "views": 1768,
+      "url": "https://data.cityofnewyork.us/d/rcd4-qkns"
+    },
+    {
+      "id": "ft5g-idx8",
+      "name": "School Age Ridership",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-08-15T13:52:06.000Z",
+      "created": "2019-07-03T13:53:26.000Z",
+      "views": 1024,
+      "url": "https://data.cityofnewyork.us/d/ft5g-idx8"
+    },
+    {
+      "id": "r773-ytwa",
+      "name": "2013-2015 School Closure Discharge Reporting",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-08-13T20:03:28.000Z",
+      "created": "2025-08-13T19:48:36.000Z",
+      "views": 284,
+      "url": "https://data.cityofnewyork.us/d/r773-ytwa"
+    },
+    {
+      "id": "abh8-frsx",
+      "name": "2015-2018 School Closure Discharge Reporting",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-08-13T19:12:31.000Z",
+      "created": "2025-08-13T19:01:47.000Z",
+      "views": 276,
+      "url": "https://data.cityofnewyork.us/d/abh8-frsx"
+    },
+    {
+      "id": "hi2h-7vr7",
+      "name": "Local Law 14 Health Data (HlV/AIDS Lessons)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-07-02T19:41:37.000Z",
+      "created": "2025-07-02T19:40:06.000Z",
+      "views": 331,
+      "url": "https://data.cityofnewyork.us/d/hi2h-7vr7"
+    },
+    {
+      "id": "qq3t-y24y",
+      "name": "Local Law 14 Health Data (Middle School)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-07-02T19:39:27.000Z",
+      "created": "2025-07-02T19:37:13.000Z",
+      "views": 281,
+      "url": "https://data.cityofnewyork.us/d/qq3t-y24y"
+    },
+    {
+      "id": "msnn-ey3g",
+      "name": "Local Law 14 Health Data (High School)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-07-02T19:33:43.000Z",
+      "created": "2025-07-02T19:30:32.000Z",
+      "views": 280,
+      "url": "https://data.cityofnewyork.us/d/msnn-ey3g"
+    },
+    {
+      "id": "9ksk-35jf",
+      "name": "Class Size Report Distribution Summary (2010-2015)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-06-04T14:35:03.000Z",
+      "created": "2025-06-04T13:38:08.000Z",
+      "views": 550,
+      "url": "https://data.cityofnewyork.us/d/9ksk-35jf"
+    },
+    {
+      "id": "nbpb-zygj",
+      "name": "Class Size Report Detail Summary (2010-2015)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2025-06-04T13:38:59.000Z",
+      "created": "2025-06-03T20:57:42.000Z",
+      "views": 218,
+      "url": "https://data.cityofnewyork.us/d/nbpb-zygj"
+    },
+    {
+      "id": "rmsj-k8gu",
+      "name": "Watershed Water Quality - Wastewater Qualifiers",
+      "category": "Education",
+      "agency": "Department of Environmental Protection (DEP)",
+      "updated": "2025-05-08T20:23:47.000Z",
+      "created": "2021-07-20T19:44:46.000Z",
+      "views": 906,
+      "url": "https://data.cityofnewyork.us/d/rmsj-k8gu"
+    },
+    {
+      "id": "n7ta-pz8k",
+      "name": "Projected Public School Ratio",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2025-04-17T17:45:39.000Z",
+      "created": "2013-07-02T19:04:34.000Z",
+      "views": 2295,
+      "url": "https://data.cityofnewyork.us/d/n7ta-pz8k"
+    },
+    {
+      "id": "8gpu-s594",
+      "name": "Application for State Aid",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2024-09-25T18:40:53.000Z",
+      "created": "2016-02-01T15:43:55.000Z",
+      "views": 1425,
+      "url": "https://data.cityofnewyork.us/d/8gpu-s594"
+    },
+    {
+      "id": "gk83-aa6y",
+      "name": "Update to Submitted State Aid Projects",
+      "category": "Education",
+      "agency": "School Construction Authority (SCA)",
+      "updated": "2024-09-25T18:34:02.000Z",
+      "created": "2016-02-01T15:43:31.000Z",
+      "views": 977,
+      "url": "https://data.cityofnewyork.us/d/gk83-aa6y"
+    },
+    {
+      "id": "9vpe-8zuf",
+      "name": "Graduation results for Cohorts 2001 to 2011 (Classes of 2005 to 2015)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-04-23T18:43:37.000Z",
+      "created": "2024-04-23T17:13:41.000Z",
+      "views": 731,
+      "url": "https://data.cityofnewyork.us/d/9vpe-8zuf"
+    },
+    {
+      "id": "mjm3-8dw8",
+      "name": "Graduation results for Cohorts 2012 to 2019 (Classes of 2016 to 2023)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-04-04T20:54:10.000Z",
+      "created": "2024-04-04T17:22:11.000Z",
+      "views": 1991,
+      "url": "https://data.cityofnewyork.us/d/mjm3-8dw8"
+    },
+    {
+      "id": "9uqq-k6t8",
+      "name": "English Language Arts (ELA) Test Results 2006-2012",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-04-03T16:11:09.000Z",
+      "created": "2024-04-03T14:04:22.000Z",
+      "views": 1193,
+      "url": "https://data.cityofnewyork.us/d/9uqq-k6t8"
+    },
+    {
+      "id": "iebs-5yhr",
+      "name": "English Language Arts (ELA) Test Results 2013-2023",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-04-02T20:04:35.000Z",
+      "created": "2024-04-02T16:51:40.000Z",
+      "views": 3383,
+      "url": "https://data.cityofnewyork.us/d/iebs-5yhr"
+    },
+    {
+      "id": "cmjf-yawu",
+      "name": "School Zones 2024-2025 (Elementary School)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-03-13T19:06:22.000Z",
+      "created": "2024-03-13T14:33:31.000Z",
+      "views": 7860,
+      "url": "https://data.cityofnewyork.us/d/cmjf-yawu"
+    },
+    {
+      "id": "shkv-c3w7",
+      "name": "School Zones Map 2024-2025",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-03-13T18:13:37.000Z",
+      "created": "2024-03-13T14:39:42.000Z",
+      "views": 15650,
+      "url": "https://data.cityofnewyork.us/d/shkv-c3w7"
+    },
+    {
+      "id": "ruu9-egea",
+      "name": "School Zones 2024-2025 (High School)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-03-13T18:13:37.000Z",
+      "created": "2024-03-13T14:24:51.000Z",
+      "views": 2409,
+      "url": "https://data.cityofnewyork.us/d/ruu9-egea"
+    },
+    {
+      "id": "t26j-jbq7",
+      "name": "School Zones 2024-2025 (Middle School)",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-03-13T14:33:03.000Z",
+      "created": "2024-03-13T14:30:07.000Z",
+      "views": 2007,
+      "url": "https://data.cityofnewyork.us/d/t26j-jbq7"
+    },
+    {
+      "id": "74kb-55u9",
+      "name": "Math Test Results 2013-2023",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-03-07T17:23:58.000Z",
+      "created": "2024-03-06T20:47:14.000Z",
+      "views": 4964,
+      "url": "https://data.cityofnewyork.us/d/74kb-55u9"
+    },
+    {
+      "id": "e5c5-ieuv",
+      "name": "Math Test Results 2006-2012",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-03-07T14:59:02.000Z",
+      "created": "2024-03-06T20:39:47.000Z",
+      "views": 1341,
+      "url": "https://data.cityofnewyork.us/d/e5c5-ieuv"
+    },
+    {
+      "id": "sgsi-66kk",
+      "name": "2016-17 - 2020-23 Citywide End-of-Year Attendance and Chronic Absenteeism Data",
+      "category": "Education",
+      "agency": "Department of Education (DOE)",
+      "updated": "2024-02-01T18:14:13.000Z",
+      "created": "2022-04-05T16:27:36.000Z",
+      "views": 7895,
+      "url": "https://data.cityofnewyork.us/d/sgsi-66kk"
+    }
+  ]
+}
