@@ -192,7 +192,12 @@
 
   // ---------- Category map ----------
   function renderCatMap() {
-    const cats = state.catalog.categories;
+    // Sort: count desc, but always push "Uncategorized" to the end
+    const cats = state.catalog.categories.slice().sort((a, b) => {
+      if (a.name === "Uncategorized") return 1;
+      if (b.name === "Uncategorized") return -1;
+      return b.count - a.count;
+    });
     els.catMap.innerHTML = cats.map((c) => {
       const sz = tileSize(c.count);
       const active = state.activeCat === c.name ? " active" : "";
