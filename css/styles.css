@@ -122,7 +122,7 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
   font-family: inherit;
 }
 .search-row input[type="search"]:focus { outline: 3px solid var(--focus); outline-offset: 1px; }
-.search-row select, .search-row .clear {
+.search-row select, .search-row .clear, .search-row .surprise {
   font-size: 14px;
   padding: 11px 12px;
   border: 1.5px solid var(--rule);
@@ -133,6 +133,13 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
   cursor: pointer;
 }
 .search-row .clear:hover, .search-row select:hover { border-color: var(--ink); }
+.search-row .surprise {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff;
+  font-weight: 600;
+}
+.search-row .surprise:hover { background: var(--accent); border-color: var(--accent); }
 
 .search-tips {
   font-size: 13px;
@@ -619,7 +626,11 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
   flex-direction: column;
   gap: 8px;
   position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.08s ease, transform 0.08s ease;
 }
+.card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.07); transform: translateY(-1px); }
+.card:hover h4 a { color: var(--focus); }
 .card[data-cat="Government Operations"] { border-left-color: var(--c-government); }
 .card[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
 .card[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }

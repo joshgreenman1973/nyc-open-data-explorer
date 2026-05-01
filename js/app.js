@@ -3,6 +3,7 @@
     q: document.getElementById("q"),
     sort: document.getElementById("sort"),
     clear: document.getElementById("clear"),
+    surprise: document.getElementById("surprise"),
     stats: document.getElementById("stats"),
     catMap: document.getElementById("cat-map"),
     results: document.getElementById("results"),
@@ -513,7 +514,7 @@
     const tagChips = (d.g || []).slice(0, 4).map((t) => `<button type="button" class="tag-mini" data-tag="${escapeAttr(t)}">${escapeHTML(t)}</button>`).join("");
     const isFav = state.favs.has(d.i);
     const favBtn = `<button type="button" class="fav-btn ${isFav ? 'on' : ''}" data-fav="${escapeAttr(d.i)}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}: ${escapeAttr(d.n)}" title="${isFav ? 'Saved to your favorites' : 'Save to favorites'}" aria-pressed="${isFav}">${isFav ? '♥' : '♡'}</button>`;
-    return `<article class="card" data-cat="${escapeAttr(d.c)}">
+    return `<article class="card" data-cat="${escapeAttr(d.c)}" data-url="${escapeAttr(url)}" tabindex="0" role="link" aria-label="Open ${escapeAttr(d.n)} on data.cityofnewyork.us">
       ${favBtn}
       <h4>${star}<a href="${url}" target="_blank" rel="noopener">${escapeHTML(d.n)}</a></h4>
       <div class="summary">${summary}${pick ? `<div class="pick-note"><strong>Why journalists use it:</strong> ${escapeHTML(pick.why)} ${pick.gotcha ? `<em>Gotcha: ${escapeHTML(pick.gotcha)}</em>` : ""}</div>` : ""}</div>
@@ -592,6 +593,24 @@
       const slice = list.slice(0, RENDER_CAP);
       els.results.innerHTML = slice.map(renderCard).join("") +
         (list.length > RENDER_CAP ? `<div class="empty" style="grid-column:1/-1">Showing the first ${RENDER_CAP} of ${list.length.toLocaleString()} matches. Refine your search or pick a category to narrow further.</div>` : "");
+      // Whole-card click: navigate to dataset URL unless click hit an inner control
+      const handleCardOpen = (card) => {
+        const u = card && card.dataset.url;
+        if (u) window.open(u, "_blank", "noopener");
+      };
+      els.results.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", (e) => {
+          if (e.target.closest(".fav-btn, .tag-mini, .pick-star, a, button")) return;
+          handleCardOpen(card);
+        });
+        // Keyboard accessibility: Enter or Space opens the link
+        card.addEventListener("keydown", (e) => {
+          if ((e.key === "Enter" || e.key === " ") && !e.target.closest(".fav-btn, .tag-mini, a, button")) {
+            e.preventDefault();
+            handleCardOpen(card);
+          }
+        });
+      });
       els.results.querySelectorAll(".tag-mini").forEach((b) => {
         b.addEventListener("click", () => {
           state.activeTags.add(b.dataset.tag);
@@ -718,6 +737,23 @@
       syncURL();
     }, 120));
     els.sort.addEventListener("change", () => { state.sort = els.sort.value; render(); syncURL(); });
+    if (els.surprise) els.surprise.addEventListener("click", () => {
+      const list = getResults();
+      if (!list.length) {
+        // Fall back to the full catalog if filters yield nothing
+        const all = state.catalog.datasets;
+        if (!all.length) return;
+        const pick = all[Math.floor(Math.random() * all.length)];
+        window.open(`https://data.cityofnewyork.us/d/${encodeURIComponent(pick.i)}`, "_blank", "noopener");
+        return;
+      }
+      const pick = list[Math.floor(Math.random() * list.length)];
+      // Brief visual feedback on the button
+      const original = els.surprise.textContent;
+      els.surprise.textContent = "🎲 …";
+      setTimeout(() => { els.surprise.textContent = original; }, 250);
+      window.open(`https://data.cityofnewyork.us/d/${encodeURIComponent(pick.i)}`, "_blank", "noopener");
+    });
     els.clear.addEventListener("click", () => {
       state.query = ""; state.activeCat = null; state.sort = "relevance"; state.fresh = "all";
       state.activeAgencies.clear(); state.activeType = null; state.activeTags.clear();
