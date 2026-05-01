@@ -786,15 +786,24 @@
       setTimeout(() => { els.surprise.textContent = original; }, 250);
       window.open(`https://data.cityofnewyork.us/d/${encodeURIComponent(pick.i)}`, "_blank", "noopener");
     });
-    els.clear.addEventListener("click", () => {
+    function resetAll(scrollTop) {
       state.query = ""; state.activeCat = null; state.sort = "relevance"; state.fresh = "all";
       state.activeAgencies.clear(); state.activeType = null; state.activeTags.clear();
       state.picksOnly = false; state.favsOnly = false;
+      state.agencyFilter = "";
       els.q.value = ""; els.sort.value = "relevance"; els.picksOnly.checked = false;
       if (els.favsOnly) els.favsOnly.checked = false;
+      if (els.agencySearch) els.agencySearch.value = "";
       state.parsed = window.NYC_PARSE_QUERY("");
       renderCatMap(); renderTypePills(); renderFreshPills(); renderAgencyList(); renderTagCloud(); render();
       history.replaceState(null, "", window.location.pathname);
+      if (scrollTop) window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    els.clear.addEventListener("click", () => resetAll(false));
+    const homeLink = document.getElementById("home-link");
+    if (homeLink) homeLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      resetAll(true);
     });
     els.agencySearch.addEventListener("input", debounce(() => { state.agencyFilter = els.agencySearch.value; renderAgencyList(); }, 80));
     els.agencyToggle.addEventListener("click", () => { state.showAllAgencies = !state.showAllAgencies; renderAgencyList(); });

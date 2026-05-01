@@ -74,6 +74,14 @@ header.site h1 {
   font-weight: 600;
   letter-spacing: -0.01em;
 }
+header.site h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+header.site h1 a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
 header.site h1 small {
   display: block;
   font-family: var(--font-sans);
@@ -311,6 +319,7 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
   margin: 0 0 24px;
+  grid-auto-flow: dense;
 }
 .cat-tile {
   position: relative;
@@ -348,9 +357,10 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
   line-height: 1.35;
   opacity: 0.92;
 }
-.cat-tile.size-xl { grid-column: span 2; min-height: 140px; }
-.cat-tile.size-xl .count { font-size: 36px; }
-.cat-tile.size-l { min-height: 120px; }
+/* Size variations no longer change column span — just typography weight.
+   With 16 same-size tiles in a 4-col grid, the bottom row fills cleanly. */
+.cat-tile.size-xl .count { font-size: 32px; }
+.cat-tile.size-xl h3 { font-size: 16px; }
 .cat-tile.size-l .count { font-size: 30px; }
 
 .cat-tile[data-cat="Government Operations"] { background: var(--c-government); }
