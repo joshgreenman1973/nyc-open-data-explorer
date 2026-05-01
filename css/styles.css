@@ -8,6 +8,7 @@
   --accent: #c1272d;
   --focus: #1a4d8f;
   --gold: #c8a13a;
+  --heart: #c1272d;
 
   --font-display: "Playfair Display", "Source Serif Pro", Georgia, serif;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -31,8 +32,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-html, body { overflow-x: hidden; max-width: 100vw; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; max-width: 100vw; }
 body {
   background: var(--bg);
   color: var(--ink);
@@ -41,10 +41,18 @@ body {
   line-height: 1.5;
 }
 
+/* Universal focus-visible — keyboard users get a clear ring everywhere */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+button, [role="button"], a { -webkit-tap-highlight-color: transparent; }
+
 a { color: var(--focus); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.wrap { max-width: 1320px; margin: 0 auto; padding: 24px; }
+.wrap { max-width: 1440px; margin: 0 auto; padding: 24px; }
 
 header.site {
   border-bottom: 1px solid var(--rule);
@@ -75,23 +83,31 @@ header.site h1 small {
   margin-top: 2px;
   letter-spacing: 0;
 }
+header.site nav {
+  display: flex; align-items: center; gap: 18px;
+}
 header.site nav a {
   font-size: 14px;
-  margin-left: 16px;
   color: var(--ink-soft);
 }
+header.site nav .rss-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px;
+  color: var(--ink-mute);
+}
+header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
 
-.hero { padding: 36px 0 12px; }
+.hero { padding: 28px 0 8px; }
 .hero p.lede {
-  font-size: 18px;
+  font-size: 17px;
   max-width: 720px;
   color: var(--ink-soft);
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
 .search-row {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 8px;
 }
@@ -105,10 +121,7 @@ header.site nav a {
   background: var(--surface);
   font-family: inherit;
 }
-.search-row input[type="search"]:focus {
-  outline: 3px solid var(--focus);
-  outline-offset: 1px;
-}
+.search-row input[type="search"]:focus { outline: 3px solid var(--focus); outline-offset: 1px; }
 .search-row select, .search-row .clear {
   font-size: 14px;
   padding: 11px 12px;
@@ -124,16 +137,20 @@ header.site nav a {
 .search-tips {
   font-size: 13px;
   color: var(--ink-soft);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .search-tips summary {
   cursor: pointer;
   color: var(--focus);
   width: max-content;
+  list-style: none;
 }
+.search-tips summary::before { content: "▸ "; font-size: 10px; }
+.search-tips[open] summary::before { content: "▾ "; }
 .search-tips ul {
   margin: 8px 0 0;
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 4px 20px;
@@ -170,348 +187,56 @@ header.site nav a {
 }
 .stats strong { color: var(--ink); font-weight: 600; }
 
-/* Weekly stats */
-.weekly-stats {
-  margin: 8px 0 24px;
-  max-width: 100%;
-}
-.weekly-head { margin-bottom: 10px; }
-.weekly-head h2 {
-  font-family: var(--font-display);
-  font-size: 22px;
-  margin: 0 0 4px;
-  font-weight: 600;
-}
-.weekly-sub {
-  margin: 0;
-  font-size: 13px;
-  color: var(--ink-mute);
-}
-.weekly-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  grid-auto-flow: row;
-  gap: 10px;
-  max-width: 100%;
-}
-@media (min-width: 720px) {
-  .weekly-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-}
-.weekly-card {
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--ink-mute);
-  border-radius: 6px;
-  padding: 12px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  color: var(--ink);
-  text-decoration: none;
-  transition: box-shadow 0.08s ease, transform 0.08s ease;
-  cursor: pointer;
-  text-align: left;
-  font-family: inherit;
-  min-width: 0;
-  width: 100%;
-}
-.weekly-card:hover {
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transform: translateY(-1px);
-}
-.weekly-source-link {
-  font-size: 11px;
-  color: var(--focus);
-  margin-top: 8px;
-  text-decoration: none;
-}
-.weekly-source-link:hover { text-decoration: underline; }
-.weekly-headline {
-  font-family: var(--font-display);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-.weekly-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink);
-  margin-top: 2px;
-}
-.weekly-sub2 {
-  font-size: 12px;
-  color: var(--ink-soft);
-  margin-top: 2px;
-}
-.weekly-delta {
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 4px;
-}
-.weekly-delta.up { color: #2d6b3a; }
-.weekly-delta.down { color: #8a2a2a; }
-.weekly-delta.flat { color: var(--ink-mute); }
-.sparkline {
-  width: 100%;
-  height: 28px;
-  margin: 4px 0 2px;
-  display: block;
-  overflow: visible;
-}
-.spark-line {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.4;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  opacity: 0.85;
-}
-.spark-area {
-  fill: currentColor;
-  opacity: 0.12;
-  stroke: none;
-}
-.spark-dot {
-  fill: currentColor;
-}
-.weekly-card[data-cat="Public Safety"] .sparkline { color: var(--c-safety); }
-.weekly-card[data-cat="Health"] .sparkline { color: var(--c-health); }
-.weekly-card[data-cat="Social Services"] .sparkline { color: var(--c-social); }
-.weekly-card[data-cat="Housing & Development"] .sparkline { color: var(--c-housing); }
-.weekly-card[data-cat="Government Operations"] .sparkline { color: var(--c-government); }
-.weekly-source {
-  font-size: 11px;
-  color: var(--ink-mute);
-  margin-top: 8px;
-  font-style: italic;
-}
-.weekly-card[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
-.weekly-card[data-cat="Health"] { border-left-color: var(--c-health); }
-.weekly-card[data-cat="Social Services"] { border-left-color: var(--c-social); }
-.weekly-card[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
-.weekly-card[data-cat="Government Operations"] { border-left-color: var(--c-government); }
-.weekly-card[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
-.weekly-card[data-cat="Environment"] { border-left-color: var(--c-environment); }
-.weekly-card[data-cat="Education"] { border-left-color: var(--c-education); }
-
-/* My favorites */
-.my-favorites {
-  margin: 8px 0 24px;
-  max-width: 100%;
-  background: linear-gradient(180deg, rgba(193, 39, 45, 0.04), transparent);
-  border: 1px solid var(--rule);
-  border-left: 4px solid #c1272d;
-  border-radius: 8px;
-  padding: 16px 18px;
-}
-.favs-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 10px;
-}
-.favs-head h2 {
-  font-family: var(--font-display);
-  font-size: 22px;
-  margin: 0;
-  font-weight: 600;
-}
-.favs-head h2 small {
-  font-family: var(--font-sans);
-  font-size: 14px;
-  color: var(--ink-mute);
-  font-weight: 400;
-  margin-left: 6px;
-}
-.favs-track {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 10px;
-  max-width: 100%;
-}
-.fav-tile {
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--ink-mute);
-  border-radius: 6px;
-  padding: 10px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  position: relative;
-  min-width: 0;
-}
-.fav-tile .fav-name {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--ink);
-  line-height: 1.3;
-  padding-right: 24px;
-}
-.fav-tile .fav-name:hover { color: var(--focus); }
-.fav-tile .fav-meta { font-size: 11px; color: var(--ink-mute); }
-.fav-tile[data-cat="Government Operations"] { border-left-color: var(--c-government); }
-.fav-tile[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
-.fav-tile[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }
-.fav-tile[data-cat="Procurement & Contracts"] { border-left-color: var(--c-procurement); }
-.fav-tile[data-cat="Elections & Ethics"] { border-left-color: var(--c-elections); }
-.fav-tile[data-cat="Education"] { border-left-color: var(--c-education); }
-.fav-tile[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
-.fav-tile[data-cat="Environment"] { border-left-color: var(--c-environment); }
-.fav-tile[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
-.fav-tile[data-cat="Social Services"] { border-left-color: var(--c-social); }
-.fav-tile[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
-.fav-tile[data-cat="Recreation"] { border-left-color: var(--c-recreation); }
-.fav-tile[data-cat="Health"] { border-left-color: var(--c-health); }
-.fav-tile[data-cat="Business"] { border-left-color: var(--c-business); }
-
-/* Heart button used both on cards and on favorites tiles */
-.fav-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  background: rgba(255,255,255,0.85);
-  color: var(--ink-mute);
-  font-size: 16px;
-  line-height: 1;
-  padding: 0;
-  cursor: pointer;
-  font-family: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.1s ease, color 0.1s ease;
-  z-index: 2;
-}
-.fav-btn:hover {
-  color: #c1272d;
-  transform: scale(1.1);
-  border-color: var(--rule);
-}
-.fav-btn.on { color: #c1272d; }
-.heart { color: #c1272d; }
-
-.card { position: relative; }
-.card h4 { padding-right: 26px; }
-
-/* Fresh strip */
-.fresh-strip {
-  margin: 8px 0 24px;
-  display: grid;
-  gap: 14px;
-  min-width: 0;
-}
-.fresh-row {
-  min-width: 0;
-  max-width: 100%;
-  overflow: hidden; /* contain the inner flex track */
-  position: relative;
-}
-.fresh-row h2 {
-  font-family: var(--font-display);
-  font-size: 20px;
-  margin: 0 0 8px;
-  font-weight: 600;
-}
-/* Right-edge fade hint that more tiles are scrollable */
-.fresh-row::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 36px; /* below the h2 */
-  bottom: 6px;
-  width: 40px;
-  background: linear-gradient(to right, rgba(250,248,243,0), var(--bg) 80%);
-  pointer-events: none;
-}
-.fresh-track {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 6px;
-  scroll-snap-type: x proximity;
-  min-width: 0;
-  max-width: 100%;
-  scrollbar-width: thin;
-}
-.fresh-track::-webkit-scrollbar { height: 8px; }
-.fresh-track::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
-.fresh-track::-webkit-scrollbar-thumb:hover { background: var(--ink-mute); }
-.fresh-tile {
-  flex: 0 0 240px;
-  scroll-snap-align: start;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--ink-mute);
-  border-radius: 6px;
-  padding: 10px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  position: relative;
-  color: var(--ink);
-}
-.fresh-tile:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); text-decoration: none; }
-.fresh-tile .fresh-name { font-weight: 600; font-size: 14px; line-height: 1.3; }
-.fresh-tile .fresh-meta { font-size: 11px; color: var(--ink-mute); }
-.badge-new {
-  position: absolute; top: 8px; right: 8px;
-  background: var(--accent); color: #fff;
-  font-size: 9px; font-weight: 700; letter-spacing: 0.05em;
-  padding: 2px 6px; border-radius: 3px;
-}
-
-/* Layout: sidebar + content */
+/* 3-column layout */
 .layout {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: 220px minmax(0, 1fr) 300px;
+  grid-template-areas: "sidebar content rail";
+  gap: 20px;
   align-items: start;
   max-width: 100%;
 }
 .layout > * { min-width: 0; }
-.content { min-width: 0; max-width: 100%; }
-.sidebar {
+.layout > .sidebar { grid-area: sidebar; }
+.layout > .content { grid-area: content; min-width: 0; max-width: 100%; }
+.layout > .rail { grid-area: rail; }
+.sidebar, .rail {
   background: var(--surface);
   border: 1px solid var(--rule);
   border-radius: 8px;
-  padding: 16px;
+  padding: 14px;
   position: sticky;
   top: 16px;
   max-height: calc(100vh - 32px);
   overflow-y: auto;
   font-size: 13px;
 }
-.sidebar h3 {
+.rail { display: flex; flex-direction: column; gap: 18px; }
+.sidebar h3, .rail h2 {
   margin: 0 0 8px;
-  font-size: 13px;
+}
+.sidebar h3 {
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--ink-soft);
 }
 .sidebar h3 small { font-weight: 500; color: var(--ink-mute); }
 .filter-group + .filter-group {
-  margin-top: 18px;
-  padding-top: 16px;
+  margin-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--rule);
 }
 .checkbox {
   display: flex; align-items: center; gap: 8px;
   padding: 4px 0;
   cursor: pointer;
+  font-size: 13px;
 }
 .checkbox span { flex: 1; }
 .checkbox small { color: var(--ink-mute); }
-.checklist .checkbox { font-size: 13px; }
+
 .mini-search {
   width: 100%;
   font-size: 13px;
@@ -541,14 +266,16 @@ header.site nav a {
   border: 1.5px solid var(--rule);
   background: var(--surface);
   cursor: pointer;
+  color: var(--ink);
 }
 .pill-btn small { color: var(--ink-mute); margin-left: 2px; }
-.pill-btn.on {
-  background: var(--ink);
-  color: #fff;
-  border-color: var(--ink);
-}
+.pill-btn.on { background: var(--ink); color: #fff; border-color: var(--ink); }
 .pill-btn.on small { color: rgba(255,255,255,0.7); }
+.pill-btn.muted-toggle {
+  background: transparent; border-color: transparent;
+  color: var(--focus); font-weight: 500;
+  text-decoration: underline; padding: 4px 4px;
+}
 .tag-cloud { display: flex; gap: 4px; flex-wrap: wrap; }
 .tag-chip {
   font-family: inherit;
@@ -564,18 +291,24 @@ header.site nav a {
 .tag-chip.on { background: var(--ink); color: #fff; }
 .tag-chip.on small { color: rgba(255,255,255,0.7); }
 .star { color: var(--gold); }
+.heart { color: var(--heart); }
+.checklist .checkbox small.acro {
+  color: var(--ink-mute);
+  font-weight: 500;
+  margin-left: 4px;
+}
 
 /* Category map */
 .cat-map {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
   margin: 0 0 24px;
 }
 .cat-tile {
   position: relative;
   border-radius: 8px;
-  padding: 16px;
+  padding: 14px;
   color: #fff;
   cursor: pointer;
   border: none;
@@ -586,48 +319,33 @@ header.site nav a {
   display: flex;
   flex-direction: column;
 }
-.cat-tile:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-.cat-tile.active {
-  outline: 3px solid var(--ink);
-  outline-offset: 2px;
-}
-.cat-tile h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
+.cat-tile:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+.cat-tile.active { outline: 3px solid var(--ink); outline-offset: 2px; }
+.cat-tile h3 { margin: 0 0 4px; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
 .cat-tile .count {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1;
   font-weight: 600;
 }
 .cat-tile .count small {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   opacity: 0.85;
   margin-left: 4px;
 }
 .cat-tile .cat-desc {
-  margin: 8px 0 0;
-  font-size: 11.5px;
+  margin: 6px 0 0;
+  font-size: 11px;
   line-height: 1.35;
   opacity: 0.92;
-  color: rgba(255,255,255,0.95);
 }
+.cat-tile.size-xl { grid-column: span 2; min-height: 140px; }
+.cat-tile.size-xl .count { font-size: 36px; }
+.cat-tile.size-l { min-height: 120px; }
+.cat-tile.size-l .count { font-size: 30px; }
 
-.cat-tile.size-xl { grid-column: span 2; min-height: 150px; }
-.cat-tile.size-xl .count { font-size: 38px; }
-.cat-tile.size-xl .cat-desc { font-size: 12.5px; }
-.cat-tile.size-l { min-height: 130px; }
-.cat-tile.size-l .count { font-size: 32px; }
-
-/* Category color application */
 .cat-tile[data-cat="Government Operations"] { background: var(--c-government); }
 .cat-tile[data-cat="Finance & Budget"] { background: var(--c-finance); }
 .cat-tile[data-cat="Maps & Geography"] { background: var(--c-maps); }
@@ -645,28 +363,250 @@ header.site nav a {
 .cat-tile[data-cat="Business"] { background: var(--c-business); }
 .cat-tile[data-cat="NYC BigApps"] { background: var(--c-bigapps); }
 
-/* Fresh-tile colored stripe */
-.fresh-tile[data-cat="Government Operations"] { border-left-color: var(--c-government); }
-.fresh-tile[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
-.fresh-tile[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }
-.fresh-tile[data-cat="Procurement & Contracts"] { border-left-color: var(--c-procurement); }
-.fresh-tile[data-cat="Elections & Ethics"] { border-left-color: var(--c-elections); }
-.fresh-tile[data-cat="Education"] { border-left-color: var(--c-education); }
-.fresh-tile[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
-.fresh-tile[data-cat="Environment"] { border-left-color: var(--c-environment); }
-.fresh-tile[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
-.fresh-tile[data-cat="Social Services"] { border-left-color: var(--c-social); }
-.fresh-tile[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
-.fresh-tile[data-cat="Recreation"] { border-left-color: var(--c-recreation); }
-.fresh-tile[data-cat="Uncategorized"] { border-left-color: var(--c-uncategorized); }
-.fresh-tile[data-cat="Health"] { border-left-color: var(--c-health); }
-.fresh-tile[data-cat="Business"] { border-left-color: var(--c-business); }
-.fresh-tile[data-cat="NYC BigApps"] { border-left-color: var(--c-bigapps); }
+/* RIGHT RAIL — Weekly stats (richer, vertical stack) */
+.weekly-stats { max-width: 100%; }
+.weekly-head { margin-bottom: 10px; }
+.weekly-head h2 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+}
+.weekly-sub {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-mute);
+}
+.weekly-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.weekly-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  width: 100%;
+  position: relative;
+  transition: box-shadow 0.08s ease, transform 0.08s ease;
+}
+.weekly-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.08); transform: translateY(-1px); }
+.weekly-card .cat-dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--ink-mute); margin-right: 6px; vertical-align: middle;
+}
+.weekly-card[data-cat="Public Safety"] .cat-dot { background: var(--c-safety); }
+.weekly-card[data-cat="Health"] .cat-dot { background: var(--c-health); }
+.weekly-card[data-cat="Social Services"] .cat-dot { background: var(--c-social); }
+.weekly-card[data-cat="Housing & Development"] .cat-dot { background: var(--c-housing); }
+.weekly-card[data-cat="Government Operations"] .cat-dot { background: var(--c-government); }
+.weekly-card[data-cat="Transportation"] .cat-dot { background: var(--c-transportation); }
+.weekly-card[data-cat="Environment"] .cat-dot { background: var(--c-environment); }
+.weekly-card[data-cat="Education"] .cat-dot { background: var(--c-education); }
+.weekly-headline {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.weekly-label { font-size: 13px; font-weight: 600; color: var(--ink); margin-top: 2px; }
+.weekly-interp {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.weekly-delta {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.weekly-delta.up { color: #2d6b3a; }
+.weekly-delta.down { color: #8a2a2a; }
+.weekly-delta.flat { color: var(--ink-mute); }
+.sparkline {
+  width: 100%;
+  height: 32px;
+  margin: 4px 0 2px;
+  display: block;
+  overflow: visible;
+}
+.spark-line { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; opacity: 0.9; }
+.spark-area { fill: currentColor; opacity: 0.12; stroke: none; }
+.spark-dot { fill: currentColor; }
+.spark-median { stroke: var(--ink-mute); stroke-width: 0.8; stroke-dasharray: 3 2; opacity: 0.55; fill: none; }
+.weekly-card[data-cat="Public Safety"] .sparkline { color: var(--c-safety); }
+.weekly-card[data-cat="Health"] .sparkline { color: var(--c-health); }
+.weekly-card[data-cat="Social Services"] .sparkline { color: var(--c-social); }
+.weekly-card[data-cat="Housing & Development"] .sparkline { color: var(--c-housing); }
+.weekly-card[data-cat="Government Operations"] .sparkline { color: var(--c-government); }
+.weekly-sub2 { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
+.weekly-cta {
+  font-size: 11px;
+  color: var(--focus);
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.weekly-cta .source-link {
+  color: var(--ink-mute);
+  font-style: italic;
+  text-decoration: none;
+}
+.weekly-cta .source-link:hover { text-decoration: underline; color: var(--ink-soft); }
 
-/* Cards */
+/* RIGHT RAIL — My favorites */
+.my-favorites { max-width: 100%; }
+.favs-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.favs-head h2 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+}
+.favs-head h2 small {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--ink-mute);
+  font-weight: 400;
+  margin-left: 4px;
+}
+.favs-track {
+  display: flex; flex-direction: column; gap: 8px;
+  max-width: 100%;
+}
+.fav-tile {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  min-width: 0;
+}
+.fav-tile .fav-name {
+  font-weight: 600; font-size: 13px; color: var(--ink); line-height: 1.3; padding-right: 24px;
+}
+.fav-tile .fav-name:hover { color: var(--focus); }
+.fav-tile .fav-meta { font-size: 11px; color: var(--ink-mute); }
+.fav-tile .cat-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-mute); margin-right: 4px; vertical-align: middle; }
+.fav-tile[data-cat="Government Operations"] .cat-dot { background: var(--c-government); }
+.fav-tile[data-cat="Finance & Budget"] .cat-dot { background: var(--c-finance); }
+.fav-tile[data-cat="Maps & Geography"] .cat-dot { background: var(--c-maps); }
+.fav-tile[data-cat="Procurement & Contracts"] .cat-dot { background: var(--c-procurement); }
+.fav-tile[data-cat="Elections & Ethics"] .cat-dot { background: var(--c-elections); }
+.fav-tile[data-cat="Education"] .cat-dot { background: var(--c-education); }
+.fav-tile[data-cat="Transportation"] .cat-dot { background: var(--c-transportation); }
+.fav-tile[data-cat="Environment"] .cat-dot { background: var(--c-environment); }
+.fav-tile[data-cat="Housing & Development"] .cat-dot { background: var(--c-housing); }
+.fav-tile[data-cat="Social Services"] .cat-dot { background: var(--c-social); }
+.fav-tile[data-cat="Public Safety"] .cat-dot { background: var(--c-safety); }
+.fav-tile[data-cat="Recreation"] .cat-dot { background: var(--c-recreation); }
+.fav-tile[data-cat="Health"] .cat-dot { background: var(--c-health); }
+.fav-tile[data-cat="Business"] .cat-dot { background: var(--c-business); }
+
+/* Heart button — used everywhere a dataset is shown */
+.fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,0.9);
+  color: var(--ink-mute);
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s cubic-bezier(.4,1.4,.6,1), color 0.15s ease, background 0.15s ease;
+  z-index: 2;
+}
+.fav-btn:hover { color: var(--heart); transform: scale(1.12); border-color: var(--rule); }
+.fav-btn.on { color: var(--heart); }
+.fav-btn.pulsing { animation: heart-pulse 0.45s ease; }
+@keyframes heart-pulse {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* RIGHT RAIL — Fresh strip (vertical stack since width is narrow) */
+.fresh-strip { max-width: 100%; display: flex; flex-direction: column; gap: 14px; }
+.fresh-row { min-width: 0; max-width: 100%; }
+.fresh-row h2 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+.fresh-track {
+  display: flex; flex-direction: column; gap: 6px;
+  max-width: 100%;
+}
+.fresh-tile {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+  color: var(--ink);
+}
+.fresh-tile:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-decoration: none; }
+.fresh-tile .fresh-name { font-weight: 600; font-size: 13px; line-height: 1.3; }
+.fresh-tile .fresh-meta { font-size: 11px; color: var(--ink-mute); }
+.fresh-tile .cat-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-mute); margin-right: 4px; vertical-align: middle; }
+.fresh-tile[data-cat="Government Operations"] .cat-dot { background: var(--c-government); }
+.fresh-tile[data-cat="Finance & Budget"] .cat-dot { background: var(--c-finance); }
+.fresh-tile[data-cat="Maps & Geography"] .cat-dot { background: var(--c-maps); }
+.fresh-tile[data-cat="Procurement & Contracts"] .cat-dot { background: var(--c-procurement); }
+.fresh-tile[data-cat="Elections & Ethics"] .cat-dot { background: var(--c-elections); }
+.fresh-tile[data-cat="Education"] .cat-dot { background: var(--c-education); }
+.fresh-tile[data-cat="Transportation"] .cat-dot { background: var(--c-transportation); }
+.fresh-tile[data-cat="Environment"] .cat-dot { background: var(--c-environment); }
+.fresh-tile[data-cat="Housing & Development"] .cat-dot { background: var(--c-housing); }
+.fresh-tile[data-cat="Social Services"] .cat-dot { background: var(--c-social); }
+.fresh-tile[data-cat="Public Safety"] .cat-dot { background: var(--c-safety); }
+.fresh-tile[data-cat="Recreation"] .cat-dot { background: var(--c-recreation); }
+.fresh-tile[data-cat="Uncategorized"] .cat-dot { background: var(--c-uncategorized); }
+.fresh-tile[data-cat="Health"] .cat-dot { background: var(--c-health); }
+.fresh-tile[data-cat="Business"] .cat-dot { background: var(--c-business); }
+.badge-new {
+  position: absolute; top: 8px; right: 8px;
+  background: var(--accent); color: #fff;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.05em;
+  padding: 2px 6px; border-radius: 3px;
+}
+
+/* CENTER COLUMN — result cards (the only place we keep colored stripes) */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 14px;
 }
 .card {
@@ -678,6 +618,7 @@ header.site nav a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 }
 .card[data-cat="Government Operations"] { border-left-color: var(--c-government); }
 .card[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
@@ -701,20 +642,12 @@ header.site nav a {
   font-size: 16px;
   line-height: 1.3;
   font-weight: 600;
+  padding-right: 32px; /* leave room for heart */
 }
 .card h4 a { color: var(--ink); }
 .card h4 a:hover { color: var(--focus); }
-.pick-star {
-  color: var(--gold);
-  margin-right: 4px;
-  font-size: 16px;
-  cursor: help;
-}
-.card .summary {
-  font-size: 14px;
-  color: var(--ink-soft);
-  flex: 1;
-}
+.pick-star { color: var(--gold); margin-right: 4px; font-size: 16px; cursor: help; }
+.card .summary { font-size: 14px; color: var(--ink-soft); flex: 1; }
 .pick-note {
   margin-top: 6px;
   padding: 6px 8px;
@@ -726,17 +659,10 @@ header.site nav a {
 }
 .pick-note em { color: var(--ink-mute); display: block; margin-top: 2px; font-style: normal; font-size: 11.5px; }
 .card .meta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  font-size: 12px;
-  color: var(--ink-mute);
-  align-items: center;
+  display: flex; gap: 8px; flex-wrap: wrap;
+  font-size: 12px; color: var(--ink-mute); align-items: center;
 }
-.card .agency {
-  font-weight: 600;
-  color: var(--ink);
-}
+.card .agency { font-weight: 600; color: var(--ink); }
 .card-tags { display: flex; flex-wrap: wrap; gap: 4px; }
 .tag-mini {
   font-family: inherit;
@@ -749,6 +675,7 @@ header.site nav a {
   cursor: pointer;
 }
 .tag-mini:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+
 .pill {
   display: inline-block;
   padding: 2px 8px;
@@ -769,32 +696,44 @@ header.site nav a {
   border-radius: 8px;
   background: var(--surface);
 }
-.empty h3 {
-  font-family: var(--font-display);
-  font-size: 22px;
-  margin: 0 0 8px;
-}
+.empty h3 { font-family: var(--font-display); font-size: 22px; margin: 0 0 8px; }
 .empty h4 { margin: 16px 0 8px; font-size: 14px; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.05em; }
 .empty-suggest { margin: 0; padding-left: 20px; font-size: 14px; }
 .empty-suggest li { margin: 4px 0; }
-.empty-top3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 10px;
-}
+.empty-top3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
 
 footer.site {
   border-top: 1px solid var(--rule);
   margin-top: 48px;
-  padding: 24px 0;
+  padding: 20px 0;
   font-size: 13px;
   color: var(--ink-mute);
 }
+footer.site p { margin: 4px 0; }
 footer.site a { color: var(--ink-soft); }
+footer.site .footer-extra { font-size: 12px; }
 
-@media (max-width: 980px) {
-  .layout { grid-template-columns: 1fr; }
-  .sidebar { position: static; max-height: none; }
+/* Responsive */
+@media (max-width: 1180px) {
+  .layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-areas:
+      "sidebar content"
+      "rail rail";
+  }
+  .rail { flex-direction: row; flex-wrap: wrap; position: static; max-height: none; }
+  .rail > section { flex: 1 1 280px; min-width: 0; }
+}
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sidebar"
+      "rail"
+      "content";
+  }
+  .sidebar, .rail { position: static; max-height: none; }
+  .rail { flex-direction: column; }
 }
 @media (max-width: 600px) {
   header.site h1 { font-size: 22px; }
@@ -802,5 +741,4 @@ footer.site a { color: var(--ink-soft); }
   .cat-tile.size-xl { grid-column: span 1; }
   .cat-map { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: 1fr; }
-  .fresh-tile { flex: 0 0 200px; }
 }

@@ -2,7 +2,6 @@
   const els = {
     q: document.getElementById("q"),
     sort: document.getElementById("sort"),
-    fresh: document.getElementById("freshness"),
     clear: document.getElementById("clear"),
     stats: document.getElementById("stats"),
     catMap: document.getElementById("cat-map"),
@@ -10,6 +9,7 @@
     empty: document.getElementById("empty"),
     activeChips: document.getElementById("active-chips"),
     typePills: document.getElementById("type-pills"),
+    freshPills: document.getElementById("freshness-pills"),
     agencyList: document.getElementById("agency-list"),
     agencySearch: document.getElementById("agency-search"),
     agencyToggle: document.getElementById("agency-toggle"),
@@ -18,7 +18,6 @@
     picksOnly: document.getElementById("picks-only"),
     favsOnly: document.getElementById("favs-only"),
     favCount: document.getElementById("fav-count"),
-    freshStrip: document.getElementById("fresh-strip"),
     freshNew: document.getElementById("fresh-new"),
     freshUpdated: document.getElementById("fresh-updated"),
   };
@@ -29,7 +28,7 @@
     picksById: new Map(),
     activeCat: null,
     activeAgencies: new Set(),
-    activeType: null,         // single-select for the pill row
+    activeType: null,
     activeTags: new Set(),
     excludedTags: new Set(),
     picksOnly: false,
@@ -41,6 +40,7 @@
     fresh: "all",
     fetchedAt: null,
     showAllAgencies: false,
+    showAllTypes: false,
     agencyFilter: "",
   };
 
@@ -49,78 +49,17 @@
     { min: 200, klass: "size-l" },
   ];
   const AGENCY_INITIAL = 12;
+  const TYPE_INITIAL = 4;
   const RENDER_CAP = 200;
   const FAVS_KEY = "nyc-ode-favorites-v1";
 
-  function loadFavs() {
-    try {
-      const raw = localStorage.getItem(FAVS_KEY);
-      if (!raw) return new Set();
-      const parsed = JSON.parse(raw);
-      return new Set(Array.isArray(parsed) ? parsed : []);
-    } catch (_) { return new Set(); }
+  // ---------- Helpers ----------
+  function escapeHTML(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, (m) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+    }[m]));
   }
-  function saveFavs(set) {
-    try { localStorage.setItem(FAVS_KEY, JSON.stringify([...set])); } catch (_) {}
-  }
-  function updateFavCount() {
-    if (els.favCount) els.favCount.textContent = state.favs.size;
-    renderMyFavorites();
-  }
-
-  function renderMyFavorites() {
-    const sec = document.getElementById("my-favorites");
-    const track = document.getElementById("favs-track");
-    const headCount = document.getElementById("favs-head-count");
-    const clearBtn = document.getElementById("favs-clear");
-    if (!sec || !track) return;
-    if (!state.favs.size || !state.catalog) {
-      sec.hidden = true;
-      return;
-    }
-    sec.hidden = false;
-    if (headCount) headCount.textContent = `(${state.favs.size})`;
-    if (clearBtn) clearBtn.hidden = false;
-    // Pull favorited datasets, sort by most-recently-updated
-    const favList = state.catalog.datasets
-      .filter((d) => state.favs.has(d.i))
-      .sort((a, b) => (b.u || "").localeCompare(a.u || ""));
-    track.innerHTML = favList.map((d) => {
-      const cat = d.c || "Uncategorized";
-      const url = `https://data.cityofnewyork.us/d/${encodeURIComponent(d.i)}`;
-      const updated = relativeDate(d.u) || "no date";
-      return `<div class="fav-tile" data-cat="${escapeAttr(cat)}">
-        <button type="button" class="fav-btn on" data-fav="${escapeAttr(d.i)}" title="Remove from favorites" aria-label="Remove from favorites">♥</button>
-        <a class="fav-name" href="${url}" target="_blank" rel="noopener">${escapeHTML(d.n)}</a>
-        <span class="fav-meta">${escapeHTML(d.a || "")}</span>
-        <span class="fav-meta">${escapeHTML(cat)} · updated ${escapeHTML(updated)}</span>
-      </div>`;
-    }).join("");
-    // Wire up the unfavorite buttons inside this section
-    track.querySelectorAll(".fav-btn").forEach((b) => {
-      b.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleFav(b.dataset.fav);
-        // Also update any hearts in the main results grid
-        const main = els.results.querySelector(`.fav-btn[data-fav="${CSS.escape(b.dataset.fav)}"]`);
-        if (main) {
-          main.classList.remove("on");
-          main.textContent = "♡";
-        }
-      });
-    });
-  }
-  function toggleFav(id) {
-    if (state.favs.has(id)) state.favs.delete(id); else state.favs.add(id);
-    saveFavs(state.favs);
-    updateFavCount();
-  }
-
-  function tileSize(count) {
-    for (const r of SIZE_RULES) if (count >= r.min) return r.klass;
-    return "";
-  }
+  const escapeAttr = escapeHTML;
 
   function fmtNum(n) {
     if (n == null) return "0";
@@ -164,12 +103,91 @@
     return true;
   }
 
-  function escapeHTML(s) {
-    return String(s == null ? "" : s).replace(/[&<>"']/g, (m) => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
-    }[m]));
+  // Agency display: show plain name, suppress trailing acronym in parens.
+  function plainAgencyName(name) {
+    if (!name) return "";
+    return name.replace(/\s*\([A-Z][A-Z0-9 &/\-]*\)\s*$/, "").trim();
   }
-  function escapeAttr(s) { return escapeHTML(s); }
+  function agencyAcronym(name) {
+    const m = (name || "").match(/\(([A-Z][A-Z0-9 &/\-]*)\)\s*$/);
+    return m ? m[1] : "";
+  }
+
+  function median(arr) {
+    if (!arr || !arr.length) return 0;
+    const s = [...arr].sort((a, b) => a - b);
+    const mid = Math.floor(s.length / 2);
+    return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
+  }
+
+  // ---------- Favorites (localStorage) ----------
+  function loadFavs() {
+    try {
+      const raw = localStorage.getItem(FAVS_KEY);
+      if (!raw) return new Set();
+      const parsed = JSON.parse(raw);
+      return new Set(Array.isArray(parsed) ? parsed : []);
+    } catch (_) { return new Set(); }
+  }
+  function saveFavs(set) { try { localStorage.setItem(FAVS_KEY, JSON.stringify([...set])); } catch (_) {} }
+
+  function updateFavCount() {
+    if (els.favCount) els.favCount.textContent = state.favs.size;
+    renderMyFavorites();
+  }
+
+  function renderMyFavorites() {
+    const sec = document.getElementById("my-favorites");
+    const track = document.getElementById("favs-track");
+    const headCount = document.getElementById("favs-head-count");
+    const clearBtn = document.getElementById("favs-clear");
+    if (!sec || !track) return;
+    if (!state.favs.size || !state.catalog) {
+      sec.hidden = true;
+      return;
+    }
+    sec.hidden = false;
+    if (headCount) headCount.textContent = `(${state.favs.size})`;
+    if (clearBtn) clearBtn.hidden = false;
+    const favList = state.catalog.datasets
+      .filter((d) => state.favs.has(d.i))
+      .sort((a, b) => (b.u || "").localeCompare(a.u || ""));
+    track.innerHTML = favList.map((d) => {
+      const cat = d.c || "Uncategorized";
+      const url = `https://data.cityofnewyork.us/d/${encodeURIComponent(d.i)}`;
+      const updated = relativeDate(d.u) || "no date";
+      const agency = plainAgencyName(d.a) || "NYC agency";
+      return `<div class="fav-tile" data-cat="${escapeAttr(cat)}">
+        <button type="button" class="fav-btn on" data-fav="${escapeAttr(d.i)}" title="Remove from favorites" aria-label="Remove ${escapeAttr(d.n)} from favorites">♥</button>
+        <a class="fav-name" href="${url}" target="_blank" rel="noopener">${escapeHTML(d.n)}</a>
+        <span class="fav-meta">${escapeHTML(agency)}</span>
+        <span class="fav-meta"><span class="cat-dot"></span>${escapeHTML(cat)} · updated ${escapeHTML(updated)}</span>
+      </div>`;
+    }).join("");
+    track.querySelectorAll(".fav-btn").forEach((b) => {
+      b.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleFav(b.dataset.fav);
+        const main = els.results.querySelector(`.fav-btn[data-fav="${CSS.escape(b.dataset.fav)}"]`);
+        if (main) {
+          main.classList.remove("on");
+          main.textContent = "♡";
+          main.setAttribute("aria-label", `Add ${main.dataset.fav} to favorites`);
+        }
+      });
+    });
+  }
+  function toggleFav(id) {
+    if (state.favs.has(id)) state.favs.delete(id); else state.favs.add(id);
+    saveFavs(state.favs);
+    updateFavCount();
+  }
+
+  function tileSize(count) {
+    for (const r of SIZE_RULES) if (count >= r.min) return r.klass;
+    return "";
+  }
 
   // ---------- Category map ----------
   function renderCatMap() {
@@ -178,7 +196,7 @@
       const sz = tileSize(c.count);
       const active = state.activeCat === c.name ? " active" : "";
       const desc = (window.NYC_CAT_DESC && window.NYC_CAT_DESC[c.name]) || "";
-      return `<button class="cat-tile ${sz}${active}" data-cat="${escapeAttr(c.name)}" title="${escapeAttr(desc)}">
+      return `<button class="cat-tile ${sz}${active}" data-cat="${escapeAttr(c.name)}" aria-pressed="${state.activeCat === c.name}" title="${escapeAttr(desc)}">
         <h3>${escapeHTML(c.name)}</h3>
         <div class="count">${c.count.toLocaleString()}<small>datasets</small></div>
         ${desc ? `<p class="cat-desc">${escapeHTML(desc)}</p>` : ""}
@@ -195,16 +213,45 @@
     });
   }
 
-  // ---------- Sidebar ----------
+  // ---------- Sidebar: freshness pills ----------
+  function renderFreshPills() {
+    if (!els.freshPills) return;
+    els.freshPills.querySelectorAll(".pill-btn").forEach((b) => {
+      b.classList.toggle("on", b.dataset.fresh === state.fresh);
+      b.setAttribute("aria-pressed", b.dataset.fresh === state.fresh);
+    });
+  }
+  function bindFreshPills() {
+    if (!els.freshPills) return;
+    els.freshPills.querySelectorAll(".pill-btn").forEach((b) => {
+      b.addEventListener("click", () => {
+        state.fresh = b.dataset.fresh;
+        renderFreshPills();
+        render();
+        syncURL();
+      });
+    });
+  }
+
+  // ---------- Sidebar: view-type pills (top 4 + "more" toggle) ----------
   function renderTypePills() {
     const types = (state.catalog.types || []).filter((t) => t.name);
-    const all = `<button type="button" class="pill-btn ${state.activeType === null ? "on" : ""}" data-type="">All</button>`;
-    const rest = types.map((t) => {
-      const on = state.activeType === t.name ? "on" : "";
-      return `<button type="button" class="pill-btn ${on}" data-type="${escapeAttr(t.name)}">${escapeHTML(t.name)} <small>${t.count}</small></button>`;
+    const limit = state.showAllTypes ? types.length : Math.min(TYPE_INITIAL, types.length);
+    const visible = types.slice(0, limit);
+    const all = `<button type="button" class="pill-btn ${state.activeType === null ? "on" : ""}" data-type="" aria-pressed="${state.activeType === null}">All</button>`;
+    const rest = visible.map((t) => {
+      const on = state.activeType === t.name;
+      return `<button type="button" class="pill-btn ${on ? 'on' : ''}" data-type="${escapeAttr(t.name)}" aria-pressed="${on}">${escapeHTML(t.name)} <small>${t.count}</small></button>`;
     }).join("");
-    els.typePills.innerHTML = all + rest;
+    const moreBtn = types.length > TYPE_INITIAL
+      ? `<button type="button" class="pill-btn muted-toggle" id="type-more">${state.showAllTypes ? "Show fewer" : `+${types.length - TYPE_INITIAL} more`}</button>`
+      : "";
+    els.typePills.innerHTML = all + rest + moreBtn;
     els.typePills.querySelectorAll(".pill-btn").forEach((b) => {
+      if (b.id === "type-more") {
+        b.addEventListener("click", () => { state.showAllTypes = !state.showAllTypes; renderTypePills(); });
+        return;
+      }
       b.addEventListener("click", () => {
         const v = b.dataset.type || null;
         state.activeType = state.activeType === v ? null : v;
@@ -215,6 +262,7 @@
     });
   }
 
+  // ---------- Sidebar: agencies (plain names) ----------
   function renderAgencyList() {
     const all = state.catalog.agencies || [];
     const filter = state.agencyFilter.toLowerCase();
@@ -223,7 +271,10 @@
     const list = filtered.slice(0, limit);
     els.agencyList.innerHTML = list.map((a) => {
       const checked = state.activeAgencies.has(a.name) ? "checked" : "";
-      return `<label class="checkbox"><input type="checkbox" data-agency="${escapeAttr(a.name)}" ${checked}> <span>${escapeHTML(a.name)}</span> <small>${a.count}</small></label>`;
+      const plain = plainAgencyName(a.name);
+      const acro = agencyAcronym(a.name);
+      const acroHTML = acro ? ` <small class="acro">${escapeHTML(acro)}</small>` : "";
+      return `<label class="checkbox"><input type="checkbox" data-agency="${escapeAttr(a.name)}" ${checked}> <span>${escapeHTML(plain)}${acroHTML}</span> <small>${a.count}</small></label>`;
     }).join("");
     els.agencyList.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
       cb.addEventListener("change", () => {
@@ -250,7 +301,7 @@
     const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 24);
     els.tagCloud.innerHTML = top.map(([t, n]) => {
       const on = state.activeTags.has(t) ? "on" : "";
-      return `<button type="button" class="tag-chip ${on}" data-tag="${escapeAttr(t)}">${escapeHTML(t)} <small>${n}</small></button>`;
+      return `<button type="button" class="tag-chip ${on}" data-tag="${escapeAttr(t)}" aria-pressed="${state.activeTags.has(t)}">${escapeHTML(t)} <small>${n}</small></button>`;
     }).join("");
     els.tagCloud.querySelectorAll(".tag-chip").forEach((b) => {
       b.addEventListener("click", () => {
@@ -264,10 +315,10 @@
     });
   }
 
-  // ---------- Weekly stats ----------
+  // ---------- Weekly stats (richer) ----------
   function sparklineSVG(trend) {
     if (!trend || trend.length < 2) return "";
-    const W = 120, H = 28, pad = 2;
+    const W = 200, H = 36, pad = 2;
     const max = Math.max(...trend);
     const min = Math.min(...trend);
     const range = Math.max(1, max - min);
@@ -280,7 +331,13 @@
     const last = pts[pts.length - 1].split(",");
     const path = `M${pts.join(" L")}`;
     const area = `M${pts[0]} L${pts.join(" L")} L${(pad + (trend.length - 1) * step).toFixed(1)},${H - pad} L${pad},${H - pad} Z`;
+    // Median reference line (across the prior 11 weeks; excludes current)
+    const refSrc = trend.slice(0, -1);
+    const med = median(refSrc);
+    const medY = H - pad - ((med - min) / range) * (H - pad * 2);
+    const medLine = `<line x1="${pad}" x2="${W - pad}" y1="${medY.toFixed(1)}" y2="${medY.toFixed(1)}" class="spark-median"/>`;
     return `<svg class="sparkline" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+      ${medLine}
       <path d="${area}" class="spark-area"/>
       <path d="${path}" class="spark-line"/>
       <circle cx="${last[0]}" cy="${last[1]}" r="2.5" class="spark-dot"/>
@@ -295,6 +352,25 @@
     return `<span class="weekly-delta ${dir}">${arrow} ${sign}${pct}% vs prior week</span>`;
   }
 
+  function interpretation(trend) {
+    if (!trend || trend.length < 4) return "";
+    const cur = trend[trend.length - 1];
+    const prev = trend.slice(0, -1);
+    const med = median(prev);
+    if (med <= 0) return "";
+    const ratio = cur / med;
+    if (ratio >= 1.25) return "Higher than typical";
+    if (ratio >= 1.10) return "A bit above typical";
+    if (ratio <= 0.75) return "Notably lower than typical";
+    if (ratio <= 0.90) return "A bit below typical";
+    return "Right around typical";
+  }
+
+  function categoryCount(cat) {
+    if (!cat || !state.catalog) return 0;
+    return state.catalog.datasets.filter((d) => d.c === cat).length;
+  }
+
   function renderWeeklyStats(stats) {
     if (!stats || !stats.stats || !stats.stats.length) return;
     const wrap = document.getElementById("weekly-stats");
@@ -303,30 +379,40 @@
     wrap.hidden = false;
     const computed = (stats.computed_at || "").slice(0, 10);
     const weeks = stats.trend_weeks || 12;
-    sub.innerHTML = `A few numbers from City datasets refreshed in ${escapeHTML(stats.window_label || "the past week")}, with ${weeks}-week trend lines for context. Computed ${escapeHTML(computed)}. <strong>Click a card</strong> to see every dataset in that category sorted by most-recently updated.`;
+    sub.innerHTML = `Pulled live from City datasets. Dashed line is the ${weeks - 1}-week median; the dot is this week. Click a card to filter results to that category.`;
     grid.innerHTML = stats.stats.map((s) => {
       const cat = s.category || "";
       const link = s.dataset_id ? `https://data.cityofnewyork.us/d/${encodeURIComponent(s.dataset_id)}` : null;
       const name = escapeHTML(s.dataset_name || "");
       const spark = sparklineSVG(s.trend);
       const delta = deltaHTML(s.delta_pct);
-      const sourceLine = link
-        ? `<a class="weekly-source-link" href="${link}" target="_blank" rel="noopener" title="Open ${name} on data.cityofnewyork.us">${name} ↗</a>`
-        : `<span class="weekly-source">${name}</span>`;
+      const interp = interpretation(s.trend);
+      const interpLine = interp ? `<span class="weekly-interp">${escapeHTML(interp)}</span>` : "";
+      const catLine = cat ? `<span class="cat-dot"></span><span>${escapeHTML(cat)}</span>` : "<span>NYC catalog overall</span>";
+      const catCount = cat ? categoryCount(cat) : (state.catalog ? state.catalog.datasets.length : 0);
+      const cta = cat
+        ? `<span>→ Browse all ${catCount.toLocaleString()} ${escapeHTML(cat)} datasets</span>`
+        : `<span>→ Browse all datasets</span>`;
+      const sourceLink = link
+        ? `<a class="source-link" href="${link}" target="_blank" rel="noopener" title="Open ${name} on data.cityofnewyork.us">${name} ↗</a>`
+        : `<span class="source-link">${name}</span>`;
       const inner = `
         <span class="weekly-headline">${escapeHTML(s.headline)}</span>
         <span class="weekly-label">${escapeHTML(s.label)}</span>
+        ${interpLine}
         ${delta}
         ${spark}
         <span class="weekly-sub2">${escapeHTML(s.sub || "")}</span>
-        ${sourceLine}`;
-      return `<button type="button" class="weekly-card" data-cat="${escapeAttr(cat)}" data-stat="${escapeAttr(s.key)}">${inner}</button>`;
+        <span class="weekly-sub2" style="font-size:11px;color:var(--ink-mute);">${catLine}</span>
+        <div class="weekly-cta">
+          ${cta}
+          ${sourceLink}
+        </div>`;
+      return `<button type="button" class="weekly-card" data-cat="${escapeAttr(cat)}" data-stat="${escapeAttr(s.key)}" aria-label="Filter results to ${escapeAttr(cat || 'all datasets')}, sorted by most recently updated">${inner}</button>`;
     }).join("");
-    // Wire up clicks: filter to category, sort by updated, scroll to results
     grid.querySelectorAll(".weekly-card").forEach((btn) => {
       btn.addEventListener("click", (e) => {
-        // Clicks on the inner source-link should still open the City page
-        if (e.target.closest(".weekly-source-link")) return;
+        if (e.target.closest(".source-link")) return;
         const cat = btn.dataset.cat || null;
         state.activeCat = cat || null;
         state.sort = "updated";
@@ -340,7 +426,7 @@
     });
   }
 
-  // ---------- Fresh strip ----------
+  // ---------- Fresh strip (vertical in right rail) ----------
   function renderFreshStrip() {
     const fresh = state.catalog.fresh || { new_this_month: [], updated_this_week: [] };
     const labelEl = document.getElementById("fresh-new-label");
@@ -348,14 +434,16 @@
     const renderTile = (it, isNew) => {
       const date = relativeDate(isNew ? (it.x || it.u) : it.u);
       const cat = it.c || "Uncategorized";
+      const agency = plainAgencyName(it.a);
       return `<a class="fresh-tile" data-cat="${escapeAttr(cat)}" href="https://data.cityofnewyork.us/d/${encodeURIComponent(it.i)}" target="_blank" rel="noopener">
         ${isNew ? '<span class="badge-new">NEW</span>' : ""}
         <span class="fresh-name">${escapeHTML(it.n)}</span>
-        <span class="fresh-meta">${escapeHTML(it.a || "")} · ${escapeHTML(date)}</span>
+        <span class="fresh-meta">${escapeHTML(agency)} · ${escapeHTML(date)}</span>
+        <span class="fresh-meta"><span class="cat-dot"></span>${escapeHTML(cat)}</span>
       </a>`;
     };
-    els.freshNew.innerHTML = (fresh.new_this_month || []).slice(0, 12).map((it) => renderTile(it, true)).join("") || "<em>No brand-new datasets in the last 30 days.</em>";
-    els.freshUpdated.innerHTML = (fresh.updated_this_week || []).slice(0, 12).map((it) => renderTile(it, false)).join("") || "<em>Nothing updated in the last 7 days.</em>";
+    els.freshNew.innerHTML = (fresh.new_this_month || []).slice(0, 6).map((it) => renderTile(it, true)).join("") || "<em style='font-size:12px;color:var(--ink-mute);'>No brand-new datasets in the last 30 days.</em>";
+    els.freshUpdated.innerHTML = (fresh.updated_this_week || []).slice(0, 6).map((it) => renderTile(it, false)).join("") || "<em style='font-size:12px;color:var(--ink-mute);'>Nothing updated in the last 7 days.</em>";
   }
 
   // ---------- Active filter chips ----------
@@ -363,15 +451,20 @@
     const chips = [];
     if (state.activeCat) chips.push({ label: `Category: ${state.activeCat}`, clear: () => { state.activeCat = null; renderCatMap(); } });
     if (state.activeType) chips.push({ label: `Type: ${state.activeType}`, clear: () => { state.activeType = null; renderTypePills(); } });
-    for (const a of state.activeAgencies) chips.push({ label: `Agency: ${a}`, clear: () => { state.activeAgencies.delete(a); renderAgencyList(); } });
+    for (const a of state.activeAgencies) chips.push({ label: `Agency: ${plainAgencyName(a)}`, clear: () => { state.activeAgencies.delete(a); renderAgencyList(); } });
     for (const t of state.activeTags) chips.push({ label: `Tag: ${t}`, clear: () => { state.activeTags.delete(t); renderTagCloud(); } });
+    if (state.fresh !== "all") {
+      const map = { "30": "Updated in last 30 days", "365": "Updated in last year", stale: "Older than 1 year" };
+      chips.push({ label: map[state.fresh] || state.fresh, clear: () => { state.fresh = "all"; renderFreshPills(); } });
+    }
     if (state.picksOnly) chips.push({ label: "Journalist picks only", clear: () => { state.picksOnly = false; els.picksOnly.checked = false; } });
+    if (state.favsOnly) chips.push({ label: "Favorites only", clear: () => { state.favsOnly = false; if (els.favsOnly) els.favsOnly.checked = false; } });
 
     if (chips.length === 0) {
       els.activeChips.innerHTML = "";
       return;
     }
-    els.activeChips.innerHTML = chips.map((c, i) => `<button type="button" class="chip" data-i="${i}">${escapeHTML(c.label)} <span class="x">×</span></button>`).join("");
+    els.activeChips.innerHTML = chips.map((c, i) => `<button type="button" class="chip" data-i="${i}" aria-label="Remove filter: ${escapeAttr(c.label)}">${escapeHTML(c.label)} <span class="x" aria-hidden="true">×</span></button>`).join("");
     els.activeChips.querySelectorAll(".chip").forEach((btn, i) => {
       btn.addEventListener("click", () => {
         chips[i].clear();
@@ -392,9 +485,7 @@
       list = state.catalog.datasets.slice();
     }
 
-    // Apply parsed inline filters
     if (state.parsed.filters) list = window.NYC_APPLY_FILTERS(list, state.parsed.filters);
-
     if (state.activeCat) list = list.filter((d) => d.c === state.activeCat);
     if (state.activeType) list = list.filter((d) => d.t === state.activeType);
     if (state.activeAgencies.size) list = list.filter((d) => state.activeAgencies.has(d.a));
@@ -415,13 +506,13 @@
     const f = freshnessClass(d.u);
     const url = `https://data.cityofnewyork.us/d/${encodeURIComponent(d.i)}`;
     const summary = d.s ? escapeHTML(d.s) : `<em>No description provided by the publishing agency.</em>`;
-    const agency = d.a ? `<span class="agency">${escapeHTML(d.a)}</span>` : `<span class="agency">NYC agency</span>`;
+    const agency = d.a ? `<span class="agency">${escapeHTML(plainAgencyName(d.a))}</span>` : `<span class="agency">NYC agency</span>`;
     const type = d.t && d.t !== "dataset" ? `<span class="pill type">${escapeHTML(d.t)}</span>` : "";
     const pick = state.picksById.get(d.i);
-    const star = pick ? `<span class="pick-star" title="Journalist pick: ${escapeAttr(pick.why)}">★</span>` : "";
+    const star = pick ? `<span class="pick-star" title="Journalist pick: ${escapeAttr(pick.why)}" aria-label="Journalist pick">★</span>` : "";
     const tagChips = (d.g || []).slice(0, 4).map((t) => `<button type="button" class="tag-mini" data-tag="${escapeAttr(t)}">${escapeHTML(t)}</button>`).join("");
     const isFav = state.favs.has(d.i);
-    const favBtn = `<button type="button" class="fav-btn ${isFav ? 'on' : ''}" data-fav="${escapeAttr(d.i)}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}" title="${isFav ? 'Saved to your favorites' : 'Save to favorites'}">${isFav ? '♥' : '♡'}</button>`;
+    const favBtn = `<button type="button" class="fav-btn ${isFav ? 'on' : ''}" data-fav="${escapeAttr(d.i)}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}: ${escapeAttr(d.n)}" title="${isFav ? 'Saved to your favorites' : 'Save to favorites'}" aria-pressed="${isFav}">${isFav ? '♥' : '♡'}</button>`;
     return `<article class="card" data-cat="${escapeAttr(d.c)}">
       ${favBtn}
       <h4>${star}<a href="${url}" target="_blank" rel="noopener">${escapeHTML(d.n)}</a></h4>
@@ -439,8 +530,6 @@
   function suggestEmptyState() {
     const q = (state.query || "").trim().toLowerCase();
     const suggestions = [];
-
-    // If filters are active, suggest dropping each one
     if (state.activeCat) {
       const without = state.catalog.datasets.filter((d) => {
         if (state.activeType && d.t !== state.activeType) return false;
@@ -453,7 +542,6 @@
     if (state.activeType) suggestions.push(`Remove the type filter — <button type="button" class="link-btn" id="es-clear-type">try all types</button>.`);
     if (state.activeAgencies.size) suggestions.push(`Remove the agency filter — <button type="button" class="link-btn" id="es-clear-agency">try all agencies</button>.`);
 
-    // Tag-similarity suggestion
     if (q.length >= 3) {
       const tags = new Set();
       for (const d of state.catalog.datasets) for (const t of d.g || []) if (t) tags.add(t);
@@ -471,7 +559,6 @@
       if (close.length) suggestions.push(`Did you mean: ${close.map(([t]) => `<button type="button" class="link-btn es-tag" data-tag="${escapeAttr(t)}">${escapeHTML(t)}</button>`).join(", ")}?`);
     }
 
-    // Fallback: top 3 most-viewed in active category (or overall)
     let pool = state.catalog.datasets;
     if (state.activeCat) pool = pool.filter((d) => d.c === state.activeCat);
     const top3 = pool.slice().sort((a, b) => (b.v || 0) - (a.v || 0)).slice(0, 3);
@@ -493,7 +580,6 @@
       els.results.innerHTML = "";
       els.empty.hidden = false;
       els.empty.innerHTML = suggestEmptyState();
-      // Wire up empty-state suggestion buttons
       const escClear = (sel, fn) => { const b = els.empty.querySelector(sel); if (b) b.addEventListener("click", () => { fn(); render(); syncURL(); }); };
       escClear("#es-clear-cat", () => { state.activeCat = null; renderCatMap(); });
       escClear("#es-clear-type", () => { state.activeType = null; renderTypePills(); });
@@ -506,7 +592,6 @@
       const slice = list.slice(0, RENDER_CAP);
       els.results.innerHTML = slice.map(renderCard).join("") +
         (list.length > RENDER_CAP ? `<div class="empty" style="grid-column:1/-1">Showing the first ${RENDER_CAP} of ${list.length.toLocaleString()} matches. Refine your search or pick a category to narrow further.</div>` : "");
-      // Wire up clickable card tag chips
       els.results.querySelectorAll(".tag-mini").forEach((b) => {
         b.addEventListener("click", () => {
           state.activeTags.add(b.dataset.tag);
@@ -515,7 +600,6 @@
           syncURL();
         });
       });
-      // Wire up favorite buttons
       els.results.querySelectorAll(".fav-btn").forEach((b) => {
         b.addEventListener("click", (e) => {
           e.preventDefault();
@@ -525,9 +609,12 @@
           const nowFav = state.favs.has(id);
           b.classList.toggle("on", nowFav);
           b.textContent = nowFav ? "♥" : "♡";
+          b.classList.add("pulsing");
+          setTimeout(() => b.classList.remove("pulsing"), 450);
           b.setAttribute("aria-label", nowFav ? "Remove from favorites" : "Add to favorites");
+          b.setAttribute("aria-pressed", nowFav);
           b.setAttribute("title", nowFav ? "Saved to your favorites" : "Save to favorites");
-          if (state.favsOnly) render(); // re-filter if we're showing favorites only
+          if (state.favsOnly) render();
         });
       });
     }
@@ -569,7 +656,7 @@
     if (params.get("type")) state.activeType = params.get("type");
     if (params.get("agency")) for (const a of params.get("agency").split("|")) state.activeAgencies.add(a);
     if (params.get("tag")) for (const t of params.get("tag").split("|")) state.activeTags.add(t);
-    if (params.get("age")) { state.fresh = params.get("age"); els.fresh.value = state.fresh; }
+    if (params.get("age")) { state.fresh = params.get("age"); }
     if (params.get("sort")) { state.sort = params.get("sort"); els.sort.value = state.sort; }
     if (params.get("picks") === "1") { state.picksOnly = true; els.picksOnly.checked = true; }
     if (params.get("favs") === "1") { state.favsOnly = true; if (els.favsOnly) els.favsOnly.checked = true; }
@@ -616,6 +703,7 @@
 
     renderCatMap();
     renderTypePills();
+    renderFreshPills(); bindFreshPills();
     renderAgencyList();
     renderTagCloud();
     renderWeeklyStats(weekly);
@@ -630,13 +718,14 @@
       syncURL();
     }, 120));
     els.sort.addEventListener("change", () => { state.sort = els.sort.value; render(); syncURL(); });
-    els.fresh.addEventListener("change", () => { state.fresh = els.fresh.value; render(); syncURL(); });
     els.clear.addEventListener("click", () => {
       state.query = ""; state.activeCat = null; state.sort = "relevance"; state.fresh = "all";
-      state.activeAgencies.clear(); state.activeType = null; state.activeTags.clear(); state.picksOnly = false;
-      els.q.value = ""; els.sort.value = "relevance"; els.fresh.value = "all"; els.picksOnly.checked = false;
+      state.activeAgencies.clear(); state.activeType = null; state.activeTags.clear();
+      state.picksOnly = false; state.favsOnly = false;
+      els.q.value = ""; els.sort.value = "relevance"; els.picksOnly.checked = false;
+      if (els.favsOnly) els.favsOnly.checked = false;
       state.parsed = window.NYC_PARSE_QUERY("");
-      renderCatMap(); renderTypePills(); renderAgencyList(); renderTagCloud(); render();
+      renderCatMap(); renderTypePills(); renderFreshPills(); renderAgencyList(); renderTagCloud(); render();
       history.replaceState(null, "", window.location.pathname);
     });
     els.agencySearch.addEventListener("input", debounce(() => { state.agencyFilter = els.agencySearch.value; renderAgencyList(); }, 80));
@@ -649,17 +738,15 @@
       state.favs.clear();
       saveFavs(state.favs);
       updateFavCount();
-      // Reset hearts on visible cards
       els.results.querySelectorAll(".fav-btn.on").forEach((b) => { b.classList.remove("on"); b.textContent = "♡"; });
       if (state.favsOnly) render();
     });
 
     window.addEventListener("hashchange", () => {
-      // Only react to outside-driven hash changes, not our own
       if (window._suppressHash) return;
       loadURL();
       state.parsed = window.NYC_PARSE_QUERY(state.query);
-      renderCatMap(); renderTypePills(); renderAgencyList(); renderTagCloud(); render();
+      renderCatMap(); renderTypePills(); renderFreshPills(); renderAgencyList(); renderTagCloud(); render();
     });
   }
 

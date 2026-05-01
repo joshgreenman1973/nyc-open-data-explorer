@@ -21,8 +21,10 @@
     </h1>
     <nav>
       <a href="methodology.html">Methodology</a>
-      <a href="feeds/all.xml">RSS</a>
       <a href="https://data.cityofnewyork.us/" target="_blank" rel="noopener">Official portal</a>
+      <a class="rss-icon" href="feeds/all.xml" title="RSS — most recently updated" aria-label="RSS feed">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M2 2v2c6.627 0 12 5.373 12 12h2C16 8.268 9.732 2 2 2zm0 4v2c4.418 0 8 3.582 8 8h2c0-5.523-4.477-10-10-10zm1 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+      </a>
     </nav>
   </div>
 </header>
@@ -38,12 +40,6 @@
         <option value="views">Most viewed</option>
         <option value="updated">Recently updated</option>
         <option value="alpha">A to Z</option>
-      </select>
-      <select id="freshness" aria-label="Freshness filter">
-        <option value="all">Any age</option>
-        <option value="30">Updated in last 30 days</option>
-        <option value="365">Updated in last year</option>
-        <option value="stale">Older than 1 year</option>
       </select>
       <button class="clear" id="clear" type="button">Reset all</button>
     </div>
@@ -63,39 +59,22 @@
     <div class="stats" id="stats">Loading the catalog&hellip;</div>
   </section>
 
-  <section class="weekly-stats" id="weekly-stats" aria-label="A few interesting numbers from this week" hidden>
-    <div class="weekly-head">
-      <h2>The week in city data</h2>
-      <p class="weekly-sub" id="weekly-sub">A few numbers pulled from datasets refreshed this week.</p>
-    </div>
-    <div class="weekly-grid" id="weekly-grid"></div>
-  </section>
-
-  <section class="my-favorites" id="my-favorites" aria-label="My favorite datasets" hidden>
-    <div class="favs-head">
-      <h2>My favorite datasets <small id="favs-head-count"></small></h2>
-      <button type="button" class="link-btn" id="favs-clear" hidden>Clear all favorites</button>
-    </div>
-    <div class="favs-track" id="favs-track"></div>
-  </section>
-
-  <section class="fresh-strip" id="fresh-strip" aria-label="What's fresh">
-    <div class="fresh-row">
-      <h2 id="fresh-new-label">Brand new this month</h2>
-      <div class="fresh-track" id="fresh-new"></div>
-    </div>
-    <div class="fresh-row">
-      <h2>Updated this week</h2>
-      <div class="fresh-track" id="fresh-updated"></div>
-    </div>
-  </section>
-
   <div class="layout">
     <aside class="sidebar" id="sidebar" aria-label="Filters">
       <div class="filter-group">
         <h3>Quick filters</h3>
         <label class="checkbox"><input type="checkbox" id="picks-only"> <span>Journalist picks <span class="star">★</span></span></label>
-        <label class="checkbox"><input type="checkbox" id="favs-only"> <span>My favorites <span class="heart" id="fav-count-heart">♥</span> <small id="fav-count">0</small></span></label>
+        <label class="checkbox"><input type="checkbox" id="favs-only"> <span>My favorites <span class="heart">♥</span> <small id="fav-count">0</small></span></label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Updated</h3>
+        <div class="pill-row" id="freshness-pills">
+          <button type="button" class="pill-btn on" data-fresh="all">Any time</button>
+          <button type="button" class="pill-btn" data-fresh="30">Last 30 days</button>
+          <button type="button" class="pill-btn" data-fresh="365">Last year</button>
+          <button type="button" class="pill-btn" data-fresh="stale">Older</button>
+        </div>
       </div>
 
       <div class="filter-group">
@@ -121,15 +100,47 @@
       <section id="results" class="cards" aria-live="polite"></section>
       <div id="empty" class="empty" hidden></div>
     </div>
+
+    <aside class="rail" id="rail" aria-label="This week and your favorites">
+      <section class="weekly-stats" id="weekly-stats" hidden>
+        <div class="weekly-head">
+          <h2>The week in city data</h2>
+          <p class="weekly-sub" id="weekly-sub"></p>
+        </div>
+        <div class="weekly-grid" id="weekly-grid"></div>
+      </section>
+
+      <section class="my-favorites" id="my-favorites" hidden>
+        <div class="favs-head">
+          <h2>My favorites <small id="favs-head-count"></small></h2>
+          <button type="button" class="link-btn" id="favs-clear" hidden>Clear all</button>
+        </div>
+        <div class="favs-track" id="favs-track"></div>
+      </section>
+
+      <section class="fresh-strip" id="fresh-strip">
+        <div class="fresh-row">
+          <h2 id="fresh-new-label">Recently added</h2>
+          <div class="fresh-track" id="fresh-new"></div>
+        </div>
+        <div class="fresh-row">
+          <h2>Updated this week</h2>
+          <div class="fresh-track" id="fresh-updated"></div>
+        </div>
+      </section>
+    </aside>
   </div>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Refreshed weekly.
-    <a href="methodology.html">See methodology &rarr;</a> &nbsp;·&nbsp;
-    <a href="feeds/all.xml">RSS: most-recently updated</a> &nbsp;·&nbsp;
-    <a href="feeds/new.xml">RSS: newest datasets</a>
+    <p>Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Catalog refreshed weekly. <a href="methodology.html">See methodology &rarr;</a></p>
+    <p class="footer-extra">
+      <a href="feeds/all.xml">RSS: most-recently updated</a> ·
+      <a href="feeds/new.xml">RSS: newest datasets</a> ·
+      <a href="https://github.com/joshgreenman1973/nyc-open-data-explorer" target="_blank" rel="noopener">Source on GitHub</a> ·
+      Built independently. Not affiliated with the City of New York.
+    </p>
   </div>
 </footer>
 
