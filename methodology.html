@@ -80,6 +80,9 @@
   <h2>"The week in city data" cards</h2>
   <p>The five small cards near the top of the page show numbers pulled directly from City datasets refreshed in the last 7 days, queried via Socrata's SoQL. The current set: 311 complaint volume + most-common type, motor-vehicle crashes + persons injured, DOB construction permits issued, restaurant inspections completed + grade-A share, and total datasets refreshed. Each card links to its source dataset on data.cityofnewyork.us. If a query times out or 500s on rebuild, the card is silently skipped (the page still works). The exact queries are in <code>build/weekly_stats.py</code>; output lands in <code>data/weekly_stats.json</code>.</p>
 
+  <h2>"In the news" rail section</h2>
+  <p>Once per rebuild, we fetch recent NYC headlines from Google News's public RSS feed and pair each headline with the most relevant dataset on data.cityofnewyork.us. <strong>The pairing is editorial, not a clever NLP guess</strong> — we maintain a curated topic dictionary in <code>build/news_match.py</code> that maps news keywords (e.g. "shooting," "eviction," "subway delay") to specific datasets. Headlines that don't match a curated topic are skipped. The output goes to <code>data/news_matches.json</code>. Headlines link out to the original news article; dataset names link to data.cityofnewyork.us. Add or refine topics by editing the <code>TOPICS</code> list in the script.</p>
+
   <h2>"What's fresh" strip</h2>
   <p>Two horizontal carousels at the top of the page surface what's actually moving in the catalog: <strong>brand new this month</strong> (datasets whose <code>createdAt</code> is in the last 30 days, sorted by creation date) and <strong>updated this week</strong> (datasets whose <code>data_updated_at</code> is in the last 7 days, sorted by view count). Both lists are precomputed during the weekly build, so no client-side scanning is needed.</p>
 

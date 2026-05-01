@@ -427,6 +427,35 @@
     });
   }
 
+  // ---------- In the news (curated headline → dataset matches) ----------
+  function renderNewsMatch(news) {
+    const sec = document.getElementById("news-match");
+    const list = document.getElementById("news-list");
+    const meta = document.getElementById("news-meta");
+    if (!sec || !list) return;
+    if (!news || !Array.isArray(news.matches) || news.matches.length === 0) {
+      sec.hidden = true;
+      return;
+    }
+    sec.hidden = false;
+    const computed = (news.computed_at || "").slice(0, 10);
+    if (meta) meta.textContent = computed ? `(refreshed ${computed})` : "";
+    list.innerHTML = news.matches.map((m) => {
+      const cat = m.dataset_category || "Uncategorized";
+      const headlineLink = m.link
+        ? `<a class="news-headline" href="${escapeAttr(m.link)}" target="_blank" rel="noopener">${escapeHTML(m.headline)} ↗</a>`
+        : `<span class="news-headline">${escapeHTML(m.headline)}</span>`;
+      const source = m.source ? `<span class="news-source">${escapeHTML(m.source)}</span>` : "";
+      return `<div class="news-item" data-cat="${escapeAttr(cat)}">
+        ${headlineLink}
+        ${source}
+        <span class="news-arrow">→ Backed by</span>
+        <a class="news-dataset" href="${escapeAttr(m.dataset_url)}" target="_blank" rel="noopener"><span class="cat-dot"></span>${escapeHTML(m.dataset_name)}</a>
+        <span class="news-meta-line">${escapeHTML(m.dataset_agency || "")}${m.topic ? ` · topic: ${escapeHTML(m.topic)}` : ""}</span>
+      </div>`;
+    }).join("");
+  }
+
   // ---------- Fresh strip (vertical in right rail) ----------
   function renderFreshStrip() {
     const fresh = state.catalog.fresh || { new_this_month: [], updated_this_week: [] };
@@ -683,16 +712,18 @@
 
   // ---------- Init ----------
   async function init() {
-    let data, picks, weekly;
+    let data, picks, weekly, news;
     try {
-      const [r1, r2, r3] = await Promise.all([
+      const [r1, r2, r3, r4] = await Promise.all([
         fetch("data/catalog.min.json", { cache: "no-cache" }),
         fetch("data/journalist_picks.json", { cache: "no-cache" }),
         fetch("data/weekly_stats.json", { cache: "no-cache" }).catch(() => null),
+        fetch("data/news_matches.json", { cache: "no-cache" }).catch(() => null),
       ]);
       data = await r1.json();
       picks = await r2.json();
       try { weekly = r3 && r3.ok ? await r3.json() : null; } catch (_) { weekly = null; }
+      try { news = r4 && r4.ok ? await r4.json() : null; } catch (_) { news = null; }
     } catch (e) {
       els.stats.textContent = "Failed to load the catalog. Try refreshing.";
       console.error(e);
@@ -727,6 +758,7 @@
     renderTagCloud();
     renderWeeklyStats(weekly);
     renderFreshStrip();
+    renderNewsMatch(news);
     render();
 
     els.q.addEventListener("input", debounce(() => {

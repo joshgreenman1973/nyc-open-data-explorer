@@ -610,6 +610,71 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
   padding: 2px 6px; border-radius: 3px;
 }
 
+/* RIGHT RAIL — In the news */
+.news-match { max-width: 100%; }
+.news-match h2 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.news-match h2 small {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--ink-mute);
+  font-weight: 400;
+  margin-left: 4px;
+}
+.news-sub {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: var(--ink-mute);
+}
+.news-list { display: flex; flex-direction: column; gap: 8px; }
+.news-item {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.news-headline {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.news-headline:hover { color: var(--focus); text-decoration: underline; }
+.news-source { font-size: 11px; color: var(--ink-mute); font-style: italic; }
+.news-arrow { font-size: 11px; color: var(--ink-mute); margin: 4px 0 2px; }
+.news-dataset {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.news-dataset:hover { color: var(--focus); text-decoration: underline; }
+.news-meta-line { font-size: 11px; color: var(--ink-mute); }
+.news-item .cat-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-mute); }
+.news-item[data-cat="Government Operations"] .cat-dot { background: var(--c-government); }
+.news-item[data-cat="Finance & Budget"] .cat-dot { background: var(--c-finance); }
+.news-item[data-cat="Maps & Geography"] .cat-dot { background: var(--c-maps); }
+.news-item[data-cat="Procurement & Contracts"] .cat-dot { background: var(--c-procurement); }
+.news-item[data-cat="Elections & Ethics"] .cat-dot { background: var(--c-elections); }
+.news-item[data-cat="Education"] .cat-dot { background: var(--c-education); }
+.news-item[data-cat="Transportation"] .cat-dot { background: var(--c-transportation); }
+.news-item[data-cat="Environment"] .cat-dot { background: var(--c-environment); }
+.news-item[data-cat="Housing & Development"] .cat-dot { background: var(--c-housing); }
+.news-item[data-cat="Social Services"] .cat-dot { background: var(--c-social); }
+.news-item[data-cat="Public Safety"] .cat-dot { background: var(--c-safety); }
+.news-item[data-cat="Recreation"] .cat-dot { background: var(--c-recreation); }
+.news-item[data-cat="Health"] .cat-dot { background: var(--c-health); }
+.news-item[data-cat="Business"] .cat-dot { background: var(--c-business); }
+
 /* CENTER COLUMN — result cards (the only place we keep colored stripes) */
 .cards {
   display: grid;
