@@ -1,53 +1,23 @@
 {
   "title": "NYC Open Data — Uncategorized (recently updated)",
-  "generated": "2026-05-15T11:29:41+00:00",
+  "generated": "2026-05-16T10:36:52+00:00",
   "items": [
     {
-      "id": "b5bf-t8kd",
-      "name": "CONDO_AREA",
+      "id": "umve-k9rk",
+      "name": "NYC Climate Budgeting Report: Emission Factors",
       "category": "Uncategorized",
-      "agency": "Other / unspecified",
-      "updated": "2026-05-15T11:16:19.000Z",
-      "created": "2024-10-16T19:52:36.000Z",
-      "views": 108,
-      "url": "https://data.cityofnewyork.us/d/b5bf-t8kd"
-    },
-    {
-      "id": "45at-qem6",
-      "name": "AIR_LOT_POLYGON",
-      "category": "Uncategorized",
-      "agency": "Other / unspecified",
-      "updated": "2026-05-15T10:54:52.000Z",
-      "created": "2024-10-16T19:52:39.000Z",
-      "views": 85,
-      "url": "https://data.cityofnewyork.us/d/45at-qem6"
-    },
-    {
-      "id": "ku5s-ingk",
-      "name": "TAX_BLOCK_POLYGON",
-      "category": "Uncategorized",
-      "agency": "Other / unspecified",
-      "updated": "2026-05-14T19:30:16.000Z",
-      "created": "2024-10-16T19:54:11.000Z",
-      "views": 85,
-      "url": "https://data.cityofnewyork.us/d/ku5s-ingk"
-    },
-    {
-      "id": "vhcs-h6rv",
-      "name": "TAX_BLOCK_POLYGON",
-      "category": "Uncategorized",
-      "agency": "Other / unspecified",
-      "updated": "2026-05-14T19:30:16.000Z",
-      "created": "2024-10-16T19:54:16.000Z",
-      "views": 84,
-      "url": "https://data.cityofnewyork.us/d/vhcs-h6rv"
+      "agency": "Office of Management and Budget (OMB)",
+      "updated": "2026-05-15T20:21:10.000Z",
+      "created": "2024-05-16T21:18:29.000Z",
+      "views": 1171,
+      "url": "https://data.cityofnewyork.us/d/umve-k9rk"
     },
     {
       "id": "nst5-iqiu",
       "name": "TAX_LOT_POLYGON",
       "category": "Uncategorized",
       "agency": "Other / unspecified",
-      "updated": "2026-05-14T19:25:35.000Z",
+      "updated": "2026-05-15T19:53:49.000Z",
       "created": "2024-10-16T20:05:53.000Z",
       "views": 132,
       "url": "https://data.cityofnewyork.us/d/nst5-iqiu"
@@ -57,30 +27,80 @@
       "name": "TAX_LOT_POLYGON",
       "category": "Uncategorized",
       "agency": "Other / unspecified",
-      "updated": "2026-05-14T19:25:35.000Z",
+      "updated": "2026-05-15T19:53:49.000Z",
       "created": "2024-10-16T20:06:06.000Z",
-      "views": 111,
+      "views": 112,
       "url": "https://data.cityofnewyork.us/d/5i76-3eqt"
     },
     {
-      "id": "waa5-kewj",
-      "name": "AIR_LOT_POLYGON",
+      "id": "ku5s-ingk",
+      "name": "TAX_BLOCK_POLYGON",
       "category": "Uncategorized",
       "agency": "Other / unspecified",
-      "updated": "2026-05-12T15:52:02.000Z",
+      "updated": "2026-05-15T19:42:44.000Z",
+      "created": "2024-10-16T19:54:11.000Z",
+      "views": 85,
+      "url": "https://data.cityofnewyork.us/d/ku5s-ingk"
+    },
+    {
+      "id": "vhcs-h6rv",
+      "name": "TAX_BLOCK_POLYGON",
+      "category": "Uncategorized",
+      "agency": "Other / unspecified",
+      "updated": "2026-05-15T19:42:44.000Z",
+      "created": "2024-10-16T19:54:16.000Z",
+      "views": 85,
+      "url": "https://data.cityofnewyork.us/d/vhcs-h6rv"
+    },
+    {
+      "id": "waa5-kewj",
+      "name": "AIR_LOT_3D",
+      "category": "Uncategorized",
+      "agency": "Other / unspecified",
+      "updated": "2026-05-15T16:10:20.000Z",
       "created": "2024-10-16T19:52:42.000Z",
       "views": 104,
       "url": "https://data.cityofnewyork.us/d/waa5-kewj"
     },
     {
       "id": "dtwr-83s9",
+      "name": "AIR_LOT_3D",
+      "category": "Uncategorized",
+      "agency": "Other / unspecified",
+      "updated": "2026-05-15T16:10:20.000Z",
+      "created": "2024-10-16T19:52:37.000Z",
+      "views": 90,
+      "url": "https://data.cityofnewyork.us/d/dtwr-83s9"
+    },
+    {
+      "id": "esve-a9r5",
+      "name": "CONDO_AREA",
+      "category": "Uncategorized",
+      "agency": "Other / unspecified",
+      "updated": "2026-05-15T11:16:19.000Z",
+      "created": "2024-10-16T19:52:38.000Z",
+      "views": 123,
+      "url": "https://data.cityofnewyork.us/d/esve-a9r5"
+    },
+    {
+      "id": "b5bf-t8kd",
+      "name": "CONDO_AREA",
+      "category": "Uncategorized",
+      "agency": "Other / unspecified",
+      "updated": "2026-05-15T11:16:19.000Z",
+      "created": "2024-10-16T19:52:36.000Z",
+      "views": 112,
+      "url": "https://data.cityofnewyork.us/d/b5bf-t8kd"
+    },
+    {
+      "id": "45at-qem6",
       "name": "AIR_LOT_POLYGON",
       "category": "Uncategorized",
       "agency": "Other / unspecified",
-      "updated": "2026-05-12T15:52:02.000Z",
-      "created": "2024-10-16T19:52:37.000Z",
-      "views": 89,
-      "url": "https://data.cityofnewyork.us/d/dtwr-83s9"
+      "updated": "2026-05-15T10:54:52.000Z",
+      "created": "2024-10-16T19:52:39.000Z",
+      "views": 87,
+      "url": "https://data.cityofnewyork.us/d/45at-qem6"
     },
     {
       "id": "jfsk-arcd",
@@ -89,7 +109,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-12T13:56:30.000Z",
       "created": "2021-12-20T16:35:08.000Z",
-      "views": 2060,
+      "views": 2062,
       "url": "https://data.cityofnewyork.us/d/jfsk-arcd"
     },
     {
@@ -99,7 +119,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-12T13:56:30.000Z",
       "created": "2021-12-20T14:49:04.000Z",
-      "views": 1479,
+      "views": 1480,
       "url": "https://data.cityofnewyork.us/d/k66c-pzws"
     },
     {
@@ -109,7 +129,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-05-12T13:55:39.000Z",
       "created": "2021-11-30T17:49:45.000Z",
-      "views": 5973,
+      "views": 5987,
       "url": "https://data.cityofnewyork.us/d/n8q6-i44s"
     },
     {
@@ -119,7 +139,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-05-12T13:55:39.000Z",
       "created": "2021-12-16T16:15:02.000Z",
-      "views": 1228,
+      "views": 1231,
       "url": "https://data.cityofnewyork.us/d/ahzi-mykc"
     },
     {
@@ -129,7 +149,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-12T13:54:45.000Z",
       "created": "2020-11-23T21:06:38.000Z",
-      "views": 9183,
+      "views": 9209,
       "url": "https://data.cityofnewyork.us/d/p78i-pat6"
     },
     {
@@ -139,7 +159,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-12T13:54:21.000Z",
       "created": "2020-11-04T20:30:08.000Z",
-      "views": 2007,
+      "views": 2015,
       "url": "https://data.cityofnewyork.us/d/fsjc-9fyh"
     },
     {
@@ -153,23 +173,13 @@
       "url": "https://data.cityofnewyork.us/d/yv25-wqf9"
     },
     {
-      "id": "esve-a9r5",
-      "name": "CONDO_AREA",
-      "category": "Uncategorized",
-      "agency": "Other / unspecified",
-      "updated": "2026-05-12T10:58:09.000Z",
-      "created": "2024-10-16T19:52:38.000Z",
-      "views": 121,
-      "url": "https://data.cityofnewyork.us/d/esve-a9r5"
-    },
-    {
       "id": "usep-8jbt",
       "name": "NYC Citywide Rolling Calendar Sales",
       "category": "Uncategorized",
       "agency": "Department of Finance (DOF)",
       "updated": "2026-04-20T18:29:23.000Z",
       "created": "2019-07-02T20:45:37.000Z",
-      "views": 16572,
+      "views": 16611,
       "url": "https://data.cityofnewyork.us/d/usep-8jbt"
     },
     {
@@ -179,7 +189,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-04-18T14:05:21.000Z",
       "created": "2018-10-03T21:15:46.000Z",
-      "views": 4910,
+      "views": 4921,
       "url": "https://data.cityofnewyork.us/d/yg3y-7juh"
     },
     {
@@ -189,7 +199,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:02:14.000Z",
       "created": "2022-04-01T14:23:02.000Z",
-      "views": 4531,
+      "views": 4532,
       "url": "https://data.cityofnewyork.us/d/vzj6-pcjy"
     },
     {
@@ -199,7 +209,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:02:14.000Z",
       "created": "2022-03-31T22:05:41.000Z",
-      "views": 3232,
+      "views": 3233,
       "url": "https://data.cityofnewyork.us/d/mk9u-qu7i"
     },
     {
@@ -209,7 +219,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:01:44.000Z",
       "created": "2022-04-01T14:22:04.000Z",
-      "views": 1673,
+      "views": 1680,
       "url": "https://data.cityofnewyork.us/d/dc95-rgxd"
     },
     {
@@ -219,7 +229,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:01:44.000Z",
       "created": "2022-03-31T21:55:29.000Z",
-      "views": 1528,
+      "views": 1529,
       "url": "https://data.cityofnewyork.us/d/uwmn-v7un"
     },
     {
@@ -229,7 +239,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:01:16.000Z",
       "created": "2022-03-31T21:38:39.000Z",
-      "views": 1800,
+      "views": 1814,
       "url": "https://data.cityofnewyork.us/d/ijwa-mn2v"
     },
     {
@@ -249,7 +259,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:00:44.000Z",
       "created": "2022-04-01T13:59:29.000Z",
-      "views": 3463,
+      "views": 3464,
       "url": "https://data.cityofnewyork.us/d/qpgi-ckmp"
     },
     {
@@ -259,7 +269,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:00:44.000Z",
       "created": "2022-03-31T20:57:37.000Z",
-      "views": 3168,
+      "views": 3180,
       "url": "https://data.cityofnewyork.us/d/qnem-b8re"
     },
     {
@@ -269,7 +279,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:00:05.000Z",
       "created": "2022-04-01T15:08:23.000Z",
-      "views": 9223,
+      "views": 9233,
       "url": "https://data.cityofnewyork.us/d/dbmp-698d"
     },
     {
@@ -279,7 +289,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-04-18T14:00:05.000Z",
       "created": "2022-04-01T14:29:49.000Z",
-      "views": 2238,
+      "views": 2239,
       "url": "https://data.cityofnewyork.us/d/bbtf-6p3c"
     },
     {
@@ -289,7 +299,7 @@
       "agency": "Office of the Comptroller",
       "updated": "2026-04-03T20:25:04.000Z",
       "created": "2018-11-09T20:12:42.000Z",
-      "views": 2610,
+      "views": 2614,
       "url": "https://data.cityofnewyork.us/d/fpxc-zjtm"
     },
     {
@@ -299,7 +309,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-03-09T20:50:50.000Z",
       "created": "2014-06-20T15:37:15.000Z",
-      "views": 7118,
+      "views": 7119,
       "url": "https://data.cityofnewyork.us/d/mzpm-a6vd"
     },
     {
@@ -309,7 +319,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-03-03T19:08:04.000Z",
       "created": "2019-02-11T22:34:12.000Z",
-      "views": 8558,
+      "views": 8561,
       "url": "https://data.cityofnewyork.us/d/98b7-th5j"
     },
     {
@@ -319,7 +329,7 @@
       "agency": "NYC Department of Transportation",
       "updated": "2026-01-12T18:27:42.000Z",
       "created": "2017-08-11T14:34:22.000Z",
-      "views": 3000,
+      "views": 3001,
       "url": "https://data.cityofnewyork.us/d/uzgy-xh4j"
     },
     {
@@ -329,7 +339,7 @@
       "agency": "NYC Department of Transportation",
       "updated": "2026-01-12T18:27:42.000Z",
       "created": "2018-09-18T20:39:12.000Z",
-      "views": 750,
+      "views": 752,
       "url": "https://data.cityofnewyork.us/d/7z3a-ched"
     },
     {
@@ -339,7 +349,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2025-12-08T20:25:18.000Z",
       "created": "2023-01-31T18:58:24.000Z",
-      "views": 1583,
+      "views": 1585,
       "url": "https://data.cityofnewyork.us/d/jr6f-nsuv"
     },
     {
@@ -349,7 +359,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2025-12-08T20:25:18.000Z",
       "created": "2023-01-31T19:11:57.000Z",
-      "views": 737,
+      "views": 738,
       "url": "https://data.cityofnewyork.us/d/pkey-4ytr"
     },
     {
@@ -359,7 +369,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2025-12-06T14:02:16.000Z",
       "created": "2021-07-23T20:23:44.000Z",
-      "views": 5639,
+      "views": 5648,
       "url": "https://data.cityofnewyork.us/d/p48c-iqtu"
     },
     {
@@ -369,7 +379,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2025-12-06T14:02:16.000Z",
       "created": "2021-07-30T18:38:01.000Z",
-      "views": 3635,
+      "views": 3639,
       "url": "https://data.cityofnewyork.us/d/7piy-bhr9"
     },
     {
@@ -379,7 +389,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2025-08-18T15:46:02.000Z",
       "created": "2024-07-24T16:08:52.000Z",
-      "views": 26663,
+      "views": 26699,
       "url": "https://data.cityofnewyork.us/d/9e2b-mctv"
     },
     {
@@ -389,18 +399,8 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2025-08-18T15:46:02.000Z",
       "created": "2024-07-24T15:57:31.000Z",
-      "views": 18207,
+      "views": 18239,
       "url": "https://data.cityofnewyork.us/d/mzxg-pwib"
-    },
-    {
-      "id": "umve-k9rk",
-      "name": "NYC Climate Budgeting Report: Emission Factors",
-      "category": "Uncategorized",
-      "agency": "Office of Management and Budget (OMB)",
-      "updated": "2025-05-09T15:44:15.000Z",
-      "created": "2024-05-16T21:18:29.000Z",
-      "views": 1155,
-      "url": "https://data.cityofnewyork.us/d/umve-k9rk"
     },
     {
       "id": "b37a-3faw",
@@ -409,7 +409,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2025-05-06T16:02:08.000Z",
       "created": "2019-02-15T20:27:42.000Z",
-      "views": 2326,
+      "views": 2331,
       "url": "https://data.cityofnewyork.us/d/b37a-3faw"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2025-01-14T18:12:33.000Z",
       "created": "2018-05-02T20:46:39.000Z",
-      "views": 2262,
+      "views": 2268,
       "url": "https://data.cityofnewyork.us/d/pwts-g83w"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Department of Sanitation (DSNY)",
       "updated": "2024-04-24T18:27:51.000Z",
       "created": "2024-04-24T18:22:35.000Z",
-      "views": 1897,
+      "views": 1900,
       "url": "https://data.cityofnewyork.us/d/pum2-pec2"
     },
     {
@@ -479,7 +479,7 @@
       "agency": "Department of Sanitation (DSNY)",
       "updated": "2024-04-24T18:19:39.000Z",
       "created": "2024-04-24T18:10:14.000Z",
-      "views": 3337,
+      "views": 3342,
       "url": "https://data.cityofnewyork.us/d/bpea-2i5q"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Department of Sanitation (DSNY)",
       "updated": "2024-04-24T18:02:21.000Z",
       "created": "2024-04-24T17:57:34.000Z",
-      "views": 941,
+      "views": 942,
       "url": "https://data.cityofnewyork.us/d/kbai-jcya"
     },
     {
