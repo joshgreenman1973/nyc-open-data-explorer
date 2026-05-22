@@ -1,9 +1,24 @@
 {
-  "computed_at": "2026-05-21T12:27:27+00:00",
+  "computed_at": "2026-05-22T12:00:05+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
+    {
+      "headline": "Mamdani Toughens New York’s Response to ICE, as Arrests Rise by 71%",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wTExGdDFvdjI2ZnVZOWEwUHdMNGdXT215T0VyUkJNSFIwdl9DWmduU204a2QxcEY0X05YX0RZbXVHR1hzeDdvQUt2VjZMalJNY2dJeEwyMXhobEI5TktiLTlQQ0pCbTJ0VWZCNDlUSEFyanU1?oc=5",
+      "pubDate": "Fri, 22 May 2026 10:00:13 GMT",
+      "topic": "NYPD arrests",
+      "dataset_id": "8h9b-rp9u",
+      "dataset_name": "NYPD Arrests Data (Historic)",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
+      "match_terms": [
+        "arrests"
+      ]
+    },
     {
       "headline": "New York City Unions Keep Winning Six-Figure Salaries",
       "source": "WSJ",
@@ -17,21 +32,6 @@
       "dataset_url": "https://data.cityofnewyork.us/d/k397-673e",
       "match_terms": [
         "salaries"
-      ]
-    },
-    {
-      "headline": "Despite Mamdani’s Outreach, Interest in N.Y.C. Pre-K Programs Is Flat",
-      "source": "The New York Times",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPR2RYTlBmdHFycm01bTgxVS1Xb243Q2ZPNmp3bHpEX2RMaWZUT01iT19DSV8wNld6S0cxUGZ4b2FjdVBSbC1nbU5OYTBUdEJZVy01cFhJOTk3WHotQnBOc2RqWFNwdld5T01BUk51dW5tU05zR1ZUdGtkcmlVUmUwQk5R?oc=5",
-      "pubDate": "Tue, 19 May 2026 07:00:05 GMT",
-      "topic": "Pre-K and child care",
-      "dataset_id": "kiyv-ks3f",
-      "dataset_name": "Universal Pre-K (UPK) School Locations",
-      "dataset_category": "Education",
-      "dataset_agency": "Department of Education (DOE)",
-      "dataset_url": "https://data.cityofnewyork.us/d/kiyv-ks3f",
-      "match_terms": [
-        "pre-k"
       ]
     }
   ]
