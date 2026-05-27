@@ -1,26 +1,116 @@
 {
   "title": "NYC Open Data — Finance & Budget (recently updated)",
-  "generated": "2026-05-26T10:36:10+00:00",
+  "generated": "2026-05-27T10:39:19+00:00",
   "items": [
     {
       "id": "nc67-uf89",
       "name": "Open Parking and Camera Violations",
       "category": "Finance & Budget",
       "agency": "Department of Finance (DOF)",
-      "updated": "2026-05-24T03:01:42.000Z",
+      "updated": "2026-05-27T09:20:58.000Z",
       "created": "2016-01-04T16:08:38.000Z",
-      "views": 343071,
+      "views": 343223,
       "url": "https://data.cityofnewyork.us/d/nc67-uf89"
     },
     {
-      "id": "mdcw-n682",
-      "name": "Greenbook",
+      "id": "h2ic-zdws",
+      "name": "Capital Projects Database (CPDB) - Projects (Points)",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T20:03:01.000Z",
+      "created": "2022-09-20T20:29:01.000Z",
+      "views": 1972,
+      "url": "https://data.cityofnewyork.us/d/h2ic-zdws"
+    },
+    {
+      "id": "ws6q-gv6r",
+      "name": "Capital Projects Database (CPDB) - Projects (Points Map)",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T20:03:01.000Z",
+      "created": "2022-10-28T20:03:22.000Z",
+      "views": 1210,
+      "url": "https://data.cityofnewyork.us/d/ws6q-gv6r"
+    },
+    {
+      "id": "fi59-268w",
+      "name": "Capital Projects Database (CPDB) - Projects",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:59:01.000Z",
+      "created": "2022-09-20T19:57:12.000Z",
+      "views": 6007,
+      "url": "https://data.cityofnewyork.us/d/fi59-268w"
+    },
+    {
+      "id": "djxg-kcfi",
+      "name": "Capital Projects Database (CPDB) - Commitments",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:58:59.000Z",
+      "created": "2022-09-20T20:09:45.000Z",
+      "views": 1514,
+      "url": "https://data.cityofnewyork.us/d/djxg-kcfi"
+    },
+    {
+      "id": "9jkp-n57r",
+      "name": "Capital Projects Database (CPDB) - Projects (Polygons)",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:58:42.000Z",
+      "created": "2022-09-20T20:21:32.000Z",
+      "views": 2123,
+      "url": "https://data.cityofnewyork.us/d/9jkp-n57r"
+    },
+    {
+      "id": "c48v-p34c",
+      "name": "Capital Projects Database (CPDB) - Projects (Polygons Maps)",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:58:42.000Z",
+      "created": "2022-10-28T20:09:42.000Z",
+      "views": 872,
+      "url": "https://data.cityofnewyork.us/d/c48v-p34c"
+    },
+    {
+      "id": "dx24-9ef7",
+      "name": "Pseudo Lots",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:46:33.000Z",
+      "created": "2022-09-20T14:36:04.000Z",
+      "views": 1216,
+      "url": "https://data.cityofnewyork.us/d/dx24-9ef7"
+    },
+    {
+      "id": "7uw4-q8dg",
+      "name": "Pseudo Lots (Map)",
+      "category": "Finance & Budget",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:46:33.000Z",
+      "created": "2022-10-28T14:33:53.000Z",
+      "views": 1050,
+      "url": "https://data.cityofnewyork.us/d/7uw4-q8dg"
+    },
+    {
+      "id": "5hjv-bjbv",
+      "name": "New York City Seasonally Adjusted Employment",
+      "category": "Finance & Budget",
+      "agency": "Mayor's Office of Management & Budgets (OMB)",
+      "updated": "2026-05-26T13:27:25.000Z",
+      "created": "2018-07-12T21:16:04.000Z",
+      "views": 7469,
+      "url": "https://data.cityofnewyork.us/d/5hjv-bjbv"
+    },
+    {
+      "id": "a9md-ynri",
+      "name": "Civil Service List Certification",
       "category": "Finance & Budget",
       "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-05-21T19:52:14.000Z",
-      "created": "2015-04-27T21:26:31.000Z",
-      "views": 62051,
-      "url": "https://data.cityofnewyork.us/d/mdcw-n682"
+      "updated": "2026-05-22T13:05:50.000Z",
+      "created": "2016-11-16T19:24:56.000Z",
+      "views": 1035725,
+      "url": "https://data.cityofnewyork.us/d/a9md-ynri"
     },
     {
       "id": "mhyv-6iza",
@@ -29,7 +119,7 @@
       "agency": "Conflicts of Interest Board (COIB)",
       "updated": "2026-05-21T16:28:51.000Z",
       "created": "2024-09-18T19:40:04.000Z",
-      "views": 443,
+      "views": 446,
       "url": "https://data.cityofnewyork.us/d/mhyv-6iza"
     },
     {
@@ -39,7 +129,7 @@
       "agency": "Office of the Comptroller",
       "updated": "2026-05-21T13:50:26.000Z",
       "created": "2017-11-22T20:17:41.000Z",
-      "views": 1312,
+      "views": 1318,
       "url": "https://data.cityofnewyork.us/d/nekg-b6tw"
     },
     {
@@ -49,7 +139,7 @@
       "agency": "Office of Administrative Tax Appeals (OATA)",
       "updated": "2026-05-19T19:03:18.000Z",
       "created": "2013-03-01T19:48:20.000Z",
-      "views": 4358,
+      "views": 4361,
       "url": "https://data.cityofnewyork.us/d/aht6-vxai"
     },
     {
@@ -59,7 +149,7 @@
       "agency": "Office of Management and Budget (OMB)",
       "updated": "2026-05-19T17:55:19.000Z",
       "created": "2024-05-15T21:15:10.000Z",
-      "views": 2475,
+      "views": 2481,
       "url": "https://data.cityofnewyork.us/d/c99a-c5ux"
     },
     {
@@ -69,7 +159,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T17:52:46.000Z",
       "created": "2020-09-22T13:57:25.000Z",
-      "views": 1176,
+      "views": 1177,
       "url": "https://data.cityofnewyork.us/d/tyv9-j3ti"
     },
     {
@@ -79,7 +169,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T17:52:37.000Z",
       "created": "2020-09-22T13:47:27.000Z",
-      "views": 1726,
+      "views": 1727,
       "url": "https://data.cityofnewyork.us/d/h59m-jnyu"
     },
     {
@@ -89,7 +179,7 @@
       "agency": "New York City Tax Commission (TAXCOMM)",
       "updated": "2026-05-19T15:37:47.000Z",
       "created": "2013-03-01T20:02:10.000Z",
-      "views": 9891,
+      "views": 9901,
       "url": "https://data.cityofnewyork.us/d/4nft-bihw"
     },
     {
@@ -99,7 +189,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:25:29.000Z",
       "created": "2021-05-05T20:06:08.000Z",
-      "views": 1229,
+      "views": 1230,
       "url": "https://data.cityofnewyork.us/d/u42g-qjaj"
     },
     {
@@ -109,7 +199,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:24:42.000Z",
       "created": "2021-05-05T20:12:58.000Z",
-      "views": 1368,
+      "views": 1371,
       "url": "https://data.cityofnewyork.us/d/nrik-v7ws"
     },
     {
@@ -119,7 +209,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:23:52.000Z",
       "created": "2021-05-05T20:21:05.000Z",
-      "views": 1903,
+      "views": 1907,
       "url": "https://data.cityofnewyork.us/d/dcjb-es8v"
     },
     {
@@ -129,7 +219,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:22:52.000Z",
       "created": "2020-12-15T20:54:18.000Z",
-      "views": 1695,
+      "views": 1700,
       "url": "https://data.cityofnewyork.us/d/d7pv-3qwq"
     },
     {
@@ -139,7 +229,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:22:03.000Z",
       "created": "2020-12-15T20:37:55.000Z",
-      "views": 3186,
+      "views": 3195,
       "url": "https://data.cityofnewyork.us/d/5mdy-gux8"
     },
     {
@@ -149,7 +239,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:21:16.000Z",
       "created": "2020-12-15T21:03:38.000Z",
-      "views": 5019,
+      "views": 5028,
       "url": "https://data.cityofnewyork.us/d/j3uq-sh95"
     },
     {
@@ -159,7 +249,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:20:20.000Z",
       "created": "2020-11-25T02:14:35.000Z",
-      "views": 1161,
+      "views": 1164,
       "url": "https://data.cityofnewyork.us/d/7c9t-ckpj"
     },
     {
@@ -179,7 +269,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:18:08.000Z",
       "created": "2020-11-25T01:59:45.000Z",
-      "views": 1599,
+      "views": 1609,
       "url": "https://data.cityofnewyork.us/d/4yay-s2us"
     },
     {
@@ -189,7 +279,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:16:14.000Z",
       "created": "2020-11-25T01:52:09.000Z",
-      "views": 810,
+      "views": 811,
       "url": "https://data.cityofnewyork.us/d/n5n4-5k5r"
     },
     {
@@ -199,7 +289,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:14:26.000Z",
       "created": "2020-11-25T01:43:51.000Z",
-      "views": 2975,
+      "views": 3015,
       "url": "https://data.cityofnewyork.us/d/hdie-5bdv"
     },
     {
@@ -219,7 +309,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:10:32.000Z",
       "created": "2020-07-14T18:38:58.000Z",
-      "views": 1600,
+      "views": 1601,
       "url": "https://data.cityofnewyork.us/d/f9xn-fiww"
     },
     {
@@ -229,7 +319,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:07:49.000Z",
       "created": "2020-07-09T18:40:02.000Z",
-      "views": 3711,
+      "views": 3718,
       "url": "https://data.cityofnewyork.us/d/f4wx-5ve6"
     },
     {
@@ -249,7 +339,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:02:52.000Z",
       "created": "2020-07-14T04:43:18.000Z",
-      "views": 1925,
+      "views": 1926,
       "url": "https://data.cityofnewyork.us/d/iw4r-p85g"
     },
     {
@@ -269,7 +359,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T14:00:05.000Z",
       "created": "2020-07-09T15:21:07.000Z",
-      "views": 1126,
+      "views": 1127,
       "url": "https://data.cityofnewyork.us/d/4utb-pisg"
     },
     {
@@ -279,7 +369,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T13:59:09.000Z",
       "created": "2020-07-09T15:09:31.000Z",
-      "views": 690,
+      "views": 691,
       "url": "https://data.cityofnewyork.us/d/rsnp-rdyf"
     },
     {
@@ -299,7 +389,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T13:45:26.000Z",
       "created": "2016-05-03T19:07:36.000Z",
-      "views": 7053,
+      "views": 7058,
       "url": "https://data.cityofnewyork.us/d/ugzk-a6x4"
     },
     {
@@ -309,7 +399,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T13:43:33.000Z",
       "created": "2016-05-04T14:45:28.000Z",
-      "views": 5012,
+      "views": 5026,
       "url": "https://data.cityofnewyork.us/d/39g5-gbp3"
     },
     {
@@ -319,7 +409,7 @@
       "agency": "Mayor's Office of Management and Budget (OMB)",
       "updated": "2026-05-19T13:41:53.000Z",
       "created": "2016-05-04T00:07:05.000Z",
-      "views": 35439,
+      "views": 35465,
       "url": "https://data.cityofnewyork.us/d/mwzb-yiwb"
     },
     {
@@ -329,7 +419,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-18T20:28:34.000Z",
       "created": "2018-03-21T14:58:38.000Z",
-      "views": 1471,
+      "views": 1480,
       "url": "https://data.cityofnewyork.us/d/jsrs-ggnx"
     },
     {
@@ -339,7 +429,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-18T20:28:29.000Z",
       "created": "2018-01-05T22:06:34.000Z",
-      "views": 4496,
+      "views": 4499,
       "url": "https://data.cityofnewyork.us/d/hxm3-23vy"
     },
     {
@@ -349,7 +439,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-05-18T16:11:19.000Z",
       "created": "2016-07-22T19:06:16.000Z",
-      "views": 137875,
+      "views": 137952,
       "url": "https://data.cityofnewyork.us/d/pvqr-7yc4"
     },
     {
@@ -359,7 +449,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-05-18T13:31:50.000Z",
       "created": "2024-10-16T20:29:39.000Z",
-      "views": 547,
+      "views": 551,
       "url": "https://data.cityofnewyork.us/d/sif6-3bej"
     },
     {
@@ -369,7 +459,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-05-18T13:31:50.000Z",
       "created": "2024-10-16T20:30:14.000Z",
-      "views": 278,
+      "views": 280,
       "url": "https://data.cityofnewyork.us/d/hbxj-x5sm"
     },
     {
@@ -389,7 +479,7 @@
       "agency": "Office of Management and Budget (OMB)",
       "updated": "2026-05-15T20:30:15.000Z",
       "created": "2024-05-16T17:02:37.000Z",
-      "views": 888,
+      "views": 890,
       "url": "https://data.cityofnewyork.us/d/czei-7bxd"
     },
     {
@@ -399,7 +489,7 @@
       "agency": "Office of Management and Budget (OMB)",
       "updated": "2026-05-15T20:27:38.000Z",
       "created": "2024-05-16T17:57:47.000Z",
-      "views": 1262,
+      "views": 1263,
       "url": "https://data.cityofnewyork.us/d/5bsb-haw5"
     },
     {
@@ -409,98 +499,8 @@
       "agency": "Office of Management and Budget (OMB)",
       "updated": "2026-05-15T20:25:44.000Z",
       "created": "2024-05-16T20:31:34.000Z",
-      "views": 1006,
+      "views": 1007,
       "url": "https://data.cityofnewyork.us/d/3z69-v9cd"
-    },
-    {
-      "id": "yvbp-zcpt",
-      "name": "NYC Climate Budgeting Report: New Climate Investments And Reallocations In Executive Plan",
-      "category": "Finance & Budget",
-      "agency": "Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T20:23:37.000Z",
-      "created": "2024-05-16T21:05:57.000Z",
-      "views": 1067,
-      "url": "https://data.cityofnewyork.us/d/yvbp-zcpt"
-    },
-    {
-      "id": "wusu-mzmq",
-      "name": "CUNY Community College Expenditures By Source",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T20:13:01.000Z",
-      "created": "2021-10-20T16:29:23.000Z",
-      "views": 1900,
-      "url": "https://data.cityofnewyork.us/d/wusu-mzmq"
-    },
-    {
-      "id": "m46f-nmju",
-      "name": "DOE Funding Sources",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T20:11:55.000Z",
-      "created": "2021-10-20T16:14:52.000Z",
-      "views": 1326,
-      "url": "https://data.cityofnewyork.us/d/m46f-nmju"
-    },
-    {
-      "id": "84ax-hg3y",
-      "name": "Full-Time and FTE Headcount including Covered Organizations",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T20:09:26.000Z",
-      "created": "2021-01-19T16:53:50.000Z",
-      "views": 2213,
-      "url": "https://data.cityofnewyork.us/d/84ax-hg3y"
-    },
-    {
-      "id": "xatq-cxeq",
-      "name": "New York City Forecasts of Selected Economic Indicators",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T20:07:06.000Z",
-      "created": "2020-11-02T03:42:43.000Z",
-      "views": 1785,
-      "url": "https://data.cityofnewyork.us/d/xatq-cxeq"
-    },
-    {
-      "id": "nsk4-4pvs",
-      "name": "New York City Employment Forecast",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T20:03:48.000Z",
-      "created": "2020-11-02T03:26:00.000Z",
-      "views": 2662,
-      "url": "https://data.cityofnewyork.us/d/nsk4-4pvs"
-    },
-    {
-      "id": "95bz-ea2t",
-      "name": "New York City Pension Expenses",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T19:59:37.000Z",
-      "created": "2020-07-24T13:49:37.000Z",
-      "views": 1235,
-      "url": "https://data.cityofnewyork.us/d/95bz-ea2t"
-    },
-    {
-      "id": "fdgu-y9iy",
-      "name": "Expense Budget--Miscellaneous Expense by Category",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T19:52:13.000Z",
-      "created": "2020-07-14T18:12:02.000Z",
-      "views": 2189,
-      "url": "https://data.cityofnewyork.us/d/fdgu-y9iy"
-    },
-    {
-      "id": "gzfs-3h4m",
-      "name": "Agency Spending by Budget Function",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Management and Budget (OMB)",
-      "updated": "2026-05-15T19:50:15.000Z",
-      "created": "2018-02-21T14:05:40.000Z",
-      "views": 7632,
-      "url": "https://data.cityofnewyork.us/d/gzfs-3h4m"
     }
   ]
 }
