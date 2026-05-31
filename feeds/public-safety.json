@@ -1,7 +1,47 @@
 {
   "title": "NYC Open Data — Public Safety (recently updated)",
-  "generated": "2026-05-30T09:55:30+00:00",
+  "generated": "2026-05-31T10:02:35+00:00",
   "items": [
+    {
+      "id": "2fir-qns4",
+      "name": "Civilian Complaint Review Board: Police Officers",
+      "category": "Public Safety",
+      "agency": "Civilian Complaint Review Board (CCRB)",
+      "updated": "2026-05-30T14:13:01.000Z",
+      "created": "2022-06-06T16:15:01.000Z",
+      "views": 14494,
+      "url": "https://data.cityofnewyork.us/d/2fir-qns4"
+    },
+    {
+      "id": "6xgr-kwjq",
+      "name": "Civilian Complaint Review Board: Allegations Against Police Officers",
+      "category": "Public Safety",
+      "agency": "Civilian Complaint Review Board (CCRB)",
+      "updated": "2026-05-30T14:12:24.000Z",
+      "created": "2022-06-06T16:01:09.000Z",
+      "views": 11769,
+      "url": "https://data.cityofnewyork.us/d/6xgr-kwjq"
+    },
+    {
+      "id": "2mby-ccnw",
+      "name": "Civilian Complaint Review Board: Complaints Against Police Officers",
+      "category": "Public Safety",
+      "agency": "Civilian Complaint Review Board (CCRB)",
+      "updated": "2026-05-30T14:03:45.000Z",
+      "created": "2022-06-06T15:34:16.000Z",
+      "views": 10416,
+      "url": "https://data.cityofnewyork.us/d/2mby-ccnw"
+    },
+    {
+      "id": "keep-pkmh",
+      "name": "Civilian Complaint Review Board: Penalties",
+      "category": "Public Safety",
+      "agency": "Civilian Complaint Review Board (CCRB)",
+      "updated": "2026-05-30T14:02:44.000Z",
+      "created": "2022-06-06T16:10:10.000Z",
+      "views": 4337,
+      "url": "https://data.cityofnewyork.us/d/keep-pkmh"
+    },
     {
       "id": "f55k-p6yu",
       "name": "Motor Vehicle Collisions - Person",
@@ -9,7 +49,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-29T23:40:37.000Z",
       "created": "2019-07-30T19:27:54.000Z",
-      "views": 35037,
+      "views": 35062,
       "url": "https://data.cityofnewyork.us/d/f55k-p6yu"
     },
     {
@@ -19,7 +59,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-29T23:29:07.000Z",
       "created": "2019-07-30T19:15:02.000Z",
-      "views": 39761,
+      "views": 39789,
       "url": "https://data.cityofnewyork.us/d/bm4k-52h4"
     },
     {
@@ -29,7 +69,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-29T22:46:53.000Z",
       "created": "2014-04-28T16:41:44.000Z",
-      "views": 865800,
+      "views": 866187,
       "url": "https://data.cityofnewyork.us/d/h9gi-nx95"
     },
     {
@@ -39,48 +79,8 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-05-29T19:22:05.000Z",
       "created": "2016-03-23T18:29:15.000Z",
-      "views": 95872,
+      "views": 95911,
       "url": "https://data.cityofnewyork.us/d/7479-ugqb"
-    },
-    {
-      "id": "2fir-qns4",
-      "name": "Civilian Complaint Review Board: Police Officers",
-      "category": "Public Safety",
-      "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-05-29T14:11:23.000Z",
-      "created": "2022-06-06T16:15:01.000Z",
-      "views": 14478,
-      "url": "https://data.cityofnewyork.us/d/2fir-qns4"
-    },
-    {
-      "id": "6xgr-kwjq",
-      "name": "Civilian Complaint Review Board: Allegations Against Police Officers",
-      "category": "Public Safety",
-      "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-05-29T14:09:43.000Z",
-      "created": "2022-06-06T16:01:09.000Z",
-      "views": 11762,
-      "url": "https://data.cityofnewyork.us/d/6xgr-kwjq"
-    },
-    {
-      "id": "2mby-ccnw",
-      "name": "Civilian Complaint Review Board: Complaints Against Police Officers",
-      "category": "Public Safety",
-      "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-05-29T14:06:14.000Z",
-      "created": "2022-06-06T15:34:16.000Z",
-      "views": 10404,
-      "url": "https://data.cityofnewyork.us/d/2mby-ccnw"
-    },
-    {
-      "id": "keep-pkmh",
-      "name": "Civilian Complaint Review Board: Penalties",
-      "category": "Public Safety",
-      "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-05-29T14:04:56.000Z",
-      "created": "2022-06-06T16:10:10.000Z",
-      "views": 4333,
-      "url": "https://data.cityofnewyork.us/d/keep-pkmh"
     },
     {
       "id": "uh7r-6nya",
@@ -89,7 +89,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:40:49.000Z",
       "created": "2013-01-29T21:19:50.000Z",
-      "views": 10296,
+      "views": 10298,
       "url": "https://data.cityofnewyork.us/d/uh7r-6nya"
     },
     {
@@ -119,7 +119,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-26T15:06:13.000Z",
       "created": "2021-10-12T16:37:13.000Z",
-      "views": 820,
+      "views": 823,
       "url": "https://data.cityofnewyork.us/d/i9n8-a8ed"
     },
     {
@@ -129,7 +129,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-26T15:05:44.000Z",
       "created": "2021-12-02T20:35:47.000Z",
-      "views": 702,
+      "views": 703,
       "url": "https://data.cityofnewyork.us/d/uafj-ik29"
     },
     {
@@ -139,7 +139,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-26T15:05:37.000Z",
       "created": "2021-12-02T20:46:07.000Z",
-      "views": 944,
+      "views": 946,
       "url": "https://data.cityofnewyork.us/d/wq9a-qu9a"
     },
     {
@@ -149,7 +149,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-26T15:05:30.000Z",
       "created": "2021-10-29T13:49:09.000Z",
-      "views": 5264,
+      "views": 5329,
       "url": "https://data.cityofnewyork.us/d/pmsy-ewrc"
     },
     {
@@ -159,7 +159,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-26T15:04:58.000Z",
       "created": "2021-10-15T16:01:41.000Z",
-      "views": 4569,
+      "views": 4597,
       "url": "https://data.cityofnewyork.us/d/sh6y-4tgb"
     },
     {
@@ -169,7 +169,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-05-26T15:03:55.000Z",
       "created": "2021-10-14T19:45:58.000Z",
-      "views": 553,
+      "views": 554,
       "url": "https://data.cityofnewyork.us/d/n3mp-t5uj"
     },
     {
@@ -189,7 +189,7 @@
       "agency": "Fire Department of New York City (FDNY)",
       "updated": "2026-05-15T20:18:11.000Z",
       "created": "2016-10-18T22:12:09.000Z",
-      "views": 96628,
+      "views": 96663,
       "url": "https://data.cityofnewyork.us/d/76xm-jjuj"
     },
     {
@@ -199,7 +199,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-05-15T16:51:19.000Z",
       "created": "2019-07-18T15:32:58.000Z",
-      "views": 5563,
+      "views": 5566,
       "url": "https://data.cityofnewyork.us/d/gpny-cuvw"
     },
     {
@@ -209,7 +209,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-05-15T16:50:04.000Z",
       "created": "2019-07-18T15:26:58.000Z",
-      "views": 26844,
+      "views": 26861,
       "url": "https://data.cityofnewyork.us/d/t7p9-n9dy"
     },
     {
@@ -239,7 +239,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-05-01T19:38:11.000Z",
       "created": "2016-03-23T18:28:11.000Z",
-      "views": 4674,
+      "views": 4676,
       "url": "https://data.cityofnewyork.us/d/gakf-suji"
     },
     {
@@ -249,7 +249,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-05-01T19:30:56.000Z",
       "created": "2016-03-23T18:28:17.000Z",
-      "views": 3321,
+      "views": 3322,
       "url": "https://data.cityofnewyork.us/d/k548-32d3"
     },
     {
@@ -259,7 +259,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-05-01T19:30:48.000Z",
       "created": "2016-03-23T18:28:40.000Z",
-      "views": 7910,
+      "views": 7911,
       "url": "https://data.cityofnewyork.us/d/94ri-3ium"
     },
     {
@@ -269,7 +269,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-05-01T19:30:41.000Z",
       "created": "2016-03-23T18:28:55.000Z",
-      "views": 8843,
+      "views": 8844,
       "url": "https://data.cityofnewyork.us/d/6teu-xtgp"
     },
     {
@@ -289,7 +289,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-05-01T19:21:13.000Z",
       "created": "2016-03-23T18:29:41.000Z",
-      "views": 3244,
+      "views": 3246,
       "url": "https://data.cityofnewyork.us/d/erra-pzy8"
     },
     {
@@ -299,7 +299,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-05-01T13:01:15.000Z",
       "created": "2024-02-14T18:58:01.000Z",
-      "views": 1051,
+      "views": 1053,
       "url": "https://data.cityofnewyork.us/d/xsj8-452q"
     },
     {
@@ -309,7 +309,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-05-01T12:59:55.000Z",
       "created": "2024-02-14T20:20:21.000Z",
-      "views": 1481,
+      "views": 1482,
       "url": "https://data.cityofnewyork.us/d/5dfs-vnre"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-05-01T12:23:28.000Z",
       "created": "2016-11-21T15:48:10.000Z",
-      "views": 1473,
+      "views": 1475,
       "url": "https://data.cityofnewyork.us/d/kkwv-djnk"
     },
     {
@@ -339,7 +339,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-05-01T12:23:16.000Z",
       "created": "2016-11-21T15:48:07.000Z",
-      "views": 1308,
+      "views": 1309,
       "url": "https://data.cityofnewyork.us/d/y3gq-zv28"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-05-01T12:23:12.000Z",
       "created": "2016-08-02T17:52:05.000Z",
-      "views": 1646,
+      "views": 1647,
       "url": "https://data.cityofnewyork.us/d/7m8q-jgtg"
     },
     {
@@ -439,7 +439,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T18:14:07.000Z",
       "created": "2021-05-04T02:11:35.000Z",
-      "views": 16815,
+      "views": 16830,
       "url": "https://data.cityofnewyork.us/d/d6zx-ckhd"
     },
     {
@@ -449,7 +449,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T16:10:09.000Z",
       "created": "2016-11-02T16:06:26.000Z",
-      "views": 243393,
+      "views": 243496,
       "url": "https://data.cityofnewyork.us/d/qgea-i56i"
     },
     {
@@ -459,7 +459,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T16:08:14.000Z",
       "created": "2016-10-28T22:37:30.000Z",
-      "views": 154592,
+      "views": 154734,
       "url": "https://data.cityofnewyork.us/d/5uac-w243"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T15:56:20.000Z",
       "created": "2018-06-05T20:04:11.000Z",
-      "views": 196139,
+      "views": 196196,
       "url": "https://data.cityofnewyork.us/d/8h9b-rp9u"
     },
     {
@@ -479,7 +479,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T15:55:17.000Z",
       "created": "2018-06-05T20:51:00.000Z",
-      "views": 254356,
+      "views": 254409,
       "url": "https://data.cityofnewyork.us/d/uip8-fykc"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T15:11:13.000Z",
       "created": "2021-05-04T00:53:02.000Z",
-      "views": 7648,
+      "views": 7651,
       "url": "https://data.cityofnewyork.us/d/bme5-7ty4"
     },
     {
@@ -499,7 +499,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-04-28T14:58:54.000Z",
       "created": "2020-11-10T23:46:23.000Z",
-      "views": 8712,
+      "views": 8715,
       "url": "https://data.cityofnewyork.us/d/57p3-pdcj"
     }
   ]
