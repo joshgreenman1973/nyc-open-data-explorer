@@ -1,14 +1,14 @@
 {
-  "computed_at": "2026-06-01T11:01:11+00:00",
+  "computed_at": "2026-06-02T10:55:13+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "Opinion | New York rolls back pension reforms in election-year sop to unions",
-      "source": "The Washington Post",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa2t2dmcydzFTQVJxWjRBNWV3OE9XejZjNlQ3a3d4WmdrT0dPWTRKcWMya3BZTmc4cFlUN1NocTltU01NbFc4WXNKWVZ1Vk5hejVkdGdNbGJscVZtcTJWRUNuRnRRcVpnNTJ5QnhHcE45QmdtcTd6b3NkTUJFMjdJRnNFZlhTQUtXNkNlY1hEOHdBbThlMUoybzNmUjZNOWlndXp1bGxOa3E3R2t4THB5LWFR?oc=5",
-      "pubDate": "Sat, 30 May 2026 18:29:33 GMT",
+      "headline": "What to Watch For in the NY Primary: Key Races and Why They Matter",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYzFqNTBYMW5Sa2VOdi14cnlENDgwRDJseG9Fb2REeVRoV3ZCOGxzRVh0ZTNBTWdzQmU4YklQRE1UbllwNkpNQXRwV29BQ0pDMDM0RVU4STZmVlZSeWg2b2tSWDRZa2czT3FnTk0xUmVGNE1fYWVMZjg2ZGo5amNqNmhQeDJfcVYzUXlr?oc=5",
+      "pubDate": "Mon, 01 Jun 2026 07:00:09 GMT",
       "topic": "Voter analysis",
       "dataset_id": "psx2-aqx3",
       "dataset_name": "Voter Analysis 2008-2018",
@@ -16,7 +16,22 @@
       "dataset_agency": "Campaign Finance Board (CFB)",
       "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
       "match_terms": [
-        "election"
+        "primary"
+      ]
+    },
+    {
+      "headline": "NYPD searching for alleged subway pusher in Queens",
+      "source": "CBS News",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaGlxaGp1MGdEYkU0QzVzYmVlalpVOWI3dEtBbWR5ZF9CY0lud1pldjc0WmxfaEFlekJST0ZSaDdMZ2hXQjczUzhnT1dlbHZsN0RjZWVMUklJX0s1emR1ZTFpSmliRzZnUVJsSHZIZnJRTE0wVndEVlY2QkJrUGJxakROQ09rcW9oZTFrOXJMdkdTZzQ?oc=5",
+      "pubDate": "Tue, 02 Jun 2026 10:12:00 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "subway"
       ]
     },
     {
@@ -47,21 +62,6 @@
       "dataset_url": "https://data.cityofnewyork.us/d/erm2-nwe9",
       "match_terms": [
         "heat"
-      ]
-    },
-    {
-      "headline": "Some G train service repairs delayed until July for subway riders in Brooklyn, Queens",
-      "source": "ABC7 Eyewitness News",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSk1pQUJ6bmlUdmdYWDVzdEs4Tmt4Wm5kN0NwUDc4emx4cEJIcUZQOU10VFFIRVEzVXVVdGZ2SDJFZi15cV9aQ1A2ekpDNzdjMWVvcFJseExRSFQ2Q3l2MG1aOEE1elFaaGc4dVYwdWw5dldsZWluUmJWeFgxcktMdDBlVDdXNjl2STRuVnNreGpSc0FBZFA5Z0VxcVB6SmfSAaQBQVVfeXFMUFJiZGRTZTE5cjBBU1ROSGNDcWpVSDR2QjlOemg4N2VId0pNOUswaXdoeVk0UEpKOEhjNzZmakxkNDFBUXhWS2pkZi03NTVpcVFmaTZZOFRJMnpUUHZWWmg3aXhzNnlKSmttNkV1bTBfQ2xfbWZ2c0JuVUt0dDRic3R6MTdpUmZ5M1ZQQzdqX3R2UTc1a0dOVEFGUlJsYjlnLXNDdGQ?oc=5",
-      "pubDate": "Sun, 31 May 2026 15:45:55 GMT",
-      "topic": "Bicycle counts",
-      "dataset_id": "uczf-rk3c",
-      "dataset_name": "Bicycle Counts (Historical)",
-      "dataset_category": "Transportation",
-      "dataset_agency": "Department of Transportation (DOT)",
-      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
-      "match_terms": [
-        "subway"
       ]
     }
   ]
