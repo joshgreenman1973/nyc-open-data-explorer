@@ -1,45 +1,35 @@
 {
   "title": "NYC Open Data — Environment (recently updated)",
-  "generated": "2026-06-04T10:29:43+00:00",
+  "generated": "2026-06-05T10:35:39+00:00",
   "items": [
+    {
+      "id": "2kdb-mfqb",
+      "name": "DSNY Garages (Map)",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-06-05T10:07:37.000Z",
+      "created": "2020-07-23T20:32:15.000Z",
+      "views": 9585,
+      "url": "https://data.cityofnewyork.us/d/2kdb-mfqb"
+    },
     {
       "id": "xw3j-2yxf",
       "name": "DSNY Garages",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:10:25.000Z",
+      "updated": "2026-06-05T10:07:37.000Z",
       "created": "2020-07-23T15:06:34.000Z",
-      "views": 4448,
+      "views": 4462,
       "url": "https://data.cityofnewyork.us/d/xw3j-2yxf"
-    },
-    {
-      "id": "wshr-5vic",
-      "name": "Electronics Drop Off Locations in NYC",
-      "category": "Environment",
-      "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:03:22.000Z",
-      "created": "2019-10-21T15:58:03.000Z",
-      "views": 17057,
-      "url": "https://data.cityofnewyork.us/d/wshr-5vic"
-    },
-    {
-      "id": "9wzr-uhik",
-      "name": "Electronics Drop Off Locations in NYC (Map)",
-      "category": "Environment",
-      "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:03:22.000Z",
-      "created": "2019-10-21T16:45:10.000Z",
-      "views": 8233,
-      "url": "https://data.cityofnewyork.us/d/9wzr-uhik"
     },
     {
       "id": "edk2-vkjh",
       "name": "Pharmaceutical and Syringe Drop-Off Locations in NYC",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:01:54.000Z",
+      "updated": "2026-06-05T10:06:17.000Z",
       "created": "2019-10-21T17:36:57.000Z",
-      "views": 3346,
+      "views": 3356,
       "url": "https://data.cityofnewyork.us/d/edk2-vkjh"
     },
     {
@@ -47,19 +37,39 @@
       "name": "Pharmaceutical and Syringe Drop-Off Locations in NYC (Map)",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:01:54.000Z",
+      "updated": "2026-06-05T10:06:17.000Z",
       "created": "2019-10-21T18:21:44.000Z",
-      "views": 1796,
+      "views": 1798,
       "url": "https://data.cityofnewyork.us/d/g9pi-q9mx"
+    },
+    {
+      "id": "wshr-5vic",
+      "name": "Electronics Drop Off Locations in NYC",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-06-05T10:05:33.000Z",
+      "created": "2019-10-21T15:58:03.000Z",
+      "views": 17079,
+      "url": "https://data.cityofnewyork.us/d/wshr-5vic"
+    },
+    {
+      "id": "9wzr-uhik",
+      "name": "Electronics Drop Off Locations in NYC (Map)",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-06-05T10:05:33.000Z",
+      "created": "2019-10-21T16:45:10.000Z",
+      "views": 8236,
+      "url": "https://data.cityofnewyork.us/d/9wzr-uhik"
     },
     {
       "id": "242c-ru4i",
       "name": "DSNY Special Waste Drop-off Sites",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:00:08.000Z",
+      "updated": "2026-06-05T10:02:49.000Z",
       "created": "2020-07-24T02:27:10.000Z",
-      "views": 5082,
+      "views": 5092,
       "url": "https://data.cityofnewyork.us/d/242c-ru4i"
     },
     {
@@ -67,9 +77,9 @@
       "name": "Special Waste Drop-Off Sites (Map)",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T10:00:08.000Z",
+      "updated": "2026-06-05T10:02:49.000Z",
       "created": "2020-07-24T03:14:11.000Z",
-      "views": 2782,
+      "views": 2787,
       "url": "https://data.cityofnewyork.us/d/68qr-38va"
     },
     {
@@ -77,9 +87,9 @@
       "name": "DSNY DonateNYC Directory",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T09:36:41.000Z",
+      "updated": "2026-06-05T09:32:38.000Z",
       "created": "2020-08-20T19:05:54.000Z",
-      "views": 4200,
+      "views": 4203,
       "url": "https://data.cityofnewyork.us/d/gkgs-za6m"
     },
     {
@@ -87,9 +97,9 @@
       "name": "DSNY DonateNYC Directory (Map)",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-04T09:36:41.000Z",
+      "updated": "2026-06-05T09:32:38.000Z",
       "created": "2020-08-20T19:53:04.000Z",
-      "views": 1678,
+      "views": 1679,
       "url": "https://data.cityofnewyork.us/d/qtrb-nhaa"
     },
     {
@@ -97,9 +107,9 @@
       "name": "Work Order Management Module",
       "category": "Environment",
       "agency": "Department of Environmental Protection (DEP)",
-      "updated": "2026-06-03T19:34:58.000Z",
+      "updated": "2026-06-04T19:36:53.000Z",
       "created": "2015-05-22T21:03:59.000Z",
-      "views": 4175,
+      "views": 4233,
       "url": "https://data.cityofnewyork.us/d/4fvw-nn9c"
     },
     {
@@ -107,9 +117,9 @@
       "name": "Food Scrap Drop-Off Locations in NYC",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-03T19:04:00.000Z",
+      "updated": "2026-06-04T19:04:46.000Z",
       "created": "2019-10-21T16:49:41.000Z",
-      "views": 10465,
+      "views": 10474,
       "url": "https://data.cityofnewyork.us/d/if26-z6xq"
     },
     {
@@ -117,9 +127,9 @@
       "name": "Food Scrap Drop-Off Locations - Map",
       "category": "Environment",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-03T19:04:00.000Z",
+      "updated": "2026-06-04T19:04:46.000Z",
       "created": "2023-06-20T19:29:57.000Z",
-      "views": 2971,
+      "views": 2977,
       "url": "https://data.cityofnewyork.us/d/n5y5-3ud3"
     },
     {
@@ -127,20 +137,10 @@
       "name": "OER Cleanup Sites",
       "category": "Environment",
       "agency": "Mayor's Office of Environmental Remediation (OER)",
-      "updated": "2026-06-03T16:55:21.000Z",
+      "updated": "2026-06-04T16:55:48.000Z",
       "created": "2019-09-25T19:13:49.000Z",
-      "views": 7127,
+      "views": 7131,
       "url": "https://data.cityofnewyork.us/d/3279-pp7v"
-    },
-    {
-      "id": "2kdb-mfqb",
-      "name": "DSNY Garages (Map)",
-      "category": "Environment",
-      "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-03T10:14:00.000Z",
-      "created": "2020-07-23T20:32:15.000Z",
-      "views": 9574,
-      "url": "https://data.cityofnewyork.us/d/2kdb-mfqb"
     },
     {
       "id": "hphy-6g7m",
@@ -149,7 +149,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-06-02T17:01:24.000Z",
       "created": "2022-02-24T16:27:28.000Z",
-      "views": 6714,
+      "views": 6730,
       "url": "https://data.cityofnewyork.us/d/hphy-6g7m"
     },
     {
@@ -159,7 +159,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-06-02T16:38:20.000Z",
       "created": "2017-03-06T22:10:16.000Z",
-      "views": 5865,
+      "views": 5888,
       "url": "https://data.cityofnewyork.us/d/4pt5-3vv4"
     },
     {
@@ -169,7 +169,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-06-02T16:38:20.000Z",
       "created": "2024-12-03T18:04:34.000Z",
-      "views": 741,
+      "views": 747,
       "url": "https://data.cityofnewyork.us/d/h2wd-pfdx"
     },
     {
@@ -179,7 +179,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-06-02T14:30:27.000Z",
       "created": "2017-03-06T15:29:21.000Z",
-      "views": 15228,
+      "views": 15288,
       "url": "https://data.cityofnewyork.us/d/hn5i-inap"
     },
     {
@@ -189,7 +189,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-06-02T14:14:36.000Z",
       "created": "2019-04-12T16:55:40.000Z",
-      "views": 1700,
+      "views": 1701,
       "url": "https://data.cityofnewyork.us/d/h426-x5gi"
     },
     {
@@ -199,7 +199,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-06-02T14:13:25.000Z",
       "created": "2019-04-12T19:13:25.000Z",
-      "views": 1047,
+      "views": 1049,
       "url": "https://data.cityofnewyork.us/d/tqsy-2s6w"
     },
     {
@@ -209,7 +209,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-06-01T13:00:25.000Z",
       "created": "2025-12-18T17:24:31.000Z",
-      "views": 528,
+      "views": 534,
       "url": "https://data.cityofnewyork.us/d/kb2e-tjy3"
     },
     {
@@ -219,7 +219,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-06-01T13:00:25.000Z",
       "created": "2025-12-18T19:27:48.000Z",
-      "views": 234,
+      "views": 235,
       "url": "https://data.cityofnewyork.us/d/ag7h-2pg6"
     },
     {
@@ -229,7 +229,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-06-01T13:00:18.000Z",
       "created": "2025-12-18T19:32:19.000Z",
-      "views": 1645,
+      "views": 1667,
       "url": "https://data.cityofnewyork.us/d/aq7i-eu5q"
     },
     {
@@ -239,7 +239,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-06-01T07:00:15.000Z",
       "created": "2018-01-22T20:55:36.000Z",
-      "views": 6021,
+      "views": 6059,
       "url": "https://data.cityofnewyork.us/d/8sdw-8vja"
     },
     {
@@ -249,7 +249,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-29T21:00:54.000Z",
       "created": "2014-03-04T22:28:23.000Z",
-      "views": 6253,
+      "views": 6259,
       "url": "https://data.cityofnewyork.us/d/x2s6-6d2j"
     },
     {
@@ -259,7 +259,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-05-19T17:54:45.000Z",
       "created": "2025-05-15T13:15:19.000Z",
-      "views": 729,
+      "views": 733,
       "url": "https://data.cityofnewyork.us/d/7n9x-tbtd"
     },
     {
@@ -269,7 +269,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-05-19T14:29:00.000Z",
       "created": "2025-05-15T13:32:15.000Z",
-      "views": 450,
+      "views": 452,
       "url": "https://data.cityofnewyork.us/d/dpq6-sy7w"
     },
     {
@@ -279,7 +279,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-18T20:28:34.000Z",
       "created": "2018-03-21T14:58:34.000Z",
-      "views": 8764,
+      "views": 8769,
       "url": "https://data.cityofnewyork.us/d/mzjp-98aw"
     },
     {
@@ -289,7 +289,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T14:09:10.000Z",
       "created": "2021-06-17T17:38:01.000Z",
-      "views": 16916,
+      "views": 16942,
       "url": "https://data.cityofnewyork.us/d/br7w-st33"
     },
     {
@@ -299,7 +299,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T14:09:10.000Z",
       "created": "2021-06-17T15:18:03.000Z",
-      "views": 14439,
+      "views": 14456,
       "url": "https://data.cityofnewyork.us/d/48va-85tp"
     },
     {
@@ -309,7 +309,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T14:08:29.000Z",
       "created": "2020-12-24T20:27:57.000Z",
-      "views": 3055,
+      "views": 3058,
       "url": "https://data.cityofnewyork.us/d/xqbk-beh5"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T14:01:20.000Z",
       "created": "2019-12-30T17:38:10.000Z",
-      "views": 1847,
+      "views": 1848,
       "url": "https://data.cityofnewyork.us/d/kcfe-uypz"
     },
     {
@@ -329,7 +329,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T13:35:09.000Z",
       "created": "2019-02-28T21:28:41.000Z",
-      "views": 1772,
+      "views": 1773,
       "url": "https://data.cityofnewyork.us/d/ud2m-5tb4"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T13:30:08.000Z",
       "created": "2019-11-19T21:51:49.000Z",
-      "views": 1411,
+      "views": 1413,
       "url": "https://data.cityofnewyork.us/d/45sb-srb5"
     },
     {
@@ -359,7 +359,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T13:08:41.000Z",
       "created": "2019-11-19T20:37:35.000Z",
-      "views": 2090,
+      "views": 2100,
       "url": "https://data.cityofnewyork.us/d/259a-b6s7"
     },
     {
@@ -369,7 +369,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-18T13:00:52.000Z",
       "created": "2018-10-01T21:36:08.000Z",
-      "views": 6339,
+      "views": 6352,
       "url": "https://data.cityofnewyork.us/d/vjbm-hsyr"
     },
     {
@@ -389,7 +389,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-16T13:04:49.000Z",
       "created": "2018-10-31T14:44:49.000Z",
-      "views": 13653,
+      "views": 13655,
       "url": "https://data.cityofnewyork.us/d/fuhs-xmg2"
     },
     {
@@ -399,7 +399,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-15T12:03:19.000Z",
       "created": "2013-01-31T04:28:12.000Z",
-      "views": 37598,
+      "views": 37655,
       "url": "https://data.cityofnewyork.us/d/5uug-f49n"
     },
     {
@@ -409,7 +409,7 @@
       "agency": "Department of Sanitation (DSNY)",
       "updated": "2026-05-14T20:37:37.000Z",
       "created": "2018-09-12T17:05:49.000Z",
-      "views": 5309,
+      "views": 5316,
       "url": "https://data.cityofnewyork.us/d/6yag-pnij"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-05-14T19:28:34.000Z",
       "created": "2017-03-09T19:04:21.000Z",
-      "views": 9858,
+      "views": 9877,
       "url": "https://data.cityofnewyork.us/d/bdjm-n7q4"
     },
     {
@@ -429,7 +429,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T14:41:54.000Z",
       "created": "2015-02-24T22:18:06.000Z",
-      "views": 9389,
+      "views": 9393,
       "url": "https://data.cityofnewyork.us/d/y43c-5n92"
     },
     {
@@ -439,7 +439,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:42:00.000Z",
       "created": "2025-03-14T20:31:51.000Z",
-      "views": 1572,
+      "views": 1586,
       "url": "https://data.cityofnewyork.us/d/fm4z-qud6"
     },
     {
@@ -449,7 +449,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:42:00.000Z",
       "created": "2025-04-08T19:09:11.000Z",
-      "views": 870,
+      "views": 871,
       "url": "https://data.cityofnewyork.us/d/ndvb-mprk"
     },
     {
@@ -459,7 +459,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:40:18.000Z",
       "created": "2025-01-29T20:11:43.000Z",
-      "views": 4523,
+      "views": 4536,
       "url": "https://data.cityofnewyork.us/d/df32-vzax"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:40:18.000Z",
       "created": "2025-01-29T20:33:07.000Z",
-      "views": 3066,
+      "views": 3076,
       "url": "https://data.cityofnewyork.us/d/h3ce-uahi"
     },
     {
@@ -479,7 +479,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:40:18.000Z",
       "created": "2025-04-08T19:09:58.000Z",
-      "views": 982,
+      "views": 983,
       "url": "https://data.cityofnewyork.us/d/gs9u-q4vv"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:39:42.000Z",
       "created": "2025-03-14T20:19:10.000Z",
-      "views": 1158,
+      "views": 1163,
       "url": "https://data.cityofnewyork.us/d/n7f2-dyvt"
     },
     {
@@ -499,7 +499,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-05-14T13:39:42.000Z",
       "created": "2025-04-08T19:07:19.000Z",
-      "views": 877,
+      "views": 878,
       "url": "https://data.cityofnewyork.us/d/p7iz-d7br"
     }
   ]
