@@ -1,15 +1,15 @@
 {
   "title": "NYC Open Data — Transportation (recently updated)",
-  "generated": "2026-06-11T10:53:32+00:00",
+  "generated": "2026-06-12T10:43:54+00:00",
   "items": [
     {
       "id": "i4gi-tjb9",
       "name": "DOT Traffic Speeds",
       "category": "Transportation",
       "agency": "Other / unspecified",
-      "updated": "2026-06-11T10:36:12.000Z",
+      "updated": "2026-06-12T10:40:38.000Z",
       "created": "2017-04-17T18:31:04.000Z",
-      "views": 37114,
+      "views": 37170,
       "url": "https://data.cityofnewyork.us/d/i4gi-tjb9"
     },
     {
@@ -17,9 +17,9 @@
       "name": "Bus Breakdown and Delays",
       "category": "Transportation",
       "agency": "Department of Education (DOE)",
-      "updated": "2026-06-11T10:33:30.000Z",
+      "updated": "2026-06-12T10:33:38.000Z",
       "created": "2015-09-30T17:08:23.000Z",
-      "views": 49335,
+      "views": 49376,
       "url": "https://data.cityofnewyork.us/d/ez4e-fazm"
     },
     {
@@ -27,9 +27,9 @@
       "name": "Historical Driver Application Status",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-11T10:08:04.000Z",
+      "updated": "2026-06-12T10:09:19.000Z",
       "created": "2016-06-16T18:07:19.000Z",
-      "views": 19555,
+      "views": 19563,
       "url": "https://data.cityofnewyork.us/d/p32s-yqxq"
     },
     {
@@ -37,9 +37,9 @@
       "name": "TLC New Driver Application Status",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-11T10:08:00.000Z",
+      "updated": "2026-06-12T10:09:14.000Z",
       "created": "2016-05-17T18:43:43.000Z",
-      "views": 1752699,
+      "views": 1752756,
       "url": "https://data.cityofnewyork.us/d/dpec-ucu7"
     },
     {
@@ -47,9 +47,9 @@
       "name": "Street Construction Permits - Stipulations (2020 - Present)",
       "category": "Transportation",
       "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-11T10:06:42.000Z",
+      "updated": "2026-06-12T10:09:14.000Z",
       "created": "2018-12-19T19:33:11.000Z",
-      "views": 4978,
+      "views": 4985,
       "url": "https://data.cityofnewyork.us/d/gsgx-6efw"
     },
     {
@@ -57,10 +57,310 @@
       "name": "Parking Regulation Locations and Signs",
       "category": "Transportation",
       "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-11T10:01:36.000Z",
+      "updated": "2026-06-12T10:02:04.000Z",
       "created": "2022-03-14T13:52:58.000Z",
-      "views": 24267,
+      "views": 24327,
       "url": "https://data.cityofnewyork.us/d/nfid-uabd"
+    },
+    {
+      "id": "kj7g-u4gp",
+      "name": "Electric Vehicle (EV) Charging Data - Municipal Lots and Garages",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-12T06:16:16.000Z",
+      "created": "2024-12-20T17:22:06.000Z",
+      "views": 2287,
+      "url": "https://data.cityofnewyork.us/d/kj7g-u4gp"
+    },
+    {
+      "id": "9n6h-pt9g",
+      "name": "Speed Reducer Tracking System (SRTS)",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-12T06:00:46.000Z",
+      "created": "2019-12-20T17:22:04.000Z",
+      "views": 5312,
+      "url": "https://data.cityofnewyork.us/d/9n6h-pt9g"
+    },
+    {
+      "id": "jwvp-gyiq",
+      "name": "DOT Street Lights and Traffic Signals (311 Service Requests from 2010 to Present)",
+      "category": "Transportation",
+      "agency": "311",
+      "updated": "2026-06-12T01:36:33.000Z",
+      "created": "2017-10-25T20:28:13.000Z",
+      "views": 9927,
+      "url": "https://data.cityofnewyork.us/d/jwvp-gyiq"
+    },
+    {
+      "id": "rdxc-q253",
+      "name": "Street Hail Livery (SHL) Taxi Initial Inspection Schedule",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T22:06:08.000Z",
+      "created": "2017-03-21T21:48:56.000Z",
+      "views": 7786,
+      "url": "https://data.cityofnewyork.us/d/rdxc-q253"
+    },
+    {
+      "id": "eccv-9dzr",
+      "name": "CURRENT BASES",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T22:05:21.000Z",
+      "created": "2015-04-21T17:43:01.000Z",
+      "views": 121525,
+      "url": "https://data.cityofnewyork.us/d/eccv-9dzr"
+    },
+    {
+      "id": "2v9c-2k7f",
+      "name": "FHV Base Aggregate Report",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T22:05:04.000Z",
+      "created": "2016-04-07T16:15:02.000Z",
+      "views": 152744,
+      "url": "https://data.cityofnewyork.us/d/2v9c-2k7f"
+    },
+    {
+      "id": "ht4t-wzcm",
+      "name": "Taxi Improvement Fund (TIF) Medallion Payments",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T22:03:31.000Z",
+      "created": "2016-11-17T14:57:46.000Z",
+      "views": 21603,
+      "url": "https://data.cityofnewyork.us/d/ht4t-wzcm"
+    },
+    {
+      "id": "tqtj-sjs8",
+      "name": "Street Construction Permits (2022 - Present)",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T20:42:30.000Z",
+      "created": "2018-12-17T18:27:24.000Z",
+      "views": 50706,
+      "url": "https://data.cityofnewyork.us/d/tqtj-sjs8"
+    },
+    {
+      "id": "8wbx-tsch",
+      "name": "For Hire Vehicles (FHV) - Active",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:20:58.000Z",
+      "created": "2015-07-16T17:33:32.000Z",
+      "views": 3754251,
+      "url": "https://data.cityofnewyork.us/d/8wbx-tsch"
+    },
+    {
+      "id": "xjfq-wh2d",
+      "name": "For Hire Vehicles (FHV) - Active Drivers",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:19:20.000Z",
+      "created": "2015-07-16T17:24:02.000Z",
+      "views": 1753589,
+      "url": "https://data.cityofnewyork.us/d/xjfq-wh2d"
+    },
+    {
+      "id": "jb3k-j3gp",
+      "name": "Medallion Drivers - Active",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:18:59.000Z",
+      "created": "2013-12-26T19:23:30.000Z",
+      "views": 452391,
+      "url": "https://data.cityofnewyork.us/d/jb3k-j3gp"
+    },
+    {
+      "id": "td5q-ry6d",
+      "name": "Medallion Drivers – Passenger Assistance Trained",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:17:39.000Z",
+      "created": "2013-03-01T19:21:48.000Z",
+      "views": 16875,
+      "url": "https://data.cityofnewyork.us/d/td5q-ry6d"
+    },
+    {
+      "id": "jgtb-hmpg",
+      "name": "Medallion Vehicles - Inactive",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:17:09.000Z",
+      "created": "2013-05-17T17:22:00.000Z",
+      "views": 94081,
+      "url": "https://data.cityofnewyork.us/d/jgtb-hmpg"
+    },
+    {
+      "id": "5tub-eh45",
+      "name": "Street Hail Livery (SHL) Drivers - Active",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:16:54.000Z",
+      "created": "2014-08-18T18:33:15.000Z",
+      "views": 402389,
+      "url": "https://data.cityofnewyork.us/d/5tub-eh45"
+    },
+    {
+      "id": "rhe8-mgbb",
+      "name": "Medallion Vehicles - Authorized",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:15:34.000Z",
+      "created": "2013-03-01T19:27:08.000Z",
+      "views": 342480,
+      "url": "https://data.cityofnewyork.us/d/rhe8-mgbb"
+    },
+    {
+      "id": "yhuu-4pt3",
+      "name": "Street Hail Livery (SHL) Permits",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T19:15:10.000Z",
+      "created": "2014-10-29T17:42:50.000Z",
+      "views": 125191,
+      "url": "https://data.cityofnewyork.us/d/yhuu-4pt3"
+    },
+    {
+      "id": "b4mf-rg6h",
+      "name": "Commissioner's Correspondence",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T18:52:29.000Z",
+      "created": "2018-10-10T20:06:16.000Z",
+      "views": 3613,
+      "url": "https://data.cityofnewyork.us/d/b4mf-rg6h"
+    },
+    {
+      "id": "xnfm-u3k5",
+      "name": "Street Resurfacing Schedule",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T15:02:11.000Z",
+      "created": "2023-01-31T15:57:34.000Z",
+      "views": 15257,
+      "url": "https://data.cityofnewyork.us/d/xnfm-u3k5"
+    },
+    {
+      "id": "sp7n-275u",
+      "name": "Medallion Taxi Initial Inspection Schedule",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-06-11T13:00:22.000Z",
+      "created": "2019-09-12T19:28:07.000Z",
+      "views": 20108,
+      "url": "https://data.cityofnewyork.us/d/sp7n-275u"
+    },
+    {
+      "id": "fpeh-f7ci",
+      "name": "Dining Out NYC Locations",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:31:06.000Z",
+      "created": "2025-05-14T18:21:48.000Z",
+      "views": 1896,
+      "url": "https://data.cityofnewyork.us/d/fpeh-f7ci"
+    },
+    {
+      "id": "cj3v-xdpd",
+      "name": "Street Construction Permits - Related Agency",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:17:53.000Z",
+      "created": "2018-12-27T17:42:24.000Z",
+      "views": 3429,
+      "url": "https://data.cityofnewyork.us/d/cj3v-xdpd"
+    },
+    {
+      "id": "6a2s-2t65",
+      "name": "EZ Pass Readers July 2024- current",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:16:29.000Z",
+      "created": "2024-07-10T18:37:32.000Z",
+      "views": 5291,
+      "url": "https://data.cityofnewyork.us/d/6a2s-2t65"
+    },
+    {
+      "id": "hcv3-zacv",
+      "name": "Street Construction Permits - Cranes",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:15:38.000Z",
+      "created": "2018-12-18T19:22:11.000Z",
+      "views": 4128,
+      "url": "https://data.cityofnewyork.us/d/hcv3-zacv"
+    },
+    {
+      "id": "9fnm-j6if",
+      "name": "Street Construction Permits - Fee",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:15:02.000Z",
+      "created": "2018-12-18T19:58:58.000Z",
+      "views": 4978,
+      "url": "https://data.cityofnewyork.us/d/9fnm-j6if"
+    },
+    {
+      "id": "gx72-kirf",
+      "name": "Sidewalk Management Database - ReInspection",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:12:34.000Z",
+      "created": "2023-09-28T17:57:24.000Z",
+      "views": 964,
+      "url": "https://data.cityofnewyork.us/d/gx72-kirf"
+    },
+    {
+      "id": "dntt-gqwq",
+      "name": "Sidewalk Management Database - Inspection",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:12:14.000Z",
+      "created": "2023-09-28T14:03:06.000Z",
+      "views": 3005,
+      "url": "https://data.cityofnewyork.us/d/dntt-gqwq"
+    },
+    {
+      "id": "6kbp-uz6m",
+      "name": "Sidewalk Management Database - Violations",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T12:06:33.000Z",
+      "created": "2023-09-28T18:55:03.000Z",
+      "views": 18673,
+      "url": "https://data.cityofnewyork.us/d/6kbp-uz6m"
+    },
+    {
+      "id": "ct66-47at",
+      "name": "Bicycle and Pedestrian Counts",
+      "category": "Transportation",
+      "agency": "Other / unspecified",
+      "updated": "2026-06-11T12:06:06.000Z",
+      "created": "2025-12-30T18:46:52.000Z",
+      "views": 1581,
+      "url": "https://data.cityofnewyork.us/d/ct66-47at"
+    },
+    {
+      "id": "6up2-gnw8",
+      "name": "Bicycle and Pedestrian Count Sensors",
+      "category": "Transportation",
+      "agency": "Other / unspecified",
+      "updated": "2026-06-11T12:00:07.000Z",
+      "created": "2025-12-26T22:14:25.000Z",
+      "views": 537,
+      "url": "https://data.cityofnewyork.us/d/6up2-gnw8"
+    },
+    {
+      "id": "ge3f-inui",
+      "name": "Bridge Hold Location Stipulations",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-06-11T11:00:14.000Z",
+      "created": "2018-10-11T15:36:26.000Z",
+      "views": 1931,
+      "url": "https://data.cityofnewyork.us/d/ge3f-inui"
     },
     {
       "id": "i2y3-sx2e",
@@ -69,198 +369,8 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-11T08:00:20.000Z",
       "created": "2019-12-23T15:26:46.000Z",
-      "views": 1395,
+      "views": 1398,
       "url": "https://data.cityofnewyork.us/d/i2y3-sx2e"
-    },
-    {
-      "id": "9n6h-pt9g",
-      "name": "Speed Reducer Tracking System (SRTS)",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-11T06:00:40.000Z",
-      "created": "2019-12-20T17:22:04.000Z",
-      "views": 5300,
-      "url": "https://data.cityofnewyork.us/d/9n6h-pt9g"
-    },
-    {
-      "id": "jwvp-gyiq",
-      "name": "DOT Street Lights and Traffic Signals (311 Service Requests from 2010 to Present)",
-      "category": "Transportation",
-      "agency": "311",
-      "updated": "2026-06-11T01:36:31.000Z",
-      "created": "2017-10-25T20:28:13.000Z",
-      "views": 9920,
-      "url": "https://data.cityofnewyork.us/d/jwvp-gyiq"
-    },
-    {
-      "id": "rdxc-q253",
-      "name": "Street Hail Livery (SHL) Taxi Initial Inspection Schedule",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T22:07:56.000Z",
-      "created": "2017-03-21T21:48:56.000Z",
-      "views": 7781,
-      "url": "https://data.cityofnewyork.us/d/rdxc-q253"
-    },
-    {
-      "id": "eccv-9dzr",
-      "name": "CURRENT BASES",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T22:07:27.000Z",
-      "created": "2015-04-21T17:43:01.000Z",
-      "views": 121444,
-      "url": "https://data.cityofnewyork.us/d/eccv-9dzr"
-    },
-    {
-      "id": "2v9c-2k7f",
-      "name": "FHV Base Aggregate Report",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T22:07:20.000Z",
-      "created": "2016-04-07T16:15:02.000Z",
-      "views": 152724,
-      "url": "https://data.cityofnewyork.us/d/2v9c-2k7f"
-    },
-    {
-      "id": "ht4t-wzcm",
-      "name": "Taxi Improvement Fund (TIF) Medallion Payments",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T22:06:47.000Z",
-      "created": "2016-11-17T14:57:46.000Z",
-      "views": 21597,
-      "url": "https://data.cityofnewyork.us/d/ht4t-wzcm"
-    },
-    {
-      "id": "tqtj-sjs8",
-      "name": "Street Construction Permits (2022 - Present)",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-10T20:46:21.000Z",
-      "created": "2018-12-17T18:27:24.000Z",
-      "views": 50633,
-      "url": "https://data.cityofnewyork.us/d/tqtj-sjs8"
-    },
-    {
-      "id": "8wbx-tsch",
-      "name": "For Hire Vehicles (FHV) - Active",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:21:00.000Z",
-      "created": "2015-07-16T17:33:32.000Z",
-      "views": 3752743,
-      "url": "https://data.cityofnewyork.us/d/8wbx-tsch"
-    },
-    {
-      "id": "xjfq-wh2d",
-      "name": "For Hire Vehicles (FHV) - Active Drivers",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:19:55.000Z",
-      "created": "2015-07-16T17:24:02.000Z",
-      "views": 1753019,
-      "url": "https://data.cityofnewyork.us/d/xjfq-wh2d"
-    },
-    {
-      "id": "jb3k-j3gp",
-      "name": "Medallion Drivers - Active",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:19:10.000Z",
-      "created": "2013-12-26T19:23:30.000Z",
-      "views": 452256,
-      "url": "https://data.cityofnewyork.us/d/jb3k-j3gp"
-    },
-    {
-      "id": "td5q-ry6d",
-      "name": "Medallion Drivers – Passenger Assistance Trained",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:18:09.000Z",
-      "created": "2013-03-01T19:21:48.000Z",
-      "views": 16872,
-      "url": "https://data.cityofnewyork.us/d/td5q-ry6d"
-    },
-    {
-      "id": "jgtb-hmpg",
-      "name": "Medallion Vehicles - Inactive",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:16:51.000Z",
-      "created": "2013-05-17T17:22:00.000Z",
-      "views": 94047,
-      "url": "https://data.cityofnewyork.us/d/jgtb-hmpg"
-    },
-    {
-      "id": "5tub-eh45",
-      "name": "Street Hail Livery (SHL) Drivers - Active",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:16:40.000Z",
-      "created": "2014-08-18T18:33:15.000Z",
-      "views": 402300,
-      "url": "https://data.cityofnewyork.us/d/5tub-eh45"
-    },
-    {
-      "id": "rhe8-mgbb",
-      "name": "Medallion Vehicles - Authorized",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:15:42.000Z",
-      "created": "2013-03-01T19:27:08.000Z",
-      "views": 342293,
-      "url": "https://data.cityofnewyork.us/d/rhe8-mgbb"
-    },
-    {
-      "id": "yhuu-4pt3",
-      "name": "Street Hail Livery (SHL) Permits",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-10T19:15:11.000Z",
-      "created": "2014-10-29T17:42:50.000Z",
-      "views": 125170,
-      "url": "https://data.cityofnewyork.us/d/yhuu-4pt3"
-    },
-    {
-      "id": "fpeh-f7ci",
-      "name": "Dining Out NYC Locations",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-10T12:31:08.000Z",
-      "created": "2025-05-14T18:21:48.000Z",
-      "views": 1886,
-      "url": "https://data.cityofnewyork.us/d/fpeh-f7ci"
-    },
-    {
-      "id": "6a2s-2t65",
-      "name": "EZ Pass Readers July 2024- current",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-10T12:15:15.000Z",
-      "created": "2024-07-10T18:37:32.000Z",
-      "views": 5284,
-      "url": "https://data.cityofnewyork.us/d/6a2s-2t65"
-    },
-    {
-      "id": "ct66-47at",
-      "name": "Bicycle and Pedestrian Counts",
-      "category": "Transportation",
-      "agency": "Other / unspecified",
-      "updated": "2026-06-10T12:06:53.000Z",
-      "created": "2025-12-30T18:46:52.000Z",
-      "views": 1568,
-      "url": "https://data.cityofnewyork.us/d/ct66-47at"
-    },
-    {
-      "id": "6up2-gnw8",
-      "name": "Bicycle and Pedestrian Count Sensors",
-      "category": "Transportation",
-      "agency": "Other / unspecified",
-      "updated": "2026-06-10T12:00:07.000Z",
-      "created": "2025-12-26T22:14:25.000Z",
-      "views": 532,
-      "url": "https://data.cityofnewyork.us/d/6up2-gnw8"
     },
     {
       "id": "5esv-8c3f",
@@ -269,18 +379,8 @@
       "agency": "Taxi and Limousine Commission (TLC)",
       "updated": "2026-06-09T16:26:49.000Z",
       "created": "2024-12-11T20:12:43.000Z",
-      "views": 1760,
+      "views": 1762,
       "url": "https://data.cityofnewyork.us/d/5esv-8c3f"
-    },
-    {
-      "id": "kj7g-u4gp",
-      "name": "Electric Vehicle (EV) Charging Data - Municipal Lots and Garages",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-09T06:15:52.000Z",
-      "created": "2024-12-20T17:22:06.000Z",
-      "views": 2278,
-      "url": "https://data.cityofnewyork.us/d/kj7g-u4gp"
     },
     {
       "id": "hjz2-y62k",
@@ -289,48 +389,8 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T20:36:02.000Z",
       "created": "2024-08-14T16:42:04.000Z",
-      "views": 1725,
+      "views": 1728,
       "url": "https://data.cityofnewyork.us/d/hjz2-y62k"
-    },
-    {
-      "id": "xnfm-u3k5",
-      "name": "Street Resurfacing Schedule",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-08T15:02:03.000Z",
-      "created": "2023-01-31T15:57:34.000Z",
-      "views": 15218,
-      "url": "https://data.cityofnewyork.us/d/xnfm-u3k5"
-    },
-    {
-      "id": "sp7n-275u",
-      "name": "Medallion Taxi Initial Inspection Schedule",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-06-08T13:00:28.000Z",
-      "created": "2019-09-12T19:28:07.000Z",
-      "views": 20080,
-      "url": "https://data.cityofnewyork.us/d/sp7n-275u"
-    },
-    {
-      "id": "cj3v-xdpd",
-      "name": "Street Construction Permits - Related Agency",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-08T12:35:30.000Z",
-      "created": "2018-12-27T17:42:24.000Z",
-      "views": 3428,
-      "url": "https://data.cityofnewyork.us/d/cj3v-xdpd"
-    },
-    {
-      "id": "9fnm-j6if",
-      "name": "Street Construction Permits - Fee",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-08T12:30:43.000Z",
-      "created": "2018-12-18T19:58:58.000Z",
-      "views": 4973,
-      "url": "https://data.cityofnewyork.us/d/9fnm-j6if"
     },
     {
       "id": "478a-yykk",
@@ -339,7 +399,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:19:38.000Z",
       "created": "2017-04-26T20:58:57.000Z",
-      "views": 9290,
+      "views": 9298,
       "url": "https://data.cityofnewyork.us/d/478a-yykk"
     },
     {
@@ -349,7 +409,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:19:07.000Z",
       "created": "2017-04-26T20:51:19.000Z",
-      "views": 50751,
+      "views": 50813,
       "url": "https://data.cityofnewyork.us/d/i6b5-j7bu"
     },
     {
@@ -359,7 +419,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:18:27.000Z",
       "created": "2022-02-18T21:08:42.000Z",
-      "views": 4636,
+      "views": 4646,
       "url": "https://data.cityofnewyork.us/d/bryy-vqd9"
     },
     {
@@ -369,7 +429,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:18:27.000Z",
       "created": "2022-02-18T21:13:13.000Z",
-      "views": 1896,
+      "views": 1897,
       "url": "https://data.cityofnewyork.us/d/b8yg-sprn"
     },
     {
@@ -379,7 +439,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:17:40.000Z",
       "created": "2022-02-18T20:59:36.000Z",
-      "views": 13036,
+      "views": 13054,
       "url": "https://data.cityofnewyork.us/d/wyih-3nzf"
     },
     {
@@ -389,7 +449,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:17:40.000Z",
       "created": "2022-02-18T21:12:34.000Z",
-      "views": 10310,
+      "views": 10325,
       "url": "https://data.cityofnewyork.us/d/i3na-cf9d"
     },
     {
@@ -399,7 +459,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:15:56.000Z",
       "created": "2023-02-15T15:43:55.000Z",
-      "views": 52117,
+      "views": 52173,
       "url": "https://data.cityofnewyork.us/d/mvib-nh9w"
     },
     {
@@ -409,7 +469,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-08T12:15:56.000Z",
       "created": "2023-02-15T13:58:59.000Z",
-      "views": 37926,
+      "views": 38014,
       "url": "https://data.cityofnewyork.us/d/693u-uax6"
     },
     {
@@ -419,58 +479,8 @@
       "agency": "Other / unspecified",
       "updated": "2026-06-08T11:51:16.000Z",
       "created": "2025-10-28T20:39:53.000Z",
-      "views": 1071,
+      "views": 1076,
       "url": "https://data.cityofnewyork.us/d/ezy6-djsf"
-    },
-    {
-      "id": "ge3f-inui",
-      "name": "Bridge Hold Location Stipulations",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-08T11:00:22.000Z",
-      "created": "2018-10-11T15:36:26.000Z",
-      "views": 1928,
-      "url": "https://data.cityofnewyork.us/d/ge3f-inui"
-    },
-    {
-      "id": "hcv3-zacv",
-      "name": "Street Construction Permits - Cranes",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-07T12:34:54.000Z",
-      "created": "2018-12-18T19:22:11.000Z",
-      "views": 4122,
-      "url": "https://data.cityofnewyork.us/d/hcv3-zacv"
-    },
-    {
-      "id": "gx72-kirf",
-      "name": "Sidewalk Management Database - ReInspection",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-07T12:11:43.000Z",
-      "created": "2023-09-28T17:57:24.000Z",
-      "views": 963,
-      "url": "https://data.cityofnewyork.us/d/gx72-kirf"
-    },
-    {
-      "id": "dntt-gqwq",
-      "name": "Sidewalk Management Database - Inspection",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-07T12:11:30.000Z",
-      "created": "2023-09-28T14:03:06.000Z",
-      "views": 3000,
-      "url": "https://data.cityofnewyork.us/d/dntt-gqwq"
-    },
-    {
-      "id": "6kbp-uz6m",
-      "name": "Sidewalk Management Database - Violations",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-06T12:04:36.000Z",
-      "created": "2023-09-28T18:55:03.000Z",
-      "views": 18621,
-      "url": "https://data.cityofnewyork.us/d/6kbp-uz6m"
     },
     {
       "id": "q49j-2bun",
@@ -479,7 +489,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-06-05T19:22:14.000Z",
       "created": "2019-06-05T14:23:13.000Z",
-      "views": 4129,
+      "views": 4132,
       "url": "https://data.cityofnewyork.us/d/q49j-2bun"
     },
     {
@@ -491,16 +501,6 @@
       "created": "2019-06-05T14:23:13.000Z",
       "views": 518,
       "url": "https://data.cityofnewyork.us/d/ns8x-qshd"
-    },
-    {
-      "id": "esmy-s8q5",
-      "name": "Seating Locations",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-06-05T19:21:18.000Z",
-      "created": "2022-10-14T19:10:43.000Z",
-      "views": 5846,
-      "url": "https://data.cityofnewyork.us/d/esmy-s8q5"
     }
   ]
 }
