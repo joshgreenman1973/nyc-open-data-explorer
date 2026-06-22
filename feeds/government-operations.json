@@ -1,65 +1,25 @@
 {
   "title": "NYC Open Data — Government Operations (recently updated)",
-  "generated": "2026-06-21T10:25:58+00:00",
+  "generated": "2026-06-22T11:11:02+00:00",
   "items": [
     {
       "id": "t3jq-9nkf",
       "name": "NYC Agencies and Governance Organizations",
       "category": "Government Operations",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-06-21T10:15:09.000Z",
+      "updated": "2026-06-22T11:00:11.000Z",
       "created": "2025-09-05T13:06:28.000Z",
-      "views": 2854,
+      "views": 2856,
       "url": "https://data.cityofnewyork.us/d/t3jq-9nkf"
-    },
-    {
-      "id": "5zhs-2jue",
-      "name": "BUILDING",
-      "category": "Government Operations",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-06-21T09:21:39.000Z",
-      "created": "2024-11-13T15:53:10.000Z",
-      "views": 38868,
-      "url": "https://data.cityofnewyork.us/d/5zhs-2jue"
-    },
-    {
-      "id": "jh45-qr5r",
-      "name": "Building Footprints (Map)",
-      "category": "Government Operations",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-06-21T09:21:39.000Z",
-      "created": "2025-05-29T18:06:09.000Z",
-      "views": 8697,
-      "url": "https://data.cityofnewyork.us/d/jh45-qr5r"
-    },
-    {
-      "id": "ipkp-snf6",
-      "name": "BUILDING_HISTORIC",
-      "category": "Government Operations",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-06-21T08:16:07.000Z",
-      "created": "2022-01-03T19:02:48.000Z",
-      "views": 2585,
-      "url": "https://data.cityofnewyork.us/d/ipkp-snf6"
-    },
-    {
-      "id": "x7wt-jhdr",
-      "name": "Building Footprints Historic (Map)",
-      "category": "Government Operations",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-06-21T08:16:07.000Z",
-      "created": "2025-05-29T18:09:53.000Z",
-      "views": 1154,
-      "url": "https://data.cityofnewyork.us/d/x7wt-jhdr"
     },
     {
       "id": "wewp-mm3p",
       "name": "311 Call Center Inquiry",
       "category": "Government Operations",
       "agency": "311",
-      "updated": "2026-06-21T01:04:43.000Z",
+      "updated": "2026-06-22T01:05:22.000Z",
       "created": "2016-05-12T22:58:27.000Z",
-      "views": 18520,
+      "views": 18534,
       "url": "https://data.cityofnewyork.us/d/wewp-mm3p"
     },
     {
@@ -67,9 +27,9 @@
       "name": "OATH Hearings Division Case Status",
       "category": "Government Operations",
       "agency": "Office of Administrative Trials and Hearings (OATH)",
-      "updated": "2026-06-20T23:48:30.000Z",
+      "updated": "2026-06-22T00:24:35.000Z",
       "created": "2013-08-19T14:01:01.000Z",
-      "views": 392746,
+      "views": 392933,
       "url": "https://data.cityofnewyork.us/d/jz4z-kudi"
     },
     {
@@ -77,39 +37,49 @@
       "name": "DOB NOW: Electrical Permit Applications",
       "category": "Government Operations",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-06-20T21:51:01.000Z",
+      "updated": "2026-06-21T21:50:43.000Z",
       "created": "2019-04-17T16:07:21.000Z",
-      "views": 26353,
+      "views": 26379,
       "url": "https://data.cityofnewyork.us/d/dm9a-ab7w"
-    },
-    {
-      "id": "xmmq-y7za",
-      "name": "DOB NOW: Electrical Permit Details",
-      "category": "Government Operations",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-06-20T20:11:33.000Z",
-      "created": "2019-04-17T16:43:07.000Z",
-      "views": 10049,
-      "url": "https://data.cityofnewyork.us/d/xmmq-y7za"
     },
     {
       "id": "c23c-uwsm",
       "name": "SweepNYC Street Cleaning",
       "category": "Government Operations",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-20T19:36:08.000Z",
+      "updated": "2026-06-21T19:34:26.000Z",
       "created": "2024-07-30T20:24:59.000Z",
-      "views": 12897,
+      "views": 13079,
       "url": "https://data.cityofnewyork.us/d/c23c-uwsm"
+    },
+    {
+      "id": "tg4x-b46p",
+      "name": "Film Permits",
+      "category": "Government Operations",
+      "agency": "Mayor’s Office of Media and Entertainment (MOME)",
+      "updated": "2026-06-21T19:30:29.000Z",
+      "created": "2015-07-27T16:07:21.000Z",
+      "views": 524561,
+      "url": "https://data.cityofnewyork.us/d/tg4x-b46p"
+    },
+    {
+      "id": "tvpp-9vvx",
+      "name": "NYC Permitted Event Information",
+      "category": "Government Operations",
+      "agency": "Office of Citywide Event Coordination and Management (CECM)",
+      "updated": "2026-06-21T19:20:14.000Z",
+      "created": "2013-11-06T18:26:59.000Z",
+      "views": 46721,
+      "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
     },
     {
       "id": "5tqd-u88y",
       "name": "Local Law 251 of 2017: Published Data Asset Inventory",
       "category": "Government Operations",
       "agency": "Other / unspecified",
-      "updated": "2026-06-20T19:06:13.000Z",
+      "updated": "2026-06-21T19:06:29.000Z",
       "created": "2020-11-08T03:11:44.000Z",
-      "views": 18424,
+      "views": 18435,
       "url": "https://data.cityofnewyork.us/d/5tqd-u88y"
     },
     {
@@ -117,9 +87,9 @@
       "name": "Inspections of Municipal Solid Waste Disposal Locations (No Longer Maintained)",
       "category": "Government Operations",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-06-20T15:05:33.000Z",
+      "updated": "2026-06-21T15:06:24.000Z",
       "created": "2017-01-04T21:14:26.000Z",
-      "views": 4296,
+      "views": 4301,
       "url": "https://data.cityofnewyork.us/d/rn6p-xvjd"
     },
     {
@@ -127,9 +97,9 @@
       "name": "Local Law 8 of 2020 – Complaints of Illegal Parking of Vehicles Operated on Behalf of the City",
       "category": "Government Operations",
       "agency": "311",
-      "updated": "2026-06-20T13:40:50.000Z",
+      "updated": "2026-06-21T13:41:34.000Z",
       "created": "2020-04-10T17:24:14.000Z",
-      "views": 4458,
+      "views": 4462,
       "url": "https://data.cityofnewyork.us/d/cwy2-px8b"
     },
     {
@@ -137,9 +107,9 @@
       "name": "Deed Restriction Database",
       "category": "Government Operations",
       "agency": "Other / unspecified",
-      "updated": "2026-06-20T13:17:16.000Z",
+      "updated": "2026-06-21T13:17:39.000Z",
       "created": "2017-11-13T15:42:13.000Z",
-      "views": 16713,
+      "views": 16720,
       "url": "https://data.cityofnewyork.us/d/rfu7-paqe"
     },
     {
@@ -147,7 +117,7 @@
       "name": "Greenbelt Native Plant Center Inventory",
       "category": "Government Operations",
       "agency": "Other / unspecified",
-      "updated": "2026-06-20T13:01:15.000Z",
+      "updated": "2026-06-21T13:01:34.000Z",
       "created": "2021-07-23T20:16:35.000Z",
       "views": 2115,
       "url": "https://data.cityofnewyork.us/d/kz4v-8ai2"
@@ -157,10 +127,60 @@
       "name": "Evictions",
       "category": "Government Operations",
       "agency": "Department of Investigation (DOI)",
-      "updated": "2026-06-20T11:42:34.000Z",
+      "updated": "2026-06-21T11:45:25.000Z",
       "created": "2016-08-01T20:09:44.000Z",
-      "views": 232687,
+      "views": 232805,
       "url": "https://data.cityofnewyork.us/d/6z8x-wfk4"
+    },
+    {
+      "id": "5zhs-2jue",
+      "name": "BUILDING",
+      "category": "Government Operations",
+      "agency": "Office of Technology and Innovation (OTI)",
+      "updated": "2026-06-21T09:21:39.000Z",
+      "created": "2024-11-13T15:53:10.000Z",
+      "views": 38949,
+      "url": "https://data.cityofnewyork.us/d/5zhs-2jue"
+    },
+    {
+      "id": "jh45-qr5r",
+      "name": "Building Footprints (Map)",
+      "category": "Government Operations",
+      "agency": "Office of Technology and Innovation (OTI)",
+      "updated": "2026-06-21T09:21:39.000Z",
+      "created": "2025-05-29T18:06:09.000Z",
+      "views": 8707,
+      "url": "https://data.cityofnewyork.us/d/jh45-qr5r"
+    },
+    {
+      "id": "ipkp-snf6",
+      "name": "BUILDING_HISTORIC",
+      "category": "Government Operations",
+      "agency": "Office of Technology and Innovation (OTI)",
+      "updated": "2026-06-21T08:16:07.000Z",
+      "created": "2022-01-03T19:02:48.000Z",
+      "views": 2598,
+      "url": "https://data.cityofnewyork.us/d/ipkp-snf6"
+    },
+    {
+      "id": "x7wt-jhdr",
+      "name": "Building Footprints Historic (Map)",
+      "category": "Government Operations",
+      "agency": "Office of Technology and Innovation (OTI)",
+      "updated": "2026-06-21T08:16:07.000Z",
+      "created": "2025-05-29T18:09:53.000Z",
+      "views": 1156,
+      "url": "https://data.cityofnewyork.us/d/x7wt-jhdr"
+    },
+    {
+      "id": "xmmq-y7za",
+      "name": "DOB NOW: Electrical Permit Details",
+      "category": "Government Operations",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-06-20T20:11:33.000Z",
+      "created": "2019-04-17T16:43:07.000Z",
+      "views": 10052,
+      "url": "https://data.cityofnewyork.us/d/xmmq-y7za"
     },
     {
       "id": "3mf9-qshr",
@@ -169,7 +189,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-20T09:43:34.000Z",
       "created": "2024-12-24T18:25:50.000Z",
-      "views": 9506,
+      "views": 9512,
       "url": "https://data.cityofnewyork.us/d/3mf9-qshr"
     },
     {
@@ -179,7 +199,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-20T09:43:34.000Z",
       "created": "2024-12-24T18:05:11.000Z",
-      "views": 8618,
+      "views": 8633,
       "url": "https://data.cityofnewyork.us/d/inkn-q76z"
     },
     {
@@ -189,7 +209,7 @@
       "agency": "Business Integrity Commission (BIC)",
       "updated": "2026-06-19T19:50:42.000Z",
       "created": "2017-03-10T20:42:45.000Z",
-      "views": 33572,
+      "views": 33579,
       "url": "https://data.cityofnewyork.us/d/cspg-yi7g"
     },
     {
@@ -199,7 +219,7 @@
       "agency": "Business Integrity Commission (BIC)",
       "updated": "2026-06-19T19:50:38.000Z",
       "created": "2017-03-10T21:05:31.000Z",
-      "views": 33330,
+      "views": 33336,
       "url": "https://data.cityofnewyork.us/d/a8wp-rerh"
     },
     {
@@ -209,7 +229,7 @@
       "agency": "Business Integrity Commission (BIC)",
       "updated": "2026-06-19T19:50:33.000Z",
       "created": "2017-03-28T18:10:06.000Z",
-      "views": 24420,
+      "views": 24429,
       "url": "https://data.cityofnewyork.us/d/krx7-u82t"
     },
     {
@@ -219,28 +239,8 @@
       "agency": "Business Integrity Commission (BIC)",
       "updated": "2026-06-19T19:50:29.000Z",
       "created": "2017-03-10T21:14:47.000Z",
-      "views": 23803,
+      "views": 23810,
       "url": "https://data.cityofnewyork.us/d/87fx-28ei"
-    },
-    {
-      "id": "tg4x-b46p",
-      "name": "Film Permits",
-      "category": "Government Operations",
-      "agency": "Mayor’s Office of Media and Entertainment (MOME)",
-      "updated": "2026-06-19T19:30:30.000Z",
-      "created": "2015-07-27T16:07:21.000Z",
-      "views": 524284,
-      "url": "https://data.cityofnewyork.us/d/tg4x-b46p"
-    },
-    {
-      "id": "tvpp-9vvx",
-      "name": "NYC Permitted Event Information",
-      "category": "Government Operations",
-      "agency": "Office of Citywide Event Coordination and Management (CECM)",
-      "updated": "2026-06-19T19:21:32.000Z",
-      "created": "2013-11-06T18:26:59.000Z",
-      "views": 46671,
-      "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
     },
     {
       "id": "did2-qzw3",
@@ -249,7 +249,7 @@
       "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
       "updated": "2026-06-19T14:05:49.000Z",
       "created": "2015-11-25T20:58:08.000Z",
-      "views": 3373,
+      "views": 3375,
       "url": "https://data.cityofnewyork.us/d/did2-qzw3"
     },
     {
@@ -259,7 +259,7 @@
       "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
       "updated": "2026-06-19T14:05:34.000Z",
       "created": "2015-11-25T20:53:18.000Z",
-      "views": 4659,
+      "views": 4660,
       "url": "https://data.cityofnewyork.us/d/gezn-7mgk"
     },
     {
@@ -269,7 +269,7 @@
       "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
       "updated": "2026-06-18T14:11:01.000Z",
       "created": "2015-11-25T20:55:48.000Z",
-      "views": 2324,
+      "views": 2328,
       "url": "https://data.cityofnewyork.us/d/8fj8-3sgg"
     },
     {
@@ -279,7 +279,7 @@
       "agency": "Business Integrity Commission (BIC)",
       "updated": "2026-06-17T19:40:52.000Z",
       "created": "2017-03-09T22:33:41.000Z",
-      "views": 77572,
+      "views": 77586,
       "url": "https://data.cityofnewyork.us/d/867j-5pgi"
     },
     {
@@ -289,7 +289,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-17T15:21:30.000Z",
       "created": "2024-10-08T19:53:49.000Z",
-      "views": 4132,
+      "views": 4134,
       "url": "https://data.cityofnewyork.us/d/t4kb-prwp"
     },
     {
@@ -299,7 +299,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-17T15:20:29.000Z",
       "created": "2016-07-19T19:02:38.000Z",
-      "views": 15272,
+      "views": 15275,
       "url": "https://data.cityofnewyork.us/d/tbgj-tdd6"
     },
     {
@@ -309,7 +309,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-17T14:34:06.000Z",
       "created": "2020-09-15T18:19:31.000Z",
-      "views": 3163,
+      "views": 3165,
       "url": "https://data.cityofnewyork.us/d/nxmt-wszr"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-06-16T14:19:07.000Z",
       "created": "2021-07-16T20:19:58.000Z",
-      "views": 1001,
+      "views": 1003,
       "url": "https://data.cityofnewyork.us/d/wag2-kf63"
     },
     {
@@ -339,7 +339,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-15T13:10:47.000Z",
       "created": "2025-05-05T19:29:58.000Z",
-      "views": 3497,
+      "views": 3507,
       "url": "https://data.cityofnewyork.us/d/5ijn-vbdv"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2026-06-13T20:12:52.000Z",
       "created": "2018-11-20T19:54:39.000Z",
-      "views": 11813,
+      "views": 11822,
       "url": "https://data.cityofnewyork.us/d/n6c5-95xh"
     },
     {
@@ -359,7 +359,7 @@
       "agency": "NYC Open Data Team",
       "updated": "2026-06-12T20:49:37.000Z",
       "created": "2017-07-13T21:10:05.000Z",
-      "views": 8302,
+      "views": 8332,
       "url": "https://data.cityofnewyork.us/d/63us-eqtq"
     },
     {
@@ -379,7 +379,7 @@
       "agency": "Department of Records and Information Services (DORIS)",
       "updated": "2026-06-12T18:19:33.000Z",
       "created": "2021-10-14T16:22:39.000Z",
-      "views": 10362,
+      "views": 10376,
       "url": "https://data.cityofnewyork.us/d/kegn-anvq"
     },
     {
@@ -389,7 +389,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-06-12T15:57:26.000Z",
       "created": "2018-09-10T16:21:28.000Z",
-      "views": 4610,
+      "views": 4613,
       "url": "https://data.cityofnewyork.us/d/gqk4-hny9"
     },
     {
@@ -399,7 +399,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-06-12T15:56:48.000Z",
       "created": "2018-09-10T16:13:46.000Z",
-      "views": 3221,
+      "views": 3223,
       "url": "https://data.cityofnewyork.us/d/fq4m-vjs9"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Department of Records and Information Services (DORIS)",
       "updated": "2026-06-05T13:19:24.000Z",
       "created": "2020-07-04T03:52:13.000Z",
-      "views": 1477,
+      "views": 1478,
       "url": "https://data.cityofnewyork.us/d/xip9-pe9k"
     },
     {
@@ -429,7 +429,7 @@
       "agency": "Department of Records and Information Services (DORIS)",
       "updated": "2026-06-05T13:17:50.000Z",
       "created": "2020-07-04T03:46:58.000Z",
-      "views": 1829,
+      "views": 1831,
       "url": "https://data.cityofnewyork.us/d/9azj-tmjp"
     },
     {
@@ -459,7 +459,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-06-02T14:34:00.000Z",
       "created": "2023-06-30T13:55:14.000Z",
-      "views": 12549,
+      "views": 12555,
       "url": "https://data.cityofnewyork.us/d/jiwc-ncpi"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-06-02T14:21:01.000Z",
       "created": "2018-09-10T18:16:11.000Z",
-      "views": 1523,
+      "views": 1524,
       "url": "https://data.cityofnewyork.us/d/pqmq-sk82"
     },
     {
@@ -479,7 +479,7 @@
       "agency": "311",
       "updated": "2026-06-02T13:37:31.000Z",
       "created": "2020-02-13T16:47:41.000Z",
-      "views": 1850,
+      "views": 1851,
       "url": "https://data.cityofnewyork.us/d/9y7k-h295"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-06-02T12:30:25.000Z",
       "created": "2016-07-25T16:35:59.000Z",
-      "views": 4156,
+      "views": 4159,
       "url": "https://data.cityofnewyork.us/d/8fei-z6rz"
     },
     {
@@ -499,7 +499,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-06-02T12:01:35.000Z",
       "created": "2020-02-04T19:33:08.000Z",
-      "views": 7914,
+      "views": 7921,
       "url": "https://data.cityofnewyork.us/d/q5u8-89nv"
     }
   ]
