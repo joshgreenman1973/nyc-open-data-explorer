@@ -1,25 +1,35 @@
 {
   "title": "NYC Open Data — Business (recently updated)",
-  "generated": "2026-06-22T11:11:02+00:00",
+  "generated": "2026-06-23T10:26:40+00:00",
   "items": [
     {
       "id": "9cw8-7heb",
       "name": ".nyc Domain Registrations",
       "category": "Business",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-06-21T20:33:09.000Z",
+      "updated": "2026-06-22T20:35:51.000Z",
       "created": "2015-07-13T18:48:56.000Z",
-      "views": 10934,
+      "views": 10948,
       "url": "https://data.cityofnewyork.us/d/9cw8-7heb"
+    },
+    {
+      "id": "fgq8-am2v",
+      "name": "Courses/Training Provider Listing",
+      "category": "Business",
+      "agency": "Department of Small Business Services (SBS)",
+      "updated": "2026-06-22T19:37:36.000Z",
+      "created": "2015-05-22T19:55:25.000Z",
+      "views": 6305,
+      "url": "https://data.cityofnewyork.us/d/fgq8-am2v"
     },
     {
       "id": "exsg-kpya",
       "name": "Denied TW and Wholesale Market Companies",
       "category": "Business",
       "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-06-19T19:10:59.000Z",
+      "updated": "2026-06-22T19:06:25.000Z",
       "created": "2018-12-26T18:08:02.000Z",
-      "views": 3197,
+      "views": 3199,
       "url": "https://data.cityofnewyork.us/d/exsg-kpya"
     },
     {
@@ -27,9 +37,9 @@
       "name": "BIC Complaints Inquiries",
       "category": "Business",
       "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-06-19T19:10:54.000Z",
+      "updated": "2026-06-22T19:06:19.000Z",
       "created": "2018-12-26T17:54:35.000Z",
-      "views": 3388,
+      "views": 3389,
       "url": "https://data.cityofnewyork.us/d/p2d7-vcsb"
     },
     {
@@ -37,10 +47,20 @@
       "name": "BIC Issued Violations",
       "category": "Business",
       "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-06-19T19:10:24.000Z",
+      "updated": "2026-06-22T19:05:44.000Z",
       "created": "2018-12-26T18:28:14.000Z",
-      "views": 7612,
+      "views": 7625,
       "url": "https://data.cityofnewyork.us/d/upii-frjc"
+    },
+    {
+      "id": "n84m-kx4j",
+      "name": "Licensees and Registrants Fleet Information",
+      "category": "Business",
+      "agency": "Business Integrity Commission (BIC)",
+      "updated": "2026-06-22T19:01:25.000Z",
+      "created": "2018-12-26T18:14:29.000Z",
+      "views": 5449,
+      "url": "https://data.cityofnewyork.us/d/n84m-kx4j"
     },
     {
       "id": "ptev-4hud",
@@ -49,28 +69,8 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-06-19T19:05:58.000Z",
       "created": "2016-01-26T14:50:15.000Z",
-      "views": 34969,
+      "views": 35053,
       "url": "https://data.cityofnewyork.us/d/ptev-4hud"
-    },
-    {
-      "id": "n84m-kx4j",
-      "name": "Licensees and Registrants Fleet Information",
-      "category": "Business",
-      "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-06-19T19:01:11.000Z",
-      "created": "2018-12-26T18:14:29.000Z",
-      "views": 5442,
-      "url": "https://data.cityofnewyork.us/d/n84m-kx4j"
-    },
-    {
-      "id": "fgq8-am2v",
-      "name": "Courses/Training Provider Listing",
-      "category": "Business",
-      "agency": "Department of Small Business Services (SBS)",
-      "updated": "2026-06-15T19:33:01.000Z",
-      "created": "2015-05-22T19:55:25.000Z",
-      "views": 6304,
-      "url": "https://data.cityofnewyork.us/d/fgq8-am2v"
     },
     {
       "id": "ci93-uc8s",
@@ -79,7 +79,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2026-06-09T14:26:52.000Z",
       "created": "2015-06-11T15:01:07.000Z",
-      "views": 52905,
+      "views": 52973,
       "url": "https://data.cityofnewyork.us/d/ci93-uc8s"
     },
     {
@@ -89,7 +89,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2026-06-02T14:14:26.000Z",
       "created": "2016-10-31T19:28:11.000Z",
-      "views": 33353,
+      "views": 33381,
       "url": "https://data.cityofnewyork.us/d/9a87-6m4x"
     },
     {
@@ -99,7 +99,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2026-06-02T14:10:37.000Z",
       "created": "2023-12-13T19:17:19.000Z",
-      "views": 5523,
+      "views": 5547,
       "url": "https://data.cityofnewyork.us/d/5vi6-xdpy"
     },
     {
@@ -109,7 +109,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-06-02T13:46:02.000Z",
       "created": "2019-01-23T18:10:36.000Z",
-      "views": 4822,
+      "views": 4826,
       "url": "https://data.cityofnewyork.us/d/2xab-argn"
     },
     {
@@ -119,7 +119,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-06-02T13:31:00.000Z",
       "created": "2016-01-26T18:13:07.000Z",
-      "views": 19881,
+      "views": 19900,
       "url": "https://data.cityofnewyork.us/d/5fn4-dr26"
     },
     {
@@ -129,7 +129,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-06-02T12:45:51.000Z",
       "created": "2015-03-06T20:39:20.000Z",
-      "views": 18341,
+      "views": 18369,
       "url": "https://data.cityofnewyork.us/d/nre2-6m2s"
     },
     {
@@ -139,7 +139,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-05-29T20:41:10.000Z",
       "created": "2016-01-26T14:46:48.000Z",
-      "views": 18749,
+      "views": 18773,
       "url": "https://data.cityofnewyork.us/d/jzhd-m6uv"
     },
     {
@@ -149,7 +149,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-05-02T13:00:12.000Z",
       "created": "2025-04-15T19:44:57.000Z",
-      "views": 1251,
+      "views": 1252,
       "url": "https://data.cityofnewyork.us/d/9vpn-rpgs"
     },
     {
@@ -159,7 +159,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-04-24T19:30:43.000Z",
       "created": "2015-03-06T21:01:28.000Z",
-      "views": 144870,
+      "views": 144995,
       "url": "https://data.cityofnewyork.us/d/w7w3-xahh"
     },
     {
@@ -169,7 +169,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP))",
       "updated": "2026-04-23T14:13:47.000Z",
       "created": "2021-11-01T21:09:29.000Z",
-      "views": 2471,
+      "views": 2472,
       "url": "https://data.cityofnewyork.us/d/wapz-jfhq"
     },
     {
@@ -179,7 +179,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2026-04-02T18:19:17.000Z",
       "created": "2022-06-29T13:30:48.000Z",
-      "views": 12102,
+      "views": 12114,
       "url": "https://data.cityofnewyork.us/d/p2wf-m8zt"
     },
     {
@@ -199,7 +199,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2025-09-30T18:25:33.000Z",
       "created": "2025-09-30T15:49:41.000Z",
-      "views": 914,
+      "views": 923,
       "url": "https://data.cityofnewyork.us/d/hzd8-k2vv"
     },
     {
@@ -209,7 +209,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2025-04-14T19:30:20.000Z",
       "created": "2013-03-25T17:37:15.000Z",
-      "views": 12477,
+      "views": 12483,
       "url": "https://data.cityofnewyork.us/d/9d9t-bmk7"
     },
     {
@@ -219,7 +219,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2025-02-26T16:59:05.000Z",
       "created": "2025-02-12T14:27:28.000Z",
-      "views": 1055,
+      "views": 1057,
       "url": "https://data.cityofnewyork.us/d/kwss-yksz"
     },
     {
@@ -229,7 +229,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2025-02-11T17:08:19.000Z",
       "created": "2025-02-11T16:15:39.000Z",
-      "views": 969,
+      "views": 970,
       "url": "https://data.cityofnewyork.us/d/wyj6-frpa"
     },
     {
@@ -239,7 +239,7 @@
       "agency": "NYC Department of Consumer and Worker Protection (DCWP)",
       "updated": "2024-10-10T13:49:13.000Z",
       "created": "2020-12-22T16:35:25.000Z",
-      "views": 3951,
+      "views": 3956,
       "url": "https://data.cityofnewyork.us/d/b9yk-4pzk"
     },
     {
@@ -249,7 +249,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2024-10-08T15:54:16.000Z",
       "created": "2014-11-18T19:04:07.000Z",
-      "views": 23822,
+      "views": 23858,
       "url": "https://data.cityofnewyork.us/d/ejxk-d93y"
     },
     {
@@ -259,7 +259,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2024-10-08T15:54:16.000Z",
       "created": "2015-09-14T22:03:00.000Z",
-      "views": 1663,
+      "views": 1667,
       "url": "https://data.cityofnewyork.us/d/7jdm-inj8"
     },
     {
@@ -279,7 +279,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2024-07-17T16:18:17.000Z",
       "created": "2023-11-14T20:51:29.000Z",
-      "views": 2552,
+      "views": 2569,
       "url": "https://data.cityofnewyork.us/d/m4ph-grrm"
     },
     {
@@ -289,7 +289,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2024-07-17T15:47:32.000Z",
       "created": "2023-11-14T17:56:37.000Z",
-      "views": 1027,
+      "views": 1030,
       "url": "https://data.cityofnewyork.us/d/vnz6-h2k4"
     },
     {
@@ -299,7 +299,7 @@
       "agency": "NYC Department of Consumer and Worker Protection (DCWP)",
       "updated": "2024-05-16T14:03:23.000Z",
       "created": "2022-01-10T18:32:34.000Z",
-      "views": 2930,
+      "views": 2932,
       "url": "https://data.cityofnewyork.us/d/2z24-2htf"
     },
     {
@@ -309,7 +309,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2024-05-16T14:02:50.000Z",
       "created": "2022-04-01T17:56:43.000Z",
-      "views": 2551,
+      "views": 2552,
       "url": "https://data.cityofnewyork.us/d/c292-vzrn"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-10-27T17:36:41.000Z",
       "created": "2023-05-04T16:42:53.000Z",
-      "views": 2676,
+      "views": 2677,
       "url": "https://data.cityofnewyork.us/d/u42f-se8e"
     },
     {
@@ -329,7 +329,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-10-11T13:49:58.000Z",
       "created": "2019-01-23T18:36:22.000Z",
-      "views": 8611,
+      "views": 8615,
       "url": "https://data.cityofnewyork.us/d/2k3g-r445"
     },
     {
@@ -339,7 +339,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-10-11T13:44:49.000Z",
       "created": "2018-12-12T20:20:18.000Z",
-      "views": 4599,
+      "views": 4608,
       "url": "https://data.cityofnewyork.us/d/rpeq-j89e"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-10-11T13:37:11.000Z",
       "created": "2018-12-27T18:40:09.000Z",
-      "views": 1975,
+      "views": 1976,
       "url": "https://data.cityofnewyork.us/d/ga3c-v25a"
     },
     {
@@ -359,7 +359,7 @@
       "agency": "NYC Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-08-23T20:12:22.000Z",
       "created": "2023-06-07T20:05:26.000Z",
-      "views": 961,
+      "views": 963,
       "url": "https://data.cityofnewyork.us/d/r9ax-4va4"
     },
     {
@@ -369,7 +369,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-08-21T14:13:47.000Z",
       "created": "2016-03-16T20:49:47.000Z",
-      "views": 18899,
+      "views": 18904,
       "url": "https://data.cityofnewyork.us/d/qcdj-rwhu"
     },
     {
@@ -379,7 +379,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-08-03T20:32:32.000Z",
       "created": "2018-12-26T16:49:35.000Z",
-      "views": 17675,
+      "views": 17691,
       "url": "https://data.cityofnewyork.us/d/6y5g-5hkj"
     },
     {
@@ -389,7 +389,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2023-05-04T16:41:56.000Z",
       "created": "2023-05-04T14:40:29.000Z",
-      "views": 1485,
+      "views": 1486,
       "url": "https://data.cityofnewyork.us/d/ayx3-dixq"
     },
     {
@@ -399,7 +399,7 @@
       "agency": "Department of Consumer and Worker Protection (DCWP)",
       "updated": "2022-05-02T15:12:34.000Z",
       "created": "2022-05-02T14:53:00.000Z",
-      "views": 9173,
+      "views": 9183,
       "url": "https://data.cityofnewyork.us/d/r3dx-pew9"
     },
     {
@@ -409,7 +409,7 @@
       "agency": "Department of Buildings (DOB)",
       "updated": "2022-03-07T18:28:51.000Z",
       "created": "2021-04-20T16:56:25.000Z",
-      "views": 8069,
+      "views": 8077,
       "url": "https://data.cityofnewyork.us/d/355w-xvp2"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Manhattan Borough President's Office",
       "updated": "2021-08-02T16:45:46.000Z",
       "created": "2021-08-02T16:38:32.000Z",
-      "views": 3150,
+      "views": 3151,
       "url": "https://data.cityofnewyork.us/d/8kic-uvpz"
     },
     {
@@ -429,7 +429,7 @@
       "agency": "Manhattan Borough President's Office",
       "updated": "2021-08-02T16:01:31.000Z",
       "created": "2021-08-02T15:55:51.000Z",
-      "views": 3212,
+      "views": 3214,
       "url": "https://data.cityofnewyork.us/d/w49t-5gha"
     },
     {
@@ -449,7 +449,7 @@
       "agency": "Mayor's Office of Contract Services (MOCS)",
       "updated": "2021-06-07T20:58:58.000Z",
       "created": "2021-06-07T20:56:01.000Z",
-      "views": 1852,
+      "views": 1853,
       "url": "https://data.cityofnewyork.us/d/6w36-zfn5"
     },
     {
@@ -459,7 +459,7 @@
       "agency": "Mayor's Office of Contract Services (MOCS)",
       "updated": "2021-06-07T20:55:25.000Z",
       "created": "2021-06-07T20:53:11.000Z",
-      "views": 2923,
+      "views": 2924,
       "url": "https://data.cityofnewyork.us/d/xt4f-xvjw"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Mayor's Office of Contract Services (MOCS)",
       "updated": "2021-06-07T20:03:36.000Z",
       "created": "2021-06-07T19:59:13.000Z",
-      "views": 2334,
+      "views": 2337,
       "url": "https://data.cityofnewyork.us/d/rqvv-d722"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Mayor's Office of Contract Services (MOCS)",
       "updated": "2021-06-07T18:55:31.000Z",
       "created": "2021-06-07T18:51:20.000Z",
-      "views": 2138,
+      "views": 2141,
       "url": "https://data.cityofnewyork.us/d/a2w2-wg79"
     },
     {
@@ -499,7 +499,7 @@
       "agency": "Mayor's Office of Contract Services (MOCS)",
       "updated": "2021-06-07T16:33:06.000Z",
       "created": "2021-06-07T16:28:58.000Z",
-      "views": 2056,
+      "views": 2060,
       "url": "https://data.cityofnewyork.us/d/7bjc-nmt5"
     }
   ]
