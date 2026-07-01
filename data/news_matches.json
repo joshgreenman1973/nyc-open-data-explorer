@@ -1,9 +1,40 @@
 {
-  "computed_at": "2026-06-30T10:26:50+00:00",
+  "computed_at": "2026-07-01T10:33:00+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
+    {
+      "headline": "Extreme Heat Warning for New York City through the July 4th weekend | Live updates",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUTY4ZG1xQ3BKM3hiR0NpdGR3VFd1c1FKNGNuQlhaY1ZwNTZwQTg4cHFGVTd0Ry1YeS1ib2dXVHgzZlJTUWl3aDUwdWhZMWstNG43YVVBYXZzRGIzMEI4U0c2NDh4NnlsNE9lTFZleUpHQ1NWNFFqbVJKR19ucmdpbUxkb2E0TnVaV24wU1ZPeDl6RDNxbExTRHpGMDlmN09MZW9BOGhuQlc?oc=5",
+      "pubDate": "Wed, 01 Jul 2026 09:57:00 GMT",
+      "topic": "Heat / hot-water complaints",
+      "dataset_id": "erm2-nwe9",
+      "dataset_name": "311 Service Requests from 2020 to Present",
+      "dataset_category": "Social Services",
+      "dataset_agency": "311",
+      "dataset_url": "https://data.cityofnewyork.us/d/erm2-nwe9",
+      "match_terms": [
+        "heat"
+      ]
+    },
+    {
+      "headline": "New York House Primary Election 2026 Live Results",
+      "source": "NBC News",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcUhfdkFzZXVWUjF2dGw5ejZuU0JMMk9xMjZ2WUt5cmp0Qmh6UTRZRklOUUw1QS1hNUFUSF8tdGtqeXo3TEdSRDNiaHZfcFZBTklxRXh2QTV6Wm5HaHRVM2wzM0RHQTlSYktrdzJGbHZDU3luQ1lqVTQ2OUVmUmxmMnlEb0E?oc=5",
+      "pubDate": "Tue, 30 Jun 2026 19:54:48 GMT",
+      "topic": "Voter analysis",
+      "dataset_id": "psx2-aqx3",
+      "dataset_name": "Voter Analysis 2008-2018",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Campaign Finance Board (CFB)",
+      "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
+      "match_terms": [
+        "election",
+        "primary"
+      ]
+    },
     {
       "headline": "Mayor Mamdani Permanently Closes a Rikers Facility, Marking a Major Milestone Toward Closing the Jail Complex",
       "source": "NYC.gov",
@@ -18,51 +49,6 @@
       "match_terms": [
         "jail",
         "rikers"
-      ]
-    },
-    {
-      "headline": "Health + Hospitals begins work on affordable housing project at South Bronx clinic",
-      "source": "Crain's New York",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVzNKcm9rZmduUEpmTl9kVXMtRHNiNFZaQ1VLeXlUR3ZSUDV3WWVha1FoX3BrdnU5Ml84dFRDeUVZMDljYy1nX1pIc1htbHNLUGE0bU92WGw3Vi1lUWdDbGxXVHpZNG1DbFN0S2pFZjNjOVJnSTkxcmg2MkZXeTBpR3R5d1kxeV94WW1mYmcwSmZMb19uZlpNYkxWbDJFVHI0T1E?oc=5",
-      "pubDate": "Tue, 30 Jun 2026 09:30:00 GMT",
-      "topic": "Affordable housing",
-      "dataset_id": "hg8x-zxpr",
-      "dataset_name": "Affordable Housing Production by Building",
-      "dataset_category": "Housing & Development",
-      "dataset_agency": "Department of Housing Preservation and Development (HPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/hg8x-zxpr",
-      "match_terms": [
-        "affordable housing"
-      ]
-    },
-    {
-      "headline": "New York primary could forecast future for Democrats. Here's what you need to know",
-      "source": "NPR",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBaVEZVa0VHaGpJRGlXQWtsUmgtMWx1YnpMUzYzNFRYS25kMlhMaFlrTUhFbG1vMjJpUWlVNFFEeW92M2FuSmhtdC1PaDlPU3diMmt0dzhSOW4zT3REZDhMN0ozMzZmNGNZTHRfNmtxb3k2VlIyR2taVGNJbw?oc=5",
-      "pubDate": "Wed, 24 Jun 2026 09:00:00 GMT",
-      "topic": "Voter analysis",
-      "dataset_id": "psx2-aqx3",
-      "dataset_name": "Voter Analysis 2008-2018",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Campaign Finance Board (CFB)",
-      "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
-      "match_terms": [
-        "primary"
-      ]
-    },
-    {
-      "headline": "New York’s Pied-à-Terre Tax Stymies Owners Looking for Loopholes",
-      "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRFA0TUVTV19fRFNObTZSTlNlUmxoT21OZlhnMXhvR0ZFSGNtUy1sUlI4RVVLQkFwLVZraG91UzFHZ0VIZHFpc3l5c0pETnBHckk3U1FOMXJJUDVEMG0yd0FBejZEczlVemgtaTFiMEZCYlZOcE14RU1zWVE0dUxfMWFEcDZwcW1hRXdzUTVoSmwyVFk1Ri1WRmJBWkpZTE5xWmd6RGxhMWlrRV9LSVZnOW0yNmVUVkNSSkEycXpNMXhkWGc?oc=5",
-      "pubDate": "Tue, 30 Jun 2026 09:30:15 GMT",
-      "topic": "Property tax data",
-      "dataset_id": "8h5j-fqxa",
-      "dataset_name": "ACRIS - Real Property Legals",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Department of Finance (DOF)",
-      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
-      "match_terms": [
-        "pied-à-terre"
       ]
     }
   ]
