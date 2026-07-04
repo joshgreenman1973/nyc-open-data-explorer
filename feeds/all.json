@@ -1,105 +1,45 @@
 {
   "title": "NYC Open Data — Most recently updated",
-  "generated": "2026-07-03T10:12:27+00:00",
+  "generated": "2026-07-04T09:56:57+00:00",
   "items": [
     {
-      "id": "gsgx-6efw",
-      "name": "Street Construction Permits - Stipulations (2020 - Present)",
+      "id": "i4gi-tjb9",
+      "name": "DOT Traffic Speeds",
       "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-03T10:08:26.000Z",
-      "created": "2018-12-19T19:33:11.000Z",
-      "views": 5129,
-      "url": "https://data.cityofnewyork.us/d/gsgx-6efw"
-    },
-    {
-      "id": "nfid-uabd",
-      "name": "Parking Regulation Locations and Signs",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-03T10:05:50.000Z",
-      "created": "2022-03-14T13:52:58.000Z",
-      "views": 25595,
-      "url": "https://data.cityofnewyork.us/d/nfid-uabd"
+      "agency": "Other / unspecified",
+      "updated": "2026-07-04T09:52:40.000Z",
+      "created": "2017-04-17T18:31:04.000Z",
+      "views": 38216,
+      "url": "https://data.cityofnewyork.us/d/i4gi-tjb9"
     },
     {
       "id": "n6c5-95xh",
       "name": "LinkNYC Kiosk Status",
       "category": "Government Operations",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-07-03T10:02:15.000Z",
+      "updated": "2026-07-04T09:45:30.000Z",
       "created": "2018-11-20T19:54:39.000Z",
-      "views": 11970,
+      "views": 11982,
       "url": "https://data.cityofnewyork.us/d/n6c5-95xh"
-    },
-    {
-      "id": "p32s-yqxq",
-      "name": "Historical Driver Application Status",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-03T10:01:59.000Z",
-      "created": "2016-06-16T18:07:19.000Z",
-      "views": 19625,
-      "url": "https://data.cityofnewyork.us/d/p32s-yqxq"
-    },
-    {
-      "id": "dpec-ucu7",
-      "name": "TLC New Driver Application Status",
-      "category": "Transportation",
-      "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-03T10:01:53.000Z",
-      "created": "2016-05-17T18:43:43.000Z",
-      "views": 1753929,
-      "url": "https://data.cityofnewyork.us/d/dpec-ucu7"
-    },
-    {
-      "id": "5ery-qagt",
-      "name": "DOHMH School Cafeteria Inspections (2020-Present)",
-      "category": "Health",
-      "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-07-03T10:01:05.000Z",
-      "created": "2023-03-24T21:01:27.000Z",
-      "views": 11154,
-      "url": "https://data.cityofnewyork.us/d/5ery-qagt"
     },
     {
       "id": "t3jq-9nkf",
       "name": "NYC Agencies and Governance Organizations",
       "category": "Government Operations",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-07-03T10:00:09.000Z",
+      "updated": "2026-07-04T09:45:09.000Z",
       "created": "2025-09-05T13:06:28.000Z",
-      "views": 3040,
+      "views": 3051,
       "url": "https://data.cityofnewyork.us/d/t3jq-9nkf"
-    },
-    {
-      "id": "i4gi-tjb9",
-      "name": "DOT Traffic Speeds",
-      "category": "Transportation",
-      "agency": "Other / unspecified",
-      "updated": "2026-07-03T09:55:41.000Z",
-      "created": "2017-04-17T18:31:04.000Z",
-      "views": 38192,
-      "url": "https://data.cityofnewyork.us/d/i4gi-tjb9"
-    },
-    {
-      "id": "nc67-uf89",
-      "name": "Open Parking and Camera Violations",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-07-03T09:21:45.000Z",
-      "created": "2016-01-04T16:08:38.000Z",
-      "views": 349270,
-      "url": "https://data.cityofnewyork.us/d/nc67-uf89"
     },
     {
       "id": "i2y3-sx2e",
       "name": "Curb Metal Protruding Data",
       "category": "Transportation",
       "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-03T08:00:15.000Z",
+      "updated": "2026-07-04T08:00:16.000Z",
       "created": "2019-12-23T15:26:46.000Z",
-      "views": 1430,
+      "views": 1432,
       "url": "https://data.cityofnewyork.us/d/i2y3-sx2e"
     },
     {
@@ -107,49 +47,39 @@
       "name": "Electric Vehicle (EV) Charging Data - Municipal Lots and Garages",
       "category": "Transportation",
       "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-03T06:15:41.000Z",
+      "updated": "2026-07-04T06:16:16.000Z",
       "created": "2024-12-20T17:22:06.000Z",
-      "views": 2674,
+      "views": 2694,
       "url": "https://data.cityofnewyork.us/d/kj7g-u4gp"
     },
     {
-      "id": "9n6h-pt9g",
-      "name": "Speed Reducer Tracking System (SRTS)",
+      "id": "p32s-yqxq",
+      "name": "Historical Driver Application Status",
       "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-03T06:01:44.000Z",
-      "created": "2019-12-20T17:22:04.000Z",
-      "views": 5519,
-      "url": "https://data.cityofnewyork.us/d/9n6h-pt9g"
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-04T04:14:06.000Z",
+      "created": "2016-06-16T18:07:19.000Z",
+      "views": 19630,
+      "url": "https://data.cityofnewyork.us/d/p32s-yqxq"
     },
     {
-      "id": "ipu4-2q9a",
-      "name": "DOB Permit Issuance",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-03T02:22:51.000Z",
-      "created": "2013-04-18T15:18:56.000Z",
-      "views": 601420,
-      "url": "https://data.cityofnewyork.us/d/ipu4-2q9a"
-    },
-    {
-      "id": "qt6m-xctn",
-      "name": "Street Sign Work Orders",
+      "id": "dpec-ucu7",
+      "name": "TLC New Driver Application Status",
       "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-03T02:04:34.000Z",
-      "created": "2020-10-29T19:15:06.000Z",
-      "views": 19873,
-      "url": "https://data.cityofnewyork.us/d/qt6m-xctn"
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-04T04:14:02.000Z",
+      "created": "2016-05-17T18:43:43.000Z",
+      "views": 1753982,
+      "url": "https://data.cityofnewyork.us/d/dpec-ucu7"
     },
     {
       "id": "erm2-nwe9",
       "name": "311 Service Requests from 2020 to Present",
       "category": "Social Services",
       "agency": "311",
-      "updated": "2026-07-03T01:38:33.000Z",
+      "updated": "2026-07-04T01:41:21.000Z",
       "created": "2011-10-10T05:52:17.000Z",
-      "views": 1256160,
+      "views": 1256714,
       "url": "https://data.cityofnewyork.us/d/erm2-nwe9"
     },
     {
@@ -157,9 +87,9 @@
       "name": "DOT Street Lights and Traffic Signals (311 Service Requests from 2010 to Present)",
       "category": "Transportation",
       "agency": "311",
-      "updated": "2026-07-03T01:38:33.000Z",
+      "updated": "2026-07-04T01:41:21.000Z",
       "created": "2017-10-25T20:28:13.000Z",
-      "views": 10009,
+      "views": 10010,
       "url": "https://data.cityofnewyork.us/d/jwvp-gyiq"
     },
     {
@@ -167,9 +97,9 @@
       "name": "311 Call Center Inquiry",
       "category": "Government Operations",
       "agency": "311",
-      "updated": "2026-07-03T01:06:30.000Z",
+      "updated": "2026-07-04T01:04:17.000Z",
       "created": "2016-05-12T22:58:27.000Z",
-      "views": 18710,
+      "views": 18715,
       "url": "https://data.cityofnewyork.us/d/wewp-mm3p"
     },
     {
@@ -177,49 +107,69 @@
       "name": "Clean Air Tracking System (CATS) Permits",
       "category": "Environment",
       "agency": "Department of Environmental Protection (DEP)",
-      "updated": "2026-07-03T00:31:33.000Z",
+      "updated": "2026-07-04T00:41:23.000Z",
       "created": "2015-07-07T22:05:30.000Z",
-      "views": 31219,
+      "views": 31231,
       "url": "https://data.cityofnewyork.us/d/f4rp-2kvy"
     },
     {
-      "id": "gy3q-4tzp",
-      "name": "Active NYC Health Code Regulated Child Care Programs",
-      "category": "Health",
-      "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-07-02T23:00:24.000Z",
-      "created": "2023-11-02T18:27:26.000Z",
-      "views": 3770,
-      "url": "https://data.cityofnewyork.us/d/gy3q-4tzp"
+      "id": "ipu4-2q9a",
+      "name": "DOB Permit Issuance",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-07-04T00:02:01.000Z",
+      "created": "2013-04-18T15:18:56.000Z",
+      "views": 601568,
+      "url": "https://data.cityofnewyork.us/d/ipu4-2q9a"
     },
     {
       "id": "jz4z-kudi",
       "name": "OATH Hearings Division Case Status",
       "category": "Government Operations",
       "agency": "Office of Administrative Trials and Hearings (OATH)",
-      "updated": "2026-07-02T22:57:06.000Z",
+      "updated": "2026-07-03T23:30:14.000Z",
       "created": "2013-08-19T14:01:01.000Z",
-      "views": 397170,
+      "views": 397379,
       "url": "https://data.cityofnewyork.us/d/jz4z-kudi"
     },
     {
-      "id": "tqtj-sjs8",
-      "name": "Street Construction Permits (2022 - Present)",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-07-02T22:29:46.000Z",
-      "created": "2018-12-17T18:27:24.000Z",
-      "views": 51887,
-      "url": "https://data.cityofnewyork.us/d/tqtj-sjs8"
+      "id": "gy3q-4tzp",
+      "name": "Active NYC Health Code Regulated Child Care Programs",
+      "category": "Health",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "updated": "2026-07-03T23:00:57.000Z",
+      "created": "2023-11-02T18:27:26.000Z",
+      "views": 3781,
+      "url": "https://data.cityofnewyork.us/d/gy3q-4tzp"
+    },
+    {
+      "id": "ic3t-wcy2",
+      "name": "DOB Job Application Filings",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-07-03T22:28:22.000Z",
+      "created": "2013-04-18T15:18:56.000Z",
+      "views": 2428409,
+      "url": "https://data.cityofnewyork.us/d/ic3t-wcy2"
+    },
+    {
+      "id": "43nn-pn8j",
+      "name": "DOHMH New York City Restaurant Inspection Results",
+      "category": "Health",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "updated": "2026-07-03T22:11:05.000Z",
+      "created": "2014-08-01T19:10:59.000Z",
+      "views": 403988,
+      "url": "https://data.cityofnewyork.us/d/43nn-pn8j"
     },
     {
       "id": "rdxc-q253",
       "name": "Street Hail Livery (SHL) Taxi Initial Inspection Schedule",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-02T22:12:28.000Z",
+      "updated": "2026-07-03T22:04:09.000Z",
       "created": "2017-03-21T21:48:56.000Z",
-      "views": 7863,
+      "views": 7867,
       "url": "https://data.cityofnewyork.us/d/rdxc-q253"
     },
     {
@@ -227,9 +177,9 @@
       "name": "CURRENT BASES",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-02T22:12:11.000Z",
+      "updated": "2026-07-03T22:03:54.000Z",
       "created": "2015-04-21T17:43:01.000Z",
-      "views": 123302,
+      "views": 123353,
       "url": "https://data.cityofnewyork.us/d/eccv-9dzr"
     },
     {
@@ -237,9 +187,9 @@
       "name": "FHV Base Aggregate Report",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-02T22:12:05.000Z",
+      "updated": "2026-07-03T22:03:47.000Z",
       "created": "2016-04-07T16:15:02.000Z",
-      "views": 153089,
+      "views": 153109,
       "url": "https://data.cityofnewyork.us/d/2v9c-2k7f"
     },
     {
@@ -247,49 +197,49 @@
       "name": "Taxi Improvement Fund (TIF) Medallion Payments",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-02T22:11:44.000Z",
+      "updated": "2026-07-03T22:03:28.000Z",
       "created": "2016-11-17T14:57:46.000Z",
-      "views": 21756,
+      "views": 21759,
       "url": "https://data.cityofnewyork.us/d/ht4t-wzcm"
-    },
-    {
-      "id": "43nn-pn8j",
-      "name": "DOHMH New York City Restaurant Inspection Results",
-      "category": "Health",
-      "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-07-02T22:06:12.000Z",
-      "created": "2014-08-01T19:10:59.000Z",
-      "views": 403801,
-      "url": "https://data.cityofnewyork.us/d/43nn-pn8j"
     },
     {
       "id": "dm9a-ab7w",
       "name": "DOB NOW: Electrical Permit Applications",
       "category": "Government Operations",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T21:58:27.000Z",
+      "updated": "2026-07-03T21:53:48.000Z",
       "created": "2019-04-17T16:07:21.000Z",
-      "views": 26957,
+      "views": 26977,
       "url": "https://data.cityofnewyork.us/d/dm9a-ab7w"
     },
     {
-      "id": "ic3t-wcy2",
-      "name": "DOB Job Application Filings",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T21:42:32.000Z",
-      "created": "2013-04-18T15:18:56.000Z",
-      "views": 2428328,
-      "url": "https://data.cityofnewyork.us/d/ic3t-wcy2"
+      "id": "x2s6-6d2j",
+      "name": "DEP - Cryptosporidium And Giardia Data Set",
+      "category": "Environment",
+      "agency": "Department of Environmental Protection (DEP)",
+      "updated": "2026-07-03T21:00:24.000Z",
+      "created": "2014-03-04T22:28:23.000Z",
+      "views": 6413,
+      "url": "https://data.cityofnewyork.us/d/x2s6-6d2j"
+    },
+    {
+      "id": "r67x-e97r",
+      "name": "NYC Open Data Help Desk: Data Questions and Reported Errors",
+      "category": "Government Operations",
+      "agency": "NYC Open Data Team",
+      "updated": "2026-07-03T20:45:23.000Z",
+      "created": "2018-05-11T15:44:37.000Z",
+      "views": 2912,
+      "url": "https://data.cityofnewyork.us/d/r67x-e97r"
     },
     {
       "id": "tb8q-a3ar",
       "name": "Order to Repair/Vacate Orders",
       "category": "Housing & Development",
       "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-07-02T20:38:13.000Z",
+      "updated": "2026-07-03T20:41:04.000Z",
       "created": "2018-03-05T20:56:41.000Z",
-      "views": 22837,
+      "views": 22854,
       "url": "https://data.cityofnewyork.us/d/tb8q-a3ar"
     },
     {
@@ -297,39 +247,59 @@
       "name": "DOB Certificate Of Occupancy",
       "category": "Housing & Development",
       "agency": "Other / unspecified",
-      "updated": "2026-07-02T20:34:09.000Z",
+      "updated": "2026-07-03T20:40:55.000Z",
       "created": "2017-06-30T19:26:39.000Z",
-      "views": 81057,
+      "views": 81116,
       "url": "https://data.cityofnewyork.us/d/bs8b-p36w"
-    },
-    {
-      "id": "9cw8-7heb",
-      "name": ".nyc Domain Registrations",
-      "category": "Business",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-07-02T20:33:40.000Z",
-      "created": "2015-07-13T18:48:56.000Z",
-      "views": 11240,
-      "url": "https://data.cityofnewyork.us/d/9cw8-7heb"
     },
     {
       "id": "e5aq-a4j2",
       "name": "DOB NOW Elevator Safety Compliance",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T20:32:58.000Z",
+      "updated": "2026-07-03T20:35:25.000Z",
       "created": "2023-01-27T20:04:44.000Z",
-      "views": 8708,
+      "views": 8722,
       "url": "https://data.cityofnewyork.us/d/e5aq-a4j2"
+    },
+    {
+      "id": "9cw8-7heb",
+      "name": ".nyc Domain Registrations",
+      "category": "Business",
+      "agency": "Office of Technology and Innovation (OTI)",
+      "updated": "2026-07-03T20:34:27.000Z",
+      "created": "2015-07-13T18:48:56.000Z",
+      "views": 11260,
+      "url": "https://data.cityofnewyork.us/d/9cw8-7heb"
+    },
+    {
+      "id": "tqtj-sjs8",
+      "name": "Street Construction Permits (2022 - Present)",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-07-03T20:32:56.000Z",
+      "created": "2018-12-17T18:27:24.000Z",
+      "views": 51931,
+      "url": "https://data.cityofnewyork.us/d/tqtj-sjs8"
+    },
+    {
+      "id": "63us-eqtq",
+      "name": "NYC Open Data Help Desk: Public Dataset Requests",
+      "category": "Government Operations",
+      "agency": "NYC Open Data Team",
+      "updated": "2026-07-03T20:30:26.000Z",
+      "created": "2017-07-13T21:10:05.000Z",
+      "views": 8717,
+      "url": "https://data.cityofnewyork.us/d/63us-eqtq"
     },
     {
       "id": "w9ak-ipjd",
       "name": "DOB NOW: Build – Job Application Filings",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T20:28:50.000Z",
+      "updated": "2026-07-03T20:27:15.000Z",
       "created": "2016-05-26T13:34:09.000Z",
-      "views": 149679,
+      "views": 149749,
       "url": "https://data.cityofnewyork.us/d/w9ak-ipjd"
     },
     {
@@ -337,119 +307,69 @@
       "name": "DOB License Info",
       "category": "Housing & Development",
       "agency": "Other / unspecified",
-      "updated": "2026-07-02T20:26:08.000Z",
+      "updated": "2026-07-03T20:13:54.000Z",
       "created": "2017-06-08T16:41:22.000Z",
-      "views": 30429,
+      "views": 30443,
       "url": "https://data.cityofnewyork.us/d/t8hj-ruu2"
-    },
-    {
-      "id": "867j-5pgi",
-      "name": "Trade Waste Hauler Licensees",
-      "category": "Government Operations",
-      "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-07-02T20:07:17.000Z",
-      "created": "2017-03-09T22:33:41.000Z",
-      "views": 77814,
-      "url": "https://data.cityofnewyork.us/d/867j-5pgi"
     },
     {
       "id": "xmmq-y7za",
       "name": "DOB NOW: Electrical Permit Details",
       "category": "Government Operations",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T20:07:08.000Z",
+      "updated": "2026-07-03T20:05:54.000Z",
       "created": "2019-04-17T16:43:07.000Z",
-      "views": 10246,
+      "views": 10257,
       "url": "https://data.cityofnewyork.us/d/xmmq-y7za"
-    },
-    {
-      "id": "i296-73x5",
-      "name": "DOB Stalled Construction Sites",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T20:03:19.000Z",
-      "created": "2013-04-18T15:19:09.000Z",
-      "views": 21300,
-      "url": "https://data.cityofnewyork.us/d/i296-73x5"
     },
     {
       "id": "pkdm-hqz6",
       "name": "DOB NOW: Certificate of Occupancy",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T20:02:45.000Z",
+      "updated": "2026-07-03T20:02:41.000Z",
       "created": "2022-05-17T17:24:15.000Z",
-      "views": 18411,
+      "views": 18462,
       "url": "https://data.cityofnewyork.us/d/pkdm-hqz6"
     },
     {
-      "id": "mdcw-n682",
-      "name": "Greenbook",
-      "category": "Procurement & Contracts",
-      "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-07-02T19:55:08.000Z",
-      "created": "2015-04-27T21:26:31.000Z",
-      "views": 62755,
-      "url": "https://data.cityofnewyork.us/d/mdcw-n682"
+      "id": "i296-73x5",
+      "name": "DOB Stalled Construction Sites",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-07-03T20:02:03.000Z",
+      "created": "2013-04-18T15:19:09.000Z",
+      "views": 21307,
+      "url": "https://data.cityofnewyork.us/d/i296-73x5"
     },
     {
       "id": "52dp-yji6",
       "name": "DOB NOW: Safety Boiler",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-07-02T19:52:15.000Z",
+      "updated": "2026-07-03T19:47:19.000Z",
       "created": "2017-09-14T20:55:30.000Z",
-      "views": 27847,
+      "views": 27859,
       "url": "https://data.cityofnewyork.us/d/52dp-yji6"
-    },
-    {
-      "id": "ebb7-mvp5",
-      "name": "DSNY Monthly Tonnage Data",
-      "category": "Government Operations",
-      "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-07-02T19:50:54.000Z",
-      "created": "2013-11-22T16:41:29.000Z",
-      "views": 57155,
-      "url": "https://data.cityofnewyork.us/d/ebb7-mvp5"
-    },
-    {
-      "id": "rc75-m7u3",
-      "name": "COVID-19 Daily Counts of Cases, Hospitalizations, and Deaths",
-      "category": "Health",
-      "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-07-02T19:43:17.000Z",
-      "created": "2020-04-30T17:15:03.000Z",
-      "views": 145097,
-      "url": "https://data.cityofnewyork.us/d/rc75-m7u3"
     },
     {
       "id": "c23c-uwsm",
       "name": "SweepNYC Street Cleaning",
       "category": "Government Operations",
       "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-07-02T19:35:54.000Z",
+      "updated": "2026-07-03T19:36:59.000Z",
       "created": "2024-07-30T20:24:59.000Z",
-      "views": 13416,
+      "views": 13452,
       "url": "https://data.cityofnewyork.us/d/c23c-uwsm"
-    },
-    {
-      "id": "cspg-yi7g",
-      "name": "Construction Demolition Registrants",
-      "category": "Government Operations",
-      "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-07-02T19:35:23.000Z",
-      "created": "2017-03-10T20:42:45.000Z",
-      "views": 33678,
-      "url": "https://data.cityofnewyork.us/d/cspg-yi7g"
     },
     {
       "id": "a8wp-rerh",
       "name": "Self Hauler Registrants",
       "category": "Government Operations",
       "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-07-02T19:35:17.000Z",
+      "updated": "2026-07-03T19:36:06.000Z",
       "created": "2017-03-10T21:05:31.000Z",
-      "views": 33411,
+      "views": 33415,
       "url": "https://data.cityofnewyork.us/d/a8wp-rerh"
     },
     {
@@ -457,9 +377,9 @@
       "name": "Trade Waste Broker Registrants",
       "category": "Government Operations",
       "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-07-02T19:35:12.000Z",
+      "updated": "2026-07-03T19:36:01.000Z",
       "created": "2017-03-28T18:10:06.000Z",
-      "views": 24576,
+      "views": 24582,
       "url": "https://data.cityofnewyork.us/d/krx7-u82t"
     },
     {
@@ -467,19 +387,29 @@
       "name": "Wholesale Markets",
       "category": "Government Operations",
       "agency": "Business Integrity Commission (BIC)",
-      "updated": "2026-07-02T19:31:11.000Z",
+      "updated": "2026-07-03T19:35:57.000Z",
       "created": "2017-03-10T21:14:47.000Z",
-      "views": 23928,
+      "views": 23933,
       "url": "https://data.cityofnewyork.us/d/87fx-28ei"
+    },
+    {
+      "id": "rc75-m7u3",
+      "name": "COVID-19 Daily Counts of Cases, Hospitalizations, and Deaths",
+      "category": "Health",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "updated": "2026-07-03T19:34:42.000Z",
+      "created": "2020-04-30T17:15:03.000Z",
+      "views": 145119,
+      "url": "https://data.cityofnewyork.us/d/rc75-m7u3"
     },
     {
       "id": "8wbx-tsch",
       "name": "For Hire Vehicles (FHV) - Active",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-02T19:21:55.000Z",
+      "updated": "2026-07-03T19:20:55.000Z",
       "created": "2015-07-16T17:33:32.000Z",
-      "views": 3779766,
+      "views": 3780667,
       "url": "https://data.cityofnewyork.us/d/8wbx-tsch"
     },
     {
@@ -487,9 +417,9 @@
       "name": "Daily Inmates In Custody",
       "category": "Public Safety",
       "agency": "Department of Correction (DOC)",
-      "updated": "2026-07-02T19:20:48.000Z",
+      "updated": "2026-07-03T19:19:40.000Z",
       "created": "2016-03-23T18:29:15.000Z",
-      "views": 97634,
+      "views": 97690,
       "url": "https://data.cityofnewyork.us/d/7479-ugqb"
     },
     {
@@ -497,10 +427,80 @@
       "name": "For Hire Vehicles (FHV) - Active Drivers",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-07-02T19:20:32.000Z",
+      "updated": "2026-07-03T19:19:28.000Z",
       "created": "2015-07-16T17:24:02.000Z",
-      "views": 1762818,
+      "views": 1763199,
       "url": "https://data.cityofnewyork.us/d/xjfq-wh2d"
+    },
+    {
+      "id": "jb3k-j3gp",
+      "name": "Medallion Drivers - Active",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-03T19:19:23.000Z",
+      "created": "2013-12-26T19:23:30.000Z",
+      "views": 455468,
+      "url": "https://data.cityofnewyork.us/d/jb3k-j3gp"
+    },
+    {
+      "id": "td5q-ry6d",
+      "name": "Medallion Drivers – Passenger Assistance Trained",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-03T19:17:48.000Z",
+      "created": "2013-03-01T19:21:48.000Z",
+      "views": 16917,
+      "url": "https://data.cityofnewyork.us/d/td5q-ry6d"
+    },
+    {
+      "id": "jgtb-hmpg",
+      "name": "Medallion Vehicles - Inactive",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-03T19:17:17.000Z",
+      "created": "2013-05-17T17:22:00.000Z",
+      "views": 94910,
+      "url": "https://data.cityofnewyork.us/d/jgtb-hmpg"
+    },
+    {
+      "id": "5tub-eh45",
+      "name": "Street Hail Livery (SHL) Drivers - Active",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-03T19:17:04.000Z",
+      "created": "2014-08-18T18:33:15.000Z",
+      "views": 403755,
+      "url": "https://data.cityofnewyork.us/d/5tub-eh45"
+    },
+    {
+      "id": "rhe8-mgbb",
+      "name": "Medallion Vehicles - Authorized",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-03T19:16:05.000Z",
+      "created": "2013-03-01T19:27:08.000Z",
+      "views": 346051,
+      "url": "https://data.cityofnewyork.us/d/rhe8-mgbb"
+    },
+    {
+      "id": "yhuu-4pt3",
+      "name": "Street Hail Livery (SHL) Permits",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-07-03T19:15:42.000Z",
+      "created": "2014-10-29T17:42:50.000Z",
+      "views": 125490,
+      "url": "https://data.cityofnewyork.us/d/yhuu-4pt3"
+    },
+    {
+      "id": "if26-z6xq",
+      "name": "Food Scrap Drop-Off Locations in NYC",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-07-03T19:07:49.000Z",
+      "created": "2019-10-21T16:49:41.000Z",
+      "views": 10729,
+      "url": "https://data.cityofnewyork.us/d/if26-z6xq"
     }
   ]
 }
