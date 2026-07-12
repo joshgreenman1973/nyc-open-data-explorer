@@ -1,9 +1,39 @@
 {
-  "computed_at": "2026-07-11T09:47:15+00:00",
+  "computed_at": "2026-07-12T09:53:28+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
+    {
+      "headline": "Beloved former college basketball star shot dead in Harlem",
+      "source": "NBC New York",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPczFJMmRGZkZ1bnFEcWZHZ3c4MnBPZC1yTFRLUjFwcE4ybXRxbUV0dU1SXy1vMXdHMzFfYUh5MW9kMFJjV1FPcDBqLVVPTFlwODhXdjBna01zNktMXzhacFlLaXA0MXZXcHN0a2JDdy1FM0hfVFU3UU1xTW9sU3B6MW5Sdy16aENKUkhfTU9kOTRWVG5GUnh2X1pWT1RMOHNaakljSUdaY0vSAbABQVVfeXFMUDk3VEhwOW5LR056WGR0azJULTlVUGp6MHBOUzBZWVpqQUc3RGg4cEZSNjVwS1dCM0lUa3N1M2t6XzRxLVloS0xac05pNzBlQnpHTGpLc0ZTREVXcmZBaGNSaFoyd19SQ1diZUhwVV8tMllJY0xYWnQzOEJsb2JZTlhhRU1TYWJRZEd2MWI0UTFrbEhEY25UdzJfUFllVUk1cFlwUFhxZHZQWXZMOU5uODI?oc=5",
+      "pubDate": "Sat, 11 Jul 2026 19:51:08 GMT",
+      "topic": "Gun violence",
+      "dataset_id": "833y-fsy8",
+      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
+      "match_terms": [
+        "shot dead"
+      ]
+    },
+    {
+      "headline": "NYC is shutting down more than 20 miles of streets to cars for 'New York's biggest block party' this summer–with Citi Bike discounts, live entertainment, & free community programming",
+      "source": "Secret NYC",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JMkFYTzdna1JPQkoyZndaVHFOQmI5OS0xU09EU1JMa2pOV0pvdWc3MFRuZzdQdWI5Sy1YdFg0Q1J6a215N2hLUE9WY2h5Y2VoTlhzaFlaSlA?oc=5",
+      "pubDate": "Sat, 11 Jul 2026 09:09:00 GMT",
+      "topic": "Shared e-scooter and bike infrastructure",
+      "dataset_id": "hjz2-y62k",
+      "dataset_name": "Shared E-Scooter Parking Corrals",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/hjz2-y62k",
+      "match_terms": [
+        "citi bike"
+      ]
+    },
     {
       "headline": "New York’s Department of Investigation launches inquiry into buckling Manhattan high-rise",
       "source": "CNN",
@@ -20,18 +50,18 @@
       ]
     },
     {
-      "headline": "NYC is shutting down more than 20 miles of streets to cars for 'New York's biggest block party' this summer–with Citi Bike discounts, live entertainment, & free community programming",
-      "source": "Secret NYC",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JMkFYTzdna1JPQkoyZndaVHFOQmI5OS0xU09EU1JMa2pOV0pvdWc3MFRuZzdQdWI5Sy1YdFg0Q1J6a215N2hLUE9WY2h5Y2VoTlhzaFlaSlA?oc=5",
-      "pubDate": "Sat, 11 Jul 2026 09:09:00 GMT",
-      "topic": "Shared e-scooter and bike infrastructure",
-      "dataset_id": "hjz2-y62k",
-      "dataset_name": "Shared E-Scooter Parking Corrals",
-      "dataset_category": "Transportation",
-      "dataset_agency": "Department of Transportation (DOT)",
-      "dataset_url": "https://data.cityofnewyork.us/d/hjz2-y62k",
+      "headline": "Danger below at new jail site: Before digging deeper in Chinatown, NYC must read its own engineering report",
+      "source": "New York Daily News",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWUpqcEpMel9lYVZIS1c1dDZvQ2pqbnpaZXNKNHpuaUFwR1VNcElrV0J1OWZreWpVMWk2LXBxT0RUTGx1NGUzV3dYZ3cyMThmSk9nTWxLdXdLbmdSejlXZ0ZKQ1FrbVppQ19PSUlMcjF4aGwyczRqY1kybEp0NWk1bkFsZjFXT1llcE1uc2duLXU1TGtpTzdfVkdtVFZ4RDZrSVlwNzBPQjlzQ0dDVU5VQWpBRlZDWlFfckY3R3hkV0tIaDhfNjhkN0hSN1BVcHUzV0hMZjZ2czB6WS1LeWc?oc=5",
+      "pubDate": "Sun, 12 Jul 2026 09:00:27 GMT",
+      "topic": "Daily jail population",
+      "dataset_id": "7479-ugqb",
+      "dataset_name": "Daily Inmates In Custody",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Department of Correction (DOC)",
+      "dataset_url": "https://data.cityofnewyork.us/d/7479-ugqb",
       "match_terms": [
-        "citi bike"
+        "jail"
       ]
     }
   ]
