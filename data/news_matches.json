@@ -1,9 +1,24 @@
 {
-  "computed_at": "2026-07-22T10:04:50+00:00",
+  "computed_at": "2026-07-23T10:03:49+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
+    {
+      "headline": "\"New York's largest kaleidoscope\" among immersive artworks at Edge NYC skyscraper viewpoint",
+      "source": "Dezeen",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQkY1UGFPUjhGb0x2OGkxMm9yclVkV2N5ejZSS2c4UkJHVGhSaVA3U3BVZFcza21sSldiYUg3Z0trVF9EbXhpUkliNWZSbXVUMXA1N3ZQUWliOGJ3RE4zdkNUR25ROC1zLWNNWU5wZ2k4eG5Ma2JPeUs5bFpvN05jZHJvZDJBcHo4LXBZQjZRNA?oc=5",
+      "pubDate": "Thu, 23 Jul 2026 08:00:00 GMT",
+      "topic": "Construction permits",
+      "dataset_id": "rbx6-tga4",
+      "dataset_name": "DOB NOW: Build – Approved Permits",
+      "dataset_category": "Housing & Development",
+      "dataset_agency": "Department of Buildings (DOB)",
+      "dataset_url": "https://data.cityofnewyork.us/d/rbx6-tga4",
+      "match_terms": [
+        "skyscraper"
+      ]
+    },
     {
       "headline": "Mamdani Says New York Doesn’t Have Authority to Arrest Netanyahu",
       "source": "WSJ",
@@ -32,6 +47,21 @@
       "dataset_url": "https://data.cityofnewyork.us/d/kiyv-ks3f",
       "match_terms": [
         "free childcare"
+      ]
+    },
+    {
+      "headline": "NYC hate crime attacks: NYPD investigating antisemitic attack in Brooklyn, anti-Muslim incident in Queens",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNX3gzcEg3YXg0SEIwRmpkSHRhNFljNzdSaUVvYjRWOWh3cHVrTlZwVVBQRXdBbUxWUk95bWoyN2xXSWl5eTMyMl9OVzlnanpwc1U5ZmpyRlcyeVE3T2ZuQzE5V3o2QXlNa28zaFJUTFVzM3hKM1R6RS0wcjJiYmlXLVRtNlhfZHFXb0huRUZkZEJKMUI2MTNZMG9UZDM5aUNkRVI2R2xyV0F5eU1VdnEtVUR5QThsc2FZSXFwcVZtX0pPZkFMRXkxb0djTdIB0AFBVV95cUxPemxsVE9GYUlrQTZPdjV3S0djZmY4SUVVeHE2alhNTy1talFTT2Jualg0bGZDS0QtaklnVVlBMDN1Sl9QamZfNlNmYnpjZWMyaXZ0X3BsU1prUjlPbDdUeTZmSE91YmMxUnRLaWxPRjNBRTlFM3VyMWR5NDkxNUlSUHpEbC1WY3RQM19Qc2N0eXdnRnNwS2hacVc1cXBTamxEcnYxWG5FWEVzOGRKTFU4ZUVYdzBZTnVJM051d3AwYlBBX0VpMm1YMG5aRDZuUmxi?oc=5",
+      "pubDate": "Thu, 23 Jul 2026 03:02:15 GMT",
+      "topic": "Hate crimes",
+      "dataset_id": "bqiq-cu78",
+      "dataset_name": "NYPD Hate Crimes",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/bqiq-cu78",
+      "match_terms": [
+        "hate crime"
       ]
     }
   ]
