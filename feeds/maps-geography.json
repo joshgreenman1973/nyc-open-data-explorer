@@ -1,25 +1,15 @@
 {
   "title": "NYC Open Data — Maps & Geography (recently updated)",
-  "generated": "2026-07-25T09:53:15+00:00",
+  "generated": "2026-07-26T09:57:20+00:00",
   "items": [
-    {
-      "id": "b9km-gdpy",
-      "name": "City Council Constituent Services (2015 to 2025)",
-      "category": "Maps & Geography",
-      "agency": "New York City Council (NYCC)",
-      "updated": "2026-07-22T18:03:14.000Z",
-      "created": "2016-02-24T21:17:54.000Z",
-      "views": 8027,
-      "url": "https://data.cityofnewyork.us/d/b9km-gdpy"
-    },
     {
       "id": "rxuy-2muj",
       "name": "CommonPlace",
       "category": "Maps & Geography",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-07-19T03:02:44.000Z",
+      "updated": "2026-07-26T03:59:59.000Z",
       "created": "2016-08-30T17:54:57.000Z",
-      "views": 30476,
+      "views": 30482,
       "url": "https://data.cityofnewyork.us/d/rxuy-2muj"
     },
     {
@@ -27,10 +17,20 @@
       "name": "CommonPlace",
       "category": "Maps & Geography",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-07-19T03:02:44.000Z",
+      "updated": "2026-07-26T03:59:59.000Z",
       "created": "2021-12-20T19:02:21.000Z",
-      "views": 2315,
+      "views": 2317,
       "url": "https://data.cityofnewyork.us/d/t95h-5fsr"
+    },
+    {
+      "id": "b9km-gdpy",
+      "name": "City Council Constituent Services (2015 to 2025)",
+      "category": "Maps & Geography",
+      "agency": "New York City Council (NYCC)",
+      "updated": "2026-07-22T18:03:14.000Z",
+      "created": "2016-02-24T21:17:54.000Z",
+      "views": 8033,
+      "url": "https://data.cityofnewyork.us/d/b9km-gdpy"
     },
     {
       "id": "mebz-ditc",
@@ -39,7 +39,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:20:04.000Z",
       "created": "2019-12-05T15:34:17.000Z",
-      "views": 2414,
+      "views": 2415,
       "url": "https://data.cityofnewyork.us/d/mebz-ditc"
     },
     {
@@ -49,7 +49,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-07-02T10:53:11.000Z",
       "created": "2024-10-16T19:53:04.000Z",
-      "views": 851,
+      "views": 857,
       "url": "https://data.cityofnewyork.us/d/bhci-bpwh"
     },
     {
@@ -69,7 +69,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T19:50:48.000Z",
       "created": "2020-02-12T18:48:11.000Z",
-      "views": 99841,
+      "views": 99954,
       "url": "https://data.cityofnewyork.us/d/64uk-42ks"
     },
     {
@@ -79,7 +79,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T19:39:30.000Z",
       "created": "2019-12-03T20:10:24.000Z",
-      "views": 8111,
+      "views": 8131,
       "url": "https://data.cityofnewyork.us/d/qt5r-nqxp"
     },
     {
@@ -89,8 +89,18 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T16:07:31.000Z",
       "created": "2013-04-18T18:32:37.000Z",
-      "views": 2024,
+      "views": 2025,
       "url": "https://data.cityofnewyork.us/d/qh62-9utz"
+    },
+    {
+      "id": "nymm-wb5m",
+      "name": "State Assembly Districts (water areas included)",
+      "category": "Maps & Geography",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-28T16:07:31.000Z",
+      "created": "2016-09-12T23:52:41.000Z",
+      "views": 689,
+      "url": "https://data.cityofnewyork.us/d/nymm-wb5m"
     },
     {
       "id": "5yfv-9hkp",
@@ -99,7 +109,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T16:05:06.000Z",
       "created": "2024-06-20T04:25:19.000Z",
-      "views": 893,
+      "views": 896,
       "url": "https://data.cityofnewyork.us/d/5yfv-9hkp"
     },
     {
@@ -109,7 +119,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T15:36:34.000Z",
       "created": "2021-09-13T16:56:49.000Z",
-      "views": 5456,
+      "views": 5464,
       "url": "https://data.cityofnewyork.us/d/xn3r-zk6y"
     },
     {
@@ -119,7 +129,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T15:36:34.000Z",
       "created": "2021-09-13T17:01:42.000Z",
-      "views": 3027,
+      "views": 3030,
       "url": "https://data.cityofnewyork.us/d/xrfd-bjik"
     },
     {
@@ -129,7 +139,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T15:11:19.000Z",
       "created": "2021-09-13T17:16:55.000Z",
-      "views": 44359,
+      "views": 44397,
       "url": "https://data.cityofnewyork.us/d/9nt8-h7nd"
     },
     {
@@ -139,7 +149,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-28T15:11:19.000Z",
       "created": "2021-09-13T17:22:04.000Z",
-      "views": 15686,
+      "views": 15700,
       "url": "https://data.cityofnewyork.us/d/4hft-v355"
     },
     {
@@ -149,7 +159,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T20:17:22.000Z",
       "created": "2013-04-18T18:34:49.000Z",
-      "views": 1582,
+      "views": 1583,
       "url": "https://data.cityofnewyork.us/d/7equ-j2vi"
     },
     {
@@ -159,7 +169,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T20:17:22.000Z",
       "created": "2016-09-12T23:52:52.000Z",
-      "views": 468,
+      "views": 469,
       "url": "https://data.cityofnewyork.us/d/4294-fz9s"
     },
     {
@@ -169,7 +179,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T20:14:56.000Z",
       "created": "2013-01-29T22:52:40.000Z",
-      "views": 6084,
+      "views": 6086,
       "url": "https://data.cityofnewyork.us/d/h4i2-acfi"
     },
     {
@@ -179,7 +189,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T20:14:56.000Z",
       "created": "2015-12-07T19:50:31.000Z",
-      "views": 1235,
+      "views": 1241,
       "url": "https://data.cityofnewyork.us/d/afns-vxeu"
     },
     {
@@ -189,7 +199,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:46:58.000Z",
       "created": "2024-06-20T03:01:32.000Z",
-      "views": 11093,
+      "views": 11122,
       "url": "https://data.cityofnewyork.us/d/y76i-bdw7"
     },
     {
@@ -199,7 +209,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:46:15.000Z",
       "created": "2024-06-20T02:52:07.000Z",
-      "views": 2279,
+      "views": 2285,
       "url": "https://data.cityofnewyork.us/d/8ugf-3d8u"
     },
     {
@@ -209,7 +219,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:42:06.000Z",
       "created": "2016-09-12T23:51:31.000Z",
-      "views": 717,
+      "views": 718,
       "url": "https://data.cityofnewyork.us/d/mi5z-t7dx"
     },
     {
@@ -219,7 +229,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:41:54.000Z",
       "created": "2013-04-18T18:36:59.000Z",
-      "views": 1681,
+      "views": 1682,
       "url": "https://data.cityofnewyork.us/d/k2bb-k6p8"
     },
     {
@@ -239,7 +249,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:41:10.000Z",
       "created": "2024-06-20T18:27:09.000Z",
-      "views": 2087,
+      "views": 2091,
       "url": "https://data.cityofnewyork.us/d/epne-qv9x"
     },
     {
@@ -249,8 +259,18 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:40:58.000Z",
       "created": "2024-06-20T02:46:29.000Z",
-      "views": 617,
+      "views": 628,
       "url": "https://data.cityofnewyork.us/d/jntv-ngw5"
+    },
+    {
+      "id": "xzng-ft6f",
+      "name": "Fire Battalions",
+      "category": "Maps & Geography",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:40:49.000Z",
+      "created": "2019-09-10T15:56:43.000Z",
+      "views": 725,
+      "url": "https://data.cityofnewyork.us/d/xzng-ft6f"
     },
     {
       "id": "6ez8-za84",
@@ -259,8 +279,18 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:40:40.000Z",
       "created": "2016-03-22T21:27:37.000Z",
-      "views": 758,
+      "views": 759,
       "url": "https://data.cityofnewyork.us/d/6ez8-za84"
+    },
+    {
+      "id": "6ak9-vek3",
+      "name": "Community Districts (Water areas included)",
+      "category": "Maps & Geography",
+      "agency": "Department of City Planning (DCP)",
+      "updated": "2026-05-26T19:38:06.000Z",
+      "created": "2016-09-12T23:48:49.000Z",
+      "views": 1385,
+      "url": "https://data.cityofnewyork.us/d/6ak9-vek3"
     },
     {
       "id": "j3u5-usz2",
@@ -269,7 +299,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:54.000Z",
       "created": "2024-06-17T18:54:38.000Z",
-      "views": 2686,
+      "views": 2697,
       "url": "https://data.cityofnewyork.us/d/j3u5-usz2"
     },
     {
@@ -279,7 +309,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:45.000Z",
       "created": "2013-04-18T18:19:05.000Z",
-      "views": 1883,
+      "views": 1888,
       "url": "https://data.cityofnewyork.us/d/62dw-nwnq"
     },
     {
@@ -289,7 +319,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:45.000Z",
       "created": "2016-09-12T23:49:16.000Z",
-      "views": 463,
+      "views": 466,
       "url": "https://data.cityofnewyork.us/d/35e4-miqd"
     },
     {
@@ -299,7 +329,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:38.000Z",
       "created": "2013-01-29T22:24:59.000Z",
-      "views": 56505,
+      "views": 56509,
       "url": "https://data.cityofnewyork.us/d/h2n3-98hq"
     },
     {
@@ -309,7 +339,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:38.000Z",
       "created": "2015-01-29T18:42:44.000Z",
-      "views": 1838,
+      "views": 1841,
       "url": "https://data.cityofnewyork.us/d/wwxk-38u4"
     },
     {
@@ -319,7 +349,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:29.000Z",
       "created": "2013-04-18T18:14:39.000Z",
-      "views": 1691,
+      "views": 1694,
       "url": "https://data.cityofnewyork.us/d/wue3-68ab"
     },
     {
@@ -339,7 +369,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:21.000Z",
       "created": "2016-09-12T23:50:53.000Z",
-      "views": 631,
+      "views": 632,
       "url": "https://data.cityofnewyork.us/d/bst7-5464"
     },
     {
@@ -349,7 +379,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:37:12.000Z",
       "created": "2016-09-12T23:50:54.000Z",
-      "views": 1437,
+      "views": 1439,
       "url": "https://data.cityofnewyork.us/d/68m2-uzcb"
     },
     {
@@ -359,7 +389,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:36:29.000Z",
       "created": "2024-06-17T17:48:18.000Z",
-      "views": 4904,
+      "views": 4914,
       "url": "https://data.cityofnewyork.us/d/5crt-au7u"
     },
     {
@@ -369,7 +399,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:35:50.000Z",
       "created": "2024-06-17T03:00:29.000Z",
-      "views": 18863,
+      "views": 18896,
       "url": "https://data.cityofnewyork.us/d/gthc-hcne"
     },
     {
@@ -379,7 +409,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:35:50.000Z",
       "created": "2025-02-03T16:45:38.000Z",
-      "views": 2194,
+      "views": 2199,
       "url": "https://data.cityofnewyork.us/d/yqww-f9f3"
     },
     {
@@ -399,18 +429,8 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:35:39.000Z",
       "created": "2016-09-12T23:48:27.000Z",
-      "views": 1885,
+      "views": 1888,
       "url": "https://data.cityofnewyork.us/d/mkqi-d8x3"
-    },
-    {
-      "id": "872g-cjhh",
-      "name": "City Council Districts",
-      "category": "Maps & Geography",
-      "agency": "Department of City Planning (DCP)",
-      "updated": "2026-05-26T19:35:31.000Z",
-      "created": "2024-06-17T16:40:08.000Z",
-      "views": 2076,
-      "url": "https://data.cityofnewyork.us/d/872g-cjhh"
     },
     {
       "id": "wh2p-dxnf",
@@ -419,7 +439,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:35:22.000Z",
       "created": "2024-06-17T02:59:03.000Z",
-      "views": 1360,
+      "views": 1361,
       "url": "https://data.cityofnewyork.us/d/wh2p-dxnf"
     },
     {
@@ -429,7 +449,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:35:22.000Z",
       "created": "2025-02-03T16:44:16.000Z",
-      "views": 432,
+      "views": 433,
       "url": "https://data.cityofnewyork.us/d/53n2-m85m"
     },
     {
@@ -439,7 +459,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:34:25.000Z",
       "created": "2023-10-27T20:46:28.000Z",
-      "views": 3154,
+      "views": 3160,
       "url": "https://data.cityofnewyork.us/d/pikk-p9nv"
     },
     {
@@ -449,7 +469,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:34:19.000Z",
       "created": "2021-09-13T15:48:59.000Z",
-      "views": 1627,
+      "views": 1628,
       "url": "https://data.cityofnewyork.us/d/wrzv-t2c4"
     },
     {
@@ -459,7 +479,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:34:19.000Z",
       "created": "2021-09-13T15:56:30.000Z",
-      "views": 744,
+      "views": 745,
       "url": "https://data.cityofnewyork.us/d/s84u-yh9q"
     },
     {
@@ -479,28 +499,8 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:33:35.000Z",
       "created": "2021-09-13T16:00:20.000Z",
-      "views": 27687,
+      "views": 27725,
       "url": "https://data.cityofnewyork.us/d/63ge-mke6"
-    },
-    {
-      "id": "weqx-t5xr",
-      "name": "2020 Census Tracts - Mapped",
-      "category": "Maps & Geography",
-      "agency": "Department of City Planning (DCP)",
-      "updated": "2026-05-26T19:33:35.000Z",
-      "created": "2021-09-13T16:04:58.000Z",
-      "views": 13268,
-      "url": "https://data.cityofnewyork.us/d/weqx-t5xr"
-    },
-    {
-      "id": "wgbs-damt",
-      "name": "Atomic Polygons",
-      "category": "Maps & Geography",
-      "agency": "Department of City Planning (DCP)",
-      "updated": "2026-05-26T19:33:24.000Z",
-      "created": "2016-09-12T23:48:06.000Z",
-      "views": 1367,
-      "url": "https://data.cityofnewyork.us/d/wgbs-damt"
     }
   ]
 }
