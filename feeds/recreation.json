@@ -1,15 +1,65 @@
 {
   "title": "NYC Open Data — Recreation (recently updated)",
-  "generated": "2026-07-26T09:57:20+00:00",
+  "generated": "2026-07-27T10:29:38+00:00",
   "items": [
+    {
+      "id": "ub9z-gccp",
+      "name": "Asset Management Parks System (AMPS) – Transaction Details",
+      "category": "Recreation",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-07-27T09:08:15.000Z",
+      "created": "2018-01-23T18:14:03.000Z",
+      "views": 1454,
+      "url": "https://data.cityofnewyork.us/d/ub9z-gccp"
+    },
+    {
+      "id": "gcys-vvnq",
+      "name": "Asset Management Parks System (AMPS) – Transactions",
+      "category": "Recreation",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-07-27T08:30:56.000Z",
+      "created": "2018-01-22T22:17:04.000Z",
+      "views": 1820,
+      "url": "https://data.cityofnewyork.us/d/gcys-vvnq"
+    },
+    {
+      "id": "xzj8-i3jk",
+      "name": "Asset Management Parks System (AMPS) – Labor",
+      "category": "Recreation",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-07-27T07:48:35.000Z",
+      "created": "2018-01-23T18:02:57.000Z",
+      "views": 1707,
+      "url": "https://data.cityofnewyork.us/d/xzj8-i3jk"
+    },
+    {
+      "id": "e25p-jzfy",
+      "name": "Asset Management Parks System (AMPS) – Assets",
+      "category": "Recreation",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-07-27T07:04:54.000Z",
+      "created": "2018-01-22T21:33:55.000Z",
+      "views": 2937,
+      "url": "https://data.cityofnewyork.us/d/e25p-jzfy"
+    },
+    {
+      "id": "kwte-dppd",
+      "name": "Daily Tasks Park Cleaning Records",
+      "category": "Recreation",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-07-27T06:47:56.000Z",
+      "created": "2017-04-03T20:07:27.000Z",
+      "views": 7593,
+      "url": "https://data.cityofnewyork.us/d/kwte-dppd"
+    },
     {
       "id": "4hcv-tc5r",
       "name": "Capital Project Tracker",
       "category": "Recreation",
       "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-07-25T13:01:07.000Z",
+      "updated": "2026-07-26T13:01:05.000Z",
       "created": "2019-11-14T14:48:59.000Z",
-      "views": 5980,
+      "views": 5986,
       "url": "https://data.cityofnewyork.us/d/4hcv-tc5r"
     },
     {
@@ -39,7 +89,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-23T21:06:20.000Z",
       "created": "2022-08-12T15:12:19.000Z",
-      "views": 895,
+      "views": 897,
       "url": "https://data.cityofnewyork.us/d/dk6a-w7f6"
     },
     {
@@ -49,7 +99,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-23T20:42:45.000Z",
       "created": "2020-03-09T20:19:24.000Z",
-      "views": 13375,
+      "views": 13393,
       "url": "https://data.cityofnewyork.us/d/4j29-i5ry"
     },
     {
@@ -69,7 +119,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-23T20:38:09.000Z",
       "created": "2019-12-30T17:01:49.000Z",
-      "views": 2995,
+      "views": 2997,
       "url": "https://data.cityofnewyork.us/d/5npv-j6gn"
     },
     {
@@ -119,58 +169,8 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-20T16:45:55.000Z",
       "created": "2026-05-01T15:39:44.000Z",
-      "views": 6541,
+      "views": 6552,
       "url": "https://data.cityofnewyork.us/d/w3wp-dpdi"
-    },
-    {
-      "id": "ub9z-gccp",
-      "name": "Asset Management Parks System (AMPS) – Transaction Details",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-07-20T09:09:33.000Z",
-      "created": "2018-01-23T18:14:03.000Z",
-      "views": 1454,
-      "url": "https://data.cityofnewyork.us/d/ub9z-gccp"
-    },
-    {
-      "id": "gcys-vvnq",
-      "name": "Asset Management Parks System (AMPS) – Transactions",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-07-20T08:30:59.000Z",
-      "created": "2018-01-22T22:17:04.000Z",
-      "views": 1820,
-      "url": "https://data.cityofnewyork.us/d/gcys-vvnq"
-    },
-    {
-      "id": "xzj8-i3jk",
-      "name": "Asset Management Parks System (AMPS) – Labor",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-07-20T07:51:44.000Z",
-      "created": "2018-01-23T18:02:57.000Z",
-      "views": 1706,
-      "url": "https://data.cityofnewyork.us/d/xzj8-i3jk"
-    },
-    {
-      "id": "e25p-jzfy",
-      "name": "Asset Management Parks System (AMPS) – Assets",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-07-20T07:04:59.000Z",
-      "created": "2018-01-22T21:33:55.000Z",
-      "views": 2935,
-      "url": "https://data.cityofnewyork.us/d/e25p-jzfy"
-    },
-    {
-      "id": "kwte-dppd",
-      "name": "Daily Tasks Park Cleaning Records",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-07-20T07:03:13.000Z",
-      "created": "2017-04-03T20:07:27.000Z",
-      "views": 7587,
-      "url": "https://data.cityofnewyork.us/d/kwte-dppd"
     },
     {
       "id": "wnhd-n675",
@@ -179,7 +179,7 @@
       "agency": "Other / unspecified",
       "updated": "2026-07-18T15:21:24.000Z",
       "created": "2024-11-23T06:22:09.000Z",
-      "views": 354,
+      "views": 355,
       "url": "https://data.cityofnewyork.us/d/wnhd-n675"
     },
     {
@@ -199,7 +199,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-18T15:20:38.000Z",
       "created": "2018-10-31T14:21:07.000Z",
-      "views": 7437,
+      "views": 7453,
       "url": "https://data.cityofnewyork.us/d/6v4b-5gp4"
     },
     {
@@ -219,7 +219,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:58:06.000Z",
       "created": "2018-10-03T18:33:56.000Z",
-      "views": 1328,
+      "views": 1329,
       "url": "https://data.cityofnewyork.us/d/5mma-5n3h"
     },
     {
@@ -249,7 +249,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:53:44.000Z",
       "created": "2018-10-03T14:00:22.000Z",
-      "views": 1937,
+      "views": 1940,
       "url": "https://data.cityofnewyork.us/d/9byw-znpj"
     },
     {
@@ -279,7 +279,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:52:27.000Z",
       "created": "2018-10-02T20:15:11.000Z",
-      "views": 8970,
+      "views": 8976,
       "url": "https://data.cityofnewyork.us/d/yp6n-7jdy"
     },
     {
@@ -299,7 +299,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:49:57.000Z",
       "created": "2018-10-04T14:14:59.000Z",
-      "views": 1972,
+      "views": 1974,
       "url": "https://data.cityofnewyork.us/d/uisg-ivwv"
     },
     {
@@ -309,7 +309,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:47:17.000Z",
       "created": "2018-12-11T16:35:20.000Z",
-      "views": 4642,
+      "views": 4646,
       "url": "https://data.cityofnewyork.us/d/weh8-3ujf"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:47:01.000Z",
       "created": "2013-11-25T18:46:01.000Z",
-      "views": 3059,
+      "views": 3061,
       "url": "https://data.cityofnewyork.us/d/kjtf-e6kp"
     },
     {
@@ -329,7 +329,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:47:01.000Z",
       "created": "2013-11-25T18:46:02.000Z",
-      "views": 678,
+      "views": 680,
       "url": "https://data.cityofnewyork.us/d/8knb-zsb6"
     },
     {
@@ -339,7 +339,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:46:46.000Z",
       "created": "2019-04-24T15:42:47.000Z",
-      "views": 5354,
+      "views": 5393,
       "url": "https://data.cityofnewyork.us/d/8nac-uner"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:46:46.000Z",
       "created": "2019-04-24T15:42:48.000Z",
-      "views": 1613,
+      "views": 1616,
       "url": "https://data.cityofnewyork.us/d/hxx3-bwgv"
     },
     {
@@ -359,7 +359,7 @@
       "agency": "NYC Parks",
       "updated": "2026-07-17T13:46:29.000Z",
       "created": "2022-07-25T22:16:44.000Z",
-      "views": 5987,
+      "views": 6001,
       "url": "https://data.cityofnewyork.us/d/y5rm-wagw"
     },
     {
@@ -369,7 +369,7 @@
       "agency": "NYC Parks",
       "updated": "2026-07-17T13:46:29.000Z",
       "created": "2022-07-29T14:40:41.000Z",
-      "views": 2898,
+      "views": 2913,
       "url": "https://data.cityofnewyork.us/d/jgf2-kw9q"
     },
     {
@@ -379,7 +379,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:41:02.000Z",
       "created": "2020-03-10T17:52:47.000Z",
-      "views": 3956,
+      "views": 3958,
       "url": "https://data.cityofnewyork.us/d/xhvt-s4va"
     },
     {
@@ -389,7 +389,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:41:02.000Z",
       "created": "2020-03-10T18:02:24.000Z",
-      "views": 2834,
+      "views": 2837,
       "url": "https://data.cityofnewyork.us/d/r2ng-2bhg"
     },
     {
@@ -399,7 +399,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:40:16.000Z",
       "created": "2020-03-09T19:54:08.000Z",
-      "views": 86835,
+      "views": 86906,
       "url": "https://data.cityofnewyork.us/d/enfh-gkve"
     },
     {
@@ -409,7 +409,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:40:16.000Z",
       "created": "2020-03-09T20:16:20.000Z",
-      "views": 29492,
+      "views": 29525,
       "url": "https://data.cityofnewyork.us/d/krz2-j7bn"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:34:35.000Z",
       "created": "2019-12-30T16:49:38.000Z",
-      "views": 1992,
+      "views": 1995,
       "url": "https://data.cityofnewyork.us/d/hv9n-xgy4"
     },
     {
@@ -439,7 +439,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:29:34.000Z",
       "created": "2019-12-30T17:11:57.000Z",
-      "views": 16380,
+      "views": 16422,
       "url": "https://data.cityofnewyork.us/d/c5vm-g2dk"
     },
     {
@@ -449,7 +449,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:29:34.000Z",
       "created": "2019-12-30T17:19:49.000Z",
-      "views": 15090,
+      "views": 15126,
       "url": "https://data.cityofnewyork.us/d/fc69-ufed"
     },
     {
@@ -479,7 +479,7 @@
       "agency": "Department of Parks and Recreation (DPR)",
       "updated": "2026-07-17T13:20:04.000Z",
       "created": "2019-12-05T15:43:09.000Z",
-      "views": 7503,
+      "views": 7505,
       "url": "https://data.cityofnewyork.us/d/w8cn-6mjd"
     },
     {

@@ -1,22 +1,67 @@
 {
-  "computed_at": "2026-07-26T09:57:31+00:00",
+  "computed_at": "2026-07-27T10:29:52+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "New York City stabbing suspect facing hate crime charges - ABC News",
-      "source": "ABC News - Breaking News, Latest News and Videos",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOV1NlZmpmYlRHelBxY204Uzk2Z0tJQ1lnMExBNVN3OUpTTmNUZURfbk5nZ0Q4OGRSckliTW9mNkkxdHlHWTlBbllHeHc1Y3R3Vjg4aXNrZHVQX0NGWW1ENS1IcnlkSGxuR1BHWGhnbGJvQXFnMnNncU9WdVlkLVdGdkNHc1o0enBfX2xSem1UcEHSAZYBQVVfeXFMTjlnUEZXYWxJajNza01WaDFFTGpMeW9SXzBfdmt6bEhQRlVGV0s0LUxsNkFMcFhXUkwzTmF3YUtJa2FjNllmVXNKZFRYeGhqc1U1eEZwN0xheUlmRTZHeE12RUpNZkdLVGNMemwxc0tOTXMtQURuckVBMVJGLUxfZk51aVFITENENTU5TkdnTzVnaGhEN0Nn?oc=5",
-      "pubDate": "Sat, 25 Jul 2026 00:17:34 GMT",
-      "topic": "Hate crimes",
-      "dataset_id": "bqiq-cu78",
-      "dataset_name": "NYPD Hate Crimes",
+      "headline": "Suspect arrested in Mount Eden shooting that killed 12-year-old Jacob Freytes",
+      "source": "NBC New York",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUXdydXRibEZnd1IyUktfRTlfc05sN1RsVE9SZ1pnV05NT3RTUElWOGZSSFdMb2FlNFJ5QmYyckdwOVNrOEZ5bXZUYWNBUlZCSmtPVnRub2hTRmZ3VVhnMzQ4UFBRbTE1LXR3b0hpMG10RTZ0ZEVXenhpN1czb1dyS3BsVEpRZFp1UmtGcUdDX3VXRG9QN25kSWY1UHk2M3VqRjIyODlDd0F0TWFNQ0prem1NZ3I4SHRYeGFsS1JmVkdqQdIBygFBVV95cUxPQ2dneXhFYmJzczR2Wkk0U3FZWW5udUtCNkRLWVNQSHlzVmRMbWwwUllQZ2ptaFRzNzMtLTR0US14U20wQWl4bTZmcUVBUFBFYVJzQmJoWUhRTEhPaDRlYUJ4QUtyQzRELXhWYmJwMmxhd2xsM2NwMERnajZYUHgzU2V1VFQtaEkzQ2ROMFlhLVB1YUthazBpcVlGWXNvWER4bUVmQWwzQ3dmVjNnVVVzTHN1OHg3SDkxZWctQzlvZG0yWTFUemFFSWF3?oc=5",
+      "pubDate": "Sun, 26 Jul 2026 23:33:26 GMT",
+      "topic": "Gun violence",
+      "dataset_id": "833y-fsy8",
+      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
       "dataset_category": "Public Safety",
       "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/bqiq-cu78",
+      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
       "match_terms": [
-        "hate crime"
+        "shooting"
+      ]
+    },
+    {
+      "headline": "Netanyahu vows to go to New York City despite ICC arrest warrant, Mamdani",
+      "source": "Al Jazeera",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbjNXRGRKRUlZNWdCVUEySzdYMGZQcVdFX3h2NUp5ODNpYncyUU9ncWRSdG9wd2xZc0lwQndEN3paWXk1VkVZR1F2cGRHbnVTTk5QeTFsbXZXdVZaSWdHNUREU2tmM091WDduQThjcmRHUFhKNzM1aVh1Ri1SR0dYWThvWGY5ZDFrWnNJcE0xQmJJWEhUeU15RjdOSFVHU0lFa3FTVG90cDQzSXFnU2xvQUtsa9IBuAFBVV95cUxNdE9JSVVzUVdhLVJXdmwwX2xYU3FCNkE2VkhPUEdOTmU3c0pnS3Uxa0d6TWRUN3pMQzJmdVZodENqLTNzcUFxRXZRRzdpOW1zbTVSWlNvRFFxcEZYcVFzVlpId3Vramp6d1VpVTUxWEVoVHZpMnpjS2x4YlVWdjJkMXZacmx2M0NkcnczM3NEenRUME1mOHlCSHpURzFvX01oQ0lNUDdleEpYYnl6c09UVW1wTFJIeVMt?oc=5",
+      "pubDate": "Sun, 26 Jul 2026 19:19:14 GMT",
+      "topic": "NYPD arrests",
+      "dataset_id": "8h9b-rp9u",
+      "dataset_name": "NYPD Arrests Data (Historic)",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
+      "match_terms": [
+        "arrest"
+      ]
+    },
+    {
+      "headline": "Two men stabbed in broad daylight on New York City streets",
+      "source": "CNN",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORVV2aE9JOEZpQUN0Y0RrcGNSZDM2aUJkQ3hFaFdZYlZyM2FLZWtya3owT0VmNmNrNFZTZHAwWW9sU3NiRVJ5ZnYyNUZTOGU4V0FUV2lXcDJ2Mkg3MGVzWTNPZm13bFp0OElEMHRVaEp4T01uYmZUYW1iQktTQ0Q0Nzg1RGNzNzg?oc=5",
+      "pubDate": "Fri, 24 Jul 2026 09:42:47 GMT",
+      "topic": "Reported crime",
+      "dataset_id": "qgea-i56i",
+      "dataset_name": "NYPD Complaint Data Historic",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/qgea-i56i",
+      "match_terms": [
+        "stabbed"
+      ]
+    },
+    {
+      "headline": "Lead paint in NYCHA child care centers spurs city outlay of $10M",
+      "source": "Crain's New York",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQW5fb1ktb2d3Y2tGd2NjVHdLTG8zNy05MVdQYmpqQkQwUTJXd29uSG1wbURUd2pMYVpteG5BXzVsTUJZdzFITVFsSHVUQk16SDV5OF9lNFljeVE5X0JLRFRyb2tUaGNETVJFVVdiWUFBOTBBUFZ2TDJwM1I0OXkxam9VdWJqcGdo?oc=5",
+      "pubDate": "Mon, 27 Jul 2026 09:30:00 GMT",
+      "topic": "Pre-K and child care",
+      "dataset_id": "kiyv-ks3f",
+      "dataset_name": "Universal Pre-K (UPK) School Locations",
+      "dataset_category": "Education",
+      "dataset_agency": "Department of Education (DOE)",
+      "dataset_url": "https://data.cityofnewyork.us/d/kiyv-ks3f",
+      "match_terms": [
+        "child care"
       ]
     },
     {
@@ -35,48 +80,18 @@
       ]
     },
     {
-      "headline": "What to know about subway service changes this summer",
-      "source": "NBC New York",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXJZMmhOSWU3aVEtMTA3N2dUWDN4MW9IbHdjeDFBTTMzM3hzWno5dU9LbF96RElkTm5QMExiMUdEUkl1NTZRZWRmQ0ZONm9NM2hDNGhWdXZoNFJacGQ1NHpJaFppaUUxdUFpRmhjLTkxVFZjV3FpbVJGajVsVXoydmtxNFdXdlphN2N5d3hrREFLb1M2UmZrZnVzVk5EeGkycGfSAaoBQVVfeXFMTVZ0UWU3cDY3d0J3UXFDa3JzQjNkaS1Ma1ZFaWtKeUlOLU9hNC1pYjRLU2EwWjRPamI0cDZlUHJHTUVqTFFLZGhGNWVXaWw1ejZLRGxXVWJ5WjktVjhyTGh2MndHU255SnBfbm12Z3dpNmhxNmN6Y0x6TU1hNndHdzdmSTA2UXNQVnFiV1dpbVA2enBGb082M25XRHMtOFVNQTVwQktZTm9jT0E?oc=5",
-      "pubDate": "Sun, 26 Jul 2026 01:41:38 GMT",
-      "topic": "Bicycle counts",
-      "dataset_id": "uczf-rk3c",
-      "dataset_name": "Bicycle Counts (Historical)",
-      "dataset_category": "Transportation",
-      "dataset_agency": "Department of Transportation (DOT)",
-      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
-      "match_terms": [
-        "subway"
-      ]
-    },
-    {
-      "headline": "Mamdani says NYC can't arrest Netanyahu but the federal government should",
-      "source": "PBS",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeXRWTG4zTHlGRnN3N1RzR2Y2SVh1Qm9ZWTdQU21tSEVKbUc2cHJ5eUtmeXNEYmN3elBheTVmNlBIdWEzQWgyc3JtVGozTzBxM0xybDF4SkhjU1I3b3o1Y1BpblRNOVlsTXlYWkd6MTQwUVZVLWNEdTRxWVo1dDlvU2FOTmJpUUl3OWJIRTJxQ0NPb0NsekRWczNVdGhaTVRzUi0yR0VZbFZRd28?oc=5",
-      "pubDate": "Wed, 22 Jul 2026 20:49:55 GMT",
-      "topic": "NYPD arrests",
-      "dataset_id": "8h9b-rp9u",
-      "dataset_name": "NYPD Arrests Data (Historic)",
+      "headline": "New York City stabbing suspect facing hate crime charges - ABC News",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOV1NlZmpmYlRHelBxY204Uzk2Z0tJQ1lnMExBNVN3OUpTTmNUZURfbk5nZ0Q4OGRSckliTW9mNkkxdHlHWTlBbllHeHc1Y3R3Vjg4aXNrZHVQX0NGWW1ENS1IcnlkSGxuR1BHWGhnbGJvQXFnMnNncU9WdVlkLVdGdkNHc1o0enBfX2xSem1UcEHSAZYBQVVfeXFMTjlnUEZXYWxJajNza01WaDFFTGpMeW9SXzBfdmt6bEhQRlVGV0s0LUxsNkFMcFhXUkwzTmF3YUtJa2FjNllmVXNKZFRYeGhqc1U1eEZwN0xheUlmRTZHeE12RUpNZkdLVGNMemwxc0tOTXMtQURuckVBMVJGLUxfZk51aVFITENENTU5TkdnTzVnaGhEN0Nn?oc=5",
+      "pubDate": "Sat, 25 Jul 2026 00:17:34 GMT",
+      "topic": "Hate crimes",
+      "dataset_id": "bqiq-cu78",
+      "dataset_name": "NYPD Hate Crimes",
       "dataset_category": "Public Safety",
       "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
+      "dataset_url": "https://data.cityofnewyork.us/d/bqiq-cu78",
       "match_terms": [
-        "arrest"
-      ]
-    },
-    {
-      "headline": "Under Mamdani, New York will be the first to open a free childcare center for city workers",
-      "source": "The 19th News",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5yai1WRmZwSmQta0FvTzh2UzVva0VjQXhyWm5KN052SzYyS0xSQzFudzNkN1ZuZGh3WGh3Q2NzV2hSeFVnOEVDWC04MS1QNXoyVXV5aEFZcEtSbHRJRS1UVlE3bTg1ZUhQOXpzQ0FlVVVWLWFy?oc=5",
-      "pubDate": "Mon, 08 Jun 2026 07:00:00 GMT",
-      "topic": "Pre-K and child care",
-      "dataset_id": "kiyv-ks3f",
-      "dataset_name": "Universal Pre-K (UPK) School Locations",
-      "dataset_category": "Education",
-      "dataset_agency": "Department of Education (DOE)",
-      "dataset_url": "https://data.cityofnewyork.us/d/kiyv-ks3f",
-      "match_terms": [
-        "free childcare"
+        "hate crime"
       ]
     }
   ]
