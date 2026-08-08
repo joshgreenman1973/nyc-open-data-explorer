@@ -1,9 +1,54 @@
 {
-  "computed_at": "2026-08-07T09:35:43+00:00",
+  "computed_at": "2026-08-08T09:26:27+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
+    {
+      "headline": "New York City homeowners file lawsuit challenging rollout of Mamdani’s pied-à-terre tax",
+      "source": "CNN",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kdHprVDBsNU9wbDFCOVE2N2EzOWFkRDRvakVROGYzMjkyclhjWkJZaVJoMTVHc0JvM3ZLN3VYV3c1MmtjY3dLVlhDb3o0cXdsSXA0WTdCR3ZkT2FLZ3lva05KQ3dKYVdCUkRMV1J6Yw?oc=5",
+      "pubDate": "Fri, 07 Aug 2026 19:32:44 GMT",
+      "topic": "Property tax data",
+      "dataset_id": "8h5j-fqxa",
+      "dataset_name": "ACRIS - Real Property Legals",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Department of Finance (DOF)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
+      "match_terms": [
+        "pied-à-terre"
+      ]
+    },
+    {
+      "headline": "NYC warns online retailers about sales, operation of high-speed e-bikes, e-scooters",
+      "source": "Bicycle Retailer & Industry News",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZkVpaFBVSkpUemNfSzNXVWRFQnRmV2JHa3lnR1ZLZW5VM2ZPenVsLXUxNW1GVU9EbXZfZzJJS0RFZEVaS1hpbEMyRTh1XzN3SklIdW1pR0RxWVM3U2toMWdNYVFiVE9reEd5WnV6WlVIXzJjY2laU2V6MEFmNE5Ta1pCMUJCOFJCa3FSMTA2Y01qUzZIZGVoQjZoNWJ6X3RyNDZjbS13RVluQ1FZVC1mS0x2Uzg5OF8wRUtpeEJaazd3WXJ4?oc=5",
+      "pubDate": "Thu, 06 Aug 2026 23:53:09 GMT",
+      "topic": "Shared e-scooter and bike infrastructure",
+      "dataset_id": "hjz2-y62k",
+      "dataset_name": "Shared E-Scooter Parking Corrals",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/hjz2-y62k",
+      "match_terms": [
+        "e-scooter"
+      ]
+    },
+    {
+      "headline": "Humidity at ‘oppressive' levels for the next week. Plus we're under a heat advisory",
+      "source": "NBC New York",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR201UnpCRjZ5ZjlRUFd2eFhUZVBJSVViMFBtV0pUS25iRWotUldMNVBCcmpYbW9ja1ZZdEQ0S0dWOGdlVzdBdHlhTEpQZ3dERlhMcVB3UFZmS3VNLTRQaXJmTVFDNDFJMnhnaUpjQ3NaOWxXYzJhNDE0Z0dwN2dPdVhhOGpzSDdlT20tbGpjRXZLQktTbzZYcFUtZ3ZsSnVkZUxicGJxaHQ0NDM3WjNPN3VMTWxrd2dFaldfMzdqNm7SAcgBQVVfeXFMTnZYVEh6NWpVNl9fSXEwNkpnVnRyVjN5aFUtNG5Ub3pZZ200NkF5a3pINi1kWmQ4ZjhJYzMyaE1Tb2dzM2pIUTdETmd0R09seU5tYzdnSzlVZERHTC1seDZIS1U2RjIzT2pSazhOcEpuN2g3M3BoamNXZmNfMlNZMGRTaWRrSEVzZHV5UlIwc3ZUdS1Gazc3NnN2TllMcjlidXdhd2tsRkdYdDhxaVBSZzQxSm1ISWxlUmkzeTd2aHNRbUEyM3VkNzE?oc=5",
+      "pubDate": "Thu, 06 Aug 2026 02:09:51 GMT",
+      "topic": "Heat / hot-water complaints",
+      "dataset_id": "erm2-nwe9",
+      "dataset_name": "311 Service Requests from 2020 to Present",
+      "dataset_category": "Social Services",
+      "dataset_agency": "311",
+      "dataset_url": "https://data.cityofnewyork.us/d/erm2-nwe9",
+      "match_terms": [
+        "heat"
+      ]
+    },
     {
       "headline": "New York City lawmaker accused of using government staff for political fundraising",
       "source": "Politico",
@@ -17,81 +62,6 @@
       "dataset_url": "https://data.cityofnewyork.us/d/rjkp-yttg",
       "match_terms": [
         "fundraising"
-      ]
-    },
-    {
-      "headline": "They Filled the New York City Subway With Fake Tech Ads. Their Real Goal Is to Get People Offline",
-      "source": "inc.com",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNUNaNWkycHc0QllyTF9oZ1JmTVV2WHJGMGxKeS1Lb2J0TVpndzVGbDBKOFpQVUVnZklzanJHWkV0eUxVNTRqekE1LS1HOUtkOVpyVXRQdThYUE16cWQ2STJSN05Pd2dvMWdwRzlsRE1CcmJoVURpVTluWXV1UTh0ZXRRaEpFVlI0TlJZa3NMS3F0czNzS0l6N3UwcFRxSzVrdnlndUJfMkZBZ1NQSFdXSzZjWF81REt1Ql9GVGwyV043RXpZY3EwS3d6c2NsaXlDeGVtRjVn?oc=5",
-      "pubDate": "Fri, 07 Aug 2026 09:08:16 GMT",
-      "topic": "Bicycle counts",
-      "dataset_id": "uczf-rk3c",
-      "dataset_name": "Bicycle Counts (Historical)",
-      "dataset_category": "Transportation",
-      "dataset_agency": "Department of Transportation (DOT)",
-      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
-      "match_terms": [
-        "subway"
-      ]
-    },
-    {
-      "headline": "‘Caribbean’-like humidity and extreme heat to suffocate NYC for several days",
-      "source": "nypost.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOVBRVm9zdC16dUFSWkpCd09yNlk3QVFxWGtXZ29hQnljNkMwSzV5QTNMN0h3X1drOExmc3B3V1pLM05pampqT0ZYVFpIRE9lb05QS0lYZ096SVl1M20tMTcyeGs2NXNrQndNRVBtOWtXMGtwdzBxeWY2THJXTEYwbFVMVWNXOS14WEJTaWVyLXZ0dFhlWFVhcmNFRWFOTXM?oc=5",
-      "pubDate": "Fri, 07 Aug 2026 00:02:00 GMT",
-      "topic": "Heat / hot-water complaints",
-      "dataset_id": "erm2-nwe9",
-      "dataset_name": "311 Service Requests from 2020 to Present",
-      "dataset_category": "Social Services",
-      "dataset_agency": "311",
-      "dataset_url": "https://data.cityofnewyork.us/d/erm2-nwe9",
-      "match_terms": [
-        "heat"
-      ]
-    },
-    {
-      "headline": "NYC Pied-à-Terre Tax Puts Primary-Resident Free Riders in Double Bind",
-      "source": "The City Reporter",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMW5TUjZHOU1kSVF2THM1S0ZISFRWZ29uSmlTOG9MNGhfV0x2MDlUcDN0azFiZkE2WWdvY29VWTBUUjRGTFdJdHBYc2RzNS1fQmkwcU9UTk9FS2NPbFgyOWZGcmhrakU1WVJZa2hqMUxQSmlKQThXYkx5T3k2OU5aRE1PX2lQOFhzLUV6SENrdUREQnJYY3c?oc=5",
-      "pubDate": "Thu, 06 Aug 2026 09:00:00 GMT",
-      "topic": "Voter analysis",
-      "dataset_id": "psx2-aqx3",
-      "dataset_name": "Voter Analysis 2008-2018",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Campaign Finance Board (CFB)",
-      "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
-      "match_terms": [
-        "primary"
-      ]
-    },
-    {
-      "headline": "A night of raw emotion and chaos: 63 arrested as Knicks fans celebrate NBA championship",
-      "source": "CNN",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5zY3E3R0dEZ1ZrX2c0WjBtZlE1b045UHhJT3hrNU83WjVMQ3hINjZnZDlfVXg1MkRzRVJtWWZsLWx6bWgxVnZkZmxUTjV5UFVVMm5DRHlpOWh5OWpsbVJNRVA5MmxRei12bnk0dlA0UjBacnRESlE?oc=5",
-      "pubDate": "Sat, 13 Jun 2026 07:00:00 GMT",
-      "topic": "NYPD arrests",
-      "dataset_id": "8h9b-rp9u",
-      "dataset_name": "NYPD Arrests Data (Historic)",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
-      "match_terms": [
-        "arrested"
-      ]
-    },
-    {
-      "headline": "Art World’s Top Players Turn Up in New York’s Pied-à-Terre Tax Database",
-      "source": "Artnet News",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPc0pfVFcyRDhxWXY0aGl6OUUyNkN3SGVtTU9aemFOM1Y3LUhyRGRZRzB6X1ZhTUFuaGQzdlJsdnQ2Z3B0SmY5UHFTSnZYbF9rOEtPeE12Z2ZiblZNdzlySTdLTEp0WloxaDAtZTRQLXVEQWRPNXVZMjRfWHhFVVFocm81R3RYdHPSAY8BQVVfeXFMT1duRXhfdXJ6R3BNSmtEcjRoUHZwWk1ycEcyemdrc0FCcFJjR3RfLTVRc1I1enFNOXhBekxqV0ktbzJfOGR6bEhhTnpUbUxhOENPTjFYQllycXkzMUVubG9Sa0szbXlIMDJnNGN0T3FTTmtLR2E1VnRzZG5TYlpNNFBydEE4R0ctNWhaTk5saTQ?oc=5",
-      "pubDate": "Tue, 28 Jul 2026 07:00:00 GMT",
-      "topic": "Property tax data",
-      "dataset_id": "8h5j-fqxa",
-      "dataset_name": "ACRIS - Real Property Legals",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Department of Finance (DOF)",
-      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
-      "match_terms": [
-        "pied-à-terre"
       ]
     }
   ]
