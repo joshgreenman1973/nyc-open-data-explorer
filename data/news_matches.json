@@ -1,14 +1,14 @@
 {
-  "computed_at": "2026-08-08T09:26:27+00:00",
+  "computed_at": "2026-08-09T09:26:23+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "New York City homeowners file lawsuit challenging rollout of Mamdani’s pied-à-terre tax",
-      "source": "CNN",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kdHprVDBsNU9wbDFCOVE2N2EzOWFkRDRvakVROGYzMjkyclhjWkJZaVJoMTVHc0JvM3ZLN3VYV3c1MmtjY3dLVlhDb3o0cXdsSXA0WTdCR3ZkT2FLZ3lva05KQ3dKYVdCUkRMV1J6Yw?oc=5",
-      "pubDate": "Fri, 07 Aug 2026 19:32:44 GMT",
+      "headline": "Super-rich complain but experts welcome Mamdani’s pied-à-terre tax",
+      "source": "The Guardian",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbHNBU1ZFQm5HcVBBMFlqQmlsQk5OTU1rMWxVR3hfbDNtMlBHOHZnWTRwdFNReHZvamcyV2poR3lTRjhmeXc0WHNHM2dkSFdsUGxjY0tkRTV1V2I0dmtTUDJTVGV1Qm9pNkR1cktxSlRMX25sR2JaQXp2S1dRd2djWUxRcVdZbG5j?oc=5",
+      "pubDate": "Sat, 08 Aug 2026 12:15:00 GMT",
       "topic": "Property tax data",
       "dataset_id": "8h5j-fqxa",
       "dataset_name": "ACRIS - Real Property Legals",
@@ -17,6 +17,21 @@
       "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
       "match_terms": [
         "pied-à-terre"
+      ]
+    },
+    {
+      "headline": "New York City lawmaker accused of using government staff for political fundraising",
+      "source": "Politico",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPY3FzT2NvUUpCclFRS2otSVNJWFBKZGd3akZ2RzRDbU9BN2VqYTRZQ242STlNdTdON1dySDVOVjFGdWlycElNMEduZHR6dXpwa25vOFRKUDlHY1VEQ1U3UkpoU0I3ZTR6WmRMb190UUpDbHc0SFRtQkpIeTJvc3JHQkNlaGw2QVUxODZ6MGJhT2JuWTZaNl84VGNiU2ZiQjIxQ3VYWFJIenRWcmQ2Qk1xTF9NZ0FtWVlxWmlSTW5ZSkNxdHFwX1A0aEMtdTI?oc=5",
+      "pubDate": "Thu, 06 Aug 2026 09:55:00 GMT",
+      "topic": "Campaign contributions",
+      "dataset_id": "rjkp-yttg",
+      "dataset_name": "Campaign Contributions",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Campaign Finance Board (CFB)",
+      "dataset_url": "https://data.cityofnewyork.us/d/rjkp-yttg",
+      "match_terms": [
+        "fundraising"
       ]
     },
     {
@@ -35,10 +50,25 @@
       ]
     },
     {
-      "headline": "Humidity at ‘oppressive' levels for the next week. Plus we're under a heat advisory",
-      "source": "NBC New York",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR201UnpCRjZ5ZjlRUFd2eFhUZVBJSVViMFBtV0pUS25iRWotUldMNVBCcmpYbW9ja1ZZdEQ0S0dWOGdlVzdBdHlhTEpQZ3dERlhMcVB3UFZmS3VNLTRQaXJmTVFDNDFJMnhnaUpjQ3NaOWxXYzJhNDE0Z0dwN2dPdVhhOGpzSDdlT20tbGpjRXZLQktTbzZYcFUtZ3ZsSnVkZUxicGJxaHQ0NDM3WjNPN3VMTWxrd2dFaldfMzdqNm7SAcgBQVVfeXFMTnZYVEh6NWpVNl9fSXEwNkpnVnRyVjN5aFUtNG5Ub3pZZ200NkF5a3pINi1kWmQ4ZjhJYzMyaE1Tb2dzM2pIUTdETmd0R09seU5tYzdnSzlVZERHTC1seDZIS1U2RjIzT2pSazhOcEpuN2g3M3BoamNXZmNfMlNZMGRTaWRrSEVzZHV5UlIwc3ZUdS1Gazc3NnN2TllMcjlidXdhd2tsRkdYdDhxaVBSZzQxSm1ISWxlUmkzeTd2aHNRbUEyM3VkNzE?oc=5",
-      "pubDate": "Thu, 06 Aug 2026 02:09:51 GMT",
+      "headline": "Air Quality Health Advisory Issued for New York City Metro Region",
+      "source": "New York State Department of Environmental Conservation (.gov)",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPakhlWGlxZkhiaHlsR0F2dzZSdVNQenRpMnp2Zk9XZGt0M2l2TU5MSGoyR3hpUFJ3U2ZOZXh4WmVDSkdsLUV6Yldxb2lqTmMzRUFxTEN5dHJ4ZlYtSmhKLWNBeDljb1k5SC1PMWJZcnZnNFRhMVdVdFIzVDVSTktobVRGN21VLVI3cUROcnBBN2tDSHJPX1V5MXh6YVc1aUE1aXF6TGNkSE5LT0Y3Nm1KOA?oc=5",
+      "pubDate": "Sat, 08 Aug 2026 16:19:47 GMT",
+      "topic": "Air quality and health",
+      "dataset_id": "c3uy-2p5r",
+      "dataset_name": "Air Quality and Health Impacts",
+      "dataset_category": "Environment",
+      "dataset_agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "dataset_url": "https://data.cityofnewyork.us/d/c3uy-2p5r",
+      "match_terms": [
+        "air quality"
+      ]
+    },
+    {
+      "headline": "New York City heat wave: 5 maps show how hot temps will get",
+      "source": "usatoday.com",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcjhGMkFISEJmSm13eHBBRWQ0LUt3azRydVRIN3RCY0tsNzlLb0IwYXBYenU5N2xJTjMtc0JuVEdWX2ZibTlnRmZseHI3N2pHTE1RZ0o0YmV1ZTVCRmdWOWdERW8zOGJSUEh1SENMd0JFaUY0bWpHOWJBLWhYdzZtS1QyQWtjMG5DUUpxclhnZE9IRW4xN0M2YzlqWk5pc3E2Z0lQQjhoVmZjV0hvYzZwdU1DcDJKVE5pOVNHbA?oc=5",
+      "pubDate": "Thu, 06 Aug 2026 14:54:00 GMT",
       "topic": "Heat / hot-water complaints",
       "dataset_id": "erm2-nwe9",
       "dataset_name": "311 Service Requests from 2020 to Present",
@@ -50,18 +80,18 @@
       ]
     },
     {
-      "headline": "New York City lawmaker accused of using government staff for political fundraising",
-      "source": "Politico",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPY3FzT2NvUUpCclFRS2otSVNJWFBKZGd3akZ2RzRDbU9BN2VqYTRZQ242STlNdTdON1dySDVOVjFGdWlycElNMEduZHR6dXpwa25vOFRKUDlHY1VEQ1U3UkpoU0I3ZTR6WmRMb190UUpDbHc0SFRtQkpIeTJvc3JHQkNlaGw2QVUxODZ6MGJhT2JuWTZaNl84VGNiU2ZiQjIxQ3VYWFJIenRWcmQ2Qk1xTF9NZ0FtWVlxWmlSTW5ZSkNxdHFwX1A0aEMtdTI?oc=5",
-      "pubDate": "Thu, 06 Aug 2026 09:55:00 GMT",
-      "topic": "Campaign contributions",
-      "dataset_id": "rjkp-yttg",
-      "dataset_name": "Campaign Contributions",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Campaign Finance Board (CFB)",
-      "dataset_url": "https://data.cityofnewyork.us/d/rjkp-yttg",
+      "headline": "Weekend transit disruptions affect subway, rail riders in NYC, New Jersey, Long Island",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPczNvNWc3aUZNWFZlYmxXZy1iTktxSFVFWmR1YVdwek96WWlwTWQ1Zi1zcjNmc3NzS1FjM0FVZS1DTmJzdkZSV3ZvM0VzT1hlQWRLc2lVbUhQSXRBbm1ISTZzdFJCa2h6b1p3SHI4bEJ5eG9kb0RQM09vZ09CTFd2U1VOdHFWQWZlQkw1NTUxTUtGODB0NFlhSzBhMGFuMU9wRUJPOWFYSkZLRFhYcy1qcEZ4aG42NWN3VkJhNtIBwgFBVV95cUxNN293cWVIMmRsSVVDeDVWMzBfNUJmQzVoSGRXUnZQTm1MQXZnTnByN290SFp5MlN3VTExdmRPM2V3cExRTkhBa1puZTNjWG1RWDMwZ1hEd05vdDcySmdVRDB5RDdVcnB2ZzN3eEc4aEwxODVLWk55Nko3M0FGcnkxbHZUeW9xXzI1UkgxcDJ2V1pGVlhreGx3ZWN1SDBYcXRhbnhVOXdWajVtc1lYQ2puYkdwRVdaZTFLWWRSYlJ5NEZPdw?oc=5",
+      "pubDate": "Fri, 07 Aug 2026 12:49:03 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
       "match_terms": [
-        "fundraising"
+        "subway"
       ]
     }
   ]
