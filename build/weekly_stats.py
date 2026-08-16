@@ -69,6 +69,46 @@ def daily_to_buckets(rows, date_field, end_dt, n_buckets=WEEKS):
     return buckets
 
 
+STALL_DAYS = 10  # a feed whose newest row is older than this is "stalled"
+
+
+def latest_day(rows, date_field):
+    days = sorted((r.get(date_field) or "")[:10] for r in rows if r.get(date_field))
+    return days[-1] if days else None
+
+
+def window_end(rows, date_field, now):
+    """End the 7-day windows at the day after the newest row (capped at now),
+    so a feed that lags a day or two isn't read as a week-over-week drop.
+    Returns (end_dt, latest_day_str, stalled_bool, lag_days)."""
+    ld = latest_day(rows, date_field)
+    if not ld:
+        return now, None, True, None
+    ldt = datetime.fromisoformat(ld).replace(tzinfo=timezone.utc)
+    lag = (now - ldt).days
+    # The newest day in a feed is usually partial (still loading), so the
+    # windows end at the START of that day: seven complete days.
+    end = ldt.replace(hour=0, minute=0, second=0, microsecond=0)
+    return end, ld, lag > STALL_DAYS, lag
+
+
+def stalled_stat(base, latest, lag, trend):
+    """Return the stat rewritten as an explicit stall notice instead of a misleading zero."""
+    base = dict(base)
+    base.update({
+        "stalled": True,
+        "latest_date": latest,
+        "lag_days": lag,
+        "headline": "Stalled",
+        "label": base["label"],
+        "sub": (f"The City's feed has no rows after {latest} ({lag} days ago). " if latest else "No rows returned. ")
+               + "The number would be misleading, so it isn't shown.",
+        "trend": trend,
+        "delta_pct": None,
+    })
+    return base
+
+
 def delta_pct(buckets):
     if len(buckets) < 2 or buckets[-2] == 0:
         return None
@@ -95,18 +135,22 @@ def main():
     def stat_311():
         top = soql("erm2-nwe9", f"SELECT complaint_type, count(*) AS n WHERE created_date > '{start}' GROUP BY complaint_type ORDER BY n DESC LIMIT 1")[0]
         daily = soql("erm2-nwe9", f"SELECT date_trunc_ymd(created_date) AS d, count(*) AS n WHERE created_date > '{trend_start}' GROUP BY d ORDER BY d")
-        trend = daily_to_buckets(daily, "d", now)
-        return {
+        end, latest, stalled, lag = window_end(daily, "d", now)
+        trend = daily_to_buckets(daily, "d", end)
+        stat = {
             "key": "311",
             "headline": fmt_int(trend[-1]),
-            "label": "311 complaints in the past 7 days",
+            "label": "311 complaints in the latest 7 full days",
             "sub": f"Most common: {top['complaint_type']} ({fmt_int(top['n'])})",
             "trend": trend,
             "delta_pct": delta_pct(trend),
+            "latest_date": latest,
+            "lag_days": lag,
             "dataset_id": "erm2-nwe9",
             "dataset_name": "311 Service Requests from 2020 to Present",
             "category": "Social Services",
         }
+        return stalled_stat(stat, latest, lag, trend) if stalled else stat
 
     # 2) Motor vehicle collisions
     def stat_mvc():
@@ -115,34 +159,42 @@ def main():
         except Exception:
             inj = "0"
         daily = soql("h9gi-nx95", f"SELECT date_trunc_ymd(crash_date) AS d, count(*) AS n WHERE crash_date > '{trend_start}' GROUP BY d ORDER BY d")
-        trend = daily_to_buckets(daily, "d", now)
-        return {
+        end, latest, stalled, lag = window_end(daily, "d", now)
+        trend = daily_to_buckets(daily, "d", end)
+        stat = {
             "key": "mvc",
             "headline": fmt_int(trend[-1]),
             "label": "Motor-vehicle crashes reported",
             "sub": f"{fmt_int(inj)} people injured",
             "trend": trend,
             "delta_pct": delta_pct(trend),
+            "latest_date": latest,
+            "lag_days": lag,
             "dataset_id": "h9gi-nx95",
             "dataset_name": "Motor Vehicle Collisions - Crashes",
             "category": "Public Safety",
         }
+        return stalled_stat(stat, latest, lag, trend) if stalled else stat
 
     # 3) DOB approved permits
     def stat_dob():
         daily = soql("rbx6-tga4", f"SELECT date_trunc_ymd(issued_date) AS d, count(*) AS n WHERE issued_date > '{trend_start}' GROUP BY d ORDER BY d")
-        trend = daily_to_buckets(daily, "d", now)
-        return {
+        end, latest, stalled, lag = window_end(daily, "d", now)
+        trend = daily_to_buckets(daily, "d", end)
+        stat = {
             "key": "dob",
             "headline": fmt_int(trend[-1]),
             "label": "DOB construction permits issued",
             "sub": "Excludes electrical and elevator filings",
             "trend": trend,
             "delta_pct": delta_pct(trend),
+            "latest_date": latest,
+            "lag_days": lag,
             "dataset_id": "rbx6-tga4",
             "dataset_name": "DOB NOW: Build – Approved Permits",
             "category": "Housing & Development",
         }
+        return stalled_stat(stat, latest, lag, trend) if stalled else stat
 
     # 4) Restaurant inspections + grade A share
     def stat_rest():
@@ -151,18 +203,22 @@ def main():
         a = next((int(r["n"]) for r in rows if r.get("grade") == "A"), 0)
         share = round(100 * a / total) if total else 0
         daily = soql("43nn-pn8j", f"SELECT date_trunc_ymd(inspection_date) AS d, count(*) AS n WHERE inspection_date > '{trend_start}' GROUP BY d ORDER BY d")
-        trend = daily_to_buckets(daily, "d", now)
-        return {
+        end, latest, stalled, lag = window_end(daily, "d", now)
+        trend = daily_to_buckets(daily, "d", end)
+        stat = {
             "key": "rest",
             "headline": fmt_int(trend[-1]),
             "label": "Restaurant inspections completed",
             "sub": f"{share}% earned an A grade ({fmt_int(a)} of {fmt_int(total)} graded)",
             "trend": trend,
             "delta_pct": delta_pct(trend),
+            "latest_date": latest,
+            "lag_days": lag,
             "dataset_id": "43nn-pn8j",
             "dataset_name": "DOHMH NYC Restaurant Inspection Results",
             "category": "Health",
         }
+        return stalled_stat(stat, latest, lag, trend) if stalled else stat
 
     # 5) Catalog meta — datasets refreshed (computed locally from catalog metadata)
     def stat_meta():
@@ -210,6 +266,8 @@ def main():
         "stats": stats,
         "errors": errors,
     }
+    if not stats:
+        sys.exit("ABORT: no stats computed — every query failed. Leaving the previous weekly_stats.json in place.")
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2))
     print(f"Wrote {len(stats)} stats ({len(errors)} errors) to {OUT.relative_to(ROOT)}", file=sys.stderr)
 

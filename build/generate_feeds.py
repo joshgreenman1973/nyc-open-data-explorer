@@ -103,7 +103,66 @@ def main():
               f"{SITE_BASE}/", new)
     write_json(FEEDS / "new.json", "NYC Open Data — Newest datasets", new)
 
-    print(f"Wrote {len(cats) + 2} feeds (RSS + JSON each) to feeds/", file=sys.stderr)
+    # Changelog feed: what the City added, removed, renamed or re-described
+    write_changes_feed()
+
+    print(f"Wrote {len(cats) + 3} feeds (RSS + JSON each) to feeds/", file=sys.stderr)
+
+
+KIND_LABEL = {
+    "added": "New dataset", "removed": "Removed from portal", "renamed": "Renamed",
+    "description_changed": "Description changed", "agency_changed": "Agency changed",
+    "columns_changed": "Columns changed",
+}
+
+
+def write_changes_feed():
+    path = ROOT / "data" / "changelog.json"
+    if not path.exists():
+        return
+    log = json.loads(path.read_text())
+    events = log.get("events", [])[:100]
+    now = datetime.now(timezone.utc)
+    parts = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0"><channel>',
+        '<title>NYC Open Data — catalog changes</title>',
+        f'<link>{xml_escape(SITE_BASE + "/changes.html")}</link>',
+        '<description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>',
+        f'<lastBuildDate>{format_datetime(now)}</lastBuildDate>',
+        '<language>en-us</language>',
+    ]
+    for e in events:
+        label = KIND_LABEL.get(e["kind"], e["kind"])
+        title = f"{label}: {e.get('name', '')}"
+        if e["kind"] == "renamed":
+            desc = f"Was: {e.get('before', '')}. Now: {e.get('after', '')}."
+        elif e["kind"] == "description_changed":
+            desc = f"Before: {e.get('before', '')} — After: {e.get('after', '')}"
+        elif e["kind"] == "agency_changed":
+            desc = f"Attribution moved from {e.get('before', '')} to {e.get('after', '')}."
+        elif e["kind"] == "columns_changed":
+            desc = f"Columns added: {', '.join(e.get('columns_added', [])) or 'none'}. Removed: {', '.join(e.get('columns_removed', [])) or 'none'}."
+        elif e["kind"] == "removed":
+            desc = f"No longer listed in the catalog. Agency: {e.get('agency', '')}."
+        else:
+            desc = e.get("summary", "") or f"Agency: {e.get('agency', '')}."
+        try:
+            pub = datetime.fromisoformat(e["date"]).replace(tzinfo=timezone.utc)
+        except Exception:
+            pub = now
+        guid = f"{e.get('url', '')}#{e['kind']}-{e['date']}"
+        parts.append("<item>")
+        parts.append(f"<title>{xml_escape(title)}</title>")
+        parts.append(f"<link>{xml_escape(e.get('url', ''))}</link>")
+        parts.append(f"<guid isPermaLink=\"false\">{xml_escape(guid)}</guid>")
+        parts.append(f"<pubDate>{format_datetime(pub)}</pubDate>")
+        parts.append(f"<description>{xml_escape(desc)}</description>")
+        parts.append("</item>")
+    parts.append("</channel></rss>")
+    (FEEDS / "changes.xml").write_text("\n".join(parts), encoding="utf-8")
+    (FEEDS / "changes.json").write_text(json.dumps({"title": "NYC Open Data — catalog changes",
+        "generated": now.isoformat(timespec="seconds"), "items": events}, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 if __name__ == "__main__":

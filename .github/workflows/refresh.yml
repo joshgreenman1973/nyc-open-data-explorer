@@ -21,6 +21,9 @@ jobs:
       - name: Fetch NYC Open Data catalog
         run: python build/fetch_catalog.py
 
+      - name: Catalog changelog (diff against previous snapshot)
+        run: python build/changelog.py
+
       - name: Generate feeds
         run: python build/generate_feeds.py
 

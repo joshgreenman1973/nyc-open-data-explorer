@@ -43,6 +43,10 @@
     showAllAgencies: false,
     showAllTypes: false,
     agencyFilter: "",
+    twinOf: new Map(),      // hidden twin id -> primary id (dataset/map pairs with the same name)
+    twinsFor: new Map(),    // primary id -> [twin records]
+    changelog: null,
+    overdueCount: 0,
   };
 
   const SIZE_RULES = [
@@ -93,15 +97,61 @@
     return Math.round(days / 365) + " years ago";
   }
 
+  // Agency-declared update cadence -> expected interval in days.
+  const FREQ_DAYS = {
+    "daily": 1, "weekly": 7, "every 2 weeks": 14, "biweekly": 14, "monthly": 30,
+    "every 4 months": 122, "quarterly": 91, "every 6 months": 182, "annually": 365, "every 2 years": 730,
+  };
+  function expectedDays(freq) { return FREQ_DAYS[(freq || "").trim().toLowerCase()] || null; }
+  // Overdue = well past the promised cadence. Grace: 3x + 2 days for daily/weekly
+  // feeds (weekends, holidays), 1.5x + 7 days for slower ones. So a "daily"
+  // dataset is overdue after 5 quiet days; "monthly" after 52; "annually" after ~18 months.
+  function overdueInfo(d) {
+    const n = expectedDays(d.f);
+    if (!n || !d.u) return null;
+    const days = (Date.now() - Date.parse(d.u)) / 86400000;
+    if (Number.isNaN(days)) return null;
+    const limit = n <= 7 ? n * 3 + 2 : n * 1.5 + 7;
+    return days > limit ? { expected: n, days: Math.round(days), freq: d.f } : null;
+  }
+
   function passesFreshness(d) {
     const f = state.parsed.freshness || state.fresh;
     if (f === "all" || !f) return true;
+    if (f === "overdue") return !!overdueInfo(d);
     if (!d.u) return f === "stale";
     const days = (Date.now() - Date.parse(d.u)) / 86400000;
     if (f === "30") return days <= 30;
     if (f === "365") return days <= 365;
     if (f === "stale") return days > 365;
     return true;
+  }
+
+  // ---------- Dataset/map twins ----------
+  // The portal often lists the same data twice: once as a table, once as a
+  // map (or "filter"/"href" view) with the same name. Collapse the pair into
+  // one card and mention the other view.
+  function twinKey(name) {
+    return (name || "").toLowerCase().replace(/\s*\((map|table|data|dataset|filtered( view)?|chart)\)\s*$/, "").replace(/\s+/g, " ").trim();
+  }
+  const TYPE_RANK = { dataset: 0, filter: 1, map: 2, chart: 3, story: 4, file: 5, href: 6 };
+  function buildTwins() {
+    const groups = new Map();
+    for (const d of state.catalog.datasets) {
+      const k = twinKey(d.n);
+      if (!k) continue;
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(d);
+    }
+    for (const [, arr] of groups) {
+      if (arr.length < 2 || arr.length > 4) continue;
+      const types = new Set(arr.map((d) => d.t));
+      if (types.size < 2) continue; // two plain datasets with the same name are not twins
+      arr.sort((a, b) => (TYPE_RANK[a.t] ?? 9) - (TYPE_RANK[b.t] ?? 9) || (b.v || 0) - (a.v || 0));
+      const primary = arr[0];
+      state.twinsFor.set(primary.i, arr.slice(1));
+      for (const t of arr.slice(1)) state.twinOf.set(t.i, primary.i);
+    }
   }
 
   // Agency display: show plain name, suppress trailing acronym in parens.
@@ -225,6 +275,10 @@
     els.freshPills.querySelectorAll(".pill-btn").forEach((b) => {
       b.classList.toggle("on", b.dataset.fresh === state.fresh);
       b.setAttribute("aria-pressed", b.dataset.fresh === state.fresh);
+      if (b.dataset.fresh === "overdue") {
+        const n = b.querySelector("small");
+        if (n) n.textContent = state.overdueCount;
+      }
     });
   }
   function bindFreshPills() {
@@ -270,7 +324,7 @@
 
   // ---------- Sidebar: agencies (plain names) ----------
   function renderAgencyList() {
-    const all = state.catalog.agencies || [];
+    const all = (state.catalog.agencies || []).slice().sort((a, b) => (a.key === "other") - (b.key === "other"));
     const filter = state.agencyFilter.toLowerCase();
     const filtered = filter ? all.filter((a) => a.name.toLowerCase().includes(filter)) : all;
     const limit = state.showAllAgencies ? filtered.length : Math.min(AGENCY_INITIAL, filtered.length);
@@ -385,14 +439,16 @@
     wrap.hidden = false;
     const computed = (stats.computed_at || "").slice(0, 10);
     const weeks = stats.trend_weeks || 12;
-    sub.innerHTML = `Pulled live from City datasets. Dashed line is the ${weeks - 1}-week median; the dot is this week. Click a card to filter results to that category.`;
+    const stalledN = stats.stats.filter((s) => s.stalled).length;
+    sub.innerHTML = `Pulled live from City datasets, counting the latest seven complete days each feed has. Dashed line is the ${weeks - 1}-week median; the dot is this week. Click a card to filter results to that category.` +
+      (stalledN ? ` <strong>${stalledN} feed${stalledN > 1 ? "s have" : " has"} stopped updating</strong> — flagged rather than shown as zero.` : "");
     grid.innerHTML = stats.stats.map((s) => {
       const cat = s.category || "";
       const link = s.dataset_id ? `https://data.cityofnewyork.us/d/${encodeURIComponent(s.dataset_id)}` : null;
       const name = escapeHTML(s.dataset_name || "");
       const spark = sparklineSVG(s.trend);
-      const delta = deltaHTML(s.delta_pct);
-      const interp = interpretation(s.trend);
+      const delta = s.stalled ? "" : deltaHTML(s.delta_pct);
+      const interp = s.stalled ? "" : interpretation(s.trend);
       const interpLine = interp ? `<span class="weekly-interp">${escapeHTML(interp)}</span>` : "";
       const catLine = cat ? `<span class="cat-dot"></span><span>${escapeHTML(cat)}</span>` : "<span>NYC catalog overall</span>";
       const catCount = cat ? categoryCount(cat) : (state.catalog ? state.catalog.datasets.length : 0);
@@ -414,7 +470,7 @@
           ${cta}
           ${sourceLink}
         </div>`;
-      return `<button type="button" class="weekly-card" data-cat="${escapeAttr(cat)}" data-stat="${escapeAttr(s.key)}" aria-label="Filter results to ${escapeAttr(cat || 'all datasets')}, sorted by most recently updated">${inner}</button>`;
+      return `<button type="button" class="weekly-card${s.stalled ? " stalled" : ""}" data-cat="${escapeAttr(cat)}" data-stat="${escapeAttr(s.key)}" aria-label="Filter results to ${escapeAttr(cat || 'all datasets')}, sorted by most recently updated">${inner}</button>`;
     }).join("");
     grid.querySelectorAll(".weekly-card").forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -481,6 +537,202 @@
     els.freshUpdated.innerHTML = (fresh.updated_this_week || []).slice(0, 6).map((it) => renderTile(it, false)).join("") || "<em style='font-size:12px;color:var(--ink-mute);'>Nothing updated in the last 7 days.</em>";
   }
 
+
+  // ---------- What changed (catalog changelog) ----------
+  const KIND_LABEL = {
+    added: "New", removed: "Removed", renamed: "Renamed",
+    description_changed: "Description changed", agency_changed: "Agency changed", columns_changed: "Columns changed",
+  };
+  function changeSummary(e) {
+    if (e.kind === "renamed") return `was "${e.before}"`;
+    if (e.kind === "agency_changed") return `${plainAgencyName(e.before)} → ${plainAgencyName(e.after)}`;
+    if (e.kind === "columns_changed") {
+      const bits = [];
+      if (e.columns_added && e.columns_added.length) bits.push(`+${e.columns_added.length} column${e.columns_added.length > 1 ? "s" : ""}: ${e.columns_added.slice(0, 3).join(", ")}${e.columns_added.length > 3 ? "…" : ""}`);
+      if (e.columns_removed && e.columns_removed.length) bits.push(`−${e.columns_removed.length}: ${e.columns_removed.slice(0, 3).join(", ")}${e.columns_removed.length > 3 ? "…" : ""}`);
+      return bits.join(" · ");
+    }
+    if (e.kind === "description_changed") {
+      const grew = (e.after_len || 0) - (e.before_len || 0);
+      if (e.after && /NOTE|no longer|removed|discontinued|not updating|deprecated|retired|temporarily/i.test(e.after)) return "new notice in the description";
+      if (grew > 40) return `description grew by ${grew} characters`;
+      if (grew < -40) return `description shortened by ${-grew} characters`;
+      return "description edited";
+    }
+    if (e.kind === "removed") return `no longer listed${e.verified_gone ? " (portal returns 404)" : ""}`;
+    if (e.kind === "added") return e.summary || "";
+    return "";
+  }
+  function fmtDay(iso) {
+    const t = Date.parse(iso + "T12:00:00Z");
+    if (Number.isNaN(t)) return iso;
+    const days = Math.round((Date.now() - t) / 86400000);
+    if (days <= 0) return "Today";
+    if (days === 1) return "Yesterday";
+    return new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+  }
+  function renderChangelog() {
+    const sec = document.getElementById("changes");
+    const list = document.getElementById("changes-list");
+    const meta = document.getElementById("changes-meta");
+    if (!sec || !list) return;
+    const log = state.changelog;
+    if (!log || !Array.isArray(log.events) || !log.events.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    const cutoff = Date.now() - 30 * 86400000;
+    let recent = log.events.filter((e) => Date.parse(e.date + "T00:00:00Z") >= cutoff);
+    if (recent.length < 4) recent = log.events.slice(0, 8);
+    // Rank: removals and new datasets first, then notices in descriptions, then the rest; newest first within rank
+    const rank = { removed: 0, added: 1, columns_changed: 2, renamed: 3, agency_changed: 4, description_changed: 5 };
+    recent = recent.slice().sort((a, b) => b.date.localeCompare(a.date) || (rank[a.kind] ?? 9) - (rank[b.kind] ?? 9)).slice(0, 10);
+    const total30 = log.events.filter((e) => Date.parse(e.date + "T00:00:00Z") >= cutoff).length;
+    if (meta) meta.textContent = `(${total30} in the last 30 days)`;
+    list.innerHTML = recent.map((e) => {
+      const cat = e.category || "Uncategorized";
+      const detail = changeSummary(e);
+      return `<div class="change-item kind-${escapeAttr(e.kind)}" data-cat="${escapeAttr(cat)}">
+        <span class="change-kind">${escapeHTML(KIND_LABEL[e.kind] || e.kind)}</span>
+        <span class="change-date">${escapeHTML(fmtDay(e.date))}</span>
+        <button type="button" class="change-name link-btn" data-preview="${escapeAttr(e.id)}">${escapeHTML(e.name)}</button>
+        ${detail ? `<span class="change-detail">${escapeHTML(detail)}</span>` : ""}
+        <span class="change-meta"><span class="cat-dot"></span>${escapeHTML(plainAgencyName(e.agency) || cat)}</span>
+      </div>`;
+    }).join("");
+    list.querySelectorAll("[data-preview]").forEach((b) => b.addEventListener("click", () => openDrawer(b.dataset.preview)));
+  }
+
+  // ---------- Preview drawer ----------
+  const drawer = {
+    el: null, body: null, title: null, backdrop: null, lastFocus: null, reqToken: 0,
+  };
+  function bindDrawer() {
+    drawer.el = document.getElementById("drawer");
+    drawer.body = document.getElementById("drawer-body");
+    drawer.title = document.getElementById("drawer-title");
+    drawer.backdrop = document.getElementById("drawer-backdrop");
+    if (!drawer.el) return;
+    document.getElementById("drawer-close").addEventListener("click", closeDrawer);
+    drawer.backdrop.addEventListener("click", closeDrawer);
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !drawer.el.hidden) closeDrawer(); });
+  }
+  function closeDrawer() {
+    if (!drawer.el || drawer.el.hidden) return;
+    drawer.el.hidden = true; drawer.backdrop.hidden = true;
+    document.body.classList.remove("drawer-open");
+    state.openId = null; syncURL();
+    if (drawer.lastFocus && drawer.lastFocus.focus) drawer.lastFocus.focus();
+  }
+  function similarDatasets(d, n = 5) {
+    const tags = new Set((d.g || []).map((t) => t.toLowerCase()));
+    const scored = [];
+    for (const o of state.catalog.datasets) {
+      if (o.i === d.i || state.twinOf.get(o.i) === d.i || state.twinOf.get(d.i) === o.i) continue;
+      let sc = 0;
+      for (const t of o.g || []) if (tags.has(t.toLowerCase())) sc += 2;
+      if (o.a === d.a && d.ak !== "other") sc += 1;
+      if (o.c === d.c) sc += 0.5;
+      const on = twinKey(o.n), dn = twinKey(d.n);
+      if (on && dn && (on.includes(dn.split(" ")[0]) || dn.includes(on.split(" ")[0])) && dn.split(" ")[0].length > 4) sc += 1;
+      if (sc >= 2.5) scored.push([sc, o]);
+    }
+    scored.sort((a, b) => b[0] - a[0] || (b[1].v || 0) - (a[1].v || 0));
+    return scored.slice(0, n).map((x) => x[1]);
+  }
+  function copyText(text, btn) {
+    const done = () => { const o = btn.textContent; btn.textContent = "Copied"; setTimeout(() => { btn.textContent = o; }, 1200); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, () => window.prompt("Copy this link:", text));
+    else window.prompt("Copy this link:", text);
+  }
+  async function openDrawer(id, silent) {
+    const d = state.catalog.datasets.find((x) => x.i === id);
+    if (!d || !drawer.el) return;
+    drawer.lastFocus = document.activeElement;
+    state.openId = id; if (!silent) syncURL();
+    const token = ++drawer.reqToken;
+    const url = `https://data.cityofnewyork.us/d/${encodeURIComponent(d.i)}`;
+    const api = `https://data.cityofnewyork.us/resource/${encodeURIComponent(d.i)}.json`;
+    const csv = `https://data.cityofnewyork.us/api/views/${encodeURIComponent(d.i)}/rows.csv?accessType=DOWNLOAD`;
+    const f = freshnessClass(d.u);
+    const od = overdueInfo(d);
+    const pick = state.picksById.get(d.i);
+    const twins = state.twinsFor.get(d.i) || [];
+    const changes = (state.changelog && state.changelog.events || []).filter((e) => e.id === d.i).slice(0, 5);
+    const sim = similarDatasets(d);
+    const cols = d.k || [];
+    drawer.title.textContent = d.n;
+    drawer.el.dataset.cat = d.c || "Uncategorized";
+    drawer.body.innerHTML = `
+      <div class="dr-meta">
+        <span class="agency">${escapeHTML(plainAgencyName(d.a) || "No agency listed")}</span>
+        <span><span class="cat-dot"></span>${escapeHTML(d.c || "Uncategorized")}</span>
+        ${d.t && d.t !== "dataset" ? `<span class="pill type">${escapeHTML(d.t)}</span>` : ""}
+        ${od ? `<span class="pill overdue">Overdue · promised ${escapeHTML(od.freq.toLowerCase())}</span>` : `<span class="pill ${f.klass}">${f.label}</span>`}
+        ${d.f ? `<span>Declared cadence: <strong>${escapeHTML(d.f)}</strong></span>` : "<span>No cadence declared</span>"}
+        ${d.x ? `<span>Published ${escapeHTML(String(d.x).slice(0, 10))}</span>` : ""}
+        ${d.v ? `<span>${fmtNum(d.v)} views</span>` : ""}
+        ${d.d ? `<span>${fmtNum(d.d)} downloads</span>` : ""}
+      </div>
+      <p class="dr-summary">${d.s ? escapeHTML(d.s) : "<em>No description provided by the publishing agency.</em>"}</p>
+      ${pick ? `<div class="pick-note"><strong>Why journalists use it:</strong> ${escapeHTML(pick.why)} ${pick.gotcha ? `<em>Gotcha: ${escapeHTML(pick.gotcha)}</em>` : ""}</div>` : ""}
+      <div class="dr-actions">
+        <a class="dr-btn primary" href="${url}" target="_blank" rel="noopener">Open on data.cityofnewyork.us ↗</a>
+        ${d.t === "dataset" || d.t === "filter" ? `<button type="button" class="dr-btn" data-copy="${escapeAttr(api)}">Copy API endpoint</button>
+        <button type="button" class="dr-btn" data-copy="${escapeAttr(csv)}">Copy CSV link</button>` : ""}
+        <button type="button" class="dr-btn" data-copy="${escapeAttr(location.origin + location.pathname + "#d=" + encodeURIComponent(d.i))}">Copy link to this preview</button>
+      </div>
+      ${twins.length ? `<p class="dr-twins">Also published as ${twins.map((t) => `<a href="https://data.cityofnewyork.us/d/${encodeURIComponent(t.i)}" target="_blank" rel="noopener">${escapeHTML(t.t)}: ${escapeHTML(t.n)}</a>`).join("; ")}.</p>` : ""}
+      <section class="dr-sec" id="dr-sample"><h3>Sample rows</h3><p class="dr-muted">Loading…</p></section>
+      <section class="dr-sec"><h3>Columns <small>${cols.length ? `(${cols.length})` : ""}</small></h3>
+        ${cols.length ? `<div class="dr-cols">${cols.map((c) => `<button type="button" class="tag-mini col-chip" data-col="${escapeAttr(c)}" title="Find every dataset with a column named like this">${escapeHTML(c)}</button>`).join("")}</div>` : `<p class="dr-muted">The portal lists no columns for this ${escapeHTML(d.t || "item")}.</p>`}
+      </section>
+      ${changes.length ? `<section class="dr-sec"><h3>Recent changes to this listing</h3><ul class="dr-changes">${changes.map((e) => `<li><span class="change-kind">${escapeHTML(KIND_LABEL[e.kind] || e.kind)}</span> <span class="change-date">${escapeHTML(fmtDay(e.date))}</span> ${escapeHTML(changeSummary(e))}${e.kind === "description_changed" && e.after ? `<div class="dr-diff"><div><small>Before</small>${escapeHTML(e.before || "")}</div><div><small>After</small>${escapeHTML(e.after)}</div></div>` : ""}</li>`).join("")}</ul></section>` : ""}
+      ${sim.length ? `<section class="dr-sec"><h3>Similar datasets</h3><ul class="dr-similar">${sim.map((o) => `<li data-cat="${escapeAttr(o.c || "Uncategorized")}"><span class="cat-dot"></span><button type="button" class="link-btn" data-preview="${escapeAttr(o.i)}">${escapeHTML(o.n)}</button> <small>${escapeHTML(plainAgencyName(o.a))} · ${escapeHTML(relativeDate(o.u))}</small></li>`).join("")}</ul></section>` : ""}
+      ${(d.g || []).length ? `<div class="card-tags">${(d.g || []).map((t) => `<button type="button" class="tag-mini" data-tag="${escapeAttr(t)}">${escapeHTML(t)}</button>`).join("")}</div>` : ""}
+    `;
+    drawer.el.hidden = false; drawer.backdrop.hidden = false;
+    document.body.classList.add("drawer-open");
+    drawer.el.scrollTop = 0;
+    document.getElementById("drawer-close").focus();
+    drawer.body.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", () => copyText(b.dataset.copy, b)));
+    drawer.body.querySelectorAll("[data-preview]").forEach((b) => b.addEventListener("click", () => openDrawer(b.dataset.preview)));
+    drawer.body.querySelectorAll(".col-chip").forEach((b) => b.addEventListener("click", () => {
+      closeDrawer();
+      els.q.value = `col:"${b.dataset.col}"`; state.query = els.q.value; state.parsed = window.NYC_PARSE_QUERY(state.query);
+      render(); syncURL(); window.scrollTo({ top: 0, behavior: "smooth" });
+    }));
+    drawer.body.querySelectorAll(".tag-mini[data-tag]").forEach((b) => b.addEventListener("click", () => {
+      closeDrawer(); state.activeTags.add(b.dataset.tag); renderTagCloud(); render(); syncURL();
+    }));
+
+    // Sample rows + row count (tabular datasets only; keyless SODA calls, so failures are soft)
+    const sample = document.getElementById("dr-sample");
+    if (d.t !== "dataset" && d.t !== "filter") {
+      sample.innerHTML = `<h3>Sample rows</h3><p class="dr-muted">Previews are available for tabular datasets only; this is a ${escapeHTML(d.t || "non-tabular item")}.</p>`;
+      return;
+    }
+    try {
+      const [rowsR, countR] = await Promise.all([
+        fetch(`${api}?$limit=5`),
+        fetch(`${api}?$select=count(*)%20as%20n`).catch(() => null),
+      ]);
+      if (token !== drawer.reqToken) return;
+      if (!rowsR.ok) throw new Error(`HTTP ${rowsR.status}`);
+      const rows = await rowsR.json();
+      let count = null;
+      try { const c = countR && countR.ok ? await countR.json() : null; count = c && c[0] && c[0].n != null ? Number(c[0].n) : null; } catch (_) { count = null; }
+      if (!Array.isArray(rows) || !rows.length) {
+        sample.innerHTML = `<h3>Sample rows</h3><p class="dr-muted">The API returned no rows${count === 0 ? " — the dataset is empty" : ""}.</p>`;
+        return;
+      }
+      const keys = Object.keys(rows[0]).filter((k) => typeof rows[0][k] !== "object").slice(0, 8);
+      const table = `<div class="dr-table-wrap"><table class="dr-table"><thead><tr>${keys.map((k) => `<th>${escapeHTML(k)}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${keys.map((k) => `<td>${escapeHTML(String(r[k] == null ? "" : r[k])).slice(0, 80)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+      sample.innerHTML = `<h3>Sample rows <small>${count != null ? `(${count.toLocaleString()} rows total)` : ""}</small></h3>${table}<p class="dr-muted">First 5 rows, first ${keys.length} of ${Object.keys(rows[0]).length} fields, straight from the City's API.</p>`;
+    } catch (e) {
+      if (token !== drawer.reqToken) return;
+      sample.innerHTML = `<h3>Sample rows</h3><p class="dr-muted">Couldn't load a preview (${escapeHTML(e.message || "network error")}). The City's API sometimes throttles keyless requests — try again or open the portal.</p>`;
+    }
+  }
+
   // ---------- Active filter chips ----------
   function renderActiveChips() {
     const chips = [];
@@ -489,7 +741,7 @@
     for (const a of state.activeAgencies) chips.push({ label: `Agency: ${plainAgencyName(a)}`, clear: () => { state.activeAgencies.delete(a); renderAgencyList(); } });
     for (const t of state.activeTags) chips.push({ label: `Tag: ${t}`, clear: () => { state.activeTags.delete(t); renderTagCloud(); } });
     if (state.fresh !== "all") {
-      const map = { "30": "Updated in last 30 days", "365": "Updated in last year", stale: "Older than 1 year" };
+      const map = { "30": "Updated in last 30 days", "365": "Updated in last year", stale: "Older than 1 year", overdue: "Overdue vs. promised cadence" };
       chips.push({ label: map[state.fresh] || state.fresh, clear: () => { state.fresh = "all"; renderFreshPills(); } });
     }
     if (state.picksOnly) chips.push({ label: "Journalist picks only", clear: () => { state.picksOnly = false; els.picksOnly.checked = false; } });
@@ -529,18 +781,44 @@
     if (state.favsOnly) list = list.filter((d) => state.favs.has(d.i));
     list = list.filter(passesFreshness);
 
+    // Collapse dataset/map twins when the primary is also in the list
+    if (state.twinOf.size) {
+      const ids = new Set(list.map((d) => d.i));
+      list = list.filter((d) => { const p = state.twinOf.get(d.i); return !(p && ids.has(p)); });
+    }
+
     if (state.sort === "views") list.sort((a, b) => (b.v || 0) - (a.v || 0));
-    else if (state.sort === "updated") list.sort((a, b) => (b.u || "").localeCompare(a.u || ""));
+    else if (state.sort === "updated") list.sort((a, b) => {
+      // Same day: described, human-named datasets before bare GIS layers
+      const da = (a.u || "").slice(0, 10), db = (b.u || "").slice(0, 10);
+      if (da !== db) return db.localeCompare(da);
+      const ja = junkScore(a), jb = junkScore(b);
+      if (ja !== jb) return ja - jb;
+      return (b.v || 0) - (a.v || 0);
+    });
     else if (state.sort === "alpha") list.sort((a, b) => a.n.localeCompare(b.n));
     else if (!q) list.sort((a, b) => (b.v || 0) - (a.v || 0));
 
     return list;
   }
 
+  // 0 = normal; 1 = no description; 2 = no description AND an ALL_CAPS/underscore machine name
+  function junkScore(d) {
+    if (d.s) return 0;
+    return /^[A-Z0-9_]+$/.test(d.n || "") ? 2 : 1;
+  }
+
   function renderCard(d) {
     const f = freshnessClass(d.u);
+    const od = overdueInfo(d);
     const url = `https://data.cityofnewyork.us/d/${encodeURIComponent(d.i)}`;
     const summary = d.s ? escapeHTML(d.s) : `<em>No description provided by the publishing agency.</em>`;
+    const freshPill = od
+      ? `<span class="pill overdue" title="The agency says this updates ${escapeAttr(od.freq.toLowerCase())}; it hasn't in ${od.days} days">Overdue · promised ${escapeHTML(od.freq.toLowerCase())}, last ${escapeHTML(f.label.replace("Updated ", ""))}</span>`
+      : `<span class="pill ${f.klass}">${f.label}</span>${d.f && d.f !== "Historical data" ? `<span class="freq" title="Update frequency declared by the agency">${escapeHTML(d.f.toLowerCase())}</span>` : ""}`;
+    const twins = state.twinsFor.get(d.i) || [];
+    const twinLine = twins.length ? `<div class="twin-line">Also as ${twins.map((t) => `<a href="https://data.cityofnewyork.us/d/${encodeURIComponent(t.i)}" target="_blank" rel="noopener">${escapeHTML(t.t)}</a>`).join(", ")}</div>` : "";
+    const previewBtn = `<button type="button" class="preview-btn" data-preview="${escapeAttr(d.i)}" title="Columns, sample rows, API link and similar datasets">Preview</button>`;
     const agency = d.a ? `<span class="agency">${escapeHTML(plainAgencyName(d.a))}</span>` : `<span class="agency">NYC agency</span>`;
     const type = d.t && d.t !== "dataset" ? `<span class="pill type">${escapeHTML(d.t)}</span>` : "";
     const pick = state.picksById.get(d.i);
@@ -554,11 +832,16 @@
       <div class="summary">${summary}${pick ? `<div class="pick-note"><strong>Why journalists use it:</strong> ${escapeHTML(pick.why)} ${pick.gotcha ? `<em>Gotcha: ${escapeHTML(pick.gotcha)}</em>` : ""}</div>` : ""}</div>
       <div class="meta">
         ${agency}
-        <span class="pill ${f.klass}">${f.label}</span>
+        ${freshPill}
         ${type}
         ${d.v ? `<span>${fmtNum(d.v)} views</span>` : ""}
+        ${d.k && d.k.length ? `<span>${d.k.length} columns</span>` : ""}
       </div>
-      ${tagChips ? `<div class="card-tags">${tagChips}</div>` : ""}
+      ${twinLine}
+      <div class="card-foot">
+        ${tagChips ? `<div class="card-tags">${tagChips}</div>` : "<span></span>"}
+        ${previewBtn}
+      </div>
     </article>`;
   }
 
@@ -607,7 +890,7 @@
   function render() {
     const list = getResults();
     const total = state.catalog.datasets.length;
-    els.stats.innerHTML = `<strong>${list.length.toLocaleString()}</strong> of ${total.toLocaleString()} datasets. <span style="color:var(--ink-mute)">Catalog refreshed ${state.fetchedAt}.</span>`;
+    els.stats.innerHTML = `<strong>${list.length.toLocaleString()}</strong> of ${total.toLocaleString()} datasets. <span style="color:var(--ink-mute)">Catalog refreshed ${state.fetchedAt}. Table/map pairs shown once.</span>`;
 
     renderActiveChips();
 
@@ -634,7 +917,7 @@
       };
       els.results.querySelectorAll(".card").forEach((card) => {
         card.addEventListener("click", (e) => {
-          if (e.target.closest(".fav-btn, .tag-mini, .pick-star, a, button")) return;
+          if (e.target.closest(".fav-btn, .tag-mini, .pick-star, .preview-btn, a, button")) return;
           handleCardOpen(card);
         });
         // Keyboard accessibility: Enter or Space opens the link
@@ -652,6 +935,9 @@
           render();
           syncURL();
         });
+      });
+      els.results.querySelectorAll(".preview-btn").forEach((b) => {
+        b.addEventListener("click", (e) => { e.stopPropagation(); openDrawer(b.dataset.preview); });
       });
       els.results.querySelectorAll(".fav-btn").forEach((b) => {
         b.addEventListener("click", (e) => {
@@ -689,6 +975,7 @@
     if (state.sort !== "relevance") params.set("sort", state.sort);
     if (state.picksOnly) params.set("picks", "1");
     if (state.favsOnly) params.set("favs", "1");
+    if (state.openId) params.set("d", state.openId);
     const hash = params.toString();
     const newUrl = hash ? `#${hash}` : window.location.pathname;
     if (("#" + hash) !== window.location.hash) {
@@ -713,22 +1000,25 @@
     if (params.get("sort")) { state.sort = params.get("sort"); els.sort.value = state.sort; }
     if (params.get("picks") === "1") { state.picksOnly = true; els.picksOnly.checked = true; }
     if (params.get("favs") === "1") { state.favsOnly = true; if (els.favsOnly) els.favsOnly.checked = true; }
+    if (params.get("d")) state.openId = params.get("d");
   }
 
   // ---------- Init ----------
   async function init() {
     let data, picks, weekly, news;
     try {
-      const [r1, r2, r3, r4] = await Promise.all([
+      const [r1, r2, r3, r4, r5] = await Promise.all([
         fetch("data/catalog.min.json", { cache: "no-cache" }),
         fetch("data/journalist_picks.json", { cache: "no-cache" }),
         fetch("data/weekly_stats.json", { cache: "no-cache" }).catch(() => null),
         fetch("data/news_matches.json", { cache: "no-cache" }).catch(() => null),
+        fetch("data/changelog.json", { cache: "no-cache" }).catch(() => null),
       ]);
       data = await r1.json();
       picks = await r2.json();
       try { weekly = r3 && r3.ok ? await r3.json() : null; } catch (_) { weekly = null; }
       try { news = r4 && r4.ok ? await r4.json() : null; } catch (_) { news = null; }
+      try { state.changelog = r5 && r5.ok ? await r5.json() : null; } catch (_) { state.changelog = null; }
     } catch (e) {
       els.stats.textContent = "Failed to load the catalog. Try refreshing.";
       console.error(e);
@@ -739,13 +1029,16 @@
     state.picksById = new Map((picks.picks || []).map((p) => [p.id, p]));
     state.favs = loadFavs();
     updateFavCount();
+    buildTwins();
+    state.overdueCount = data.datasets.filter((d) => overdueInfo(d)).length;
 
     state.fuse = new Fuse(data.datasets, {
       keys: [
-        { name: "n", weight: 0.55 },
-        { name: "s", weight: 0.25 },
+        { name: "n", weight: 0.5 },
+        { name: "s", weight: 0.23 },
         { name: "g", weight: 0.12 },
         { name: "a", weight: 0.08 },
+        { name: "k", weight: 0.07 },   // column names, so "precinct" finds datasets with a precinct field
       ],
       threshold: 0.34,
       ignoreLocation: true,
@@ -764,7 +1057,10 @@
     renderWeeklyStats(weekly);
     renderFreshStrip();
     renderNewsMatch(news);
+    renderChangelog();
     render();
+    bindDrawer();
+    if (state.openId) openDrawer(state.openId, true);
 
     els.q.addEventListener("input", debounce(() => {
       state.query = els.q.value;

@@ -15,6 +15,7 @@ import json
 import re
 import sys
 import urllib.request
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -28,6 +29,13 @@ NEWS_QUERIES = [
     'q=%22NYC%22+OR+%22Manhattan%22+OR+%22Brooklyn%22+OR+%22Queens%22+OR+%22Bronx%22&hl=en-US&gl=US&ceid=US:en',
 ]
 NEWS_BASE = "https://news.google.com/rss/search?"
+# Google News RSS returns nothing from GitHub Actions runners (Google blocks the
+# IP range). Bing News RSS answers from there, so it is the fallback source.
+BING_QUERIES = [  # Bing returns few items per query and prefers simple terms, so we ask several
+    "https://www.bing.com/news/search?q=" + q + "&format=rss"
+    for q in ("NYC", "New+York+City", "NYPD", "New+York+City+mayor", "New+York+City+council",
+              "Brooklyn", "Queens", "Bronx", "Manhattan", "Staten+Island", "MTA+subway", "NYC+housing", "NYC+schools")
+]
 
 # Curated topic mapping: keywords (case-insensitive substring or word match)
 # → dataset to surface. Order matters: earlier topics win on ties.
@@ -189,8 +197,14 @@ def parse_rss(xml_bytes):
     for item in root.findall(".//item"):
         title = (item.findtext("title", "") or "").strip()
         link = (item.findtext("link", "") or "").strip()
+        if "bing.com/news/apiclick" in link:  # unwrap Bing's redirect
+            m_url = re.search(r"[?&]url=([^&]+)", link)
+            if m_url:
+                link = urllib.parse.unquote(m_url.group(1))
         pub = (item.findtext("pubDate", "") or "").strip()
         source_el = item.find("source")
+        if source_el is None:  # Bing uses a namespaced <News:Source>
+            source_el = next((ch for ch in item if ch.tag.endswith("Source")), None)
         src_attr = source_el.text.strip() if source_el is not None and source_el.text else ""
         source = src_attr
         headline = title
@@ -243,12 +257,24 @@ def main():
             print(f"  skip topic {t['topic']} — dataset {t['dataset_id']} not found in catalog", file=sys.stderr)
 
     items = []
+    source_used = "Google News"
     for qs in NEWS_QUERIES:
         try:
             xml = fetch_url(NEWS_BASE + qs)
             items.extend(parse_rss(xml))
         except Exception as e:
             print(f"  fetch failed for {qs[:40]}: {e}", file=sys.stderr)
+    if not items:
+        print("  Google News returned no items; falling back to Bing News RSS", file=sys.stderr)
+        source_used = "Bing News"
+        for url in BING_QUERIES:
+            try:
+                items.extend(parse_rss(fetch_url(url)))
+            except Exception as e:
+                print(f"  Bing fetch failed for {url[:50]}: {e}", file=sys.stderr)
+    if not items:
+        # Fail loud: leave the previous file alone so the site keeps the last good matches.
+        sys.exit("ABORT: zero headlines from Google News and Bing News. Not overwriting news_matches.json.")
 
     # Dedupe headlines
     seen_h = set()
@@ -292,7 +318,7 @@ def main():
 
     out = {
         "computed_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "source": "Google News — NYC search results",
+        "source": f"{source_used} — NYC search results",
         "headlines_scanned": len(items),
         "topics_in_dictionary": len(valid_topics),
         "matches": unique[:6],

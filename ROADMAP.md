@@ -103,3 +103,19 @@ After each phase: rebuild, push to `joshgreenman1973/nyc-open-data-explorer`, ve
 ## Open question for Josh
 
 Do you want me to run all four phases straight through and only check in at the end, or pause after each phase so you can sanity-check?
+
+
+---
+
+## Status (2026-08-16)
+
+All four phases above shipped. Added on top, same day:
+
+- **Catalog changelog** (`build/changelog.py`, `changes.html`, `feeds/changes.xml`, "What changed" rail section) — added / removed / renamed / description / agency / column changes, diffed from the daily git snapshots.
+- **Declared cadence + Overdue flag** — `Update_Update-Frequency` captured; overdue thresholds documented in methodology; sidebar pill + `updated:overdue` + `freq:`.
+- **Column-level search** — `columns_name` captured; `col:` operator; low-weight fuzzy key.
+- **Preview drawer** — live sample rows + row count, columns, copy API/CSV, similar datasets, listing changes; deep-linkable via `#d=<id>`.
+- **De-junking** — table/map twins collapsed; bare GIS layers demoted within a day in the "Recently updated" sort; "Other / unspecified" agency became "No agency listed" and sorts last.
+- **Bugs fixed** — weekly cards windowed to the latest seven complete days (phantom −11% on 311 gone); stalled feeds flagged (crashes feed dead since June 11); news matcher falls back to Bing and fails loud; fetch and stats refuse to publish empty output.
+
+Next candidates: nychealth.cityofnewyork.us domain; per-agency changelog feeds; a "column exists in N datasets" browse view; email digest of the changelog.

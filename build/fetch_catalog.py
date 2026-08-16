@@ -140,9 +140,21 @@ def normalize_agency(raw):
     return s, key
 
 
+def domain_meta(item):
+    """Flatten Socrata's classification.domain_metadata list into a dict."""
+    out = {}
+    for kv in (item.get("classification", {}) or {}).get("domain_metadata", []) or []:
+        k = kv.get("key"); v = kv.get("value")
+        if k and v is not None:
+            out[k] = clean_text(str(v))
+    return out
+
+
 def to_record(item):
     r = item.get("resource", {})
     c = item.get("classification", {})
+    dm = domain_meta(item)
+    cols = [clean_text(x) for x in (r.get("columns_name") or []) if x]
     cat = c.get("domain_category") or "Uncategorized"
     tags = c.get("domain_tags") or c.get("tags") or []
     attribution = clean_text(r.get("attribution") or "")
@@ -166,6 +178,12 @@ def to_record(item):
         "views": int(r.get("page_views", {}).get("page_views_total") or 0) if isinstance(r.get("page_views"), dict) else 0,
         "downloads": int(r.get("download_count") or 0),
         "url": f"https://{DOMAIN}/d/{rid}",
+        # Agency-declared cadence ("Daily", "Weekly", "Annually", "As needed"...)
+        "frequency": dm.get("Update_Update-Frequency", ""),
+        "automated": dm.get("Update_Automation", ""),
+        "made_public": dm.get("Update_Date-Made-Public", ""),
+        "columns": cols,
+        "column_count": len(cols),
     }
 
 
@@ -173,6 +191,8 @@ def main():
     raw = fetch_all()
     records = [to_record(it) for it in raw]
     records = [r for r in records if r["id"] and r["name"]]
+    if len(records) < 2500:
+        sys.exit(f"ABORT: only {len(records)} datasets fetched (expected ~3,000). Refusing to overwrite the catalog.")
     for r in records:
         r["category"] = refine_government(r)
 
@@ -189,7 +209,7 @@ def main():
         if key:
             r["agency"] = canonical_for_key[key]
         if not r["agency"]:
-            r["agency"] = "Other / unspecified"
+            r["agency"] = "No agency listed"
             r["agency_key"] = "other"
 
     # de-dupe by id
@@ -213,6 +233,8 @@ def main():
 
     # Type counts
     by_type = Counter(r["type"] for r in unique)
+    # Declared update-frequency counts
+    by_freq = Counter((r.get("frequency") or "Not stated") for r in unique)
 
     # ---------- Fresh-strip precompute ----------
     # "New" uses a sliding window: try last 30 days, fall back to last 90, then to
@@ -267,6 +289,7 @@ def main():
         ),
         "agencies": agencies,
         "types": sorted([{"name": k, "count": v} for k, v in by_type.items()], key=lambda x: -x["count"]),
+        "frequencies": sorted([{"name": k, "count": v} for k, v in by_freq.items()], key=lambda x: -x["count"]),
         "fresh": fresh,
         "datasets": unique,
     }
@@ -286,6 +309,8 @@ def main():
             "x": r.get("created", ""),
             "v": r["views"],
             "d": r["downloads"],
+            "f": r.get("frequency", ""),
+            "k": r.get("columns", []),
         }
         for r in unique
     ]
@@ -295,6 +320,7 @@ def main():
         "categories": out["categories"],
         "agencies": agencies,
         "types": out["types"],
+        "frequencies": out["frequencies"],
         "fresh": fresh,
         "datasets": min_records,
     }

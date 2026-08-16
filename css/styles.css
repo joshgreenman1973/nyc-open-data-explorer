@@ -834,3 +834,150 @@ footer.site .footer-extra { font-size: 12px; }
   .cat-map { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: 1fr; }
 }
+
+
+/* ---------- Overdue + cadence ---------- */
+.pill.overdue { background: #f4dfdf; color: #8a2a2a; border: 1px solid #e3b7b7; }
+.freq { font-size: 11px; color: var(--ink-mute); }
+.overdue-pill.on { background: #8a2a2a; border-color: #8a2a2a; }
+
+/* ---------- Twins, card footer, preview button ---------- */
+.twin-line { font-size: 12px; color: var(--ink-mute); }
+.card-foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; }
+.card-foot .card-tags { flex: 1; }
+.preview-btn {
+  font-family: inherit; font-size: 11.5px; font-weight: 600; letter-spacing: 0.02em;
+  padding: 3px 9px; border-radius: 4px; border: 1px solid var(--rule); background: var(--surface);
+  color: var(--ink-soft); cursor: pointer; white-space: nowrap;
+}
+.preview-btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* ---------- Weekly card: stalled feed ---------- */
+.weekly-card.stalled { border-style: dashed; }
+.weekly-card.stalled .weekly-headline { color: #8a2a2a; font-size: 22px; letter-spacing: 0; }
+.weekly-card.stalled .weekly-sub2:first-of-type { color: #8a2a2a; }
+
+/* ---------- What changed (rail) ---------- */
+.changes { max-width: 100%; }
+.changes h2 { font-family: var(--font-display); font-size: 20px; margin: 0 0 4px; font-weight: 700; }
+.changes h2 small { font-size: 12px; font-family: var(--font-sans); font-weight: 500; color: var(--ink-mute); }
+.changes-sub { font-size: 12px; color: var(--ink-mute); margin: 0 0 10px; }
+.changes-list { display: flex; flex-direction: column; gap: 8px; }
+.change-item {
+  background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--ink-mute);
+  border-radius: 6px; padding: 8px 10px; display: flex; flex-direction: column; gap: 2px; font-size: 12.5px;
+}
+.change-kind { font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); }
+.change-item.kind-removed .change-kind { color: #8a2a2a; }
+.change-item.kind-added .change-kind { color: #2d6b3a; }
+.change-item.kind-columns_changed .change-kind { color: #1e6091; }
+.change-date { font-size: 11px; color: var(--ink-mute); }
+.change-item .change-kind + .change-date { margin-top: -2px; }
+.change-name { font-weight: 600; text-align: left; font-size: 13px; color: var(--ink); padding: 0; }
+.change-name:hover { color: var(--focus); }
+.change-detail { color: var(--ink-soft); }
+.change-meta { font-size: 11px; color: var(--ink-mute); }
+.change-item[data-cat="Government Operations"], .card[data-cat="Government Operations"] { border-left-color: var(--c-government); }
+.change-item[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
+.change-item[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }
+.change-item[data-cat="Procurement & Contracts"] { border-left-color: var(--c-procurement); }
+.change-item[data-cat="Elections & Ethics"] { border-left-color: var(--c-elections); }
+.change-item[data-cat="Education"] { border-left-color: var(--c-education); }
+.change-item[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
+.change-item[data-cat="Environment"] { border-left-color: var(--c-environment); }
+.change-item[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
+.change-item[data-cat="Social Services"] { border-left-color: var(--c-social); }
+.change-item[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
+.change-item[data-cat="Recreation"] { border-left-color: var(--c-recreation); }
+.change-item[data-cat="Health"] { border-left-color: var(--c-health); }
+.change-item[data-cat="Business"] { border-left-color: var(--c-business); }
+.change-item[data-cat="NYC BigApps"] { border-left-color: var(--c-bigapps); }
+
+/* ---------- Preview drawer ---------- */
+.drawer-backdrop { position: fixed; inset: 0; background: rgba(22,22,22,0.35); z-index: 60; }
+.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(640px, 100vw);
+  background: var(--surface); border-left: 4px solid var(--ink-mute); box-shadow: -8px 0 30px rgba(0,0,0,0.15);
+  z-index: 61; overflow-y: auto; display: flex; flex-direction: column;
+}
+body.drawer-open { overflow: hidden; }
+.drawer[data-cat="Government Operations"] { border-left-color: var(--c-government); }
+.drawer[data-cat="Finance & Budget"] { border-left-color: var(--c-finance); }
+.drawer[data-cat="Maps & Geography"] { border-left-color: var(--c-maps); }
+.drawer[data-cat="Procurement & Contracts"] { border-left-color: var(--c-procurement); }
+.drawer[data-cat="Elections & Ethics"] { border-left-color: var(--c-elections); }
+.drawer[data-cat="Education"] { border-left-color: var(--c-education); }
+.drawer[data-cat="Transportation"] { border-left-color: var(--c-transportation); }
+.drawer[data-cat="Environment"] { border-left-color: var(--c-environment); }
+.drawer[data-cat="Housing & Development"] { border-left-color: var(--c-housing); }
+.drawer[data-cat="Social Services"] { border-left-color: var(--c-social); }
+.drawer[data-cat="Public Safety"] { border-left-color: var(--c-safety); }
+.drawer[data-cat="Recreation"] { border-left-color: var(--c-recreation); }
+.drawer[data-cat="Health"] { border-left-color: var(--c-health); }
+.drawer[data-cat="Business"] { border-left-color: var(--c-business); }
+.drawer[data-cat="NYC BigApps"] { border-left-color: var(--c-bigapps); }
+.drawer-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+  padding: 18px 20px 12px; border-bottom: 1px solid var(--rule); position: sticky; top: 0; background: var(--surface); z-index: 1;
+}
+.drawer-head h2 { font-family: var(--font-display); font-size: 21px; line-height: 1.25; margin: 0; font-weight: 700; }
+.drawer-close {
+  font-family: inherit; font-size: 22px; line-height: 1; width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--rule); background: var(--bg); color: var(--ink); cursor: pointer; flex: none;
+}
+.drawer-close:hover { background: var(--ink); color: #fff; }
+.drawer-body { padding: 14px 20px 32px; display: flex; flex-direction: column; gap: 14px; }
+.dr-meta { display: flex; flex-wrap: wrap; gap: 8px 12px; font-size: 12.5px; color: var(--ink-mute); align-items: center; }
+.dr-meta .agency { font-weight: 600; color: var(--ink); }
+.dr-summary { margin: 0; font-size: 14.5px; color: var(--ink-soft); }
+.dr-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.dr-btn {
+  font-family: inherit; font-size: 12.5px; font-weight: 600; padding: 7px 12px; border-radius: 4px;
+  border: 1px solid var(--rule); background: var(--bg); color: var(--ink); cursor: pointer; text-decoration: none;
+}
+.dr-btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); text-decoration: none; }
+.dr-btn.primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+.dr-btn.primary:hover { background: var(--focus); border-color: var(--focus); }
+.dr-twins { font-size: 12.5px; color: var(--ink-soft); margin: 0; }
+.dr-sec h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-mute); margin: 0 0 8px; }
+.dr-sec h3 small { text-transform: none; letter-spacing: 0; font-weight: 500; }
+.dr-muted { font-size: 12.5px; color: var(--ink-mute); margin: 6px 0 0; }
+.dr-cols { display: flex; flex-wrap: wrap; gap: 4px; }
+.dr-table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; }
+.dr-table { border-collapse: collapse; font-size: 12px; min-width: 100%; }
+.dr-table th, .dr-table td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; white-space: nowrap; max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+.dr-table th { background: var(--bg); font-weight: 600; position: sticky; top: 0; }
+.dr-table tr:last-child td { border-bottom: 0; }
+.dr-changes, .dr-similar { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.dr-changes li { color: var(--ink-soft); }
+.dr-diff { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px; font-size: 12px; }
+.dr-diff > div { background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 6px 8px; color: var(--ink-soft); }
+.dr-diff small { display: block; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; color: var(--ink-mute); margin-bottom: 2px; }
+.dr-similar li { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.dr-similar li .link-btn { font-size: 13px; padding: 0; text-align: left; font-weight: 600; color: var(--ink); }
+.dr-similar li .link-btn:hover { color: var(--focus); }
+.dr-similar small { color: var(--ink-mute); }
+@media (max-width: 600px) {
+  .dr-diff { grid-template-columns: 1fr; }
+  .drawer { width: 100vw; border-left-width: 6px; }
+}
+
+/* Generic category dot (drawer, changes, similar lists) */
+.change-item .cat-dot, .drawer .cat-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-mute); margin-right: 4px; vertical-align: middle; }
+.change-item[data-cat="Government Operations"] .cat-dot, .drawer[data-cat="Government Operations"] .dr-meta .cat-dot, .dr-similar li[data-cat="Government Operations"] .cat-dot { background: var(--c-government); }
+.change-item[data-cat="Finance & Budget"] .cat-dot, .drawer[data-cat="Finance & Budget"] .dr-meta .cat-dot, .dr-similar li[data-cat="Finance & Budget"] .cat-dot { background: var(--c-finance); }
+.change-item[data-cat="Maps & Geography"] .cat-dot, .drawer[data-cat="Maps & Geography"] .dr-meta .cat-dot, .dr-similar li[data-cat="Maps & Geography"] .cat-dot { background: var(--c-maps); }
+.change-item[data-cat="Procurement & Contracts"] .cat-dot, .drawer[data-cat="Procurement & Contracts"] .dr-meta .cat-dot, .dr-similar li[data-cat="Procurement & Contracts"] .cat-dot { background: var(--c-procurement); }
+.change-item[data-cat="Elections & Ethics"] .cat-dot, .drawer[data-cat="Elections & Ethics"] .dr-meta .cat-dot, .dr-similar li[data-cat="Elections & Ethics"] .cat-dot { background: var(--c-elections); }
+.change-item[data-cat="Education"] .cat-dot, .drawer[data-cat="Education"] .dr-meta .cat-dot, .dr-similar li[data-cat="Education"] .cat-dot { background: var(--c-education); }
+.change-item[data-cat="Transportation"] .cat-dot, .drawer[data-cat="Transportation"] .dr-meta .cat-dot, .dr-similar li[data-cat="Transportation"] .cat-dot { background: var(--c-transportation); }
+.change-item[data-cat="Environment"] .cat-dot, .drawer[data-cat="Environment"] .dr-meta .cat-dot, .dr-similar li[data-cat="Environment"] .cat-dot { background: var(--c-environment); }
+.change-item[data-cat="Housing & Development"] .cat-dot, .drawer[data-cat="Housing & Development"] .dr-meta .cat-dot, .dr-similar li[data-cat="Housing & Development"] .cat-dot { background: var(--c-housing); }
+.change-item[data-cat="Social Services"] .cat-dot, .drawer[data-cat="Social Services"] .dr-meta .cat-dot, .dr-similar li[data-cat="Social Services"] .cat-dot { background: var(--c-social); }
+.change-item[data-cat="Public Safety"] .cat-dot, .drawer[data-cat="Public Safety"] .dr-meta .cat-dot, .dr-similar li[data-cat="Public Safety"] .cat-dot { background: var(--c-safety); }
+.change-item[data-cat="Recreation"] .cat-dot, .drawer[data-cat="Recreation"] .dr-meta .cat-dot, .dr-similar li[data-cat="Recreation"] .cat-dot { background: var(--c-recreation); }
+.change-item[data-cat="Uncategorized"] .cat-dot, .drawer[data-cat="Uncategorized"] .dr-meta .cat-dot, .dr-similar li[data-cat="Uncategorized"] .cat-dot { background: var(--c-uncategorized); }
+.change-item[data-cat="Health"] .cat-dot, .drawer[data-cat="Health"] .dr-meta .cat-dot, .dr-similar li[data-cat="Health"] .cat-dot { background: var(--c-health); }
+.change-item[data-cat="Business"] .cat-dot, .drawer[data-cat="Business"] .dr-meta .cat-dot, .dr-similar li[data-cat="Business"] .cat-dot { background: var(--c-business); }
+.change-item[data-cat="NYC BigApps"] .cat-dot, .drawer[data-cat="NYC BigApps"] .dr-meta .cat-dot, .dr-similar li[data-cat="NYC BigApps"] .cat-dot { background: var(--c-bigapps); }
+.drawer[hidden], .drawer-backdrop[hidden] { display: none !important; }

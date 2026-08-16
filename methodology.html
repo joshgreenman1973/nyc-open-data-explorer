@@ -61,6 +61,22 @@
   </table>
   <p>Note: "updated" reflects the dataset's data refresh, not metadata edits. Some agencies update on schedules (daily, monthly, quarterly); a "stale" pill doesn't always mean the dataset is abandoned, only that it hasn't refreshed in a year.</p>
 
+  <h2 id="overdue">Declared cadence and the "Overdue" flag</h2>
+  <p>Every dataset on the portal carries an agency-declared <em>Update Frequency</em> (Daily, Weekly, Monthly, Quarterly, Annually, "As needed," "Historical data" and so on), exposed by the API as <code>Update_Update-Frequency</code>. We store it (shown in small type after the freshness pill) and compare it with the actual last update. A dataset is flagged <strong>Overdue</strong> when it is well past its own promise:</p>
+  <table>
+    <tr><th>Declared cadence</th><th>Expected interval</th><th>Flagged overdue after</th></tr>
+    <tr><td>Daily</td><td>1 day</td><td>5 days (3× + 2, to forgive weekends and holidays)</td></tr>
+    <tr><td>Weekly</td><td>7 days</td><td>23 days</td></tr>
+    <tr><td>Every 2 weeks</td><td>14 days</td><td>28 days</td></tr>
+    <tr><td>Monthly</td><td>30 days</td><td>52 days (1.5× + 7)</td></tr>
+    <tr><td>Quarterly</td><td>91 days</td><td>144 days</td></tr>
+    <tr><td>Every 6 months</td><td>182 days</td><td>280 days</td></tr>
+    <tr><td>Annually</td><td>365 days</td><td>555 days</td></tr>
+    <tr><td>Every 2 years</td><td>730 days</td><td>1,102 days</td></tr>
+    <tr><td>As needed, Historical data, Other, To be determined, blank</td><td colspan="2">Never flagged — the agency made no promise to measure against</td></tr>
+  </table>
+  <p>The thresholds are ours and deliberately generous; the point is to surface datasets that are clearly behind what their publisher says, not to nag about a day's slippage. Filter with the "Overdue" pill in the sidebar or <code>updated:overdue</code>; <code>freq:daily</code> etc. filters by declared cadence alone. Roughly one dataset in seven is overdue by this test at any given time, most of them "Monthly" or "Annually" datasets that quietly stopped.</p>
+
   <h2>Agency normalization</h2>
   <p>Agency names on the City portal are inconsistent — the Department of Finance appears as both "Department of Finance" and "Department of Finance (DOF)", and curly apostrophes vs. straight create more duplicates ("Mayor's" vs. "Mayor's"). For the agency filter, we group records whose agency name matches after stripping a trailing parenthesized acronym, normalizing apostrophes, and lowercasing. The display name is the most common original spelling for that group. The exact rule is in <code>normalize_agency()</code> in <code>build/fetch_catalog.py</code>.</p>
 
@@ -70,18 +86,29 @@
   <ul>
     <li><code>"motor vehicle"</code> — quoted phrase</li>
     <li><code>agency:nypd</code>, <code>cat:"public safety"</code>, <code>tag:permits</code>, <code>type:map</code> — field filters (substring match against the canonical value)</li>
-    <li><code>updated:30d</code> / <code>updated:1y</code> / <code>updated:old</code> — freshness shortcut</li>
+    <li><code>updated:30d</code> / <code>updated:1y</code> / <code>updated:old</code> / <code>updated:overdue</code> — freshness shortcut</li>
+    <li><code>col:bbl</code> — datasets with a column whose name contains the term (the API's <code>columns_name</code> list; about 80% of items carry one — maps, files and external links usually don't). Column names are also fuzzy-searched at low weight, so a plain query like <em>precinct</em> will surface datasets with a precinct field even when the word isn't in the title.</li>
+    <li><code>freq:monthly</code> — declared update frequency</li>
     <li><code>-tag:historical</code> — leading minus negates a field filter</li>
   </ul>
+
+  <h2>Table/map pairs</h2>
+  <p>The portal often lists the same data twice — once as a table and once as a map, "filtered view" or external link with the same name (occasionally with a "(Map)" suffix). When both halves of a pair match your search, we show one card (the table, if there is one) with an "Also as map" link, and the counter says how many datasets that leaves. If only one half matches — you filtered to maps, say — it shows on its own. About 170 pairs are merged this way; two plain tables sharing a name are never merged.</p>
+  <p>When sorting by "Recently updated," datasets refreshed on the same day are ordered with described, human-named datasets first and bare GIS layers (all-caps machine names with no description) last, so the top of the list isn't a wall of <code>CONDO_AREA</code>.</p>
+
+  <h2>Preview drawer</h2>
+  <p>"Preview" on any card opens a panel without leaving the page: agency, category, declared cadence, freshness, publish date, views and downloads; the full column list (click a column to search for every dataset with a field like it); the first five rows and total row count, fetched live from the City's SODA API (<code>resource/&lt;id&gt;.json?$limit=5</code> and <code>$select=count(*)</code>); any recent changes to the listing from the changelog; and up to five similar datasets, scored by shared tags, same agency and same category. Buttons copy the JSON API endpoint, the CSV download link, and a link to the preview itself (<code>#d=&lt;id&gt;</code>). Sample rows are only attempted for tabular items; keyless API calls are sometimes throttled, in which case the panel says so.</p>
 
   <h2>Favorites</h2>
   <p>Click the heart on any dataset card to save it to your favorites. Favorites are stored in your browser's <code>localStorage</code> — there's no account, no login, and no data sent to any server. The downside: favorites don't sync across devices or browsers. If you clear your browser data, they're gone. The "My favorite datasets" section appears at the top of the page whenever you have any.</p>
 
   <h2>"The week in city data" cards</h2>
-  <p>The five small cards near the top of the page show numbers pulled directly from City datasets refreshed in the last 7 days, queried via Socrata's SoQL. The current set: 311 complaint volume + most-common type, motor-vehicle crashes + persons injured, DOB construction permits issued, restaurant inspections completed + grade-A share, and total datasets refreshed. Each card links to its source dataset on data.cityofnewyork.us. If a query times out or 500s on rebuild, the card is silently skipped (the page still works). The exact queries are in <code>build/weekly_stats.py</code>; output lands in <code>data/weekly_stats.json</code>.</p>
+  <p>The five small cards in the right rail show numbers pulled directly from City datasets, queried via Socrata's SoQL. The current set: 311 complaint volume + most-common type, motor-vehicle crashes + persons injured, DOB construction permits issued, restaurant inspections completed + grade-A share, and total datasets refreshed. Each card links to its source dataset on data.cityofnewyork.us. The exact queries are in <code>build/weekly_stats.py</code>; output lands in <code>data/weekly_stats.json</code>.</p>
+  <p><strong>Windows end at the feed, not the clock.</strong> Every feed lags a little (311's by about a day and a half), and the newest day is usually still loading. So each card's "week" is the seven complete days ending the day <em>before</em> the newest row in that feed, and the twelve trend buckets are aligned the same way. Before this change the current week was systematically undercounted, which showed up as a phantom "−11% vs prior week" every day.</p>
+  <p><strong>Stalled feeds are flagged, not zeroed.</strong> If a feed's newest row is more than 10 days old, the card says "Stalled" and gives the last date instead of printing a misleading zero. (The NYPD collisions feed stopped on June 11, 2026; the agency's own description now says the automated update is being fixed.) If a query fails on rebuild, that card is skipped; if every query fails, the previous file is kept rather than publishing an empty one.</p>
 
   <h2>"In the news" rail section</h2>
-  <p>Once per rebuild, we fetch recent NYC headlines from Google News's public RSS feed and pair each headline with the most relevant dataset on data.cityofnewyork.us. <strong>The pairing is editorial, not a clever NLP guess</strong> — we maintain a curated topic dictionary in <code>build/news_match.py</code> that maps news keywords (e.g. "shooting," "eviction," "subway delay") to specific datasets. Headlines that don't match a curated topic are skipped. The output goes to <code>data/news_matches.json</code>. Headlines link out to the original news article; dataset names link to data.cityofnewyork.us. Add or refine topics by editing the <code>TOPICS</code> list in the script.</p>
+  <p>Once per rebuild, we fetch recent NYC headlines from Google News's public RSS feed — falling back to Bing News RSS when Google returns nothing, which it reliably does from GitHub's build servers — and pair each headline with the most relevant dataset on data.cityofnewyork.us. <strong>The pairing is editorial, not a clever NLP guess</strong> — we maintain a curated topic dictionary in <code>build/news_match.py</code> that maps news keywords (e.g. "shooting," "eviction," "subway delay") to specific datasets. Headlines that don't match a curated topic are skipped. The output goes to <code>data/news_matches.json</code>. Headlines link out to the original news article; dataset names link to data.cityofnewyork.us. Add or refine topics by editing the <code>TOPICS</code> list in the script.</p>
 
   <h2>"What's fresh" strip</h2>
   <p>Two horizontal carousels at the top of the page surface what's actually moving in the catalog: <strong>brand new this month</strong> (datasets whose <code>createdAt</code> is in the last 30 days, sorted by creation date) and <strong>updated this week</strong> (datasets whose <code>data_updated_at</code> is in the last 7 days, sorted by view count). Both lists are precomputed during the weekly build, so no client-side scanning is needed.</p>
@@ -89,11 +116,24 @@
   <h2>Journalist picks</h2>
   <p>About thirty datasets carry a gold star — these are an explicitly editorial selection of the datasets New York City newsrooms most often rely on (NYPD complaint data, 311, motor-vehicle collisions, ACRIS deeds, restaurant inspections, evictions, school quality, payroll, campaign finance, lobbying, jail population, and a few others). Each pick has a hand-written "why journalists use it" note and a "gotcha" callout. The list is in <code>data/journalist_picks.json</code> and is curated, not algorithmic — pull requests welcome. This layer is editorial; everything else on the page is mechanical.</p>
 
+  <h2 id="changelog">"What changed" — the catalog changelog</h2>
+  <p>The City doesn't announce when it adds, removes, renames or rewrites a dataset. Because this tool has fetched the full catalog every day since April 30, 2026, and commits each snapshot to git, we can diff consecutive snapshots and log the differences (<code>build/changelog.py</code>, output in <code>data/changelog.json</code>, a full-page log at <a href="changes.html">changes.html</a>, and an RSS feed at <code>feeds/changes.xml</code>). Event kinds:</p>
+  <table>
+    <tr><th>Kind</th><th>Detected when</th></tr>
+    <tr><td>New dataset</td><td>An id appears that has never been seen in any snapshot</td></tr>
+    <tr><td>Removed</td><td>An id is missing from two consecutive snapshots <em>and</em> the portal's own <code>api/views/&lt;id&gt;</code> no longer returns 200</td></tr>
+    <tr><td>Renamed</td><td>The name changed</td></tr>
+    <tr><td>Description changed</td><td>The description text changed; we store a window of text around the first differing character, so a one-word edit deep in a long description is visible</td></tr>
+    <tr><td>Agency changed</td><td>The attribution changed, after folding spelling variants (acronyms in parentheses, curly quotes, "&amp;"/"and") so our own normalization never counts</td></tr>
+    <tr><td>Columns changed</td><td>Column names were added or removed (tracked from August 16, 2026, when we began storing columns)</td></tr>
+  </table>
+  <p>Caution built in: the Discovery API sometimes drops an item for a day and returns it the next, so a single-day absence is only "pending"; a partial fetch (fewer than 90% of the previous count) aborts the run rather than logging hundreds of false removals; and events on the first snapshot day reflect a rebuild of this tool's own text-cleaning rather than City edits. Description edits are where the news usually is — an agency noting that a feed has stopped, that fields with names or addresses were pulled, or that a data version was bumped.</p>
+
   <h2>Per-category feeds</h2>
   <p>For every category we publish a JSON and an RSS 2.0 feed of the most recently updated datasets, plus a master "newest datasets" feed. Feeds live under <code>feeds/</code> and are regenerated on every weekly rebuild by <code>build/generate_feeds.py</code>.</p>
 
   <h2>Refresh cadence</h2>
-  <p>The catalog is rebuilt weekly. The "Catalog refreshed" date in the search bar reflects the last successful fetch. Datasets new to the City portal appear in the explorer at the next rebuild.</p>
+  <p>The catalog is rebuilt daily at about 5:15 a.m. Eastern by a GitHub Actions job (fetch → changelog → feeds → weekly stats → news match → commit). The "Catalog refreshed" date in the search bar reflects the last successful fetch. Datasets new to the City portal appear in the explorer at the next rebuild. Each build step refuses to overwrite good data with bad: the fetch aborts if it returns fewer than 2,500 datasets, the changelog aborts on a partial fetch, weekly stats keep the previous file if every query fails, and the news matcher exits non-zero rather than writing an empty file.</p>
 
   <h2>Limitations and what's not here</h2>
   <ul>
@@ -101,11 +141,14 @@
     <li>The City's category assignments are imperfect. A dataset about street trees might land under "Environment" or "City Government" depending on which agency uploaded it.</li>
     <li>Page-view and download counts come from the Socrata API and reflect activity on the City portal only.</li>
     <li>We do not include datasets from other Socrata domains (e.g., Health Department's separate portal at <code>nychealth.cityofnewyork.us</code>). That would require a separate fetch and is on the backlog.</li>
-    <li>Agency attribution is taken from the API's <code>attribution</code> field. It's whatever the publishing agency wrote, and styling varies (e.g., "NYPD" vs. "Police Department").</li>
+    <li>Agency attribution is taken from the API's <code>attribution</code> field. It's whatever the publishing agency wrote, and styling varies (e.g., "NYPD" vs. "Police Department"). Items with no attribution are grouped as "No agency listed."</li>
+    <li>The "Overdue" flag measures a dataset against its <em>own</em> declared cadence. An agency that declares "As needed" can never be overdue here, however long it goes quiet.</li>
+    <li>Column names come from the catalog API's snapshot, which can lag the live schema slightly; the preview drawer's sample rows are live.</li>
+    <li>The changelog only goes back to April 30, 2026, and cannot see changes the City made before then or changes to the data rows themselves — only to how each dataset is listed.</li>
   </ul>
 
   <h2>Code and rebuild</h2>
-  <p>The fetch script is <code>build/fetch_catalog.py</code> in the repository. To rebuild locally: run <code>python3 build/fetch_catalog.py</code>, which writes <code>data/catalog.json</code> (full archive) and <code>data/catalog.min.json</code> (the file the front end actually loads).</p>
+  <p>The fetch script is <code>build/fetch_catalog.py</code> in the repository. To rebuild locally: run <code>python3 build/fetch_catalog.py</code>, which writes <code>data/catalog.json</code> (full archive) and <code>data/catalog.min.json</code> (the file the front end actually loads). Then <code>build/changelog.py</code> (or <code>--backfill</code> to rebuild the log from git history), <code>build/generate_feeds.py</code>, <code>build/weekly_stats.py</code> and <code>build/news_match.py</code>.</p>
 
   <h2>Contact</h2>
   <p>Questions, bugs, or category gripes: file a GitHub issue on the project repository.</p>

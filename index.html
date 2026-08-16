@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="alternate" type="application/rss+xml" title="NYC Open Data — most recently updated" href="feeds/all.xml">
 <link rel="alternate" type="application/rss+xml" title="NYC Open Data — newest datasets" href="feeds/new.xml">
+<link rel="alternate" type="application/rss+xml" title="NYC Open Data — catalog changes (added, removed, renamed, re-described)" href="feeds/changes.xml">
 </head>
 <body>
 <header class="site">
@@ -20,6 +21,7 @@
       <small>A clearer, colorful map of every dataset the City publishes</small>
     </h1>
     <nav>
+      <a href="changes.html">What changed</a>
       <a href="methodology.html">Methodology</a>
       <a href="https://data.cityofnewyork.us/" target="_blank" rel="noopener">Official portal</a>
       <a class="rss-icon" href="feeds/all.xml" title="RSS — most recently updated" aria-label="RSS feed">
@@ -52,7 +54,9 @@
         <li><code>tag:permits</code> — datasets tagged "permits"</li>
         <li><code>type:map</code> — only maps (or <code>chart</code>, <code>file</code>, <code>dataset</code>)</li>
         <li><code>cat:"public safety"</code> — limit to a category</li>
-        <li><code>updated:30d</code> — updated in last 30 days (or <code>1y</code>, <code>old</code>)</li>
+        <li><code>updated:30d</code> — updated in last 30 days (or <code>1y</code>, <code>old</code>, <code>overdue</code>)</li>
+        <li><code>col:bbl</code> — datasets with a column named like "bbl" (try <code>col:precinct</code>, <code>col:zip</code>)</li>
+        <li><code>freq:daily</code> — the agency promises daily updates (or <code>weekly</code>, <code>monthly</code>, <code>annually</code>)</li>
         <li><code>-tag:historical</code> — exclude a tag</li>
       </ul>
     </details>
@@ -75,6 +79,7 @@
           <button type="button" class="pill-btn" data-fresh="30">Last 30 days</button>
           <button type="button" class="pill-btn" data-fresh="365">Last year</button>
           <button type="button" class="pill-btn" data-fresh="stale">Older</button>
+          <button type="button" class="pill-btn overdue-pill" data-fresh="overdue" title="Behind the update cadence the agency itself declares">Overdue <small>0</small></button>
         </div>
       </div>
 
@@ -132,6 +137,12 @@
         </div>
       </section>
 
+      <section class="changes" id="changes" hidden>
+        <h2>What changed <small id="changes-meta"></small></h2>
+        <p class="changes-sub">Datasets the City added, removed, renamed or re-described — found by diffing daily snapshots of the catalog. <a href="changes.html">Full log →</a> · <a href="feeds/changes.xml">RSS</a></p>
+        <div class="changes-list" id="changes-list"></div>
+      </section>
+
       <section class="news-match" id="news-match" hidden>
         <h2>In the news <small id="news-meta"></small></h2>
         <p class="news-sub">Recent NYC headlines paired with the dataset that backs them up. Curated topic dictionary, not AI guess.</p>
@@ -141,12 +152,22 @@
   </div>
 </main>
 
+<div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+<aside id="drawer" class="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+  <div class="drawer-head">
+    <h2 id="drawer-title"></h2>
+    <button type="button" id="drawer-close" class="drawer-close" aria-label="Close preview">×</button>
+  </div>
+  <div id="drawer-body" class="drawer-body"></div>
+</aside>
+
 <footer class="site">
   <div class="wrap">
-    <p>Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Catalog refreshed weekly. <a href="methodology.html">See methodology &rarr;</a></p>
+    <p>Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. Catalog refreshed daily. <a href="methodology.html">See methodology &rarr;</a></p>
     <p class="footer-extra">
       <a href="feeds/all.xml">RSS: most-recently updated</a> ·
       <a href="feeds/new.xml">RSS: newest datasets</a> ·
+      <a href="feeds/changes.xml">RSS: catalog changes</a> ·
       <a href="https://github.com/joshgreenman1973/nyc-open-data-explorer" target="_blank" rel="noopener">Source on GitHub</a> ·
       Built independently. Not affiliated with the City of New York.
     </p>

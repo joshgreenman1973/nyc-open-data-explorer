@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What changed — NYC Open Data Explorer</title>
+<meta name="description" content="Every dataset the City of New York added, removed, renamed or re-described on its open-data portal, found by diffing daily snapshots of the catalog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="alternate" type="application/rss+xml" title="NYC Open Data — catalog changes" href="feeds/changes.xml">
+<style>
+  .ch-hero { padding: 28px 0 8px; }
+  .ch-hero h2 { font-family: var(--font-display); font-size: 30px; margin: 0 0 6px; }
+  .ch-hero p { color: var(--ink-soft); max-width: 760px; margin: 0 0 14px; font-size: 15px; }
+  .ch-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .ch-controls input[type="search"] { flex: 1 1 260px; padding: 9px 12px; border: 1px solid var(--rule); border-radius: 6px; font: inherit; font-size: 14px; }
+  .ch-summary { font-size: 13px; color: var(--ink-mute); margin: 6px 0 18px; }
+  .ch-day { margin: 0 0 22px; }
+  .ch-day h3 { font-family: var(--font-display); font-size: 18px; margin: 0 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+  .ch-day h3 small { font-family: var(--font-sans); font-size: 12px; font-weight: 500; color: var(--ink-mute); margin-left: 8px; }
+  .ch-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 10px; }
+  .change-item .dr-diff { margin-top: 6px; }
+  .change-item .cols { font-size: 12px; color: var(--ink-soft); }
+  .change-item .cols b { font-weight: 600; }
+  .ch-empty { padding: 32px 20px; color: var(--ink-soft); border: 1px dashed var(--rule); border-radius: 8px; background: var(--surface); }
+  .ch-note { font-size: 12.5px; color: var(--ink-mute); margin-top: 28px; max-width: 760px; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <h1>
+      <a href="index.html" title="Back to the explorer">New York City Open Data Explorer</a>
+      <small>A clearer, colorful map of every dataset the City publishes</small>
+    </h1>
+    <nav>
+      <a href="index.html">Explorer</a>
+      <a href="methodology.html">Methodology</a>
+      <a class="rss-icon" href="feeds/changes.xml" title="RSS — catalog changes" aria-label="RSS feed of catalog changes">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M2 2v2c6.627 0 12 5.373 12 12h2C16 8.268 9.732 2 2 2zm0 4v2c4.418 0 8 3.582 8 8h2c0-5.523-4.477-10-10-10zm1 7a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="ch-hero">
+    <h2>What changed on the portal</h2>
+    <p>The City doesn't announce when it adds, removes, renames or rewrites a dataset. This log finds those changes by comparing each day's snapshot of the catalog with the one before it. A rewritten description often carries news — an agency noting a feed has stopped, or that fields with names and addresses were pulled.</p>
+    <div class="ch-controls" role="search">
+      <input id="ch-q" type="search" placeholder="Filter by dataset, agency or words in the change" aria-label="Filter changes">
+      <div class="pill-row" id="ch-kinds" aria-label="Kind of change"></div>
+    </div>
+    <div class="ch-summary" id="ch-summary">Loading…</div>
+  </section>
+  <div id="ch-days"></div>
+  <p class="ch-note">Snapshots have been taken daily since April 30, 2026. Removals are only logged after a dataset is missing from two consecutive snapshots and the portal itself no longer serves it, because the City's catalog API occasionally drops an item for a day. Description changes on the first day reflect a rebuild of this tool's own text-cleaning, not City edits. Column-level changes are tracked from August 16, 2026. <a href="methodology.html#changelog">Methodology →</a></p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Data sourced from the NYC Open Data portal (data.cityofnewyork.us) via the public Socrata Discovery API. <a href="methodology.html">See methodology &rarr;</a></p>
+    <p class="footer-extra"><a href="feeds/changes.xml">RSS: catalog changes</a> · <a href="https://github.com/joshgreenman1973/nyc-open-data-explorer" target="_blank" rel="noopener">Source on GitHub</a> · Built independently. Not affiliated with the City of New York.</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const KIND_LABEL = { added: "New dataset", removed: "Removed", renamed: "Renamed", description_changed: "Description changed", agency_changed: "Agency changed", columns_changed: "Columns changed" };
+  const KIND_ORDER = ["removed", "added", "columns_changed", "renamed", "description_changed", "agency_changed"];
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m]));
+  const plain = (n) => (n || "").replace(/\s*\([A-Z][A-Z0-9 &/\-]*\)\s*$/, "").trim();
+  const state = { events: [], kind: "all", q: "" };
+
+  function fmtDay(iso) {
+    const t = Date.parse(iso + "T12:00:00Z");
+    return Number.isNaN(t) ? iso : new Date(t).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+  }
+  function detail(e) {
+    if (e.kind === "renamed") return `<span class="change-detail">Was: <em>${esc(e.before)}</em></span>`;
+    if (e.kind === "agency_changed") return `<span class="change-detail">${esc(plain(e.before))} → ${esc(plain(e.after))}</span>`;
+    if (e.kind === "removed") return `<span class="change-detail">No longer listed in the catalog${e.verified_gone ? " — the portal returns 404" : ""}.</span>`;
+    if (e.kind === "added") return e.summary ? `<span class="change-detail">${esc(e.summary)}</span>` : "";
+    if (e.kind === "columns_changed") {
+      const a = e.columns_added || [], r = e.columns_removed || [];
+      return `<span class="cols">${a.length ? `<b>Added:</b> ${esc(a.join(", "))}` : ""}${a.length && r.length ? " · " : ""}${r.length ? `<b>Removed:</b> ${esc(r.join(", "))}` : ""}</span>`;
+    }
+    if (e.kind === "description_changed") {
+      return `<div class="dr-diff"><div><small>Before</small>${esc(e.before)}</div><div><small>After</small>${esc(e.after)}</div></div>`;
+    }
+    return "";
+  }
+  function matches(e) {
+    if (state.kind !== "all" && e.kind !== state.kind) return false;
+    if (!state.q) return true;
+    const hay = [e.name, e.agency, e.category, e.before, e.after, e.summary, (e.columns_added || []).join(" "), (e.columns_removed || []).join(" ")].join(" ").toLowerCase();
+    return state.q.split(/\s+/).every((w) => hay.includes(w));
+  }
+  function render() {
+    const list = state.events.filter(matches);
+    const days = new Map();
+    for (const e of list) { if (!days.has(e.date)) days.set(e.date, []); days.get(e.date).push(e); }
+    const el = document.getElementById("ch-days");
+    document.getElementById("ch-summary").textContent = `${list.length.toLocaleString()} change${list.length === 1 ? "" : "s"}${state.kind !== "all" || state.q ? " match" : ""} across ${days.size} day${days.size === 1 ? "" : "s"}.`;
+    if (!list.length) { el.innerHTML = `<div class="ch-empty">No changes match. Try another kind or clear the filter.</div>`; return; }
+    el.innerHTML = [...days.entries()].map(([date, evs]) => {
+      evs.sort((a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind) || a.name.localeCompare(b.name));
+      return `<section class="ch-day"><h3>${esc(fmtDay(date))}<small>${evs.length} change${evs.length === 1 ? "" : "s"}</small></h3><div class="ch-list">${evs.map((e) => `
+        <article class="change-item kind-${esc(e.kind)}" data-cat="${esc(e.category || "Uncategorized")}">
+          <span class="change-kind">${esc(KIND_LABEL[e.kind] || e.kind)}</span>
+          <a class="change-name" href="index.html#d=${encodeURIComponent(e.id)}" title="Open the preview in the explorer">${esc(e.name)}</a>
+          ${detail(e)}
+          <span class="change-meta"><span class="cat-dot"></span>${esc(plain(e.agency) || "No agency listed")} · ${esc(e.category || "Uncategorized")} · <a href="${esc(e.url)}" target="_blank" rel="noopener">portal ↗</a></span>
+        </article>`).join("")}</div></section>`;
+    }).join("");
+  }
+  function renderKinds(counts) {
+    const wrap = document.getElementById("ch-kinds");
+    const kinds = ["all", ...KIND_ORDER.filter((k) => counts[k])];
+    wrap.innerHTML = kinds.map((k) => `<button type="button" class="pill-btn ${state.kind === k ? "on" : ""}" data-kind="${k}" aria-pressed="${state.kind === k}">${k === "all" ? "All" : esc(KIND_LABEL[k])} <small>${k === "all" ? state.events.length : counts[k]}</small></button>`).join("");
+    wrap.querySelectorAll(".pill-btn").forEach((b) => b.addEventListener("click", () => { state.kind = b.dataset.kind; renderKinds(counts); render(); }));
+  }
+  fetch("data/changelog.json", { cache: "no-cache" }).then((r) => r.json()).then((log) => {
+    state.events = (log.events || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+    const counts = {};
+    for (const e of state.events) counts[e.kind] = (counts[e.kind] || 0) + 1;
+    const p = new URLSearchParams(location.hash.slice(1));
+    if (p.get("kind") && counts[p.get("kind")]) state.kind = p.get("kind");
+    renderKinds(counts); render();
+    document.getElementById("ch-q").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); render(); });
+  }).catch(() => { document.getElementById("ch-summary").textContent = "Couldn't load the changelog."; });
+})();
+</script>
+</body>
+</html>

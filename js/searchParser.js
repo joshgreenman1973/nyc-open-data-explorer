@@ -5,12 +5,14 @@
 //   tag:permits              -> tag filter, AND
 //   type:map                 -> view-type filter
 //   cat:"public safety"      -> category filter
-//   updated:30d  updated:1y  -> freshness pill
+//   updated:30d  updated:1y  -> freshness pill; updated:overdue -> behind its promised cadence
+//   col:bbl                  -> datasets with a column whose name contains "bbl"
+//   freq:daily               -> declared update frequency (daily, weekly, monthly, annually...)
 //   -tag:historical          -> negation
 // Produces: { fuseQuery: string|null, filters: {agencies:[], tags:[], types:[], cats:[], notTags:[], notCats:[], notAgencies:[]}, freshness: 'all'|'30'|'365'|'stale' }
 
 window.NYC_PARSE_QUERY = function parseQuery(input) {
-  const filters = { agencies: [], tags: [], types: [], cats: [], notTags: [], notCats: [], notAgencies: [], notTypes: [] };
+  const filters = { agencies: [], tags: [], types: [], cats: [], notTags: [], notCats: [], notAgencies: [], notTypes: [], cols: [], notCols: [], freqs: [], notFreqs: [] };
   let freshness = null;
   if (!input) return { fuseQuery: "", filters, freshness };
 
@@ -37,10 +39,13 @@ window.NYC_PARSE_QUERY = function parseQuery(input) {
       else if (field === "tag") (neg ? filters.notTags : filters.tags).push(val);
       else if (field === "type") (neg ? filters.notTypes : filters.types).push(val);
       else if (field === "cat" || field === "category") (neg ? filters.notCats : filters.cats).push(val);
+      else if (field === "col" || field === "column" || field === "field") (neg ? filters.notCols : filters.cols).push(val);
+      else if (field === "freq" || field === "frequency" || field === "cadence") (neg ? filters.notFreqs : filters.freqs).push(val);
       else if (field === "updated") {
         if (val === "30d" || val === "month") freshness = "30";
         else if (val === "1y" || val === "year") freshness = "365";
         else if (val === "old" || val === "stale") freshness = "stale";
+        else if (val === "overdue" || val === "late" || val === "behind") freshness = "overdue";
       } else {
         // unknown field — fall through to plain term
         terms.push(tok);
@@ -66,6 +71,16 @@ window.NYC_APPLY_FILTERS = function applyFilters(list, f) {
     const tagsLower = (d.g || []).map((t) => (t || "").toLowerCase());
     if (f.tags.length && !f.tags.every((t) => tagsLower.some((dt) => dt.includes(t)))) return false;
     if (f.notTags.length && f.notTags.some((t) => tagsLower.some((dt) => dt.includes(t)))) return false;
+    if (f.cols.length || f.notCols.length) {
+      const colsLower = (d.k || []).map((c) => (c || "").toLowerCase());
+      if (f.cols.length && !f.cols.every((c) => colsLower.some((dc) => dc.includes(c)))) return false;
+      if (f.notCols.length && f.notCols.some((c) => colsLower.some((dc) => dc.includes(c)))) return false;
+    }
+    if (f.freqs.length || f.notFreqs.length) {
+      const fr = (d.f || "").toLowerCase();
+      if (f.freqs.length && !f.freqs.some((x) => fr.includes(x))) return false;
+      if (f.notFreqs.length && f.notFreqs.some((x) => fr.includes(x))) return false;
+    }
     return true;
   });
 };
