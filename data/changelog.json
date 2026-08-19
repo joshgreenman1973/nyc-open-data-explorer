@@ -1,6 +1,73 @@
 {
- "generated_at": "2026-08-18T09:25:36+00:00",
+ "generated_at": "2026-08-19T09:25:17+00:00",
  "events": [
+  {
+   "id": "pvqr-7yc4",
+   "name": "Parking Violations Issued - Fiscal Year 2027",
+   "agency": "Department of Finance (DOF)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pvqr-7yc4",
+   "kind": "renamed",
+   "date": "2026-08-19",
+   "before": "Parking Violations Issued - Fiscal Year 2026",
+   "after": "Parking Violations Issued - Fiscal Year 2027"
+  },
+  {
+   "id": "pvqr-7yc4",
+   "name": "Parking Violations Issued - Fiscal Year 2027",
+   "agency": "Department of Finance (DOF)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pvqr-7yc4",
+   "kind": "description_changed",
+   "date": "2026-08-19",
+   "before": "...dataset provides data on Parking Violations Issued between July 1, 2025 to June 30, 2026. In New York City, the fiscal year begins on July 1st of one calendar year and ends on June 30th of the following calendar year. Cl...",
+   "after": "...dataset provides data on Parking Violations Issued between July 1, 2026 to June 30, 2027. In New York City, the fiscal year begins on July 1st of one calendar year and ends on June 30th of the following calendar year. Cl...",
+   "before_len": 898,
+   "after_len": 898,
+   "diff_at": 75
+  },
+  {
+   "id": "scjx-j6np",
+   "name": "DOF: Property Charges Balance",
+   "agency": "Department of Finance (DOF)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/scjx-j6np",
+   "kind": "description_changed",
+   "date": "2026-08-19",
+   "before": "Property related charge information by period. Due to a technical issue in 2023, the 2023 data is missing from this dataset and cannot be recreated. T...",
+   "after": "The Property Charges dataset is a quarterly snapshot of a properties outstanding charges. For more current account information refer to the Property I...",
+   "before_len": 313,
+   "after_len": 597,
+   "diff_at": 0
+  },
+  {
+   "id": "8znf-7b2c",
+   "name": "DSNY Litter Basket Inventory",
+   "agency": "NYC Department of Sanitation (DSNY)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/8znf-7b2c",
+   "kind": "columns_changed",
+   "date": "2026-08-19",
+   "columns_added": [
+    "Borough",
+    "DISTRICT",
+    "Latitude",
+    "Longitude"
+   ],
+   "columns_removed": [
+    "LOCATION_DESCRIPTION",
+    "OWNERTYPE",
+    "SECTION",
+    "STATEPLANE_LABELX",
+    "STATEPLANE_LABELY",
+    "STATEPLANE_SNAPPEDX",
+    "STATEPLANE_SNAPPEDY"
+   ]
+  },
   {
    "id": "mm69-vrje",
    "name": "Zoning GIS Data: Geodatabase",
@@ -2104,8 +2171,9 @@
   }
  ],
  "counts": {
-  "description_changed": 121,
-  "renamed": 21,
+  "renamed": 22,
+  "description_changed": 123,
+  "columns_changed": 1,
   "agency_changed": 1,
   "added": 2
  }

@@ -3,8 +3,36 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Tue, 18 Aug 2026 09:25:37 +0000</lastBuildDate>
+<lastBuildDate>Wed, 19 Aug 2026 09:25:19 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Renamed: Parking Violations Issued - Fiscal Year 2027</title>
+<link>https://data.cityofnewyork.us/d/pvqr-7yc4</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/pvqr-7yc4#renamed-2026-08-19</guid>
+<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+<description>Was: Parking Violations Issued - Fiscal Year 2026. Now: Parking Violations Issued - Fiscal Year 2027.</description>
+</item>
+<item>
+<title>Description changed: Parking Violations Issued - Fiscal Year 2027</title>
+<link>https://data.cityofnewyork.us/d/pvqr-7yc4</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/pvqr-7yc4#description_changed-2026-08-19</guid>
+<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+<description>Before: ...dataset provides data on Parking Violations Issued between July 1, 2025 to June 30, 2026. In New York City, the fiscal year begins on July 1st of one calendar year and ends on June 30th of the following calendar year. Cl... — After: ...dataset provides data on Parking Violations Issued between July 1, 2026 to June 30, 2027. In New York City, the fiscal year begins on July 1st of one calendar year and ends on June 30th of the following calendar year. Cl...</description>
+</item>
+<item>
+<title>Description changed: DOF: Property Charges Balance</title>
+<link>https://data.cityofnewyork.us/d/scjx-j6np</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/scjx-j6np#description_changed-2026-08-19</guid>
+<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+<description>Before: Property related charge information by period. Due to a technical issue in 2023, the 2023 data is missing from this dataset and cannot be recreated. T... — After: The Property Charges dataset is a quarterly snapshot of a properties outstanding charges. For more current account information refer to the Property I...</description>
+</item>
+<item>
+<title>Columns changed: DSNY Litter Basket Inventory</title>
+<link>https://data.cityofnewyork.us/d/8znf-7b2c</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/8znf-7b2c#columns_changed-2026-08-19</guid>
+<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Borough, DISTRICT, Latitude, Longitude. Removed: LOCATION_DESCRIPTION, OWNERTYPE, SECTION, STATEPLANE_LABELX, STATEPLANE_LABELY, STATEPLANE_SNAPPEDX, STATEPLANE_SNAPPEDY.</description>
+</item>
 <item>
 <title>Description changed: Zoning GIS Data: Geodatabase</title>
 <link>https://data.cityofnewyork.us/d/mm69-vrje</link>
@@ -674,34 +702,6 @@
 <title>Description changed: Municipal Court Districts</title>
 <link>https://data.cityofnewyork.us/d/mi5z-t7dx</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/mi5z-t7dx#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
-</item>
-<item>
-<title>Description changed: Fire Companies</title>
-<link>https://data.cityofnewyork.us/d/bst7-5464</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/bst7-5464#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
-</item>
-<item>
-<title>Description changed: Fire Battalions</title>
-<link>https://data.cityofnewyork.us/d/xzng-ft6f</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/xzng-ft6f#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
-</item>
-<item>
-<title>Description changed: State Assembly Districts (water areas included)</title>
-<link>https://data.cityofnewyork.us/d/nymm-wb5m</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/nymm-wb5m#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26A</description>
-</item>
-<item>
-<title>Description changed: 2010 Census Blocks</title>
-<link>https://data.cityofnewyork.us/d/y9w2-ph8n</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/y9w2-ph8n#description_changed-2026-05-27</guid>
 <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
 <description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
 </item>
