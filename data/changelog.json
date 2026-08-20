@@ -1,6 +1,17 @@
 {
- "generated_at": "2026-08-19T09:25:17+00:00",
+ "generated_at": "2026-08-20T09:25:17+00:00",
  "events": [
+  {
+   "id": "9mwx-gamw",
+   "name": "Parking Violations Issued - Fiscal Year 2026",
+   "agency": "Department of Finance (DOF)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9mwx-gamw",
+   "kind": "added",
+   "date": "2026-08-20",
+   "summary": "This dataset provides data on Parking Violations Issued between July 1, 2025 to June 30, 2026."
+  },
   {
    "id": "pvqr-7yc4",
    "name": "Parking Violations Issued - Fiscal Year 2027",
@@ -2171,10 +2182,10 @@
   }
  ],
  "counts": {
+  "added": 3,
   "renamed": 22,
   "description_changed": 123,
   "columns_changed": 1,
-  "agency_changed": 1,
-  "added": 2
+  "agency_changed": 1
  }
 }

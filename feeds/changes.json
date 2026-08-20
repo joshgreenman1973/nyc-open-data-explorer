@@ -1,7 +1,18 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-08-19T09:25:19+00:00",
+ "generated": "2026-08-20T09:25:17+00:00",
  "items": [
+  {
+   "id": "9mwx-gamw",
+   "name": "Parking Violations Issued - Fiscal Year 2026",
+   "agency": "Department of Finance (DOF)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9mwx-gamw",
+   "kind": "added",
+   "date": "2026-08-20",
+   "summary": "This dataset provides data on Parking Violations Issued between July 1, 2025 to June 30, 2026."
+  },
   {
    "id": "pvqr-7yc4",
    "name": "Parking Violations Issued - Fiscal Year 2027",
@@ -1481,21 +1492,6 @@
    "before_len": 365,
    "after_len": 365,
    "diff_at": 364
-  },
-  {
-   "id": "mi5z-t7dx",
-   "name": "Municipal Court Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/mi5z-t7dx",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 166,
-   "after_len": 166,
-   "diff_at": 165
   }
  ]
 }
