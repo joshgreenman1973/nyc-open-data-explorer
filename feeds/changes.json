@@ -1,7 +1,32 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-08-20T09:25:17+00:00",
+ "generated": "2026-08-21T09:25:32+00:00",
  "items": [
+  {
+   "id": "b3mq-yvvr",
+   "name": "Wastewater Co-digestion and Biogas-to-grid Performance Indicators",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/b3mq-yvvr",
+   "kind": "columns_changed",
+   "date": "2026-08-21",
+   "columns_added": [],
+   "columns_removed": [
+    "Reduction in Flaring (%)"
+   ]
+  },
+  {
+   "id": "52n8-nrhw",
+   "name": "2024 Green Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/52n8-nrhw",
+   "kind": "added",
+   "date": "2026-08-21",
+   "summary": "These records are generated from the trip record submissions made by green taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "9mwx-gamw",
    "name": "Parking Violations Issued - Fiscal Year 2026",
@@ -1462,36 +1487,6 @@
    "before_len": 362,
    "after_len": 362,
    "diff_at": 361
-  },
-  {
-   "id": "5yfv-9hkp",
-   "name": "State Assembly Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/5yfv-9hkp",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26A",
-   "before_len": 213,
-   "after_len": 213,
-   "diff_at": 212
-  },
-  {
-   "id": "6ez8-za84",
-   "name": "Health Center Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/6ez8-za84",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 365,
-   "after_len": 365,
-   "diff_at": 364
   }
  ]
 }

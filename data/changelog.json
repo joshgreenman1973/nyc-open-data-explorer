@@ -1,6 +1,31 @@
 {
- "generated_at": "2026-08-20T09:25:17+00:00",
+ "generated_at": "2026-08-21T09:25:32+00:00",
  "events": [
+  {
+   "id": "b3mq-yvvr",
+   "name": "Wastewater Co-digestion and Biogas-to-grid Performance Indicators",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/b3mq-yvvr",
+   "kind": "columns_changed",
+   "date": "2026-08-21",
+   "columns_added": [],
+   "columns_removed": [
+    "Reduction in Flaring (%)"
+   ]
+  },
+  {
+   "id": "52n8-nrhw",
+   "name": "2024 Green Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/52n8-nrhw",
+   "kind": "added",
+   "date": "2026-08-21",
+   "summary": "These records are generated from the trip record submissions made by green taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "9mwx-gamw",
    "name": "Parking Violations Issued - Fiscal Year 2026",
@@ -2182,10 +2207,10 @@
   }
  ],
  "counts": {
-  "added": 3,
+  "columns_changed": 2,
+  "added": 4,
   "renamed": 22,
   "description_changed": 123,
-  "columns_changed": 1,
   "agency_changed": 1
  }
 }
