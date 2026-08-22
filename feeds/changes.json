@@ -1,7 +1,18 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-08-21T09:25:32+00:00",
+ "generated": "2026-08-22T09:24:36+00:00",
  "items": [
+  {
+   "id": "rwwi-khbc",
+   "name": "2024 Yellow Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/rwwi-khbc",
+   "kind": "added",
+   "date": "2026-08-22",
+   "summary": "These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "b3mq-yvvr",
    "name": "Wastewater Co-digestion and Biogas-to-grid Performance Indicators",
@@ -1472,21 +1483,6 @@
    "before_len": 496,
    "after_len": 496,
    "diff_at": 495
-  },
-  {
-   "id": "qs4p-vs2w",
-   "name": "Roadbed Pointer List (RPL)",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "file",
-   "url": "https://data.cityofnewyork.us/d/qs4p-vs2w",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 362,
-   "after_len": 362,
-   "diff_at": 361
   }
  ]
 }

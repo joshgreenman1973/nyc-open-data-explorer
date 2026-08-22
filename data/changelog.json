@@ -1,6 +1,17 @@
 {
- "generated_at": "2026-08-21T09:25:32+00:00",
+ "generated_at": "2026-08-22T09:24:36+00:00",
  "events": [
+  {
+   "id": "rwwi-khbc",
+   "name": "2024 Yellow Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/rwwi-khbc",
+   "kind": "added",
+   "date": "2026-08-22",
+   "summary": "These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "b3mq-yvvr",
    "name": "Wastewater Co-digestion and Biogas-to-grid Performance Indicators",
@@ -2207,8 +2218,8 @@
   }
  ],
  "counts": {
+  "added": 5,
   "columns_changed": 2,
-  "added": 4,
   "renamed": 22,
   "description_changed": 123,
   "agency_changed": 1
