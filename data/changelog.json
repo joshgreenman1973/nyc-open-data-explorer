@@ -1,6 +1,107 @@
 {
- "generated_at": "2026-08-24T09:30:13+00:00",
+ "generated_at": "2026-08-25T09:25:51+00:00",
  "events": [
+  {
+   "id": "64uk-42ks",
+   "name": "Primary Land Use Tax Lot Output (PLUTO)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/64uk-42ks",
+   "kind": "description_changed",
+   "date": "2026-08-25",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v1",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v2",
+   "before_len": 327,
+   "after_len": 327,
+   "diff_at": 326
+  },
+  {
+   "id": "qt5r-nqxp",
+   "name": "PLUTO Change File",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/qt5r-nqxp",
+   "kind": "description_changed",
+   "date": "2026-08-25",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v1",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v2",
+   "before_len": 459,
+   "after_len": 459,
+   "diff_at": 458
+  },
+  {
+   "id": "fi59-268w",
+   "name": "Capital Projects Database (CPDB) - Projects",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/fi59-268w",
+   "kind": "description_changed",
+   "date": "2026-08-25",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26pre",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26exec",
+   "before_len": 540,
+   "after_len": 541,
+   "diff_at": 537
+  },
+  {
+   "id": "9jkp-n57r",
+   "name": "Capital Projects Database (CPDB) - Projects (Polygons)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9jkp-n57r",
+   "kind": "description_changed",
+   "date": "2026-08-25",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26pre",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26exec",
+   "before_len": 540,
+   "after_len": 541,
+   "diff_at": 537
+  },
+  {
+   "id": "h2ic-zdws",
+   "name": "Capital Projects Database (CPDB) - Projects (Points)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/h2ic-zdws",
+   "kind": "description_changed",
+   "date": "2026-08-25",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26pre",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26exec",
+   "before_len": 540,
+   "after_len": 541,
+   "diff_at": 537
+  },
+  {
+   "id": "djxg-kcfi",
+   "name": "Capital Projects Database (CPDB) - Commitments",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/djxg-kcfi",
+   "kind": "description_changed",
+   "date": "2026-08-25",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26pre",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26exec",
+   "before_len": 523,
+   "after_len": 524,
+   "diff_at": 520
+  },
+  {
+   "id": "gzsz-58nf",
+   "name": "2024 For Hire Vehicles Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/gzsz-58nf",
+   "kind": "added",
+   "date": "2026-08-25",
+   "summary": "These records are generated from the For-Hire Vehicle (“FHV”) Trip Record submissions made by traditional livery, luxury, and black car bases."
+  },
   {
    "id": "rwwi-khbc",
    "name": "2024 Yellow Taxi Trip Data",
@@ -2218,10 +2319,10 @@
   }
  ],
  "counts": {
-  "added": 5,
+  "description_changed": 129,
+  "added": 6,
   "columns_changed": 2,
   "renamed": 22,
-  "description_changed": 123,
   "agency_changed": 1
  }
 }
