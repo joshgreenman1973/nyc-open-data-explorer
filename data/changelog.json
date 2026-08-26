@@ -1,6 +1,40 @@
 {
- "generated_at": "2026-08-25T09:25:51+00:00",
+ "generated_at": "2026-08-26T09:26:38+00:00",
  "events": [
+  {
+   "id": "p937-wjvj",
+   "name": "Rodent Inspection",
+   "agency": "Department of Health and Mental Hygiene (DOHMH)",
+   "category": "Health",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/p937-wjvj",
+   "kind": "columns_changed",
+   "date": "2026-08-26",
+   "columns_added": [
+    "BORO CODE",
+    "HOUSE NUMBER",
+    "INSPECTION DATE",
+    "INSPECTION TYPE",
+    "JOB ID / CASE ID",
+    "LETTER TYPE",
+    "OBSERVATIONS",
+    "STREET NAME",
+    "X COORD",
+    "Y COORD",
+    "ZIP CODE"
+   ],
+   "columns_removed": [
+    "BORO_CODE",
+    "HOUSE_NUMBER",
+    "INSPECTION_DATE",
+    "INSPECTION_TYPE",
+    "JOB_ID",
+    "STREET_NAME",
+    "X_COORD",
+    "Y_COORD",
+    "ZIP_CODE"
+   ]
+  },
   {
    "id": "64uk-42ks",
    "name": "Primary Land Use Tax Lot Output (PLUTO)",
@@ -2319,9 +2353,9 @@
   }
  ],
  "counts": {
+  "columns_changed": 3,
   "description_changed": 129,
   "added": 6,
-  "columns_changed": 2,
   "renamed": 22,
   "agency_changed": 1
  }

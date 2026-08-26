@@ -1,7 +1,41 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-08-25T09:25:51+00:00",
+ "generated": "2026-08-26T09:26:39+00:00",
  "items": [
+  {
+   "id": "p937-wjvj",
+   "name": "Rodent Inspection",
+   "agency": "Department of Health and Mental Hygiene (DOHMH)",
+   "category": "Health",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/p937-wjvj",
+   "kind": "columns_changed",
+   "date": "2026-08-26",
+   "columns_added": [
+    "BORO CODE",
+    "HOUSE NUMBER",
+    "INSPECTION DATE",
+    "INSPECTION TYPE",
+    "JOB ID / CASE ID",
+    "LETTER TYPE",
+    "OBSERVATIONS",
+    "STREET NAME",
+    "X COORD",
+    "Y COORD",
+    "ZIP CODE"
+   ],
+   "columns_removed": [
+    "BORO_CODE",
+    "HOUSE_NUMBER",
+    "INSPECTION_DATE",
+    "INSPECTION_TYPE",
+    "JOB_ID",
+    "STREET_NAME",
+    "X_COORD",
+    "Y_COORD",
+    "ZIP_CODE"
+   ]
+  },
   {
    "id": "64uk-42ks",
    "name": "Primary Land Use Tax Lot Output (PLUTO)",
@@ -1464,21 +1498,6 @@
    "before_len": 544,
    "after_len": 544,
    "diff_at": 543
-  },
-  {
-   "id": "872g-cjhh",
-   "name": "City Council Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/872g-cjhh",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 181,
-   "after_len": 181,
-   "diff_at": 180
   }
  ]
 }
