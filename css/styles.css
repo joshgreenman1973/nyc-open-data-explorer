@@ -981,3 +981,25 @@ body.drawer-open { overflow: hidden; }
 .change-item[data-cat="Business"] .cat-dot, .drawer[data-cat="Business"] .dr-meta .cat-dot, .dr-similar li[data-cat="Business"] .cat-dot { background: var(--c-business); }
 .change-item[data-cat="NYC BigApps"] .cat-dot, .drawer[data-cat="NYC BigApps"] .dr-meta .cat-dot, .dr-similar li[data-cat="NYC BigApps"] .cat-dot { background: var(--c-bigapps); }
 .drawer[hidden], .drawer-backdrop[hidden] { display: none !important; }
+
+/* ---- What people ask the City to publish (help desk log) ---- */
+.helpdesk { max-width: 100%; }
+.helpdesk h2 { font-family: var(--font-display); font-size: 20px; margin: 0 0 4px; font-weight: 700; }
+.helpdesk h2 small { font-size: 12px; font-family: var(--font-sans); font-weight: 500; color: var(--ink-mute); }
+.hd-figs { display: flex; gap: 8px; margin: 0 0 10px; }
+.hd-fig {
+  flex: 1; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 9px 11px;
+}
+.hd-fig b { display: block; font-family: var(--font-display); font-size: 21px; line-height: 1.1; }
+.hd-fig span { display: block; font-size: 11.5px; color: var(--ink-mute); margin-top: 3px; line-height: 1.35; }
+.hd-item {
+  background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule);
+  border-radius: 6px; padding: 9px 12px; display: flex; flex-direction: column; gap: 3px;
+}
+.hd-item.pending { border-left-color: #c2410c; }
+.hd-when { font-size: 11px; color: var(--ink-mute); }
+.hd-status { font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-mute); }
+.hd-item.pending .hd-status { color: #c2410c; font-weight: 600; }
+.hd-text { font-size: 12.5px; margin: 2px 0; color: var(--ink); line-height: 1.4; }
+.hd-agency { font-size: 11.5px; color: var(--ink-soft); }
+.hd-ds { font-size: 11px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--link, #1d4ed8); }

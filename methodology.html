@@ -117,6 +117,15 @@
   <p>About thirty datasets carry a gold star — these are an explicitly editorial selection of the datasets New York City newsrooms most often rely on (NYPD complaint data, 311, motor-vehicle collisions, ACRIS deeds, restaurant inspections, evictions, school quality, payroll, campaign finance, lobbying, jail population, and a few others). Each pick has a hand-written "why journalists use it" note and a "gotcha" callout. The list is in <code>data/journalist_picks.json</code> and is curated, not algorithmic — pull requests welcome. This layer is editorial; everything else on the page is mechanical.</p>
 
   <h2 id="changelog">"What changed" — the catalog changelog</h2>
+  <h2 id="requests">The public request log</h2>
+  <p><code>build/helpdesk.py</code> pulls the <a href="https://data.cityofnewyork.us/d/63us-eqtq" target="_blank" rel="noopener">NYC Open Data Help Desk: Public Dataset Requests</a> file (<code>63us-eqtq</code>), the City's own log of dataset nominations submitted through the Contact Us form at nyc.gov/opendata, and writes <code>data/helpdesk.json</code>. It appears in the right rail and in full at <a href="requests.html">requests.html</a>.</p>
+  <ul>
+    <li><b>Status is the City's, not ours.</b> Each row carries its own label — Closed or Pending, On Time or Past Due. Every legislated due date in the file is exactly 60 days after submission, so "past due" means the City missed its own 60-day window. We report the label rather than recomputing it; on the day a request flips, the two can disagree by one row.</li>
+    <li><b>Waiting time is measured from the day the request was filed</b>, not from the due date, and is shown only for requests still open.</li>
+    <li><b>Dataset links are textual matches.</b> Where a request or an answer names a four-by-four id that exists in today's catalog, the log links to it. A match means the id was mentioned — not that the request is what caused the dataset to be published.</li>
+    <li><b>Requests are quoted as filed</b>, including typos and the occasional joke. Nothing is paraphrased, and nothing is dropped: the file is published in full.</li>
+  </ul>
+
   <p>The City doesn't announce when it adds, removes, renames or rewrites a dataset. Because this tool has fetched the full catalog every day since April 30, 2026, and commits each snapshot to git, we can diff consecutive snapshots and log the differences (<code>build/changelog.py</code>, output in <code>data/changelog.json</code>, a full-page log at <a href="changes.html">changes.html</a>, and an RSS feed at <code>feeds/changes.xml</code>). Event kinds:</p>
   <table>
     <tr><th>Kind</th><th>Detected when</th></tr>

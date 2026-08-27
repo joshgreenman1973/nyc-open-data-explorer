@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What people ask for — NYC Open Data Explorer</title>
+<meta name="description" content="Every dataset New Yorkers have asked the City of New York to publish, the agency it was routed to, and the answer that came back — or didn't.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .rq-hero { padding: 28px 0 8px; }
+  .rq-hero h2 { font-family: var(--font-display); font-size: 30px; margin: 0 0 6px; }
+  .rq-hero p { color: var(--ink-soft); max-width: 760px; margin: 0 0 14px; font-size: 15px; }
+  .rq-figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 18px 0 20px; }
+  .rq-fig { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; }
+  .rq-fig b { display: block; font-family: var(--font-display); font-size: 28px; line-height: 1.05; }
+  .rq-fig span { display: block; font-size: 12.5px; color: var(--ink-mute); margin-top: 5px; line-height: 1.4; }
+  .rq-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .rq-controls input[type="search"] { flex: 1 1 260px; padding: 9px 12px; border: 1px solid var(--rule); border-radius: 6px; font: inherit; font-size: 14px; }
+  .rq-controls select { padding: 9px 10px; border: 1px solid var(--rule); border-radius: 6px; font: inherit; font-size: 14px; background: var(--surface); }
+  .rq-summary { font-size: 13px; color: var(--ink-mute); margin: 6px 0 18px; }
+  .rq-list { display: flex; flex-direction: column; gap: 12px; }
+  .rq-item { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule); border-radius: 8px; padding: 14px 16px; }
+  .rq-item.pending { border-left-color: #c2410c; }
+  .rq-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; font-size: 12px; color: var(--ink-mute); margin-bottom: 8px; }
+  .rq-status { text-transform: uppercase; letter-spacing: .06em; font-weight: 600; font-size: 10.5px; }
+  .rq-item.pending .rq-status { color: #c2410c; }
+  .rq-agency { font-weight: 600; color: var(--ink-soft); }
+  .rq-ask { font-size: 14.5px; line-height: 1.5; margin: 0 0 10px; white-space: pre-wrap; }
+  .rq-answer { font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); border-top: 1px dashed var(--rule); padding-top: 9px; margin: 0; }
+  .rq-answer b { font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-mute); display: block; margin-bottom: 3px; }
+  .rq-links { margin-top: 9px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .rq-links a { font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 9px; text-decoration: none; }
+  .rq-more { margin: 22px 0 0; text-align: center; }
+  .rq-note { font-size: 12.5px; color: var(--ink-mute); margin-top: 28px; max-width: 760px; }
+  .rq-empty { padding: 32px 20px; color: var(--ink-soft); border: 1px dashed var(--rule); border-radius: 8px; background: var(--surface); }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <h1>
+      <a href="index.html" title="Back to the explorer">New York City Open Data Explorer</a>
+      <small>A clearer, colorful map of every dataset the City publishes</small>
+    </h1>
+    <nav>
+      <a href="index.html">Explorer</a>
+      <a href="changes.html">What changed</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="rq-hero">
+    <h2>What people ask the City to publish</h2>
+    <p>Anyone can nominate a dataset through the Open Data help desk, and the City publishes the whole queue: the request in the asker's own words, the agency it was routed to, and the answer that came back. It is the portal's own suggestion box, read from the outside — a running record of the gap between what the City puts out and what people actually want from it. The City gives itself 60 days to answer.</p>
+    <div class="rq-figs" id="rq-figs"></div>
+    <div class="rq-controls" role="search">
+      <input id="rq-q" type="search" placeholder="Search the requests and the answers" aria-label="Search requests">
+      <select id="rq-status" aria-label="Status">
+        <option value="">Every status</option>
+        <option value="pending">Still waiting</option>
+        <option value="closed">Answered</option>
+        <option value="linked">Answered with a dataset</option>
+      </select>
+      <select id="rq-agency" aria-label="Agency"><option value="">Every agency</option></select>
+    </div>
+    <div class="rq-summary" id="rq-summary">Loading…</div>
+  </section>
+  <div class="rq-list" id="rq-list"></div>
+  <div class="rq-more"><button type="button" class="link-btn" id="rq-more" hidden>Show more</button></div>
+  <p class="rq-note" id="rq-note"></p>
+</main>
+
+<script>
+(function () {
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const nf = (n) => Number(n).toLocaleString("en-US");
+  const state = { all: [], q: "", status: "", agency: "", shown: 40 };
+  const PAGE = 40;
+
+  function longDate(iso) {
+    if (!iso) return "";
+    const [y, m, d] = iso.split("-").map(Number);
+    return new Date(y, m - 1, d).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  function match(r) {
+    if (state.agency && r.agency !== state.agency) return false;
+    if (state.status === "pending" && !r.pending) return false;
+    if (state.status === "closed" && r.pending) return false;
+    if (state.status === "linked" && !(r.datasets || []).length) return false;
+    if (state.q) {
+      const hay = (r.request + " " + r.response + " " + r.agency).toLowerCase();
+      if (!hay.includes(state.q)) return false;
+    }
+    return true;
+  }
+
+  function render() {
+    const list = state.all.filter(match);
+    const slice = list.slice(0, state.shown);
+    const el = document.getElementById("rq-list");
+    document.getElementById("rq-summary").innerHTML =
+      `<b>${nf(list.length)}</b> request${list.length === 1 ? "" : "s"}` +
+      (list.length ? ` · ${nf(list.filter((r) => r.pending).length)} still waiting` : "");
+    if (!list.length) {
+      el.innerHTML = `<div class="rq-empty">No request matches that.</div>`;
+      document.getElementById("rq-more").hidden = true;
+      return;
+    }
+    el.innerHTML = slice.map((r) => {
+      const waited = r.pending && r.waiting_days != null
+        ? ` · waiting ${r.waiting_days >= 730 ? (r.waiting_days / 365).toFixed(1) + " years" : nf(r.waiting_days) + " days"}`
+        : "";
+      const links = (r.datasets || []).map((id) =>
+        `<a href="index.html#d=${encodeURIComponent(id)}" title="Open this dataset in the explorer">${esc(id)}</a>`).join("");
+      const answered = r.response && !/^response not sent yet/i.test(r.response);
+      return `<article class="rq-item${r.pending ? " pending" : ""}">
+        <div class="rq-head">
+          <span class="rq-status" title="The City's own label. Its deadline is 60 days from filing; a status can flip before the date it names.">${esc(r.status)}</span>
+          <span>${esc(longDate(r.submitted))}${waited}</span>
+          <span class="rq-agency">${esc(r.agency)}</span>
+        </div>
+        <p class="rq-ask">${esc(r.request)}</p>
+        ${answered ? `<p class="rq-answer"><b>The City's answer</b>${esc(r.response)}</p>` : ""}
+        ${links ? `<div class="rq-links">${links}</div>` : ""}
+      </article>`;
+    }).join("");
+    const more = document.getElementById("rq-more");
+    more.hidden = list.length <= state.shown;
+    more.textContent = `Show more (${nf(list.length - state.shown)} left)`;
+  }
+
+  fetch("data/helpdesk.json", { cache: "no-cache" }).then((r) => r.json()).then((hd) => {
+    state.all = hd.requests || [];
+    const s = hd.stats || {};
+    const years = s.median_wait_days ? (s.median_wait_days / 365).toFixed(1) : null;
+    document.getElementById("rq-figs").innerHTML = [
+      [nf(s.total), `requests since ${(s.first_request || "").slice(0, 4)}`],
+      [nf(s.pending_past_due), `past the City's own ${s.response_window_days}-day deadline and still unanswered`],
+      [years ? years + " yrs" : "—", "median wait on those, counting from the day they were filed"],
+      [nf(s.with_dataset_link), "answers that point at a dataset now on the portal"],
+    ].map(([n, l]) => `<div class="rq-fig"><b>${n}</b><span>${l}</span></div>`).join("");
+    const sel = document.getElementById("rq-agency");
+    sel.insertAdjacentHTML("beforeend", (s.by_agency || [])
+      .map((a) => `<option value="${esc(a.agency)}">${esc(a.agency)} (${nf(a.n)})</option>`).join(""));
+    const oldest = s.oldest_pending;
+    document.getElementById("rq-note").innerHTML =
+      `Source: <a href="${esc(hd.source.url)}" target="_blank" rel="noopener">NYC Open Data Help Desk — Public Dataset Requests</a>, published weekly by the Open Data Team and rebuilt here daily. ` +
+      `Status is the City's own label, not a recalculation. Requests routed to no agency yet are shown as unassigned. ` +
+      (oldest ? `The longest-waiting open request went to the ${esc(oldest.agency)} on ${esc(longDate(oldest.submitted))}. ` : "") +
+      `Dataset links appear when a request or answer names an id that exists in today's catalog; a matching id is not proof the request is what produced the dataset.`;
+    document.getElementById("rq-q").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); state.shown = PAGE; render(); });
+    document.getElementById("rq-status").addEventListener("change", (e) => { state.status = e.target.value; state.shown = PAGE; render(); });
+    sel.addEventListener("change", (e) => { state.agency = e.target.value; state.shown = PAGE; render(); });
+    document.getElementById("rq-more").addEventListener("click", () => { state.shown += PAGE; render(); });
+    const p = new URLSearchParams(location.hash.slice(1));
+    if (p.get("status")) { state.status = p.get("status"); document.getElementById("rq-status").value = state.status; }
+    render();
+  }).catch(() => { document.getElementById("rq-summary").textContent = "Couldn't load the request log."; });
+})();
+</script>
+</body>
+</html>

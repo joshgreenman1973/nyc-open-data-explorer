@@ -15,6 +15,7 @@ Live: https://joshgreenman1973.github.io/nyc-open-data-explorer/
 - **Overdue flag** — compares each dataset's agency-declared update frequency with its actual last update
 - **Column search** — `col:bbl` finds every dataset with a BBL field; column names are also fuzzy-searched
 - **Preview drawer** — columns, live sample rows + row count, copy-API/CSV buttons, similar datasets, recent listing changes, without leaving the page
+- **What people ask for** — the City's own log of public dataset requests (`requests.html`, plus a rail summary): what New Yorkers asked it to publish, what the agency answered, and the 558 requests sitting past the City's 60-day deadline
 - Table/map twins collapsed into one card; stalled feeds flagged instead of shown as zero in the weekly cards
 
 ## Repo layout
@@ -37,6 +38,7 @@ nyc-open-data-explorer/
 ├── js/searchParser.js          # Operators: agency: tag: type: cat: col: freq: updated:
 ├── index.html
 ├── changes.html                # Full changelog page
+├── requests.html               # Full public-request log
 ├── methodology.html
 └── README.md
 ```
@@ -47,7 +49,7 @@ nyc-open-data-explorer/
 python3 build/fetch_catalog.py
 ```
 
-Pulls all ~3,014 datasets, writes both `catalog.json` and `catalog.min.json`. Takes about 60 seconds. Then `python3 build/changelog.py && python3 build/generate_feeds.py && python3 build/weekly_stats.py && python3 build/news_match.py`. The GitHub Actions workflow in `.github/workflows/refresh.yml` runs all of this daily.
+Pulls all ~3,014 datasets, writes both `catalog.json` and `catalog.min.json`. Takes about 60 seconds. Then `python3 build/changelog.py && python3 build/generate_feeds.py && python3 build/weekly_stats.py && python3 build/news_match.py && python3 build/helpdesk.py`. The GitHub Actions workflow in `.github/workflows/refresh.yml` runs all of this daily.
 
 ## Deploy
 

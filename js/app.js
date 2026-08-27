@@ -517,6 +517,32 @@
     }).join("");
   }
 
+  // ---------- What people ask the City to publish (help desk log) ----------
+  function renderHelpdesk(hd) {
+    const sec = document.getElementById("helpdesk");
+    const list = document.getElementById("hd-list");
+    const figs = document.getElementById("hd-figs");
+    if (!sec || !list || !hd || !hd.stats) return;
+    const s = hd.stats;
+    sec.hidden = false;
+    const meta = document.getElementById("hd-meta");
+    if (meta) meta.textContent = `(${s.total.toLocaleString()} since ${(s.first_request || "").slice(0, 4)})`;
+    const years = s.median_wait_days ? (s.median_wait_days / 365).toFixed(1) : null;
+    figs.innerHTML = `
+      <div class="hd-fig"><b>${s.pending_past_due.toLocaleString()}</b><span>requests past the City's own ${s.response_window_days}-day deadline, still unanswered</span></div>
+      <div class="hd-fig"><b>${years ? years + " yrs" : "—"}</b><span>median wait on those, counting from the day they were filed</span></div>`;
+    list.innerHTML = hd.requests.slice(0, 5).map((r) => {
+      const links = (r.datasets || []).slice(0, 2).map((id) =>
+        `<a class="hd-ds" href="#d=${escapeAttr(id)}">${escapeHTML(id)}</a>`).join(" ");
+      return `<div class="hd-item${r.pending ? " pending" : ""}">
+        <span class="hd-when">${escapeHTML((r.submitted || "").slice(0, 10))}</span>
+        <span class="hd-status">${escapeHTML(r.status || "")}</span>
+        <p class="hd-text">${escapeHTML(r.request.slice(0, 180))}${r.request.length > 180 ? "…" : ""}</p>
+        <span class="hd-agency">${escapeHTML(r.agency)}</span>${links ? " " + links : ""}
+      </div>`;
+    }).join("");
+  }
+
   // ---------- Fresh strip (vertical in right rail) ----------
   function renderFreshStrip() {
     const fresh = state.catalog.fresh || { new_this_month: [], updated_this_week: [] };
@@ -1005,20 +1031,22 @@
 
   // ---------- Init ----------
   async function init() {
-    let data, picks, weekly, news;
+    let data, picks, weekly, news, helpdesk;
     try {
-      const [r1, r2, r3, r4, r5] = await Promise.all([
+      const [r1, r2, r3, r4, r5, r6] = await Promise.all([
         fetch("data/catalog.min.json", { cache: "no-cache" }),
         fetch("data/journalist_picks.json", { cache: "no-cache" }),
         fetch("data/weekly_stats.json", { cache: "no-cache" }).catch(() => null),
         fetch("data/news_matches.json", { cache: "no-cache" }).catch(() => null),
         fetch("data/changelog.json", { cache: "no-cache" }).catch(() => null),
+        fetch("data/helpdesk.json", { cache: "no-cache" }).catch(() => null),
       ]);
       data = await r1.json();
       picks = await r2.json();
       try { weekly = r3 && r3.ok ? await r3.json() : null; } catch (_) { weekly = null; }
       try { news = r4 && r4.ok ? await r4.json() : null; } catch (_) { news = null; }
       try { state.changelog = r5 && r5.ok ? await r5.json() : null; } catch (_) { state.changelog = null; }
+      try { helpdesk = r6 && r6.ok ? await r6.json() : null; } catch (_) { helpdesk = null; }
     } catch (e) {
       els.stats.textContent = "Failed to load the catalog. Try refreshing.";
       console.error(e);
@@ -1057,6 +1085,7 @@
     renderWeeklyStats(weekly);
     renderFreshStrip();
     renderNewsMatch(news);
+    renderHelpdesk(helpdesk);
     renderChangelog();
     render();
     bindDrawer();

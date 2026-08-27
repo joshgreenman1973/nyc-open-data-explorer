@@ -34,6 +34,9 @@ jobs:
         run: python build/news_match.py
         continue-on-error: true
 
+      - name: Public dataset requests (help desk log)
+        run: python build/helpdesk.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
