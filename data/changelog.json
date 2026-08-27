@@ -1,6 +1,21 @@
 {
- "generated_at": "2026-08-26T09:26:38+00:00",
+ "generated_at": "2026-08-27T12:46:42+00:00",
  "events": [
+  {
+   "id": "sxx4-xhzg",
+   "name": "Public Recycling Bins",
+   "agency": "Department of Sanitation (DSNY)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/sxx4-xhzg",
+   "kind": "description_changed",
+   "date": "2026-08-27",
+   "before": "...throughout NYC. For information on what to recycle in NYC, see: https://www1.nyc.gov/assets/dsny/site/services/recycling.",
+   "after": "...throughout NYC. For information on what to recycle in NYC, see: https://www.nyc.gov/site/dsny/collection/residents/recycling.page.",
+   "before_len": 156,
+   "after_len": 165,
+   "diff_at": 110
+  },
   {
    "id": "p937-wjvj",
    "name": "Rodent Inspection",
@@ -2353,8 +2368,8 @@
   }
  ],
  "counts": {
+  "description_changed": 130,
   "columns_changed": 3,
-  "description_changed": 129,
   "added": 6,
   "renamed": 22,
   "agency_changed": 1

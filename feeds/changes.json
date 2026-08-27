@@ -1,7 +1,22 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-08-26T09:26:39+00:00",
+ "generated": "2026-08-27T12:46:42+00:00",
  "items": [
+  {
+   "id": "sxx4-xhzg",
+   "name": "Public Recycling Bins",
+   "agency": "Department of Sanitation (DSNY)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/sxx4-xhzg",
+   "kind": "description_changed",
+   "date": "2026-08-27",
+   "before": "...throughout NYC. For information on what to recycle in NYC, see: https://www1.nyc.gov/assets/dsny/site/services/recycling.",
+   "after": "...throughout NYC. For information on what to recycle in NYC, see: https://www.nyc.gov/site/dsny/collection/residents/recycling.page.",
+   "before_len": 156,
+   "after_len": 165,
+   "diff_at": 110
+  },
   {
    "id": "p937-wjvj",
    "name": "Rodent Inspection",
@@ -1483,21 +1498,6 @@
    "before_len": 361,
    "after_len": 361,
    "diff_at": 360
-  },
-  {
-   "id": "bmjq-373p",
-   "name": "2010 Census Tracts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/bmjq-373p",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 544,
-   "after_len": 544,
-   "diff_at": 543
   }
  ]
 }
