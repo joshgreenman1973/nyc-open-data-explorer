@@ -125,6 +125,14 @@
     <li><b>Dataset links are textual matches.</b> Where a request or an answer names a four-by-four id that exists in today's catalog, the log links to it. A match means the id was mentioned — not that the request is what caused the dataset to be published.</li>
     <li><b>Requests are quoted as filed</b>, including typos and the occasional joke. Nothing is paraphrased, and nothing is dropped: the file is published in full.</li>
   </ul>
+  <h3>The three breakdowns, and why they are ours and not the City's</h3>
+  <p>The City files no subject, no request type and no outcome — only an agency, a date and a status. The three charts on <a href="requests.html">requests.html</a> are keyword rules run over the City's own text in <code>build/helpdesk.py</code>. They are a reading of the log, not a field in it, and they are wrong at the edges. The rules:</p>
+  <ul>
+    <li><b>Subject</b> is multi-label: a request about school bus routes counts under both Education and Transportation, so the bars sum to more than 2,963, and 597 requests match no subject at all and appear in none of them.</li>
+    <li><b>Kind of ask</b> is single-label, first rule wins, and the specific complaints are tested before the general nomination — a broken link, a stale dataset, a request for older data, a request for more fields, a request for help finding something, then an explicit ask to publish. Anything left is labelled "a straight ask for data," which is what 2,197 of them are.</li>
+    <li><b>Kind of answer</b> is single-label, first rule wins, in this order: no reply yet; a reply containing a data.cityofnewyork.us link; not a City dataset; withheld as not public; the agency says it holds no such data; a promise to publish; softer language pointing at data that exists; a redirect to FOIL, 311 or another portal. The portal link is tested early on purpose, so that "we do not have all of it, but here is what we do have" counts as pointing at data rather than as a refusal. Replies matching nothing are labelled "some other reply" — 624 of them.</li>
+  </ul>
+  <p>Every bar filters the log beneath it, so any classification can be checked against the requests it claims to describe. If a bucket looks wrong, the requests inside it are one click away.</p>
 
   <p>The City doesn't announce when it adds, removes, renames or rewrites a dataset. Because this tool has fetched the full catalog every day since April 30, 2026, and commits each snapshot to git, we can diff consecutive snapshots and log the differences (<code>build/changelog.py</code>, output in <code>data/changelog.json</code>, a full-page log at <a href="changes.html">changes.html</a>, and an RSS feed at <code>feeds/changes.xml</code>). Event kinds:</p>
   <table>

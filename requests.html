@@ -35,6 +35,35 @@
   .rq-links a { font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 9px; text-decoration: none; }
   .rq-more { margin: 22px 0 0; text-align: center; }
   .rq-note { font-size: 12.5px; color: var(--ink-mute); margin-top: 28px; max-width: 760px; }
+  .rq-breaks { margin: 4px 0 26px; }
+  .rq-breaks > h3 { font-family: var(--font-display); font-size: 20px; margin: 0 0 4px; }
+  .rq-breaks > p { font-size: 13px; color: var(--ink-mute); margin: 0 0 14px; max-width: 760px; }
+  .rq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+  .rq-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; }
+  .rq-card h4 { margin: 0 0 2px; font-size: 14px; }
+  .rq-card .sub { font-size: 11.5px; color: var(--ink-mute); margin: 0 0 10px; line-height: 1.35; }
+  .rq-bars { display: flex; flex-direction: column; gap: 3px; }
+  .rq-bar {
+    display: grid; grid-template-columns: 1fr 90px 42px; align-items: center; gap: 8px;
+    background: none; border: 0; padding: 3px 4px; margin: 0 -4px; font: inherit; text-align: left;
+    cursor: pointer; border-radius: 4px; color: inherit;
+  }
+  .rq-bar:hover { background: var(--paper, rgba(0,0,0,.035)); }
+  .rq-bar[aria-pressed="true"] { background: rgba(37,99,235,.10); }
+  .rq-bar .lab { font-size: 12.5px; line-height: 1.25; }
+  .rq-bar .track { height: 9px; background: rgba(0,0,0,.07); border-radius: 2px; overflow: hidden; display: flex; }
+  .rq-bar .fill { background: #2563eb; height: 100%; }
+  .rq-bar .fill.pend { background: #c2410c; }
+  .rq-bar .val { font-size: 11.5px; color: var(--ink-mute); text-align: right; font-variant-numeric: tabular-nums; }
+  .rq-key { font-size: 11px; color: var(--ink-mute); margin: 9px 0 0; display: flex; gap: 12px; flex-wrap: wrap; }
+  .rq-key i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 4px; vertical-align: baseline; }
+  .rq-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+  .rq-chip {
+    font-size: 12px; border: 1px solid var(--rule); border-radius: 999px; padding: 4px 10px;
+    background: var(--surface); cursor: pointer; font-family: inherit; color: inherit;
+  }
+  .rq-chip:hover { border-color: #c2410c; color: #c2410c; }
+  .rq-chip b { font-weight: 600; }
   .rq-empty { padding: 32px 20px; color: var(--ink-soft); border: 1px dashed var(--rule); border-radius: 8px; background: var(--surface); }
 </style>
 </head>
@@ -56,8 +85,14 @@
 <main class="wrap">
   <section class="rq-hero">
     <h2>What people ask the City to publish</h2>
-    <p>Anyone can nominate a dataset through the Open Data help desk, and the City publishes the whole queue: the request in the asker's own words, the agency it was routed to, and the answer that came back. It is the portal's own suggestion box, read from the outside — a running record of the gap between what the City puts out and what people actually want from it. The City gives itself 60 days to answer.</p>
+    <p>Anyone can nominate a dataset through the Open Data help desk, and the City publishes the whole queue: the request in the asker's own words, the agency it was routed to, and the answer that came back. It is the portal's own suggestion box, read from the outside — a running record of the gap between what the City puts out and what people actually want from it. The City gives itself 60 days to answer. Below, the queue is cut five ways — by subject, by what the City said back, by the kind of ask, by agency and by year — and every bar filters the log.</p>
     <div class="rq-figs" id="rq-figs"></div>
+    <section class="rq-breaks">
+      <h3>How the requests break down</h3>
+      <p>Click any bar to filter the log below. Subject, kind of ask and kind of answer are read from the text by keyword rules written for this page, not categories the City publishes — <a href="methodology.html#requests">the rules are listed in the methodology</a>.</p>
+      <div class="rq-grid" id="rq-breaks"></div>
+    </section>
+
     <div class="rq-controls" role="search">
       <input id="rq-q" type="search" placeholder="Search the requests and the answers" aria-label="Search requests">
       <select id="rq-status" aria-label="Status">
@@ -68,6 +103,7 @@
       </select>
       <select id="rq-agency" aria-label="Agency"><option value="">Every agency</option></select>
     </div>
+    <div class="rq-chips" id="rq-chips"></div>
     <div class="rq-summary" id="rq-summary">Loading…</div>
   </section>
   <div class="rq-list" id="rq-list"></div>
@@ -79,7 +115,7 @@
 (function () {
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const nf = (n) => Number(n).toLocaleString("en-US");
-  const state = { all: [], q: "", status: "", agency: "", shown: 40 };
+  const state = { all: [], stats: null, q: "", status: "", agency: "", topic: "", ask: "", answer: "", year: "", shown: 40 };
   const PAGE = 40;
 
   function longDate(iso) {
@@ -90,6 +126,10 @@
 
   function match(r) {
     if (state.agency && r.agency !== state.agency) return false;
+    if (state.topic && !(r.topics || []).includes(state.topic)) return false;
+    if (state.ask && r.ask !== state.ask) return false;
+    if (state.answer && r.answer !== state.answer) return false;
+    if (state.year && (r.submitted || "").slice(0, 4) !== state.year) return false;
     if (state.status === "pending" && !r.pending) return false;
     if (state.status === "closed" && r.pending) return false;
     if (state.status === "linked" && !(r.datasets || []).length) return false;
@@ -100,7 +140,75 @@
     return true;
   }
 
+  // One breakdown card: a row per bucket, each row a button that toggles that filter.
+  function card(title, sub, rows, key, opts) {
+    const max = Math.max(...rows.map((r) => r.n), 1);
+    const bars = rows.map((r) => {
+      const on = state[key] === String(r.value);
+      const pend = r.pending || 0;
+      const w = (r.n / max) * 100, pw = (pend / max) * 100;
+      return `<button type="button" class="rq-bar" data-key="${key}" data-value="${esc(r.value)}" aria-pressed="${on}" title="${esc(r.title || r.label)}">
+        <span class="lab">${esc(r.label)}</span>
+        <span class="track"><span class="fill" style="width:${(w - pw).toFixed(1)}%"></span><span class="fill pend" style="width:${pw.toFixed(1)}%"></span></span>
+        <span class="val">${nf(r.n)}</span>
+      </button>`;
+    }).join("");
+    const legend = (opts && opts.legend)
+      ? `<p class="rq-key"><span><i style="background:#2563eb"></i>answered</span><span><i style="background:#c2410c"></i>still waiting</span></p>` : "";
+    return `<div class="rq-card"><h4>${esc(title)}</h4><p class="sub">${sub}</p><div class="rq-bars">${bars}</div>${legend}</div>`;
+  }
+
+  function renderBreakdowns() {
+    const s = state.stats;
+    const el = document.getElementById("rq-breaks");
+    const pendingOf = (rows) => rows;
+    const cards = [
+      card("What people ask about", `Keyword-matched subjects. A request can carry more than one, and ${nf(s.no_topic)} match none.`,
+        s.by_topic.map((t) => ({ label: t.topic, value: t.topic, n: t.n })), "topic"),
+      card("What the City answered", `Read from the reply. ${nf((s.by_answer.find((a) => a.kind === "No answer yet") || {}).n || 0)} have no reply at all.`,
+        s.by_answer.map((a) => ({ label: a.kind, value: a.kind, n: a.n })), "answer"),
+      card("What kind of ask it is", "Most are a plain nomination; the rest are complaints about data that already exists.",
+        s.by_ask.map((a) => ({ label: a.kind, value: a.kind, n: a.n })), "ask"),
+      card("Who it was routed to", `Top 20 of ${nf(s.agencies_total)} agencies, with the share still waiting.`,
+        s.by_agency.map((a) => ({ label: a.agency.replace(/ \([A-Z]+\)$/, ""), title: a.agency, value: a.agency, n: a.n, pending: a.pending })),
+        "agency", { legend: true }),
+      card("When they were filed", "By year of submission, with the share still unanswered.",
+        s.by_year.filter((y) => y.year >= 2014).map((y) => ({ label: String(y.year), value: String(y.year), n: y.n, pending: y.pending })),
+        "year", { legend: true }),
+    ];
+    el.innerHTML = cards.join("");
+    el.querySelectorAll(".rq-bar").forEach((b) => b.addEventListener("click", () => {
+      const k = b.dataset.key, v = b.dataset.value;
+      state[k] = state[k] === v ? "" : v;
+      if (k === "agency") document.getElementById("rq-agency").value = state.agency;
+      state.shown = PAGE;
+      renderBreakdowns(); render();
+      document.getElementById("rq-summary").scrollIntoView({ behavior: "smooth", block: "center" });
+    }));
+  }
+
+  const CHIP_LABEL = { topic: "about", answer: "answer", ask: "ask", agency: "agency", year: "filed", status: "status", q: "search" };
+  function renderChips() {
+    const el = document.getElementById("rq-chips");
+    const on = Object.keys(CHIP_LABEL).filter((k) => state[k]);
+    el.innerHTML = on.length
+      ? on.map((k) => `<button type="button" class="rq-chip" data-key="${k}"><b>${CHIP_LABEL[k]}:</b> ${esc(state[k])} ×</button>`).join("") +
+        (on.length > 1 ? `<button type="button" class="rq-chip" data-key="__all">Clear all ×</button>` : "")
+      : "";
+    el.querySelectorAll(".rq-chip").forEach((b) => b.addEventListener("click", () => {
+      const k = b.dataset.key;
+      if (k === "__all") Object.keys(CHIP_LABEL).forEach((x) => (state[x] = ""));
+      else state[k] = "";
+      document.getElementById("rq-agency").value = state.agency;
+      document.getElementById("rq-status").value = state.status;
+      document.getElementById("rq-q").value = state.q;
+      state.shown = PAGE;
+      renderBreakdowns(); render();
+    }));
+  }
+
   function render() {
+    renderChips();
     const list = state.all.filter(match);
     const slice = list.slice(0, state.shown);
     const el = document.getElementById("rq-list");
@@ -137,7 +245,7 @@
 
   fetch("data/helpdesk.json", { cache: "no-cache" }).then((r) => r.json()).then((hd) => {
     state.all = hd.requests || [];
-    const s = hd.stats || {};
+    const s = state.stats = hd.stats || {};
     const years = s.median_wait_days ? (s.median_wait_days / 365).toFixed(1) : null;
     document.getElementById("rq-figs").innerHTML = [
       [nf(s.total), `requests since ${(s.first_request || "").slice(0, 4)}`],
@@ -160,6 +268,7 @@
     document.getElementById("rq-more").addEventListener("click", () => { state.shown += PAGE; render(); });
     const p = new URLSearchParams(location.hash.slice(1));
     if (p.get("status")) { state.status = p.get("status"); document.getElementById("rq-status").value = state.status; }
+    renderBreakdowns();
     render();
   }).catch(() => { document.getElementById("rq-summary").textContent = "Couldn't load the request log."; });
 })();
