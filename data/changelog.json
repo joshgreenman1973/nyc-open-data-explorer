@@ -1,6 +1,22 @@
 {
- "generated_at": "2026-09-01T09:29:26+00:00",
+ "generated_at": "2026-09-02T09:28:18+00:00",
  "events": [
+  {
+   "id": "w3wp-dpdi",
+   "name": "NYC Parks Public Events – Upcoming 14 Days",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/w3wp-dpdi",
+   "kind": "columns_changed",
+   "date": "2026-09-02",
+   "columns_added": [],
+   "columns_removed": [
+    "enddate",
+    "pubDate",
+    "startdate"
+   ]
+  },
   {
    "id": "sxx4-xhzg",
    "name": "Public Recycling Bins",
@@ -2368,8 +2384,8 @@
   }
  ],
  "counts": {
+  "columns_changed": 4,
   "description_changed": 130,
-  "columns_changed": 3,
   "added": 6,
   "renamed": 22,
   "agency_changed": 1

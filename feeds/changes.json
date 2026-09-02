@@ -1,7 +1,23 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-01T09:29:26+00:00",
+ "generated": "2026-09-02T09:28:18+00:00",
  "items": [
+  {
+   "id": "w3wp-dpdi",
+   "name": "NYC Parks Public Events – Upcoming 14 Days",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/w3wp-dpdi",
+   "kind": "columns_changed",
+   "date": "2026-09-02",
+   "columns_added": [],
+   "columns_removed": [
+    "enddate",
+    "pubDate",
+    "startdate"
+   ]
+  },
   {
    "id": "sxx4-xhzg",
    "name": "Public Recycling Bins",
@@ -1483,21 +1499,6 @@
    "before_len": 232,
    "after_len": 231,
    "diff_at": 230
-  },
-  {
-   "id": "imfq-nf3j",
-   "name": "2020 Census Tracts (water areas included)",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/imfq-nf3j",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 361,
-   "after_len": 361,
-   "diff_at": 360
   }
  ]
 }

@@ -1,25 +1,65 @@
 {
   "title": "NYC Open Data — Finance & Budget (recently updated)",
-  "generated": "2026-09-01T09:29:26+00:00",
+  "generated": "2026-09-02T09:28:18+00:00",
   "items": [
     {
       "id": "nc67-uf89",
       "name": "Open Parking and Camera Violations",
       "category": "Finance & Budget",
       "agency": "Department of Finance (DOF)",
-      "updated": "2026-09-01T09:24:25.000Z",
+      "updated": "2026-09-02T09:19:18.000Z",
       "created": "2016-01-04T16:08:38.000Z",
-      "views": 357812,
+      "views": 357980,
       "url": "https://data.cityofnewyork.us/d/nc67-uf89"
+    },
+    {
+      "id": "i38t-6if2",
+      "name": "TAX_LOT_POLYGON",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-02T05:39:55.000Z",
+      "created": "2024-10-16T20:04:47.000Z",
+      "views": 5379,
+      "url": "https://data.cityofnewyork.us/d/i38t-6if2"
+    },
+    {
+      "id": "7qs7-yv7y",
+      "name": "TAX_LOT_POLYGON",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-02T05:39:55.000Z",
+      "created": "2024-10-16T20:05:02.000Z",
+      "views": 337,
+      "url": "https://data.cityofnewyork.us/d/7qs7-yv7y"
+    },
+    {
+      "id": "akq4-haa2",
+      "name": "TAX_BLOCK_POLYGON",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-02T02:00:59.000Z",
+      "created": "2024-10-16T19:54:16.000Z",
+      "views": 1209,
+      "url": "https://data.cityofnewyork.us/d/akq4-haa2"
+    },
+    {
+      "id": "dt48-h9kx",
+      "name": "TAX_BLOCK_POLYGON",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-02T02:00:59.000Z",
+      "created": "2024-10-16T19:54:20.000Z",
+      "views": 1015,
+      "url": "https://data.cityofnewyork.us/d/dt48-h9kx"
     },
     {
       "id": "sif6-3bej",
       "name": "TAX_LOT_FACE",
       "category": "Finance & Budget",
       "agency": "Department of Finance (DOF)",
-      "updated": "2026-09-01T01:29:14.000Z",
+      "updated": "2026-09-02T01:41:04.000Z",
       "created": "2024-10-16T20:29:39.000Z",
-      "views": 1047,
+      "views": 1051,
       "url": "https://data.cityofnewyork.us/d/sif6-3bej"
     },
     {
@@ -27,10 +67,70 @@
       "name": "TAX_LOT_FACE",
       "category": "Finance & Budget",
       "agency": "Department of Finance (DOF)",
-      "updated": "2026-09-01T01:29:14.000Z",
+      "updated": "2026-09-02T01:41:04.000Z",
       "created": "2024-10-16T20:30:14.000Z",
-      "views": 602,
+      "views": 604,
       "url": "https://data.cityofnewyork.us/d/hbxj-x5sm"
+    },
+    {
+      "id": "mdja-si6a",
+      "name": "Digital Tax Map: Air Lots",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-01T14:06:55.000Z",
+      "created": "2024-12-13T16:08:37.000Z",
+      "views": 1117,
+      "url": "https://data.cityofnewyork.us/d/mdja-si6a"
+    },
+    {
+      "id": "xsf7-3x9j",
+      "name": "Digital Tax Map: Real Estate of Utility Company (REUC) Lots",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-01T14:06:38.000Z",
+      "created": "2024-12-13T21:48:49.000Z",
+      "views": 1574,
+      "url": "https://data.cityofnewyork.us/d/xsf7-3x9j"
+    },
+    {
+      "id": "p8u6-a6it",
+      "name": "Digital Tax Map: Condominiums",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-01T14:05:56.000Z",
+      "created": "2024-12-13T15:12:49.000Z",
+      "views": 3228,
+      "url": "https://data.cityofnewyork.us/d/p8u6-a6it"
+    },
+    {
+      "id": "eguu-7ie3",
+      "name": "Digital Tax Map: Condominium Units",
+      "category": "Finance & Budget",
+      "agency": "Department of Finance (DOF)",
+      "updated": "2026-09-01T14:05:41.000Z",
+      "created": "2024-12-13T17:17:18.000Z",
+      "views": 4579,
+      "url": "https://data.cityofnewyork.us/d/eguu-7ie3"
+    },
+    {
+      "id": "a9md-ynri",
+      "name": "Civil Service List Certification",
+      "category": "Finance & Budget",
+      "agency": "Department of Citywide Administrative Services (DCAS)",
+      "updated": "2026-09-01T13:07:49.000Z",
+      "created": "2016-11-16T19:24:56.000Z",
+      "views": 1082139,
+      "url": "https://data.cityofnewyork.us/d/a9md-ynri"
+    },
+    {
+      "id": "mdcw-n682",
+      "name": "Greenbook",
+      "category": "Finance & Budget",
+      "agency": "Department of Citywide Administrative Services (DCAS)",
+      "updated": "2026-08-31T19:48:28.000Z",
+      "created": "2015-04-27T21:26:31.000Z",
+      "views": 65196,
+      "url": "https://data.cityofnewyork.us/d/mdcw-n682"
     },
     {
       "id": "rh3d-kgz3",
@@ -39,7 +139,7 @@
       "agency": "Office of the New York City Comptroller",
       "updated": "2026-08-31T14:17:44.000Z",
       "created": "2022-02-03T17:19:09.000Z",
-      "views": 2219,
+      "views": 2252,
       "url": "https://data.cityofnewyork.us/d/rh3d-kgz3"
     },
     {
@@ -49,28 +149,8 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-31T13:32:20.000Z",
       "created": "2019-02-08T17:52:04.000Z",
-      "views": 4680,
+      "views": 4681,
       "url": "https://data.cityofnewyork.us/d/f264-qcv3"
-    },
-    {
-      "id": "vx8i-nprf",
-      "name": "Civil Service List (Active)",
-      "category": "Finance & Budget",
-      "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-08-31T13:09:47.000Z",
-      "created": "2016-06-14T21:12:15.000Z",
-      "views": 3558529,
-      "url": "https://data.cityofnewyork.us/d/vx8i-nprf"
-    },
-    {
-      "id": "a9md-ynri",
-      "name": "Civil Service List Certification",
-      "category": "Finance & Budget",
-      "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-08-31T13:09:19.000Z",
-      "created": "2016-11-16T19:24:56.000Z",
-      "views": 1081492,
-      "url": "https://data.cityofnewyork.us/d/a9md-ynri"
     },
     {
       "id": "scjx-j6np",
@@ -79,7 +159,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-28T19:49:57.000Z",
       "created": "2019-07-16T18:49:01.000Z",
-      "views": 22405,
+      "views": 22479,
       "url": "https://data.cityofnewyork.us/d/scjx-j6np"
     },
     {
@@ -89,7 +169,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-28T19:36:44.000Z",
       "created": "2020-09-03T20:40:53.000Z",
-      "views": 20245,
+      "views": 20294,
       "url": "https://data.cityofnewyork.us/d/rgyu-ii48"
     },
     {
@@ -99,7 +179,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-24T15:51:07.000Z",
       "created": "2022-09-20T20:21:32.000Z",
-      "views": 2585,
+      "views": 2591,
       "url": "https://data.cityofnewyork.us/d/9jkp-n57r"
     },
     {
@@ -119,7 +199,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-24T15:50:53.000Z",
       "created": "2022-09-20T20:29:01.000Z",
-      "views": 2572,
+      "views": 2576,
       "url": "https://data.cityofnewyork.us/d/h2ic-zdws"
     },
     {
@@ -129,7 +209,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-24T15:50:53.000Z",
       "created": "2022-10-28T20:03:22.000Z",
-      "views": 1372,
+      "views": 1374,
       "url": "https://data.cityofnewyork.us/d/ws6q-gv6r"
     },
     {
@@ -139,7 +219,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-24T15:50:51.000Z",
       "created": "2022-09-20T19:57:12.000Z",
-      "views": 7091,
+      "views": 7100,
       "url": "https://data.cityofnewyork.us/d/fi59-268w"
     },
     {
@@ -149,7 +229,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-24T15:50:25.000Z",
       "created": "2022-09-20T20:09:45.000Z",
-      "views": 1925,
+      "views": 1932,
       "url": "https://data.cityofnewyork.us/d/djxg-kcfi"
     },
     {
@@ -159,7 +239,7 @@
       "agency": "Mayor's Office of Management & Budgets (OMB)",
       "updated": "2026-08-21T14:16:11.000Z",
       "created": "2018-07-12T21:16:04.000Z",
-      "views": 8381,
+      "views": 8385,
       "url": "https://data.cityofnewyork.us/d/5hjv-bjbv"
     },
     {
@@ -169,7 +249,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-18T23:12:20.000Z",
       "created": "2016-07-22T19:06:16.000Z",
-      "views": 146014,
+      "views": 146077,
       "url": "https://data.cityofnewyork.us/d/pvqr-7yc4"
     },
     {
@@ -179,7 +259,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-18T22:28:35.000Z",
       "created": "2026-08-18T18:14:43.000Z",
-      "views": 138,
+      "views": 160,
       "url": "https://data.cityofnewyork.us/d/9mwx-gamw"
     },
     {
@@ -189,7 +269,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-12T14:39:53.000Z",
       "created": "2018-03-21T14:58:38.000Z",
-      "views": 2011,
+      "views": 2017,
       "url": "https://data.cityofnewyork.us/d/jsrs-ggnx"
     },
     {
@@ -199,7 +279,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-08-12T14:37:21.000Z",
       "created": "2018-01-05T22:06:34.000Z",
-      "views": 4828,
+      "views": 4836,
       "url": "https://data.cityofnewyork.us/d/hxm3-23vy"
     },
     {
@@ -209,7 +289,7 @@
       "agency": "Office of Management and Budget (OMB)",
       "updated": "2026-08-11T16:32:44.000Z",
       "created": "2024-05-15T21:15:10.000Z",
-      "views": 2972,
+      "views": 2979,
       "url": "https://data.cityofnewyork.us/d/c99a-c5ux"
     },
     {
@@ -219,7 +299,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T15:12:23.000Z",
       "created": "2019-09-23T16:10:19.000Z",
-      "views": 6597,
+      "views": 6609,
       "url": "https://data.cityofnewyork.us/d/w5ea-ydu3"
     },
     {
@@ -229,7 +309,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:36:18.000Z",
       "created": "2013-09-23T13:14:55.000Z",
-      "views": 26239,
+      "views": 26252,
       "url": "https://data.cityofnewyork.us/d/uqqa-hym2"
     },
     {
@@ -239,7 +319,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:36:11.000Z",
       "created": "2013-09-23T13:02:32.000Z",
-      "views": 21271,
+      "views": 21294,
       "url": "https://data.cityofnewyork.us/d/nbbg-wtuz"
     },
     {
@@ -249,7 +329,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:36:02.000Z",
       "created": "2013-09-23T13:03:37.000Z",
-      "views": 25688,
+      "views": 25730,
       "url": "https://data.cityofnewyork.us/d/sv7x-dduq"
     },
     {
@@ -259,7 +339,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:35:55.000Z",
       "created": "2013-09-23T12:44:48.000Z",
-      "views": 237786,
+      "views": 238106,
       "url": "https://data.cityofnewyork.us/d/bnx9-e6tj"
     },
     {
@@ -269,7 +349,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:35:33.000Z",
       "created": "2013-09-23T13:10:32.000Z",
-      "views": 9953,
+      "views": 9962,
       "url": "https://data.cityofnewyork.us/d/fuzi-5ks9"
     },
     {
@@ -279,7 +359,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:35:29.000Z",
       "created": "2013-09-23T13:13:30.000Z",
-      "views": 27907,
+      "views": 27916,
       "url": "https://data.cityofnewyork.us/d/6y3e-jcrc"
     },
     {
@@ -289,7 +369,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:35:22.000Z",
       "created": "2013-09-23T13:11:54.000Z",
-      "views": 26797,
+      "views": 26807,
       "url": "https://data.cityofnewyork.us/d/9p4w-7npp"
     },
     {
@@ -299,7 +379,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:35:16.000Z",
       "created": "2017-01-31T20:25:55.000Z",
-      "views": 21692,
+      "views": 21719,
       "url": "https://data.cityofnewyork.us/d/pwkr-dpni"
     },
     {
@@ -309,7 +389,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:34:59.000Z",
       "created": "2013-09-23T12:57:54.000Z",
-      "views": 84800,
+      "views": 84873,
       "url": "https://data.cityofnewyork.us/d/636b-3b5g"
     },
     {
@@ -319,7 +399,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-10T13:34:41.000Z",
       "created": "2013-09-23T12:55:27.000Z",
-      "views": 75623,
+      "views": 75695,
       "url": "https://data.cityofnewyork.us/d/8h5j-fqxa"
     },
     {
@@ -329,7 +409,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-08T19:20:09.000Z",
       "created": "2013-09-16T18:19:28.000Z",
-      "views": 23382,
+      "views": 23399,
       "url": "https://data.cityofnewyork.us/d/94g4-w6xz"
     },
     {
@@ -339,7 +419,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-05T13:49:57.000Z",
       "created": "2013-09-16T18:13:12.000Z",
-      "views": 22464,
+      "views": 22497,
       "url": "https://data.cityofnewyork.us/d/7isb-wh4c"
     },
     {
@@ -349,7 +429,7 @@
       "agency": "Office of Administrative Trials and Hearings (OATH)",
       "updated": "2026-08-05T13:00:14.000Z",
       "created": "2019-02-01T17:59:46.000Z",
-      "views": 12600,
+      "views": 12620,
       "url": "https://data.cityofnewyork.us/d/y3hw-z6bm"
     },
     {
@@ -359,28 +439,8 @@
       "agency": "Conflicts of Interest Board (COIB)",
       "updated": "2026-08-03T15:30:13.000Z",
       "created": "2024-09-18T19:40:04.000Z",
-      "views": 533,
+      "views": 535,
       "url": "https://data.cityofnewyork.us/d/mhyv-6iza"
-    },
-    {
-      "id": "akq4-haa2",
-      "name": "TAX_BLOCK_POLYGON",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-02T09:39:18.000Z",
-      "created": "2024-10-16T19:54:16.000Z",
-      "views": 1205,
-      "url": "https://data.cityofnewyork.us/d/akq4-haa2"
-    },
-    {
-      "id": "dt48-h9kx",
-      "name": "TAX_BLOCK_POLYGON",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-02T09:39:18.000Z",
-      "created": "2024-10-16T19:54:20.000Z",
-      "views": 982,
-      "url": "https://data.cityofnewyork.us/d/dt48-h9kx"
     },
     {
       "id": "ce23-cck4",
@@ -389,7 +449,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-02T09:33:12.000Z",
       "created": "2024-10-16T19:53:15.000Z",
-      "views": 235,
+      "views": 238,
       "url": "https://data.cityofnewyork.us/d/ce23-cck4"
     },
     {
@@ -403,63 +463,13 @@
       "url": "https://data.cityofnewyork.us/d/mhst-xhix"
     },
     {
-      "id": "i38t-6if2",
-      "name": "TAX_LOT_POLYGON",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-01T16:14:51.000Z",
-      "created": "2024-10-16T20:04:47.000Z",
-      "views": 5356,
-      "url": "https://data.cityofnewyork.us/d/i38t-6if2"
-    },
-    {
-      "id": "7qs7-yv7y",
-      "name": "TAX_LOT_POLYGON",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-01T16:14:51.000Z",
-      "created": "2024-10-16T20:05:02.000Z",
-      "views": 335,
-      "url": "https://data.cityofnewyork.us/d/7qs7-yv7y"
-    },
-    {
-      "id": "xsf7-3x9j",
-      "name": "Digital Tax Map: Real Estate of Utility Company (REUC) Lots",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-01T14:04:30.000Z",
-      "created": "2024-12-13T21:48:49.000Z",
-      "views": 1567,
-      "url": "https://data.cityofnewyork.us/d/xsf7-3x9j"
-    },
-    {
-      "id": "p8u6-a6it",
-      "name": "Digital Tax Map: Condominiums",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-01T14:04:14.000Z",
-      "created": "2024-12-13T15:12:49.000Z",
-      "views": 3197,
-      "url": "https://data.cityofnewyork.us/d/p8u6-a6it"
-    },
-    {
-      "id": "eguu-7ie3",
-      "name": "Digital Tax Map: Condominium Units",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-08-01T14:04:04.000Z",
-      "created": "2024-12-13T17:17:18.000Z",
-      "views": 4555,
-      "url": "https://data.cityofnewyork.us/d/eguu-7ie3"
-    },
-    {
       "id": "4ptz-hmtc",
       "name": "Annual Examination Schedule of Each Fiscal Year",
       "category": "Finance & Budget",
       "agency": "Department of Citywide Administrative Services (DCAS)",
       "updated": "2026-07-22T18:57:52.000Z",
       "created": "2020-12-16T23:07:33.000Z",
-      "views": 12716,
+      "views": 12752,
       "url": "https://data.cityofnewyork.us/d/4ptz-hmtc"
     },
     {
@@ -469,7 +479,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-07-15T17:26:31.000Z",
       "created": "2023-12-18T19:18:45.000Z",
-      "views": 8147,
+      "views": 8166,
       "url": "https://data.cityofnewyork.us/d/fb86-vt7u"
     },
     {
@@ -479,7 +489,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-07-15T17:26:16.000Z",
       "created": "2023-12-18T19:32:30.000Z",
-      "views": 4220,
+      "views": 4224,
       "url": "https://data.cityofnewyork.us/d/gyhf-rsr3"
     },
     {
@@ -489,18 +499,8 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-07-15T17:25:49.000Z",
       "created": "2024-03-25T16:09:37.000Z",
-      "views": 2296,
+      "views": 2304,
       "url": "https://data.cityofnewyork.us/d/95tx-snak"
-    },
-    {
-      "id": "qj5n-h5qp",
-      "name": "Capital Projects Dashboard - Citywide Budget Spend History and Variance",
-      "category": "Finance & Budget",
-      "agency": "Mayor's Office of Operations (OPS)",
-      "updated": "2026-07-15T17:25:33.000Z",
-      "created": "2024-03-25T16:33:23.000Z",
-      "views": 2706,
-      "url": "https://data.cityofnewyork.us/d/qj5n-h5qp"
     }
   ]
 }
