@@ -1,14 +1,29 @@
 {
-  "computed_at": "2026-09-02T09:28:32+00:00",
+  "computed_at": "2026-09-03T09:28:40+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "Woman Killed in Times Square Stabbing Identified as Bank of America VP",
+      "headline": "Subway Explosion in 2024 Revealed ‘Systemwide Failures,’ Audit Finds",
       "source": "nytimes.com",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTEJVSmtxSjdVdGZKM0RCYkpZUVp6aG81OGRrekFYMVFIaDNQYjNoczlucmNVR2lSZktMZXlucGwzN29pWmhPc2xTTDhObUxSUmVHWDExTHdhYXRJVlJpR2QtS1J5SHlYVE5nc1dZc2EyTW5oZnJCQ2lteUtqNzdXeVBfWVp4UHZyQUE?oc=5",
-      "pubDate": "Tue, 01 Sep 2026 19:52:11 GMT",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOGZOX0JCOEQtWFNLM1hVc0gwWnZBSnFQMGNxa2g5UVJubWFOQW5PUFlncGJ1MG1tdWtMQUdxaWp1M0tBdE5qNVlVOVFWZnBiUzY1QklFelZGaXhmUTljcGx5dTktOERhaTdqalUzTFJ0WkQwUWcxRkhaVVhKUzlKeFFPUm0?oc=5",
+      "pubDate": "Thu, 03 Sep 2026 07:00:05 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "subway"
+      ]
+    },
+    {
+      "headline": "Woman randomly stabs 2 people in New York City’s Times Square, killing 1, then is killed by police",
+      "source": "CP24",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZTh5aTQyZU1ralVScUQ5ZUFITVRlMmV1NEZYMmJJWDRFaVdhb19xc3lFLXVzalMwUFFBZFNNSzhSR0NLV2Q0cWhWQU9aT2t1aU5EajN1cGZHaU5jVXRzMl9xYnhiSHdjZ1UtQnVveUdENGNuUlNPMHRvWHBpTHpGdmFwWmxrUERaR05KN2s1blljLU1TeVdkclFMMVJ0TVZpWmF3NXVPYXlCSVFpZjY1M3I5N0NCakdkcmhwLTlKTUhQbF82NGI4WlJxcm1YRzc2ekVtMWFR?oc=5",
+      "pubDate": "Mon, 31 Aug 2026 23:20:26 GMT",
       "topic": "Reported crime",
       "dataset_id": "qgea-i56i",
       "dataset_name": "NYPD Complaint Data Historic",
@@ -16,85 +31,7 @@
       "dataset_agency": "Police Department (NYPD)",
       "dataset_url": "https://data.cityofnewyork.us/d/qgea-i56i",
       "match_terms": [
-        "stabbing",
-        "killed in"
-      ]
-    },
-    {
-      "headline": "DHS secretary bashes New York leadership after announcing thousands of arrests in sweeping operation",
-      "source": "Yahoo",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdGRNR2Y3SmFuMGctNmQwc013eTlfeGZnWDRFRng1Vlc4VHV0NlcxeUNXbFNsVlF6anBZQUtta2xMWFYxajdaejhUdXlNT2hIbzV6ZTc5bGhTY0kwUGdQblEzRE4yM3JCanp2Rk9ZWjdVOFR1TGNvQzkwM1dpcXVaeEJ4MmE0YjlEc3F3OGV4eEUtb3d2bkdoaUxhYlM?oc=5",
-      "pubDate": "Tue, 01 Sep 2026 18:13:13 GMT",
-      "topic": "NYPD arrests",
-      "dataset_id": "8h9b-rp9u",
-      "dataset_name": "NYPD Arrests Data (Historic)",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
-      "match_terms": [
-        "arrests"
-      ]
-    },
-    {
-      "headline": "‘I Got Scared to See My Coworker Like That’: New York Farmworkers Labor Through Extreme Heat",
-      "source": "New York Focus",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUWFDME5zRld0M2pudnFscDZKSTJTY1Y3S21nMExfWWxTT0YtM3puUjAtOTduWDZNTjE4RF9TVjdkZ2NobDZfeTFGVFVNbXVBUkQ1NUJRZnQ2Mmo4N2FMWUtCUTlfdm92anRfYmFaRjVMNDRkdE45cGFyOFdPcXNhQW1jVQ?oc=5",
-      "pubDate": "Tue, 01 Sep 2026 09:00:00 GMT",
-      "topic": "Heat / hot-water complaints",
-      "dataset_id": "erm2-nwe9",
-      "dataset_name": "311 Service Requests from 2020 to Present",
-      "dataset_category": "Social Services",
-      "dataset_agency": "311",
-      "dataset_url": "https://data.cityofnewyork.us/d/erm2-nwe9",
-      "match_terms": [
-        "heat"
-      ]
-    },
-    {
-      "headline": "NYC housing crisis hits ‘DefCon 1’ as rents jump to more all-time highs",
-      "source": "New York Post",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbFZLcFJweVFhZThxNTBRNHE5XzVOX1d0WUhfekhYd3UycW9Nc21xay1NNlRVdmdWWnVHZ0N2X3BQOG5BYVhEQ2d3ZFc1aE5TaFBxcFM5WlVtYTVaY3Ytc2doQ1lwS05CajJpeWQ3SGo3QlkzVU90YXZKZ1NGWkx1RFVid3VkV09WMDlnSU1LbjE1R051T2JoM0Rta3E0dURtYW1XeEk2Z0ljTzBj?oc=5",
-      "pubDate": "Mon, 13 Jul 2026 07:00:00 GMT",
-      "topic": "Affordable housing",
-      "dataset_id": "hg8x-zxpr",
-      "dataset_name": "Affordable Housing Production by Building",
-      "dataset_category": "Housing & Development",
-      "dataset_agency": "Department of Housing Preservation and Development (HPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/hg8x-zxpr",
-      "match_terms": [
-        "housing crisis"
-      ]
-    },
-    {
-      "headline": "Times Square stabbing: Victims, suspect identified in deadly stabbings, police-involved shooting",
-      "source": "ABC7 New York",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQek1VdTNpM1loNXZxTnFOLWY0aEU4a1NYelBjdGxIRjdQcU54a0M5WU1CLTFhM0FYTWxUSGtjTGx0am5mZC16c2dJY0F1SjNneDFELXh6ZTBrXzN4elRhT3ZGZWxiQnpXNU54WU5IczlaUXNPbjBWSHdwZkVhQWtSWVFxRlpCMzlqdFZ6cWlwTXA1QVZoQmZNdnA3TC1wV3JtYjNNRHZ5dHRuUUJNVm9aa3dTcEV2YTE0THBIQ1NlRkhqQdIBxwFBVV95cUxQWWRVS3hudU10MTV0MUV3S0FZY0RkN0VmXzdweno0Ti1uN2thTHVVTGRnNURKaFpoWS0xV3RXdm1vT0xDS3plOEpPYlhSWHFOcWVFb0s1NFBJbWlqeDA1ZU45MmZ3RUw0ZG5kOXFIcllYX2FiYUk2TmoxVmdBOWZJUDNvcHoyc1hpVVEzQUd0VDBjZllQNllEc2hCYnIwMjBCZ0lBcE9sbXhYMks5UUpUWWRBcDA4cldqbk92Mk0zOW1Kd3IyOWRr?oc=5",
-      "pubDate": "Tue, 01 Sep 2026 22:41:25 GMT",
-      "topic": "Gun violence",
-      "dataset_id": "833y-fsy8",
-      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
-      "match_terms": [
-        "shooting"
-      ]
-    },
-    {
-      "headline": "New York Primary Election Results",
-      "source": "nytimes.com",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNmpIa3lvYk4xM3ljNTdfWS1zYTBhY0tQczJueGZzYW8xYWtVVGJoeUpldW9fMTZVVHlHcGJ2ZzRBOWpLOTNMMmF3MHVIS0Q4Tm94Y1lleTZiMUhCM3J1SC13TVUySVdJY0lnbk9OakNlTkl5bk81bUlMTm1zYXdhRWc3ZXFPRWVTeG1N?oc=5",
-      "pubDate": "Tue, 23 Jun 2026 07:00:00 GMT",
-      "topic": "Voter analysis",
-      "dataset_id": "psx2-aqx3",
-      "dataset_name": "Voter Analysis 2008-2018",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Campaign Finance Board (CFB)",
-      "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
-      "match_terms": [
-        "election",
-        "election results",
-        "primary"
+        "stabs"
       ]
     }
   ]
