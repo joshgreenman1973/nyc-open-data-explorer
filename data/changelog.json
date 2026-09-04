@@ -1,6 +1,17 @@
 {
- "generated_at": "2026-09-03T09:28:26+00:00",
+ "generated_at": "2026-09-04T09:27:27+00:00",
  "events": [
+  {
+   "id": "bqxa-629f",
+   "name": "2024 High Volume FHV Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bqxa-629f",
+   "kind": "added",
+   "date": "2026-09-04",
+   "summary": "These records are generated from the trip record submissions made by High Volume For-Hire Vehicle (FHV) bases."
+  },
   {
    "id": "w3wp-dpdi",
    "name": "NYC Parks Public Events – Upcoming 14 Days",
@@ -2384,9 +2395,9 @@
   }
  ],
  "counts": {
+  "added": 7,
   "columns_changed": 4,
   "description_changed": 130,
-  "added": 6,
   "renamed": 22,
   "agency_changed": 1
  }
