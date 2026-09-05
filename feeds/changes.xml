@@ -3,8 +3,22 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 04 Sep 2026 09:27:28 +0000</lastBuildDate>
+<lastBuildDate>Sat, 05 Sep 2026 09:23:31 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: Pedestrian Space Added</title>
+<link>https://data.cityofnewyork.us/d/uebm-cmjr</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/uebm-cmjr#description_changed-2026-09-05</guid>
+<pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+<description>Before: Pedestrian space added is former roadway that has been repurposed to accommodate pedestrians and to be free of vehicles. Pedestrian space can be constructed in concrete... — After: Pedestrian space are added between roadways and at sidewalk curbs to increase pedestrian safety as well as traffic calming. The added pedestrian spaces allows accessibi...</description>
+</item>
+<item>
+<title>Columns changed: Pedestrian Space Added</title>
+<link>https://data.cityofnewyork.us/d/uebm-cmjr</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/uebm-cmjr#columns_changed-2026-09-05</guid>
+<pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+<description>Columns added: City FY, Project Title, Total Former Roadbed Space. Removed: Area (acres), Area (sf), Boro, CB, Cross-street 1:, Cross-street 2:, Name, On street:, Project Type.</description>
+</item>
 <item>
 <title>New dataset: 2024 High Volume FHV Trip Data</title>
 <link>https://data.cityofnewyork.us/d/bqxa-629f</link>
@@ -690,19 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/8ugf-3d8u#description_changed-2026-05-27</guid>
 <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
 <description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
-</item>
-<item>
-<title>Description changed: 2020 Census Blocks (water areas included)</title>
-<link>https://data.cityofnewyork.us/d/wrzv-t2c4</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/wrzv-t2c4#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
-</item>
-<item>
-<title>Description changed: Capital Projects Database (CPDB) - Commitments</title>
-<link>https://data.cityofnewyork.us/d/djxg-kcfi</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/djxg-kcfi#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Executive, and Adopted Capital Budgets. To explore the data, please visit the Capital Projects Portal For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are a... — After: ...Executive, and Adopted Capital Budgets. To explore the data, please visit Capital Planning Explorer For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are ava...</description>
 </item>
 </channel></rss>

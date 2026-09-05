@@ -1,6 +1,47 @@
 {
- "generated_at": "2026-09-04T09:27:27+00:00",
+ "generated_at": "2026-09-05T09:23:30+00:00",
  "events": [
+  {
+   "id": "uebm-cmjr",
+   "name": "Pedestrian Space Added",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/uebm-cmjr",
+   "kind": "description_changed",
+   "date": "2026-09-05",
+   "before": "Pedestrian space added is former roadway that has been repurposed to accommodate pedestrians and to be free of vehicles. Pedestrian space can be constructed in concrete...",
+   "after": "Pedestrian space are added between roadways and at sidewalk curbs to increase pedestrian safety as well as traffic calming. The added pedestrian spaces allows accessibi...",
+   "before_len": 341,
+   "after_len": 235,
+   "diff_at": 18
+  },
+  {
+   "id": "uebm-cmjr",
+   "name": "Pedestrian Space Added",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/uebm-cmjr",
+   "kind": "columns_changed",
+   "date": "2026-09-05",
+   "columns_added": [
+    "City FY",
+    "Project Title",
+    "Total Former Roadbed Space"
+   ],
+   "columns_removed": [
+    "Area (acres)",
+    "Area (sf)",
+    "Boro",
+    "CB",
+    "Cross-street 1:",
+    "Cross-street 2:",
+    "Name",
+    "On street:",
+    "Project Type"
+   ]
+  },
   {
    "id": "bqxa-629f",
    "name": "2024 High Volume FHV Trip Data",
@@ -2395,9 +2436,9 @@
   }
  ],
  "counts": {
+  "description_changed": 131,
+  "columns_changed": 5,
   "added": 7,
-  "columns_changed": 4,
-  "description_changed": 130,
   "renamed": 22,
   "agency_changed": 1
  }
