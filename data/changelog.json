@@ -1,6 +1,42 @@
 {
- "generated_at": "2026-09-11T09:27:14+00:00",
+ "generated_at": "2026-09-12T09:24:09+00:00",
  "events": [
+  {
+   "id": "pitm-atqc",
+   "name": "Open Restaurant Applications (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pitm-atqc",
+   "kind": "renamed",
+   "date": "2026-09-12",
+   "before": "Open Restaurant Applications (Historic)",
+   "after": "Open Restaurant Applications (Historical)"
+  },
+  {
+   "id": "iaig-3vs5",
+   "name": "Leaning Bars (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/iaig-3vs5",
+   "kind": "renamed",
+   "date": "2026-09-12",
+   "before": "Leaning Bars (Historic)",
+   "after": "Leaning Bars (Historical)"
+  },
+  {
+   "id": "gnyq-kf2y",
+   "name": "Permitted Nonpotable Wells",
+   "agency": "Department of Health and Mental Hygiene (DOHMH)",
+   "category": "Health",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/gnyq-kf2y",
+   "kind": "agency_changed",
+   "date": "2026-09-12",
+   "before": "Department of Health and Mental Hygeine",
+   "after": "Department of Health and Mental Hygiene (DOHMH)"
+  },
   {
    "id": "uebm-cmjr",
    "name": "Pedestrian Space Added",
@@ -2436,10 +2472,10 @@
   }
  ],
  "counts": {
+  "renamed": 24,
+  "agency_changed": 2,
   "description_changed": 131,
   "columns_changed": 5,
-  "added": 7,
-  "renamed": 22,
-  "agency_changed": 1
+  "added": 7
  }
 }

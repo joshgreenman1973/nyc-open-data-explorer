@@ -1,7 +1,43 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-11T09:27:14+00:00",
+ "generated": "2026-09-12T09:24:09+00:00",
  "items": [
+  {
+   "id": "pitm-atqc",
+   "name": "Open Restaurant Applications (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pitm-atqc",
+   "kind": "renamed",
+   "date": "2026-09-12",
+   "before": "Open Restaurant Applications (Historic)",
+   "after": "Open Restaurant Applications (Historical)"
+  },
+  {
+   "id": "iaig-3vs5",
+   "name": "Leaning Bars (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/iaig-3vs5",
+   "kind": "renamed",
+   "date": "2026-09-12",
+   "before": "Leaning Bars (Historic)",
+   "after": "Leaning Bars (Historical)"
+  },
+  {
+   "id": "gnyq-kf2y",
+   "name": "Permitted Nonpotable Wells",
+   "agency": "Department of Health and Mental Hygiene (DOHMH)",
+   "category": "Health",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/gnyq-kf2y",
+   "kind": "agency_changed",
+   "date": "2026-09-12",
+   "before": "Department of Health and Mental Hygeine",
+   "after": "Department of Health and Mental Hygiene (DOHMH)"
+  },
   {
    "id": "uebm-cmjr",
    "name": "Pedestrian Space Added",
@@ -1461,51 +1497,6 @@
    "before_len": 542,
    "after_len": 540,
    "diff_at": 536
-  },
-  {
-   "id": "h2ic-zdws",
-   "name": "Capital Projects Database (CPDB) - Projects (Points)",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/h2ic-zdws",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...the sponsoring and managing agency. To explore the data, please visit the Capital Projects Portal For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are a...",
-   "after": "...the sponsoring and managing agency. To explore the data, please visit Capital Planning Explorer For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are ava...",
-   "before_len": 544,
-   "after_len": 540,
-   "diff_at": 316
-  },
-  {
-   "id": "epne-qv9x",
-   "name": "Hurricane Evacuation Zones",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/epne-qv9x",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 697,
-   "after_len": 697,
-   "diff_at": 696
-  },
-  {
-   "id": "8ugf-3d8u",
-   "name": "School Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/8ugf-3d8u",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 408,
-   "after_len": 408,
-   "diff_at": 407
   }
  ]
 }
