@@ -1,6 +1,18 @@
 {
- "generated_at": "2026-09-15T09:31:33+00:00",
+ "generated_at": "2026-09-16T09:27:22+00:00",
  "events": [
+  {
+   "id": "9hhx-gjf8",
+   "name": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
+   "kind": "renamed",
+   "date": "2026-09-16",
+   "before": "NYC Open Data Plan: Completed Civic Engagements",
+   "after": "NYC Open Data Plan: Completed Civic Engagements 2023-2025"
+  },
   {
    "id": "pitm-atqc",
    "name": "Open Restaurant Applications (Historical)",
@@ -2472,7 +2484,7 @@
   }
  ],
  "counts": {
-  "renamed": 24,
+  "renamed": 25,
   "agency_changed": 2,
   "description_changed": 131,
   "columns_changed": 5,

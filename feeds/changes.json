@@ -1,7 +1,19 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-15T09:31:33+00:00",
+ "generated": "2026-09-16T09:27:22+00:00",
  "items": [
+  {
+   "id": "9hhx-gjf8",
+   "name": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
+   "kind": "renamed",
+   "date": "2026-09-16",
+   "before": "NYC Open Data Plan: Completed Civic Engagements",
+   "after": "NYC Open Data Plan: Completed Civic Engagements 2023-2025"
+  },
   {
    "id": "pitm-atqc",
    "name": "Open Restaurant Applications (Historical)",
@@ -1482,21 +1494,6 @@
    "before_len": 181,
    "after_len": 181,
    "diff_at": 180
-  },
-  {
-   "id": "9jkp-n57r",
-   "name": "Capital Projects Database (CPDB) - Projects (Polygons)",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/9jkp-n57r",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25adopt",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26pre",
-   "before_len": 542,
-   "after_len": 540,
-   "diff_at": 536
   }
  ]
 }
