@@ -1,9 +1,24 @@
 {
-  "computed_at": "2026-09-18T09:28:00+00:00",
+  "computed_at": "2026-09-19T09:24:34+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
+    {
+      "headline": "Why Is New York Covering Up Test Scores?",
+      "source": "National Review",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaG9mcGpySnF5YXBIS0pPYWZiaDVYeE84ZTVRQnhNeFVtaUFVdU9kLUY2NEc0T0NTal9iMlhTdFNLei0tMzhEWU9tbmlkWEhfYzhEN0V3c3Nvai1QdkRPNnlfY1VRQlVXb25FV1NDR2dtVVh2LW9yQTRhcDhnQnJMdENtNGh5Z9IBiwFBVV95cUxQUDhiYjhnTTgxV1ZORVpfc1J1T0p1UXlLNTFWenE3OEtveHM1ZEpqVnowS0l5RmVKMW9BaDhCNkFHWV9NQ0FfOUx5ekZlSlhNemlJeG1mMG1zVFVWbGJXMGtCQ254V0VsMVJnX0YwOHJKY1JiVXJBNjg1LUpfa21abHNlUVc3TDdZMV9Z?oc=5",
+      "pubDate": "Fri, 18 Sep 2026 10:30:38 GMT",
+      "topic": "School quality reports",
+      "dataset_id": "dnpx-dfnc",
+      "dataset_name": "School Quality Reports Data",
+      "dataset_category": "Education",
+      "dataset_agency": "Department of Education (DOE)",
+      "dataset_url": "https://data.cityofnewyork.us/d/dnpx-dfnc",
+      "match_terms": [
+        "test scores"
+      ]
+    },
     {
       "headline": "NYC Mayor Mamdani releases 9/11 records showing officials misled New Yorkers about air quality around Ground Zero",
       "source": "CNN",
@@ -17,6 +32,36 @@
       "dataset_url": "https://data.cityofnewyork.us/d/c3uy-2p5r",
       "match_terms": [
         "air quality"
+      ]
+    },
+    {
+      "headline": "Mamdani publishes names and addresses of all NYC property owners who could be hit with new pied-à-terre tax",
+      "source": "New York Post",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTWNqSXZhejRFTFRkenJWTmpELXV3by1keXZLeFZJTmlZSkU2Q1NMdFNXbVFqLXBRY2hxaTZXdjVMYUNfVE9EdUN0RHF4REVreVFGclBTS29lQzVNeDFzNUs3b1JwMXdiUFhwb3p1bjFGcXc2MDlZSUY4aGo5c0g0UWFuYUtLbTFFS29MUDV5YUN2OWtKTEFrbjd2bFFheHZSSWlrLXZ6MllSUzdZdXM4UFdFYUZrRldYVFpr?oc=5",
+      "pubDate": "Mon, 27 Jul 2026 07:00:00 GMT",
+      "topic": "Property tax data",
+      "dataset_id": "8h5j-fqxa",
+      "dataset_name": "ACRIS - Real Property Legals",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Department of Finance (DOF)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
+      "match_terms": [
+        "pied-à-terre"
+      ]
+    },
+    {
+      "headline": "New York Is Relying on Office Conversions to Address Its Housing Crisis",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcDk2Q0pBZV9VSWJQc3EwS2J3M3p5WS1fTWZpYnp6bFRMZVMyVmdBa0QyNlJqazFDOHlWbW9XZll4THAyTGZNOG5VZ0F3RzhaWGtVYlFXY1RmTVE0THFObXppcHg5ZFJMaWh1SXlsNHJSZXU2LUJaVDdTSXl0Vm15T2ZKTXd6NDg?oc=5",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "topic": "Affordable housing",
+      "dataset_id": "hg8x-zxpr",
+      "dataset_name": "Affordable Housing Production by Building",
+      "dataset_category": "Housing & Development",
+      "dataset_agency": "Department of Housing Preservation and Development (HPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/hg8x-zxpr",
+      "match_terms": [
+        "housing crisis"
       ]
     }
   ]
