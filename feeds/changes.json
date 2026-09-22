@@ -1,7 +1,21 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-21T09:33:21+00:00",
+ "generated": "2026-09-22T09:26:44+00:00",
  "items": [
+  {
+   "id": "5tqd-u88y",
+   "name": "Local Law 251 of 2017: Published Data Asset Inventory",
+   "agency": "No agency listed",
+   "category": "Government Operations",
+   "type": "filter",
+   "url": "https://data.cityofnewyork.us/d/5tqd-u88y",
+   "kind": "columns_changed",
+   "date": "2026-09-22",
+   "columns_added": [
+    "Update: Data Change Frequency"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "9hhx-gjf8",
    "name": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
@@ -1479,21 +1493,6 @@
    "before_len": 419,
    "after_len": 419,
    "diff_at": 418
-  },
-  {
-   "id": "j3u5-usz2",
-   "name": "Congressional Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/j3u5-usz2",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 181,
-   "after_len": 181,
-   "diff_at": 180
   }
  ]
 }

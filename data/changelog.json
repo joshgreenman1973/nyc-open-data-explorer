@@ -1,6 +1,20 @@
 {
- "generated_at": "2026-09-21T09:33:21+00:00",
+ "generated_at": "2026-09-22T09:26:44+00:00",
  "events": [
+  {
+   "id": "5tqd-u88y",
+   "name": "Local Law 251 of 2017: Published Data Asset Inventory",
+   "agency": "No agency listed",
+   "category": "Government Operations",
+   "type": "filter",
+   "url": "https://data.cityofnewyork.us/d/5tqd-u88y",
+   "kind": "columns_changed",
+   "date": "2026-09-22",
+   "columns_added": [
+    "Update: Data Change Frequency"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "9hhx-gjf8",
    "name": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
@@ -2484,10 +2498,10 @@
   }
  ],
  "counts": {
+  "columns_changed": 6,
   "renamed": 25,
   "agency_changed": 2,
   "description_changed": 131,
-  "columns_changed": 5,
   "added": 7
  }
 }
