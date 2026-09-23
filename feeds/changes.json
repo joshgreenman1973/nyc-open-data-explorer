@@ -1,7 +1,22 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-22T09:26:44+00:00",
+ "generated": "2026-09-23T09:27:51+00:00",
  "items": [
+  {
+   "id": "rv63-53db",
+   "name": "DSNY Frequencies",
+   "agency": "Department of Sanitation (DSNY)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/rv63-53db",
+   "kind": "columns_changed",
+   "date": "2026-09-23",
+   "columns_added": [],
+   "columns_removed": [
+    "FREQ_EWASTE",
+    "FREQ_RESFUSEID"
+   ]
+  },
   {
    "id": "5tqd-u88y",
    "name": "Local Law 251 of 2017: Published Data Asset Inventory",
@@ -1478,21 +1493,6 @@
    "before_len": 649,
    "after_len": 649,
    "diff_at": 648
-  },
-  {
-   "id": "ige5-v6sk",
-   "name": "LION Differences File",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "file",
-   "url": "https://data.cityofnewyork.us/d/ige5-v6sk",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 419,
-   "after_len": 419,
-   "diff_at": 418
   }
  ]
 }
