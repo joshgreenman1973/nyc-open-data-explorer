@@ -1,7 +1,57 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-24T09:28:15+00:00",
+ "generated": "2026-09-25T09:28:39+00:00",
  "items": [
+  {
+   "id": "ebkm-iyma",
+   "name": "DYCD Program Sites",
+   "agency": "Department of Youth and Community Development (DYCD)",
+   "category": "Social Services",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/ebkm-iyma",
+   "kind": "columns_changed",
+   "date": "2026-09-25",
+   "columns_added": [],
+   "columns_removed": [
+    "Community Name"
+   ]
+  },
+  {
+   "id": "as9z-kwsh",
+   "name": "Street Network Changes (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/as9z-kwsh",
+   "kind": "renamed",
+   "date": "2026-09-25",
+   "before": "Street Network Changes",
+   "after": "Street Network Changes (Historical)"
+  },
+  {
+   "id": "bheb-sjfi",
+   "name": "Sidewalk Correspondences (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bheb-sjfi",
+   "kind": "renamed",
+   "date": "2026-09-25",
+   "before": "Sidewalk Correspondences",
+   "after": "Sidewalk Correspondences (Historical)"
+  },
+  {
+   "id": "9a6i-gcns",
+   "name": "Street Direction Change Requests (2019 - 2025)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9a6i-gcns",
+   "kind": "renamed",
+   "date": "2026-09-25",
+   "before": "Street Direction Change Requests (2019 - Present)",
+   "after": "Street Direction Change Requests (2019 - 2025)"
+  },
   {
    "id": "rv63-53db",
    "name": "DSNY Frequencies",
@@ -1433,66 +1483,6 @@
    "before_len": 544,
    "after_len": 540,
    "diff_at": 316
-  },
-  {
-   "id": "xn3r-zk6y",
-   "name": "2020 Community District Tabulation Areas (CDTAs)",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/xn3r-zk6y",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26A",
-   "before_len": 406,
-   "after_len": 406,
-   "diff_at": 405
-  },
-  {
-   "id": "2iga-a6mk",
-   "name": "Zoning Application Portal (ZAP) - BBL",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/2iga-a6mk",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260209",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260427",
-   "before_len": 1226,
-   "after_len": 1226,
-   "diff_at": 1223
-  },
-  {
-   "id": "5crt-au7u",
-   "name": "Community Districts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/5crt-au7u",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 666,
-   "after_len": 666,
-   "diff_at": 665
-  },
-  {
-   "id": "pikk-p9nv",
-   "name": "2020 Public Use Microdata Areas (PUMAs)",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/pikk-p9nv",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 649,
-   "after_len": 649,
-   "diff_at": 648
   }
  ]
 }

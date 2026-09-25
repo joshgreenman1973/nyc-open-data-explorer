@@ -3,8 +3,36 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Thu, 24 Sep 2026 09:28:15 +0000</lastBuildDate>
+<lastBuildDate>Fri, 25 Sep 2026 09:28:39 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: DYCD Program Sites</title>
+<link>https://data.cityofnewyork.us/d/ebkm-iyma</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/ebkm-iyma#columns_changed-2026-09-25</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+<description>Columns added: none. Removed: Community Name.</description>
+</item>
+<item>
+<title>Renamed: Street Network Changes (Historical)</title>
+<link>https://data.cityofnewyork.us/d/as9z-kwsh</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/as9z-kwsh#renamed-2026-09-25</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+<description>Was: Street Network Changes. Now: Street Network Changes (Historical).</description>
+</item>
+<item>
+<title>Renamed: Sidewalk Correspondences (Historical)</title>
+<link>https://data.cityofnewyork.us/d/bheb-sjfi</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/bheb-sjfi#renamed-2026-09-25</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+<description>Was: Sidewalk Correspondences. Now: Sidewalk Correspondences (Historical).</description>
+</item>
+<item>
+<title>Renamed: Street Direction Change Requests (2019 - 2025)</title>
+<link>https://data.cityofnewyork.us/d/9a6i-gcns</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/9a6i-gcns#renamed-2026-09-25</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+<description>Was: Street Direction Change Requests (2019 - Present). Now: Street Direction Change Requests (2019 - 2025).</description>
+</item>
 <item>
 <title>Columns changed: DSNY Frequencies</title>
 <link>https://data.cityofnewyork.us/d/rv63-53db</link>
@@ -676,33 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/fi59-268w#description_changed-2026-05-27</guid>
 <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
 <description>Before: ...the sponsoring and managing agency. To explore the data, please visit the Capital Projects Portal For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are a... — After: ...the sponsoring and managing agency. To explore the data, please visit Capital Planning Explorer For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are ava...</description>
-</item>
-<item>
-<title>Description changed: 2020 Community District Tabulation Areas (CDTAs)</title>
-<link>https://data.cityofnewyork.us/d/xn3r-zk6y</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/xn3r-zk6y#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26A</description>
-</item>
-<item>
-<title>Description changed: Zoning Application Portal (ZAP) - BBL</title>
-<link>https://data.cityofnewyork.us/d/2iga-a6mk</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/2iga-a6mk#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260209 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260427</description>
-</item>
-<item>
-<title>Description changed: Community Districts</title>
-<link>https://data.cityofnewyork.us/d/5crt-au7u</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/5crt-au7u#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
-</item>
-<item>
-<title>Description changed: 2020 Public Use Microdata Areas (PUMAs)</title>
-<link>https://data.cityofnewyork.us/d/pikk-p9nv</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/pikk-p9nv#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b</description>
 </item>
 </channel></rss>

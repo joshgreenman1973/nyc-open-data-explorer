@@ -1,6 +1,56 @@
 {
- "generated_at": "2026-09-24T09:28:14+00:00",
+ "generated_at": "2026-09-25T09:28:39+00:00",
  "events": [
+  {
+   "id": "ebkm-iyma",
+   "name": "DYCD Program Sites",
+   "agency": "Department of Youth and Community Development (DYCD)",
+   "category": "Social Services",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/ebkm-iyma",
+   "kind": "columns_changed",
+   "date": "2026-09-25",
+   "columns_added": [],
+   "columns_removed": [
+    "Community Name"
+   ]
+  },
+  {
+   "id": "as9z-kwsh",
+   "name": "Street Network Changes (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/as9z-kwsh",
+   "kind": "renamed",
+   "date": "2026-09-25",
+   "before": "Street Network Changes",
+   "after": "Street Network Changes (Historical)"
+  },
+  {
+   "id": "bheb-sjfi",
+   "name": "Sidewalk Correspondences (Historical)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bheb-sjfi",
+   "kind": "renamed",
+   "date": "2026-09-25",
+   "before": "Sidewalk Correspondences",
+   "after": "Sidewalk Correspondences (Historical)"
+  },
+  {
+   "id": "9a6i-gcns",
+   "name": "Street Direction Change Requests (2019 - 2025)",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9a6i-gcns",
+   "kind": "renamed",
+   "date": "2026-09-25",
+   "before": "Street Direction Change Requests (2019 - Present)",
+   "after": "Street Direction Change Requests (2019 - 2025)"
+  },
   {
    "id": "rv63-53db",
    "name": "DSNY Frequencies",
@@ -2513,8 +2563,8 @@
   }
  ],
  "counts": {
-  "columns_changed": 7,
-  "renamed": 25,
+  "columns_changed": 8,
+  "renamed": 28,
   "agency_changed": 2,
   "description_changed": 131,
   "added": 7
