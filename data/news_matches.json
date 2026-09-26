@@ -1,14 +1,14 @@
 {
-  "computed_at": "2026-09-25T09:28:48+00:00",
+  "computed_at": "2026-09-26T09:25:39+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "Susan Sarandon and Hannah Einbinder arrested at anti-Netanyahu protest in New York",
-      "source": "The Guardian",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdWthOGQ3aEdYWVlGRzJKN3NiYy1LY2Z2ZU1SWjRnRmo1X1V3WkQ4aC1rTHJFSzhjbUUtbFYxVzhjcTh6MC1xbHFJTVhsUXF4Y0hFSVh2MzJ2eUQxYkU5YVFyT0dOam9VV2lhdlRFV1JaQTQ2aThvVGZDOS16cHBNVmlfVGppLVFIRGdaajQ5LWthNWNvYUpUdDJMUGVhS0ZWRWJxZUhjdjlNdTRlZlNTdV9iaWxGeFZwRk02SA?oc=5",
-      "pubDate": "Fri, 25 Sep 2026 02:37:00 GMT",
+      "headline": "Two arrests made after men emerged from New York City sewers",
+      "source": "bbc.com",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKVkNoNVVPOXVLT1h4Mjd5V0JNZklOV2E4b2o1VmpxMm1UYThkSlFtQ3I1eXZQZElTZ1h0VjB6cWRHMnh6VDNkQmtDR2lvYlJsY0ZaczJ6VlZnSk0?oc=5",
+      "pubDate": "Fri, 25 Sep 2026 17:59:03 GMT",
       "topic": "NYPD arrests",
       "dataset_id": "8h9b-rp9u",
       "dataset_name": "NYPD Arrests Data (Historic)",
@@ -16,7 +16,37 @@
       "dataset_agency": "Police Department (NYPD)",
       "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
       "match_terms": [
-        "arrested"
+        "arrests"
+      ]
+    },
+    {
+      "headline": "Subway, soccer and spats: New York's Mamdani a UN week attraction",
+      "source": "reuters.com",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZUlERVFFRVVIbU4wQnB2Q3AtbENoWGxwYThqTkNFQUQ4cEU0eE90dGFIbEZTWXVUcTNUQnNOYkhPVUtuRGRTVWp6X2R4a3Y4dlFmSE5FcjlxVTRRSFdYdkJZNTlhaUF0Y3IyV1BmNzg5T2RYMnVIRFhsVWNQaWhIVG9ucEJjd05fQ0tNWHNJVVBfTHA4Uy1ZUlVkZEV2SGNtNnliTGdOS1dudUE?oc=5",
+      "pubDate": "Fri, 25 Sep 2026 23:13:56 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "subway"
+      ]
+    },
+    {
+      "headline": "Trump, Mamdani meet at Gracie Mansion during UN week, discuss affordable housing, White House press ban, safer NYC",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOM3ZPclpzdGU5Zm1iaTFURU42eHBKRWUzWUlOWEhfVUVidW1YUjBvNnd2NTdkbndvZ3dUNy1tS3JtNFA3ODZzZWpLTDlvS2ZSMlVWRUZHSDMzLXZKZW01clhGWVpOaEZaNWRoQ3VnV3B4bGRDUFFSZjdIVWc4cVlKU2lMdlFyN3ZNay1hakJKa9IBlAFBVV95cUxQSnJ0b1Q4clVOTzEzTlRHOWp1eVJBWHVFTHp6anhZUG1XVmVlRjRXYk1sd1k1UUw1Z0JsS3p5QlR6SjFzQTNxSWlOYmhyeXdPZnpRbi1HVHNZSGJfYk05bzc4Y0RnT0I2NjJ1czhVRmJpckRQYXYyT1dkSkI5S2VUbGRucVAyUXpJVU90MEd3UE5yQXVy?oc=5",
+      "pubDate": "Mon, 21 Sep 2026 10:39:52 GMT",
+      "topic": "Affordable housing",
+      "dataset_id": "hg8x-zxpr",
+      "dataset_name": "Affordable Housing Production by Building",
+      "dataset_category": "Housing & Development",
+      "dataset_agency": "Department of Housing Preservation and Development (HPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/hg8x-zxpr",
+      "match_terms": [
+        "affordable housing"
       ]
     }
   ]

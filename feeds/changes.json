@@ -1,7 +1,18 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-25T09:28:39+00:00",
+ "generated": "2026-09-26T09:25:24+00:00",
  "items": [
+  {
+   "id": "uigt-hi2k",
+   "name": "2025 For Hire Vehicles Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/uigt-hi2k",
+   "kind": "added",
+   "date": "2026-09-26",
+   "summary": "These records are generated from the For-Hire Vehicle (“FHV”) Trip Record submissions made by traditional livery, luxury, and black car bases."
+  },
   {
    "id": "ebkm-iyma",
    "name": "DYCD Program Sites",
@@ -1468,21 +1479,6 @@
    "before_len": 666,
    "after_len": 666,
    "diff_at": 665
-  },
-  {
-   "id": "fi59-268w",
-   "name": "Capital Projects Database (CPDB) - Projects",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/fi59-268w",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...the sponsoring and managing agency. To explore the data, please visit the Capital Projects Portal For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are a...",
-   "after": "...the sponsoring and managing agency. To explore the data, please visit Capital Planning Explorer For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are ava...",
-   "before_len": 544,
-   "after_len": 540,
-   "diff_at": 316
   }
  ]
 }

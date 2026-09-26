@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 25 Sep 2026 09:28:39 +0000</lastBuildDate>
+<lastBuildDate>Sat, 26 Sep 2026 09:25:24 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: 2025 For Hire Vehicles Trip Data</title>
+<link>https://data.cityofnewyork.us/d/uigt-hi2k</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/uigt-hi2k#added-2026-09-26</guid>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+<description>These records are generated from the For-Hire Vehicle (“FHV”) Trip Record submissions made by traditional livery, luxury, and black car bases.</description>
+</item>
 <item>
 <title>Columns changed: DYCD Program Sites</title>
 <link>https://data.cityofnewyork.us/d/ebkm-iyma</link>
@@ -697,12 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/mxbm-493w#description_changed-2026-05-27</guid>
 <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
 <description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202602 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202604</description>
-</item>
-<item>
-<title>Description changed: Capital Projects Database (CPDB) - Projects</title>
-<link>https://data.cityofnewyork.us/d/fi59-268w</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/fi59-268w#description_changed-2026-05-27</guid>
-<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-<description>Before: ...the sponsoring and managing agency. To explore the data, please visit the Capital Projects Portal For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are a... — After: ...the sponsoring and managing agency. To explore the data, please visit Capital Planning Explorer For additional information, please visit A Guide to The Capital Budget All previously released versions of this data are ava...</description>
 </item>
 </channel></rss>
