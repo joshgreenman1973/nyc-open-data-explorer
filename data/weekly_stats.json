@@ -1,6 +1,6 @@
 {
-  "computed_at": "2026-09-27T09:26:32+00:00",
-  "window_start": "2026-09-20T09:26:32",
+  "computed_at": "2026-09-28T09:39:16+00:00",
+  "window_start": "2026-09-21T09:39:16",
   "window_label": "the past 7 days",
   "trend_weeks": 12,
   "stats": [
@@ -8,9 +8,9 @@
       "key": "311",
       "headline": "74,200",
       "label": "311 complaints in the latest 7 full days",
-      "sub": "Most common: Illegal Parking (10,111)",
+      "sub": "Most common: Illegal Parking (8,558)",
       "trend": [
-        63761,
+        53556,
         74424,
         73939,
         74221,
@@ -25,7 +25,7 @@
       ],
       "delta_pct": -5,
       "latest_date": "2026-09-26",
-      "lag_days": 1,
+      "lag_days": 2,
       "dataset_id": "erm2-nwe9",
       "dataset_name": "311 Service Requests from 2020 to Present",
       "category": "Social Services"
@@ -59,11 +59,11 @@
     },
     {
       "key": "dob",
-      "headline": "3,782",
+      "headline": "3,781",
       "label": "DOB construction permits issued",
       "sub": "Excludes electrical and elevator filings",
       "trend": [
-        2854,
+        2046,
         3587,
         3814,
         3572,
@@ -74,11 +74,11 @@
         3704,
         2964,
         3933,
-        3782
+        3781
       ],
       "delta_pct": -4,
       "latest_date": "2026-09-25",
-      "lag_days": 2,
+      "lag_days": 3,
       "dataset_id": "rbx6-tga4",
       "dataset_name": "DOB NOW: Build – Approved Permits",
       "category": "Housing & Development"
@@ -87,7 +87,7 @@
       "key": "rest",
       "headline": "2,356",
       "label": "Restaurant inspections completed",
-      "sub": "29% earned an A grade (388 of 1,360 graded)",
+      "sub": "29% earned an A grade (262 of 911 graded)",
       "trend": [
         489,
         2299,
@@ -104,31 +104,31 @@
       ],
       "delta_pct": -4,
       "latest_date": "2026-09-23",
-      "lag_days": 4,
+      "lag_days": 5,
       "dataset_id": "43nn-pn8j",
       "dataset_name": "DOHMH NYC Restaurant Inspection Results",
       "category": "Health"
     },
     {
       "key": "catalog",
-      "headline": "235",
+      "headline": "211",
       "label": "Datasets refreshed by City agencies",
       "sub": "3,017 total datasets in the catalog",
       "trend": [
-        29,
-        19,
-        9,
-        27,
         30,
-        17,
-        8,
+        18,
+        24,
         16,
+        26,
+        17,
+        18,
+        12,
         185,
-        43,
-        101,
-        235
+        41,
+        121,
+        211
       ],
-      "delta_pct": 133,
+      "delta_pct": 74,
       "dataset_id": null,
       "dataset_name": "NYC Open Data catalog metadata",
       "category": null
