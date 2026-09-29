@@ -1,6 +1,17 @@
 {
- "generated_at": "2026-09-28T09:39:15+00:00",
+ "generated_at": "2026-09-29T09:31:07+00:00",
  "events": [
+  {
+   "id": "nkud-f3se",
+   "name": "2025 Green Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/nkud-f3se",
+   "kind": "added",
+   "date": "2026-09-29",
+   "summary": "These records are generated from the trip record submissions made by green taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "uigt-hi2k",
    "name": "2025 For Hire Vehicles Trip Data",
@@ -2574,7 +2585,7 @@
   }
  ],
  "counts": {
-  "added": 8,
+  "added": 9,
   "columns_changed": 8,
   "renamed": 28,
   "agency_changed": 2,

@@ -1,7 +1,17 @@
 {
   "title": "NYC Open Data — Newest datasets",
-  "generated": "2026-09-28T09:39:16+00:00",
+  "generated": "2026-09-29T09:31:07+00:00",
   "items": [
+    {
+      "id": "nkud-f3se",
+      "name": "2025 Green Taxi Trip Data",
+      "category": "Transportation",
+      "agency": "Taxi and Limousine Commission (TLC)",
+      "updated": "2026-09-28T16:11:29.000Z",
+      "created": "2026-09-28T15:02:37.000Z",
+      "views": 35,
+      "url": "https://data.cityofnewyork.us/d/nkud-f3se"
+    },
     {
       "id": "uigt-hi2k",
       "name": "2025 For Hire Vehicles Trip Data",
@@ -9,7 +19,7 @@
       "agency": "Taxi and Limousine Commission (TLC)",
       "updated": "2026-09-25T19:37:04.000Z",
       "created": "2026-09-25T15:28:47.000Z",
-      "views": 55,
+      "views": 68,
       "url": "https://data.cityofnewyork.us/d/uigt-hi2k"
     },
     {
@@ -19,7 +29,7 @@
       "agency": "Taxi and Limousine Commission (TLC)",
       "updated": "2026-09-02T21:37:21.000Z",
       "created": "2026-08-25T13:46:32.000Z",
-      "views": 306,
+      "views": 320,
       "url": "https://data.cityofnewyork.us/d/bqxa-629f"
     },
     {
@@ -29,7 +39,7 @@
       "agency": "Taxi and Limousine Commission (TLC)",
       "updated": "2026-08-24T18:24:06.000Z",
       "created": "2026-08-24T13:51:46.000Z",
-      "views": 326,
+      "views": 330,
       "url": "https://data.cityofnewyork.us/d/gzsz-58nf"
     },
     {
@@ -39,7 +49,7 @@
       "agency": "Taxi and Limousine Commission (TLC)",
       "updated": "2026-08-21T20:39:49.000Z",
       "created": "2026-08-20T14:47:13.000Z",
-      "views": 1053,
+      "views": 1099,
       "url": "https://data.cityofnewyork.us/d/rwwi-khbc"
     },
     {
@@ -49,7 +59,7 @@
       "agency": "Taxi and Limousine Commission (TLC)",
       "updated": "2026-08-20T14:42:30.000Z",
       "created": "2026-08-20T13:52:25.000Z",
-      "views": 343,
+      "views": 354,
       "url": "https://data.cityofnewyork.us/d/52n8-nrhw"
     },
     {
@@ -59,7 +69,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-08-18T22:28:35.000Z",
       "created": "2026-08-18T18:14:43.000Z",
-      "views": 682,
+      "views": 709,
       "url": "https://data.cityofnewyork.us/d/9mwx-gamw"
     },
     {
@@ -67,9 +77,9 @@
       "name": "NYC Parks Public Events – Upcoming 14 Days",
       "category": "Recreation",
       "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-09-27T15:13:06.000Z",
+      "updated": "2026-09-28T14:42:13.000Z",
       "created": "2026-05-01T15:39:44.000Z",
-      "views": 7598,
+      "views": 7614,
       "url": "https://data.cityofnewyork.us/d/w3wp-dpdi"
     },
     {
@@ -79,7 +89,7 @@
       "agency": "No agency listed",
       "updated": "2026-04-10T14:10:03.000Z",
       "created": "2026-04-07T14:03:48.000Z",
-      "views": 3258,
+      "views": 3294,
       "url": "https://data.cityofnewyork.us/d/35j5-n34v"
     },
     {
@@ -89,7 +99,7 @@
       "agency": "No agency listed",
       "updated": "2026-03-19T17:37:07.000Z",
       "created": "2026-02-24T19:31:08.000Z",
-      "views": 1318,
+      "views": 1325,
       "url": "https://data.cityofnewyork.us/d/qhkz-4dqm"
     },
     {
@@ -99,7 +109,7 @@
       "agency": "No agency listed",
       "updated": "2026-03-19T17:37:19.000Z",
       "created": "2026-02-24T19:09:39.000Z",
-      "views": 2078,
+      "views": 2120,
       "url": "https://data.cityofnewyork.us/d/wgnh-qwsg"
     },
     {
@@ -109,7 +119,7 @@
       "agency": "No agency listed",
       "updated": "2026-03-19T17:22:58.000Z",
       "created": "2026-02-24T19:04:32.000Z",
-      "views": 1343,
+      "views": 1347,
       "url": "https://data.cityofnewyork.us/d/naav-ygga"
     },
     {
@@ -119,7 +129,7 @@
       "agency": "No agency listed",
       "updated": "2026-03-19T17:25:41.000Z",
       "created": "2026-02-24T18:56:32.000Z",
-      "views": 1679,
+      "views": 1701,
       "url": "https://data.cityofnewyork.us/d/5mb3-padx"
     },
     {
@@ -129,7 +139,7 @@
       "agency": "No agency listed",
       "updated": "2026-03-19T17:17:40.000Z",
       "created": "2026-02-24T18:42:39.000Z",
-      "views": 1268,
+      "views": 1277,
       "url": "https://data.cityofnewyork.us/d/i2im-iqtt"
     },
     {
@@ -139,7 +149,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-07-27T15:46:25.000Z",
       "created": "2026-02-10T16:01:24.000Z",
-      "views": 4074,
+      "views": 4083,
       "url": "https://data.cityofnewyork.us/d/gdk4-mbsv"
     },
     {
@@ -149,7 +159,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-07-27T15:46:39.000Z",
       "created": "2026-02-10T15:50:49.000Z",
-      "views": 2846,
+      "views": 2858,
       "url": "https://data.cityofnewyork.us/d/pztn-9bne"
     },
     {
@@ -159,7 +169,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-07-27T15:45:36.000Z",
       "created": "2026-02-10T15:45:48.000Z",
-      "views": 143985,
+      "views": 144043,
       "url": "https://data.cityofnewyork.us/d/5ucz-vwe8"
     },
     {
@@ -169,7 +179,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-03-12T16:35:39.000Z",
       "created": "2026-02-10T14:34:00.000Z",
-      "views": 4602,
+      "views": 4612,
       "url": "https://data.cityofnewyork.us/d/m5vz-tzqv"
     },
     {
@@ -179,7 +189,7 @@
       "agency": "Department of Finance (DOF)",
       "updated": "2026-03-12T22:48:17.000Z",
       "created": "2026-01-30T15:50:31.000Z",
-      "views": 1659,
+      "views": 1661,
       "url": "https://data.cityofnewyork.us/d/8zf9-spf8"
     },
     {
@@ -189,7 +199,7 @@
       "agency": "No agency listed",
       "updated": "2026-08-28T14:06:22.000Z",
       "created": "2026-01-13T21:01:51.000Z",
-      "views": 690,
+      "views": 701,
       "url": "https://data.cityofnewyork.us/d/wh8n-imgd"
     },
     {
@@ -197,9 +207,9 @@
       "name": "Bicycle and Pedestrian Counts",
       "category": "Transportation",
       "agency": "No agency listed",
-      "updated": "2026-09-27T12:10:38.000Z",
+      "updated": "2026-09-28T12:21:18.000Z",
       "created": "2025-12-30T18:46:52.000Z",
-      "views": 4193,
+      "views": 4240,
       "url": "https://data.cityofnewyork.us/d/ct66-47at"
     },
     {
@@ -207,9 +217,9 @@
       "name": "Bicycle and Pedestrian Count Sensors",
       "category": "Transportation",
       "agency": "No agency listed",
-      "updated": "2026-09-27T12:00:15.000Z",
+      "updated": "2026-09-28T12:00:15.000Z",
       "created": "2025-12-26T22:14:25.000Z",
-      "views": 1494,
+      "views": 1514,
       "url": "https://data.cityofnewyork.us/d/6up2-gnw8"
     },
     {
@@ -219,7 +229,7 @@
       "agency": "No agency listed",
       "updated": "2025-12-24T18:19:08.000Z",
       "created": "2025-12-22T16:31:11.000Z",
-      "views": 12358,
+      "views": 12411,
       "url": "https://data.cityofnewyork.us/d/76ig-c548"
     },
     {
@@ -229,7 +239,7 @@
       "agency": "Campaign Finance Board (CFB)",
       "updated": "2025-12-19T16:48:27.000Z",
       "created": "2025-12-19T16:41:38.000Z",
-      "views": 4523,
+      "views": 4544,
       "url": "https://data.cityofnewyork.us/d/rixx-fc37"
     },
     {
@@ -239,7 +249,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-09-15T13:00:14.000Z",
       "created": "2025-12-18T19:32:19.000Z",
-      "views": 3968,
+      "views": 3993,
       "url": "https://data.cityofnewyork.us/d/aq7i-eu5q"
     },
     {
@@ -249,7 +259,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-09-15T13:00:23.000Z",
       "created": "2025-12-18T19:27:48.000Z",
-      "views": 507,
+      "views": 514,
       "url": "https://data.cityofnewyork.us/d/ag7h-2pg6"
     },
     {
@@ -259,7 +269,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-09-15T13:00:23.000Z",
       "created": "2025-12-18T17:24:31.000Z",
-      "views": 1630,
+      "views": 1645,
       "url": "https://data.cityofnewyork.us/d/kb2e-tjy3"
     },
     {
@@ -269,7 +279,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2025-12-09T22:08:09.000Z",
       "created": "2025-12-09T21:58:59.000Z",
-      "views": 1864,
+      "views": 1875,
       "url": "https://data.cityofnewyork.us/d/6ztr-wgff"
     },
     {
@@ -299,7 +309,7 @@
       "agency": "Office of Technology and Innovation (OTI)",
       "updated": "2025-12-04T15:57:08.000Z",
       "created": "2025-12-04T15:45:37.000Z",
-      "views": 976,
+      "views": 981,
       "url": "https://data.cityofnewyork.us/d/x748-37q7"
     },
     {
@@ -309,7 +319,7 @@
       "agency": "Department of Education (DOE)",
       "updated": "2025-11-12T20:24:32.000Z",
       "created": "2025-11-12T16:46:43.000Z",
-      "views": 523,
+      "views": 526,
       "url": "https://data.cityofnewyork.us/d/2t89-756w"
     },
     {
@@ -319,7 +329,7 @@
       "agency": "Department of Education (DOE)",
       "updated": "2025-11-06T18:02:14.000Z",
       "created": "2025-11-06T17:56:13.000Z",
-      "views": 536,
+      "views": 537,
       "url": "https://data.cityofnewyork.us/d/npwk-bcm6"
     },
     {
@@ -329,7 +339,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-09-07T15:00:19.000Z",
       "created": "2025-10-31T17:47:31.000Z",
-      "views": 6101,
+      "views": 6123,
       "url": "https://data.cityofnewyork.us/d/vy5i-a666"
     },
     {
@@ -339,7 +349,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-09-07T15:01:55.000Z",
       "created": "2025-10-31T17:14:01.000Z",
-      "views": 6861,
+      "views": 6874,
       "url": "https://data.cityofnewyork.us/d/nibs-na6y"
     },
     {
@@ -357,9 +367,9 @@
       "name": "Street Closures due to Construction Activities by Block and Intersection",
       "category": "Transportation",
       "agency": "No agency listed",
-      "updated": "2026-09-21T11:51:46.000Z",
+      "updated": "2026-09-28T11:51:22.000Z",
       "created": "2025-10-28T20:39:53.000Z",
-      "views": 2378,
+      "views": 2390,
       "url": "https://data.cityofnewyork.us/d/ezy6-djsf"
     },
     {
@@ -369,7 +379,7 @@
       "agency": "NYC Service",
       "updated": "2025-11-24T15:31:30.000Z",
       "created": "2025-10-27T14:50:04.000Z",
-      "views": 276,
+      "views": 290,
       "url": "https://data.cityofnewyork.us/d/irna-apch"
     },
     {
@@ -379,7 +389,7 @@
       "agency": "Department of Education (DOE)",
       "updated": "2025-10-23T17:01:22.000Z",
       "created": "2025-10-23T16:33:01.000Z",
-      "views": 3603,
+      "views": 3609,
       "url": "https://data.cityofnewyork.us/d/mg8s-7r2b"
     },
     {
@@ -389,7 +399,7 @@
       "agency": "Department of Education (DOE)",
       "updated": "2025-11-06T22:13:26.000Z",
       "created": "2025-10-22T20:22:02.000Z",
-      "views": 447,
+      "views": 451,
       "url": "https://data.cityofnewyork.us/d/cfuy-6eha"
     },
     {
@@ -399,7 +409,7 @@
       "agency": "NYC Parks",
       "updated": "2026-07-01T16:04:11.000Z",
       "created": "2025-10-17T15:14:23.000Z",
-      "views": 418,
+      "views": 428,
       "url": "https://data.cityofnewyork.us/d/s9bk-jdih"
     },
     {
@@ -409,7 +419,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-08-12T22:11:15.000Z",
       "created": "2025-10-15T14:32:44.000Z",
-      "views": 669,
+      "views": 672,
       "url": "https://data.cityofnewyork.us/d/eph5-4i28"
     },
     {
@@ -429,7 +439,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-08-06T16:05:53.000Z",
       "created": "2025-10-02T14:23:45.000Z",
-      "views": 591,
+      "views": 596,
       "url": "https://data.cityofnewyork.us/d/qn3b-9few"
     },
     {
@@ -439,7 +449,7 @@
       "agency": "Department of Environmental Protection (DEP)",
       "updated": "2026-08-06T16:05:53.000Z",
       "created": "2025-10-02T14:10:59.000Z",
-      "views": 915,
+      "views": 918,
       "url": "https://data.cityofnewyork.us/d/drep-uzs7"
     },
     {
@@ -449,7 +459,7 @@
       "agency": "Department of Small Business Services (SBS)",
       "updated": "2025-09-30T18:25:33.000Z",
       "created": "2025-09-30T15:49:41.000Z",
-      "views": 1599,
+      "views": 1606,
       "url": "https://data.cityofnewyork.us/d/hzd8-k2vv"
     },
     {
@@ -469,7 +479,7 @@
       "agency": "Mayor's Office of Climate and Environmental Justice (MOCEJ)",
       "updated": "2025-09-16T16:57:15.000Z",
       "created": "2025-09-16T18:01:18.000Z",
-      "views": 1363,
+      "views": 1373,
       "url": "https://data.cityofnewyork.us/d/9pim-syj6"
     },
     {
@@ -479,7 +489,7 @@
       "agency": "Mayor's Office of Climate and Environmental Justice (MOCEJ)",
       "updated": "2025-09-16T16:57:15.000Z",
       "created": "2025-09-16T16:53:13.000Z",
-      "views": 705,
+      "views": 709,
       "url": "https://data.cityofnewyork.us/d/rf9r-c4pz"
     },
     {
@@ -489,18 +499,8 @@
       "agency": "Mayor's Office of Climate and Environmental Justice (MOCEJ)",
       "updated": "2025-09-16T16:49:59.000Z",
       "created": "2025-09-16T16:52:03.000Z",
-      "views": 627,
+      "views": 632,
       "url": "https://data.cityofnewyork.us/d/6jtr-t483"
-    },
-    {
-      "id": "ek8y-fsqz",
-      "name": "Sea Level Rise Maps (2080s 100-year Floodplain)",
-      "category": "Environment",
-      "agency": "Mayor's Office of Climate and Environmental Justice (MOCEJ)",
-      "updated": "2025-09-16T16:49:59.000Z",
-      "created": "2025-09-16T16:37:31.000Z",
-      "views": 1742,
-      "url": "https://data.cityofnewyork.us/d/ek8y-fsqz"
     }
   ]
 }

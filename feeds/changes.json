@@ -1,7 +1,18 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-28T09:39:16+00:00",
+ "generated": "2026-09-29T09:31:07+00:00",
  "items": [
+  {
+   "id": "nkud-f3se",
+   "name": "2025 Green Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/nkud-f3se",
+   "kind": "added",
+   "date": "2026-09-29",
+   "summary": "These records are generated from the trip record submissions made by green taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "uigt-hi2k",
    "name": "2025 For Hire Vehicles Trip Data",
@@ -1464,21 +1475,6 @@
    "before_len": 544,
    "after_len": 544,
    "diff_at": 543
-  },
-  {
-   "id": "mxbm-493w",
-   "name": "Georeferenced NYC Zoning Maps",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "file",
-   "url": "https://data.cityofnewyork.us/d/mxbm-493w",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202602",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202604",
-   "before_len": 666,
-   "after_len": 666,
-   "diff_at": 665
   }
  ]
 }
