@@ -1,7 +1,66 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-09-29T09:31:07+00:00",
+ "generated": "2026-09-30T09:30:12+00:00",
  "items": [
+  {
+   "id": "hzd8-k2vv",
+   "name": "Business Improvement District (BID) Trends Report (FY25)",
+   "agency": "Department of Small Business Services (SBS)",
+   "category": "Business",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+   "kind": "renamed",
+   "date": "2026-09-30",
+   "before": "Business Improvement District (BID) Trends Report (FY24)",
+   "after": "Business Improvement District (BID) Trends Report (FY25)"
+  },
+  {
+   "id": "hzd8-k2vv",
+   "name": "Business Improvement District (BID) Trends Report (FY25)",
+   "agency": "Department of Small Business Services (SBS)",
+   "category": "Business",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+   "kind": "description_changed",
+   "date": "2026-09-30",
+   "before": "",
+   "after": "Business improvement district (BID) program/service output and expense data from FY25.",
+   "before_len": 0,
+   "after_len": 86,
+   "diff_at": 0
+  },
+  {
+   "id": "hzd8-k2vv",
+   "name": "Business Improvement District (BID) Trends Report (FY25)",
+   "agency": "Department of Small Business Services (SBS)",
+   "category": "Business",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+   "kind": "columns_changed",
+   "date": "2026-09-30",
+   "columns_added": [
+    "Types of duties assigned to sanitation workers"
+   ],
+   "columns_removed": [
+    "BID provides supplemental streetscape and beautification services",
+    "Occupied storefronts",
+    "Shares G&A",
+    "Total storefronts",
+    "Type of duties assigned to sanitation staff",
+    "Vacant storefronts"
+   ]
+  },
+  {
+   "id": "mzcd-fznk",
+   "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mzcd-fznk",
+   "kind": "added",
+   "date": "2026-09-30",
+   "summary": "The Resiliency Exposure Forecast for Tree Canopy projects canopy coverage in acres across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055)."
+  },
   {
    "id": "nkud-f3se",
    "name": "2025 Green Taxi Trip Data",
@@ -1415,66 +1474,6 @@
    "before_len": 406,
    "after_len": 406,
    "diff_at": 405
-  },
-  {
-   "id": "mm69-vrje",
-   "name": "Zoning GIS Data: Geodatabase",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "file",
-   "url": "https://data.cityofnewyork.us/d/mm69-vrje",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202602",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202604",
-   "before_len": 351,
-   "after_len": 351,
-   "diff_at": 350
-  },
-  {
-   "id": "hgx4-8ukb",
-   "name": "Zoning Application Portal (ZAP) - Project Data",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/hgx4-8ukb",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260209",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260427",
-   "before_len": 1226,
-   "after_len": 1226,
-   "diff_at": 1223
-  },
-  {
-   "id": "y76i-bdw7",
-   "name": "Police Precincts",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/y76i-bdw7",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 157,
-   "after_len": 157,
-   "diff_at": 156
-  },
-  {
-   "id": "wmsu-5muw",
-   "name": "2020 Census Blocks",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/wmsu-5muw",
-   "kind": "description_changed",
-   "date": "2026-05-27",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26a",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
-   "before_len": 544,
-   "after_len": 544,
-   "diff_at": 543
   }
  ]
 }

@@ -1,6 +1,65 @@
 {
- "generated_at": "2026-09-29T09:31:07+00:00",
+ "generated_at": "2026-09-30T09:30:12+00:00",
  "events": [
+  {
+   "id": "hzd8-k2vv",
+   "name": "Business Improvement District (BID) Trends Report (FY25)",
+   "agency": "Department of Small Business Services (SBS)",
+   "category": "Business",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+   "kind": "renamed",
+   "date": "2026-09-30",
+   "before": "Business Improvement District (BID) Trends Report (FY24)",
+   "after": "Business Improvement District (BID) Trends Report (FY25)"
+  },
+  {
+   "id": "hzd8-k2vv",
+   "name": "Business Improvement District (BID) Trends Report (FY25)",
+   "agency": "Department of Small Business Services (SBS)",
+   "category": "Business",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+   "kind": "description_changed",
+   "date": "2026-09-30",
+   "before": "",
+   "after": "Business improvement district (BID) program/service output and expense data from FY25.",
+   "before_len": 0,
+   "after_len": 86,
+   "diff_at": 0
+  },
+  {
+   "id": "hzd8-k2vv",
+   "name": "Business Improvement District (BID) Trends Report (FY25)",
+   "agency": "Department of Small Business Services (SBS)",
+   "category": "Business",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+   "kind": "columns_changed",
+   "date": "2026-09-30",
+   "columns_added": [
+    "Types of duties assigned to sanitation workers"
+   ],
+   "columns_removed": [
+    "BID provides supplemental streetscape and beautification services",
+    "Occupied storefronts",
+    "Shares G&A",
+    "Total storefronts",
+    "Type of duties assigned to sanitation staff",
+    "Vacant storefronts"
+   ]
+  },
+  {
+   "id": "mzcd-fznk",
+   "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mzcd-fznk",
+   "kind": "added",
+   "date": "2026-09-30",
+   "summary": "The Resiliency Exposure Forecast for Tree Canopy projects canopy coverage in acres across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055)."
+  },
   {
    "id": "nkud-f3se",
    "name": "2025 Green Taxi Trip Data",
@@ -2585,10 +2644,10 @@
   }
  ],
  "counts": {
-  "added": 9,
-  "columns_changed": 8,
-  "renamed": 28,
-  "agency_changed": 2,
-  "description_changed": 131
+  "renamed": 29,
+  "description_changed": 132,
+  "columns_changed": 9,
+  "added": 10,
+  "agency_changed": 2
  }
 }
