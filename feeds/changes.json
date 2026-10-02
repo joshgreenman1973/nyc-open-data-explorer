@@ -1,7 +1,81 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-01T09:31:47+00:00",
+ "generated": "2026-10-02T15:45:55+00:00",
  "items": [
+  {
+   "id": "t4f2-8md7",
+   "name": "Bus Stop Shelters",
+   "agency": "NYC Department of Transportation",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/t4f2-8md7",
+   "kind": "description_changed",
+   "date": "2026-10-02",
+   "before": "This dataset contains the location of Bus Stop Shelters",
+   "after": "This dataset contains the location of Bus Stop Shelters.",
+   "before_len": 55,
+   "after_len": 56,
+   "diff_at": 55
+  },
+  {
+   "id": "t4f2-8md7",
+   "name": "Bus Stop Shelters",
+   "agency": "NYC Department of Transportation",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/t4f2-8md7",
+   "kind": "columns_changed",
+   "date": "2026-10-02",
+   "columns_added": [
+    "Borough Boundaries",
+    "BusStopID",
+    "City Council Districts",
+    "Community Districts",
+    "Police Precincts",
+    "geometry"
+   ],
+   "columns_removed": [
+    "the_geom"
+   ]
+  },
+  {
+   "id": "9hhx-gjf8",
+   "name": "NYC Open Data Plan: Historical Civic Engagements 2023-2025",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
+   "kind": "renamed",
+   "date": "2026-10-02",
+   "before": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
+   "after": "NYC Open Data Plan: Historical Civic Engagements 2023-2025"
+  },
+  {
+   "id": "9hhx-gjf8",
+   "name": "NYC Open Data Plan: Historical Civic Engagements 2023-2025",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
+   "kind": "description_changed",
+   "date": "2026-10-02",
+   "before": "NOTE: To review the latest plan, make sure to filter the \"Report Year\" column to the latest year. This is a list of civic engagement activities report...",
+   "after": "This is a list of civic engagement activities reported by city agencies for the purpose of providing context, spreading awareness, and increasing the ...",
+   "before_len": 477,
+   "after_len": 379,
+   "diff_at": 0
+  },
+  {
+   "id": "irx2-vgm4",
+   "name": "2025 Yellow Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/irx2-vgm4",
+   "kind": "added",
+   "date": "2026-10-02",
+   "summary": "These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "dbdt-5s7j",
    "name": "Housing Database by Community District",
@@ -1392,81 +1466,6 @@
    "before_len": 283,
    "after_len": 477,
    "diff_at": 192
-  },
-  {
-   "id": "usep-8jbt",
-   "name": "NYC Citywide Rolling Calendar Sales",
-   "agency": "Department of Finance (DOF)",
-   "category": "Uncategorized",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/usep-8jbt",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "",
-   "after": "This dataset includes all recorded sales within New York City over the prior twelve-month period. This dataset is updated around the 15th of the month...",
-   "before_len": 0,
-   "after_len": 206,
-   "diff_at": 0
-  },
-  {
-   "id": "w3wp-dpdi",
-   "name": "NYC Parks Public Events – Upcoming 14 Days",
-   "agency": "Department of Parks and Recreation (DPR)",
-   "category": "Recreation",
-   "type": "href",
-   "url": "https://data.cityofnewyork.us/d/w3wp-dpdi",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "...events taking place on NYC Parks properties that are open to the public.",
-   "after": "...events taking place on NYC Parks properties that are open to the public. Data Dictionary available here .",
-   "before_len": 107,
-   "after_len": 140,
-   "diff_at": 107
-  },
-  {
-   "id": "c99a-c5ux",
-   "name": "NYC Climate Budgeting Report: Climate Alignment Assessment and Capital Climate Investments",
-   "agency": "Office of Management and Budget (OMB)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/c99a-c5ux",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "This dataset rates all projects in the capital budget with over $50,000 with their climate alignment and categorizes investments that are related to climate. Amounts are in thousands. This dataset will be upda...",
-   "after": "This dataset rates all projects in the capital budget with their climate alignment and categorizes investments that are related to climate. Amounts are in thousands. This dataset will be updated once a year du...",
-   "before_len": 565,
-   "after_len": 586,
-   "diff_at": 59
-  },
-  {
-   "id": "vhtt-kpwy",
-   "name": "DCLA Materials For The Arts - Donor Information",
-   "agency": "Department of Cultural Affairs (DCLA)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/vhtt-kpwy",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "Data regarding donations processed through Materials For The Arts (MFTA).",
-   "after": "Data is listing of donor / donation information by type, uniqueness, weight of accumulated donations and their value.",
-   "before_len": 73,
-   "after_len": 117,
-   "diff_at": 5
-  },
-  {
-   "id": "yvbp-zcpt",
-   "name": "NYC Climate Budgeting Report: New Climate Investments And Reallocations In Executive Plan",
-   "agency": "Office of Management and Budget (OMB)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/yvbp-zcpt",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "...Budget. This data can be used to create visualizations similar to the tables featured in the Climate Investments section of the FY25 New York City Climate Budgeting publication (https://www.nyc.gov/assets/omb/downloads/p...",
-   "after": "...Budget. This data can be used to create visualizations similar to the charts featured in the Climate Investments section of the latest New York City Climate “Funding Allocations” ( https://www.nyc.gov/content/omb/pages/w...",
-   "before_len": 638,
-   "after_len": 647,
-   "diff_at": 389
   }
  ]
 }

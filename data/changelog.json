@@ -1,6 +1,80 @@
 {
- "generated_at": "2026-10-01T09:31:47+00:00",
+ "generated_at": "2026-10-02T15:45:55+00:00",
  "events": [
+  {
+   "id": "t4f2-8md7",
+   "name": "Bus Stop Shelters",
+   "agency": "NYC Department of Transportation",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/t4f2-8md7",
+   "kind": "description_changed",
+   "date": "2026-10-02",
+   "before": "This dataset contains the location of Bus Stop Shelters",
+   "after": "This dataset contains the location of Bus Stop Shelters.",
+   "before_len": 55,
+   "after_len": 56,
+   "diff_at": 55
+  },
+  {
+   "id": "t4f2-8md7",
+   "name": "Bus Stop Shelters",
+   "agency": "NYC Department of Transportation",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/t4f2-8md7",
+   "kind": "columns_changed",
+   "date": "2026-10-02",
+   "columns_added": [
+    "Borough Boundaries",
+    "BusStopID",
+    "City Council Districts",
+    "Community Districts",
+    "Police Precincts",
+    "geometry"
+   ],
+   "columns_removed": [
+    "the_geom"
+   ]
+  },
+  {
+   "id": "9hhx-gjf8",
+   "name": "NYC Open Data Plan: Historical Civic Engagements 2023-2025",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
+   "kind": "renamed",
+   "date": "2026-10-02",
+   "before": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
+   "after": "NYC Open Data Plan: Historical Civic Engagements 2023-2025"
+  },
+  {
+   "id": "9hhx-gjf8",
+   "name": "NYC Open Data Plan: Historical Civic Engagements 2023-2025",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
+   "kind": "description_changed",
+   "date": "2026-10-02",
+   "before": "NOTE: To review the latest plan, make sure to filter the \"Report Year\" column to the latest year. This is a list of civic engagement activities report...",
+   "after": "This is a list of civic engagement activities reported by city agencies for the purpose of providing context, spreading awareness, and increasing the ...",
+   "before_len": 477,
+   "after_len": 379,
+   "diff_at": 0
+  },
+  {
+   "id": "irx2-vgm4",
+   "name": "2025 Yellow Taxi Trip Data",
+   "agency": "Taxi and Limousine Commission (TLC)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/irx2-vgm4",
+   "kind": "added",
+   "date": "2026-10-02",
+   "summary": "These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs)."
+  },
   {
    "id": "dbdt-5s7j",
    "name": "Housing Database by Community District",
@@ -2877,10 +2951,10 @@
   }
  ],
  "counts": {
-  "description_changed": 139,
-  "columns_changed": 16,
-  "added": 12,
-  "renamed": 29,
+  "description_changed": 141,
+  "columns_changed": 17,
+  "renamed": 30,
+  "added": 13,
   "agency_changed": 2
  }
 }

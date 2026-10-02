@@ -3,8 +3,43 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Thu, 01 Oct 2026 09:31:47 +0000</lastBuildDate>
+<lastBuildDate>Fri, 02 Oct 2026 15:45:55 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: Bus Stop Shelters</title>
+<link>https://data.cityofnewyork.us/d/t4f2-8md7</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/t4f2-8md7#description_changed-2026-10-02</guid>
+<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: This dataset contains the location of Bus Stop Shelters — After: This dataset contains the location of Bus Stop Shelters.</description>
+</item>
+<item>
+<title>Columns changed: Bus Stop Shelters</title>
+<link>https://data.cityofnewyork.us/d/t4f2-8md7</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/t4f2-8md7#columns_changed-2026-10-02</guid>
+<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Borough Boundaries, BusStopID, City Council Districts, Community Districts, Police Precincts, geometry. Removed: the_geom.</description>
+</item>
+<item>
+<title>Renamed: NYC Open Data Plan: Historical Civic Engagements 2023-2025</title>
+<link>https://data.cityofnewyork.us/d/9hhx-gjf8</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/9hhx-gjf8#renamed-2026-10-02</guid>
+<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+<description>Was: NYC Open Data Plan: Completed Civic Engagements 2023-2025. Now: NYC Open Data Plan: Historical Civic Engagements 2023-2025.</description>
+</item>
+<item>
+<title>Description changed: NYC Open Data Plan: Historical Civic Engagements 2023-2025</title>
+<link>https://data.cityofnewyork.us/d/9hhx-gjf8</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/9hhx-gjf8#description_changed-2026-10-02</guid>
+<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: NOTE: To review the latest plan, make sure to filter the "Report Year" column to the latest year. This is a list of civic engagement activities report... — After: This is a list of civic engagement activities reported by city agencies for the purpose of providing context, spreading awareness, and increasing the ...</description>
+</item>
+<item>
+<title>New dataset: 2025 Yellow Taxi Trip Data</title>
+<link>https://data.cityofnewyork.us/d/irx2-vgm4</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/irx2-vgm4#added-2026-10-02</guid>
+<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+<description>These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs).</description>
+</item>
 <item>
 <title>Description changed: Housing Database by Community District</title>
 <link>https://data.cityofnewyork.us/d/dbdt-5s7j</link>
@@ -669,40 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/qu8g-sxqf#description_changed-2026-06-03</guid>
 <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
 <description>Before: ...extended at the Commissioner’s discretion. For more information visit DCAS’ “Work for the City” webpage at: https://www1.nyc.gov/site/dcas/employment/take-an-exam.page. — After: ...extended at the Commissioner’s discretion. For more information visit DCAS’ “How Can You Find Upcoming Exams” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page. For any questions about th...</description>
-</item>
-<item>
-<title>Description changed: NYC Citywide Rolling Calendar Sales</title>
-<link>https://data.cityofnewyork.us/d/usep-8jbt</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/usep-8jbt#description_changed-2026-06-03</guid>
-<pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before:  — After: This dataset includes all recorded sales within New York City over the prior twelve-month period. This dataset is updated around the 15th of the month...</description>
-</item>
-<item>
-<title>Description changed: NYC Parks Public Events – Upcoming 14 Days</title>
-<link>https://data.cityofnewyork.us/d/w3wp-dpdi</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/w3wp-dpdi#description_changed-2026-06-03</guid>
-<pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before: ...events taking place on NYC Parks properties that are open to the public. — After: ...events taking place on NYC Parks properties that are open to the public. Data Dictionary available here .</description>
-</item>
-<item>
-<title>Description changed: NYC Climate Budgeting Report: Climate Alignment Assessment and Capital Climate Investments</title>
-<link>https://data.cityofnewyork.us/d/c99a-c5ux</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/c99a-c5ux#description_changed-2026-06-03</guid>
-<pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before: This dataset rates all projects in the capital budget with over $50,000 with their climate alignment and categorizes investments that are related to climate. Amounts are in thousands. This dataset will be upda... — After: This dataset rates all projects in the capital budget with their climate alignment and categorizes investments that are related to climate. Amounts are in thousands. This dataset will be updated once a year du...</description>
-</item>
-<item>
-<title>Description changed: DCLA Materials For The Arts - Donor Information</title>
-<link>https://data.cityofnewyork.us/d/vhtt-kpwy</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/vhtt-kpwy#description_changed-2026-06-03</guid>
-<pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before: Data regarding donations processed through Materials For The Arts (MFTA). — After: Data is listing of donor / donation information by type, uniqueness, weight of accumulated donations and their value.</description>
-</item>
-<item>
-<title>Description changed: NYC Climate Budgeting Report: New Climate Investments And Reallocations In Executive Plan</title>
-<link>https://data.cityofnewyork.us/d/yvbp-zcpt</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/yvbp-zcpt#description_changed-2026-06-03</guid>
-<pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Budget. This data can be used to create visualizations similar to the tables featured in the Climate Investments section of the FY25 New York City Climate Budgeting publication (https://www.nyc.gov/assets/omb/downloads/p... — After: ...Budget. This data can be used to create visualizations similar to the charts featured in the Climate Investments section of the latest New York City Climate “Funding Allocations” ( https://www.nyc.gov/content/omb/pages/w...</description>
 </item>
 </channel></rss>
