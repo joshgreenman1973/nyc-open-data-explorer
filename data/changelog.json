@@ -1,6 +1,20 @@
 {
- "generated_at": "2026-10-04T14:47:21+00:00",
+ "generated_at": "2026-10-05T18:23:39+00:00",
  "events": [
+  {
+   "id": "phvi-damg",
+   "name": "NYCHA Public Housing Developments",
+   "agency": "New York City Housing Authority (NYCHA)",
+   "category": "Housing & Development",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/phvi-damg",
+   "kind": "columns_changed",
+   "date": "2026-10-05",
+   "columns_added": [
+    "PROGRAM"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "t4f2-8md7",
    "name": "Bus Stop Shelters",
@@ -2951,8 +2965,8 @@
   }
  ],
  "counts": {
+  "columns_changed": 18,
   "description_changed": 141,
-  "columns_changed": 17,
   "renamed": 30,
   "added": 13,
   "agency_changed": 2

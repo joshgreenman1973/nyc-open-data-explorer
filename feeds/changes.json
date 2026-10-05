@@ -1,7 +1,21 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-04T14:47:21+00:00",
+ "generated": "2026-10-05T18:23:39+00:00",
  "items": [
+  {
+   "id": "phvi-damg",
+   "name": "NYCHA Public Housing Developments",
+   "agency": "New York City Housing Authority (NYCHA)",
+   "category": "Housing & Development",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/phvi-damg",
+   "kind": "columns_changed",
+   "date": "2026-10-05",
+   "columns_added": [
+    "PROGRAM"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "t4f2-8md7",
    "name": "Bus Stop Shelters",
@@ -1451,21 +1465,6 @@
    "before_len": 521,
    "after_len": 717,
    "diff_at": 432
-  },
-  {
-   "id": "qu8g-sxqf",
-   "name": "Civil Service List (Terminated)",
-   "agency": "Department of Citywide Administrative Services (DCAS)",
-   "category": "Procurement & Contracts",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/qu8g-sxqf",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "...extended at the Commissioner’s discretion. For more information visit DCAS’ “Work for the City” webpage at: https://www1.nyc.gov/site/dcas/employment/take-an-exam.page.",
-   "after": "...extended at the Commissioner’s discretion. For more information visit DCAS’ “How Can You Find Upcoming Exams” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page. For any questions about th...",
-   "before_len": 283,
-   "after_len": 477,
-   "diff_at": 192
   }
  ]
 }

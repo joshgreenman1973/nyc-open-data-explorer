@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Sun, 04 Oct 2026 14:47:21 +0000</lastBuildDate>
+<lastBuildDate>Mon, 05 Oct 2026 18:23:39 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: NYCHA Public Housing Developments</title>
+<link>https://data.cityofnewyork.us/d/phvi-damg</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/phvi-damg#columns_changed-2026-10-05</guid>
+<pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: PROGRAM. Removed: none.</description>
+</item>
 <item>
 <title>Description changed: Bus Stop Shelters</title>
 <link>https://data.cityofnewyork.us/d/t4f2-8md7</link>
@@ -697,12 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/a9md-ynri#description_changed-2026-06-03</guid>
 <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
 <description>Before: ...appointment at the appointing Agency. For more information visit DCAS’ “Work for the City” webpage at: https://www1.nyc.gov/site/dcas/employment/take-an-exam.page — After: ...appointment at the appointing Agency. For more information visit DCAS’ “Why You Should Work for the City” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page. For any questions about th...</description>
-</item>
-<item>
-<title>Description changed: Civil Service List (Terminated)</title>
-<link>https://data.cityofnewyork.us/d/qu8g-sxqf</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/qu8g-sxqf#description_changed-2026-06-03</guid>
-<pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before: ...extended at the Commissioner’s discretion. For more information visit DCAS’ “Work for the City” webpage at: https://www1.nyc.gov/site/dcas/employment/take-an-exam.page. — After: ...extended at the Commissioner’s discretion. For more information visit DCAS’ “How Can You Find Upcoming Exams” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page. For any questions about th...</description>
 </item>
 </channel></rss>
