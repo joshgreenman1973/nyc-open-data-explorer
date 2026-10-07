@@ -1,7 +1,49 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-06T15:55:10+00:00",
+ "generated": "2026-10-07T16:25:11+00:00",
  "items": [
+  {
+   "id": "5uug-f49n",
+   "name": "Harbor Water Quality",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/5uug-f49n",
+   "kind": "columns_changed",
+   "date": "2026-10-07",
+   "columns_added": [
+    "Bottom Dissolved Oxygen YSI (mg/L)",
+    "Top Dissolved Oxygen YSI (mg/L)"
+   ],
+   "columns_removed": [
+    "bottom_dissolved_organic_carbon_ysi_mg_l",
+    "top_dissolved_organic_carbon_ysi_mg_l"
+   ]
+  },
+  {
+   "id": "am7j-irtt",
+   "name": "Open Data Week Events (2017–Present)",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/am7j-irtt",
+   "kind": "agency_changed",
+   "date": "2026-10-07",
+   "before": "No agency listed",
+   "after": "Office of Technology and Innovation (OTI)"
+  },
+  {
+   "id": "eg3n-9i5r",
+   "name": "Data Through Design Projects (2018–Present)",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/eg3n-9i5r",
+   "kind": "agency_changed",
+   "date": "2026-10-07",
+   "before": "No agency listed",
+   "after": "Office of Technology and Innovation (OTI)"
+  },
   {
    "id": "phvi-damg",
    "name": "NYCHA Public Housing Developments",
@@ -1420,51 +1462,6 @@
    "date": "2026-06-18",
    "before": "Other / unspecified",
    "after": "Department of Parks and Recreation (DPR)"
-  },
-  {
-   "id": "u35m-9t32",
-   "name": "DCLA Cultural Organizations",
-   "agency": "Department of Cultural Affairs (DCLA)",
-   "category": "Recreation",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/u35m-9t32",
-   "kind": "description_changed",
-   "date": "2026-06-11",
-   "before": "Listing of all Cultural Organizations in the Department of Cultural Affairs directory",
-   "after": "Listing of all DCLA organizations either funded or with direct relation / business dealings",
-   "before_len": 85,
-   "after_len": 91,
-   "diff_at": 15
-  },
-  {
-   "id": "vx8i-nprf",
-   "name": "Civil Service List (Active)",
-   "agency": "Department of Citywide Administrative Services (DCAS)",
-   "category": "Procurement & Contracts",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/vx8i-nprf",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "...years from the date of establishment. For more information visit DCAS’ “Work for the City” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page",
-   "after": "...years from the date of establishment. For more information visit DCAS’ “Why You Should Work for the City” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page. For any questions about th...",
-   "before_len": 360,
-   "after_len": 567,
-   "diff_at": 253
-  },
-  {
-   "id": "a9md-ynri",
-   "name": "Civil Service List Certification",
-   "agency": "Department of Citywide Administrative Services (DCAS)",
-   "category": "Procurement & Contracts",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/a9md-ynri",
-   "kind": "description_changed",
-   "date": "2026-06-03",
-   "before": "...appointment at the appointing Agency. For more information visit DCAS’ “Work for the City” webpage at: https://www1.nyc.gov/site/dcas/employment/take-an-exam.page",
-   "after": "...appointment at the appointing Agency. For more information visit DCAS’ “Why You Should Work for the City” webpage at: https://www.nyc.gov/site/dcas/employment/how-can-you-find-upcoming-exams.page. For any questions about th...",
-   "before_len": 521,
-   "after_len": 717,
-   "diff_at": 432
   }
  ]
 }

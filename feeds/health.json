@@ -1,15 +1,15 @@
 {
   "title": "NYC Open Data — Health (recently updated)",
-  "generated": "2026-10-06T15:55:10+00:00",
+  "generated": "2026-10-07T16:25:11+00:00",
   "items": [
     {
       "id": "y4fw-iqfr",
       "name": "NYC Cooling Tower Registrations",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-06T14:00:53.000Z",
+      "updated": "2026-10-07T14:00:26.000Z",
       "created": "2018-01-24T20:59:47.000Z",
-      "views": 32714,
+      "views": 32737,
       "url": "https://data.cityofnewyork.us/d/y4fw-iqfr"
     },
     {
@@ -17,9 +17,9 @@
       "name": "DOHMH Indoor Environmental Complaints",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-06T13:55:31.000Z",
+      "updated": "2026-10-07T13:44:12.000Z",
       "created": "2018-01-24T21:17:57.000Z",
-      "views": 26623,
+      "views": 26644,
       "url": "https://data.cityofnewyork.us/d/9jgj-bmct"
     },
     {
@@ -27,9 +27,9 @@
       "name": "DOHMH School Cafeteria Inspections (2020-Present)",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-06T10:00:31.000Z",
+      "updated": "2026-10-07T10:00:51.000Z",
       "created": "2023-03-24T21:01:27.000Z",
-      "views": 12176,
+      "views": 12183,
       "url": "https://data.cityofnewyork.us/d/5ery-qagt"
     },
     {
@@ -37,19 +37,29 @@
       "name": "Rodent Inspection",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-06T09:32:07.000Z",
+      "updated": "2026-10-07T09:19:13.000Z",
       "created": "2015-11-23T16:34:42.000Z",
-      "views": 62016,
+      "views": 62066,
       "url": "https://data.cityofnewyork.us/d/p937-wjvj"
+    },
+    {
+      "id": "gy3q-4tzp",
+      "name": "Active NYC Health Code Regulated Child Care Programs",
+      "category": "Health",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "updated": "2026-10-06T23:00:19.000Z",
+      "created": "2023-11-02T18:27:26.000Z",
+      "views": 6388,
+      "url": "https://data.cityofnewyork.us/d/gy3q-4tzp"
     },
     {
       "id": "43nn-pn8j",
       "name": "DOHMH New York City Restaurant Inspection Results",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-05T22:05:28.000Z",
+      "updated": "2026-10-06T22:05:45.000Z",
       "created": "2014-08-01T19:10:59.000Z",
-      "views": 443747,
+      "views": 444131,
       "url": "https://data.cityofnewyork.us/d/43nn-pn8j"
     },
     {
@@ -57,9 +67,9 @@
       "name": "COVID-19 Daily Counts of Cases, Hospitalizations, and Deaths",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-05T19:32:18.000Z",
+      "updated": "2026-10-06T19:31:59.000Z",
       "created": "2020-04-30T17:15:03.000Z",
-      "views": 150852,
+      "views": 150924,
       "url": "https://data.cityofnewyork.us/d/rc75-m7u3"
     },
     {
@@ -67,9 +77,9 @@
       "name": "Self-Reported Drinking Water Tank Inspection Results",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-05T16:22:09.000Z",
+      "updated": "2026-10-06T16:24:38.000Z",
       "created": "2018-05-02T05:33:07.000Z",
-      "views": 11699,
+      "views": 11711,
       "url": "https://data.cityofnewyork.us/d/gjm4-k24g"
     },
     {
@@ -79,18 +89,8 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-10-05T14:16:17.000Z",
       "created": "2016-06-01T18:54:05.000Z",
-      "views": 12537,
+      "views": 12546,
       "url": "https://data.cityofnewyork.us/d/2xir-kwzz"
-    },
-    {
-      "id": "gy3q-4tzp",
-      "name": "Active NYC Health Code Regulated Child Care Programs",
-      "category": "Health",
-      "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-03T23:00:17.000Z",
-      "created": "2023-11-02T18:27:26.000Z",
-      "views": 6348,
-      "url": "https://data.cityofnewyork.us/d/gy3q-4tzp"
     },
     {
       "id": "uiay-nctu",
@@ -99,7 +99,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-10-01T10:16:17.000Z",
       "created": "2020-05-15T18:01:19.000Z",
-      "views": 91433,
+      "views": 91465,
       "url": "https://data.cityofnewyork.us/d/uiay-nctu"
     },
     {
@@ -109,7 +109,7 @@
       "agency": "Department of Transportation (DOT)",
       "updated": "2026-10-01T10:16:17.000Z",
       "created": "2023-10-17T19:18:56.000Z",
-      "views": 11044,
+      "views": 11054,
       "url": "https://data.cityofnewyork.us/d/6vys-sfk5"
     },
     {
@@ -119,7 +119,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-09-14T15:09:25.000Z",
       "created": "2024-11-27T15:18:46.000Z",
-      "views": 2079,
+      "views": 2097,
       "url": "https://data.cityofnewyork.us/d/rytv-g5ui"
     },
     {
@@ -129,7 +129,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-09-14T15:07:33.000Z",
       "created": "2022-11-01T20:45:11.000Z",
-      "views": 9443,
+      "views": 9462,
       "url": "https://data.cityofnewyork.us/d/f9wb-g8mb"
     },
     {
@@ -139,7 +139,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-08-21T16:43:49.000Z",
       "created": "2018-04-23T18:08:09.000Z",
-      "views": 45737,
+      "views": 45766,
       "url": "https://data.cityofnewyork.us/d/rsgh-akpg"
     },
     {
@@ -149,7 +149,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-08-03T14:58:52.000Z",
       "created": "2022-01-31T16:44:41.000Z",
-      "views": 72076,
+      "views": 72103,
       "url": "https://data.cityofnewyork.us/d/f7dc-2q9f"
     },
     {
@@ -159,7 +159,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-07-15T19:45:58.000Z",
       "created": "2018-03-07T16:26:53.000Z",
-      "views": 17558,
+      "views": 17574,
       "url": "https://data.cityofnewyork.us/d/8vwk-6iz2"
     },
     {
@@ -169,7 +169,7 @@
       "agency": "Department of Mental Health and Hygeine",
       "updated": "2026-07-15T15:20:53.000Z",
       "created": "2017-09-19T15:38:50.000Z",
-      "views": 63634,
+      "views": 63670,
       "url": "https://data.cityofnewyork.us/d/nu7n-tubp"
     },
     {
@@ -179,7 +179,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-07-15T14:14:33.000Z",
       "created": "2022-04-22T22:06:15.000Z",
-      "views": 1503,
+      "views": 1506,
       "url": "https://data.cityofnewyork.us/d/gnyq-kf2y"
     },
     {
@@ -189,7 +189,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-07-15T14:12:47.000Z",
       "created": "2021-09-16T17:05:45.000Z",
-      "views": 8328,
+      "views": 8341,
       "url": "https://data.cityofnewyork.us/d/3kfa-rvez"
     },
     {
@@ -199,7 +199,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-07-15T14:10:35.000Z",
       "created": "2023-01-09T17:26:51.000Z",
-      "views": 1930,
+      "views": 1932,
       "url": "https://data.cityofnewyork.us/d/v8i9-yfpr"
     },
     {
@@ -209,7 +209,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-07-15T14:05:44.000Z",
       "created": "2024-08-16T19:36:19.000Z",
-      "views": 2951,
+      "views": 2958,
       "url": "https://data.cityofnewyork.us/d/2ync-kihj"
     },
     {
@@ -219,7 +219,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-07-15T14:05:44.000Z",
       "created": "2024-08-15T19:15:01.000Z",
-      "views": 2255,
+      "views": 2258,
       "url": "https://data.cityofnewyork.us/d/2er2-jqsx"
     },
     {
@@ -229,7 +229,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-06-22T17:02:06.000Z",
       "created": "2018-01-24T23:04:48.000Z",
-      "views": 18420,
+      "views": 18437,
       "url": "https://data.cityofnewyork.us/d/da9u-wz3r"
     },
     {
@@ -239,7 +239,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-06-08T19:24:44.000Z",
       "created": "2013-10-25T18:14:54.000Z",
-      "views": 117038,
+      "views": 117080,
       "url": "https://data.cityofnewyork.us/d/25th-nujf"
     },
     {
@@ -249,7 +249,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-05-26T19:40:40.000Z",
       "created": "2014-06-20T15:35:54.000Z",
-      "views": 4186,
+      "views": 4189,
       "url": "https://data.cityofnewyork.us/d/b55q-34ps"
     },
     {
@@ -259,7 +259,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-05-20T18:36:34.000Z",
       "created": "2018-12-13T20:26:21.000Z",
-      "views": 8402,
+      "views": 8419,
       "url": "https://data.cityofnewyork.us/d/4kpn-sezh"
     },
     {
@@ -269,7 +269,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-05-20T14:35:50.000Z",
       "created": "2020-04-28T18:50:27.000Z",
-      "views": 26159,
+      "views": 26166,
       "url": "https://data.cityofnewyork.us/d/cwmx-mvra"
     },
     {
@@ -279,7 +279,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-04-28T19:23:01.000Z",
       "created": "2013-11-20T16:11:45.000Z",
-      "views": 5432,
+      "views": 5434,
       "url": "https://data.cityofnewyork.us/d/7btz-mnc8"
     },
     {
@@ -289,7 +289,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-04-22T19:32:15.000Z",
       "created": "2018-06-11T21:10:11.000Z",
-      "views": 5661,
+      "views": 5664,
       "url": "https://data.cityofnewyork.us/d/gfej-by6h"
     },
     {
@@ -299,7 +299,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-03-27T16:33:26.000Z",
       "created": "2019-04-25T16:59:11.000Z",
-      "views": 5955,
+      "views": 5961,
       "url": "https://data.cityofnewyork.us/d/rqgf-94xs"
     },
     {
@@ -309,7 +309,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-03-13T16:26:11.000Z",
       "created": "2024-08-05T14:12:47.000Z",
-      "views": 792,
+      "views": 795,
       "url": "https://data.cityofnewyork.us/d/fkec-mjr6"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-03-10T14:56:09.000Z",
       "created": "2018-09-28T16:21:14.000Z",
-      "views": 4375,
+      "views": 4382,
       "url": "https://data.cityofnewyork.us/d/nk7g-qeep"
     },
     {
@@ -329,7 +329,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-03-02T20:21:27.000Z",
       "created": "2017-04-19T19:00:05.000Z",
-      "views": 17519,
+      "views": 17525,
       "url": "https://data.cityofnewyork.us/d/fcau-jc6k"
     },
     {
@@ -339,7 +339,7 @@
       "agency": "No agency listed",
       "updated": "2026-03-02T20:14:52.000Z",
       "created": "2017-04-19T18:56:50.000Z",
-      "views": 4465,
+      "views": 4469,
       "url": "https://data.cityofnewyork.us/d/wffy-3iyg"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-01-27T19:52:17.000Z",
       "created": "2013-11-20T16:01:36.000Z",
-      "views": 285176,
+      "views": 285209,
       "url": "https://data.cityofnewyork.us/d/jb7j-dtam"
     },
     {
@@ -359,7 +359,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-01-13T18:05:25.000Z",
       "created": "2018-01-24T17:11:35.000Z",
-      "views": 6139,
+      "views": 6145,
       "url": "https://data.cityofnewyork.us/d/wymh-dvmd"
     },
     {
@@ -369,7 +369,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2025-12-16T20:18:24.000Z",
       "created": "2020-07-07T20:33:19.000Z",
-      "views": 4790,
+      "views": 4794,
       "url": "https://data.cityofnewyork.us/d/9hxz-c2kj"
     },
     {
@@ -379,7 +379,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2025-09-04T14:03:14.000Z",
       "created": "2016-03-10T20:03:33.000Z",
-      "views": 6072,
+      "views": 6074,
       "url": "https://data.cityofnewyork.us/d/72ss-25qh"
     },
     {
@@ -389,7 +389,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2025-06-24T19:35:13.000Z",
       "created": "2018-05-21T14:59:52.000Z",
-      "views": 11249,
+      "views": 11261,
       "url": "https://data.cityofnewyork.us/d/fju2-rdad"
     },
     {
@@ -399,7 +399,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2025-02-27T15:59:37.000Z",
       "created": "2020-06-12T04:28:54.000Z",
-      "views": 2188,
+      "views": 2194,
       "url": "https://data.cityofnewyork.us/d/msid-end4"
     },
     {
@@ -409,7 +409,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2025-01-29T16:55:29.000Z",
       "created": "2018-08-17T14:29:39.000Z",
-      "views": 16182,
+      "views": 16190,
       "url": "https://data.cityofnewyork.us/d/ud4g-9x9z"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-12-03T21:11:38.000Z",
       "created": "2024-04-16T14:26:48.000Z",
-      "views": 849,
+      "views": 851,
       "url": "https://data.cityofnewyork.us/d/5tgd-xk3z"
     },
     {
@@ -439,7 +439,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-11-12T15:18:55.000Z",
       "created": "2019-05-01T19:00:15.000Z",
-      "views": 1333,
+      "views": 1334,
       "url": "https://data.cityofnewyork.us/d/fydx-dgvr"
     },
     {
@@ -449,7 +449,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-10-07T21:27:29.000Z",
       "created": "2020-10-19T18:29:01.000Z",
-      "views": 14510,
+      "views": 14524,
       "url": "https://data.cityofnewyork.us/d/27x4-cbi6"
     },
     {
@@ -459,7 +459,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-09-19T14:16:07.000Z",
       "created": "2024-06-17T16:19:07.000Z",
-      "views": 14952,
+      "views": 15001,
       "url": "https://data.cityofnewyork.us/d/4mhf-duep"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-07-03T04:07:36.000Z",
       "created": "2021-04-27T15:06:50.000Z",
-      "views": 2951,
+      "views": 2953,
       "url": "https://data.cityofnewyork.us/d/vajk-p37e"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-07-01T04:03:26.000Z",
       "created": "2021-01-11T23:43:24.000Z",
-      "views": 3518,
+      "views": 3521,
       "url": "https://data.cityofnewyork.us/d/x98t-3bbk"
     },
     {
@@ -499,7 +499,7 @@
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2024-05-21T16:49:23.000Z",
       "created": "2018-05-09T20:37:39.000Z",
-      "views": 33053,
+      "views": 33070,
       "url": "https://data.cityofnewyork.us/d/csut-3wpr"
     }
   ]

@@ -1,6 +1,48 @@
 {
- "generated_at": "2026-10-06T15:55:10+00:00",
+ "generated_at": "2026-10-07T16:25:11+00:00",
  "events": [
+  {
+   "id": "5uug-f49n",
+   "name": "Harbor Water Quality",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/5uug-f49n",
+   "kind": "columns_changed",
+   "date": "2026-10-07",
+   "columns_added": [
+    "Bottom Dissolved Oxygen YSI (mg/L)",
+    "Top Dissolved Oxygen YSI (mg/L)"
+   ],
+   "columns_removed": [
+    "bottom_dissolved_organic_carbon_ysi_mg_l",
+    "top_dissolved_organic_carbon_ysi_mg_l"
+   ]
+  },
+  {
+   "id": "am7j-irtt",
+   "name": "Open Data Week Events (2017–Present)",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/am7j-irtt",
+   "kind": "agency_changed",
+   "date": "2026-10-07",
+   "before": "No agency listed",
+   "after": "Office of Technology and Innovation (OTI)"
+  },
+  {
+   "id": "eg3n-9i5r",
+   "name": "Data Through Design Projects (2018–Present)",
+   "agency": "Office of Technology and Innovation (OTI)",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/eg3n-9i5r",
+   "kind": "agency_changed",
+   "date": "2026-10-07",
+   "before": "No agency listed",
+   "after": "Office of Technology and Innovation (OTI)"
+  },
   {
    "id": "phvi-damg",
    "name": "NYCHA Public Housing Developments",
@@ -2965,10 +3007,10 @@
   }
  ],
  "counts": {
-  "columns_changed": 18,
+  "columns_changed": 19,
+  "agency_changed": 4,
   "description_changed": 141,
   "renamed": 30,
-  "added": 13,
-  "agency_changed": 2
+  "added": 13
  }
 }
