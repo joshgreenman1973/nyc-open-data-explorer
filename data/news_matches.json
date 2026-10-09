@@ -1,14 +1,29 @@
 {
-  "computed_at": "2026-10-08T16:27:32+00:00",
+  "computed_at": "2026-10-09T16:10:11+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "Ex-Boyfriend Arrested After Deadly NYC Balcony Push: Police",
-      "source": "Patch",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNR0dFTG5oZklyNTAySk1hT0FIaWZJRFluYW9ONkc2TEpNWXNLa1dRTldMX2FJcUNrUUdJeUFadG9RM2lQY1Bqb3FKVDFldEJpRUlRQlMwNlpNQU5OSzlreS0tM2tjQ3FhYTlheXBQQ05pMHhKZzBJRloyT0hhWmtDa05EZU9SS3V6Z1huSWt3QXZMd2NLQjdDWXZ2Y3VrdjNx0gGyAUFVX3lxTE53N3FoOHJPZUstTUZvUmt2Y296TDZYdm83eHo0emxBdXBOdzhJbkNWcDNkVE9QQW1Dd0xsazNBXzZxWUxSMm5MTFE0TVdTREdUeFdSWlhIWXRWOVpiRXdqY0p6SmQ0eDh1MkVnUkZMVGtDSklsUmM3RHlUZWJrd3NYQWhRSWNzR01sNXlqRWNXOTZqaXZJTUJHc3NtVlE3blVtRi1SY0NkWDRFVHcwWGw1UXc?oc=5",
-      "pubDate": "Thu, 08 Oct 2026 14:09:11 GMT",
+      "headline": "Mullin Criticizes Sanctuary City Policies After ICE Shooting in New York: Live Updates",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE12aVZvVndKZ1RPV3liU1dEQ2taR2w0VG9aTHZGQUJKYlBsV3F0Zjl3RXhrcUNEalVVbm5OV3h5aWQxT1FrQTdRRlN5WXNYaWdJM3VpcEhqV2lDQ2hlaXFqWWp2LXFsSzE4b1dqbXJRcmVXMG9qSl9LUF9HQQ?oc=5",
+      "pubDate": "Fri, 09 Oct 2026 16:05:22 GMT",
+      "topic": "Gun violence",
+      "dataset_id": "833y-fsy8",
+      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
+      "match_terms": [
+        "shooting"
+      ]
+    },
+    {
+      "headline": "ICE officer shoots a man while making an arrest in New York, officials say",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQenRITllJRDlOSU1JcTdZSlQzeVZOdTFwZW1DM0Myc0ZlY01EVk4yQUctNktRWnF5cDRnTDQ1YmFsNWl3NGUyMUs3TUVKcUk2ZElKeTU5LTRna0t0MWl1SE9uV0VjWnlweXBQQVhycVJqZVRrS05fdkxUYWNJckxzNkxmaHBrbzlmcTBOelJkRUpVMlRxcUxN?oc=5",
+      "pubDate": "Thu, 08 Oct 2026 22:16:39 GMT",
       "topic": "NYPD arrests",
       "dataset_id": "8h9b-rp9u",
       "dataset_name": "NYPD Arrests Data (Historic)",
@@ -16,22 +31,7 @@
       "dataset_agency": "Police Department (NYPD)",
       "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
       "match_terms": [
-        "arrested"
-      ]
-    },
-    {
-      "headline": "12 NYC neighborhoods fast tracked for affordable housing",
-      "source": "NBC 4 New York",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLXphd2VTcEU2TWk5TGVqLTNsT2VRSGlSRmF0aUZPRHNqaGVqSXlRLUo3NTdXelZkMHFsNXRpZHdsS2RESmFGSDJRbkdGUUlnVmlMdDJ4YmkwQTYyeTN5SlBOSUNONnhsMkdiRklCUHRPa1hnQU1veGFTVEc5emI0N0NkVFZOdlZtbFZWLWZUZzh0cThneXRXU2pNXzB4N01DbnfSAaoBQVVfeXFMT1oxY3hkUjc0eTlHYWZ4NmRtcTVMZHM0QV9SMTd5Rkg4TEtqY25PY2stZWtPeUNkMG1KdEJaYkdrQUNvVUQtX3FIZHdoT0U3OGlralFlY01VNWd3bmt0SFFNLW44NVdXNnp1OHFzUGJHdG4wZW1GYnJvTC01eDM1YmFYZGxWS3NONmZvOGRub3JpLXpJd3NYdld3RWYtdDJaaVp3N3ZQVFhIUUE?oc=5",
-      "pubDate": "Mon, 05 Oct 2026 18:29:00 GMT",
-      "topic": "Affordable housing",
-      "dataset_id": "hg8x-zxpr",
-      "dataset_name": "Affordable Housing Production by Building",
-      "dataset_category": "Housing & Development",
-      "dataset_agency": "Department of Housing Preservation and Development (HPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/hg8x-zxpr",
-      "match_terms": [
-        "affordable housing"
+        "arrest"
       ]
     },
     {
@@ -50,33 +50,18 @@
       ]
     },
     {
-      "headline": "Could Mamdani’s Child Care Push Include Expanding Parental Leave?",
-      "source": "The New York Times",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTWJrb0ZpbnpxLTJ0aXlRanU2MjFLVGFOc185RE0zM1ZnNGlZQTRjbXgwZ3JtVDBRQXRZa3dOYVJ0bzh4OXZQTVhUUThIc1FCejM3aXhOTkFTaHlTYWZFWGZzUEtrMDVVbXNqREhNbmxlbU1paWNwcVdGRTNBeTNOUk5KRkhKZw?oc=5",
-      "pubDate": "Thu, 08 Oct 2026 15:09:04 GMT",
-      "topic": "Pre-K and child care",
-      "dataset_id": "kiyv-ks3f",
-      "dataset_name": "Universal Pre-K (UPK) School Locations",
-      "dataset_category": "Education",
-      "dataset_agency": "Department of Education (DOE)",
-      "dataset_url": "https://data.cityofnewyork.us/d/kiyv-ks3f",
+      "headline": "See the 12 Communities on New York City’s Affordable Housing Naughty List",
+      "source": "City Limits",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRkRvNDdqX1ZQUmQ1OEd0UTVRLXZOdE9SV29ESEJrMlBGcHdWbXpwVnM0aFZMR09OdWROQjRKWmtudjRJeUVBei1WOWY1T2ZsSDdoazNmSmlNUVV5WWZITmtzSVBEeXAyVHJTMkxLX0VMSEdSNlBDNzlaWm1oQnR3ZENJVFpWWTNXVTlYeTN0eW5wVjR3VDMzMXIxM0Q?oc=5",
+      "pubDate": "Thu, 01 Oct 2026 07:00:00 GMT",
+      "topic": "Affordable housing",
+      "dataset_id": "hg8x-zxpr",
+      "dataset_name": "Affordable Housing Production by Building",
+      "dataset_category": "Housing & Development",
+      "dataset_agency": "Department of Housing Preservation and Development (HPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/hg8x-zxpr",
       "match_terms": [
-        "child care"
-      ]
-    },
-    {
-      "headline": "NYC shootings, murders hit record lows through September",
-      "source": "ABC7 Eyewitness News",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbUR4RmM4U2NiUnRzeS14N0RPN0FITWdXT25wOGVkU2VVS0FOaG0yMkE0Q2RXRGJ2RmpqQW91dnRiT2FQYW11VG95TUpmRTNOdC1XbFNzQUhLWl85dVBDYjBNbnNOMjlTcXdaR0dHMVA1S3E2V3M2QVEzTzBxaUtoSWxiM0EtT2dRaGdTcmZkT0VlTXR10gGaAUFVX3lxTE1nbmg3NXdldXZMYzBaMHExQy1jbUZGb2pldkgtTU5oVWJhakkzVV9PWGNiOFNQSExGWWdpSlVMcTk2M3JaM05vOENaMGI5bndlM2hoNXBaWUxTWjFSYUxiaFBZLVNpVUJEOTN6QWZ1TlZZMklUSUFJaDR3S0tFOExDRGxxb3VUYkNVOVBoN092N0h4Si1nWU1uR1E?oc=5",
-      "pubDate": "Tue, 06 Oct 2026 20:42:47 GMT",
-      "topic": "Gun violence",
-      "dataset_id": "833y-fsy8",
-      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
-      "match_terms": [
-        "shootings"
+        "affordable housing"
       ]
     }
   ]
