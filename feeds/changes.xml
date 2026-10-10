@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 09 Oct 2026 16:09:35 +0000</lastBuildDate>
+<lastBuildDate>Sat, 10 Oct 2026 15:20:37 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: 2025 High Volume FHV Trip Data</title>
+<link>https://data.cityofnewyork.us/d/nt46-nv3c</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/nt46-nv3c#added-2026-10-10</guid>
+<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+<description>These records are generated from the trip record submissions made by High Volume For-Hire Vehicle (FHV) bases.</description>
+</item>
 <item>
 <title>Columns changed: Harbor Water Quality</title>
 <link>https://data.cityofnewyork.us/d/5uug-f49n</link>
@@ -697,12 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/63us-eqtq#description_changed-2026-06-27</guid>
 <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
 <description>Before: This dataset contains the list of dataset nominations submitted to the NYC Open Data team. — After: This is a list of dataset nominations submitted to the NYC Open Data Team via the Contact Us page on www.nyc.gov/opendata .</description>
-</item>
-<item>
-<title>Agency changed: NYC Parks Public Events – Upcoming 14 Days</title>
-<link>https://data.cityofnewyork.us/d/w3wp-dpdi</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/w3wp-dpdi#agency_changed-2026-06-18</guid>
-<pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-<description>Attribution moved from Other / unspecified to Department of Parks and Recreation (DPR).</description>
 </item>
 </channel></rss>

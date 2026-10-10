@@ -1,7 +1,18 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-09T16:09:35+00:00",
+ "generated": "2026-10-10T15:20:37+00:00",
  "items": [
+  {
+   "id": "nt46-nv3c",
+   "name": "2025 High Volume FHV Trip Data",
+   "agency": "TLC Trip Data",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/nt46-nv3c",
+   "kind": "added",
+   "date": "2026-10-10",
+   "summary": "These records are generated from the trip record submissions made by High Volume For-Hire Vehicle (FHV) bases."
+  },
   {
    "id": "5uug-f49n",
    "name": "Harbor Water Quality",
@@ -1450,18 +1461,6 @@
    "before_len": 90,
    "after_len": 123,
    "diff_at": 5
-  },
-  {
-   "id": "w3wp-dpdi",
-   "name": "NYC Parks Public Events – Upcoming 14 Days",
-   "agency": "Department of Parks and Recreation (DPR)",
-   "category": "Recreation",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/w3wp-dpdi",
-   "kind": "agency_changed",
-   "date": "2026-06-18",
-   "before": "Other / unspecified",
-   "after": "Department of Parks and Recreation (DPR)"
   }
  ]
 }

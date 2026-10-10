@@ -1,6 +1,17 @@
 {
- "generated_at": "2026-10-09T16:09:35+00:00",
+ "generated_at": "2026-10-10T15:20:36+00:00",
  "events": [
+  {
+   "id": "nt46-nv3c",
+   "name": "2025 High Volume FHV Trip Data",
+   "agency": "TLC Trip Data",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/nt46-nv3c",
+   "kind": "added",
+   "date": "2026-10-10",
+   "summary": "These records are generated from the trip record submissions made by High Volume For-Hire Vehicle (FHV) bases."
+  },
   {
    "id": "5uug-f49n",
    "name": "Harbor Water Quality",
@@ -3007,10 +3018,10 @@
   }
  ],
  "counts": {
+  "added": 14,
   "columns_changed": 19,
   "agency_changed": 4,
   "description_changed": 141,
-  "renamed": 30,
-  "added": 13
+  "renamed": 30
  }
 }
