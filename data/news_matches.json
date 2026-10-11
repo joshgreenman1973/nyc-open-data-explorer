@@ -1,14 +1,14 @@
 {
-  "computed_at": "2026-10-10T15:20:43+00:00",
+  "computed_at": "2026-10-11T15:37:53+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "Judge blocks deportation of Oscar Belgal after ICE shooting",
-      "source": "ABC7 Eyewitness News",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRlBDem1JdS1hRTloSnhINHB1WVdBX281YzZfMTBac1RwSUNkaHFYeDBXS2lqNFZVOG1IQTFTOEVSWjFPd05BVW5OdjQzVGNVQTctaG94MkdBTFBzWDNRbjRSQjBlU00xT1kxR2dXNEF1VmFSWmlReE9zd3ROQ0xZYkRpWndfN3fSAYwBQVVfeXFMTTZoS1VfZ1dmLURZbk9aQXZoM3A4YUk0LVZqa3pjcWphYUlIR3NORkNBRVp5Z1RvVHVxczE1dFZYWDlMcEt6aHZEbEtZR0M0dnFqeWtXR3dpU3IyX2NhUkJYa0pPSXprY3JBdWlUZy11aTBwNU8wNXd2M3pOelZzTjN6LWFJUzJ0OGlpaXU?oc=5",
-      "pubDate": "Fri, 09 Oct 2026 10:06:07 GMT",
+      "headline": "New surveillance footage shows ICE confrontation in NYC street before shooting - ABC News",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObnpDR3hvNzBoNTR3TmFpUGF6eEdrX1d2aVc2SWtTeFJoVk9aSGpuVF9zSnpuZGZIQXhFRHdYRVhiOXVWVEhYbHRlejFGdUxEeTktYy03cWphTUVTWDBHRWFhV2VkbHlLUWtrYkZhMlN4Y2tReUJoNUpZZFplS2JFTUZ5Z0phaHpQOG90RUF6NS1iMFRNT1RkSTN30gGfAUFVX3lxTE9PQXo1TVNGOGNTeVhvYlFva29pLXhBbUVEd3E1RWRLWlNnc3lsdmtKQTVmWkhwZmNrZnZNekFTOFdoR1E3SWcwZUN5NWRUU0pCS3ZBLUowSEpfaGQ4eW9lUFlKNm1QdHljamVEVDRyRDE4Nmc3Rkp3YkVzUS1fT21LcnQzTzE4QWd5blVnSlk3dHEzN1ljOWc2OVVxeXdjbw?oc=5",
+      "pubDate": "Fri, 09 Oct 2026 09:19:18 GMT",
       "topic": "Gun violence",
       "dataset_id": "833y-fsy8",
       "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
@@ -17,6 +17,21 @@
       "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
       "match_terms": [
         "shooting"
+      ]
+    },
+    {
+      "headline": "A high-speed ferry could run from New York City to Atlantic City next summer",
+      "source": "Inquirer.com",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcmkzVnpUY3U5eTJXSUR2QU9TVE5fQ1RTVTRZTTRYbVo2QVVBcVFKX185LXp1VzVqMjh2eFV6YUFidzRsbF96Q0VwZmxsZnNQOGlEQXNuM3NxWUUyb0NsLTNZbXE3S3hqbGk1dVJLaVhoNWJmWVdhSTYzQTdIdlhWN0ptSDMxOU1NMlNUd3BFUXRXLXdRcXc?oc=5",
+      "pubDate": "Sun, 11 Oct 2026 11:01:00 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "ferry"
       ]
     },
     {
@@ -32,6 +47,21 @@
       "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
       "match_terms": [
         "arrests"
+      ]
+    },
+    {
+      "headline": "Rich New Yorkers scrambling to dodge Mamdani's pied-à-terre tax are slamming into a harsh reality",
+      "source": "Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPT3JydWtDak1lYUNISFZJYTdGOWtZSkhlQ28zdFVhQVRnVGtFa3MzdG5oRncwSk5jdFpKRTBKY3A4TWpBNVZ5ZENqQjZaeklSUUh3dm1vUUx3WkJMTmpCUjg0SGlQYXJDQVBOLTlDX2E1Zmkwc1gtOUNCQlJSZm9hdEtRV3V3cF9MdWpHS1Y4cG84eGtHTUlKR0Y3Snp0Zw?oc=5",
+      "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "topic": "Property tax data",
+      "dataset_id": "8h5j-fqxa",
+      "dataset_name": "ACRIS - Real Property Legals",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Department of Finance (DOF)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
+      "match_terms": [
+        "pied-à-terre"
       ]
     }
   ]
