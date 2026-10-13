@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Mon, 12 Oct 2026 18:59:29 +0000</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 16:55:22 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: NYC Parks Monuments</title>
+<link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#columns_changed-2026-10-13</guid>
+<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Borough Boundaries, City Council Districts, Community Districts, Police Precincts, featurestatus, shape, system. Removed: none.</description>
+</item>
 <item>
 <title>New dataset: 2025 High Volume FHV Trip Data</title>
 <link>https://data.cityofnewyork.us/d/nt46-nv3c</link>
@@ -697,12 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/5zhs-2jue#description_changed-2026-07-02</guid>
 <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: Footprint outlines of buildings in New York City. Please see the following link for additional documentation: https://github.com/CityOfNewYork/nyc-geo... — After: NOTE: There is an error where this data is only showing some records. While we work to fix this error, please use this file in the interim. Footprint ...</description>
-</item>
-<item>
-<title>Description changed: NYC Open Data Help Desk: Public Dataset Requests</title>
-<link>https://data.cityofnewyork.us/d/63us-eqtq</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/63us-eqtq#description_changed-2026-06-27</guid>
-<pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
-<description>Before: This dataset contains the list of dataset nominations submitted to the NYC Open Data team. — After: This is a list of dataset nominations submitted to the NYC Open Data Team via the Contact Us page on www.nyc.gov/opendata .</description>
 </item>
 </channel></rss>

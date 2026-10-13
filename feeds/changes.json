@@ -1,7 +1,27 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-12T18:59:29+00:00",
+ "generated": "2026-10-13T16:55:22+00:00",
  "items": [
+  {
+   "id": "6rrm-vxj9",
+   "name": "NYC Parks Monuments",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/6rrm-vxj9",
+   "kind": "columns_changed",
+   "date": "2026-10-13",
+   "columns_added": [
+    "Borough Boundaries",
+    "City Council Districts",
+    "Community Districts",
+    "Police Precincts",
+    "featurestatus",
+    "shape",
+    "system"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "nt46-nv3c",
    "name": "2025 High Volume FHV Trip Data",
@@ -1446,21 +1466,6 @@
    "before_len": 355,
    "after_len": 495,
    "diff_at": 0
-  },
-  {
-   "id": "63us-eqtq",
-   "name": "NYC Open Data Help Desk: Public Dataset Requests",
-   "agency": "NYC Open Data Team",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/63us-eqtq",
-   "kind": "description_changed",
-   "date": "2026-06-27",
-   "before": "This dataset contains the list of dataset nominations submitted to the NYC Open Data team.",
-   "after": "This is a list of dataset nominations submitted to the NYC Open Data Team via the Contact Us page on www.nyc.gov/opendata .",
-   "before_len": 90,
-   "after_len": 123,
-   "diff_at": 5
   }
  ]
 }

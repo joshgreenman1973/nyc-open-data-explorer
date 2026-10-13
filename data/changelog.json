@@ -1,6 +1,26 @@
 {
- "generated_at": "2026-10-12T18:59:29+00:00",
+ "generated_at": "2026-10-13T16:55:21+00:00",
  "events": [
+  {
+   "id": "6rrm-vxj9",
+   "name": "NYC Parks Monuments",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/6rrm-vxj9",
+   "kind": "columns_changed",
+   "date": "2026-10-13",
+   "columns_added": [
+    "Borough Boundaries",
+    "City Council Districts",
+    "Community Districts",
+    "Police Precincts",
+    "featurestatus",
+    "shape",
+    "system"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "nt46-nv3c",
    "name": "2025 High Volume FHV Trip Data",
@@ -3018,8 +3038,8 @@
   }
  ],
  "counts": {
+  "columns_changed": 20,
   "added": 14,
-  "columns_changed": 19,
   "agency_changed": 4,
   "description_changed": 141,
   "renamed": 30
