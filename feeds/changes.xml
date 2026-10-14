@@ -3,8 +3,36 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Tue, 13 Oct 2026 16:55:22 +0000</lastBuildDate>
+<lastBuildDate>Wed, 14 Oct 2026 14:29:14 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: NYPD Use of Force Incidents</title>
+<link>https://data.cityofnewyork.us/d/f4tj-796d</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/f4tj-796d#description_changed-2026-10-14</guid>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: ...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
+</item>
+<item>
+<title>Columns changed: NYC Parks Monuments</title>
+<link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#columns_changed-2026-10-14</guid>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: none. Removed: X, Y.</description>
+</item>
+<item>
+<title>Description changed: NYPD Use of Force: Subjects</title>
+<link>https://data.cityofnewyork.us/d/dufe-vxb7</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/dufe-vxb7#description_changed-2026-10-14</guid>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
+</item>
+<item>
+<title>Description changed: NYPD Use of Force: Members of Service</title>
+<link>https://data.cityofnewyork.us/d/v5jd-6wqn</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/v5jd-6wqn#description_changed-2026-10-14</guid>
+<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
+</item>
 <item>
 <title>Columns changed: NYC Parks Monuments</title>
 <link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
@@ -676,33 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/mdja-si6a#description_changed-2026-07-07</guid>
 <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: MISC_TEXT</title>
-<link>https://data.cityofnewyork.us/d/uamn-5779</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/uamn-5779#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: POSSESSION_HOOK</title>
-<link>https://data.cityofnewyork.us/d/ce23-cck4</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/ce23-cck4#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: AddressPoint</title>
-<link>https://data.cityofnewyork.us/d/uf93-f8nk</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/uf93-f8nk#description_changed-2026-07-03</guid>
-<pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: Address points were developed to supplement the address information supplied by the CSCL centerline. Some computer aided dispatch systems use address ... — After: NOTE: There is a temporary error where this data is not showing all records. While we work to fix this error, please use this file in the interim. Add...</description>
-</item>
-<item>
-<title>Description changed: BUILDING</title>
-<link>https://data.cityofnewyork.us/d/5zhs-2jue</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/5zhs-2jue#description_changed-2026-07-02</guid>
-<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: Footprint outlines of buildings in New York City. Please see the following link for additional documentation: https://github.com/CityOfNewYork/nyc-geo... — After: NOTE: There is an error where this data is only showing some records. While we work to fix this error, please use this file in the interim. Footprint ...</description>
 </item>
 </channel></rss>

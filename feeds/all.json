@@ -1,275 +1,55 @@
 {
   "title": "NYC Open Data — Most recently updated",
-  "generated": "2026-10-13T16:55:21+00:00",
+  "generated": "2026-10-14T14:29:14+00:00",
   "items": [
-    {
-      "id": "b4mf-rg6h",
-      "name": "Commissioner's Correspondence",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-10-13T16:55:03.000Z",
-      "created": "2018-10-10T20:06:16.000Z",
-      "views": 4635,
-      "url": "https://data.cityofnewyork.us/d/b4mf-rg6h"
-    },
     {
       "id": "i4gi-tjb9",
       "name": "DOT Traffic Speeds",
       "category": "Transportation",
       "agency": "No agency listed",
-      "updated": "2026-10-13T16:52:21.000Z",
+      "updated": "2026-10-14T14:26:47.000Z",
       "created": "2017-04-17T18:31:04.000Z",
-      "views": 47776,
+      "views": 47877,
       "url": "https://data.cityofnewyork.us/d/i4gi-tjb9"
-    },
-    {
-      "id": "3279-pp7v",
-      "name": "OER Cleanup Sites",
-      "category": "Environment",
-      "agency": "Mayor's Office of Environmental Remediation (OER)",
-      "updated": "2026-10-13T16:48:24.000Z",
-      "created": "2019-09-25T19:13:49.000Z",
-      "views": 8426,
-      "url": "https://data.cityofnewyork.us/d/3279-pp7v"
     },
     {
       "id": "t3jq-9nkf",
       "name": "NYC Agencies and Governance Organizations",
       "category": "Government Operations",
       "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-10-13T16:45:34.000Z",
+      "updated": "2026-10-14T14:15:15.000Z",
       "created": "2025-09-05T13:06:28.000Z",
-      "views": 5575,
+      "views": 5641,
       "url": "https://data.cityofnewyork.us/d/t3jq-9nkf"
-    },
-    {
-      "id": "eabe-havv",
-      "name": "DOB Complaints Received",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-10-13T16:41:47.000Z",
-      "created": "2013-04-18T15:19:10.000Z",
-      "views": 222694,
-      "url": "https://data.cityofnewyork.us/d/eabe-havv"
-    },
-    {
-      "id": "kfp4-dz4h",
-      "name": "DOB NOW: Build Elevator Permit Applications",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-10-13T16:32:56.000Z",
-      "created": "2019-10-03T18:49:55.000Z",
-      "views": 18738,
-      "url": "https://data.cityofnewyork.us/d/kfp4-dz4h"
-    },
-    {
-      "id": "gjm4-k24g",
-      "name": "Self-Reported Drinking Water Tank Inspection Results",
-      "category": "Health",
-      "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-13T16:22:02.000Z",
-      "created": "2018-05-02T05:33:07.000Z",
-      "views": 11772,
-      "url": "https://data.cityofnewyork.us/d/gjm4-k24g"
-    },
-    {
-      "id": "6rrm-vxj9",
-      "name": "NYC Parks Monuments",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-13T16:05:56.000Z",
-      "created": "2016-09-15T18:35:50.000Z",
-      "views": 9575,
-      "url": "https://data.cityofnewyork.us/d/6rrm-vxj9"
-    },
-    {
-      "id": "sbnd-xujn",
-      "name": "Handyman Work Order (HWO) Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T15:38:43.000Z",
-      "created": "2013-11-19T15:27:59.000Z",
-      "views": 9018,
-      "url": "https://data.cityofnewyork.us/d/sbnd-xujn"
-    },
-    {
-      "id": "mdbu-nrqn",
-      "name": "Open Market Order (OMO) Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T15:38:39.000Z",
-      "created": "2013-11-19T15:58:14.000Z",
-      "views": 19836,
-      "url": "https://data.cityofnewyork.us/d/mdbu-nrqn"
-    },
-    {
-      "id": "emrz-5p35",
-      "name": "Invoices for Open Market Order (OMO) Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T15:38:30.000Z",
-      "created": "2013-11-18T21:42:17.000Z",
-      "views": 5372,
-      "url": "https://data.cityofnewyork.us/d/emrz-5p35"
-    },
-    {
-      "id": "cp6j-7bjj",
-      "name": "Fee Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T15:38:22.000Z",
-      "created": "2013-11-18T21:35:58.000Z",
-      "views": 8142,
-      "url": "https://data.cityofnewyork.us/d/cp6j-7bjj"
-    },
-    {
-      "id": "i9n8-a8ed",
-      "name": "NYPD Officer Profile - Department Recognition",
-      "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-13T15:26:46.000Z",
-      "created": "2021-10-12T16:37:13.000Z",
-      "views": 1684,
-      "url": "https://data.cityofnewyork.us/d/i9n8-a8ed"
-    },
-    {
-      "id": "uafj-ik29",
-      "name": "NYPD Officer Profile - Disciplinary History Charges",
-      "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-13T15:25:56.000Z",
-      "created": "2021-12-02T20:35:47.000Z",
-      "views": 1105,
-      "url": "https://data.cityofnewyork.us/d/uafj-ik29"
-    },
-    {
-      "id": "wq9a-qu9a",
-      "name": "NYPD Officer Profile - Disciplinary History Summary",
-      "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-13T15:25:24.000Z",
-      "created": "2021-12-02T20:46:07.000Z",
-      "views": 1662,
-      "url": "https://data.cityofnewyork.us/d/wq9a-qu9a"
-    },
-    {
-      "id": "pmsy-ewrc",
-      "name": "NYPD Officer Profile - Members of Service",
-      "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-13T15:25:05.000Z",
-      "created": "2021-10-29T13:49:09.000Z",
-      "views": 16612,
-      "url": "https://data.cityofnewyork.us/d/pmsy-ewrc"
-    },
-    {
-      "id": "sh6y-4tgb",
-      "name": "NYPD Officer Profile - Title Shield History",
-      "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-13T15:24:01.000Z",
-      "created": "2021-10-15T16:01:41.000Z",
-      "views": 9428,
-      "url": "https://data.cityofnewyork.us/d/sh6y-4tgb"
-    },
-    {
-      "id": "92iy-9c3n",
-      "name": "Storefronts Reported Vacant or Not",
-      "category": "Finance & Budget",
-      "agency": "Department of Finance (DOF)",
-      "updated": "2026-10-13T15:23:13.000Z",
-      "created": "2021-12-01T22:29:53.000Z",
-      "views": 23141,
-      "url": "https://data.cityofnewyork.us/d/92iy-9c3n"
-    },
-    {
-      "id": "rn6p-xvjd",
-      "name": "Inspections of Municipal Solid Waste Disposal Locations (No Longer Maintained)",
-      "category": "Government Operations",
-      "agency": "Department of Sanitation (DSNY)",
-      "updated": "2026-10-13T15:16:11.000Z",
-      "created": "2017-01-04T21:14:26.000Z",
-      "views": 4666,
-      "url": "https://data.cityofnewyork.us/d/rn6p-xvjd"
-    },
-    {
-      "id": "n3mp-t5uj",
-      "name": "NYPD Officer Profile - Training",
-      "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-13T15:14:34.000Z",
-      "created": "2021-10-14T19:45:58.000Z",
-      "views": 1195,
-      "url": "https://data.cityofnewyork.us/d/n3mp-t5uj"
-    },
-    {
-      "id": "wvxf-dwi5",
-      "name": "Housing Maintenance Code Violations",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T14:53:18.000Z",
-      "created": "2013-11-18T19:49:47.000Z",
-      "views": 262362,
-      "url": "https://data.cityofnewyork.us/d/wvxf-dwi5"
     },
     {
       "id": "2fir-qns4",
       "name": "Civilian Complaint Review Board: Police Officers",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-13T14:09:05.000Z",
+      "updated": "2026-10-14T14:14:44.000Z",
       "created": "2022-06-06T16:15:01.000Z",
-      "views": 17904,
+      "views": 17933,
       "url": "https://data.cityofnewyork.us/d/2fir-qns4"
-    },
-    {
-      "id": "did2-qzw3",
-      "name": "CEQR Project Locations",
-      "category": "Government Operations",
-      "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
-      "updated": "2026-10-13T14:07:37.000Z",
-      "created": "2015-11-25T20:58:08.000Z",
-      "views": 3554,
-      "url": "https://data.cityofnewyork.us/d/did2-qzw3"
-    },
-    {
-      "id": "8fj8-3sgg",
-      "name": "CEQR Project Milestones",
-      "category": "Government Operations",
-      "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
-      "updated": "2026-10-13T14:07:22.000Z",
-      "created": "2015-11-25T20:55:48.000Z",
-      "views": 2635,
-      "url": "https://data.cityofnewyork.us/d/8fj8-3sgg"
     },
     {
       "id": "6xgr-kwjq",
       "name": "Civilian Complaint Review Board: Allegations Against Police Officers",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-13T14:07:19.000Z",
+      "updated": "2026-10-14T14:14:23.000Z",
       "created": "2022-06-06T16:01:09.000Z",
-      "views": 13714,
+      "views": 13733,
       "url": "https://data.cityofnewyork.us/d/6xgr-kwjq"
-    },
-    {
-      "id": "gezn-7mgk",
-      "name": "CEQR Projects",
-      "category": "Government Operations",
-      "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
-      "updated": "2026-10-13T14:07:09.000Z",
-      "created": "2015-11-25T20:53:18.000Z",
-      "views": 5432,
-      "url": "https://data.cityofnewyork.us/d/gezn-7mgk"
     },
     {
       "id": "ygpa-z7cr",
       "name": "Housing Maintenance Code Complaints and Problems",
       "category": "Housing & Development",
       "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T14:06:36.000Z",
+      "updated": "2026-10-14T14:07:16.000Z",
       "created": "2022-11-04T14:00:24.000Z",
-      "views": 23314,
+      "views": 23373,
       "url": "https://data.cityofnewyork.us/d/ygpa-z7cr"
     },
     {
@@ -277,9 +57,9 @@
       "name": "Civilian Complaint Review Board: Complaints Against Police Officers",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-13T14:04:37.000Z",
+      "updated": "2026-10-14T14:04:42.000Z",
       "created": "2022-06-06T15:34:16.000Z",
-      "views": 12933,
+      "views": 12947,
       "url": "https://data.cityofnewyork.us/d/2mby-ccnw"
     },
     {
@@ -287,29 +67,69 @@
       "name": "Civilian Complaint Review Board: Penalties",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-13T14:03:33.000Z",
+      "updated": "2026-10-14T14:03:34.000Z",
       "created": "2022-06-06T16:10:10.000Z",
-      "views": 5783,
+      "views": 5797,
       "url": "https://data.cityofnewyork.us/d/keep-pkmh"
     },
     {
-      "id": "ci93-uc8s",
-      "name": "SBS Certified Business List",
-      "category": "Business",
-      "agency": "Department of Small Business Services (SBS)",
-      "updated": "2026-10-13T13:51:59.000Z",
-      "created": "2015-06-11T15:01:07.000Z",
-      "views": 59512,
-      "url": "https://data.cityofnewyork.us/d/ci93-uc8s"
+      "id": "did2-qzw3",
+      "name": "CEQR Project Locations",
+      "category": "Government Operations",
+      "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
+      "updated": "2026-10-14T14:02:38.000Z",
+      "created": "2015-11-25T20:58:08.000Z",
+      "views": 3559,
+      "url": "https://data.cityofnewyork.us/d/did2-qzw3"
+    },
+    {
+      "id": "8fj8-3sgg",
+      "name": "CEQR Project Milestones",
+      "category": "Government Operations",
+      "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
+      "updated": "2026-10-14T14:01:52.000Z",
+      "created": "2015-11-25T20:55:48.000Z",
+      "views": 2640,
+      "url": "https://data.cityofnewyork.us/d/8fj8-3sgg"
+    },
+    {
+      "id": "y4fw-iqfr",
+      "name": "NYC Cooling Tower Registrations",
+      "category": "Health",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "updated": "2026-10-14T14:01:07.000Z",
+      "created": "2018-01-24T20:59:47.000Z",
+      "views": 32920,
+      "url": "https://data.cityofnewyork.us/d/y4fw-iqfr"
+    },
+    {
+      "id": "gezn-7mgk",
+      "name": "CEQR Projects",
+      "category": "Government Operations",
+      "agency": "Mayor’s Office of Environmental Coordination (MOEC)",
+      "updated": "2026-10-14T14:00:59.000Z",
+      "created": "2015-11-25T20:53:18.000Z",
+      "views": 5441,
+      "url": "https://data.cityofnewyork.us/d/gezn-7mgk"
+    },
+    {
+      "id": "8sdw-8vja",
+      "name": "Asset Management Parks System (AMPS) - Work Orders",
+      "category": "Environment",
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-10-14T13:57:25.000Z",
+      "created": "2018-01-22T20:55:36.000Z",
+      "views": 6892,
+      "url": "https://data.cityofnewyork.us/d/8sdw-8vja"
     },
     {
       "id": "9jgj-bmct",
       "name": "DOHMH Indoor Environmental Complaints",
       "category": "Health",
       "agency": "Department of Health and Mental Hygiene (DOHMH)",
-      "updated": "2026-10-13T13:43:06.000Z",
+      "updated": "2026-10-14T13:46:07.000Z",
       "created": "2018-01-24T21:17:57.000Z",
-      "views": 26737,
+      "views": 26766,
       "url": "https://data.cityofnewyork.us/d/9jgj-bmct"
     },
     {
@@ -317,9 +137,9 @@
       "name": "Local Law 8 of 2020 – Complaints of Illegal Parking of Vehicles Operated on Behalf of the City",
       "category": "Government Operations",
       "agency": "311",
-      "updated": "2026-10-13T13:38:16.000Z",
+      "updated": "2026-10-14T13:35:27.000Z",
       "created": "2020-04-10T17:24:14.000Z",
-      "views": 5059,
+      "views": 5069,
       "url": "https://data.cityofnewyork.us/d/cwy2-px8b"
     },
     {
@@ -327,79 +147,49 @@
       "name": "Deed Restriction Database",
       "category": "Government Operations",
       "agency": "No agency listed",
-      "updated": "2026-10-13T13:24:34.000Z",
+      "updated": "2026-10-14T13:30:39.000Z",
       "created": "2017-11-13T15:42:13.000Z",
-      "views": 21184,
+      "views": 21202,
       "url": "https://data.cityofnewyork.us/d/rfu7-paqe"
-    },
-    {
-      "id": "w3wp-dpdi",
-      "name": "NYC Parks Public Events – Upcoming 14 Days",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-13T13:12:08.000Z",
-      "created": "2026-05-01T15:39:44.000Z",
-      "views": 7924,
-      "url": "https://data.cityofnewyork.us/d/w3wp-dpdi"
-    },
-    {
-      "id": "fuhs-xmg2",
-      "name": "Urban Park Ranger Animal Condition Response",
-      "category": "Environment",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-13T13:11:04.000Z",
-      "created": "2018-10-31T14:44:49.000Z",
-      "views": 14359,
-      "url": "https://data.cityofnewyork.us/d/fuhs-xmg2"
     },
     {
       "id": "vx8i-nprf",
       "name": "Civil Service List (Active)",
       "category": "Procurement & Contracts",
       "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-10-13T13:10:27.000Z",
+      "updated": "2026-10-14T13:10:15.000Z",
       "created": "2016-06-14T21:12:15.000Z",
-      "views": 3607844,
+      "views": 3609204,
       "url": "https://data.cityofnewyork.us/d/vx8i-nprf"
     },
     {
-      "id": "s6dm-mdan",
-      "name": "Parks Inspection Program – Daily Immediate Attentions",
-      "category": "Recreation",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-13T13:10:17.000Z",
-      "created": "2018-10-03T14:16:28.000Z",
-      "views": 1608,
-      "url": "https://data.cityofnewyork.us/d/s6dm-mdan"
+      "id": "a9md-ynri",
+      "name": "Civil Service List Certification",
+      "category": "Finance & Budget",
+      "agency": "Department of Citywide Administrative Services (DCAS)",
+      "updated": "2026-10-14T13:08:05.000Z",
+      "created": "2016-11-16T19:24:56.000Z",
+      "views": 1103710,
+      "url": "https://data.cityofnewyork.us/d/a9md-ynri"
     },
     {
-      "id": "kz4v-8ai2",
-      "name": "Greenbelt Native Plant Center Inventory",
-      "category": "Government Operations",
-      "agency": "No agency listed",
-      "updated": "2026-10-13T13:06:44.000Z",
-      "created": "2021-07-23T20:16:35.000Z",
-      "views": 2316,
-      "url": "https://data.cityofnewyork.us/d/kz4v-8ai2"
-    },
-    {
-      "id": "yv25-wqf9",
-      "name": "Social Distancing and Enforcement: Parks Patrol Data",
-      "category": "Uncategorized",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-13T13:04:42.000Z",
-      "created": "2020-07-09T21:20:28.000Z",
-      "views": 2755,
-      "url": "https://data.cityofnewyork.us/d/yv25-wqf9"
+      "id": "uwx4-aafe",
+      "name": "Local Law 49 Reporting",
+      "category": "Social Services",
+      "agency": "Human Resources Administration (HRA)",
+      "updated": "2026-10-14T13:06:52.000Z",
+      "created": "2018-11-23T17:22:15.000Z",
+      "views": 1660,
+      "url": "https://data.cityofnewyork.us/d/uwx4-aafe"
     },
     {
       "id": "sp7n-275u",
       "name": "Medallion Taxi Initial Inspection Schedule",
       "category": "Transportation",
       "agency": "Taxi and Limousine Commission (TLC)",
-      "updated": "2026-10-13T13:01:16.000Z",
+      "updated": "2026-10-14T13:01:51.000Z",
       "created": "2019-09-12T19:28:07.000Z",
-      "views": 23068,
+      "views": 23107,
       "url": "https://data.cityofnewyork.us/d/sp7n-275u"
     },
     {
@@ -407,9 +197,9 @@
       "name": "Capital Project Tracker",
       "category": "Recreation",
       "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-13T13:01:03.000Z",
+      "updated": "2026-10-14T13:00:53.000Z",
       "created": "2019-11-14T14:48:59.000Z",
-      "views": 7649,
+      "views": 7661,
       "url": "https://data.cityofnewyork.us/d/4hcv-tc5r"
     },
     {
@@ -417,49 +207,19 @@
       "name": "Housing Maintenance Code Violations NYCHA properties",
       "category": "Housing & Development",
       "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-10-13T13:01:01.000Z",
+      "updated": "2026-10-14T13:00:30.000Z",
       "created": "2025-07-16T16:39:27.000Z",
-      "views": 7959,
+      "views": 7972,
       "url": "https://data.cityofnewyork.us/d/im9z-53hg"
-    },
-    {
-      "id": "cj3v-xdpd",
-      "name": "Street Construction Permits - Related Agency",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-10-13T12:53:07.000Z",
-      "created": "2018-12-27T17:42:24.000Z",
-      "views": 4088,
-      "url": "https://data.cityofnewyork.us/d/cj3v-xdpd"
-    },
-    {
-      "id": "hcv3-zacv",
-      "name": "Street Construction Permits - Cranes",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-10-13T12:37:52.000Z",
-      "created": "2018-12-18T19:22:11.000Z",
-      "views": 5201,
-      "url": "https://data.cityofnewyork.us/d/hcv3-zacv"
-    },
-    {
-      "id": "9fnm-j6if",
-      "name": "Street Construction Permits - Fee",
-      "category": "Transportation",
-      "agency": "Department of Transportation (DOT)",
-      "updated": "2026-10-13T12:37:22.000Z",
-      "created": "2018-12-18T19:58:58.000Z",
-      "views": 5748,
-      "url": "https://data.cityofnewyork.us/d/9fnm-j6if"
     },
     {
       "id": "dg92-zbpx",
       "name": "City Record Online",
       "category": "Procurement & Contracts",
       "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-10-13T12:34:44.000Z",
+      "updated": "2026-10-14T12:41:20.000Z",
       "created": "2015-04-15T16:29:36.000Z",
-      "views": 290273,
+      "views": 291320,
       "url": "https://data.cityofnewyork.us/d/dg92-zbpx"
     },
     {
@@ -467,9 +227,9 @@
       "name": "Recent Contract Awards",
       "category": "Procurement & Contracts",
       "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-10-13T12:34:44.000Z",
+      "updated": "2026-10-14T12:41:20.000Z",
       "created": "2015-12-29T21:50:15.000Z",
-      "views": 120001,
+      "views": 120051,
       "url": "https://data.cityofnewyork.us/d/qyyg-4tf5"
     },
     {
@@ -477,9 +237,9 @@
       "name": "Current Solicitations",
       "category": "Procurement & Contracts",
       "agency": "Department of Citywide Administrative Services (DCAS)",
-      "updated": "2026-10-13T12:34:44.000Z",
+      "updated": "2026-10-14T12:41:20.000Z",
       "created": "2015-12-29T21:47:53.000Z",
-      "views": 42304,
+      "views": 42335,
       "url": "https://data.cityofnewyork.us/d/3khw-qi8f"
     },
     {
@@ -487,20 +247,260 @@
       "name": "Dining Out NYC Locations",
       "category": "Transportation",
       "agency": "Department of Transportation (DOT)",
-      "updated": "2026-10-13T12:31:07.000Z",
+      "updated": "2026-10-14T12:31:07.000Z",
       "created": "2025-05-14T18:21:48.000Z",
-      "views": 7364,
+      "views": 7404,
       "url": "https://data.cityofnewyork.us/d/fpeh-f7ci"
+    },
+    {
+      "id": "cj3v-xdpd",
+      "name": "Street Construction Permits - Related Agency",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:22:36.000Z",
+      "created": "2018-12-27T17:42:24.000Z",
+      "views": 4093,
+      "url": "https://data.cityofnewyork.us/d/cj3v-xdpd"
+    },
+    {
+      "id": "hcv3-zacv",
+      "name": "Street Construction Permits - Cranes",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:19:52.000Z",
+      "created": "2018-12-18T19:22:11.000Z",
+      "views": 5213,
+      "url": "https://data.cityofnewyork.us/d/hcv3-zacv"
+    },
+    {
+      "id": "9fnm-j6if",
+      "name": "Street Construction Permits - Fee",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:19:22.000Z",
+      "created": "2018-12-18T19:58:58.000Z",
+      "views": 5756,
+      "url": "https://data.cityofnewyork.us/d/9fnm-j6if"
     },
     {
       "id": "6a2s-2t65",
       "name": "EZ Pass Readers July 2024- current",
       "category": "Transportation",
       "agency": "Department of Transportation (DOT)",
-      "updated": "2026-10-13T12:13:37.000Z",
+      "updated": "2026-10-14T12:13:25.000Z",
       "created": "2024-07-10T18:37:32.000Z",
-      "views": 7020,
+      "views": 7032,
       "url": "https://data.cityofnewyork.us/d/6a2s-2t65"
+    },
+    {
+      "id": "ct66-47at",
+      "name": "Bicycle and Pedestrian Counts",
+      "category": "Transportation",
+      "agency": "No agency listed",
+      "updated": "2026-10-14T12:11:43.000Z",
+      "created": "2025-12-30T18:46:52.000Z",
+      "views": 4815,
+      "url": "https://data.cityofnewyork.us/d/ct66-47at"
+    },
+    {
+      "id": "gx72-kirf",
+      "name": "Sidewalk Management Database - ReInspection",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:10:33.000Z",
+      "created": "2023-09-28T17:57:24.000Z",
+      "views": 1517,
+      "url": "https://data.cityofnewyork.us/d/gx72-kirf"
+    },
+    {
+      "id": "dntt-gqwq",
+      "name": "Sidewalk Management Database - Inspection",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:10:15.000Z",
+      "created": "2023-09-28T14:03:06.000Z",
+      "views": 4835,
+      "url": "https://data.cityofnewyork.us/d/dntt-gqwq"
+    },
+    {
+      "id": "i642-2fxq",
+      "name": "Sidewalk Management Database - Lot Info",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:09:47.000Z",
+      "created": "2025-01-17T18:56:43.000Z",
+      "views": 2729,
+      "url": "https://data.cityofnewyork.us/d/i642-2fxq"
+    },
+    {
+      "id": "6kbp-uz6m",
+      "name": "Sidewalk Management Database - Violations",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T12:05:41.000Z",
+      "created": "2023-09-28T18:55:03.000Z",
+      "views": 29960,
+      "url": "https://data.cityofnewyork.us/d/6kbp-uz6m"
+    },
+    {
+      "id": "6up2-gnw8",
+      "name": "Bicycle and Pedestrian Count Sensors",
+      "category": "Transportation",
+      "agency": "No agency listed",
+      "updated": "2026-10-14T12:00:13.000Z",
+      "created": "2025-12-26T22:14:25.000Z",
+      "views": 1860,
+      "url": "https://data.cityofnewyork.us/d/6up2-gnw8"
+    },
+    {
+      "id": "6z8x-wfk4",
+      "name": "Evictions",
+      "category": "Government Operations",
+      "agency": "Department of Investigation (DOI)",
+      "updated": "2026-10-14T11:42:02.000Z",
+      "created": "2016-08-01T20:09:44.000Z",
+      "views": 256260,
+      "url": "https://data.cityofnewyork.us/d/6z8x-wfk4"
+    },
+    {
+      "id": "ge3f-inui",
+      "name": "Bridge Hold Location Stipulations",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T11:00:20.000Z",
+      "created": "2018-10-11T15:36:26.000Z",
+      "views": 2149,
+      "url": "https://data.cityofnewyork.us/d/ge3f-inui"
+    },
+    {
+      "id": "ez4e-fazm",
+      "name": "Bus Breakdown and Delays",
+      "category": "Transportation",
+      "agency": "Department of Education (DOE)",
+      "updated": "2026-10-14T10:32:52.000Z",
+      "created": "2015-09-30T17:08:23.000Z",
+      "views": 53933,
+      "url": "https://data.cityofnewyork.us/d/ez4e-fazm"
+    },
+    {
+      "id": "edk2-vkjh",
+      "name": "Pharmaceutical and Syringe Drop-Off Locations in NYC",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:13:52.000Z",
+      "created": "2019-10-21T17:36:57.000Z",
+      "views": 4837,
+      "url": "https://data.cityofnewyork.us/d/edk2-vkjh"
+    },
+    {
+      "id": "g9pi-q9mx",
+      "name": "Pharmaceutical and Syringe Drop-Off Locations in NYC (Map)",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:13:52.000Z",
+      "created": "2019-10-21T18:21:44.000Z",
+      "views": 2161,
+      "url": "https://data.cityofnewyork.us/d/g9pi-q9mx"
+    },
+    {
+      "id": "2kdb-mfqb",
+      "name": "DSNY Garages (Map)",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:10:43.000Z",
+      "created": "2020-07-23T20:32:15.000Z",
+      "views": 11290,
+      "url": "https://data.cityofnewyork.us/d/2kdb-mfqb"
+    },
+    {
+      "id": "xw3j-2yxf",
+      "name": "DSNY Garages",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:10:43.000Z",
+      "created": "2020-07-23T15:06:34.000Z",
+      "views": 6563,
+      "url": "https://data.cityofnewyork.us/d/xw3j-2yxf"
+    },
+    {
+      "id": "242c-ru4i",
+      "name": "DSNY Special Waste Drop-off Sites",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:07:38.000Z",
+      "created": "2020-07-24T02:27:10.000Z",
+      "views": 7818,
+      "url": "https://data.cityofnewyork.us/d/242c-ru4i"
+    },
+    {
+      "id": "68qr-38va",
+      "name": "Special Waste Drop-Off Sites (Map)",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:07:38.000Z",
+      "created": "2020-07-24T03:14:11.000Z",
+      "views": 3566,
+      "url": "https://data.cityofnewyork.us/d/68qr-38va"
+    },
+    {
+      "id": "gsgx-6efw",
+      "name": "Street Construction Permits - Stipulations (2020 - Present)",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T10:07:17.000Z",
+      "created": "2018-12-19T19:33:11.000Z",
+      "views": 5972,
+      "url": "https://data.cityofnewyork.us/d/gsgx-6efw"
+    },
+    {
+      "id": "nfid-uabd",
+      "name": "Parking Regulation Locations and Signs",
+      "category": "Transportation",
+      "agency": "Department of Transportation (DOT)",
+      "updated": "2026-10-14T10:03:37.000Z",
+      "created": "2022-03-14T13:52:58.000Z",
+      "views": 31940,
+      "url": "https://data.cityofnewyork.us/d/nfid-uabd"
+    },
+    {
+      "id": "a7bv-5698",
+      "name": "DSNY Commercial Waste Zones (Map)",
+      "category": "Procurement & Contracts",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:02:33.000Z",
+      "created": "2020-07-28T19:08:15.000Z",
+      "views": 10362,
+      "url": "https://data.cityofnewyork.us/d/a7bv-5698"
+    },
+    {
+      "id": "8ev8-jjxq",
+      "name": "DSNY Commercial Waste Zones",
+      "category": "Procurement & Contracts",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:02:33.000Z",
+      "created": "2020-07-28T18:57:33.000Z",
+      "views": 7636,
+      "url": "https://data.cityofnewyork.us/d/8ev8-jjxq"
+    },
+    {
+      "id": "5ery-qagt",
+      "name": "DOHMH School Cafeteria Inspections (2020-Present)",
+      "category": "Health",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "updated": "2026-10-14T10:01:02.000Z",
+      "created": "2023-03-24T21:01:27.000Z",
+      "views": 12291,
+      "url": "https://data.cityofnewyork.us/d/5ery-qagt"
+    },
+    {
+      "id": "wshr-5vic",
+      "name": "Electronics Drop Off Locations in NYC",
+      "category": "Environment",
+      "agency": "Department of Sanitation (DSNY)",
+      "updated": "2026-10-14T10:00:23.000Z",
+      "created": "2019-10-21T15:58:03.000Z",
+      "views": 20229,
+      "url": "https://data.cityofnewyork.us/d/wshr-5vic"
     }
   ]
 }

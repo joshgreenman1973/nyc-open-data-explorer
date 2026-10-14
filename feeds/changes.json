@@ -1,7 +1,67 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-13T16:55:22+00:00",
+ "generated": "2026-10-14T14:29:14+00:00",
  "items": [
+  {
+   "id": "f4tj-796d",
+   "name": "NYPD Use of Force Incidents",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/f4tj-796d",
+   "kind": "description_changed",
+   "date": "2026-10-14",
+   "before": "...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "after": "...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "before_len": 833,
+   "after_len": 833,
+   "diff_at": 723
+  },
+  {
+   "id": "6rrm-vxj9",
+   "name": "NYC Parks Monuments",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/6rrm-vxj9",
+   "kind": "columns_changed",
+   "date": "2026-10-14",
+   "columns_added": [],
+   "columns_removed": [
+    "X",
+    "Y"
+   ]
+  },
+  {
+   "id": "dufe-vxb7",
+   "name": "NYPD Use of Force: Subjects",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/dufe-vxb7",
+   "kind": "description_changed",
+   "date": "2026-10-14",
+   "before": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "after": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "before_len": 1001,
+   "after_len": 1001,
+   "diff_at": 891
+  },
+  {
+   "id": "v5jd-6wqn",
+   "name": "NYPD Use of Force: Members of Service",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/v5jd-6wqn",
+   "kind": "description_changed",
+   "date": "2026-10-14",
+   "before": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "after": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "before_len": 1014,
+   "after_len": 1014,
+   "diff_at": 904
+  },
   {
    "id": "6rrm-vxj9",
    "name": "NYC Parks Monuments",
@@ -1406,66 +1466,6 @@
    "before_len": 1304,
    "after_len": 1186,
    "diff_at": 431
-  },
-  {
-   "id": "uamn-5779",
-   "name": "MISC_TEXT",
-   "agency": "Department of Finance (DOF)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/uamn-5779",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1353,
-   "after_len": 1235,
-   "diff_at": 480
-  },
-  {
-   "id": "ce23-cck4",
-   "name": "POSSESSION_HOOK",
-   "agency": "Department of Finance (DOF)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/ce23-cck4",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1340,
-   "after_len": 1222,
-   "diff_at": 467
-  },
-  {
-   "id": "uf93-f8nk",
-   "name": "AddressPoint",
-   "agency": "Office of Technology and Innovation (OTI)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/uf93-f8nk",
-   "kind": "description_changed",
-   "date": "2026-07-03",
-   "before": "Address points were developed to supplement the address information supplied by the CSCL centerline. Some computer aided dispatch systems use address ...",
-   "after": "NOTE: There is a temporary error where this data is not showing all records. While we work to fix this error, please use this file in the interim. Add...",
-   "before_len": 327,
-   "after_len": 474,
-   "diff_at": 0
-  },
-  {
-   "id": "5zhs-2jue",
-   "name": "BUILDING",
-   "agency": "Office of Technology and Innovation (OTI)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/5zhs-2jue",
-   "kind": "description_changed",
-   "date": "2026-07-02",
-   "before": "Footprint outlines of buildings in New York City. Please see the following link for additional documentation: https://github.com/CityOfNewYork/nyc-geo...",
-   "after": "NOTE: There is an error where this data is only showing some records. While we work to fix this error, please use this file in the interim. Footprint ...",
-   "before_len": 355,
-   "after_len": 495,
-   "diff_at": 0
   }
  ]
 }

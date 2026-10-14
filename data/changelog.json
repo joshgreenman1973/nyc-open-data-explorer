@@ -1,6 +1,66 @@
 {
- "generated_at": "2026-10-13T16:55:21+00:00",
+ "generated_at": "2026-10-14T14:29:14+00:00",
  "events": [
+  {
+   "id": "f4tj-796d",
+   "name": "NYPD Use of Force Incidents",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/f4tj-796d",
+   "kind": "description_changed",
+   "date": "2026-10-14",
+   "before": "...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "after": "...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "before_len": 833,
+   "after_len": 833,
+   "diff_at": 723
+  },
+  {
+   "id": "6rrm-vxj9",
+   "name": "NYC Parks Monuments",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/6rrm-vxj9",
+   "kind": "columns_changed",
+   "date": "2026-10-14",
+   "columns_added": [],
+   "columns_removed": [
+    "X",
+    "Y"
+   ]
+  },
+  {
+   "id": "dufe-vxb7",
+   "name": "NYPD Use of Force: Subjects",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/dufe-vxb7",
+   "kind": "description_changed",
+   "date": "2026-10-14",
+   "before": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "after": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "before_len": 1001,
+   "after_len": 1001,
+   "diff_at": 891
+  },
+  {
+   "id": "v5jd-6wqn",
+   "name": "NYPD Use of Force: Members of Service",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/v5jd-6wqn",
+   "kind": "description_changed",
+   "date": "2026-10-14",
+   "before": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "after": "...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).",
+   "before_len": 1014,
+   "after_len": 1014,
+   "diff_at": 904
+  },
   {
    "id": "6rrm-vxj9",
    "name": "NYC Parks Monuments",
@@ -3038,10 +3098,10 @@
   }
  ],
  "counts": {
-  "columns_changed": 20,
+  "description_changed": 144,
+  "columns_changed": 21,
   "added": 14,
   "agency_changed": 4,
-  "description_changed": 141,
   "renamed": 30
  }
 }
