@@ -1,6 +1,48 @@
 {
- "generated_at": "2026-10-14T14:29:14+00:00",
+ "generated_at": "2026-10-15T14:08:44+00:00",
  "events": [
+  {
+   "id": "32cj-z7va",
+   "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
+   "agency": "Department for the Aging (NYC Aging)",
+   "category": "Procurement & Contracts",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/32cj-z7va",
+   "kind": "description_changed",
+   "date": "2026-10-15",
+   "before": "Listing of registered agencies providing Social Adult Day Care Services with hours of operation",
+   "after": "Listing of registered and contracted agencies providing Social Adult Day Care Services with hours of operation. A social adult day care (SADC) is a structured program that p...",
+   "before_len": 95,
+   "after_len": 302,
+   "diff_at": 23
+  },
+  {
+   "id": "aabe-yfm9",
+   "name": "City Council Committee Membership (1999 to 2026)",
+   "agency": "New York City Council (NYCC)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/aabe-yfm9",
+   "kind": "renamed",
+   "date": "2026-10-15",
+   "before": "City Council Committee Membership (1999 to 2025)",
+   "after": "City Council Committee Membership (1999 to 2026)"
+  },
+  {
+   "id": "aabe-yfm9",
+   "name": "City Council Committee Membership (1999 to 2026)",
+   "agency": "New York City Council (NYCC)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/aabe-yfm9",
+   "kind": "description_changed",
+   "date": "2026-10-15",
+   "before": "...the appointments of New York City Council Members from 1999 through 2025. Information before 1999 is not contained in Legistar, the Council's tracking system. More information on Committees can be found at: https://counci...",
+   "after": "...the appointments of New York City Council Members from 1999 through 2026. Information before 1999 is not contained in Legistar, the Council's tracking system. More information on Committees can be found at: https://counci...",
+   "before_len": 379,
+   "after_len": 379,
+   "diff_at": 108
+  },
   {
    "id": "f4tj-796d",
    "name": "NYPD Use of Force Incidents",
@@ -3098,10 +3140,10 @@
   }
  ],
  "counts": {
-  "description_changed": 144,
+  "description_changed": 146,
+  "renamed": 31,
   "columns_changed": 21,
   "added": 14,
-  "agency_changed": 4,
-  "renamed": 30
+  "agency_changed": 4
  }
 }

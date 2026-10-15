@@ -3,8 +3,29 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Wed, 14 Oct 2026 14:29:14 +0000</lastBuildDate>
+<lastBuildDate>Thu, 15 Oct 2026 14:08:44 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: Department for the Aging (NYC Aging) - Social Adult Day Care Services</title>
+<link>https://data.cityofnewyork.us/d/32cj-z7va</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/32cj-z7va#description_changed-2026-10-15</guid>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: Listing of registered agencies providing Social Adult Day Care Services with hours of operation — After: Listing of registered and contracted agencies providing Social Adult Day Care Services with hours of operation. A social adult day care (SADC) is a structured program that p...</description>
+</item>
+<item>
+<title>Renamed: City Council Committee Membership (1999 to 2026)</title>
+<link>https://data.cityofnewyork.us/d/aabe-yfm9</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/aabe-yfm9#renamed-2026-10-15</guid>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+<description>Was: City Council Committee Membership (1999 to 2025). Now: City Council Committee Membership (1999 to 2026).</description>
+</item>
+<item>
+<title>Description changed: City Council Committee Membership (1999 to 2026)</title>
+<link>https://data.cityofnewyork.us/d/aabe-yfm9</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/aabe-yfm9#description_changed-2026-10-15</guid>
+<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: ...the appointments of New York City Council Members from 1999 through 2025. Information before 1999 is not contained in Legistar, the Council's tracking system. More information on Committees can be found at: https://counci... — After: ...the appointments of New York City Council Members from 1999 through 2026. Information before 1999 is not contained in Legistar, the Council's tracking system. More information on Committees can be found at: https://counci...</description>
+</item>
 <item>
 <title>Description changed: NYPD Use of Force Incidents</title>
 <link>https://data.cityofnewyork.us/d/f4tj-796d</link>
@@ -681,27 +702,6 @@
 <title>Description changed: BOUNDARY</title>
 <link>https://data.cityofnewyork.us/d/bhci-bpwh</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/bhci-bpwh#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: TAX_BLOCK_POLYGON</title>
-<link>https://data.cityofnewyork.us/d/akq4-haa2</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/akq4-haa2#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: TAX_LOT_FACE</title>
-<link>https://data.cityofnewyork.us/d/sif6-3bej</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/sif6-3bej#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Online on the 1st. The online map always shows the most recent version. • Accessing the Data: • Digital Tax Map on NYC Open Data: See the complete collection . • Individual layers: Downloadable from the Digital Tax Map Featu... — After: ...Online on the 1st. The online map always shows the most recent version. • Updates: Data is extracted from DOF’s internal system on the last Friday of each month and refreshed on ArcGIS Online on the 1st. The online map alway...</description>
-</item>
-<item>
-<title>Description changed: Digital Tax Map: Air Lots</title>
-<link>https://data.cityofnewyork.us/d/mdja-si6a</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/mdja-si6a#description_changed-2026-07-07</guid>
 <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
 </item>
