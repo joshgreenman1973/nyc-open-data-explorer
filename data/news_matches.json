@@ -1,24 +1,9 @@
 {
-  "computed_at": "2026-10-15T14:09:16+00:00",
+  "computed_at": "2026-10-16T13:57:57+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
-    {
-      "headline": "New York City Mayor Zohran Mamdani orders department-wide review of NYPD use of force policies",
-      "source": "CNN",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA5dWp0M19yeW5qNDZ3cm0wQVhjZmUxaDZmaEc2Wmp5M2JzT2RxeWxLaVNGUlh6U0ZfdDlBYWdGYU9DVHJ5Qk9qYlFDOXlnTXBPc1ptZHJzdHlWLVVjMk5xcHk2dElXejAtU1hULUQyNmV0N3ZFcWo1MThR?oc=5",
-      "pubDate": "Mon, 12 Oct 2026 17:37:35 GMT",
-      "topic": "Police use of force / civilian complaints",
-      "dataset_id": "f4tj-796d",
-      "dataset_name": "NYPD Use of Force Incidents",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/f4tj-796d",
-      "match_terms": [
-        "use of force"
-      ]
-    },
     {
       "headline": "Mamdani Demands Trump End ICE Operations in New York After Shooting",
       "source": "Time Magazine",
@@ -32,6 +17,36 @@
       "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
       "match_terms": [
         "shooting"
+      ]
+    },
+    {
+      "headline": "Rich New Yorkers scrambling to dodge Mamdani's pied-à-terre tax are slamming into a harsh reality",
+      "source": "Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPT3JydWtDak1lYUNISFZJYTdGOWtZSkhlQ28zdFVhQVRnVGtFa3MzdG5oRncwSk5jdFpKRTBKY3A4TWpBNVZ5ZENqQjZaeklSUUh3dm1vUUx3WkJMTmpCUjg0SGlQYXJDQVBOLTlDX2E1Zmkwc1gtOUNCQlJSZm9hdEtRV3V3cF9MdWpHS1Y4cG84eGtHTUlKR0Y3Snp0Zw?oc=5",
+      "pubDate": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "topic": "Property tax data",
+      "dataset_id": "8h5j-fqxa",
+      "dataset_name": "ACRIS - Real Property Legals",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Department of Finance (DOF)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
+      "match_terms": [
+        "pied-à-terre"
+      ]
+    },
+    {
+      "headline": "NYC School Aide Says He Paid Bus Fare Before MTA Officers Tackled Him",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVU80MV9ERVNmQ3VBN2I4d2l2aTVSX3ZyX2d3a3pLaXJHUHk0VjAySFhzLUluRW1ISHp6RkVKOEhqMnJfMlp0UnozQl9tLUFDRmVZcTlnbHdyRndnU3RFcVhWUTUwZnloOXlqUndnVkgtR0JmaUlrV08yX0lBOXRFU1lWcE5BSkU?oc=5",
+      "pubDate": "Thu, 15 Oct 2026 16:45:03 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "mta"
       ]
     }
   ]
