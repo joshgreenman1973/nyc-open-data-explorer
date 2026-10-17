@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 16 Oct 2026 13:55:50 +0000</lastBuildDate>
+<lastBuildDate>Sat, 17 Oct 2026 12:56:37 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: Department for the Aging (NYC Aging) - Social Adult Day Care Services</title>
+<link>https://data.cityofnewyork.us/d/32cj-z7va</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/32cj-z7va#columns_changed-2026-10-17</guid>
+<pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Additional Languages Spoken, Address1, Address2, Anticipated Daily Attendance, Business Entity Type, Business Name, Census Tract (2020), City, Claims ADA Compliant, Claims NYS OMIG Certified, Establishment Year, Languages Spoken, Neighborhood Tabulation Area (NTA) (2020), Phone, State, Website, ZipCode. Removed: Census Tract, NTA, ProgramAddress, ProgramCity, ProgramName, ProgramPhone, ProgramState, ProgramZipCode, SponsorName.</description>
+</item>
 <item>
 <title>Description changed: Department for the Aging (NYC Aging) - Social Adult Day Care Services</title>
 <link>https://data.cityofnewyork.us/d/32cj-z7va</link>
@@ -695,13 +702,6 @@
 <title>Description changed: Digital Tax Map: Real Estate of Utility Company (REUC) Lots</title>
 <link>https://data.cityofnewyork.us/d/xsf7-3x9j</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/xsf7-3x9j#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: BOUNDARY</title>
-<link>https://data.cityofnewyork.us/d/bhci-bpwh</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/bhci-bpwh#description_changed-2026-07-07</guid>
 <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
 </item>

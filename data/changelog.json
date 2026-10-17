@@ -1,6 +1,46 @@
 {
- "generated_at": "2026-10-16T13:55:50+00:00",
+ "generated_at": "2026-10-17T12:56:37+00:00",
  "events": [
+  {
+   "id": "32cj-z7va",
+   "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
+   "agency": "Department for the Aging (NYC Aging)",
+   "category": "Procurement & Contracts",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/32cj-z7va",
+   "kind": "columns_changed",
+   "date": "2026-10-17",
+   "columns_added": [
+    "Additional Languages Spoken",
+    "Address1",
+    "Address2",
+    "Anticipated Daily Attendance",
+    "Business Entity Type",
+    "Business Name",
+    "Census Tract (2020)",
+    "City",
+    "Claims ADA Compliant",
+    "Claims NYS OMIG Certified",
+    "Establishment Year",
+    "Languages Spoken",
+    "Neighborhood Tabulation Area (NTA) (2020)",
+    "Phone",
+    "State",
+    "Website",
+    "ZipCode"
+   ],
+   "columns_removed": [
+    "Census Tract",
+    "NTA",
+    "ProgramAddress",
+    "ProgramCity",
+    "ProgramName",
+    "ProgramPhone",
+    "ProgramState",
+    "ProgramZipCode",
+    "SponsorName"
+   ]
+  },
   {
    "id": "32cj-z7va",
    "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
@@ -3140,9 +3180,9 @@
   }
  ],
  "counts": {
+  "columns_changed": 22,
   "description_changed": 146,
   "renamed": 31,
-  "columns_changed": 21,
   "added": 14,
   "agency_changed": 4
  }

@@ -1,7 +1,47 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-16T13:55:50+00:00",
+ "generated": "2026-10-17T12:56:37+00:00",
  "items": [
+  {
+   "id": "32cj-z7va",
+   "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
+   "agency": "Department for the Aging (NYC Aging)",
+   "category": "Procurement & Contracts",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/32cj-z7va",
+   "kind": "columns_changed",
+   "date": "2026-10-17",
+   "columns_added": [
+    "Additional Languages Spoken",
+    "Address1",
+    "Address2",
+    "Anticipated Daily Attendance",
+    "Business Entity Type",
+    "Business Name",
+    "Census Tract (2020)",
+    "City",
+    "Claims ADA Compliant",
+    "Claims NYS OMIG Certified",
+    "Establishment Year",
+    "Languages Spoken",
+    "Neighborhood Tabulation Area (NTA) (2020)",
+    "Phone",
+    "State",
+    "Website",
+    "ZipCode"
+   ],
+   "columns_removed": [
+    "Census Tract",
+    "NTA",
+    "ProgramAddress",
+    "ProgramCity",
+    "ProgramName",
+    "ProgramPhone",
+    "ProgramState",
+    "ProgramZipCode",
+    "SponsorName"
+   ]
+  },
   {
    "id": "32cj-z7va",
    "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
@@ -1448,21 +1488,6 @@
    "before_len": 1323,
    "after_len": 1205,
    "diff_at": 450
-  },
-  {
-   "id": "bhci-bpwh",
-   "name": "BOUNDARY",
-   "agency": "Department of Finance (DOF)",
-   "category": "Maps & Geography",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/bhci-bpwh",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1328,
-   "after_len": 1210,
-   "diff_at": 455
   }
  ]
 }
