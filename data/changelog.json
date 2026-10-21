@@ -1,6 +1,46 @@
 {
- "generated_at": "2026-10-20T14:17:17+00:00",
+ "generated_at": "2026-10-21T14:28:36+00:00",
  "events": [
+  {
+   "id": "e3xf-jwmj",
+   "name": "Watershed Water Quality - Hydrology",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/e3xf-jwmj",
+   "kind": "columns_changed",
+   "date": "2026-10-21",
+   "columns_added": [
+    "Basin",
+    "Comments",
+    "Description",
+    "Final",
+    "Method",
+    "ResultStatus",
+    "SampleDateTime",
+    "Sample_Type",
+    "Site",
+    "System"
+   ],
+   "columns_removed": [
+    "Final Result",
+    "Sample Site",
+    "Sample Time",
+    "Status",
+    "Stream Group"
+   ]
+  },
+  {
+   "id": "cjw9-h5zw",
+   "name": "NYC Parks Volunteer Group Directory",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/cjw9-h5zw",
+   "kind": "added",
+   "date": "2026-10-21",
+   "summary": "Data set lists all volunteer groups that have been published on NYC Parks' Volunteer Group Directory, including formal volunteer organizations, grassroots groups, GreenThumb gardens, and official partners."
+  },
   {
    "id": "32cj-z7va",
    "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
@@ -3180,10 +3220,10 @@
   }
  ],
  "counts": {
-  "columns_changed": 22,
+  "columns_changed": 23,
+  "added": 15,
   "description_changed": 146,
   "renamed": 31,
-  "added": 14,
   "agency_changed": 4
  }
 }

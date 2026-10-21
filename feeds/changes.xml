@@ -3,8 +3,22 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Tue, 20 Oct 2026 14:17:17 +0000</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 14:28:36 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: Watershed Water Quality - Hydrology</title>
+<link>https://data.cityofnewyork.us/d/e3xf-jwmj</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/e3xf-jwmj#columns_changed-2026-10-21</guid>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Basin, Comments, Description, Final, Method, ResultStatus, SampleDateTime, Sample_Type, Site, System. Removed: Final Result, Sample Site, Sample Time, Status, Stream Group.</description>
+</item>
+<item>
+<title>New dataset: NYC Parks Volunteer Group Directory</title>
+<link>https://data.cityofnewyork.us/d/cjw9-h5zw</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/cjw9-h5zw#added-2026-10-21</guid>
+<pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+<description>Data set lists all volunteer groups that have been published on NYC Parks' Volunteer Group Directory, including formal volunteer organizations, grassroots groups, GreenThumb gardens, and official partners.</description>
+</item>
 <item>
 <title>Columns changed: Department for the Aging (NYC Aging) - Social Adult Day Care Services</title>
 <link>https://data.cityofnewyork.us/d/32cj-z7va</link>
@@ -688,20 +702,6 @@
 <title>Description changed: Digital Tax Map: Subterranean Lots</title>
 <link>https://data.cityofnewyork.us/d/ag5u-vnw2</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/ag5u-vnw2#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: Digital Tax Map: Condominiums</title>
-<link>https://data.cityofnewyork.us/d/p8u6-a6it</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/p8u6-a6it#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: Digital Tax Map: Real Estate of Utility Company (REUC) Lots</title>
-<link>https://data.cityofnewyork.us/d/xsf7-3x9j</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/xsf7-3x9j#description_changed-2026-07-07</guid>
 <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
 </item>

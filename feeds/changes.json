@@ -1,7 +1,47 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-20T14:17:17+00:00",
+ "generated": "2026-10-21T14:28:36+00:00",
  "items": [
+  {
+   "id": "e3xf-jwmj",
+   "name": "Watershed Water Quality - Hydrology",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/e3xf-jwmj",
+   "kind": "columns_changed",
+   "date": "2026-10-21",
+   "columns_added": [
+    "Basin",
+    "Comments",
+    "Description",
+    "Final",
+    "Method",
+    "ResultStatus",
+    "SampleDateTime",
+    "Sample_Type",
+    "Site",
+    "System"
+   ],
+   "columns_removed": [
+    "Final Result",
+    "Sample Site",
+    "Sample Time",
+    "Status",
+    "Stream Group"
+   ]
+  },
+  {
+   "id": "cjw9-h5zw",
+   "name": "NYC Parks Volunteer Group Directory",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/cjw9-h5zw",
+   "kind": "added",
+   "date": "2026-10-21",
+   "summary": "Data set lists all volunteer groups that have been published on NYC Parks' Volunteer Group Directory, including formal volunteer organizations, grassroots groups, GreenThumb gardens, and official partners."
+  },
   {
    "id": "32cj-z7va",
    "name": "Department for the Aging (NYC Aging) - Social Adult Day Care Services",
@@ -1458,36 +1498,6 @@
    "before_len": 1298,
    "after_len": 1180,
    "diff_at": 425
-  },
-  {
-   "id": "p8u6-a6it",
-   "name": "Digital Tax Map: Condominiums",
-   "agency": "Department of Finance (DOF)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/p8u6-a6it",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1304,
-   "after_len": 1186,
-   "diff_at": 431
-  },
-  {
-   "id": "xsf7-3x9j",
-   "name": "Digital Tax Map: Real Estate of Utility Company (REUC) Lots",
-   "agency": "Department of Finance (DOF)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/xsf7-3x9j",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1323,
-   "after_len": 1205,
-   "diff_at": 450
   }
  ]
 }
