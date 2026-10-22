@@ -1,7 +1,37 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-21T14:28:36+00:00",
+ "generated": "2026-10-22T14:29:39+00:00",
  "items": [
+  {
+   "id": "wcg2-rbkn",
+   "name": "Watershed Water Quality - Keypoint",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/wcg2-rbkn",
+   "kind": "columns_changed",
+   "date": "2026-10-22",
+   "columns_added": [
+    "Comments",
+    "Description",
+    "Final",
+    "Location",
+    "Method",
+    "ResultStatus",
+    "SampleDateTime",
+    "Site",
+    "System",
+    "Tap_Elevation_Ft"
+   ],
+   "columns_removed": [
+    "Aqueduct Group",
+    "Elevation (ft)",
+    "Final Result",
+    "Sample Site",
+    "Sample Time",
+    "Status"
+   ]
+  },
   {
    "id": "e3xf-jwmj",
    "name": "Watershed Water Quality - Hydrology",
@@ -1483,21 +1513,6 @@
    "before_len": 1347,
    "after_len": 1229,
    "diff_at": 474
-  },
-  {
-   "id": "ag5u-vnw2",
-   "name": "Digital Tax Map: Subterranean Lots",
-   "agency": "Department of Finance (DOF)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/ag5u-vnw2",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1298,
-   "after_len": 1180,
-   "diff_at": 425
   }
  ]
 }

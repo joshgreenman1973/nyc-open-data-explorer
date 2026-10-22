@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Wed, 21 Oct 2026 14:28:36 +0000</lastBuildDate>
+<lastBuildDate>Thu, 22 Oct 2026 14:29:39 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: Watershed Water Quality - Keypoint</title>
+<link>https://data.cityofnewyork.us/d/wcg2-rbkn</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/wcg2-rbkn#columns_changed-2026-10-22</guid>
+<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Comments, Description, Final, Location, Method, ResultStatus, SampleDateTime, Site, System, Tap_Elevation_Ft. Removed: Aqueduct Group, Elevation (ft), Final Result, Sample Site, Sample Time, Status.</description>
+</item>
 <item>
 <title>Columns changed: Watershed Water Quality - Hydrology</title>
 <link>https://data.cityofnewyork.us/d/e3xf-jwmj</link>
@@ -695,13 +702,6 @@
 <title>Description changed: TAX_LOT_POLYGON</title>
 <link>https://data.cityofnewyork.us/d/i38t-6if2</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/i38t-6if2#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
-</item>
-<item>
-<title>Description changed: Digital Tax Map: Subterranean Lots</title>
-<link>https://data.cityofnewyork.us/d/ag5u-vnw2</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/ag5u-vnw2#description_changed-2026-07-07</guid>
 <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
 </item>
