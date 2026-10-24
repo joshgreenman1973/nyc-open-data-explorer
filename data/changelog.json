@@ -1,6 +1,21 @@
 {
- "generated_at": "2026-10-23T14:12:49+00:00",
+ "generated_at": "2026-10-24T13:18:07+00:00",
  "events": [
+  {
+   "id": "da9u-wz3r",
+   "name": "Metal Content of Consumer Products Tested by the NYC Health Department",
+   "agency": "Department of Health and Mental Hygiene (DOHMH)",
+   "category": "Health",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/da9u-wz3r",
+   "kind": "description_changed",
+   "date": "2026-10-24",
+   "before": "...information on hazardous consumer products, visit nyc.gov/hazardous products.",
+   "after": "...information on hazardous consumer products, visit nyc.gov/hazardous products. For the survey, please follow this link: https://nycdohmh.surveymonkey.com/r/HowDoYouUseThisData",
+   "before_len": 607,
+   "after_len": 704,
+   "diff_at": 607
+  },
   {
    "id": "wcg2-rbkn",
    "name": "Watershed Water Quality - Keypoint",
@@ -3250,9 +3265,9 @@
   }
  ],
  "counts": {
+  "description_changed": 147,
   "columns_changed": 24,
   "added": 15,
-  "description_changed": 146,
   "renamed": 31,
   "agency_changed": 4
  }

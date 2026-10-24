@@ -1,7 +1,22 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-23T14:12:49+00:00",
+ "generated": "2026-10-24T13:18:08+00:00",
  "items": [
+  {
+   "id": "da9u-wz3r",
+   "name": "Metal Content of Consumer Products Tested by the NYC Health Department",
+   "agency": "Department of Health and Mental Hygiene (DOHMH)",
+   "category": "Health",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/da9u-wz3r",
+   "kind": "description_changed",
+   "date": "2026-10-24",
+   "before": "...information on hazardous consumer products, visit nyc.gov/hazardous products.",
+   "after": "...information on hazardous consumer products, visit nyc.gov/hazardous products. For the survey, please follow this link: https://nycdohmh.surveymonkey.com/r/HowDoYouUseThisData",
+   "before_len": 607,
+   "after_len": 704,
+   "diff_at": 607
+  },
   {
    "id": "wcg2-rbkn",
    "name": "Watershed Water Quality - Keypoint",
@@ -1498,21 +1513,6 @@
    "before_len": 1310,
    "after_len": 1192,
    "diff_at": 437
-  },
-  {
-   "id": "i38t-6if2",
-   "name": "TAX_LOT_POLYGON",
-   "agency": "Department of Finance (DOF)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/i38t-6if2",
-   "kind": "description_changed",
-   "date": "2026-07-07",
-   "before": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the...",
-   "after": "...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...",
-   "before_len": 1347,
-   "after_len": 1229,
-   "diff_at": 474
   }
  ]
 }
