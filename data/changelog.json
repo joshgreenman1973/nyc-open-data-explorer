@@ -1,6 +1,88 @@
 {
- "generated_at": "2026-10-27T15:19:16+00:00",
+ "generated_at": "2026-10-28T15:58:35+00:00",
  "events": [
+  {
+   "id": "zkky-n5j3",
+   "name": "Reservoir Operations",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/zkky-n5j3",
+   "kind": "renamed",
+   "date": "2026-10-28",
+   "before": "Current Reservoir Levels",
+   "after": "Reservoir Operations"
+  },
+  {
+   "id": "zkky-n5j3",
+   "name": "Reservoir Operations",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/zkky-n5j3",
+   "kind": "description_changed",
+   "date": "2026-10-28",
+   "before": "The daily capacity and percent of capacity filled for each of the City's reservoirs.",
+   "after": "New York City water supply reservoir operations",
+   "before_len": 84,
+   "after_len": 47,
+   "diff_at": 0
+  },
+  {
+   "id": "zkky-n5j3",
+   "name": "Reservoir Operations",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/zkky-n5j3",
+   "kind": "columns_changed",
+   "date": "2026-10-28",
+   "columns_added": [
+    "DateTime",
+    "Parameter",
+    "Reservoir",
+    "Units",
+    "Value"
+   ],
+   "columns_removed": [
+    "ASHREL",
+    "AUGEASTLEVANALOG",
+    "AUGEVolume",
+    "AUGWESTLEVANALOG",
+    "AUGWVOLUME",
+    "EDIRESELEVANALOG",
+    "EDIRESVOLUME",
+    "EDRCONFLW",
+    "EDRNTHFLW",
+    "EDRSTHFLW",
+    "NICCONFLW",
+    "NICNTHFLW",
+    "NICRESELEVANALOG",
+    "NICRESVOLUME",
+    "NICSTHFLW",
+    "Point_time",
+    "RECREL",
+    "RECRESELEVANALOG",
+    "RECRESVOLUME",
+    "SICRESELEVANALOG",
+    "SICRESVOLUME",
+    "STPALBFLW",
+    "WDIRESELEVANALOG",
+    "WDIRESVOLUME",
+    "WDRFLW"
+   ]
+  },
+  {
+   "id": "h47y-6hft",
+   "name": "EZ Pass Readers July 2024- current",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/h47y-6hft",
+   "kind": "added",
+   "date": "2026-10-28",
+   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
+  },
   {
    "id": "da9u-wz3r",
    "name": "Metal Content of Consumer Products Tested by the NYC Health Department",
@@ -3265,10 +3347,10 @@
   }
  ],
  "counts": {
-  "description_changed": 147,
-  "columns_changed": 24,
-  "added": 15,
-  "renamed": 31,
+  "renamed": 32,
+  "description_changed": 148,
+  "columns_changed": 25,
+  "added": 16,
   "agency_changed": 4
  }
 }

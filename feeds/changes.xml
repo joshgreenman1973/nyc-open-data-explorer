@@ -3,8 +3,36 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Tue, 27 Oct 2026 15:19:16 +0000</lastBuildDate>
+<lastBuildDate>Wed, 28 Oct 2026 15:58:35 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Renamed: Reservoir Operations</title>
+<link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/zkky-n5j3#renamed-2026-10-28</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+<description>Was: Current Reservoir Levels. Now: Reservoir Operations.</description>
+</item>
+<item>
+<title>Description changed: Reservoir Operations</title>
+<link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/zkky-n5j3#description_changed-2026-10-28</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: The daily capacity and percent of capacity filled for each of the City's reservoirs. — After: New York City water supply reservoir operations</description>
+</item>
+<item>
+<title>Columns changed: Reservoir Operations</title>
+<link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/zkky-n5j3#columns_changed-2026-10-28</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: DateTime, Parameter, Reservoir, Units, Value. Removed: ASHREL, AUGEASTLEVANALOG, AUGEVolume, AUGWESTLEVANALOG, AUGWVOLUME, EDIRESELEVANALOG, EDIRESVOLUME, EDRCONFLW, EDRNTHFLW, EDRSTHFLW, NICCONFLW, NICNTHFLW, NICRESELEVANALOG, NICRESVOLUME, NICSTHFLW, Point_time, RECREL, RECRESELEVANALOG, RECRESVOLUME, SICRESELEVANALOG, SICRESVOLUME, STPALBFLW, WDIRESELEVANALOG, WDIRESVOLUME, WDRFLW.</description>
+</item>
+<item>
+<title>New dataset: EZ Pass Readers July 2024- current</title>
+<link>https://data.cityofnewyork.us/d/h47y-6hft</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/h47y-6hft#added-2026-10-28</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
+</item>
 <item>
 <title>Description changed: Metal Content of Consumer Products Tested by the NYC Health Department</title>
 <link>https://data.cityofnewyork.us/d/da9u-wz3r</link>
@@ -676,33 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/e98g-f8hy#description_changed-2026-07-16</guid>
 <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: Do not use this dataset. It does not actually provide Property Data in its current form. We are working on improvements to the dataset to more accurat... — After: This dataset is being replaced. Please visit: https://data.cityofnewyork.us/d/ipu4-2q9a for DOB permit data</description>
-</item>
-<item>
-<title>Description changed: Asbestos Control Program (ACP7)</title>
-<link>https://data.cityofnewyork.us/d/vq35-j9qm</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/vq35-j9qm#description_changed-2026-07-16</guid>
-<pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ACP7 form is an asbestos project notification. Any time asbestos abatement is perform on quantities greater than a minor project amount, the applicant... — After: NOTE: This dataset is not currently updating. There is a pending fix that should be completed by ​Friday, July 24. ACP7 form is an asbestos project no...</description>
-</item>
-<item>
-<title>Description changed: AddressPoint</title>
-<link>https://data.cityofnewyork.us/d/uf93-f8nk</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/uf93-f8nk#description_changed-2026-07-11</guid>
-<pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: NOTE: There is a temporary error where this data is not showing all records. While we work to fix this error, please use this file in the interim. Add... — After: Address points were developed to supplement the address information supplied by the CSCL centerline. Some computer aided dispatch systems use address ...</description>
-</item>
-<item>
-<title>Description changed: BUILDING</title>
-<link>https://data.cityofnewyork.us/d/5zhs-2jue</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/5zhs-2jue#description_changed-2026-07-09</guid>
-<pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: NOTE: There is an error where this data is only showing some records. While we work to fix this error, please use this file in the interim. Footprint ... — After: Footprint outlines of buildings in New York City. Please see the following link for additional documentation: https://github.com/CityOfNewYork/nyc-geo...</description>
-</item>
-<item>
-<title>Description changed: Digital Tax Map: Condominium Units</title>
-<link>https://data.cityofnewyork.us/d/eguu-7ie3</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/eguu-7ie3#description_changed-2026-07-07</guid>
-<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . • Complete source: Available through the Digital Tax Map service , which always points to the latest monthly release. Note: To ensure reliability, the... — After: ...Individual layers: Downloadable from the Digital Tax Map Feature Server . Note: To ensure reliability, the Tax Map alternates between Set A and Set B each month. If one set has issues, the previous month’s copy remains onlin...</description>
 </item>
 </channel></rss>
