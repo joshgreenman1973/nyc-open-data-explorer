@@ -1,6 +1,72 @@
 {
- "generated_at": "2026-10-28T15:58:35+00:00",
+ "generated_at": "2026-10-29T16:05:57+00:00",
  "events": [
+  {
+   "id": "s7y8-dkgd",
+   "name": "EZ Pass Readers 2021",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/s7y8-dkgd",
+   "kind": "added",
+   "date": "2026-10-29",
+   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
+  },
+  {
+   "id": "2dzd-mqxq",
+   "name": "EZ Pass Readers 2022",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/2dzd-mqxq",
+   "kind": "added",
+   "date": "2026-10-29",
+   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
+  },
+  {
+   "id": "9ycp-w8r6",
+   "name": "DOB NOW: Safety - Parking Structure Compliance Filings",
+   "agency": "Department of Buildings (DOB)",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9ycp-w8r6",
+   "kind": "added",
+   "date": "2026-10-29",
+   "summary": "This data set includes parking structure compliance report filings through the New York City Department of Buildings' DOB NOW: Safety - Parking Structures module."
+  },
+  {
+   "id": "5dxh-vk2s",
+   "name": "EZ Pass Readers 2025",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/5dxh-vk2s",
+   "kind": "added",
+   "date": "2026-10-29",
+   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
+  },
+  {
+   "id": "7ank-n7rd",
+   "name": "EZ Pass Readers 2024",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/7ank-n7rd",
+   "kind": "added",
+   "date": "2026-10-29",
+   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
+  },
+  {
+   "id": "pi8f-savx",
+   "name": "EZ Pass Readers 2023",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pi8f-savx",
+   "kind": "added",
+   "date": "2026-10-29",
+   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
+  },
   {
    "id": "zkky-n5j3",
    "name": "Reservoir Operations",
@@ -3347,10 +3413,10 @@
   }
  ],
  "counts": {
+  "added": 22,
   "renamed": 32,
   "description_changed": 148,
   "columns_changed": 25,
-  "added": 16,
   "agency_changed": 4
  }
 }

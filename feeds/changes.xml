@@ -3,8 +3,50 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Wed, 28 Oct 2026 15:58:35 +0000</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 16:05:57 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: EZ Pass Readers 2021</title>
+<link>https://data.cityofnewyork.us/d/s7y8-dkgd</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/s7y8-dkgd#added-2026-10-29</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
+</item>
+<item>
+<title>New dataset: EZ Pass Readers 2022</title>
+<link>https://data.cityofnewyork.us/d/2dzd-mqxq</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/2dzd-mqxq#added-2026-10-29</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
+</item>
+<item>
+<title>New dataset: DOB NOW: Safety - Parking Structure Compliance Filings</title>
+<link>https://data.cityofnewyork.us/d/9ycp-w8r6</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/9ycp-w8r6#added-2026-10-29</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+<description>This data set includes parking structure compliance report filings through the New York City Department of Buildings' DOB NOW: Safety - Parking Structures module.</description>
+</item>
+<item>
+<title>New dataset: EZ Pass Readers 2025</title>
+<link>https://data.cityofnewyork.us/d/5dxh-vk2s</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/5dxh-vk2s#added-2026-10-29</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
+</item>
+<item>
+<title>New dataset: EZ Pass Readers 2024</title>
+<link>https://data.cityofnewyork.us/d/7ank-n7rd</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/7ank-n7rd#added-2026-10-29</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
+</item>
+<item>
+<title>New dataset: EZ Pass Readers 2023</title>
+<link>https://data.cityofnewyork.us/d/pi8f-savx</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/pi8f-savx#added-2026-10-29</guid>
+<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
+</item>
 <item>
 <title>Renamed: Reservoir Operations</title>
 <link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
@@ -662,47 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/vq35-j9qm#description_changed-2026-07-24</guid>
 <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
 <description>Before: NOTE: This dataset is not currently updating. There is a pending fix that should be completed by ​Friday, July 24. ACP7 form is an asbestos project no... — After: ACP7 form is an asbestos project notification. Any time asbestos abatement is perform on quantities greater than a minor project amount, the applicant...</description>
-</item>
-<item>
-<title>Renamed: Open Restaurants Inspections (Historical)</title>
-<link>https://data.cityofnewyork.us/d/4dx7-axux</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/4dx7-axux#renamed-2026-07-23</guid>
-<pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-<description>Was: Open Restaurants Inspections. Now: Open Restaurants Inspections (Historical).</description>
-</item>
-<item>
-<title>Description changed: Open Restaurants Inspections (Historical)</title>
-<link>https://data.cityofnewyork.us/d/4dx7-axux</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/4dx7-axux#description_changed-2026-07-23</guid>
-<pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: The Open Restaurants Inspections dataset contains records of site setup inspections performed throughout the five boroughs of New York City. — After: This is historical dataset program, is no longer accepting applications. Visit the permanent Dining Out website for information: https://www.diningoutny...</description>
-</item>
-<item>
-<title>Description changed: Modified Zip Code Tabulation Areas (MODZCTA)</title>
-<link>https://data.cityofnewyork.us/d/pri4-ifjk</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/pri4-ifjk#description_changed-2026-07-21</guid>
-<pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...Department of Health &amp; Mental Hygiene (DOHMH) for mapping COVID-19 Data. — After: ...Department of Health &amp; Mental Hygiene (DOHMH) for mapping COVID-19 Data. Note: there is a ZIP Code Tabulation Areas (ZCTA) dataset without these modifications https://data.cityofnewyork.us/City-Government/ZIP-Code-Tabulati...</description>
-</item>
-<item>
-<title>Description changed: Facilities Database</title>
-<link>https://data.cityofnewyork.us/d/ji82-xba5</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/ji82-xba5#description_changed-2026-07-17</guid>
-<pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25v2 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v1</description>
-</item>
-<item>
-<title>Renamed: Property Data (Buildings Information System) - Now Retired</title>
-<link>https://data.cityofnewyork.us/d/e98g-f8hy</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/e98g-f8hy#renamed-2026-07-16</guid>
-<pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-<description>Was: Property Data (Buildings Information System). Now: Property Data (Buildings Information System) - Now Retired.</description>
-</item>
-<item>
-<title>Description changed: Property Data (Buildings Information System) - Now Retired</title>
-<link>https://data.cityofnewyork.us/d/e98g-f8hy</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/e98g-f8hy#description_changed-2026-07-16</guid>
-<pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: Do not use this dataset. It does not actually provide Property Data in its current form. We are working on improvements to the dataset to more accurat... — After: This dataset is being replaced. Please visit: https://data.cityofnewyork.us/d/ipu4-2q9a for DOB permit data</description>
 </item>
 </channel></rss>
