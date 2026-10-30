@@ -1,6 +1,169 @@
 {
- "generated_at": "2026-10-29T16:05:57+00:00",
+ "generated_at": "2026-10-30T15:53:04+00:00",
  "events": [
+  {
+   "id": "h9gi-nx95",
+   "name": "Motor Vehicle Collisions - Crashes",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/h9gi-nx95",
+   "kind": "description_changed",
+   "date": "2026-10-30",
+   "before": "NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont...",
+   "after": "The Motor Vehicle Collisions crash table contains details on the crash event. Each row represents a crash event. The Motor Vehicle Collisions data tab...",
+   "before_len": 2852,
+   "after_len": 2729,
+   "diff_at": 0
+  },
+  {
+   "id": "bm4k-52h4",
+   "name": "Motor Vehicle Collisions - Vehicles",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bm4k-52h4",
+   "kind": "description_changed",
+   "date": "2026-10-30",
+   "before": "NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont...",
+   "after": "The Motor Vehicle Collisions vehicle table contains details on each vehicle involved in the crash. Each row represents a motor vehicle involved in a c...",
+   "before_len": 2819,
+   "after_len": 2696,
+   "diff_at": 0
+  },
+  {
+   "id": "f55k-p6yu",
+   "name": "Motor Vehicle Collisions - Person",
+   "agency": "Police Department (NYPD)",
+   "category": "Public Safety",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/f55k-p6yu",
+   "kind": "description_changed",
+   "date": "2026-10-30",
+   "before": "NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont...",
+   "after": "The Motor Vehicle Collisions person table contains details for people involved in the crash. Each row represents a person (driver, occupant, pedestria...",
+   "before_len": 2851,
+   "after_len": 2728,
+   "diff_at": 0
+  },
+  {
+   "id": "bkwf-xfky",
+   "name": "Distribution Water Quality",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bkwf-xfky",
+   "kind": "renamed",
+   "date": "2026-10-30",
+   "before": "Drinking Water Quality Distribution Monitoring Data",
+   "after": "Distribution Water Quality"
+  },
+  {
+   "id": "bkwf-xfky",
+   "name": "Distribution Water Quality",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bkwf-xfky",
+   "kind": "columns_changed",
+   "date": "2026-10-30",
+   "columns_added": [
+    "Analyte",
+    "Basin",
+    "CityOwned",
+    "Comments",
+    "Description",
+    "Facility",
+    "Final",
+    "Flow_MGD",
+    "Method",
+    "ResultStatus",
+    "SampleDateTime",
+    "SampleId",
+    "Sample_Type",
+    "Site",
+    "System",
+    "Units"
+   ],
+   "columns_removed": [
+    "Coliform (Quanti-Tray) (MPN /100mL)",
+    "E.coli(Quanti-Tray) (MPN/100mL)",
+    "Fluoride (mg/L)",
+    "Residual Free Chlorine (mg/L)",
+    "Sample Number",
+    "Sample Site",
+    "Sample Time",
+    "Sample class",
+    "Turbidity (NTU)"
+   ]
+  },
+  {
+   "id": "i7jb-7jku",
+   "name": "Public Restrooms",
+   "agency": "Department of Parks and Recreation (DPR), Department of Transportation (DOT), Department of City Planning (DCP), Department of Citywide Administrative Services (DCAS), Mayor's Office of Operations (Ops), New York Public Library (NYPL), Brooklyn Public Library (BPL), Queens Public Library (QPL), Metropolitan Transportation Authority (MTA)",
+   "category": "Procurement & Contracts",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/i7jb-7jku",
+   "kind": "columns_changed",
+   "date": "2026-10-30",
+   "columns_added": [
+    "Menstrual Friendly"
+   ],
+   "columns_removed": []
+  },
+  {
+   "id": "usrf-za7k",
+   "name": "City Agency Food Procurement (Good Food Purchasing Initiative)",
+   "agency": "Mayor's Office of Food Policy (MOFP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/usrf-za7k",
+   "kind": "renamed",
+   "date": "2026-10-30",
+   "before": "Good Food Purchasing Data",
+   "after": "City Agency Food Procurement (Good Food Purchasing Initiative)"
+  },
+  {
+   "id": "usrf-za7k",
+   "name": "City Agency Food Procurement (Good Food Purchasing Initiative)",
+   "agency": "Mayor's Office of Food Policy (MOFP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/usrf-za7k",
+   "kind": "description_changed",
+   "date": "2026-10-30",
+   "before": "...dataset includes an item-by-item list of food items purchased by the City, whenever available, including whenever possible item description, weight, quantity, price, City agency making the purchase and other variables. The ...",
+   "after": "...dataset includes an item-by-item list of food items purchased by the City including, whenever possible, item description, weight, quantity, City agency making the purchase, and other variables. The data is collected as part...",
+   "before_len": 297,
+   "after_len": 1494,
+   "diff_at": 78
+  },
+  {
+   "id": "usrf-za7k",
+   "name": "City Agency Food Procurement (Good Food Purchasing Initiative)",
+   "agency": "Mayor's Office of Food Policy (MOFP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/usrf-za7k",
+   "kind": "columns_changed",
+   "date": "2026-10-30",
+   "columns_added": [
+    "Brand Name",
+    "Food Type",
+    "MBE",
+    "MWBE",
+    "NY State spend",
+    "WBE",
+    "WRI Category",
+    "WRI Category - Secondary"
+   ],
+   "columns_removed": [
+    "Food Product Category",
+    "Food Product Group",
+    "Origin Detail",
+    "Total Cost"
+   ]
+  },
   {
    "id": "s7y8-dkgd",
    "name": "EZ Pass Readers 2021",
@@ -3413,10 +3576,10 @@
   }
  ],
  "counts": {
+  "description_changed": 152,
+  "renamed": 34,
+  "columns_changed": 28,
   "added": 22,
-  "renamed": 32,
-  "description_changed": 148,
-  "columns_changed": 25,
   "agency_changed": 4
  }
 }

@@ -3,8 +3,71 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Thu, 29 Oct 2026 16:05:57 +0000</lastBuildDate>
+<lastBuildDate>Fri, 30 Oct 2026 15:53:04 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: Motor Vehicle Collisions - Crashes</title>
+<link>https://data.cityofnewyork.us/d/h9gi-nx95</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/h9gi-nx95#description_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont... — After: The Motor Vehicle Collisions crash table contains details on the crash event. Each row represents a crash event. The Motor Vehicle Collisions data tab...</description>
+</item>
+<item>
+<title>Description changed: Motor Vehicle Collisions - Vehicles</title>
+<link>https://data.cityofnewyork.us/d/bm4k-52h4</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/bm4k-52h4#description_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont... — After: The Motor Vehicle Collisions vehicle table contains details on each vehicle involved in the crash. Each row represents a motor vehicle involved in a c...</description>
+</item>
+<item>
+<title>Description changed: Motor Vehicle Collisions - Person</title>
+<link>https://data.cityofnewyork.us/d/f55k-p6yu</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/f55k-p6yu#description_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont... — After: The Motor Vehicle Collisions person table contains details for people involved in the crash. Each row represents a person (driver, occupant, pedestria...</description>
+</item>
+<item>
+<title>Renamed: Distribution Water Quality</title>
+<link>https://data.cityofnewyork.us/d/bkwf-xfky</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/bkwf-xfky#renamed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Was: Drinking Water Quality Distribution Monitoring Data. Now: Distribution Water Quality.</description>
+</item>
+<item>
+<title>Columns changed: Distribution Water Quality</title>
+<link>https://data.cityofnewyork.us/d/bkwf-xfky</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/bkwf-xfky#columns_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Analyte, Basin, CityOwned, Comments, Description, Facility, Final, Flow_MGD, Method, ResultStatus, SampleDateTime, SampleId, Sample_Type, Site, System, Units. Removed: Coliform (Quanti-Tray) (MPN /100mL), E.coli(Quanti-Tray) (MPN/100mL), Fluoride (mg/L), Residual Free Chlorine (mg/L), Sample Number, Sample Site, Sample Time, Sample class, Turbidity (NTU).</description>
+</item>
+<item>
+<title>Columns changed: Public Restrooms</title>
+<link>https://data.cityofnewyork.us/d/i7jb-7jku</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/i7jb-7jku#columns_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Menstrual Friendly. Removed: none.</description>
+</item>
+<item>
+<title>Renamed: City Agency Food Procurement (Good Food Purchasing Initiative)</title>
+<link>https://data.cityofnewyork.us/d/usrf-za7k</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/usrf-za7k#renamed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Was: Good Food Purchasing Data. Now: City Agency Food Procurement (Good Food Purchasing Initiative).</description>
+</item>
+<item>
+<title>Description changed: City Agency Food Procurement (Good Food Purchasing Initiative)</title>
+<link>https://data.cityofnewyork.us/d/usrf-za7k</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/usrf-za7k#description_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: ...dataset includes an item-by-item list of food items purchased by the City, whenever available, including whenever possible item description, weight, quantity, price, City agency making the purchase and other variables. The ... — After: ...dataset includes an item-by-item list of food items purchased by the City including, whenever possible, item description, weight, quantity, City agency making the purchase, and other variables. The data is collected as part...</description>
+</item>
+<item>
+<title>Columns changed: City Agency Food Procurement (Good Food Purchasing Initiative)</title>
+<link>https://data.cityofnewyork.us/d/usrf-za7k</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/usrf-za7k#columns_changed-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Brand Name, Food Type, MBE, MWBE, NY State spend, WBE, WRI Category, WRI Category - Secondary. Removed: Food Product Category, Food Product Group, Origin Detail, Total Cost.</description>
+</item>
 <item>
 <title>New dataset: EZ Pass Readers 2021</title>
 <link>https://data.cityofnewyork.us/d/s7y8-dkgd</link>
@@ -641,68 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/hxm3-23vy#description_changed-2026-08-13</guid>
 <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
 <description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260401 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707</description>
-</item>
-<item>
-<title>Description changed: E-Designations</title>
-<link>https://data.cityofnewyork.us/d/jsrs-ggnx</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/jsrs-ggnx#description_changed-2026-08-13</guid>
-<pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260401 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707</description>
-</item>
-<item>
-<title>Description changed: Motor Vehicle Collisions - Crashes</title>
-<link>https://data.cityofnewyork.us/d/h9gi-nx95</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/h9gi-nx95#description_changed-2026-08-01</guid>
-<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: The Motor Vehicle Collisions crash table contains details on the crash event. Each row represents a crash event. The Motor Vehicle Collisions data tab... — After: NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont...</description>
-</item>
-<item>
-<title>Description changed: Motor Vehicle Collisions - Vehicles</title>
-<link>https://data.cityofnewyork.us/d/bm4k-52h4</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/bm4k-52h4#description_changed-2026-08-01</guid>
-<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: The Motor Vehicle Collisions vehicle table contains details on each vehicle involved in the crash. Each row represents a motor vehicle involved in a c... — After: NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont...</description>
-</item>
-<item>
-<title>Description changed: Motor Vehicle Collisions - Person</title>
-<link>https://data.cityofnewyork.us/d/f55k-p6yu</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/f55k-p6yu#description_changed-2026-08-01</guid>
-<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: The Motor Vehicle Collisions person table contains details for people involved in the crash. Each row represents a person (driver, occupant, pedestria... — After: NOTE: This dataset is temporarily not updating while its automated update process is being fixed. This fix is expected to be completed during the mont...</description>
-</item>
-<item>
-<title>Description changed: New York City Quarterly Economic Update</title>
-<link>https://data.cityofnewyork.us/d/kpnf-sajf</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/kpnf-sajf#description_changed-2026-07-31</guid>
-<pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: ...entities) that provide information about the economy of New York City. — After: ...entities) that provide information about the economy of New York City. The report previously linked to this open dataset is no longer produced.</description>
-</item>
-<item>
-<title>Description changed: .nyc Domain Registrations by Zip Code (Historical)</title>
-<link>https://data.cityofnewyork.us/d/ymvu-4x4s</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/ymvu-4x4s#description_changed-2026-07-29</guid>
-<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: .nyc domain registrations broken down by zip code. The results shown reflect data as of October 7, and the report is no longer being updated due to ch... — After: The results shown reflect data as of October 7, 2025, and this report is no longer being updated due to changes in available data sources.</description>
-</item>
-<item>
-<title>Renamed: Borough Engineering Tracking System (Historical)</title>
-<link>https://data.cityofnewyork.us/d/4twk-9yq2</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/4twk-9yq2#renamed-2026-07-28</guid>
-<pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-<description>Was: Borough Engineering Tracking System. Now: Borough Engineering Tracking System (Historical).</description>
-</item>
-<item>
-<title>Description changed: Borough Engineering Tracking System (Historical)</title>
-<link>https://data.cityofnewyork.us/d/4twk-9yq2</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/4twk-9yq2#description_changed-2026-07-28</guid>
-<pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: Tracking system for sign related requests that are received by each borough engineering operation. — After: Note: This dataset will no longer receive updates. This is historical data on a tracking system for sign related requests that are received by each bo...</description>
-</item>
-<item>
-<title>Description changed: Asbestos Control Program (ACP7)</title>
-<link>https://data.cityofnewyork.us/d/vq35-j9qm</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/vq35-j9qm#description_changed-2026-07-24</guid>
-<pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-<description>Before: NOTE: This dataset is not currently updating. There is a pending fix that should be completed by ​Friday, July 24. ACP7 form is an asbestos project no... — After: ACP7 form is an asbestos project notification. Any time asbestos abatement is perform on quantities greater than a minor project amount, the applicant...</description>
 </item>
 </channel></rss>
