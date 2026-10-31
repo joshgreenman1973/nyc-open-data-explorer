@@ -1,15 +1,15 @@
 {
   "title": "NYC Open Data — Public Safety (recently updated)",
-  "generated": "2026-10-30T15:53:04+00:00",
+  "generated": "2026-10-31T15:17:28+00:00",
   "items": [
     {
       "id": "2fir-qns4",
       "name": "Civilian Complaint Review Board: Police Officers",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-30T14:08:57.000Z",
+      "updated": "2026-10-31T14:08:04.000Z",
       "created": "2022-06-06T16:15:01.000Z",
-      "views": 18445,
+      "views": 18467,
       "url": "https://data.cityofnewyork.us/d/2fir-qns4"
     },
     {
@@ -17,9 +17,9 @@
       "name": "Civilian Complaint Review Board: Allegations Against Police Officers",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-30T14:08:27.000Z",
+      "updated": "2026-10-31T14:06:55.000Z",
       "created": "2022-06-06T16:01:09.000Z",
-      "views": 14117,
+      "views": 14133,
       "url": "https://data.cityofnewyork.us/d/6xgr-kwjq"
     },
     {
@@ -27,9 +27,9 @@
       "name": "Civilian Complaint Review Board: Complaints Against Police Officers",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-30T14:04:26.000Z",
+      "updated": "2026-10-31T14:05:02.000Z",
       "created": "2022-06-06T15:34:16.000Z",
-      "views": 13361,
+      "views": 13385,
       "url": "https://data.cityofnewyork.us/d/2mby-ccnw"
     },
     {
@@ -37,50 +37,190 @@
       "name": "Civilian Complaint Review Board: Penalties",
       "category": "Public Safety",
       "agency": "Civilian Complaint Review Board (CCRB)",
-      "updated": "2026-10-30T14:03:37.000Z",
+      "updated": "2026-10-31T14:03:02.000Z",
       "created": "2022-06-06T16:10:10.000Z",
-      "views": 6053,
+      "views": 6062,
       "url": "https://data.cityofnewyork.us/d/keep-pkmh"
     },
     {
-      "id": "h9gi-nx95",
-      "name": "Motor Vehicle Collisions - Crashes",
+      "id": "r465-fr2q",
+      "name": "Parks Syringe Disposal Kiosks",
       "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-29T20:03:22.000Z",
-      "created": "2014-04-28T16:41:44.000Z",
-      "views": 960636,
-      "url": "https://data.cityofnewyork.us/d/h9gi-nx95"
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-10-31T13:03:07.000Z",
+      "created": "2019-12-30T17:23:44.000Z",
+      "views": 2942,
+      "url": "https://data.cityofnewyork.us/d/r465-fr2q"
     },
     {
-      "id": "7479-ugqb",
-      "name": "Daily Inmates In Custody",
+      "id": "dpfn-5ihn",
+      "name": "Parks Syringe Disposal Kiosks Map",
       "category": "Public Safety",
-      "agency": "Department of Correction (DOC)",
-      "updated": "2026-10-29T19:18:14.000Z",
-      "created": "2016-03-23T18:29:15.000Z",
-      "views": 106687,
-      "url": "https://data.cityofnewyork.us/d/7479-ugqb"
+      "agency": "Department of Parks and Recreation (DPR)",
+      "updated": "2026-10-31T13:03:07.000Z",
+      "created": "2019-12-30T17:36:33.000Z",
+      "views": 902,
+      "url": "https://data.cityofnewyork.us/d/dpfn-5ihn"
     },
     {
-      "id": "f55k-p6yu",
-      "name": "Motor Vehicle Collisions - Person",
+      "id": "kkwv-djnk",
+      "name": "DOP Adult Investigations Ordered",
       "category": "Public Safety",
-      "agency": "Police Department (NYPD)",
-      "updated": "2026-10-29T16:54:34.000Z",
-      "created": "2019-07-30T19:27:54.000Z",
-      "views": 38828,
-      "url": "https://data.cityofnewyork.us/d/f55k-p6yu"
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:32:41.000Z",
+      "created": "2016-11-21T15:48:10.000Z",
+      "views": 1669,
+      "url": "https://data.cityofnewyork.us/d/kkwv-djnk"
+    },
+    {
+      "id": "c87b-2j3i",
+      "name": "DOP Juvenile Rearrest Rate (Monthly Average)",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:32:36.000Z",
+      "created": "2016-08-02T17:52:37.000Z",
+      "views": 2014,
+      "url": "https://data.cityofnewyork.us/d/c87b-2j3i"
+    },
+    {
+      "id": "y3gq-zv28",
+      "name": "DOP Adult Case Count By Type",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:32:28.000Z",
+      "created": "2016-11-21T15:48:07.000Z",
+      "views": 1495,
+      "url": "https://data.cityofnewyork.us/d/y3gq-zv28"
+    },
+    {
+      "id": "7m8q-jgtg",
+      "name": "DOP Juvenile Probationers Rearrested As A Percentage Of NYPD Arrest Report (Monthly Average)",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:32:16.000Z",
+      "created": "2016-08-02T17:52:05.000Z",
+      "views": 1804,
+      "url": "https://data.cityofnewyork.us/d/7m8q-jgtg"
+    },
+    {
+      "id": "k72f-2ytm",
+      "name": "DOP Adult Case Closings By Type",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:31:38.000Z",
+      "created": "2016-11-21T15:48:03.000Z",
+      "views": 1066,
+      "url": "https://data.cityofnewyork.us/d/k72f-2ytm"
+    },
+    {
+      "id": "vk9f-gvzq",
+      "name": "DOP Juvenile Investigations Assigned",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:31:21.000Z",
+      "created": "2016-11-21T15:48:22.000Z",
+      "views": 1768,
+      "url": "https://data.cityofnewyork.us/d/vk9f-gvzq"
+    },
+    {
+      "id": "u6p4-fsey",
+      "name": "DOP Adult Case Closings By Reason",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:31:09.000Z",
+      "created": "2016-11-21T15:48:03.000Z",
+      "views": 1689,
+      "url": "https://data.cityofnewyork.us/d/u6p4-fsey"
+    },
+    {
+      "id": "c49b-3kmd",
+      "name": "DOP Juvenile Case Count By Type",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:30:58.000Z",
+      "created": "2016-11-21T15:48:19.000Z",
+      "views": 1860,
+      "url": "https://data.cityofnewyork.us/d/c49b-3kmd"
+    },
+    {
+      "id": "gk9u-c3tv",
+      "name": "DOP Adult Rearrest Rate (Monthly Average)",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:30:35.000Z",
+      "created": "2016-08-02T17:52:02.000Z",
+      "views": 1461,
+      "url": "https://data.cityofnewyork.us/d/gk9u-c3tv"
+    },
+    {
+      "id": "sefr-5pmx",
+      "name": "DOP Juvenile Case Closings By Type",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:30:16.000Z",
+      "created": "2016-11-21T15:48:17.000Z",
+      "views": 1268,
+      "url": "https://data.cityofnewyork.us/d/sefr-5pmx"
+    },
+    {
+      "id": "arhf-esqb",
+      "name": "DOP Adult Probationers Rearrested As A Percentage Of NYPD Arrest Report (Monthly Average)",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:29:51.000Z",
+      "created": "2016-08-02T17:51:58.000Z",
+      "views": 1826,
+      "url": "https://data.cityofnewyork.us/d/arhf-esqb"
+    },
+    {
+      "id": "wha7-46h5",
+      "name": "DOP Juvenile Case Closings By Reason",
+      "category": "Public Safety",
+      "agency": "Department of Probation (DOP)",
+      "updated": "2026-10-30T20:29:29.000Z",
+      "created": "2016-11-21T15:48:11.000Z",
+      "views": 1233,
+      "url": "https://data.cityofnewyork.us/d/wha7-46h5"
     },
     {
       "id": "bm4k-52h4",
       "name": "Motor Vehicle Collisions - Vehicles",
       "category": "Public Safety",
       "agency": "Police Department (NYPD)",
-      "updated": "2026-10-29T16:49:20.000Z",
+      "updated": "2026-10-30T20:15:03.000Z",
       "created": "2019-07-30T19:15:02.000Z",
-      "views": 44495,
+      "views": 44515,
       "url": "https://data.cityofnewyork.us/d/bm4k-52h4"
+    },
+    {
+      "id": "f55k-p6yu",
+      "name": "Motor Vehicle Collisions - Person",
+      "category": "Public Safety",
+      "agency": "Police Department (NYPD)",
+      "updated": "2026-10-30T19:22:38.000Z",
+      "created": "2019-07-30T19:27:54.000Z",
+      "views": 38845,
+      "url": "https://data.cityofnewyork.us/d/f55k-p6yu"
+    },
+    {
+      "id": "7479-ugqb",
+      "name": "Daily Inmates In Custody",
+      "category": "Public Safety",
+      "agency": "Department of Correction (DOC)",
+      "updated": "2026-10-30T19:20:49.000Z",
+      "created": "2016-03-23T18:29:15.000Z",
+      "views": 106712,
+      "url": "https://data.cityofnewyork.us/d/7479-ugqb"
+    },
+    {
+      "id": "h9gi-nx95",
+      "name": "Motor Vehicle Collisions - Crashes",
+      "category": "Public Safety",
+      "agency": "Police Department (NYPD)",
+      "updated": "2026-10-30T18:36:22.000Z",
+      "created": "2014-04-28T16:41:44.000Z",
+      "views": 960964,
+      "url": "https://data.cityofnewyork.us/d/h9gi-nx95"
     },
     {
       "id": "i9n8-a8ed",
@@ -89,7 +229,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-10-26T15:13:56.000Z",
       "created": "2021-10-12T16:37:13.000Z",
-      "views": 1846,
+      "views": 1851,
       "url": "https://data.cityofnewyork.us/d/i9n8-a8ed"
     },
     {
@@ -99,7 +239,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-10-26T15:11:57.000Z",
       "created": "2021-12-02T20:35:47.000Z",
-      "views": 1176,
+      "views": 1178,
       "url": "https://data.cityofnewyork.us/d/uafj-ik29"
     },
     {
@@ -109,7 +249,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-10-26T15:09:15.000Z",
       "created": "2021-12-02T20:46:07.000Z",
-      "views": 1788,
+      "views": 1794,
       "url": "https://data.cityofnewyork.us/d/wq9a-qu9a"
     },
     {
@@ -119,7 +259,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-10-26T15:06:29.000Z",
       "created": "2021-10-29T13:49:09.000Z",
-      "views": 18447,
+      "views": 18521,
       "url": "https://data.cityofnewyork.us/d/pmsy-ewrc"
     },
     {
@@ -129,7 +269,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-10-26T15:04:59.000Z",
       "created": "2021-10-15T16:01:41.000Z",
-      "views": 10052,
+      "views": 10077,
       "url": "https://data.cityofnewyork.us/d/sh6y-4tgb"
     },
     {
@@ -139,7 +279,7 @@
       "agency": "Police Department (NYPD)",
       "updated": "2026-10-19T14:19:26.000Z",
       "created": "2021-10-14T19:45:58.000Z",
-      "views": 1329,
+      "views": 1336,
       "url": "https://data.cityofnewyork.us/d/n3mp-t5uj"
     },
     {
@@ -149,7 +289,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-10-09T20:33:28.000Z",
       "created": "2019-07-18T15:32:58.000Z",
-      "views": 6574,
+      "views": 6589,
       "url": "https://data.cityofnewyork.us/d/gpny-cuvw"
     },
     {
@@ -159,7 +299,7 @@
       "agency": "Mayor's Office of Operations (OPS)",
       "updated": "2026-10-09T20:31:21.000Z",
       "created": "2019-07-18T15:26:58.000Z",
-      "views": 32809,
+      "views": 32843,
       "url": "https://data.cityofnewyork.us/d/t7p9-n9dy"
     },
     {
@@ -169,7 +309,7 @@
       "agency": "Fire Department of New York City (FDNY)",
       "updated": "2026-10-07T14:42:18.000Z",
       "created": "2016-10-18T22:12:09.000Z",
-      "views": 108686,
+      "views": 108748,
       "url": "https://data.cityofnewyork.us/d/76xm-jjuj"
     },
     {
@@ -179,7 +319,7 @@
       "agency": "Fire Department of New York City (FDNY)",
       "updated": "2026-10-05T14:02:19.000Z",
       "created": "2016-10-20T14:32:56.000Z",
-      "views": 78353,
+      "views": 78421,
       "url": "https://data.cityofnewyork.us/d/8m42-w767"
     },
     {
@@ -189,28 +329,8 @@
       "agency": "NYC Parks",
       "updated": "2026-10-03T13:15:00.000Z",
       "created": "2022-05-18T21:40:06.000Z",
-      "views": 3761,
+      "views": 3765,
       "url": "https://data.cityofnewyork.us/d/t8xi-d5wb"
-    },
-    {
-      "id": "r465-fr2q",
-      "name": "Parks Syringe Disposal Kiosks",
-      "category": "Public Safety",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-01T20:07:58.000Z",
-      "created": "2019-12-30T17:23:44.000Z",
-      "views": 2941,
-      "url": "https://data.cityofnewyork.us/d/r465-fr2q"
-    },
-    {
-      "id": "dpfn-5ihn",
-      "name": "Parks Syringe Disposal Kiosks Map",
-      "category": "Public Safety",
-      "agency": "Department of Parks and Recreation (DPR)",
-      "updated": "2026-10-01T20:07:58.000Z",
-      "created": "2019-12-30T17:36:33.000Z",
-      "views": 901,
-      "url": "https://data.cityofnewyork.us/d/dpfn-5ihn"
     },
     {
       "id": "gakf-suji",
@@ -219,7 +339,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-10-01T19:33:44.000Z",
       "created": "2016-03-23T18:28:11.000Z",
-      "views": 6072,
+      "views": 6080,
       "url": "https://data.cityofnewyork.us/d/gakf-suji"
     },
     {
@@ -229,7 +349,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-10-01T19:26:03.000Z",
       "created": "2016-03-23T18:28:17.000Z",
-      "views": 3695,
+      "views": 3701,
       "url": "https://data.cityofnewyork.us/d/k548-32d3"
     },
     {
@@ -239,7 +359,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-10-01T19:22:14.000Z",
       "created": "2016-03-23T18:28:40.000Z",
-      "views": 10324,
+      "views": 10341,
       "url": "https://data.cityofnewyork.us/d/94ri-3ium"
     },
     {
@@ -249,7 +369,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-10-01T19:22:05.000Z",
       "created": "2016-03-23T18:28:55.000Z",
-      "views": 10568,
+      "views": 10578,
       "url": "https://data.cityofnewyork.us/d/6teu-xtgp"
     },
     {
@@ -259,7 +379,7 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-10-01T19:21:12.000Z",
       "created": "2016-03-23T18:29:41.000Z",
-      "views": 3821,
+      "views": 3828,
       "url": "https://data.cityofnewyork.us/d/erra-pzy8"
     },
     {
@@ -279,128 +399,8 @@
       "agency": "Department of Correction (DOC)",
       "updated": "2026-10-01T19:15:21.000Z",
       "created": "2016-03-23T18:29:36.000Z",
-      "views": 4098,
+      "views": 4099,
       "url": "https://data.cityofnewyork.us/d/eddp-3v5g"
-    },
-    {
-      "id": "kkwv-djnk",
-      "name": "DOP Adult Investigations Ordered",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:46.000Z",
-      "created": "2016-11-21T15:48:10.000Z",
-      "views": 1668,
-      "url": "https://data.cityofnewyork.us/d/kkwv-djnk"
-    },
-    {
-      "id": "c87b-2j3i",
-      "name": "DOP Juvenile Rearrest Rate (Monthly Average)",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:42.000Z",
-      "created": "2016-08-02T17:52:37.000Z",
-      "views": 2014,
-      "url": "https://data.cityofnewyork.us/d/c87b-2j3i"
-    },
-    {
-      "id": "y3gq-zv28",
-      "name": "DOP Adult Case Count By Type",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:37.000Z",
-      "created": "2016-11-21T15:48:07.000Z",
-      "views": 1494,
-      "url": "https://data.cityofnewyork.us/d/y3gq-zv28"
-    },
-    {
-      "id": "7m8q-jgtg",
-      "name": "DOP Juvenile Probationers Rearrested As A Percentage Of NYPD Arrest Report (Monthly Average)",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:33.000Z",
-      "created": "2016-08-02T17:52:05.000Z",
-      "views": 1804,
-      "url": "https://data.cityofnewyork.us/d/7m8q-jgtg"
-    },
-    {
-      "id": "k72f-2ytm",
-      "name": "DOP Adult Case Closings By Type",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:27.000Z",
-      "created": "2016-11-21T15:48:03.000Z",
-      "views": 1066,
-      "url": "https://data.cityofnewyork.us/d/k72f-2ytm"
-    },
-    {
-      "id": "vk9f-gvzq",
-      "name": "DOP Juvenile Investigations Assigned",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:23.000Z",
-      "created": "2016-11-21T15:48:22.000Z",
-      "views": 1767,
-      "url": "https://data.cityofnewyork.us/d/vk9f-gvzq"
-    },
-    {
-      "id": "u6p4-fsey",
-      "name": "DOP Adult Case Closings By Reason",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:18.000Z",
-      "created": "2016-11-21T15:48:03.000Z",
-      "views": 1688,
-      "url": "https://data.cityofnewyork.us/d/u6p4-fsey"
-    },
-    {
-      "id": "c49b-3kmd",
-      "name": "DOP Juvenile Case Count By Type",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:14.000Z",
-      "created": "2016-11-21T15:48:19.000Z",
-      "views": 1859,
-      "url": "https://data.cityofnewyork.us/d/c49b-3kmd"
-    },
-    {
-      "id": "gk9u-c3tv",
-      "name": "DOP Adult Rearrest Rate (Monthly Average)",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:08.000Z",
-      "created": "2016-08-02T17:52:02.000Z",
-      "views": 1461,
-      "url": "https://data.cityofnewyork.us/d/gk9u-c3tv"
-    },
-    {
-      "id": "sefr-5pmx",
-      "name": "DOP Juvenile Case Closings By Type",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:28:03.000Z",
-      "created": "2016-11-21T15:48:17.000Z",
-      "views": 1268,
-      "url": "https://data.cityofnewyork.us/d/sefr-5pmx"
-    },
-    {
-      "id": "arhf-esqb",
-      "name": "DOP Adult Probationers Rearrested As A Percentage Of NYPD Arrest Report (Monthly Average)",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:27:57.000Z",
-      "created": "2016-08-02T17:51:58.000Z",
-      "views": 1826,
-      "url": "https://data.cityofnewyork.us/d/arhf-esqb"
-    },
-    {
-      "id": "wha7-46h5",
-      "name": "DOP Juvenile Case Closings By Reason",
-      "category": "Public Safety",
-      "agency": "Department of Probation (DOP)",
-      "updated": "2026-09-18T20:27:53.000Z",
-      "created": "2016-11-21T15:48:11.000Z",
-      "views": 1233,
-      "url": "https://data.cityofnewyork.us/d/wha7-46h5"
     },
     {
       "id": "xsj8-452q",
@@ -409,7 +409,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-09-18T20:18:53.000Z",
       "created": "2024-02-14T18:58:01.000Z",
-      "views": 1464,
+      "views": 1467,
       "url": "https://data.cityofnewyork.us/d/xsj8-452q"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "Department of Probation (DOP)",
       "updated": "2026-09-18T20:18:48.000Z",
       "created": "2024-02-14T20:20:21.000Z",
-      "views": 1851,
+      "views": 1852,
       "url": "https://data.cityofnewyork.us/d/5dfs-vnre"
     },
     {
@@ -439,7 +439,7 @@
       "agency": "Fire Department of New York City (FDNY)",
       "updated": "2026-09-14T19:11:55.000Z",
       "created": "2021-06-22T19:59:39.000Z",
-      "views": 12855,
+      "views": 12863,
       "url": "https://data.cityofnewyork.us/d/ii3r-svjz"
     },
     {

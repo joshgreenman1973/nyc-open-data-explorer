@@ -3,8 +3,29 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 30 Oct 2026 15:53:04 +0000</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 15:17:28 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Renamed: NYC Parks Forever Wild Natural Areas</title>
+<link>https://data.cityofnewyork.us/d/48va-85tp</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/48va-85tp#renamed-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+<description>Was: NYC Parks Forever Wild. Now: NYC Parks Forever Wild Natural Areas.</description>
+</item>
+<item>
+<title>Description changed: NYC Parks Forever Wild Natural Areas</title>
+<link>https://data.cityofnewyork.us/d/48va-85tp</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/48va-85tp#description_changed-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+<description>Before: The Forever Wild layer delineates the location of ecologically important natural resources within NYC Parks property. Map: https://data.cityofnewyork.us/dataset/Foreve... — After: The Forever Wild Natural Areas dataset delineates the location of ecologically important natural resources within NYC Parks property. Approximately 12,500 acres of NYC...</description>
+</item>
+<item>
+<title>Columns changed: NYC Parks Forever Wild Natural Areas</title>
+<link>https://data.cityofnewyork.us/d/48va-85tp</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/48va-85tp#columns_changed-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Location, Name, Prop_ID, Shape, access_to_kayak_canoe, access_to_trails, access_to_water, accessible_to_public, best_access_point, description, forest_acres, freshwater_wetland_acres, grassland_acres, id, lat, lon, salt_marsh_acres, streams_miles, total_acres, trail_url, url. Removed: Acres, ForverWildID, GISPropNum, PropertyName, shape.</description>
+</item>
 <item>
 <title>Description changed: Motor Vehicle Collisions - Crashes</title>
 <link>https://data.cityofnewyork.us/d/h9gi-nx95</link>
@@ -683,26 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/hgx4-8ukb#description_changed-2026-08-13</guid>
 <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
 <description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260427 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706</description>
-</item>
-<item>
-<title>Description changed: Georeferenced NYC Zoning Maps</title>
-<link>https://data.cityofnewyork.us/d/mxbm-493w</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/mxbm-493w#description_changed-2026-08-13</guid>
-<pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202604 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202606</description>
-</item>
-<item>
-<title>Description changed: Zoning Application Portal (ZAP) - BBL</title>
-<link>https://data.cityofnewyork.us/d/2iga-a6mk</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/2iga-a6mk#description_changed-2026-08-13</guid>
-<pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260427 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706</description>
-</item>
-<item>
-<title>Description changed: E-Designations</title>
-<link>https://data.cityofnewyork.us/d/hxm3-23vy</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/hxm3-23vy#description_changed-2026-08-13</guid>
-<pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260401 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707</description>
 </item>
 </channel></rss>

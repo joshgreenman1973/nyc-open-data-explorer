@@ -1,7 +1,74 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-10-30T15:53:04+00:00",
+ "generated": "2026-10-31T15:17:28+00:00",
  "items": [
+  {
+   "id": "48va-85tp",
+   "name": "NYC Parks Forever Wild Natural Areas",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/48va-85tp",
+   "kind": "renamed",
+   "date": "2026-10-31",
+   "before": "NYC Parks Forever Wild",
+   "after": "NYC Parks Forever Wild Natural Areas"
+  },
+  {
+   "id": "48va-85tp",
+   "name": "NYC Parks Forever Wild Natural Areas",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/48va-85tp",
+   "kind": "description_changed",
+   "date": "2026-10-31",
+   "before": "The Forever Wild layer delineates the location of ecologically important natural resources within NYC Parks property. Map: https://data.cityofnewyork.us/dataset/Foreve...",
+   "after": "The Forever Wild Natural Areas dataset delineates the location of ecologically important natural resources within NYC Parks property. Approximately 12,500 acres of NYC...",
+   "before_len": 320,
+   "after_len": 785,
+   "diff_at": 17
+  },
+  {
+   "id": "48va-85tp",
+   "name": "NYC Parks Forever Wild Natural Areas",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/48va-85tp",
+   "kind": "columns_changed",
+   "date": "2026-10-31",
+   "columns_added": [
+    "Location",
+    "Name",
+    "Prop_ID",
+    "Shape",
+    "access_to_kayak_canoe",
+    "access_to_trails",
+    "access_to_water",
+    "accessible_to_public",
+    "best_access_point",
+    "description",
+    "forest_acres",
+    "freshwater_wetland_acres",
+    "grassland_acres",
+    "id",
+    "lat",
+    "lon",
+    "salt_marsh_acres",
+    "streams_miles",
+    "total_acres",
+    "trail_url",
+    "url"
+   ],
+   "columns_removed": [
+    "Acres",
+    "ForverWildID",
+    "GISPropNum",
+    "PropertyName",
+    "shape"
+   ]
+  },
   {
    "id": "h9gi-nx95",
    "name": "Motor Vehicle Collisions - Crashes",
@@ -1503,51 +1570,6 @@
    "before_len": 1226,
    "after_len": 1226,
    "diff_at": 1223
-  },
-  {
-   "id": "mxbm-493w",
-   "name": "Georeferenced NYC Zoning Maps",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "file",
-   "url": "https://data.cityofnewyork.us/d/mxbm-493w",
-   "kind": "description_changed",
-   "date": "2026-08-13",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202604",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202606",
-   "before_len": 666,
-   "after_len": 666,
-   "diff_at": 665
-  },
-  {
-   "id": "2iga-a6mk",
-   "name": "Zoning Application Portal (ZAP) - BBL",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/2iga-a6mk",
-   "kind": "description_changed",
-   "date": "2026-08-13",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260427",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706",
-   "before_len": 1226,
-   "after_len": 1226,
-   "diff_at": 1223
-  },
-  {
-   "id": "hxm3-23vy",
-   "name": "E-Designations",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Finance & Budget",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/hxm3-23vy",
-   "kind": "description_changed",
-   "date": "2026-08-13",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260401",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707",
-   "before_len": 553,
-   "after_len": 553,
-   "diff_at": 550
   }
  ]
 }
