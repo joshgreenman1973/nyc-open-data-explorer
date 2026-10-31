@@ -739,7 +739,7 @@ header.site nav .rss-icon:hover { color: var(--accent); text-decoration: none; }
 .card h4 a { color: var(--ink); }
 .card h4 a:hover { color: var(--focus); }
 .pick-star { color: var(--gold); margin-right: 4px; font-size: 16px; cursor: help; }
-.card .summary { font-size: 14px; color: var(--ink-soft); flex: 1; }
+.card .summary { font-size: 14px; color: var(--ink-soft); flex: 1; overflow-wrap: anywhere; }
 .pick-note {
   margin-top: 6px;
   padding: 6px 8px;
@@ -832,7 +832,7 @@ footer.site .footer-extra { font-size: 12px; }
   .hero p.lede { font-size: 16px; }
   .cat-tile.size-xl { grid-column: span 1; }
   .cat-map { grid-template-columns: repeat(2, 1fr); }
-  .cards { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: minmax(0, 1fr); }
 }
 
 
