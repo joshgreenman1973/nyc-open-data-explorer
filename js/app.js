@@ -421,7 +421,7 @@
     const ratio = cur / med;
     if (ratio >= 1.25) return "Higher than typical";
     if (ratio >= 1.10) return "A bit above typical";
-    if (ratio <= 0.75) return "Notably lower than typical";
+    if (ratio <= 0.75) return "Lower than typical";
     if (ratio <= 0.90) return "A bit below typical";
     return "Right around typical";
   }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>What people ask for — NYC Open Data Explorer</title>
-<meta name="description" content="Every dataset New Yorkers have asked the City of New York to publish, the agency it was routed to, and the answer that came back — or didn't.">
+<meta name="description" content="Every dataset New Yorkers have asked the City of New York to publish, the agency it was routed to and the answer that came back, if any.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@
 <main class="wrap">
   <section class="rq-hero">
     <h2>What people ask the City to publish</h2>
-    <p>Anyone can nominate a dataset through the Open Data help desk, and the City publishes the whole queue: the request in the asker's own words, the agency it was routed to, and the answer that came back. It is the portal's own suggestion box, read from the outside — a running record of the gap between what the City puts out and what people actually want from it. The City gives itself 60 days to answer. Below, the queue is cut five ways — by subject, by what the City said back, by the kind of ask, by agency and by year — and every bar filters the log.</p>
+    <p>Anyone can nominate a dataset through the Open Data help desk, and the City publishes the whole queue: the request in the asker's own words, the agency it was routed to and the answer that came back. It works as the portal's suggestion box: a running record of what people want from the City that it doesn't yet put out. The City gives itself 60 days to answer. Below, the queue is cut five ways — by subject, by what the City said back, by the kind of ask, by agency and by year — and every bar filters the log.</p>
     <div class="rq-figs" id="rq-figs"></div>
     <section class="rq-breaks">
       <h3>How the requests break down</h3>
@@ -259,7 +259,7 @@
     const oldest = s.oldest_pending;
     document.getElementById("rq-note").innerHTML =
       `Source: <a href="${esc(hd.source.url)}" target="_blank" rel="noopener">NYC Open Data Help Desk — Public Dataset Requests</a>, published weekly by the Open Data Team and rebuilt here daily. ` +
-      `Status is the City's own label, not a recalculation. Requests routed to no agency yet are shown as unassigned. ` +
+      `Status is the City's own label, as published. Requests routed to no agency yet are shown as unassigned. ` +
       (oldest ? `The longest-waiting open request went to the ${esc(oldest.agency)} on ${esc(longDate(oldest.submitted))}. ` : "") +
       `Dataset links appear when a request or answer names an id that exists in today's catalog; a matching id is not proof the request is what produced the dataset.`;
     document.getElementById("rq-q").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); state.shown = PAGE; render(); });
