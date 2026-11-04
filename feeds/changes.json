@@ -1,7 +1,33 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-11-03T16:59:48+00:00",
+ "generated": "2026-11-04T17:12:14+00:00",
  "items": [
+  {
+   "id": "bmjq-373p",
+   "name": "2010 Census Tracts",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bmjq-373p",
+   "kind": "description_changed",
+   "date": "2026-11-04",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26c",
+   "before_len": 544,
+   "after_len": 544,
+   "diff_at": 543
+  },
+  {
+   "id": "vqnn-g6ta",
+   "name": "Office of the Parks Commissioner Correspondence",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/vqnn-g6ta",
+   "kind": "added",
+   "date": "2026-11-04",
+   "summary": "This data consists of incoming correspondence to the Commissioner's Office pertaining to a variety of topics from constituents, organizations and elected officials."
+  },
   {
    "id": "bc8t-ecyu",
    "name": "Property Address Directory",
@@ -1556,36 +1582,6 @@
    "category": "Housing & Development",
    "type": "dataset",
    "url": "https://data.cityofnewyork.us/d/nahe-je7c",
-   "kind": "columns_changed",
-   "date": "2026-10-01",
-   "columns_added": [
-    "comp2025",
-    "comp2026"
-   ],
-   "columns_removed": []
-  },
-  {
-   "id": "48dt-mn3z",
-   "name": "Housing Database by 2020 CDTA",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Housing & Development",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/48dt-mn3z",
-   "kind": "description_changed",
-   "date": "2026-10-01",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1",
-   "before_len": 1009,
-   "after_len": 1011,
-   "diff_at": 1006
-  },
-  {
-   "id": "48dt-mn3z",
-   "name": "Housing Database by 2020 CDTA",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Housing & Development",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/48dt-mn3z",
    "kind": "columns_changed",
    "date": "2026-10-01",
    "columns_added": [

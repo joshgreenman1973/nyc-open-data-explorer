@@ -1,6 +1,32 @@
 {
- "generated_at": "2026-11-03T16:59:48+00:00",
+ "generated_at": "2026-11-04T17:12:14+00:00",
  "events": [
+  {
+   "id": "bmjq-373p",
+   "name": "2010 Census Tracts",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bmjq-373p",
+   "kind": "description_changed",
+   "date": "2026-11-04",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26c",
+   "before_len": 544,
+   "after_len": 544,
+   "diff_at": 543
+  },
+  {
+   "id": "vqnn-g6ta",
+   "name": "Office of the Parks Commissioner Correspondence",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/vqnn-g6ta",
+   "kind": "added",
+   "date": "2026-11-04",
+   "summary": "This data consists of incoming correspondence to the Commissioner's Office pertaining to a variety of topics from constituents, organizations and elected officials."
+  },
   {
    "id": "bc8t-ecyu",
    "name": "Property Address Directory",
@@ -4258,10 +4284,10 @@
   }
  ],
  "counts": {
-  "description_changed": 194,
+  "description_changed": 195,
+  "added": 23,
   "renamed": 35,
   "columns_changed": 29,
-  "added": 22,
   "agency_changed": 4
  }
 }
