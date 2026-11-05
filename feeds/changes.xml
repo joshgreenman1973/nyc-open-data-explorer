@@ -3,8 +3,64 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Wed, 04 Nov 2026 17:12:14 +0000</lastBuildDate>
+<lastBuildDate>Thu, 05 Nov 2026 17:21:09 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: Zoning GIS Data: Geodatabase</title>
+<link>https://data.cityofnewyork.us/d/mm69-vrje</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/mm69-vrje#description_changed-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202606 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202609</description>
+</item>
+<item>
+<title>Description changed: Georeferenced NYC Zoning Maps</title>
+<link>https://data.cityofnewyork.us/d/mxbm-493w</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/mxbm-493w#description_changed-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: The Georeferenced NYC Zoning Maps raster dataset is intended to be a spatial representation of the entire zoning map catalog for the City of New York ... — After: Georeferenced Zoning Maps of New York City. The Georeferenced NYC Zoning Maps raster dataset is intended to be a spatial representation of the entire ...</description>
+</item>
+<item>
+<title>Description changed: Zoning Application Portal (ZAP) - BBL</title>
+<link>https://data.cityofnewyork.us/d/2iga-a6mk</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/2iga-a6mk#description_changed-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261012</description>
+</item>
+<item>
+<title>Description changed: E-Designations</title>
+<link>https://data.cityofnewyork.us/d/hxm3-23vy</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/hxm3-23vy#description_changed-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261014</description>
+</item>
+<item>
+<title>New dataset: NYC Parks Telephonic Interpretation Tracker</title>
+<link>https://data.cityofnewyork.us/d/n5t6-emde</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/n5t6-emde#added-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset is a record of live telephonic (phone or video) interpretation events occurring on Parks property or at Parks events.</description>
+</item>
+<item>
+<title>New dataset: NYC Parks Language Access Requests</title>
+<link>https://data.cityofnewyork.us/d/i3s8-fikq</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/i3s8-fikq#added-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset captures requests received by the NYC Parks Language Access Team from divisions across the agency for speech interpretation (in-person and virtual) and document translation required for language...</description>
+</item>
+<item>
+<title>New dataset: Workers' Compensation Claims (Cause of Injury)</title>
+<link>https://data.cityofnewyork.us/d/746a-7ueg</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/746a-7ueg#added-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains monthly counts of different causes of injuries to NYC Parks employees that led to Workers' Compensation claims.</description>
+</item>
+<item>
+<title>New dataset: Workers' Compensation Claims (Nature of Injury)</title>
+<link>https://data.cityofnewyork.us/d/pbu7-r8ky</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/pbu7-r8ky#added-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains monthly counts of different types of injuries (called here NatureOfInjury) to NYC Parks employess that led to Workers' Compensation claims.</description>
+</item>
 <item>
 <title>Description changed: 2010 Census Tracts</title>
 <link>https://data.cityofnewyork.us/d/bmjq-373p</link>
@@ -646,62 +702,6 @@
 <title>Columns changed: Housing Database by 2020 NTA</title>
 <link>https://data.cityofnewyork.us/d/kyz5-72x5</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/kyz5-72x5#columns_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: comp2025, comp2026. Removed: none.</description>
-</item>
-<item>
-<title>Description changed: Housing Database Project Level Files</title>
-<link>https://data.cityofnewyork.us/d/br6q-ssj3</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/br6q-ssj3#description_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1</description>
-</item>
-<item>
-<title>Columns changed: Housing Database Project Level Files</title>
-<link>https://data.cityofnewyork.us/d/br6q-ssj3</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/br6q-ssj3#columns_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: HPDAffrdbl, HPD_id, HPD_jobrel. Removed: none.</description>
-</item>
-<item>
-<title>Description changed: Housing Database by 2020 Census Block</title>
-<link>https://data.cityofnewyork.us/d/8zyi-kxay</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/8zyi-kxay#description_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1</description>
-</item>
-<item>
-<title>Columns changed: Housing Database by 2020 Census Block</title>
-<link>https://data.cityofnewyork.us/d/8zyi-kxay</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/8zyi-kxay#columns_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: cmp2025, comp2026. Removed: none.</description>
-</item>
-<item>
-<title>Description changed: Housing Database by 2024 City Council</title>
-<link>https://data.cityofnewyork.us/d/szq8-b4uy</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/szq8-b4uy#description_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1</description>
-</item>
-<item>
-<title>Columns changed: Housing Database by 2024 City Council</title>
-<link>https://data.cityofnewyork.us/d/szq8-b4uy</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/szq8-b4uy#columns_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: comp2025, comp2026. Removed: none.</description>
-</item>
-<item>
-<title>Description changed: Housing Database by 2020 Census Tract</title>
-<link>https://data.cityofnewyork.us/d/nahe-je7c</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/nahe-je7c#description_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1</description>
-</item>
-<item>
-<title>Columns changed: Housing Database by 2020 Census Tract</title>
-<link>https://data.cityofnewyork.us/d/nahe-je7c</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/nahe-je7c#columns_changed-2026-10-01</guid>
 <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
 <description>Columns added: comp2025, comp2026. Removed: none.</description>
 </item>

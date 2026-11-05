@@ -1,6 +1,110 @@
 {
- "generated_at": "2026-11-04T17:12:14+00:00",
+ "generated_at": "2026-11-05T17:21:09+00:00",
  "events": [
+  {
+   "id": "mm69-vrje",
+   "name": "Zoning GIS Data: Geodatabase",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "file",
+   "url": "https://data.cityofnewyork.us/d/mm69-vrje",
+   "kind": "description_changed",
+   "date": "2026-11-05",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202606",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 202609",
+   "before_len": 351,
+   "after_len": 351,
+   "diff_at": 350
+  },
+  {
+   "id": "mxbm-493w",
+   "name": "Georeferenced NYC Zoning Maps",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Government Operations",
+   "type": "file",
+   "url": "https://data.cityofnewyork.us/d/mxbm-493w",
+   "kind": "description_changed",
+   "date": "2026-11-05",
+   "before": "The Georeferenced NYC Zoning Maps raster dataset is intended to be a spatial representation of the entire zoning map catalog for the City of New York ...",
+   "after": "Georeferenced Zoning Maps of New York City. The Georeferenced NYC Zoning Maps raster dataset is intended to be a spatial representation of the entire ...",
+   "before_len": 666,
+   "after_len": 710,
+   "diff_at": 0
+  },
+  {
+   "id": "2iga-a6mk",
+   "name": "Zoning Application Portal (ZAP) - BBL",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/2iga-a6mk",
+   "kind": "description_changed",
+   "date": "2026-11-05",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261012",
+   "before_len": 1226,
+   "after_len": 1226,
+   "diff_at": 1222
+  },
+  {
+   "id": "hxm3-23vy",
+   "name": "E-Designations",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hxm3-23vy",
+   "kind": "description_changed",
+   "date": "2026-11-05",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261014",
+   "before_len": 553,
+   "after_len": 553,
+   "diff_at": 549
+  },
+  {
+   "id": "n5t6-emde",
+   "name": "NYC Parks Telephonic Interpretation Tracker",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/n5t6-emde",
+   "kind": "added",
+   "date": "2026-11-05",
+   "summary": "This dataset is a record of live telephonic (phone or video) interpretation events occurring on Parks property or at Parks events."
+  },
+  {
+   "id": "i3s8-fikq",
+   "name": "NYC Parks Language Access Requests",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/i3s8-fikq",
+   "kind": "added",
+   "date": "2026-11-05",
+   "summary": "This dataset captures requests received by the NYC Parks Language Access Team from divisions across the agency for speech interpretation (in-person and virtual) and document translation required for language..."
+  },
+  {
+   "id": "746a-7ueg",
+   "name": "Workers' Compensation Claims (Cause of Injury)",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/746a-7ueg",
+   "kind": "added",
+   "date": "2026-11-05",
+   "summary": "This dataset contains monthly counts of different causes of injuries to NYC Parks employees that led to Workers' Compensation claims."
+  },
+  {
+   "id": "pbu7-r8ky",
+   "name": "Workers' Compensation Claims (Nature of Injury)",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pbu7-r8ky",
+   "kind": "added",
+   "date": "2026-11-05",
+   "summary": "This dataset contains monthly counts of different types of injuries (called here NatureOfInjury) to NYC Parks employess that led to Workers' Compensation claims."
+  },
   {
    "id": "bmjq-373p",
    "name": "2010 Census Tracts",
@@ -4284,8 +4388,8 @@
   }
  ],
  "counts": {
-  "description_changed": 195,
-  "added": 23,
+  "description_changed": 199,
+  "added": 27,
   "renamed": 35,
   "columns_changed": 29,
   "agency_changed": 4
