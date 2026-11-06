@@ -3,8 +3,64 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Thu, 05 Nov 2026 17:21:09 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 16:44:37 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: NYC Zoning Tax Lot Database</title>
+<link>https://data.cityofnewyork.us/d/fdkv-4t4z</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/fdkv-4t4z#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...of this data are available on the DCP Website: BYTES of the BIG APPLE . — After: ...of this data are available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260930</description>
+</item>
+<item>
+<title>Description changed: Privately Owned Public Spaces (POPS)</title>
+<link>https://data.cityofnewyork.us/d/rvih-nhyn</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/rvih-nhyn#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25v2 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v1</description>
+</item>
+<item>
+<title>Description changed: DSNY Litter Basket Inventory</title>
+<link>https://data.cityofnewyork.us/d/8znf-7b2c</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/8znf-7b2c#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...see: https://www.nyc.gov/site/dsny/what-we-do/cleaning/litter-baskets.page . Each record represents the approximate location, ownership, and physical type of a single refuse litter basket. Litter basket locations are subject... — After: ...see: https://www.nyc.gov/site/dsny/what-we-do/cleaning/litter-baskets.page. Each record represents the approximate location, ownership, and physical type of a single refuse litter basket. Litter basket locations are subject ...</description>
+</item>
+<item>
+<title>Description changed: Zoning Application Portal (ZAP) - Project Data</title>
+<link>https://data.cityofnewyork.us/d/hgx4-8ukb</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/hgx4-8ukb#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261012</description>
+</item>
+<item>
+<title>Description changed: Mandatory Inclusionary Housing</title>
+<link>https://data.cityofnewyork.us/d/m79g-k9r4</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/m79g-k9r4#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260331 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260930</description>
+</item>
+<item>
+<title>Description changed: 2020 Public Use Microdata Areas (PUMAs)</title>
+<link>https://data.cityofnewyork.us/d/pikk-p9nv</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/pikk-p9nv#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26c</description>
+</item>
+<item>
+<title>Columns changed: 2020 Public Use Microdata Areas (PUMAs)</title>
+<link>https://data.cityofnewyork.us/d/pikk-p9nv</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/pikk-p9nv#columns_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Shape_Leng. Removed: Shape_Length.</description>
+</item>
+<item>
+<title>Description changed: E-Designations</title>
+<link>https://data.cityofnewyork.us/d/jsrs-ggnx</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/jsrs-ggnx#description_changed-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261014</description>
+</item>
 <item>
 <title>Description changed: Zoning GIS Data: Geodatabase</title>
 <link>https://data.cityofnewyork.us/d/mm69-vrje</link>
@@ -648,61 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/t4f2-8md7#description_changed-2026-10-02</guid>
 <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
 <description>Before: This dataset contains the location of Bus Stop Shelters — After: This dataset contains the location of Bus Stop Shelters.</description>
-</item>
-<item>
-<title>Columns changed: Bus Stop Shelters</title>
-<link>https://data.cityofnewyork.us/d/t4f2-8md7</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/t4f2-8md7#columns_changed-2026-10-02</guid>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: Borough Boundaries, BusStopID, City Council Districts, Community Districts, Police Precincts, geometry. Removed: the_geom.</description>
-</item>
-<item>
-<title>Renamed: NYC Open Data Plan: Historical Civic Engagements 2023-2025</title>
-<link>https://data.cityofnewyork.us/d/9hhx-gjf8</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/9hhx-gjf8#renamed-2026-10-02</guid>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-<description>Was: NYC Open Data Plan: Completed Civic Engagements 2023-2025. Now: NYC Open Data Plan: Historical Civic Engagements 2023-2025.</description>
-</item>
-<item>
-<title>Description changed: NYC Open Data Plan: Historical Civic Engagements 2023-2025</title>
-<link>https://data.cityofnewyork.us/d/9hhx-gjf8</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/9hhx-gjf8#description_changed-2026-10-02</guid>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: NOTE: To review the latest plan, make sure to filter the "Report Year" column to the latest year. This is a list of civic engagement activities report... — After: This is a list of civic engagement activities reported by city agencies for the purpose of providing context, spreading awareness, and increasing the ...</description>
-</item>
-<item>
-<title>New dataset: 2025 Yellow Taxi Trip Data</title>
-<link>https://data.cityofnewyork.us/d/irx2-vgm4</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/irx2-vgm4#added-2026-10-02</guid>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-<description>These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs).</description>
-</item>
-<item>
-<title>Description changed: Housing Database by Community District</title>
-<link>https://data.cityofnewyork.us/d/dbdt-5s7j</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/dbdt-5s7j#description_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1</description>
-</item>
-<item>
-<title>Columns changed: Housing Database by Community District</title>
-<link>https://data.cityofnewyork.us/d/dbdt-5s7j</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/dbdt-5s7j#columns_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: comp2025, comp2026. Removed: none.</description>
-</item>
-<item>
-<title>Description changed: Housing Database by 2020 NTA</title>
-<link>https://data.cityofnewyork.us/d/kyz5-72x5</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/kyz5-72x5#description_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1</description>
-</item>
-<item>
-<title>Columns changed: Housing Database by 2020 NTA</title>
-<link>https://data.cityofnewyork.us/d/kyz5-72x5</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/kyz5-72x5#columns_changed-2026-10-01</guid>
-<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: comp2025, comp2026. Removed: none.</description>
 </item>
 </channel></rss>

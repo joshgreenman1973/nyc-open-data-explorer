@@ -1,7 +1,128 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-11-05T17:21:09+00:00",
+ "generated": "2026-11-06T16:44:37+00:00",
  "items": [
+  {
+   "id": "fdkv-4t4z",
+   "name": "NYC Zoning Tax Lot Database",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/fdkv-4t4z",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...of this data are available on the DCP Website: BYTES of the BIG APPLE .",
+   "after": "...of this data are available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260930",
+   "before_len": 413,
+   "after_len": 439,
+   "diff_at": 413
+  },
+  {
+   "id": "rvih-nhyn",
+   "name": "Privately Owned Public Spaces (POPS)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/rvih-nhyn",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25v2",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v1",
+   "before_len": 817,
+   "after_len": 817,
+   "diff_at": 814
+  },
+  {
+   "id": "8znf-7b2c",
+   "name": "DSNY Litter Basket Inventory",
+   "agency": "NYC Department of Sanitation (DSNY)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/8znf-7b2c",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...see: https://www.nyc.gov/site/dsny/what-we-do/cleaning/litter-baskets.page . Each record represents the approximate location, ownership, and physical type of a single refuse litter basket. Litter basket locations are subject...",
+   "after": "...see: https://www.nyc.gov/site/dsny/what-we-do/cleaning/litter-baskets.page. Each record represents the approximate location, ownership, and physical type of a single refuse litter basket. Litter basket locations are subject ...",
+   "before_len": 1204,
+   "after_len": 1498,
+   "diff_at": 302
+  },
+  {
+   "id": "hgx4-8ukb",
+   "name": "Zoning Application Portal (ZAP) - Project Data",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/hgx4-8ukb",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260706",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261012",
+   "before_len": 1226,
+   "after_len": 1226,
+   "diff_at": 1222
+  },
+  {
+   "id": "m79g-k9r4",
+   "name": "Mandatory Inclusionary Housing",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Government Operations",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/m79g-k9r4",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260331",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260930",
+   "before_len": 529,
+   "after_len": 529,
+   "diff_at": 526
+  },
+  {
+   "id": "pikk-p9nv",
+   "name": "2020 Public Use Microdata Areas (PUMAs)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pikk-p9nv",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26b",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26c",
+   "before_len": 649,
+   "after_len": 649,
+   "diff_at": 648
+  },
+  {
+   "id": "pikk-p9nv",
+   "name": "2020 Public Use Microdata Areas (PUMAs)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/pikk-p9nv",
+   "kind": "columns_changed",
+   "date": "2026-11-06",
+   "columns_added": [
+    "Shape_Leng"
+   ],
+   "columns_removed": [
+    "Shape_Length"
+   ]
+  },
+  {
+   "id": "jsrs-ggnx",
+   "name": "E-Designations",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/jsrs-ggnx",
+   "kind": "description_changed",
+   "date": "2026-11-06",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20260707",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 20261014",
+   "before_len": 553,
+   "after_len": 553,
+   "diff_at": 549
+  },
   {
    "id": "mm69-vrje",
    "name": "Zoning GIS Data: Geodatabase",
@@ -1453,125 +1574,6 @@
    "before_len": 55,
    "after_len": 56,
    "diff_at": 55
-  },
-  {
-   "id": "t4f2-8md7",
-   "name": "Bus Stop Shelters",
-   "agency": "NYC Department of Transportation",
-   "category": "Transportation",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/t4f2-8md7",
-   "kind": "columns_changed",
-   "date": "2026-10-02",
-   "columns_added": [
-    "Borough Boundaries",
-    "BusStopID",
-    "City Council Districts",
-    "Community Districts",
-    "Police Precincts",
-    "geometry"
-   ],
-   "columns_removed": [
-    "the_geom"
-   ]
-  },
-  {
-   "id": "9hhx-gjf8",
-   "name": "NYC Open Data Plan: Historical Civic Engagements 2023-2025",
-   "agency": "Office of Technology and Innovation (OTI)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
-   "kind": "renamed",
-   "date": "2026-10-02",
-   "before": "NYC Open Data Plan: Completed Civic Engagements 2023-2025",
-   "after": "NYC Open Data Plan: Historical Civic Engagements 2023-2025"
-  },
-  {
-   "id": "9hhx-gjf8",
-   "name": "NYC Open Data Plan: Historical Civic Engagements 2023-2025",
-   "agency": "Office of Technology and Innovation (OTI)",
-   "category": "Government Operations",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/9hhx-gjf8",
-   "kind": "description_changed",
-   "date": "2026-10-02",
-   "before": "NOTE: To review the latest plan, make sure to filter the \"Report Year\" column to the latest year. This is a list of civic engagement activities report...",
-   "after": "This is a list of civic engagement activities reported by city agencies for the purpose of providing context, spreading awareness, and increasing the ...",
-   "before_len": 477,
-   "after_len": 379,
-   "diff_at": 0
-  },
-  {
-   "id": "irx2-vgm4",
-   "name": "2025 Yellow Taxi Trip Data",
-   "agency": "Taxi and Limousine Commission (TLC)",
-   "category": "Transportation",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/irx2-vgm4",
-   "kind": "added",
-   "date": "2026-10-02",
-   "summary": "These records are generated from the trip record submissions made by yellow taxi Technology Service Providers (TSPs)."
-  },
-  {
-   "id": "dbdt-5s7j",
-   "name": "Housing Database by Community District",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Housing & Development",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/dbdt-5s7j",
-   "kind": "description_changed",
-   "date": "2026-10-01",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1",
-   "before_len": 985,
-   "after_len": 987,
-   "diff_at": 982
-  },
-  {
-   "id": "dbdt-5s7j",
-   "name": "Housing Database by Community District",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Housing & Development",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/dbdt-5s7j",
-   "kind": "columns_changed",
-   "date": "2026-10-01",
-   "columns_added": [
-    "comp2025",
-    "comp2026"
-   ],
-   "columns_removed": []
-  },
-  {
-   "id": "kyz5-72x5",
-   "name": "Housing Database by 2020 NTA",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Housing & Development",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/kyz5-72x5",
-   "kind": "description_changed",
-   "date": "2026-10-01",
-   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 25q4",
-   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26q2.1",
-   "before_len": 970,
-   "after_len": 972,
-   "diff_at": 967
-  },
-  {
-   "id": "kyz5-72x5",
-   "name": "Housing Database by 2020 NTA",
-   "agency": "Department of City Planning (DCP)",
-   "category": "Housing & Development",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/kyz5-72x5",
-   "kind": "columns_changed",
-   "date": "2026-10-01",
-   "columns_added": [
-    "comp2025",
-    "comp2026"
-   ],
-   "columns_removed": []
   }
  ]
 }

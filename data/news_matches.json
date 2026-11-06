@@ -1,5 +1,5 @@
 {
-  "computed_at": "2026-11-05T17:22:48+00:00",
+  "computed_at": "2026-11-06T16:47:09+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
@@ -8,7 +8,7 @@
       "headline": "6 Killed in Sunset Park Blaze: NYC’s Deadliest Fire This Year",
       "source": "The New York Times",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0aWt6ZkNfNlAxODlnX1VNTnpQSHpHNVNwNHk0V3ItV1VlVEM1QXhaMUphUDVkaHEtYmtpVnlXMHljUTl4U3V0Z2JGSUFERGtkREsxcW1KWER6dU5pRm50eEItVVl3N01STEhVb1NGX2dTa1lQcmw5UFRNMHNlSFE?oc=5",
-      "pubDate": "Thu, 05 Nov 2026 16:22:14 GMT",
+      "pubDate": "Fri, 06 Nov 2026 13:00:00 GMT",
       "topic": "Reported crime",
       "dataset_id": "qgea-i56i",
       "dataset_name": "NYPD Complaint Data Historic",
@@ -20,10 +20,25 @@
       ]
     },
     {
+      "headline": "Friday’s Headlines: MTA Tin Cup Edition",
+      "source": "Streetsblog New York City",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMG5PUmVySHVmcUhwYURNaUViVzBhOWZ6cTU2SnhRNzB1QlY0TUMwdVlidFdXWk9NMmhUQ0NMa1FlbnpsQjlKRk1VMHl6bU9FS2tSSjJZakNVWFN0X0ZFUUtzSGpUS0s0eGtkWGRnZ2NBampmM281d3MzTXNZRFJtX1dB?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 05:01:00 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "mta"
+      ]
+    },
+    {
       "headline": "Appeals Court Allows Mamdani to Move Forward with Pied-à-Terre Tax",
       "source": "The New York Times",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUU9JaDJFTlpYMlliT09LbGdYRWdiZXBVRVNMZGhSSWRqbVF4eUwyZjIxMEg3VzFjdkEzRWNjby1kMGQ5YjZBWmVtWUZ6WGlQS29jVGVxVFl2d3R6SFB6bGRaNnBJbnpVTUJKdC1ja2puQzU1Rm1rRmJheko0MDZJakVNYUZTYkI3YXhQcHhFRS11NzQ?oc=5",
-      "pubDate": "Wed, 04 Nov 2026 21:30:52 GMT",
+      "pubDate": "Wed, 04 Nov 2026 19:43:50 GMT",
       "topic": "Property tax data",
       "dataset_id": "8h5j-fqxa",
       "dataset_name": "ACRIS - Real Property Legals",
@@ -32,36 +47,6 @@
       "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
       "match_terms": [
         "pied-à-terre"
-      ]
-    },
-    {
-      "headline": "Election Recap: Street Safety and Transit Won Big Across the Empire State on Tuesday",
-      "source": "Streetsblog New York City",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15Nm1VSUZDTkpQOUVHYWVXLTR1emExblhwWnZhTEwxT1ZBdUl1ZUNOcWM1bGFWVE54cTRVNXRJYl9zSkprTkMyRVF2VFF3UzZ4ZkpuOEhhdW1LNS13TWNuOVZzcjNWbHd2WmstT0M0ZEQ?oc=5",
-      "pubDate": "Thu, 05 Nov 2026 05:04:00 GMT",
-      "topic": "Voter analysis",
-      "dataset_id": "psx2-aqx3",
-      "dataset_name": "Voter Analysis 2008-2018",
-      "dataset_category": "Finance & Budget",
-      "dataset_agency": "Campaign Finance Board (CFB)",
-      "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
-      "match_terms": [
-        "election"
-      ]
-    },
-    {
-      "headline": "Ari Aster's ‘Scapegoat' Has Started Shooting in New York City",
-      "source": "World of Reel",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdWYtcHNVNWJvZ2VJcHZRYU9aSUo4UGFqX3d5UnpkMU1LQ3VxU09ld1RPNG9Vekh2TE9ZYkdoNU1OT2hvSVljNXM0VWxMSks5OTBrcDdIaVd5Q2RoaEdaSlpwaDVxSUFHUFV6djVHZHZtbDlMYWIyTW9Od0JrbXJJRW1Qa3VxeTlNVEJJUnlGaUpQaVh6NHVIRHZqSlFERWVGcGZ3?oc=5",
-      "pubDate": "Wed, 04 Nov 2026 19:45:15 GMT",
-      "topic": "Gun violence",
-      "dataset_id": "833y-fsy8",
-      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
-      "match_terms": [
-        "shooting"
       ]
     }
   ]
