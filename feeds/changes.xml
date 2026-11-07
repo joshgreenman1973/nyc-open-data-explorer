@@ -3,8 +3,22 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 06 Nov 2026 16:44:37 +0000</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 15:38:36 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: Distribution Water Quality</title>
+<link>https://data.cityofnewyork.us/d/bkwf-xfky</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/bkwf-xfky#columns_changed-2026-11-07</guid>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Borough, Location, SiteStation. Removed: Basin, CityOwned, Flow_MGD, Sample Date.</description>
+</item>
+<item>
+<title>Columns changed: NYC Parks Forever Wild Natural Areas</title>
+<link>https://data.cityofnewyork.us/d/48va-85tp</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/48va-85tp#columns_changed-2026-11-07</guid>
+<pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Acres, location, shape. Removed: Location, Shape, total_acres.</description>
+</item>
 <item>
 <title>Description changed: NYC Zoning Tax Lot Database</title>
 <link>https://data.cityofnewyork.us/d/fdkv-4t4z</link>
@@ -690,19 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/eg3n-9i5r#agency_changed-2026-10-07</guid>
 <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
 <description>Attribution moved from No agency listed to Office of Technology and Innovation (OTI).</description>
-</item>
-<item>
-<title>Columns changed: NYCHA Public Housing Developments</title>
-<link>https://data.cityofnewyork.us/d/phvi-damg</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/phvi-damg#columns_changed-2026-10-05</guid>
-<pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: PROGRAM. Removed: none.</description>
-</item>
-<item>
-<title>Description changed: Bus Stop Shelters</title>
-<link>https://data.cityofnewyork.us/d/t4f2-8md7</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/t4f2-8md7#description_changed-2026-10-02</guid>
-<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: This dataset contains the location of Bus Stop Shelters — After: This dataset contains the location of Bus Stop Shelters.</description>
 </item>
 </channel></rss>

@@ -1,6 +1,47 @@
 {
- "generated_at": "2026-11-06T16:44:37+00:00",
+ "generated_at": "2026-11-07T15:38:36+00:00",
  "events": [
+  {
+   "id": "bkwf-xfky",
+   "name": "Distribution Water Quality",
+   "agency": "Department of Environmental Protection (DEP)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bkwf-xfky",
+   "kind": "columns_changed",
+   "date": "2026-11-07",
+   "columns_added": [
+    "Borough",
+    "Location",
+    "SiteStation"
+   ],
+   "columns_removed": [
+    "Basin",
+    "CityOwned",
+    "Flow_MGD",
+    "Sample Date"
+   ]
+  },
+  {
+   "id": "48va-85tp",
+   "name": "NYC Parks Forever Wild Natural Areas",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/48va-85tp",
+   "kind": "columns_changed",
+   "date": "2026-11-07",
+   "columns_added": [
+    "Acres",
+    "location",
+    "shape"
+   ],
+   "columns_removed": [
+    "Location",
+    "Shape",
+    "total_acres"
+   ]
+  },
   {
    "id": "fdkv-4t4z",
    "name": "NYC Zoning Tax Lot Database",
@@ -4509,8 +4550,8 @@
   }
  ],
  "counts": {
+  "columns_changed": 32,
   "description_changed": 206,
-  "columns_changed": 30,
   "added": 27,
   "renamed": 35,
   "agency_changed": 4
