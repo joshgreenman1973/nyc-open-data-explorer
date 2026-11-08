@@ -1,42 +1,16 @@
 {
-  "computed_at": "2026-11-07T15:38:36+00:00",
-  "window_start": "2026-10-31T15:38:36",
+  "computed_at": "2026-11-08T15:56:05+00:00",
+  "window_start": "2026-11-01T15:56:05",
   "window_label": "the past 7 days",
   "trend_weeks": 12,
   "stats": [
     {
-      "key": "311",
-      "headline": "78,005",
-      "label": "311 complaints in the latest 7 full days",
-      "sub": "Most common: Illegal Parking (10,775)",
-      "trend": [
-        35762,
-        76712,
-        72674,
-        73513,
-        76974,
-        76317,
-        75071,
-        78712,
-        73400,
-        80320,
-        81208,
-        78005
-      ],
-      "delta_pct": -4,
-      "latest_date": "2026-11-04",
-      "lag_days": 3,
-      "dataset_id": "erm2-nwe9",
-      "dataset_name": "311 Service Requests from 2020 to Present",
-      "category": "Social Services"
-    },
-    {
       "key": "mvc",
       "headline": "1,721",
       "label": "Motor-vehicle crashes reported",
-      "sub": "372 people injured",
+      "sub": "245 people injured",
       "trend": [
-        429,
+        212,
         1490,
         1518,
         1567,
@@ -51,32 +25,32 @@
       ],
       "delta_pct": -1,
       "latest_date": "2026-11-03",
-      "lag_days": 4,
+      "lag_days": 5,
       "dataset_id": "h9gi-nx95",
       "dataset_name": "Motor Vehicle Collisions - Crashes",
       "category": "Public Safety"
     },
     {
       "key": "dob",
-      "headline": "3,515",
+      "headline": "3,502",
       "label": "DOB construction permits issued",
       "sub": "Excludes electrical and elevator filings",
       "trend": [
-        1906,
-        3247,
-        3657,
-        2827,
-        3922,
-        3820,
-        3733,
-        3699,
-        3171,
-        3705,
-        3483,
-        3515
+        2610,
+        3234,
+        3701,
+        2968,
+        3923,
+        3764,
+        3780,
+        3618,
+        3179,
+        3684,
+        3477,
+        3502
       ],
       "delta_pct": 1,
-      "latest_date": "2026-11-05",
+      "latest_date": "2026-11-06",
       "lag_days": 2,
       "dataset_id": "rbx6-tga4",
       "dataset_name": "DOB NOW: Build – Approved Permits",
@@ -88,7 +62,7 @@
       "label": "Restaurant inspections completed",
       "sub": "29% earned an A grade (235 of 819 graded)",
       "trend": [
-        896,
+        886,
         2189,
         2176,
         1514,
@@ -103,14 +77,14 @@
       ],
       "delta_pct": -14,
       "latest_date": "2026-11-04",
-      "lag_days": 3,
+      "lag_days": 4,
       "dataset_id": "43nn-pn8j",
       "dataset_name": "DOHMH NYC Restaurant Inspection Results",
       "category": "Health"
     },
     {
       "key": "catalog",
-      "headline": "497",
+      "headline": "398",
       "label": "Datasets refreshed by City agencies",
       "sub": "3,032 total datasets in the catalog",
       "trend": [
@@ -121,17 +95,22 @@
         18,
         21,
         33,
-        39,
-        56,
-        25,
-        57,
-        497
+        38,
+        58,
+        30,
+        150,
+        398
       ],
-      "delta_pct": 772,
+      "delta_pct": 165,
       "dataset_id": null,
       "dataset_name": "NYC Open Data catalog metadata",
       "category": null
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "label": "311",
+      "err": "HTTP Error 429: Too Many Requests"
+    }
+  ]
 }
