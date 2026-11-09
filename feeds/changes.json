@@ -1,7 +1,38 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-11-08T15:56:05+00:00",
+ "generated": "2026-11-09T19:47:31+00:00",
  "items": [
+  {
+   "id": "mzcd-fznk",
+   "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mzcd-fznk",
+   "kind": "description_changed",
+   "date": "2026-11-09",
+   "before": "The Resiliency Exposure Forecast for Tree Canopy projects canopy coverage in acres across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055). Projections are based on expected tree canopy g...",
+   "after": "The Resiliency Exposure Forecast for Tree Canopy projects percent canopy coverage across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055). Projections are based on expected tree canopy gr...",
+   "before_len": 799,
+   "after_len": 798,
+   "diff_at": 58
+  },
+  {
+   "id": "mzcd-fznk",
+   "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mzcd-fznk",
+   "kind": "columns_changed",
+   "date": "2026-11-09",
+   "columns_added": [
+    "Canopy Coverage (Percent)"
+   ],
+   "columns_removed": [
+    "Canopy Coverage (Acres)"
+   ]
+  },
   {
    "id": "bkwf-xfky",
    "name": "Distribution Water Quality",
@@ -1562,30 +1593,6 @@
     "bottom_dissolved_organic_carbon_ysi_mg_l",
     "top_dissolved_organic_carbon_ysi_mg_l"
    ]
-  },
-  {
-   "id": "am7j-irtt",
-   "name": "Open Data Week Events (2017–Present)",
-   "agency": "Office of Technology and Innovation (OTI)",
-   "category": "Uncategorized",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/am7j-irtt",
-   "kind": "agency_changed",
-   "date": "2026-10-07",
-   "before": "No agency listed",
-   "after": "Office of Technology and Innovation (OTI)"
-  },
-  {
-   "id": "eg3n-9i5r",
-   "name": "Data Through Design Projects (2018–Present)",
-   "agency": "Office of Technology and Innovation (OTI)",
-   "category": "Uncategorized",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/eg3n-9i5r",
-   "kind": "agency_changed",
-   "date": "2026-10-07",
-   "before": "No agency listed",
-   "after": "Office of Technology and Innovation (OTI)"
   }
  ]
 }

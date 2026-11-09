@@ -3,8 +3,22 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Sun, 08 Nov 2026 15:56:05 +0000</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 19:47:31 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy</title>
+<link>https://data.cityofnewyork.us/d/mzcd-fznk</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/mzcd-fznk#description_changed-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: The Resiliency Exposure Forecast for Tree Canopy projects canopy coverage in acres across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055). Projections are based on expected tree canopy g... — After: The Resiliency Exposure Forecast for Tree Canopy projects percent canopy coverage across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055). Projections are based on expected tree canopy gr...</description>
+</item>
+<item>
+<title>Columns changed: NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy</title>
+<link>https://data.cityofnewyork.us/d/mzcd-fznk</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/mzcd-fznk#columns_changed-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Canopy Coverage (Percent). Removed: Canopy Coverage (Acres).</description>
+</item>
 <item>
 <title>Columns changed: Distribution Water Quality</title>
 <link>https://data.cityofnewyork.us/d/bkwf-xfky</link>
@@ -690,19 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/5uug-f49n#columns_changed-2026-10-07</guid>
 <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
 <description>Columns added: Bottom Dissolved Oxygen YSI (mg/L), Top Dissolved Oxygen YSI (mg/L). Removed: bottom_dissolved_organic_carbon_ysi_mg_l, top_dissolved_organic_carbon_ysi_mg_l.</description>
-</item>
-<item>
-<title>Agency changed: Open Data Week Events (2017–Present)</title>
-<link>https://data.cityofnewyork.us/d/am7j-irtt</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/am7j-irtt#agency_changed-2026-10-07</guid>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-<description>Attribution moved from No agency listed to Office of Technology and Innovation (OTI).</description>
-</item>
-<item>
-<title>Agency changed: Data Through Design Projects (2018–Present)</title>
-<link>https://data.cityofnewyork.us/d/eg3n-9i5r</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/eg3n-9i5r#agency_changed-2026-10-07</guid>
-<pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-<description>Attribution moved from No agency listed to Office of Technology and Innovation (OTI).</description>
 </item>
 </channel></rss>

@@ -1,6 +1,37 @@
 {
- "generated_at": "2026-11-08T15:56:05+00:00",
+ "generated_at": "2026-11-09T19:47:31+00:00",
  "events": [
+  {
+   "id": "mzcd-fznk",
+   "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mzcd-fznk",
+   "kind": "description_changed",
+   "date": "2026-11-09",
+   "before": "The Resiliency Exposure Forecast for Tree Canopy projects canopy coverage in acres across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055). Projections are based on expected tree canopy g...",
+   "after": "The Resiliency Exposure Forecast for Tree Canopy projects percent canopy coverage across NYC neighborhoods at decadal intervals (2021, 2030, 2040, 2050, 2055). Projections are based on expected tree canopy gr...",
+   "before_len": 799,
+   "after_len": 798,
+   "diff_at": 58
+  },
+  {
+   "id": "mzcd-fznk",
+   "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
+   "agency": "No agency listed",
+   "category": "Uncategorized",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mzcd-fznk",
+   "kind": "columns_changed",
+   "date": "2026-11-09",
+   "columns_added": [
+    "Canopy Coverage (Percent)"
+   ],
+   "columns_removed": [
+    "Canopy Coverage (Acres)"
+   ]
+  },
   {
    "id": "bkwf-xfky",
    "name": "Distribution Water Quality",
@@ -4550,8 +4581,8 @@
   }
  ],
  "counts": {
-  "columns_changed": 32,
-  "description_changed": 206,
+  "description_changed": 207,
+  "columns_changed": 33,
   "added": 27,
   "renamed": 35,
   "agency_changed": 4
