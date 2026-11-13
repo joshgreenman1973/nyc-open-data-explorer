@@ -1,6 +1,22 @@
 {
- "generated_at": "2026-11-12T17:33:03+00:00",
+ "generated_at": "2026-11-13T17:10:48+00:00",
  "events": [
+  {
+   "id": "cqsj-cfgu",
+   "name": "Bi-Annual Pedestrian Counts",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/cqsj-cfgu",
+   "kind": "columns_changed",
+   "date": "2026-11-13",
+   "columns_added": [
+    "Sept26_AM",
+    "Sept26_MD",
+    "Sept26_PM"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "mzcd-fznk",
    "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
@@ -4581,8 +4597,8 @@
   }
  ],
  "counts": {
+  "columns_changed": 34,
   "description_changed": 207,
-  "columns_changed": 33,
   "added": 27,
   "renamed": 35,
   "agency_changed": 4

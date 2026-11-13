@@ -1,7 +1,23 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-11-12T17:33:03+00:00",
+ "generated": "2026-11-13T17:10:49+00:00",
  "items": [
+  {
+   "id": "cqsj-cfgu",
+   "name": "Bi-Annual Pedestrian Counts",
+   "agency": "Department of Transportation (DOT)",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/cqsj-cfgu",
+   "kind": "columns_changed",
+   "date": "2026-11-13",
+   "columns_added": [
+    "Sept26_AM",
+    "Sept26_MD",
+    "Sept26_PM"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "mzcd-fznk",
    "name": "NYC Climate Budgeting Report: Resiliency Exposure Forecast - Outdoor Heat - Tree Canopy",
@@ -1575,24 +1591,6 @@
    "kind": "added",
    "date": "2026-10-10",
    "summary": "These records are generated from the trip record submissions made by High Volume For-Hire Vehicle (FHV) bases."
-  },
-  {
-   "id": "5uug-f49n",
-   "name": "Harbor Water Quality",
-   "agency": "Department of Environmental Protection (DEP)",
-   "category": "Environment",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/5uug-f49n",
-   "kind": "columns_changed",
-   "date": "2026-10-07",
-   "columns_added": [
-    "Bottom Dissolved Oxygen YSI (mg/L)",
-    "Top Dissolved Oxygen YSI (mg/L)"
-   ],
-   "columns_removed": [
-    "bottom_dissolved_organic_carbon_ysi_mg_l",
-    "top_dissolved_organic_carbon_ysi_mg_l"
-   ]
   }
  ]
 }
