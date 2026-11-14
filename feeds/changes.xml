@@ -3,8 +3,22 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Fri, 13 Nov 2026 17:10:49 +0000</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 15:47:40 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: Future High Tides (Sea Level Rise) 2030-2150</title>
+<link>https://data.cityofnewyork.us/d/xbxf-ev5m</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/xbxf-ev5m#added-2026-11-14</guid>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+<description>Future high tide layers show the projected extent of high tide inundation over land in the 2030s, 2050s, 2080s, 2100s, and 2150s.</description>
+</item>
+<item>
+<title>New dataset: Future Floodplains (Sea Level Rise) 2030-2150</title>
+<link>https://data.cityofnewyork.us/d/29fz-v4rp</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/29fz-v4rp#added-2026-11-14</guid>
+<pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+<description>Future floodplain layer shows the projected extent of inundation from either 0.2% or 1% annual chance coastal storms (also known as 500 and 100-year storms) in the 2030s-2150s.</description>
+</item>
 <item>
 <title>Columns changed: Bi-Annual Pedestrian Counts</title>
 <link>https://data.cityofnewyork.us/d/cqsj-cfgu</link>
@@ -690,19 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/v5jd-6wqn#description_changed-2026-10-14</guid>
 <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
 <description>Before: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
-</item>
-<item>
-<title>Columns changed: NYC Parks Monuments</title>
-<link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#columns_changed-2026-10-13</guid>
-<pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: Borough Boundaries, City Council Districts, Community Districts, Police Precincts, featurestatus, shape, system. Removed: none.</description>
-</item>
-<item>
-<title>New dataset: 2025 High Volume FHV Trip Data</title>
-<link>https://data.cityofnewyork.us/d/nt46-nv3c</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/nt46-nv3c#added-2026-10-10</guid>
-<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
-<description>These records are generated from the trip record submissions made by High Volume For-Hire Vehicle (FHV) bases.</description>
 </item>
 </channel></rss>

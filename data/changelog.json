@@ -1,6 +1,28 @@
 {
- "generated_at": "2026-11-13T17:10:48+00:00",
+ "generated_at": "2026-11-14T15:47:40+00:00",
  "events": [
+  {
+   "id": "xbxf-ev5m",
+   "name": "Future High Tides (Sea Level Rise) 2030-2150",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Environment",
+   "type": "file",
+   "url": "https://data.cityofnewyork.us/d/xbxf-ev5m",
+   "kind": "added",
+   "date": "2026-11-14",
+   "summary": "Future high tide layers show the projected extent of high tide inundation over land in the 2030s, 2050s, 2080s, 2100s, and 2150s."
+  },
+  {
+   "id": "29fz-v4rp",
+   "name": "Future Floodplains (Sea Level Rise) 2030-2150",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Environment",
+   "type": "file",
+   "url": "https://data.cityofnewyork.us/d/29fz-v4rp",
+   "kind": "added",
+   "date": "2026-11-14",
+   "summary": "Future floodplain layer shows the projected extent of inundation from either 0.2% or 1% annual chance coastal storms (also known as 500 and 100-year storms) in the 2030s-2150s."
+  },
   {
    "id": "cqsj-cfgu",
    "name": "Bi-Annual Pedestrian Counts",
@@ -4597,9 +4619,9 @@
   }
  ],
  "counts": {
+  "added": 29,
   "columns_changed": 34,
   "description_changed": 207,
-  "added": 27,
   "renamed": 35,
   "agency_changed": 4
  }
