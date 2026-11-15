@@ -1,15 +1,25 @@
 {
   "title": "NYC Open Data — Housing & Development (recently updated)",
-  "generated": "2026-11-14T15:47:40+00:00",
+  "generated": "2026-11-15T16:18:42+00:00",
   "items": [
+    {
+      "id": "wvxf-dwi5",
+      "name": "Housing Maintenance Code Violations",
+      "category": "Housing & Development",
+      "agency": "Department of Housing Preservation and Development (HPD)",
+      "updated": "2026-11-15T15:57:46.000Z",
+      "created": "2013-11-18T19:49:47.000Z",
+      "views": 299503,
+      "url": "https://data.cityofnewyork.us/d/wvxf-dwi5"
+    },
     {
       "id": "ygpa-z7cr",
       "name": "Housing Maintenance Code Complaints and Problems",
       "category": "Housing & Development",
       "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-14T15:07:17.000Z",
+      "updated": "2026-11-15T15:17:56.000Z",
       "created": "2022-11-04T14:00:24.000Z",
-      "views": 41469,
+      "views": 41759,
       "url": "https://data.cityofnewyork.us/d/ygpa-z7cr"
     },
     {
@@ -17,9 +27,9 @@
       "name": "Housing Maintenance Code Violations NYCHA properties",
       "category": "Housing & Development",
       "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-14T14:01:24.000Z",
+      "updated": "2026-11-15T14:01:49.000Z",
       "created": "2025-07-16T16:39:27.000Z",
-      "views": 8844,
+      "views": 8861,
       "url": "https://data.cityofnewyork.us/d/im9z-53hg"
     },
     {
@@ -27,9 +37,9 @@
       "name": "DOB Permit Issuance",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-14T03:29:37.000Z",
+      "updated": "2026-11-15T00:34:08.000Z",
       "created": "2013-04-18T15:18:56.000Z",
-      "views": 630610,
+      "views": 630787,
       "url": "https://data.cityofnewyork.us/d/ipu4-2q9a"
     },
     {
@@ -37,9 +47,9 @@
       "name": "DOB Job Application Filings",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-14T01:32:44.000Z",
+      "updated": "2026-11-14T23:42:36.000Z",
       "created": "2013-04-18T15:18:56.000Z",
-      "views": 2446016,
+      "views": 2446105,
       "url": "https://data.cityofnewyork.us/d/ic3t-wcy2"
     },
     {
@@ -47,9 +57,9 @@
       "name": "Order to Repair/Vacate Orders",
       "category": "Housing & Development",
       "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-13T21:39:41.000Z",
+      "updated": "2026-11-14T21:50:44.000Z",
       "created": "2018-03-05T20:56:41.000Z",
-      "views": 27747,
+      "views": 27769,
       "url": "https://data.cityofnewyork.us/d/tb8q-a3ar"
     },
     {
@@ -57,9 +67,9 @@
       "name": "DOB NOW Elevator Safety Compliance",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T21:34:30.000Z",
+      "updated": "2026-11-14T21:32:41.000Z",
       "created": "2023-01-27T20:04:44.000Z",
-      "views": 19064,
+      "views": 20917,
       "url": "https://data.cityofnewyork.us/d/e5aq-a4j2"
     },
     {
@@ -67,9 +77,9 @@
       "name": "DOB Certificate Of Occupancy",
       "category": "Housing & Development",
       "agency": "No agency listed",
-      "updated": "2026-11-13T21:31:30.000Z",
+      "updated": "2026-11-14T21:31:46.000Z",
       "created": "2017-06-30T19:26:39.000Z",
-      "views": 91839,
+      "views": 91880,
       "url": "https://data.cityofnewyork.us/d/bs8b-p36w"
     },
     {
@@ -77,9 +87,9 @@
       "name": "DOB NOW: Build – Job Application Filings",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T21:30:04.000Z",
+      "updated": "2026-11-14T21:26:35.000Z",
       "created": "2016-05-26T13:34:09.000Z",
-      "views": 172042,
+      "views": 172178,
       "url": "https://data.cityofnewyork.us/d/w9ak-ipjd"
     },
     {
@@ -87,9 +97,9 @@
       "name": "DOB License Info",
       "category": "Housing & Development",
       "agency": "No agency listed",
-      "updated": "2026-11-13T21:11:34.000Z",
+      "updated": "2026-11-14T21:12:40.000Z",
       "created": "2017-06-08T16:41:22.000Z",
-      "views": 38493,
+      "views": 38537,
       "url": "https://data.cityofnewyork.us/d/t8hj-ruu2"
     },
     {
@@ -97,40 +107,180 @@
       "name": "DOB Stalled Construction Sites",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T21:04:12.000Z",
+      "updated": "2026-11-14T21:09:01.000Z",
       "created": "2013-04-18T15:19:09.000Z",
-      "views": 24325,
+      "views": 24331,
       "url": "https://data.cityofnewyork.us/d/i296-73x5"
-    },
-    {
-      "id": "pkdm-hqz6",
-      "name": "DOB NOW: Certificate of Occupancy",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T21:03:34.000Z",
-      "created": "2022-05-17T17:24:15.000Z",
-      "views": 29119,
-      "url": "https://data.cityofnewyork.us/d/pkdm-hqz6"
     },
     {
       "id": "52dp-yji6",
       "name": "DOB NOW: Safety Boiler",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T20:45:05.000Z",
+      "updated": "2026-11-14T21:04:53.000Z",
       "created": "2017-09-14T20:55:30.000Z",
-      "views": 30947,
+      "views": 30959,
       "url": "https://data.cityofnewyork.us/d/52dp-yji6"
+    },
+    {
+      "id": "pkdm-hqz6",
+      "name": "DOB NOW: Certificate of Occupancy",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T21:01:47.000Z",
+      "created": "2022-05-17T17:24:15.000Z",
+      "views": 29191,
+      "url": "https://data.cityofnewyork.us/d/pkdm-hqz6"
     },
     {
       "id": "g76y-dcqj",
       "name": "DOB After Hour Variance Permits",
       "category": "Housing & Development",
       "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T20:38:58.000Z",
+      "updated": "2026-11-14T20:37:07.000Z",
       "created": "2020-09-17T15:39:43.000Z",
-      "views": 8546,
+      "views": 8567,
       "url": "https://data.cityofnewyork.us/d/g76y-dcqj"
+    },
+    {
+      "id": "rbx6-tga4",
+      "name": "DOB NOW: Build – Approved Permits",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T19:49:50.000Z",
+      "created": "2016-05-26T13:36:30.000Z",
+      "views": 306068,
+      "url": "https://data.cityofnewyork.us/d/rbx6-tga4"
+    },
+    {
+      "id": "bf97-mjsy",
+      "name": "Construction-Related Incidents",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T19:46:52.000Z",
+      "created": "2024-10-16T17:14:23.000Z",
+      "views": 6089,
+      "url": "https://data.cityofnewyork.us/d/bf97-mjsy"
+    },
+    {
+      "id": "xxbr-ypig",
+      "name": "DOB NOW: Build – Limited Alteration Applications",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T19:39:59.000Z",
+      "created": "2021-10-25T19:56:39.000Z",
+      "views": 13148,
+      "url": "https://data.cityofnewyork.us/d/xxbr-ypig"
+    },
+    {
+      "id": "855j-jady",
+      "name": "DOB Safety Violations",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T19:08:46.000Z",
+      "created": "2023-10-18T16:22:08.000Z",
+      "views": 22778,
+      "url": "https://data.cityofnewyork.us/d/855j-jady"
+    },
+    {
+      "id": "juyv-2jek",
+      "name": "DOB NOW: Build Elevator Device Details",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T19:04:28.000Z",
+      "created": "2019-10-03T19:32:09.000Z",
+      "views": 13433,
+      "url": "https://data.cityofnewyork.us/d/juyv-2jek"
+    },
+    {
+      "id": "3h2n-5cm9",
+      "name": "DOB Violations",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T18:40:27.000Z",
+      "created": "2015-11-24T20:50:03.000Z",
+      "views": 190157,
+      "url": "https://data.cityofnewyork.us/d/3h2n-5cm9"
+    },
+    {
+      "id": "xubg-57si",
+      "name": "DOB NOW: Safety – Facades Compliance Filings",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T18:32:16.000Z",
+      "created": "2016-09-09T15:34:48.000Z",
+      "views": 37776,
+      "url": "https://data.cityofnewyork.us/d/xubg-57si"
+    },
+    {
+      "id": "6bgk-3dad",
+      "name": "DOB ECB Violations",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T17:59:24.000Z",
+      "created": "2015-11-24T20:49:53.000Z",
+      "views": 125450,
+      "url": "https://data.cityofnewyork.us/d/6bgk-3dad"
+    },
+    {
+      "id": "eabe-havv",
+      "name": "DOB Complaints Received",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T17:33:40.000Z",
+      "created": "2013-04-18T15:19:10.000Z",
+      "views": 229334,
+      "url": "https://data.cityofnewyork.us/d/eabe-havv"
+    },
+    {
+      "id": "kfp4-dz4h",
+      "name": "DOB NOW: Build Elevator Permit Applications",
+      "category": "Housing & Development",
+      "agency": "Department of Buildings (DOB)",
+      "updated": "2026-11-14T17:32:47.000Z",
+      "created": "2019-10-03T18:49:55.000Z",
+      "views": 19960,
+      "url": "https://data.cityofnewyork.us/d/kfp4-dz4h"
+    },
+    {
+      "id": "sbnd-xujn",
+      "name": "Handyman Work Order (HWO) Charges",
+      "category": "Housing & Development",
+      "agency": "Department of Housing Preservation and Development (HPD)",
+      "updated": "2026-11-14T16:36:32.000Z",
+      "created": "2013-11-19T15:27:59.000Z",
+      "views": 9490,
+      "url": "https://data.cityofnewyork.us/d/sbnd-xujn"
+    },
+    {
+      "id": "mdbu-nrqn",
+      "name": "Open Market Order (OMO) Charges",
+      "category": "Housing & Development",
+      "agency": "Department of Housing Preservation and Development (HPD)",
+      "updated": "2026-11-14T16:36:19.000Z",
+      "created": "2013-11-19T15:58:14.000Z",
+      "views": 20442,
+      "url": "https://data.cityofnewyork.us/d/mdbu-nrqn"
+    },
+    {
+      "id": "emrz-5p35",
+      "name": "Invoices for Open Market Order (OMO) Charges",
+      "category": "Housing & Development",
+      "agency": "Department of Housing Preservation and Development (HPD)",
+      "updated": "2026-11-14T16:36:05.000Z",
+      "created": "2013-11-18T21:42:17.000Z",
+      "views": 5571,
+      "url": "https://data.cityofnewyork.us/d/emrz-5p35"
+    },
+    {
+      "id": "cp6j-7bjj",
+      "name": "Fee Charges",
+      "category": "Housing & Development",
+      "agency": "Department of Housing Preservation and Development (HPD)",
+      "updated": "2026-11-14T16:35:49.000Z",
+      "created": "2013-11-18T21:35:58.000Z",
+      "views": 8493,
+      "url": "https://data.cityofnewyork.us/d/cp6j-7bjj"
     },
     {
       "id": "krwf-eng6",
@@ -139,7 +289,7 @@
       "agency": "School Construction Authority (SCA)",
       "updated": "2026-11-13T20:31:29.000Z",
       "created": "2013-04-18T15:19:03.000Z",
-      "views": 7265,
+      "views": 7270,
       "url": "https://data.cityofnewyork.us/d/krwf-eng6"
     },
     {
@@ -149,158 +299,8 @@
       "agency": "School Construction Authority (SCA)",
       "updated": "2026-11-13T20:31:05.000Z",
       "created": "2013-07-02T19:05:05.000Z",
-      "views": 15152,
+      "views": 15166,
       "url": "https://data.cityofnewyork.us/d/szkz-syh6"
-    },
-    {
-      "id": "bf97-mjsy",
-      "name": "Construction-Related Incidents",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T19:46:51.000Z",
-      "created": "2024-10-16T17:14:23.000Z",
-      "views": 6074,
-      "url": "https://data.cityofnewyork.us/d/bf97-mjsy"
-    },
-    {
-      "id": "rbx6-tga4",
-      "name": "DOB NOW: Build – Approved Permits",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T19:44:52.000Z",
-      "created": "2016-05-26T13:36:30.000Z",
-      "views": 305852,
-      "url": "https://data.cityofnewyork.us/d/rbx6-tga4"
-    },
-    {
-      "id": "xxbr-ypig",
-      "name": "DOB NOW: Build – Limited Alteration Applications",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T19:37:45.000Z",
-      "created": "2021-10-25T19:56:39.000Z",
-      "views": 13132,
-      "url": "https://data.cityofnewyork.us/d/xxbr-ypig"
-    },
-    {
-      "id": "juyv-2jek",
-      "name": "DOB NOW: Build Elevator Device Details",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T19:10:21.000Z",
-      "created": "2019-10-03T19:32:09.000Z",
-      "views": 13413,
-      "url": "https://data.cityofnewyork.us/d/juyv-2jek"
-    },
-    {
-      "id": "855j-jady",
-      "name": "DOB Safety Violations",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T19:07:43.000Z",
-      "created": "2023-10-18T16:22:08.000Z",
-      "views": 22714,
-      "url": "https://data.cityofnewyork.us/d/855j-jady"
-    },
-    {
-      "id": "3h2n-5cm9",
-      "name": "DOB Violations",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T18:40:00.000Z",
-      "created": "2015-11-24T20:50:03.000Z",
-      "views": 190004,
-      "url": "https://data.cityofnewyork.us/d/3h2n-5cm9"
-    },
-    {
-      "id": "xubg-57si",
-      "name": "DOB NOW: Safety – Facades Compliance Filings",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T18:31:58.000Z",
-      "created": "2016-09-09T15:34:48.000Z",
-      "views": 37745,
-      "url": "https://data.cityofnewyork.us/d/xubg-57si"
-    },
-    {
-      "id": "eabe-havv",
-      "name": "DOB Complaints Received",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T18:27:17.000Z",
-      "created": "2013-04-18T15:19:10.000Z",
-      "views": 229133,
-      "url": "https://data.cityofnewyork.us/d/eabe-havv"
-    },
-    {
-      "id": "6bgk-3dad",
-      "name": "DOB ECB Violations",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T18:00:23.000Z",
-      "created": "2015-11-24T20:49:53.000Z",
-      "views": 125345,
-      "url": "https://data.cityofnewyork.us/d/6bgk-3dad"
-    },
-    {
-      "id": "kfp4-dz4h",
-      "name": "DOB NOW: Build Elevator Permit Applications",
-      "category": "Housing & Development",
-      "agency": "Department of Buildings (DOB)",
-      "updated": "2026-11-13T17:35:53.000Z",
-      "created": "2019-10-03T18:49:55.000Z",
-      "views": 19925,
-      "url": "https://data.cityofnewyork.us/d/kfp4-dz4h"
-    },
-    {
-      "id": "sbnd-xujn",
-      "name": "Handyman Work Order (HWO) Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-13T16:47:25.000Z",
-      "created": "2013-11-19T15:27:59.000Z",
-      "views": 9486,
-      "url": "https://data.cityofnewyork.us/d/sbnd-xujn"
-    },
-    {
-      "id": "mdbu-nrqn",
-      "name": "Open Market Order (OMO) Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-13T16:47:11.000Z",
-      "created": "2013-11-19T15:58:14.000Z",
-      "views": 20430,
-      "url": "https://data.cityofnewyork.us/d/mdbu-nrqn"
-    },
-    {
-      "id": "emrz-5p35",
-      "name": "Invoices for Open Market Order (OMO) Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-13T16:46:25.000Z",
-      "created": "2013-11-18T21:42:17.000Z",
-      "views": 5568,
-      "url": "https://data.cityofnewyork.us/d/emrz-5p35"
-    },
-    {
-      "id": "cp6j-7bjj",
-      "name": "Fee Charges",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-13T16:46:03.000Z",
-      "created": "2013-11-18T21:35:58.000Z",
-      "views": 8487,
-      "url": "https://data.cityofnewyork.us/d/cp6j-7bjj"
-    },
-    {
-      "id": "wvxf-dwi5",
-      "name": "Housing Maintenance Code Violations",
-      "category": "Housing & Development",
-      "agency": "Department of Housing Preservation and Development (HPD)",
-      "updated": "2026-11-13T15:55:38.000Z",
-      "created": "2013-11-18T19:49:47.000Z",
-      "views": 298022,
-      "url": "https://data.cityofnewyork.us/d/wvxf-dwi5"
     },
     {
       "id": "wycc-5aqt",
@@ -309,7 +309,7 @@
       "agency": "Landmarks Preservation Commission (LPC)",
       "updated": "2026-11-10T16:35:29.000Z",
       "created": "2019-02-12T21:23:07.000Z",
-      "views": 4266,
+      "views": 4267,
       "url": "https://data.cityofnewyork.us/d/wycc-5aqt"
     },
     {
@@ -319,7 +319,7 @@
       "agency": "Landmarks Preservation Commission (LPC)",
       "updated": "2026-11-10T16:35:23.000Z",
       "created": "2014-10-26T01:47:21.000Z",
-      "views": 6666,
+      "views": 6669,
       "url": "https://data.cityofnewyork.us/d/ck4n-5h6x"
     },
     {
@@ -329,7 +329,7 @@
       "agency": "Landmarks Preservation Commission (LPC)",
       "updated": "2026-11-09T20:44:55.000Z",
       "created": "2019-07-05T13:23:09.000Z",
-      "views": 14174,
+      "views": 14198,
       "url": "https://data.cityofnewyork.us/d/ncre-qhxs"
     },
     {
@@ -339,7 +339,7 @@
       "agency": "Landmarks Preservation Commission (LPC)",
       "updated": "2026-11-09T20:44:55.000Z",
       "created": "2019-07-05T13:44:09.000Z",
-      "views": 3246,
+      "views": 3253,
       "url": "https://data.cityofnewyork.us/d/jcj6-zji6"
     },
     {
@@ -349,7 +349,7 @@
       "agency": "Landmarks Preservation Commission (LPC)",
       "updated": "2026-11-09T15:05:45.000Z",
       "created": "2019-02-13T22:57:23.000Z",
-      "views": 7178,
+      "views": 7186,
       "url": "https://data.cityofnewyork.us/d/dpm2-m9mq"
     },
     {
@@ -359,7 +359,7 @@
       "agency": "School Construction Authority (SCA)",
       "updated": "2026-11-08T20:00:16.000Z",
       "created": "2013-08-22T19:00:41.000Z",
-      "views": 3165,
+      "views": 3167,
       "url": "https://data.cityofnewyork.us/d/6m3u-8rbh"
     },
     {
@@ -369,7 +369,7 @@
       "agency": "School Construction Authority (SCA)",
       "updated": "2026-11-08T20:00:15.000Z",
       "created": "2013-08-22T19:06:52.000Z",
-      "views": 22522,
+      "views": 22589,
       "url": "https://data.cityofnewyork.us/d/tsak-vtv3"
     },
     {
@@ -379,7 +379,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-05T20:21:30.000Z",
       "created": "2013-11-18T18:50:33.000Z",
-      "views": 33352,
+      "views": 33384,
       "url": "https://data.cityofnewyork.us/d/kj4p-ruqc"
     },
     {
@@ -399,7 +399,7 @@
       "agency": "Department of City Planning (DCP)",
       "updated": "2026-11-05T17:56:09.000Z",
       "created": "2017-03-13T19:05:13.000Z",
-      "views": 13717,
+      "views": 13723,
       "url": "https://data.cityofnewyork.us/d/bw8v-wzdr"
     },
     {
@@ -409,7 +409,7 @@
       "agency": "School Construction Authority (SCA)",
       "updated": "2026-11-05T16:21:00.000Z",
       "created": "2013-08-22T19:00:41.000Z",
-      "views": 15639,
+      "views": 15651,
       "url": "https://data.cityofnewyork.us/d/2xh6-psuq"
     },
     {
@@ -419,7 +419,7 @@
       "agency": "School Construction Authority (SCA)",
       "updated": "2026-11-05T16:19:12.000Z",
       "created": "2011-10-09T00:24:57.000Z",
-      "views": 133573,
+      "views": 133595,
       "url": "https://data.cityofnewyork.us/d/8586-3zfm"
     },
     {
@@ -429,7 +429,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-04T18:50:27.000Z",
       "created": "2013-11-18T21:16:19.000Z",
-      "views": 34236,
+      "views": 34284,
       "url": "https://data.cityofnewyork.us/d/feu5-w2e2"
     },
     {
@@ -439,7 +439,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-04T17:16:25.000Z",
       "created": "2013-11-18T19:13:20.000Z",
-      "views": 62568,
+      "views": 62623,
       "url": "https://data.cityofnewyork.us/d/tesw-yqqr"
     },
     {
@@ -449,7 +449,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-02T16:02:08.000Z",
       "created": "2025-10-31T17:14:01.000Z",
-      "views": 7792,
+      "views": 7811,
       "url": "https://data.cityofnewyork.us/d/nibs-na6y"
     },
     {
@@ -459,7 +459,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-02T16:00:21.000Z",
       "created": "2025-10-31T17:47:31.000Z",
-      "views": 7965,
+      "views": 8016,
       "url": "https://data.cityofnewyork.us/d/vy5i-a666"
     },
     {
@@ -469,7 +469,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-01T21:14:52.000Z",
       "created": "2013-11-18T19:00:32.000Z",
-      "views": 32029,
+      "views": 32070,
       "url": "https://data.cityofnewyork.us/d/59kj-x8nc"
     },
     {
@@ -479,7 +479,7 @@
       "agency": "NYC Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-01T20:01:31.000Z",
       "created": "2018-12-10T15:47:27.000Z",
-      "views": 21506,
+      "views": 21529,
       "url": "https://data.cityofnewyork.us/d/hcir-3275"
     },
     {
@@ -489,7 +489,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-01T19:34:24.000Z",
       "created": "2022-05-04T14:10:43.000Z",
-      "views": 3684,
+      "views": 3686,
       "url": "https://data.cityofnewyork.us/d/3bkg-usya"
     },
     {
@@ -499,7 +499,7 @@
       "agency": "Department of Housing Preservation and Development (HPD)",
       "updated": "2026-11-01T19:30:48.000Z",
       "created": "2021-10-28T16:40:22.000Z",
-      "views": 4167,
+      "views": 4173,
       "url": "https://data.cityofnewyork.us/d/xpbf-ithr"
     }
   ]

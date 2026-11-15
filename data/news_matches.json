@@ -1,7 +1,53 @@
 {
-  "computed_at": "2026-11-14T15:47:53+00:00",
+  "computed_at": "2026-11-15T16:18:49+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
-  "matches": []
+  "matches": [
+    {
+      "headline": "Brooklyn police-involved shooting: Driver in suspected abduction fled police, rammed vehicles before being shot on Belt Parkway",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNmVkWEMzNy1LaHN6Ry05eG13VndueVNvRFVhZHJINEdJWElmM0dROC0tZG4zUE8tZm9KWkp0UVVleE1PcVJ1ZjNXMEN3TmxmZ2N4RmtzcFR4ZUlJSUhMTG9HNzhxaVBzcVFoVXlrM2I2RnNhZWFkR1pydHdEamFCLVZFQk5PN0JGQmhZUDF2RDNLZlpueGJTZy0yNUgtemViZ3BF0gGoAUFVX3lxTE5OcURoU0ZDcklZU3RucmhtRFVQdFd5ejFSUmd4N0xQdlQyQThkbWtSaEZ2Zmc5ckhaUnVKeGRJUE13aUYtOFEwRkhDQjZxZEFZVHZxNkwzSXNzcUVZX1ducWdjQjBZaW45cF9ORDh3dk1mVUlrXzY1TE5WWEs1cUxCd1ZKVk9YTlg0VGNqN0JydEYwWXhieVhqbUdCdktHQnB6TkJKMU50Rw?oc=5",
+      "pubDate": "Sun, 15 Nov 2026 02:10:37 GMT",
+      "topic": "Gun violence",
+      "dataset_id": "833y-fsy8",
+      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
+      "match_terms": [
+        "shooting"
+      ]
+    },
+    {
+      "headline": "Brooklyn subway stabbing suspect recognized by riders",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcGVNLUVUZ1VRSzZOMGhxbXQ0YWhZQk0yNGRfeFF3ZjBqUEtOYVJoX2JsMjRzamhVNGl4LVFxaWJvZWRkRk93endjX2dxOU5RY3J6aElrRVp6RUllZWhENkwtNzVYN3lnMW1qd3lWbFYybTlTUzlVRnk1eFBLZ0NHTEhnbnZibEJqRzNiY1NGYWhnb1FmN2hXUEU3VVpwNUVuZ0s5UdIBqgFBVV95cUxQdXZ3SThObFB1SG1KQWVsR3F5dUZRbWJwVENDM2FWTEZhZUJjTlpqc0ZCc0VZVi1IS2s4UzF2OTlwS3dXWkppVmV1d2Y5Z0FKWHYwcGVtaXY1RXpuTG9mcG1oeXc1U1Rkc2J0V1hLWFk4YXo2cVdWYWV1ZUVIYzNpN19DTVY5SGlIOVlvaHpUZDF3dDh3M1RockktQ2pzSV9aRnk0T0w3TnZPUQ?oc=5",
+      "pubDate": "Sat, 14 Nov 2026 22:14:34 GMT",
+      "topic": "Reported crime",
+      "dataset_id": "qgea-i56i",
+      "dataset_name": "NYPD Complaint Data Historic",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/qgea-i56i",
+      "match_terms": [
+        "stabbing"
+      ]
+    },
+    {
+      "headline": "The Ups, Downs, and Workarounds of New York’s Pied-à-Terre Surcharge",
+      "source": "Mansion Global",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUXhycmdaNGtiNDFMTWQ3aE9QcHFlUFF2b3FjV1czWmhSWFBjcjZhNTRDc1NUMUFvclFiTklFSzFKX3VuOTBNTzc2NlhEemNucW5TbGMyenhXSlNNaVd5U3FpbFp1YWpBeXFXYWp4eGZyLU1SUF9hbmpuSEFjRWJGeklBVV9OTC0zUjBfckJidEFqMXR6NHZwY2h6NnUxNnJ2TDBjMmwyZ2xaY1k4T0VvV1RWWQ?oc=5",
+      "pubDate": "Sun, 15 Nov 2026 11:16:00 GMT",
+      "topic": "Property tax data",
+      "dataset_id": "8h5j-fqxa",
+      "dataset_name": "ACRIS - Real Property Legals",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Department of Finance (DOF)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
+      "match_terms": [
+        "pied-à-terre"
+      ]
+    }
+  ]
 }
