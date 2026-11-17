@@ -1,7 +1,17 @@
 {
   "title": "NYC Open Data — Social Services (recently updated)",
-  "generated": "2026-11-16T23:43:47+00:00",
+  "generated": "2026-11-17T18:32:20+00:00",
   "items": [
+    {
+      "id": "erm2-nwe9",
+      "name": "311 Service Requests from 2020 to Present",
+      "category": "Social Services",
+      "agency": "311",
+      "updated": "2026-11-17T03:14:19.000Z",
+      "created": "2011-10-10T05:52:17.000Z",
+      "views": 1365165,
+      "url": "https://data.cityofnewyork.us/d/erm2-nwe9"
+    },
     {
       "id": "k46n-sa2m",
       "name": "DHS Daily Report",
@@ -9,7 +19,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-11-16T20:03:03.000Z",
       "created": "2013-08-22T19:20:30.000Z",
-      "views": 93076,
+      "views": 93103,
       "url": "https://data.cityofnewyork.us/d/k46n-sa2m"
     },
     {
@@ -19,18 +29,8 @@
       "agency": "Human Resource Administration (HRA)",
       "updated": "2026-11-16T17:22:31.000Z",
       "created": "2016-01-14T17:37:54.000Z",
-      "views": 9150,
+      "views": 9154,
       "url": "https://data.cityofnewyork.us/d/33db-aeds"
-    },
-    {
-      "id": "erm2-nwe9",
-      "name": "311 Service Requests from 2020 to Present",
-      "category": "Social Services",
-      "agency": "311",
-      "updated": "2026-11-16T02:37:28.000Z",
-      "created": "2011-10-10T05:52:17.000Z",
-      "views": 1363835,
-      "url": "https://data.cityofnewyork.us/d/erm2-nwe9"
     },
     {
       "id": "cqc8-am9x",
@@ -39,8 +39,28 @@
       "agency": "Department for the Aging (NYC Aging)",
       "updated": "2026-11-15T08:30:23.000Z",
       "created": "2019-09-25T14:47:20.000Z",
-      "views": 6712,
+      "views": 6719,
       "url": "https://data.cityofnewyork.us/d/cqc8-am9x"
+    },
+    {
+      "id": "amg7-28ja",
+      "name": "Funding Grant Data by Fiscal Year",
+      "category": "Social Services",
+      "agency": "No agency listed",
+      "updated": "2026-11-10T20:10:19.000Z",
+      "created": "2026-11-10T20:05:47.000Z",
+      "views": 2,
+      "url": "https://data.cityofnewyork.us/d/amg7-28ja"
+    },
+    {
+      "id": "i62i-ybk3",
+      "name": "Funding Participant and Applicant Demographic Data by Fiscal Year",
+      "category": "Social Services",
+      "agency": "No agency listed",
+      "updated": "2026-11-10T20:03:10.000Z",
+      "created": "2026-11-10T19:57:31.000Z",
+      "views": 4,
+      "url": "https://data.cityofnewyork.us/d/i62i-ybk3"
     },
     {
       "id": "985h-mtct",
@@ -49,7 +69,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-11-09T15:53:22.000Z",
       "created": "2018-11-01T21:01:46.000Z",
-      "views": 3758,
+      "views": 3764,
       "url": "https://data.cityofnewyork.us/d/985h-mtct"
     },
     {
@@ -59,7 +79,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-11-06T18:06:44.000Z",
       "created": "2018-10-24T20:58:36.000Z",
-      "views": 6859,
+      "views": 6860,
       "url": "https://data.cityofnewyork.us/d/ur7y-ziyb"
     },
     {
@@ -79,7 +99,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-11-04T18:38:02.000Z",
       "created": "2018-10-26T14:18:07.000Z",
-      "views": 15047,
+      "views": 15079,
       "url": "https://data.cityofnewyork.us/d/veav-vj3r"
     },
     {
@@ -89,7 +109,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-11-04T18:37:25.000Z",
       "created": "2018-10-26T13:54:36.000Z",
-      "views": 13094,
+      "views": 13108,
       "url": "https://data.cityofnewyork.us/d/3qem-6v3v"
     },
     {
@@ -99,7 +119,7 @@
       "agency": "Mayor's Office for Economic Opportunity",
       "updated": "2026-11-02T22:37:05.000Z",
       "created": "2021-04-28T16:05:21.000Z",
-      "views": 3106,
+      "views": 3108,
       "url": "https://data.cityofnewyork.us/d/yjpx-srhp"
     },
     {
@@ -109,7 +129,7 @@
       "agency": "Department for the Aging (NYC Aging)",
       "updated": "2026-11-02T15:02:55.000Z",
       "created": "2025-07-22T18:28:25.000Z",
-      "views": 1248,
+      "views": 1254,
       "url": "https://data.cityofnewyork.us/d/fzy4-e84j"
     },
     {
@@ -119,7 +139,7 @@
       "agency": "Department of Buildings (DOB), Fire Department of New York City (FDNY), Department of Housing Preservation and Development (HPD), Department of Health and Mental Hygiene (DOHMH)",
       "updated": "2026-10-31T15:07:20.000Z",
       "created": "2016-02-02T22:23:28.000Z",
-      "views": 10459,
+      "views": 10468,
       "url": "https://data.cityofnewyork.us/d/dvaj-b7yx"
     },
     {
@@ -129,7 +149,7 @@
       "agency": "Administration for Children's Services (ACS)",
       "updated": "2026-10-30T19:13:36.000Z",
       "created": "2025-01-14T21:12:28.000Z",
-      "views": 512,
+      "views": 513,
       "url": "https://data.cityofnewyork.us/d/iwat-y983"
     },
     {
@@ -149,7 +169,7 @@
       "agency": "Mayor's Office for Economic Opportunity",
       "updated": "2026-10-29T17:26:48.000Z",
       "created": "2019-04-26T20:53:56.000Z",
-      "views": 15488,
+      "views": 15496,
       "url": "https://data.cityofnewyork.us/d/kvhd-5fmu"
     },
     {
@@ -159,7 +179,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-10-29T13:51:04.000Z",
       "created": "2023-07-12T18:21:51.000Z",
-      "views": 1435,
+      "views": 1437,
       "url": "https://data.cityofnewyork.us/d/g2dh-zf5t"
     },
     {
@@ -179,7 +199,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-10-21T15:11:42.000Z",
       "created": "2018-11-02T19:01:16.000Z",
-      "views": 4990,
+      "views": 5000,
       "url": "https://data.cityofnewyork.us/d/wjvv-6yxq"
     },
     {
@@ -189,7 +209,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-10-19T13:37:46.000Z",
       "created": "2024-02-13T15:26:31.000Z",
-      "views": 2829,
+      "views": 2831,
       "url": "https://data.cityofnewyork.us/d/3tw8-6si8"
     },
     {
@@ -199,7 +219,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-10-16T14:27:23.000Z",
       "created": "2023-08-15T16:20:20.000Z",
-      "views": 8199,
+      "views": 8209,
       "url": "https://data.cityofnewyork.us/d/5awp-wfkt"
     },
     {
@@ -209,7 +229,7 @@
       "agency": "Department of Youth and Community Development (DYCD)",
       "updated": "2026-10-15T20:51:59.000Z",
       "created": "2023-11-28T16:00:20.000Z",
-      "views": 862,
+      "views": 864,
       "url": "https://data.cityofnewyork.us/d/denm-3mvn"
     },
     {
@@ -219,7 +239,7 @@
       "agency": "Department of Youth and Community Development (DYCD)",
       "updated": "2026-10-15T20:50:22.000Z",
       "created": "2023-11-27T21:26:41.000Z",
-      "views": 1270,
+      "views": 1273,
       "url": "https://data.cityofnewyork.us/d/tg2n-zp58"
     },
     {
@@ -229,7 +249,7 @@
       "agency": "Department of Youth and Community Development (DYCD)",
       "updated": "2026-10-15T20:49:31.000Z",
       "created": "2023-11-24T19:47:56.000Z",
-      "views": 2745,
+      "views": 2748,
       "url": "https://data.cityofnewyork.us/d/5rw7-99k7"
     },
     {
@@ -239,7 +259,7 @@
       "agency": "Department of Youth and Community Development (DYCD)",
       "updated": "2026-10-15T20:48:38.000Z",
       "created": "2024-02-13T17:23:50.000Z",
-      "views": 1626,
+      "views": 1629,
       "url": "https://data.cityofnewyork.us/d/39et-rijq"
     },
     {
@@ -249,7 +269,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-10-15T17:55:37.000Z",
       "created": "2023-09-27T18:53:19.000Z",
-      "views": 3856,
+      "views": 3865,
       "url": "https://data.cityofnewyork.us/d/np6w-pies"
     },
     {
@@ -259,7 +279,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-10-14T13:06:52.000Z",
       "created": "2018-11-23T17:22:15.000Z",
-      "views": 1744,
+      "views": 1745,
       "url": "https://data.cityofnewyork.us/d/uwx4-aafe"
     },
     {
@@ -269,7 +289,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-10-13T19:10:31.000Z",
       "created": "2020-10-15T15:32:18.000Z",
-      "views": 2198,
+      "views": 2199,
       "url": "https://data.cityofnewyork.us/d/rkad-22be"
     },
     {
@@ -279,7 +299,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-10-08T19:04:08.000Z",
       "created": "2020-08-28T19:03:40.000Z",
-      "views": 1300,
+      "views": 1301,
       "url": "https://data.cityofnewyork.us/d/5284-7vfz"
     },
     {
@@ -289,7 +309,7 @@
       "agency": "Department of Homeless Services (DHS)",
       "updated": "2026-10-08T13:49:12.000Z",
       "created": "2013-01-30T22:39:37.000Z",
-      "views": 20813,
+      "views": 20827,
       "url": "https://data.cityofnewyork.us/d/bmxf-3rd4"
     },
     {
@@ -299,7 +319,7 @@
       "agency": "No agency listed",
       "updated": "2026-10-07T14:06:46.000Z",
       "created": "2025-09-23T15:14:02.000Z",
-      "views": 1362,
+      "views": 1364,
       "url": "https://data.cityofnewyork.us/d/5nux-zfmw"
     },
     {
@@ -309,7 +329,7 @@
       "agency": "No agency listed",
       "updated": "2026-09-25T12:30:08.000Z",
       "created": "2021-02-04T19:43:39.000Z",
-      "views": 1755,
+      "views": 1760,
       "url": "https://data.cityofnewyork.us/d/9f5n-qdib"
     },
     {
@@ -319,7 +339,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-09-24T19:44:52.000Z",
       "created": "2024-01-09T15:50:58.000Z",
-      "views": 3598,
+      "views": 3606,
       "url": "https://data.cityofnewyork.us/d/5vgr-4tp3"
     },
     {
@@ -329,7 +349,7 @@
       "agency": "Department of Youth and Community Development (DYCD)",
       "updated": "2026-09-24T13:52:59.000Z",
       "created": "2019-06-27T18:31:43.000Z",
-      "views": 8995,
+      "views": 9003,
       "url": "https://data.cityofnewyork.us/d/ebkm-iyma"
     },
     {
@@ -349,7 +369,7 @@
       "agency": "NYC Emergency Management (NYCEM)",
       "updated": "2026-09-04T15:02:26.000Z",
       "created": "2013-02-26T19:48:20.000Z",
-      "views": 1761,
+      "views": 1765,
       "url": "https://data.cityofnewyork.us/d/h4jn-x3ty"
     },
     {
@@ -359,7 +379,7 @@
       "agency": "No agency listed",
       "updated": "2026-08-28T14:06:22.000Z",
       "created": "2026-01-13T21:01:51.000Z",
-      "views": 867,
+      "views": 883,
       "url": "https://data.cityofnewyork.us/d/wh8n-imgd"
     },
     {
@@ -369,7 +389,7 @@
       "agency": "Department of Social Services (DSS)",
       "updated": "2026-08-12T13:51:55.000Z",
       "created": "2013-05-17T17:13:31.000Z",
-      "views": 8380,
+      "views": 8383,
       "url": "https://data.cityofnewyork.us/d/mpqk-skis"
     },
     {
@@ -379,7 +399,7 @@
       "agency": "Department of Social Services (DSS) - Human Resources Agency (HRA)",
       "updated": "2026-08-05T15:12:13.000Z",
       "created": "2022-12-21T17:51:31.000Z",
-      "views": 2814,
+      "views": 2818,
       "url": "https://data.cityofnewyork.us/d/5fs5-yi3e"
     },
     {
@@ -389,7 +409,7 @@
       "agency": "Department of Social Services (DSS) - Human Resources Agency (HRA)",
       "updated": "2026-08-05T15:11:19.000Z",
       "created": "2022-12-21T17:07:22.000Z",
-      "views": 2815,
+      "views": 2817,
       "url": "https://data.cityofnewyork.us/d/g6pg-qint"
     },
     {
@@ -419,7 +439,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-07-29T15:14:37.000Z",
       "created": "2018-11-05T18:20:50.000Z",
-      "views": 778,
+      "views": 779,
       "url": "https://data.cityofnewyork.us/d/mpw3-7xyh"
     },
     {
@@ -429,7 +449,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-07-29T15:14:30.000Z",
       "created": "2018-11-05T18:14:13.000Z",
-      "views": 1203,
+      "views": 1204,
       "url": "https://data.cityofnewyork.us/d/bkui-39n8"
     },
     {
@@ -439,7 +459,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-07-29T15:13:05.000Z",
       "created": "2018-11-05T16:46:28.000Z",
-      "views": 1416,
+      "views": 1417,
       "url": "https://data.cityofnewyork.us/d/vibf-3qrq"
     },
     {
@@ -449,7 +469,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-07-29T14:51:46.000Z",
       "created": "2018-09-10T16:24:21.000Z",
-      "views": 4225,
+      "views": 4226,
       "url": "https://data.cityofnewyork.us/d/4c8i-cnte"
     },
     {
@@ -459,7 +479,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-07-01T20:20:10.000Z",
       "created": "2013-03-26T16:48:11.000Z",
-      "views": 2925,
+      "views": 2926,
       "url": "https://data.cityofnewyork.us/d/tbf6-u8ea"
     },
     {
@@ -469,7 +489,7 @@
       "agency": "Human Resources Administration (HRA)",
       "updated": "2026-07-01T17:24:46.000Z",
       "created": "2013-03-19T18:36:44.000Z",
-      "views": 10152,
+      "views": 10158,
       "url": "https://data.cityofnewyork.us/d/tc6u-8rnp"
     },
     {
@@ -481,26 +501,6 @@
       "created": "2020-11-27T18:21:03.000Z",
       "views": 1835,
       "url": "https://data.cityofnewyork.us/d/2hrw-qfsu"
-    },
-    {
-      "id": "s4kf-3yrf",
-      "name": "LinkNYC Kiosk Locations",
-      "category": "Social Services",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-04-02T20:27:34.000Z",
-      "created": "2016-04-12T15:47:38.000Z",
-      "views": 26372,
-      "url": "https://data.cityofnewyork.us/d/s4kf-3yrf"
-    },
-    {
-      "id": "xp25-gxux",
-      "name": "LinkNYC New Site Permit Applications",
-      "category": "Social Services",
-      "agency": "Office of Technology and Innovation (OTI)",
-      "updated": "2026-04-02T19:56:35.000Z",
-      "created": "2016-04-25T16:05:24.000Z",
-      "views": 10366,
-      "url": "https://data.cityofnewyork.us/d/xp25-gxux"
     }
   ]
 }

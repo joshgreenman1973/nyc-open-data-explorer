@@ -3,8 +3,22 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Mon, 16 Nov 2026 23:43:47 +0000</lastBuildDate>
+<lastBuildDate>Tue, 17 Nov 2026 18:32:20 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: Funding Participant and Applicant Demographic Data by Fiscal Year</title>
+<link>https://data.cityofnewyork.us/d/i62i-ybk3</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/i62i-ybk3#added-2026-11-17</guid>
+<pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains data on the number of low barrier flex funding grants provided by the Home+ program managed by the Mayor's Office to End Domestic and Gender-Based Violence (ENDGBV).</description>
+</item>
+<item>
+<title>New dataset: Funding Grant Data by Fiscal Year</title>
+<link>https://data.cityofnewyork.us/d/amg7-28ja</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/amg7-28ja#added-2026-11-17</guid>
+<pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains data on the number of low barrier flex funding grants provided by the Home+ program managed by the Mayor's Office to End Domestic and Gender-Based Violence (ENDGBV).</description>
+</item>
 <item>
 <title>New dataset: Future High Tides (Sea Level Rise) 2030-2150</title>
 <link>https://data.cityofnewyork.us/d/xbxf-ev5m</link>
@@ -690,19 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#columns_changed-2026-10-14</guid>
 <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
 <description>Columns added: none. Removed: X, Y.</description>
-</item>
-<item>
-<title>Description changed: NYPD Use of Force: Subjects</title>
-<link>https://data.cityofnewyork.us/d/dufe-vxb7</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/dufe-vxb7#description_changed-2026-10-14</guid>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
-</item>
-<item>
-<title>Description changed: NYPD Use of Force: Members of Service</title>
-<link>https://data.cityofnewyork.us/d/v5jd-6wqn</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/v5jd-6wqn#description_changed-2026-10-14</guid>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard. (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
 </item>
 </channel></rss>
