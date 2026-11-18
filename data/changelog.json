@@ -1,6 +1,20 @@
 {
- "generated_at": "2026-11-17T18:32:20+00:00",
+ "generated_at": "2026-11-18T18:03:35+00:00",
  "events": [
+  {
+   "id": "vf4p-p8ui",
+   "name": "Revenue Budget & Financial Plan--Qtr1",
+   "agency": "Mayor's Office of Management and Budget (OMB)",
+   "category": "Finance & Budget",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/vf4p-p8ui",
+   "kind": "columns_changed",
+   "date": "2026-11-18",
+   "columns_added": [
+    "Year 5 Revenue Amount"
+   ],
+   "columns_removed": []
+  },
   {
    "id": "i62i-ybk3",
    "name": "Funding Participant and Applicant Demographic Data by Fiscal Year",
@@ -4641,8 +4655,8 @@
   }
  ],
  "counts": {
+  "columns_changed": 35,
   "added": 31,
-  "columns_changed": 34,
   "description_changed": 207,
   "renamed": 35,
   "agency_changed": 4

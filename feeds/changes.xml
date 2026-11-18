@@ -3,8 +3,15 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Tue, 17 Nov 2026 18:32:20 +0000</lastBuildDate>
+<lastBuildDate>Wed, 18 Nov 2026 18:03:35 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Columns changed: Revenue Budget &amp; Financial Plan--Qtr1</title>
+<link>https://data.cityofnewyork.us/d/vf4p-p8ui</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/vf4p-p8ui#columns_changed-2026-11-18</guid>
+<pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Year 5 Revenue Amount. Removed: none.</description>
+</item>
 <item>
 <title>New dataset: Funding Participant and Applicant Demographic Data by Fiscal Year</title>
 <link>https://data.cityofnewyork.us/d/i62i-ybk3</link>
@@ -697,12 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/f4tj-796d#description_changed-2026-10-14</guid>
 <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
 <description>Before: ...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
-</item>
-<item>
-<title>Columns changed: NYC Parks Monuments</title>
-<link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#columns_changed-2026-10-14</guid>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: none. Removed: X, Y.</description>
 </item>
 </channel></rss>
