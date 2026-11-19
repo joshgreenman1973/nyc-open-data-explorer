@@ -3,8 +3,43 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Wed, 18 Nov 2026 18:03:35 +0000</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 18:13:22 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: Transit Signal Priority (TSP) Corridors</title>
+<link>https://data.cityofnewyork.us/d/iufa-jszv</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/iufa-jszv#added-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset identifies bus corridors that have a Transit Signal Priority (TSP) treatment which allow buses to move through intersections more efficiently by providing an earlier green light.</description>
+</item>
+<item>
+<title>New dataset: Bus Queue Jump Traffic Signal Locations</title>
+<link>https://data.cityofnewyork.us/d/9tj3-ecrv</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/9tj3-ecrv#added-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+<description>A queue jump is a dedicated traffic signal treatment that allows buses to travel sooner than general traffic by providing a separate opportunity to move through an intersection before the main queue.</description>
+</item>
+<item>
+<title>New dataset: Transit Signal Priority (TSP) Locations</title>
+<link>https://data.cityofnewyork.us/d/ps5m-zmfg</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/ps5m-zmfg#added-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+<description>Transit Signal Priority (TSP) is a traffic signal system that allows buses to move through roadway intersections faster by giving them an earlier green light.</description>
+</item>
+<item>
+<title>New dataset: Bus Stop Accessibility Projects</title>
+<link>https://data.cityofnewyork.us/d/vtuv-7iu3</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/vtuv-7iu3#added-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains information on bus stop accessibility projects, including project locations, bus routes, intersection corners, and completion dates for accessibility improvements.</description>
+</item>
+<item>
+<title>New dataset: Bus Stop Assets</title>
+<link>https://data.cityofnewyork.us/d/gkb8-hn5i</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/gkb8-hn5i#added-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains all New York City bus stops and provides details on installed assets.</description>
+</item>
 <item>
 <title>Columns changed: Revenue Budget &amp; Financial Plan--Qtr1</title>
 <link>https://data.cityofnewyork.us/d/vf4p-p8ui</link>
@@ -669,40 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/cjw9-h5zw#added-2026-10-21</guid>
 <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
 <description>Data set lists all volunteer groups that have been published on NYC Parks' Volunteer Group Directory, including formal volunteer organizations, grassroots groups, GreenThumb gardens, and official partners.</description>
-</item>
-<item>
-<title>Columns changed: Department for the Aging (NYC Aging) - Social Adult Day Care Services</title>
-<link>https://data.cityofnewyork.us/d/32cj-z7va</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/32cj-z7va#columns_changed-2026-10-17</guid>
-<pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: Additional Languages Spoken, Address1, Address2, Anticipated Daily Attendance, Business Entity Type, Business Name, Census Tract (2020), City, Claims ADA Compliant, Claims NYS OMIG Certified, Establishment Year, Languages Spoken, Neighborhood Tabulation Area (NTA) (2020), Phone, State, Website, ZipCode. Removed: Census Tract, NTA, ProgramAddress, ProgramCity, ProgramName, ProgramPhone, ProgramState, ProgramZipCode, SponsorName.</description>
-</item>
-<item>
-<title>Description changed: Department for the Aging (NYC Aging) - Social Adult Day Care Services</title>
-<link>https://data.cityofnewyork.us/d/32cj-z7va</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/32cj-z7va#description_changed-2026-10-15</guid>
-<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: Listing of registered agencies providing Social Adult Day Care Services with hours of operation — After: Listing of registered and contracted agencies providing Social Adult Day Care Services with hours of operation. A social adult day care (SADC) is a structured program that p...</description>
-</item>
-<item>
-<title>Renamed: City Council Committee Membership (1999 to 2026)</title>
-<link>https://data.cityofnewyork.us/d/aabe-yfm9</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/aabe-yfm9#renamed-2026-10-15</guid>
-<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
-<description>Was: City Council Committee Membership (1999 to 2025). Now: City Council Committee Membership (1999 to 2026).</description>
-</item>
-<item>
-<title>Description changed: City Council Committee Membership (1999 to 2026)</title>
-<link>https://data.cityofnewyork.us/d/aabe-yfm9</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/aabe-yfm9#description_changed-2026-10-15</guid>
-<pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...the appointments of New York City Council Members from 1999 through 2025. Information before 1999 is not contained in Legistar, the Council's tracking system. More information on Committees can be found at: https://counci... — After: ...the appointments of New York City Council Members from 1999 through 2026. Information before 1999 is not contained in Legistar, the Council's tracking system. More information on Committees can be found at: https://counci...</description>
-</item>
-<item>
-<title>Description changed: NYPD Use of Force Incidents</title>
-<link>https://data.cityofnewyork.us/d/f4tj-796d</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/f4tj-796d#description_changed-2026-10-14</guid>
-<pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiOGNhMjVhYTctMjk3Ny00MTZjLTliNDAtY2M2ZTQ5YWI3N2ViIiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9). — After: ...public facing Force Dashboard (https://app.powerbigov.us/view?r=eyJrIjoiZTRkY2QxYjQtNDI2OS00YzFhLWI2YzktM2FmNDIxNjNhOWU3IiwidCI6IjJiOWY1N2ViLTc4ZDEtNDZmYi1iZTgzLWEyYWZkZDdjNjA0MyJ9).</description>
 </item>
 </channel></rss>

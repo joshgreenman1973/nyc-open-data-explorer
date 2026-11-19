@@ -1,6 +1,61 @@
 {
- "generated_at": "2026-11-18T18:03:35+00:00",
+ "generated_at": "2026-11-19T18:13:22+00:00",
  "events": [
+  {
+   "id": "iufa-jszv",
+   "name": "Transit Signal Priority (TSP) Corridors",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/iufa-jszv",
+   "kind": "added",
+   "date": "2026-11-19",
+   "summary": "This dataset identifies bus corridors that have a Transit Signal Priority (TSP) treatment which allow buses to move through intersections more efficiently by providing an earlier green light."
+  },
+  {
+   "id": "9tj3-ecrv",
+   "name": "Bus Queue Jump Traffic Signal Locations",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/9tj3-ecrv",
+   "kind": "added",
+   "date": "2026-11-19",
+   "summary": "A queue jump is a dedicated traffic signal treatment that allows buses to travel sooner than general traffic by providing a separate opportunity to move through an intersection before the main queue."
+  },
+  {
+   "id": "ps5m-zmfg",
+   "name": "Transit Signal Priority (TSP) Locations",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/ps5m-zmfg",
+   "kind": "added",
+   "date": "2026-11-19",
+   "summary": "Transit Signal Priority (TSP) is a traffic signal system that allows buses to move through roadway intersections faster by giving them an earlier green light."
+  },
+  {
+   "id": "vtuv-7iu3",
+   "name": "Bus Stop Accessibility Projects",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/vtuv-7iu3",
+   "kind": "added",
+   "date": "2026-11-19",
+   "summary": "This dataset contains information on bus stop accessibility projects, including project locations, bus routes, intersection corners, and completion dates for accessibility improvements."
+  },
+  {
+   "id": "gkb8-hn5i",
+   "name": "Bus Stop Assets",
+   "agency": "No agency listed",
+   "category": "Transportation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/gkb8-hn5i",
+   "kind": "added",
+   "date": "2026-11-19",
+   "summary": "This dataset contains all New York City bus stops and provides details on installed assets."
+  },
   {
    "id": "vf4p-p8ui",
    "name": "Revenue Budget & Financial Plan--Qtr1",
@@ -4655,8 +4710,8 @@
   }
  ],
  "counts": {
+  "added": 36,
   "columns_changed": 35,
-  "added": 31,
   "description_changed": 207,
   "renamed": 35,
   "agency_changed": 4
