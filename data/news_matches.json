@@ -1,14 +1,14 @@
 {
-  "computed_at": "2026-11-20T17:49:31+00:00",
+  "computed_at": "2026-11-21T16:45:37+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "New York City unveils a bold plan to move its jails off Rikers Island",
-      "source": "NPR",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRm1NQXJuWDVfc1RyeUFDaEJZWGlJV2NaYVNwY24wel8xMGpTOUhha3BadFZGNnRDanMzbDJRWk9EazBPQ09pRXFpUDZOaXZTWnkwRE9RNWFvNXg5WjZzcWlvLTc4dlhuYTVsOG1LVmJTcE1OSmlEaFpid3ppU0xzZFNKN0V2OHhIcmxjYmhRbkNvTWp0czlnWVY1dkdyQQ?oc=5",
-      "pubDate": "Fri, 20 Nov 2026 10:00:00 GMT",
+      "headline": "Mamdani reveals plan for closure of New York's Rikers Island jail",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hY24yQ0VKc3FYUVhGdzk3UG1jVk1JN05XTkRneEQ2RjRsQlBjWlVwcnBGeElOZDBQRFFWb3Njcy1JRlYzMmxpamVJNDZZN0pTczh4MlBrTndjdWM?oc=5",
+      "pubDate": "Sat, 21 Nov 2026 00:01:39 GMT",
       "topic": "Daily jail population",
       "dataset_id": "7479-ugqb",
       "dataset_name": "Daily Inmates In Custody",
@@ -16,8 +16,24 @@
       "dataset_agency": "Department of Correction (DOC)",
       "dataset_url": "https://data.cityofnewyork.us/d/7479-ugqb",
       "match_terms": [
+        "jail",
         "rikers",
         "rikers island"
+      ]
+    },
+    {
+      "headline": "MICHAEL RUIZ: Resurfaced video appears to show NYC mayor arrested by NYPD group he is disbanding",
+      "source": "Fox News",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMXlJcWJYS2kzMjY0SXNIbE1JWWcwVlpCTzE4RlVrczY5aklNaUllbkI3RXAyV2FDcW9oRHBGNFZYcDZ4bjVDa2NZRnh0T1VNYmFxbVdTNzRrdVFFSnduZS03RWdDV0s3Y0JNNVU5eHRXM1RyWXZtYVBSUUM5OC1hY01PV2dmQ2w0NWVxbzFlUHFzQTd4di1hSmtCczJMQUNRNTBOVkVwa1diYWRQSXJn0gG0AUFVX3lxTFBNNU00SUxrZ1M2N2lnZk1RZWc4LUp5QzJBbzRGWDdBUndlc3I3S0cxT09ZSXBpUVpEbnhObWRIZ3FGRXBjeDluclZ6S3JNeGRVdmlMR0ZOU2lLclVFbmhpeDBDWkI1Tlp1eFlYbk0xN0dwUzVOa1V1M1ZOVVBvWktMM2VHQzBjRnl1VlNPbDdTVGFnYk0zczVsSW9FR3dPamRzbkktU2d3NlBwdmFzMmdHY1ZKdw?oc=5",
+      "pubDate": "Fri, 20 Nov 2026 16:43:39 GMT",
+      "topic": "NYPD arrests",
+      "dataset_id": "8h9b-rp9u",
+      "dataset_name": "NYPD Arrests Data (Historic)",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Police Department (NYPD)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
+      "match_terms": [
+        "arrested"
       ]
     },
     {
@@ -36,18 +52,48 @@
       ]
     },
     {
-      "headline": "NYC School Worker With Arrest Record Charged With Attempted Murder",
-      "source": "The New York Times",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ0RTcm95Mi03X2E5VDJkVGlpY0JobUMzcjJNVjAyNzhHT09MNXpLSFhWU1dac0xOYklWZnc0OVpGZEgwOFhKNFB4RDRoOVFZbERSWWlMOWtDYVhtamdTQ2tPMm5XajlpVFZXVGI2ZjdCZTdOcnN4QWJmS1BHb1VXZ1VR?oc=5",
-      "pubDate": "Thu, 19 Nov 2026 23:18:22 GMT",
-      "topic": "NYPD arrests",
-      "dataset_id": "8h9b-rp9u",
-      "dataset_name": "NYPD Arrests Data (Historic)",
+      "headline": "Javits Frimpong Ghanaian boy killed in US remembered at funeral",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBQcXVKbXYxLWFTcTN5dzBPMkhqTmhmUEdkdHV2Wk5rUUw2dUlEUEhZcmthVElVYW02Q0NDWXZ0RGNJM0FPT3pWRWFfcGptLUUwUDlHTkV1SWZtZzQ?oc=5",
+      "pubDate": "Sat, 21 Nov 2026 01:19:25 GMT",
+      "topic": "Reported crime",
+      "dataset_id": "qgea-i56i",
+      "dataset_name": "NYPD Complaint Data Historic",
       "dataset_category": "Public Safety",
       "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/8h9b-rp9u",
+      "dataset_url": "https://data.cityofnewyork.us/d/qgea-i56i",
       "match_terms": [
-        "arrest"
+        "killed in"
+      ]
+    },
+    {
+      "headline": "Welcome to New York, pied-à-terre tax: Taylor Swift will owe over $100,000 in taxes for her apartments",
+      "source": "Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMDNWdXE5WGlkZ0FKX3JnWVR0Q3NmMmdkNVprOW1BSUVRbk05LTNkRjI3Ny1jNjBhZ1RHSnZnN29OTUtDUTBEQU43QjhHS3JuMVd1dWkzdEw5cDZYanFzZTA4RjUtcU42M2lLVXJyLUdPS0dnQzRJNThSRy01aG1SdkhneG1fc0x4OWh2WXFZLVZRNXRi?oc=5",
+      "pubDate": "Sat, 21 Nov 2026 11:00:00 GMT",
+      "topic": "Property tax data",
+      "dataset_id": "8h5j-fqxa",
+      "dataset_name": "ACRIS - Real Property Legals",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Department of Finance (DOF)",
+      "dataset_url": "https://data.cityofnewyork.us/d/8h5j-fqxa",
+      "match_terms": [
+        "pied-à-terre"
+      ]
+    },
+    {
+      "headline": "Woman shoved onto subway tracks in Astoria, Queens",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTXVaRzY4d3YzbHM5UmMzOTV5eUwwQnpibnZ3QU5ndmJLNXdGQjZOakxxRjhMT1R3T2NyUXJJTWpCd3Zrc0EtOUV6ci1tZXc4LXY2UEd4OFBidUoxdDl3aU1iZFJBSzQyX2xvQlhuYk44XzB4OEtZYU9LeTgzSE1iRmpR?oc=5",
+      "pubDate": "Fri, 20 Nov 2026 18:06:33 GMT",
+      "topic": "Bicycle counts",
+      "dataset_id": "uczf-rk3c",
+      "dataset_name": "Bicycle Counts (Historical)",
+      "dataset_category": "Transportation",
+      "dataset_agency": "Department of Transportation (DOT)",
+      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "match_terms": [
+        "subway"
       ]
     }
   ]
