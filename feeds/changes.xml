@@ -3,8 +3,36 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Sun, 22 Nov 2026 17:06:49 +0000</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 21:16:52 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>Description changed: Primary Land Use Tax Lot Output (PLUTO)</title>
+<link>https://data.cityofnewyork.us/d/64uk-42ks</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/64uk-42ks#description_changed-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v2 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v3</description>
+</item>
+<item>
+<title>Description changed: NYC Parks Monuments</title>
+<link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#description_changed-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: This data is table of monuments that is maintained by NYC Parks. Prior to being stored electronically the original data was stored on index cards dating back to... — After: This data consists of permanent public monuments that are maintained by NYC Parks. Prior to being digitized, the original data was stored on index cards dating ...</description>
+</item>
+<item>
+<title>Columns changed: NYC Parks Monuments</title>
+<link>https://data.cityofnewyork.us/d/6rrm-vxj9</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/6rrm-vxj9#columns_changed-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+<description>Columns added: Inscribed. Removed: inscribed.</description>
+</item>
+<item>
+<title>Description changed: PLUTO Change File</title>
+<link>https://data.cityofnewyork.us/d/qt5r-nqxp</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/qt5r-nqxp#description_changed-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+<description>Before: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v2 — After: ...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v3</description>
+</item>
 <item>
 <title>New dataset: Transit Signal Priority (TSP) Corridors</title>
 <link>https://data.cityofnewyork.us/d/iufa-jszv</link>
@@ -676,33 +704,5 @@
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/h47y-6hft#added-2026-10-28</guid>
 <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
 <description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
-</item>
-<item>
-<title>Description changed: Metal Content of Consumer Products Tested by the NYC Health Department</title>
-<link>https://data.cityofnewyork.us/d/da9u-wz3r</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/da9u-wz3r#description_changed-2026-10-24</guid>
-<pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: ...information on hazardous consumer products, visit nyc.gov/hazardous products. — After: ...information on hazardous consumer products, visit nyc.gov/hazardous products. For the survey, please follow this link: https://nycdohmh.surveymonkey.com/r/HowDoYouUseThisData</description>
-</item>
-<item>
-<title>Columns changed: Watershed Water Quality - Keypoint</title>
-<link>https://data.cityofnewyork.us/d/wcg2-rbkn</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/wcg2-rbkn#columns_changed-2026-10-22</guid>
-<pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: Comments, Description, Final, Location, Method, ResultStatus, SampleDateTime, Site, System, Tap_Elevation_Ft. Removed: Aqueduct Group, Elevation (ft), Final Result, Sample Site, Sample Time, Status.</description>
-</item>
-<item>
-<title>Columns changed: Watershed Water Quality - Hydrology</title>
-<link>https://data.cityofnewyork.us/d/e3xf-jwmj</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/e3xf-jwmj#columns_changed-2026-10-21</guid>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: Basin, Comments, Description, Final, Method, ResultStatus, SampleDateTime, Sample_Type, Site, System. Removed: Final Result, Sample Site, Sample Time, Status, Stream Group.</description>
-</item>
-<item>
-<title>New dataset: NYC Parks Volunteer Group Directory</title>
-<link>https://data.cityofnewyork.us/d/cjw9-h5zw</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/cjw9-h5zw#added-2026-10-21</guid>
-<pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
-<description>Data set lists all volunteer groups that have been published on NYC Parks' Volunteer Group Directory, including formal volunteer organizations, grassroots groups, GreenThumb gardens, and official partners.</description>
 </item>
 </channel></rss>

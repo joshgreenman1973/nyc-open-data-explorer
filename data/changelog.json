@@ -1,6 +1,67 @@
 {
- "generated_at": "2026-11-22T17:06:49+00:00",
+ "generated_at": "2026-11-23T21:16:52+00:00",
  "events": [
+  {
+   "id": "64uk-42ks",
+   "name": "Primary Land Use Tax Lot Output (PLUTO)",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/64uk-42ks",
+   "kind": "description_changed",
+   "date": "2026-11-23",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v2",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v3",
+   "before_len": 327,
+   "after_len": 327,
+   "diff_at": 326
+  },
+  {
+   "id": "6rrm-vxj9",
+   "name": "NYC Parks Monuments",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/6rrm-vxj9",
+   "kind": "description_changed",
+   "date": "2026-11-23",
+   "before": "This data is table of monuments that is maintained by NYC Parks. Prior to being stored electronically the original data was stored on index cards dating back to...",
+   "after": "This data consists of permanent public monuments that are maintained by NYC Parks. Prior to being digitized, the original data was stored on index cards dating ...",
+   "before_len": 433,
+   "after_len": 717,
+   "diff_at": 10
+  },
+  {
+   "id": "6rrm-vxj9",
+   "name": "NYC Parks Monuments",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Recreation",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/6rrm-vxj9",
+   "kind": "columns_changed",
+   "date": "2026-11-23",
+   "columns_added": [
+    "Inscribed"
+   ],
+   "columns_removed": [
+    "inscribed"
+   ]
+  },
+  {
+   "id": "qt5r-nqxp",
+   "name": "PLUTO Change File",
+   "agency": "Department of City Planning (DCP)",
+   "category": "Maps & Geography",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/qt5r-nqxp",
+   "kind": "description_changed",
+   "date": "2026-11-23",
+   "before": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v2",
+   "after": "...available on the DCP Website: BYTES of the BIG APPLE . Current version: 26v3",
+   "before_len": 459,
+   "after_len": 459,
+   "diff_at": 458
+  },
   {
    "id": "iufa-jszv",
    "name": "Transit Signal Priority (TSP) Corridors",
@@ -4710,9 +4771,9 @@
   }
  ],
  "counts": {
+  "description_changed": 210,
+  "columns_changed": 36,
   "added": 36,
-  "columns_changed": 35,
-  "description_changed": 207,
   "renamed": 35,
   "agency_changed": 4
  }
