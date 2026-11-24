@@ -1,7 +1,62 @@
 {
  "title": "NYC Open Data — catalog changes",
- "generated": "2026-11-23T21:16:52+00:00",
+ "generated": "2026-11-24T20:08:24+00:00",
  "items": [
+  {
+   "id": "dxg2-q42e",
+   "name": "Natural Areas Management Activity",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/dxg2-q42e",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains worklog data entered by Parks staff or partner organizations that describes the activity they performed to care for NYC natural areas."
+  },
+  {
+   "id": "mbzh-ai28",
+   "name": "Natural Areas Management Point",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mbzh-ai28",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset ."
+  },
+  {
+   "id": "bgiq-btw8",
+   "name": "Stream Locations and Characteristics in Parks",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bgiq-btw8",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This is a collection of above-ground stream centerlines mapped across New York City."
+  },
+  {
+   "id": "yieu-tq6z",
+   "name": "Natural Areas Management Line",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/yieu-tq6z",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset ."
+  },
+  {
+   "id": "8kxq-5wje",
+   "name": "Natural Areas Management Polygon",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/8kxq-5wje",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset ."
+  },
   {
    "id": "64uk-42ks",
    "name": "Primary Land Use Tax Lot Output (PLUTO)",
@@ -1413,99 +1468,6 @@
    "url": "https://data.cityofnewyork.us/d/7ank-n7rd",
    "kind": "added",
    "date": "2026-10-29",
-   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
-  },
-  {
-   "id": "pi8f-savx",
-   "name": "EZ Pass Readers 2023",
-   "agency": "No agency listed",
-   "category": "Transportation",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/pi8f-savx",
-   "kind": "added",
-   "date": "2026-10-29",
-   "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
-  },
-  {
-   "id": "zkky-n5j3",
-   "name": "Reservoir Operations",
-   "agency": "Department of Environmental Protection (DEP)",
-   "category": "Environment",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/zkky-n5j3",
-   "kind": "renamed",
-   "date": "2026-10-28",
-   "before": "Current Reservoir Levels",
-   "after": "Reservoir Operations"
-  },
-  {
-   "id": "zkky-n5j3",
-   "name": "Reservoir Operations",
-   "agency": "Department of Environmental Protection (DEP)",
-   "category": "Environment",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/zkky-n5j3",
-   "kind": "description_changed",
-   "date": "2026-10-28",
-   "before": "The daily capacity and percent of capacity filled for each of the City's reservoirs.",
-   "after": "New York City water supply reservoir operations",
-   "before_len": 84,
-   "after_len": 47,
-   "diff_at": 0
-  },
-  {
-   "id": "zkky-n5j3",
-   "name": "Reservoir Operations",
-   "agency": "Department of Environmental Protection (DEP)",
-   "category": "Environment",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/zkky-n5j3",
-   "kind": "columns_changed",
-   "date": "2026-10-28",
-   "columns_added": [
-    "DateTime",
-    "Parameter",
-    "Reservoir",
-    "Units",
-    "Value"
-   ],
-   "columns_removed": [
-    "ASHREL",
-    "AUGEASTLEVANALOG",
-    "AUGEVolume",
-    "AUGWESTLEVANALOG",
-    "AUGWVOLUME",
-    "EDIRESELEVANALOG",
-    "EDIRESVOLUME",
-    "EDRCONFLW",
-    "EDRNTHFLW",
-    "EDRSTHFLW",
-    "NICCONFLW",
-    "NICNTHFLW",
-    "NICRESELEVANALOG",
-    "NICRESVOLUME",
-    "NICSTHFLW",
-    "Point_time",
-    "RECREL",
-    "RECRESELEVANALOG",
-    "RECRESVOLUME",
-    "SICRESELEVANALOG",
-    "SICRESVOLUME",
-    "STPALBFLW",
-    "WDIRESELEVANALOG",
-    "WDIRESVOLUME",
-    "WDRFLW"
-   ]
-  },
-  {
-   "id": "h47y-6hft",
-   "name": "EZ Pass Readers July 2024- current",
-   "agency": "Department of Transportation (DOT)",
-   "category": "Transportation",
-   "type": "dataset",
-   "url": "https://data.cityofnewyork.us/d/h47y-6hft",
-   "kind": "added",
-   "date": "2026-10-28",
    "summary": "E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets."
   }
  ]

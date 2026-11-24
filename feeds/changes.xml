@@ -3,8 +3,43 @@
 <title>NYC Open Data — catalog changes</title>
 <link>https://joshgreenman1973.github.io/nyc-open-data-explorer/changes.html</link>
 <description>Datasets the City added, removed, renamed or re-described, detected by diffing daily snapshots of the catalog.</description>
-<lastBuildDate>Mon, 23 Nov 2026 21:16:52 +0000</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 20:08:24 +0000</lastBuildDate>
 <language>en-us</language>
+<item>
+<title>New dataset: Natural Areas Management Activity</title>
+<link>https://data.cityofnewyork.us/d/dxg2-q42e</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/dxg2-q42e#added-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains worklog data entered by Parks staff or partner organizations that describes the activity they performed to care for NYC natural areas.</description>
+</item>
+<item>
+<title>New dataset: Natural Areas Management Point</title>
+<link>https://data.cityofnewyork.us/d/mbzh-ai28</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/mbzh-ai28#added-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset .</description>
+</item>
+<item>
+<title>New dataset: Stream Locations and Characteristics in Parks</title>
+<link>https://data.cityofnewyork.us/d/bgiq-btw8</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/bgiq-btw8#added-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+<description>This is a collection of above-ground stream centerlines mapped across New York City.</description>
+</item>
+<item>
+<title>New dataset: Natural Areas Management Line</title>
+<link>https://data.cityofnewyork.us/d/yieu-tq6z</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/yieu-tq6z#added-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset .</description>
+</item>
+<item>
+<title>New dataset: Natural Areas Management Polygon</title>
+<link>https://data.cityofnewyork.us/d/8kxq-5wje</link>
+<guid isPermaLink="false">https://data.cityofnewyork.us/d/8kxq-5wje#added-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+<description>This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset .</description>
+</item>
 <item>
 <title>Description changed: Primary Land Use Tax Lot Output (PLUTO)</title>
 <link>https://data.cityofnewyork.us/d/64uk-42ks</link>
@@ -668,41 +703,6 @@
 <link>https://data.cityofnewyork.us/d/7ank-n7rd</link>
 <guid isPermaLink="false">https://data.cityofnewyork.us/d/7ank-n7rd#added-2026-10-29</guid>
 <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
-<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
-</item>
-<item>
-<title>New dataset: EZ Pass Readers 2023</title>
-<link>https://data.cityofnewyork.us/d/pi8f-savx</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/pi8f-savx#added-2026-10-29</guid>
-<pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
-<description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
-</item>
-<item>
-<title>Renamed: Reservoir Operations</title>
-<link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/zkky-n5j3#renamed-2026-10-28</guid>
-<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
-<description>Was: Current Reservoir Levels. Now: Reservoir Operations.</description>
-</item>
-<item>
-<title>Description changed: Reservoir Operations</title>
-<link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/zkky-n5j3#description_changed-2026-10-28</guid>
-<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
-<description>Before: The daily capacity and percent of capacity filled for each of the City's reservoirs. — After: New York City water supply reservoir operations</description>
-</item>
-<item>
-<title>Columns changed: Reservoir Operations</title>
-<link>https://data.cityofnewyork.us/d/zkky-n5j3</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/zkky-n5j3#columns_changed-2026-10-28</guid>
-<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
-<description>Columns added: DateTime, Parameter, Reservoir, Units, Value. Removed: ASHREL, AUGEASTLEVANALOG, AUGEVolume, AUGWESTLEVANALOG, AUGWVOLUME, EDIRESELEVANALOG, EDIRESVOLUME, EDRCONFLW, EDRNTHFLW, EDRSTHFLW, NICCONFLW, NICNTHFLW, NICRESELEVANALOG, NICRESVOLUME, NICSTHFLW, Point_time, RECREL, RECRESELEVANALOG, RECRESVOLUME, SICRESELEVANALOG, SICRESVOLUME, STPALBFLW, WDIRESELEVANALOG, WDIRESVOLUME, WDRFLW.</description>
-</item>
-<item>
-<title>New dataset: EZ Pass Readers July 2024- current</title>
-<link>https://data.cityofnewyork.us/d/h47y-6hft</link>
-<guid isPermaLink="false">https://data.cityofnewyork.us/d/h47y-6hft#added-2026-10-28</guid>
-<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
 <description>E-Z Pass readers are installed throughout NYC to determine traffic speed on local streets.</description>
 </item>
 </channel></rss>

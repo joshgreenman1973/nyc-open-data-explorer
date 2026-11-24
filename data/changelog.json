@@ -1,6 +1,61 @@
 {
- "generated_at": "2026-11-23T21:16:52+00:00",
+ "generated_at": "2026-11-24T20:08:24+00:00",
  "events": [
+  {
+   "id": "dxg2-q42e",
+   "name": "Natural Areas Management Activity",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/dxg2-q42e",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains worklog data entered by Parks staff or partner organizations that describes the activity they performed to care for NYC natural areas."
+  },
+  {
+   "id": "mbzh-ai28",
+   "name": "Natural Areas Management Point",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/mbzh-ai28",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset ."
+  },
+  {
+   "id": "bgiq-btw8",
+   "name": "Stream Locations and Characteristics in Parks",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/bgiq-btw8",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This is a collection of above-ground stream centerlines mapped across New York City."
+  },
+  {
+   "id": "yieu-tq6z",
+   "name": "Natural Areas Management Line",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/yieu-tq6z",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset ."
+  },
+  {
+   "id": "8kxq-5wje",
+   "name": "Natural Areas Management Polygon",
+   "agency": "Department of Parks and Recreation (DPR)",
+   "category": "Environment",
+   "type": "dataset",
+   "url": "https://data.cityofnewyork.us/d/8kxq-5wje",
+   "kind": "added",
+   "date": "2026-11-24",
+   "summary": "This dataset contains the approximate, hand-drawn location of the activities in the Natural Areas Management Activity dataset ."
+  },
   {
    "id": "64uk-42ks",
    "name": "Primary Land Use Tax Lot Output (PLUTO)",
@@ -4771,9 +4826,9 @@
   }
  ],
  "counts": {
+  "added": 41,
   "description_changed": 210,
   "columns_changed": 36,
-  "added": 36,
   "renamed": 35,
   "agency_changed": 4
  }
