@@ -1,37 +1,54 @@
 {
-  "computed_at": "2026-11-26T18:59:33+00:00",
+  "computed_at": "2026-11-27T18:55:02+00:00",
   "source": "Google News — NYC search results",
   "headlines_scanned": 50,
   "topics_in_dictionary": 28,
   "matches": [
     {
-      "headline": "NYC subway riders treated to Thanksgiving meal on Brooklyn train",
-      "source": "New York Daily News",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdmQ5VDRETlFvbW9rUWRjZ2lTY29PZXhGUjd4cTZqQ19OQnI5VlM2RFYyNmQtTjVhNXYyblFUOUtaLXJmNGFIMFZHSnFzblpOcVBCZi1yWGFZdTViNTBiVktYY29CT1N4MWhfSnduYlRyQkZKMjBEVFg4UExVSEJ6Z1lXUW1ZSC1tNlphZS1wUEFjSEMtWVBfNVZ2LUtObWVSeDliWlhmMA?oc=5",
-      "pubDate": "Thu, 26 Nov 2026 15:08:37 GMT",
-      "topic": "Bicycle counts",
-      "dataset_id": "uczf-rk3c",
-      "dataset_name": "Bicycle Counts (Historical)",
-      "dataset_category": "Transportation",
-      "dataset_agency": "Department of Transportation (DOT)",
-      "dataset_url": "https://data.cityofnewyork.us/d/uczf-rk3c",
+      "headline": "Claim Mamdani will pay NYC residents to house people released from Rikers Island omits key context",
+      "source": "Snopes",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YbW9aWG5WVkdpdHBMUUNURjJ3VjdueU9VTjlnSVhZWUlPNHRQYXdEZDQtZFF4Sk02RUlyY3VDWlY1dVNIeXpIVzNaTzMwUU5WcXBfRTU0RXM1YjNUVE5aVERNajBHZmZteEoySg?oc=5",
+      "pubDate": "Fri, 27 Nov 2026 12:05:44 GMT",
+      "topic": "Daily jail population",
+      "dataset_id": "7479-ugqb",
+      "dataset_name": "Daily Inmates In Custody",
+      "dataset_category": "Public Safety",
+      "dataset_agency": "Department of Correction (DOC)",
+      "dataset_url": "https://data.cityofnewyork.us/d/7479-ugqb",
       "match_terms": [
-        "subway"
+        "rikers",
+        "rikers island"
       ]
     },
     {
-      "headline": "New York City ICE Shooting: What we know and what officials are saying",
-      "source": "FOX 5 New York",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE01NHZzQ3NPeTBHcy1DNTFTTG9YUEhKd2p5TUd0clhlMjRZcFUxSnVIb3UwSHMxUC1KQU5Va1dTcExldlVtdXpZUzU0SlotYUlOaDMwaXZzODFPUmQ5cXRYSjdjM0FoNmJ3aVB6RENSeWZfYlZVSW9IdzdB?oc=5",
-      "pubDate": "Fri, 09 Oct 2026 07:00:00 GMT",
-      "topic": "Gun violence",
-      "dataset_id": "833y-fsy8",
-      "dataset_name": "ARCHIVED_NYPD Shooting Incident Data (Historic)",
-      "dataset_category": "Public Safety",
-      "dataset_agency": "Police Department (NYPD)",
-      "dataset_url": "https://data.cityofnewyork.us/d/833y-fsy8",
+      "headline": "Low pressure in US midwest brings unseasonable heat to New York and Boston",
+      "source": "The Guardian",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU3VIT3FnYUUxYXhOLW9CNXN3QktKZlZQYVJhaFRhLXJYLVBIMGUtd09DM0dOeHFnWTlIZ1N3dks1LU9IZXhzN1VWd0ZEc0I3WkF2MDRDamxmQ09WS0RSby13RDJKSUJNWEZZSzZLbzVkY1ZoOWFvcGptamtjY1dGbzZRNUtnSmlpeThoaTI3RQ?oc=5",
+      "pubDate": "Fri, 06 Nov 2026 08:00:00 GMT",
+      "topic": "Heat / hot-water complaints",
+      "dataset_id": "erm2-nwe9",
+      "dataset_name": "311 Service Requests from 2020 to Present",
+      "dataset_category": "Social Services",
+      "dataset_agency": "311",
+      "dataset_url": "https://data.cityofnewyork.us/d/erm2-nwe9",
       "match_terms": [
-        "shooting"
+        "heat"
+      ]
+    },
+    {
+      "headline": "New York Election Results",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYUlMS1JzbUpZWjJILUZ1a3VZX3A2X3VhNkxVTGthYTJkaHlhYlZveTlGMnhkOUVjeHdvajNZRVNyekZLa3FOT3lDbU5LekthRzBRcnNyZGE2SktKem9RTkdXQzJNMlVHc3RDRFVFTm4zajgzV3phTTJ6dTFJaVd3Vjd6M2V0Mm14?oc=5",
+      "pubDate": "Tue, 03 Nov 2026 08:00:00 GMT",
+      "topic": "Voter analysis",
+      "dataset_id": "psx2-aqx3",
+      "dataset_name": "Voter Analysis 2008-2018",
+      "dataset_category": "Finance & Budget",
+      "dataset_agency": "Campaign Finance Board (CFB)",
+      "dataset_url": "https://data.cityofnewyork.us/d/psx2-aqx3",
+      "match_terms": [
+        "election",
+        "election results"
       ]
     }
   ]
